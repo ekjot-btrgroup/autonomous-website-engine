@@ -1,0 +1,143 @@
+{
+  "id": "cake-shop-1ef9",
+  "name": "Cake Shop",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "cake-shop-html-template",
+    "format": "html-page",
+    "hash": "1ef92495503560db35402092a509234c50fc506f604b45433547c5256932165f",
+    "original": "test-templates/uiuxlabz/cake-shop-html-template",
+    "repo": "https://github.com/uiuxlabz/cake-shop-html-template",
+    "group": "uiuxlabz",
+    "commit": "77bfba087ebf9b78c3b0e0068e161677ab6358ac"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "about",
+    "pricing",
+    "features",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "The best cake in town — baked this morning.",
+      "Weekend box — 6 pastries, £22",
+      "Butter, patience, and a kitchen that smells right.",
+      "Pick a flavour. We'll do the rest.",
+      "More than a shop counter.",
+      "The hands behind the counter."
+    ],
+    "ctas": [
+      "View menu",
+      "Order 0",
+      "Order a cake",
+      "Meet the bakers"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#d9c6a8",
+      "#e8d9c0",
+      "#3d2a1e",
+      "#fff7eb",
+      "#fceed5"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fraunces",
+      "DM Sans",
+      "Caveat"
+    ],
+    "images": 14,
+    "motion": true,
+    "lines": 919,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#d9c6a8",
+        "#e8d9c0",
+        "#3d2a1e",
+        "#fff7eb",
+        "#fceed5"
+      ],
+      "radius_px": 341,
+      "gradients": 3,
+      "shadows": 6,
+      "keyframes": 1,
+      "transitions": 10,
+      "uppercase": 1,
+      "glass": 1
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "features",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "handcrafted",
+      "warm",
+      "playful"
+    ],
+    "tone": 1,
+    "energy": 2,
+    "luxury": 2,
+    "density": 2,
+    "warmth": 5,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales"
+    ],
+    "origin": [
+      "restaurant"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "features",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Cream cake shop, handwritten Caveat touches, friendly",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:22.653500Z"
+}

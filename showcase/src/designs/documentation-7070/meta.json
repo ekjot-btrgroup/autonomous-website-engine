@@ -1,0 +1,127 @@
+{
+  "id": "documentation-7070",
+  "name": "Documentation",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "documentation-html-template",
+    "format": "html-page",
+    "hash": "70706fb0fba6222ddfbc6b34ca77fb70ba657d681bb04125cc819c71f3673383",
+    "original": "test-templates/uiuxlabz/documentation-html-template",
+    "repo": "https://github.com/uiuxlabz/documentation-html-template",
+    "group": "uiuxlabz",
+    "commit": "512f7fa5798a8504957b6c7e8251bc7b1fb99109"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "features",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "DocuKit Documentation",
+      "Introduction #",
+      "Installation #",
+      "Usage #",
+      "Components #",
+      "Responsive Grid #"
+    ],
+    "ctas": [
+      "Get Started",
+      "",
+      "☰ Table of Contents",
+      "Copy"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#94a3b8",
+      "#e2e8f0",
+      "#cbd5e1",
+      "#64748b",
+      "#2563eb"
+    ],
+    "dark": null,
+    "fonts": [
+      "Sora",
+      "IBM Plex Sans"
+    ],
+    "images": 6,
+    "motion": true,
+    "lines": 2477,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#94a3b8",
+        "#e2e8f0",
+        "#cbd5e1",
+        "#64748b",
+        "#2563eb"
+      ],
+      "radius_px": 8,
+      "gradients": 7,
+      "shadows": 24,
+      "keyframes": 0,
+      "transitions": 56,
+      "uppercase": 5,
+      "glass": 3
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "sticky",
+      "list"
+    ],
+    "style": [
+      "minimal",
+      "technical",
+      "modern"
+    ],
+    "tone": 4,
+    "energy": 1,
+    "luxury": 1,
+    "density": 5,
+    "warmth": 1,
+    "modernity": 4,
+    "media": [
+      "none"
+    ],
+    "image_need": 0,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "info"
+    ],
+    "origin": [
+      "saas"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Docs site with sidebar, light and dense",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:34.479728Z"
+}

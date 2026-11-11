@@ -1,0 +1,128 @@
+{
+  "id": "law-firm-6088",
+  "name": "Law Firm",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "law-firm-html-template",
+    "format": "html-page",
+    "hash": "6088be0a2ebf10008af6a5a3c46d406258c962d810b9cbc9109a8f69f30ceb2a",
+    "original": "test-templates/uiuxlabz/law-firm-html-template",
+    "repo": "https://github.com/uiuxlabz/law-firm-html-template",
+    "group": "uiuxlabz",
+    "commit": "c046886faf8db938a4709fbdaae32873681ae9d3"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Counsel that guards your cause with precision & principle.",
+      "A chambers built on candour, rigour & the quiet confidence of precedent.",
+      "Where we advise, litigate & negotiate",
+      "An approach measured in candour, not complexity.",
+      "Four principles, kept since 1988",
+      "Recent matters, resolved"
+    ],
+    "ctas": [
+      "Free Consultation",
+      "Request a Consultation →",
+      "Explore Practice Areas",
+      "Our Story →"
+    ],
+    "texts": [],
+    "colors": [
+      "#000000",
+      "#0a1628",
+      "#0f2036",
+      "#16304f",
+      "#c8965a",
+      "#a9793c"
+    ],
+    "dark": null,
+    "fonts": [
+      "Cormorant Garamond",
+      "Inter"
+    ],
+    "images": 22,
+    "motion": true,
+    "lines": 1865,
+    "css": {
+      "palette": [
+        "#000000",
+        "#0a1628",
+        "#0f2036",
+        "#16304f",
+        "#c8965a",
+        "#a9793c"
+      ],
+      "radius_px": 0,
+      "gradients": 19,
+      "shadows": 16,
+      "keyframes": 1,
+      "transitions": 39,
+      "uppercase": 31,
+      "glass": 2
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "list"
+    ],
+    "style": [
+      "dark-luxe",
+      "classic",
+      "elegant"
+    ],
+    "tone": 5,
+    "energy": 1,
+    "luxury": 5,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 2,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "legal"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 5,
+    "note": "Navy and bronze chambers, uppercase serif, formal",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:48.344481Z"
+}

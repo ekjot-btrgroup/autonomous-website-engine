@@ -81,6 +81,12 @@ Each event is one small file in `memory/events/`, so ten chats can learn at the 
 - Recently used designs lose points.
 - **Exploration:** each shortlist reserves 2 places for designs you have never been shown, if they score at least 60% of the best one.
 
+## 4b. Full-page designs (kind `page`)
+Converted HTML templates are whole pages. They carry the same traits plus `sections` (the section types found on the page,
+detected from ids, classes, headings and content). Section fit becomes coverage: 30 x (wanted sections the page has / wanted sections),
+with the missing ones named in the reasons. Variety: at most 4 pages built for the same niche. A site built from page picks puts the
+first pick at `/` and the others at `/option-2`, `/option-3`; brand colours/fonts are mapped onto the template's own CSS variables.
+
 ## 5. Picking the 10
 
 1. **Coverage:** the best design for each section of the brief, in page order.

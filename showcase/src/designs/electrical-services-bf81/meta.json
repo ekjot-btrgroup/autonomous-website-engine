@@ -1,0 +1,143 @@
+{
+  "id": "electrical-services-bf81",
+  "name": "Electrical Services",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "electrical-services-html-template",
+    "format": "html-page",
+    "hash": "bf816a4036960f1b2ae0b478f2979f13818594b21421d960ed245e259a42b24f",
+    "original": "test-templates/uiuxlabz/electrical-services-html-template",
+    "repo": "https://github.com/uiuxlabz/electrical-services-html-template",
+    "group": "uiuxlabz",
+    "commit": "7b22e7f9636316d4c02a6512b317e97b0f339f3a"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "cta",
+    "hero",
+    "logos",
+    "services",
+    "portfolio",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Powering Your World With Precision & Safety",
+      "Trusted Electrical Solutions Since 1998",
+      "Comprehensive Electrical Services",
+      "Featured Projects",
+      "What Our Clients Say",
+      "Ready to Power Up Your Next Project?"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Our Services",
+      "Request Estimate",
+      "Learn More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#1565c0",
+      "#0d47a1",
+      "#1e88e5",
+      "#ffb300",
+      "#ff8f00",
+      "#0d1b2a"
+    ],
+    "dark": null,
+    "fonts": [
+      "Chakra Petch",
+      "Inter"
+    ],
+    "images": 11,
+    "motion": true,
+    "lines": 1190,
+    "css": {
+      "palette": [
+        "#1565c0",
+        "#0d47a1",
+        "#1e88e5",
+        "#ffb300",
+        "#ff8f00",
+        "#0d1b2a"
+      ],
+      "radius_px": 67,
+      "gradients": 14,
+      "shadows": 10,
+      "keyframes": 1,
+      "transitions": 28,
+      "uppercase": 3,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "cta",
+      "hero",
+      "logos",
+      "services",
+      "portfolio",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "bold",
+      "technical",
+      "gradient"
+    ],
+    "tone": 3,
+    "energy": 4,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "icons",
+      "logos"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "local-services",
+      "energy"
+    ],
+    "sections": [
+      "navbar",
+      "cta",
+      "hero",
+      "logos",
+      "services",
+      "portfolio",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Blue and amber trades page, rounded pill buttons",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:36.546891Z"
+}

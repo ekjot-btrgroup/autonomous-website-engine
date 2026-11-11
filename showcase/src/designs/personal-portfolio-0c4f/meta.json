@@ -1,0 +1,140 @@
+{
+  "id": "personal-portfolio-0c4f",
+  "name": "Personal Portfolio",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "personal-portfolio-html-template",
+    "format": "html-page",
+    "hash": "0c4fe5c6063818cc820f2c9327b1ef6102ebb19b84d71a5dd24e4d7521c4f2bd",
+    "original": "test-templates/uiuxlabz/personal-portfolio-html-template",
+    "repo": "https://github.com/uiuxlabz/personal-portfolio-html-template",
+    "group": "uiuxlabz",
+    "commit": "6de1b5828ecc1027648c38e4f93425883b87180d"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "about",
+    "portfolio",
+    "services",
+    "testimonials",
+    "contact",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "I Design Experiences That Inspire & Engage",
+      "Turning Visions Into Digital Reality",
+      "Featured Projects",
+      "Skills & Capabilities",
+      "What Clients Say",
+      "Let's Build Something Amazing Together"
+    ],
+    "ctas": [
+      "Let's Talk",
+      "View My Work",
+      "About Me",
+      "Learn More About Me"
+    ],
+    "texts": [],
+    "colors": [
+      "#0f172a",
+      "#7c3aed",
+      "#8b5cf6",
+      "#6d28d9",
+      "#ec4899",
+      "#f472b6"
+    ],
+    "dark": null,
+    "fonts": [
+      "DM Sans",
+      "Sora"
+    ],
+    "images": 11,
+    "motion": true,
+    "lines": 1161,
+    "css": {
+      "palette": [
+        "#0f172a",
+        "#7c3aed",
+        "#8b5cf6",
+        "#6d28d9",
+        "#ec4899",
+        "#f472b6"
+      ],
+      "radius_px": 0,
+      "gradients": 29,
+      "shadows": 8,
+      "keyframes": 1,
+      "transitions": 51,
+      "uppercase": 5,
+      "glass": 3
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "portfolio",
+      "services",
+      "testimonials",
+      "contact",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "gradient",
+      "modern",
+      "bold"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "contact"
+    ],
+    "origin": [
+      "portfolio"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "portfolio",
+      "services",
+      "testimonials",
+      "contact",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Purple-pink gradient designer portfolio",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:57.200273Z"
+}

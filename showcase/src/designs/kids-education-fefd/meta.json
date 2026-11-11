@@ -1,0 +1,140 @@
+{
+  "id": "kids-education-fefd",
+  "name": "Kids Education",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "kids-education-html-template",
+    "format": "html-page",
+    "hash": "fefd8ddb5f75f9c45331040c163d40c9da97b77c9a6b327013a31e97c43b1ee0",
+    "original": "test-templates/uiuxlabz/kids-education-html-template",
+    "repo": "https://github.com/uiuxlabz/kids-education-html-template",
+    "group": "uiuxlabz",
+    "commit": "e3179d911b1be25c1515bc31b90848d7552594ed"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "services",
+    "about",
+    "features",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Where Learning Meets Play",
+      "Fun Learning Programs for Every Age",
+      "A Place Where Children Thrive",
+      "What Makes KIDKINDER Special",
+      "What Parents Say About Us",
+      "Ready to Start Your Child's Journey?"
+    ],
+    "ctas": [
+      "Enroll Now",
+      "Enroll Your Child",
+      "Explore Programs",
+      "Learn More"
+    ],
+    "texts": [],
+    "colors": [
+      "#fff7ed",
+      "#d9a107",
+      "#a16207",
+      "#7c3aed",
+      "#6d28d9",
+      "#a78bfa"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fredoka",
+      "Nunito"
+    ],
+    "images": 10,
+    "motion": true,
+    "lines": 897,
+    "css": {
+      "palette": [
+        "#fff7ed",
+        "#d9a107",
+        "#a16207",
+        "#7c3aed",
+        "#6d28d9",
+        "#a78bfa"
+      ],
+      "radius_px": 0,
+      "gradients": 9,
+      "shadows": 22,
+      "keyframes": 1,
+      "transitions": 26,
+      "uppercase": 1,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "playful",
+      "gradient",
+      "warm"
+    ],
+    "tone": 1,
+    "energy": 4,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 5,
+    "modernity": 2,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "signup"
+    ],
+    "origin": [
+      "education"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Purple and gold kids learning page",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:47.763855Z"
+}

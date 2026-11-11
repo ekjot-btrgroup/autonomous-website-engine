@@ -1,0 +1,138 @@
+{
+  "id": "coral-resort-a022",
+  "name": "Coral Resort",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "coral-resort-html-template",
+    "format": "html-page",
+    "hash": "a022e49418629fca7da4140f8f0ca8f290734395b3ec1a9c9285659564db80a3",
+    "original": "test-templates/uiuxlabz/coral-resort-html-template",
+    "repo": "https://github.com/uiuxlabz/coral-resort-html-template",
+    "group": "uiuxlabz",
+    "commit": "40640eec8169aeded8c43c07ddec61566a78ca98"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "pricing",
+    "testimonials",
+    "gallery",
+    "blog",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Where the ocean meets quiet luxury",
+      "Private Villas With Ocean Views",
+      "Baa Atoll, Maldives",
+      "Glimpses of Paradise",
+      "Words That Warm Our Hearts",
+      "Discover Hidden Island Beauty"
+    ],
+    "ctas": [
+      "Book Now",
+      "View Details",
+      "Reserve Your Stay",
+      ""
+    ],
+    "texts": [],
+    "colors": [
+      "#d4614d",
+      "#0a1628",
+      "#e8725c",
+      "#7ecac1",
+      "#f5ede3",
+      "#c9a96e"
+    ],
+    "dark": null,
+    "fonts": [
+      "Playfair Display",
+      "Lato",
+      "Libre Baskerville"
+    ],
+    "images": 17,
+    "motion": true,
+    "lines": 1043,
+    "css": {
+      "palette": [
+        "#d4614d",
+        "#0a1628",
+        "#e8725c",
+        "#7ecac1",
+        "#f5ede3",
+        "#c9a96e"
+      ],
+      "radius_px": 0,
+      "gradients": 2,
+      "shadows": 13,
+      "keyframes": 0,
+      "transitions": 73,
+      "uppercase": 9,
+      "glass": 5
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "pricing",
+      "testimonials",
+      "gallery",
+      "blog",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "full-bleed",
+      "split"
+    ],
+    "style": [
+      "luxury",
+      "elegant",
+      "warm"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 5,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking"
+    ],
+    "origin": [
+      "hospitality",
+      "travel"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "pricing",
+      "testimonials",
+      "gallery",
+      "blog",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 5,
+    "note": "Maldives resort, coral and navy, serif, glassy overlays",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:30.066994Z"
+}

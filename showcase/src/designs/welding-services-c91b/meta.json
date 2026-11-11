@@ -1,0 +1,144 @@
+{
+  "id": "welding-services-c91b",
+  "name": "Welding Services",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "welding-services-html-template",
+    "format": "html-page",
+    "hash": "c91b20ba16b497945a2e1d58c1ef19083962162d568e8b42064050679610c70b",
+    "original": "test-templates/uiuxlabz/welding-services-html-template",
+    "repo": "https://github.com/uiuxlabz/welding-services-html-template",
+    "group": "uiuxlabz",
+    "commit": "1535ff238a57d3fee58574c6aeb60bc1ce9a6417"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "stats",
+    "services",
+    "about",
+    "process",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Precision Welding & Metal Fabrication",
+      "Our Welding Services",
+      "25 Years of Strong Metal",
+      "From Drawing to Delivery",
+      "Meet the Welders",
+      "What Clients Say"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Explore Services",
+      "Get a Free Quote",
+      "Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#d9551d",
+      "#1c1e21",
+      "#3a4048",
+      "#f26522",
+      "#ffb100"
+    ],
+    "dark": false,
+    "fonts": [
+      "Oswald",
+      "Source Sans 3"
+    ],
+    "images": 20,
+    "motion": true,
+    "lines": 926,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#d9551d",
+        "#1c1e21",
+        "#3a4048",
+        "#f26522",
+        "#ffb100"
+      ],
+      "radius_px": 1,
+      "gradients": 2,
+      "shadows": 11,
+      "keyframes": 0,
+      "transitions": 16,
+      "uppercase": 16,
+      "glass": 0
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "process",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "bold",
+      "corporate",
+      "technical"
+    ],
+    "tone": 3,
+    "energy": 3,
+    "luxury": 1,
+    "density": 4,
+    "warmth": 2,
+    "modernity": 2,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "manufacturing",
+      "construction"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "process",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 3,
+    "note": "Orange and charcoal Oswald industrial fabrication",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:12.344549Z"
+}

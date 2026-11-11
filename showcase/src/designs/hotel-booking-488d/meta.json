@@ -1,0 +1,128 @@
+{
+  "id": "hotel-booking-488d",
+  "name": "Hotel Booking",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "hotel-booking-html-template",
+    "format": "html-page",
+    "hash": "488d664d5ff9fb7dff989cf3173e00a0a26581912a491216b783e6381348ed4b",
+    "original": "test-templates/uiuxlabz/hotel-booking-html-template",
+    "repo": "https://github.com/uiuxlabz/hotel-booking-html-template",
+    "group": "uiuxlabz",
+    "commit": "aeaaa53faa0932ff00c4ef28185890e538b656b1"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Where the tide sets the rhythm and the day follows.",
+      "Forty years of hosting — still hand-written guest books.",
+      "Pick your view.",
+      "Stay is the start — the bay is the rest.",
+      "A small crew, a very long memory.",
+      "They came for the view, stayed for the welcome."
+    ],
+    "ctas": [
+      "Book a Stay",
+      "Reserve your room",
+      "Explore the rooms",
+      "Read our story"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#102c31",
+      "#0e3a40",
+      "#09292e",
+      "#f6f1e7",
+      "#ece3d1"
+    ],
+    "dark": null,
+    "fonts": [
+      "Cormorant Garamond",
+      "Manrope"
+    ],
+    "images": 10,
+    "motion": true,
+    "lines": 1177,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#102c31",
+        "#0e3a40",
+        "#09292e",
+        "#f6f1e7",
+        "#ece3d1"
+      ],
+      "radius_px": 405,
+      "gradients": 5,
+      "shadows": 26,
+      "keyframes": 1,
+      "transitions": 46,
+      "uppercase": 9,
+      "glass": 2
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "full-bleed",
+      "cards"
+    ],
+    "style": [
+      "elegant",
+      "luxury",
+      "editorial"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 5,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking"
+    ],
+    "origin": [
+      "hospitality",
+      "travel"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 5,
+    "note": "Teal and cream coastal hotel, refined serif type",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:42.316867Z"
+}

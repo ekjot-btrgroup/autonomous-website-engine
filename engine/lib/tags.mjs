@@ -31,6 +31,8 @@ export function normalizeTags(t = {}, m = {}) {
     motion: pick('motion', t.motion, 1)[0] || d.motion,
     goals: pick('goals', t.goals, 3),
     origin: pick('niches', t.origin ?? t.industries ?? t.niches, 2),
+    // Full-page designs: which section types the page contains (detected from the HTML; tagger may correct).
+    ...(m.kind === 'page' || t.category === 'page' ? { sections: pick('category', t.sections ?? m.page_sections ?? [], 14).filter((c) => c !== 'page') } : {}),
     scheme: pick('scheme', t.scheme, 1)[0] || d.scheme,
     quality: Math.max(1, Math.min(5, Math.round(Number(t.quality) || 3))),
     note: String(t.note || '').slice(0, 100),

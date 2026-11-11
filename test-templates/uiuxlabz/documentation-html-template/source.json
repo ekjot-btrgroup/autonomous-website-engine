@@ -1,0 +1,8 @@
+{
+  "name": "documentation-html-template",
+  "repo": "https://github.com/uiuxlabz/documentation-html-template",
+  "design_id": "documentation-7070",
+  "license": "see LICENSE (MIT per upstream README)",
+  "note": "Original text files; images stay in the upstream repo at the recorded commit.",
+  "commit": "512f7fa5798a8504957b6c7e8251bc7b1fb99109"
+}

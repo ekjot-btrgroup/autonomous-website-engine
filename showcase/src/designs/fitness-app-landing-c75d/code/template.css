@@ -1,0 +1,907 @@
+/* assets/css/style.css (scoped to .tpl-fitness-app-landing-c75d) */
+.tpl-fitness-app-landing-c75d{
+  
+  --black: #0B0B0F;
+  --orange: #FF6B2C;
+  --lime: #C6F432;
+  --gray: #9CA3AF;
+  --white: #FFFFFF;
+
+  
+  --black-soft: #14141B;
+  --black-raised: #1B1B24;
+  --black-deep: #060608;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --orange-soft: rgba(255, 107, 44, 0.14);
+  --lime-soft: rgba(198, 244, 50, 0.12);
+
+  
+  --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+
+  --fs-hero: clamp(3.4rem, 9vw, 7rem);
+  --fs-h1: clamp(2.6rem, 5vw, 4.2rem);
+  --fs-h2: clamp(2rem, 3.6vw, 3rem);
+  --fs-h3: clamp(1.4rem, 2.2vw, 1.9rem);
+  --fs-h4: clamp(1.1rem, 1.6vw, 1.35rem);
+  --fs-body: clamp(0.95rem, 1.1vw, 1.05rem);
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 1.5vw, 1.25rem);
+  --space-md: clamp(1.25rem, 2.5vw, 2rem);
+  --space-lg: clamp(2rem, 4vw, 3.5rem);
+  --space-xl: clamp(3rem, 6vw, 5.5rem);
+  --space-2xl: clamp(4rem, 9vw, 8rem);
+
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 70px rgba(0, 0, 0, 0.6);
+  --glow-orange: 0 10px 44px rgba(255, 107, 44, 0.35);
+  --glow-lime: 0 10px 44px rgba(198, 244, 50, 0.25);
+
+  
+  --transition: 0.3s ease;
+  --transition-fast: 0.18s ease;
+
+  
+  --container: 1220px;
+  --header-height: 78px;
+}
+.tpl-fitness-app-landing-c75d *, .tpl-fitness-app-landing-c75d *::before, .tpl-fitness-app-landing-c75d *::after{ box-sizing: border-box; margin: 0; padding: 0; }
+.tpl-fitness-app-landing-c75d{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+.tpl-fitness-app-landing-c75d{
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--gray);
+  background: var(--black);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.tpl-fitness-app-landing-c75d img{ max-width: 100%; height: auto; display: block; }
+.tpl-fitness-app-landing-c75d a{ text-decoration: none; color: inherit; transition: color var(--transition-fast); }
+.tpl-fitness-app-landing-c75d ul, .tpl-fitness-app-landing-c75d ol{ list-style: none; }
+.tpl-fitness-app-landing-c75d h1, .tpl-fitness-app-landing-c75d h2, .tpl-fitness-app-landing-c75d h3, .tpl-fitness-app-landing-c75d h4, .tpl-fitness-app-landing-c75d h5, .tpl-fitness-app-landing-c75d h6{
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tpl-fitness-app-landing-c75d h1{ font-size: var(--fs-h1); }
+.tpl-fitness-app-landing-c75d h2{ font-size: var(--fs-h2); }
+.tpl-fitness-app-landing-c75d h3{ font-size: var(--fs-h3); }
+.tpl-fitness-app-landing-c75d h4{ font-size: var(--fs-h4); }
+.tpl-fitness-app-landing-c75d button, .tpl-fitness-app-landing-c75d input, .tpl-fitness-app-landing-c75d textarea{ font-family: inherit; font-size: inherit; color: inherit; }
+.tpl-fitness-app-landing-c75d button{ cursor: pointer; border: none; background: none; }
+.tpl-fitness-app-landing-c75d ::selection{ background: var(--orange); color: var(--white); }
+.tpl-fitness-app-landing-c75d :focus-visible{ outline: 2px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
+.tpl-fitness-app-landing-c75d .container{
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+.tpl-fitness-app-landing-c75d .visually-hidden{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.tpl-fitness-app-landing-c75d .reveal{
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  will-change: opacity, transform;
+}
+.tpl-fitness-app-landing-c75d .reveal.visible{
+  opacity: 1;
+  transform: none;
+}
+.tpl-fitness-app-landing-c75d .header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 11, 15, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.tpl-fitness-app-landing-c75d .header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  height: var(--header-height);
+}
+.tpl-fitness-app-landing-c75d .nav-logo{
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.tpl-fitness-app-landing-c75d .nav-logo .logo-mark{
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--orange) 0%, #FF8A3D 60%, var(--lime) 140%);
+  display: inline-grid;
+  place-items: center;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.tpl-fitness-app-landing-c75d .nav-logo em{
+  font-style: normal;
+  color: var(--orange);
+}
+.tpl-fitness-app-landing-c75d .nav-links{
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+.tpl-fitness-app-landing-c75d .nav-link{
+  position: relative;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--gray);
+  padding: 0.4rem 0.1rem;
+  transition: color var(--transition-fast);
+}
+.tpl-fitness-app-landing-c75d .nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+.tpl-fitness-app-landing-c75d .nav-link:hover, .tpl-fitness-app-landing-c75d .nav-link.active{ color: var(--white); }
+.tpl-fitness-app-landing-c75d .nav-link:hover::after, .tpl-fitness-app-landing-c75d .nav-link.active::after{ transform: scaleX(1); }
+.tpl-fitness-app-landing-c75d .nav-cta{
+  padding: 0.65rem 1.35rem;
+}
+.tpl-fitness-app-landing-c75d .nav-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+}
+.tpl-fitness-app-landing-c75d .nav-toggle span{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.tpl-fitness-app-landing-c75d .btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.85rem 1.7rem;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  transition: transform var(--transition-fast), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+.tpl-fitness-app-landing-c75d .btn:hover{ transform: translateY(-2px); }
+.tpl-fitness-app-landing-c75d .btn:active{ transform: translateY(0); }
+.tpl-fitness-app-landing-c75d .btn--primary{
+  background: var(--orange);
+  color: var(--black);
+  box-shadow: var(--glow-orange);
+}
+.tpl-fitness-app-landing-c75d .btn--primary:hover{
+  background: #FF7F45;
+  box-shadow: 0 14px 52px rgba(255, 107, 44, 0.5);
+}
+.tpl-fitness-app-landing-c75d .btn--lime{
+  background: var(--lime);
+  color: var(--black);
+  box-shadow: var(--glow-lime);
+}
+.tpl-fitness-app-landing-c75d .btn--lime:hover{
+  background: #D3F95A;
+  box-shadow: 0 14px 52px rgba(198, 244, 50, 0.4);
+}
+.tpl-fitness-app-landing-c75d .btn--outline{
+  border-color: var(--line-strong);
+  color: var(--white);
+  background: transparent;
+}
+.tpl-fitness-app-landing-c75d .btn--outline:hover{
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.tpl-fitness-app-landing-c75d .btn--light{
+  background: var(--white);
+  color: var(--black);
+}
+.tpl-fitness-app-landing-c75d .btn--light:hover{ background: var(--lime); }
+.tpl-fitness-app-landing-c75d .btn--lg{ padding: 1rem 2.2rem; font-size: 1.3rem; }
+.tpl-fitness-app-landing-c75d .btn--sm{ padding: 0.6rem 1.2rem; font-size: 1rem; }
+.tpl-fitness-app-landing-c75d .hero{
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  overflow: hidden;
+}
+.tpl-fitness-app-landing-c75d .hero-bg{
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.tpl-fitness-app-landing-c75d .hero-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-fitness-app-landing-c75d .hero-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    100deg,
+    rgba(6, 6, 8, 0.96) 0%,
+    rgba(6, 6, 8, 0.85) 42%,
+    rgba(11, 11, 15, 0.55) 78%,
+    rgba(11, 11, 15, 0.35) 100%
+  );
+}
+.tpl-fitness-app-landing-c75d .hero .container{
+  position: relative;
+  z-index: 1;
+  padding-top: clamp(3rem, 7vw, 5rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+.tpl-fitness-app-landing-c75d .hero-content{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: var(--space-lg);
+}
+.tpl-fitness-app-landing-c75d .hero-kicker{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 1.4rem;
+}
+.tpl-fitness-app-landing-c75d .hero-kicker::before{
+  content: "";
+  width: 34px;
+  height: 2px;
+  background: var(--lime);
+}
+.tpl-fitness-app-landing-c75d .hero-title{
+  font-size: var(--fs-hero);
+  color: var(--white);
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+.tpl-fitness-app-landing-c75d .hero-title span{
+  color: var(--orange);
+}
+.tpl-fitness-app-landing-c75d .hero-title .lime{ color: var(--lime); }
+.tpl-fitness-app-landing-c75d .hero-sub{
+  max-width: 34rem;
+  margin-top: 1.4rem;
+  font-size: 1.05rem;
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .hero-stats{
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 2rem;
+}
+.tpl-fitness-app-landing-c75d .hero-stat strong{
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+  color: var(--white);
+}
+.tpl-fitness-app-landing-c75d .hero-stat strong em{
+  font-style: normal;
+  color: var(--orange);
+}
+.tpl-fitness-app-landing-c75d .hero-stat span{
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .hero-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+.tpl-fitness-app-landing-c75d .hero-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+.tpl-fitness-app-landing-c75d .store-badge{
+  display: inline-block;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform var(--transition-fast), border-color var(--transition), box-shadow var(--transition);
+}
+.tpl-fitness-app-landing-c75d .store-badge img{
+  width: auto;
+  height: 52px;
+}
+.tpl-fitness-app-landing-c75d .store-badge:hover{
+  transform: translateY(-3px);
+  border-color: var(--orange);
+  box-shadow: var(--glow-orange);
+}
+.tpl-fitness-app-landing-c75d .hero-mockup{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.tpl-fitness-app-landing-c75d .hero-mockup .phone{
+  width: clamp(220px, 26vw, 300px);
+  filter: drop-shadow(0 30px 60px rgba(255, 107, 44, 0.25));
+  animation: floaty 5.5s ease-in-out infinite;
+}
+.tpl-fitness-app-landing-c75d .hero-pulse{
+  position: absolute;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius-full);
+  font-size: 1.05rem;
+  line-height: 1;
+  box-shadow: var(--shadow-md);
+  animation: floaty 6s ease-in-out infinite;
+}
+.tpl-fitness-app-landing-c75d .hero-pulse--top{
+  top: 6%;
+  left: 2%;
+  background: var(--lime);
+  color: var(--black);
+  animation-delay: -1.5s;
+}
+.tpl-fitness-app-landing-c75d .hero-pulse--bottom{
+  bottom: 8%;
+  right: 4%;
+  background: var(--orange);
+  color: var(--white);
+  animation-delay: -3s;
+}
+@keyframes floaty{
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.tpl-fitness-app-landing-c75d .section{
+  position: relative;
+  padding-block: var(--space-2xl);
+}
+.tpl-fitness-app-landing-c75d .section--alt{ background: var(--black-soft); }
+.tpl-fitness-app-landing-c75d .section--deep{ background: var(--black-deep); }
+.tpl-fitness-app-landing-c75d .section-head{
+  max-width: 44rem;
+  margin-bottom: var(--space-xl);
+}
+.tpl-fitness-app-landing-c75d .section-head--center{
+  margin-inline: auto;
+  text-align: center;
+}
+.tpl-fitness-app-landing-c75d .section-kicker{
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.9rem;
+}
+.tpl-fitness-app-landing-c75d .section-title{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.tpl-fitness-app-landing-c75d .section-title span{ color: var(--orange); }
+.tpl-fitness-app-landing-c75d .section-title .lime{ color: var(--lime); }
+.tpl-fitness-app-landing-c75d .section-lead{
+  color: var(--gray);
+  max-width: 40rem;
+}
+.tpl-fitness-app-landing-c75d .features-grid{
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: var(--space-xl);
+}
+.tpl-fitness-app-landing-c75d .features-visual{
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 8 / 5;
+  box-shadow: var(--shadow-lg);
+}
+.tpl-fitness-app-landing-c75d .features-visual img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-fitness-app-landing-c75d .features-visual::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(11, 11, 15, 0.05) 30%, rgba(11, 11, 15, 0.72) 100%);
+}
+.tpl-fitness-app-landing-c75d .features-visual .visual-tag{
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(6, 6, 8, 0.72);
+  border: 1px solid var(--line-strong);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.tpl-fitness-app-landing-c75d .features-visual .visual-tag em{
+  font-style: normal;
+  color: var(--lime);
+}
+.tpl-fitness-app-landing-c75d .features-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: var(--space-md);
+}
+.tpl-fitness-app-landing-c75d .feature-card{
+  background: var(--black-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.3rem;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.tpl-fitness-app-landing-c75d .feature-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 44, 0.55);
+  box-shadow: var(--glow-orange);
+}
+.tpl-fitness-app-landing-c75d .feature-card__icon{
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.9rem;
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+.tpl-fitness-app-landing-c75d .feature-card:nth-child(even) .feature-card__icon{
+  background: var(--lime-soft);
+  color: var(--lime);
+}
+.tpl-fitness-app-landing-c75d .feature-card h4{
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+.tpl-fitness-app-landing-c75d .feature-card p{
+  font-size: var(--fs-sm);
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-xl);
+}
+.tpl-fitness-app-landing-c75d .about-image{
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow: var(--shadow-lg);
+}
+.tpl-fitness-app-landing-c75d .about-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-fitness-app-landing-c75d .about-image .about-frame{
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  margin: 1rem;
+  pointer-events: none;
+}
+.tpl-fitness-app-landing-c75d .about-content .section-title{ margin-bottom: 1.1rem; }
+.tpl-fitness-app-landing-c75d .about-content > p{
+  margin-bottom: 1.6rem;
+  max-width: 32rem;
+}
+.tpl-fitness-app-landing-c75d .about-points{
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+.tpl-fitness-app-landing-c75d .about-points li{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.tpl-fitness-app-landing-c75d .point-icon{
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  margin-top: 0.15rem;
+  border-radius: 50%;
+  background: var(--lime);
+  color: var(--black);
+  display: grid;
+  place-items: center;
+}
+.tpl-fitness-app-landing-c75d .point-icon svg{ width: 13px; height: 13px; }
+.tpl-fitness-app-landing-c75d .about-points strong{
+  display: block;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.tpl-fitness-app-landing-c75d .about-points p{
+  font-size: var(--fs-sm);
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .about-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.6rem, 4vw, 3rem);
+}
+.tpl-fitness-app-landing-c75d .about-meta strong{
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1;
+  color: var(--white);
+}
+.tpl-fitness-app-landing-c75d .about-meta strong em{ font-style: normal; color: var(--orange); }
+.tpl-fitness-app-landing-c75d .about-meta span{
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .subscribe{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+}
+.tpl-fitness-app-landing-c75d .subscribe-bg{
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.tpl-fitness-app-landing-c75d .subscribe-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-fitness-app-landing-c75d .subscribe-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, rgba(6, 6, 8, 0.92) 0%, rgba(20, 20, 27, 0.88) 55%, rgba(255, 107, 44, 0.35) 100%);
+}
+.tpl-fitness-app-landing-c75d .subscribe .container{
+  max-width: 44rem;
+}
+.tpl-fitness-app-landing-c75d .subscribe .section-title{
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  margin-bottom: 0.9rem;
+}
+.tpl-fitness-app-landing-c75d .subscribe .section-lead{ margin-inline: auto; }
+.tpl-fitness-app-landing-c75d .form{
+  margin-top: 2.2rem;
+  text-align: left;
+}
+.tpl-fitness-app-landing-c75d .form-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: stretch;
+  justify-content: center;
+}
+.tpl-fitness-app-landing-c75d .form-group{
+  flex: 1 1 22rem;
+  min-width: 0;
+}
+.tpl-fitness-app-landing-c75d .form-label{
+  display: block;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.tpl-fitness-app-landing-c75d .form-input, .tpl-fitness-app-landing-c75d .form-textarea{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-full);
+  padding: 0.95rem 1.4rem;
+  color: var(--white);
+  font-size: 0.98rem;
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+}
+.tpl-fitness-app-landing-c75d .form-input::placeholder, .tpl-fitness-app-landing-c75d .form-textarea::placeholder{ color: rgba(156, 163, 175, 0.75); }
+.tpl-fitness-app-landing-c75d .form-input:focus, .tpl-fitness-app-landing-c75d .form-textarea:focus{
+  outline: none;
+  border-color: var(--orange);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(255, 107, 44, 0.18);
+}
+.tpl-fitness-app-landing-c75d .form-textarea{
+  border-radius: var(--radius-md);
+  resize: vertical;
+  min-height: 130px;
+}
+.tpl-fitness-app-landing-c75d .form-ok, .tpl-fitness-app-landing-c75d .form-err{
+  display: none;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.tpl-fitness-app-landing-c75d .form-ok.show, .tpl-fitness-app-landing-c75d .form-err.show{ display: block; }
+.tpl-fitness-app-landing-c75d .form-ok{
+  background: var(--lime-soft);
+  border: 1px solid rgba(198, 244, 50, 0.5);
+  color: var(--lime);
+}
+.tpl-fitness-app-landing-c75d .form-err{
+  background: rgba(239, 68, 68, 0.14);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #F87171;
+}
+.tpl-fitness-app-landing-c75d .footer{
+  background: var(--black-deep);
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-xl);
+  padding-bottom: 2rem;
+}
+.tpl-fitness-app-landing-c75d .footer-grid{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--line);
+}
+.tpl-fitness-app-landing-c75d .footer h4{
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.tpl-fitness-app-landing-c75d .footer .footer-about{
+  max-width: 20rem;
+  font-size: var(--fs-sm);
+  margin-top: 0.9rem;
+}
+.tpl-fitness-app-landing-c75d .footer .footer-logo{
+  margin-bottom: 0.4rem;
+}
+.tpl-fitness-app-landing-c75d .footer h5{
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.22em;
+  color: var(--orange);
+  margin-bottom: 1.1rem;
+}
+.tpl-fitness-app-landing-c75d .footer ul{
+  display: grid;
+  gap: 0.55rem;
+}
+.tpl-fitness-app-landing-c75d .footer ul a{
+  font-size: var(--fs-sm);
+  color: var(--gray);
+  transition: color var(--transition-fast), padding-left var(--transition);
+}
+.tpl-fitness-app-landing-c75d .footer ul a:hover{
+  color: var(--lime);
+  padding-left: 0.4rem;
+}
+.tpl-fitness-app-landing-c75d .footer-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.tpl-fitness-app-landing-c75d .footer-badges .store-badge img{ height: 44px; }
+.tpl-fitness-app-landing-c75d .footer-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-top: 1.6rem;
+  font-size: var(--fs-xs);
+  color: var(--gray);
+}
+.tpl-fitness-app-landing-c75d .footer-bottom a{ color: var(--white); }
+.tpl-fitness-app-landing-c75d .footer-bottom a:hover{ color: var(--orange); }
+.tpl-fitness-app-landing-c75d .back-to-top{
+  position: fixed;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  z-index: 90;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--black);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--glow-orange);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition), background var(--transition);
+}
+.tpl-fitness-app-landing-c75d .back-to-top svg{ width: 20px; height: 20px; }
+.tpl-fitness-app-landing-c75d .back-to-top.show{
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.tpl-fitness-app-landing-c75d .back-to-top:hover{ background: var(--lime); }
+.tpl-fitness-app-landing-c75d .page-hero{
+  position: relative;
+  padding-block: clamp(5rem, 12vw, 8rem);
+  text-align: center;
+  isolation: isolate;
+  overflow: hidden;
+}
+.tpl-fitness-app-landing-c75d .page-hero .container{ max-width: 44rem; }
+.tpl-fitness-app-landing-c75d .page-hero .code{
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 18vw, 12rem);
+  line-height: 1;
+  color: var(--orange);
+  text-shadow: 0 20px 60px rgba(255, 107, 44, 0.35);
+}
+.tpl-fitness-app-landing-c75d .page-hero h1{ font-size: var(--fs-h2); margin-bottom: 1rem; }
+.tpl-fitness-app-landing-c75d .page-hero p{ max-width: 34rem; margin: 0 auto 2rem; }
+@media (max-width: 980px){.tpl-fitness-app-landing-c75d .nav-toggle{ display: flex; }
+.tpl-fitness-app-landing-c75d .nav-links{
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    background: rgba(11, 11, 15, 0.98);
+    border-bottom: 1px solid var(--line);
+    padding: 1.2rem 1.5rem 1.5rem;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+  }
+.tpl-fitness-app-landing-c75d .nav-links.open{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+.tpl-fitness-app-landing-c75d .nav-links a{ padding: 0.8rem 0.4rem; font-size: 1rem; }
+.tpl-fitness-app-landing-c75d .nav-link::after{ display: none; }
+.tpl-fitness-app-landing-c75d .nav-cta{ justify-content: center; margin-top: 0.6rem; }
+.tpl-fitness-app-landing-c75d .hero-content{
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+.tpl-fitness-app-landing-c75d .hero-kicker::before{ display: none; }
+.tpl-fitness-app-landing-c75d .hero-mockup{ order: -1; }
+.tpl-fitness-app-landing-c75d .hero-mockup .phone{ width: clamp(180px, 30vw, 240px); }
+.tpl-fitness-app-landing-c75d .features-grid, .tpl-fitness-app-landing-c75d .about-grid{
+    grid-template-columns: 1fr;
+  }
+.tpl-fitness-app-landing-c75d .features-visual{ aspect-ratio: 16 / 10; }
+.tpl-fitness-app-landing-c75d .about-image{ max-width: 38rem; }
+.tpl-fitness-app-landing-c75d .footer-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+.tpl-fitness-app-landing-c75d .footer-col:first-child{ grid-column: 1 / -1; }}
+@media (max-width: 720px){.tpl-fitness-app-landing-c75d{ --header-height: 70px; }
+.tpl-fitness-app-landing-c75d .hero{ min-height: auto; }
+.tpl-fitness-app-landing-c75d .hero-title{ font-size: clamp(2.9rem, 13vw, 4rem); }
+.tpl-fitness-app-landing-c75d .hero-actions .btn{ width: 100%; }
+.tpl-fitness-app-landing-c75d .hero-badges{ justify-content: center; }
+.tpl-fitness-app-landing-c75d .hero-badges .store-badge img{ height: 46px; }
+.tpl-fitness-app-landing-c75d .hero-pulse{ font-size: 0.9rem; padding: 0.55rem 0.95rem; }
+.tpl-fitness-app-landing-c75d .hero-pulse--top{ top: 0; left: -2%; }
+.tpl-fitness-app-landing-c75d .hero-pulse--bottom{ bottom: 4%; right: -2%; }
+.tpl-fitness-app-landing-c75d .features-list{ grid-template-columns: 1fr; }
+.tpl-fitness-app-landing-c75d .section-head--center .section-lead{ margin-inline: auto; }
+.tpl-fitness-app-landing-c75d .about-meta{ gap: 1.8rem; }
+.tpl-fitness-app-landing-c75d .footer-grid{ grid-template-columns: 1fr; gap: var(--space-md); }
+.tpl-fitness-app-landing-c75d .footer-col:first-child{ grid-column: auto; }
+.tpl-fitness-app-landing-c75d .footer-bottom{ flex-direction: column; text-align: center; justify-content: center; }
+.tpl-fitness-app-landing-c75d .form-row{ flex-direction: column; }
+.tpl-fitness-app-landing-c75d .form-row .btn{ width: 100%; }}
+@media (prefers-reduced-motion: reduce){.tpl-fitness-app-landing-c75d{ scroll-behavior: auto; }
+.tpl-fitness-app-landing-c75d *, .tpl-fitness-app-landing-c75d *::before, .tpl-fitness-app-landing-c75d *::after{
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+.tpl-fitness-app-landing-c75d .reveal{
+    opacity: 1;
+    transform: none;
+  }}
+@media print{.tpl-fitness-app-landing-c75d .header, .tpl-fitness-app-landing-c75d .hero, .tpl-fitness-app-landing-c75d .back-to-top, .tpl-fitness-app-landing-c75d .nav-toggle, .tpl-fitness-app-landing-c75d .subscribe{ display: none !important; }
+.tpl-fitness-app-landing-c75d{ background: #fff; color: #111; }
+.tpl-fitness-app-landing-c75d .section{ padding: 1.5rem 0; }
+.tpl-fitness-app-landing-c75d h1, .tpl-fitness-app-landing-c75d h2, .tpl-fitness-app-landing-c75d h3, .tpl-fitness-app-landing-c75d h4{ color: #111; }
+.tpl-fitness-app-landing-c75d .form-input, .tpl-fitness-app-landing-c75d .form-textarea{ border: 1px solid #ccc; color: #111; }}

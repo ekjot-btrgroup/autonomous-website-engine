@@ -1,0 +1,126 @@
+{
+  "id": "ice-cream-shop-3c5b",
+  "name": "Ice Cream Shop",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "ice-cream-shop-html-template",
+    "format": "html-page",
+    "hash": "3c5b0371c4a8f6e6cb3541e615ace432ef247a2b4a3afdd2adf391a89a31ce14",
+    "original": "test-templates/uiuxlabz/ice-cream-shop-html-template",
+    "repo": "https://github.com/uiuxlabz/ice-cream-shop-html-template",
+    "group": "uiuxlabz",
+    "commit": "b0c2ba69fccea1c571238ab19aca00ba141dd393"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Sweeten your day with a scoop of joy",
+      "Churned with care, served with a smile",
+      "A little parlour with big dreams",
+      "Freshly churned favourites",
+      "Sunday Sundae $6.90",
+      "Scoops worth a second look"
+    ],
+    "ctas": [
+      "Order a Scoop",
+      "Explore the Menu 🍦",
+      "Our Story",
+      "Meet the Team"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#fff8f0",
+      "#fff1f5",
+      "#3b2430",
+      "#6b5160",
+      "#967d89"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fredoka",
+      "Nunito"
+    ],
+    "images": 22,
+    "motion": true,
+    "lines": 1012,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#fff8f0",
+        "#fff1f5",
+        "#3b2430",
+        "#6b5160",
+        "#967d89"
+      ],
+      "radius_px": 3,
+      "gradients": 8,
+      "shadows": 21,
+      "keyframes": 1,
+      "transitions": 16,
+      "uppercase": 2,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "playful",
+      "soft",
+      "illustrative"
+    ],
+    "tone": 1,
+    "energy": 3,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 5,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales",
+      "info"
+    ],
+    "origin": [
+      "restaurant"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Pastel parlour page with rounded Fredoka type",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:43.260489Z"
+}

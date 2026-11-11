@@ -5,7 +5,8 @@
   "fresh_slots": 2,
   "max_per_section_type": 3,
   "lovable": {
-    "enabled": false,
-    "_note": "false = Lovable parked: skills skip pushes to Lovable and show shortlists as a contact sheet image (npm run sheet)."
+    "showcase": false,
+    "sites": true,
+    "_note": "showcase=false: never push the showcase/library to Lovable (results shown with npm run sheet). sites=true: a built client site may be pushed to its own new Lovable project via GitHub sync (0 Lovable credits)."
   }
 }

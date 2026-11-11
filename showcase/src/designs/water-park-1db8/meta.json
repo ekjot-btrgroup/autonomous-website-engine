@@ -1,0 +1,145 @@
+{
+  "id": "water-park-1db8",
+  "name": "Water Park",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "water-park-html-template",
+    "format": "html-page",
+    "hash": "1db8a9ce9d0afcba87dee655865231a206124a0a009072508007e39673f971c7",
+    "original": "test-templates/uiuxlabz/water-park-html-template",
+    "repo": "https://github.com/uiuxlabz/water-park-html-template",
+    "group": "uiuxlabz",
+    "commit": "cc80f9b0c91855ae3ac90c383b8afc13bf67a4ca"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "features",
+    "about",
+    "stats",
+    "pricing",
+    "blog",
+    "team",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Make a Splash at SPLASHWAVE",
+      "Rides Worth the Scream",
+      "Where Every Wave Ends in a Smile",
+      "Pick Your Pass",
+      "Fresh from the Waterfront",
+      "The People Behind the Waves"
+    ],
+    "ctas": [
+      "Buy Tickets",
+      "Explore Attractions",
+      "Our Story",
+      "Buy Day Pass"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#00b4d8",
+      "#0096b7",
+      "#023e8a",
+      "#01295e",
+      "#ffc300"
+    ],
+    "dark": null,
+    "fonts": [
+      "Baloo 2",
+      "Quicksand"
+    ],
+    "images": 13,
+    "motion": true,
+    "lines": 1042,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#00b4d8",
+        "#0096b7",
+        "#023e8a",
+        "#01295e",
+        "#ffc300"
+      ],
+      "radius_px": 8,
+      "gradients": 6,
+      "shadows": 37,
+      "keyframes": 0,
+      "transitions": 25,
+      "uppercase": 2,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "stats",
+      "pricing",
+      "blog",
+      "team",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "playful",
+      "bold",
+      "modern"
+    ],
+    "tone": 1,
+    "energy": 5,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales",
+      "info"
+    ],
+    "origin": [
+      "events",
+      "hospitality"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "stats",
+      "pricing",
+      "blog",
+      "team",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Bright aqua water park, rounded fonts",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:09.497213Z"
+}

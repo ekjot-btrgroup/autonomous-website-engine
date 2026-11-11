@@ -1,0 +1,130 @@
+{
+  "id": "investment-consulting-0715",
+  "name": "Investment Consulting",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "investment-consulting-html-template",
+    "format": "html-page",
+    "hash": "07151038fd56bc9a65be44c39783c96e6f8d96ccddcb1d3626baea74f6e89e3c",
+    "original": "test-templates/uiuxlabz/investment-consulting-html-template",
+    "repo": "https://github.com/uiuxlabz/investment-consulting-html-template",
+    "group": "uiuxlabz",
+    "commit": "2353e2941f6566c3ace6d96bf97cebdb3240eddd"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Wealth, managed with patience and precision.",
+      "One firm, every decision.",
+      "A calm process, followed every time.",
+      "How we've helped families and founders.",
+      "What our clients tell us.",
+      "Recent insights."
+    ],
+    "ctas": [
+      "Book a Consultation",
+      "Book a consultation",
+      "View our track record",
+      "Review allocation"
+    ],
+    "texts": [],
+    "colors": [
+      "#faf8f2",
+      "#f2ede2",
+      "#15352c",
+      "#0e2420",
+      "#1e4a3d",
+      "#c09a3e"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fraunces",
+      "Manrope"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 1162,
+    "css": {
+      "palette": [
+        "#faf8f2",
+        "#f2ede2",
+        "#15352c",
+        "#0e2420",
+        "#1e4a3d",
+        "#c09a3e"
+      ],
+      "radius_px": 5,
+      "gradients": 2,
+      "shadows": 16,
+      "keyframes": 0,
+      "transitions": 41,
+      "uppercase": 6,
+      "glass": 0
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "elegant",
+      "classic",
+      "editorial"
+    ],
+    "tone": 5,
+    "energy": 1,
+    "luxury": 4,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 2,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "trust"
+    ],
+    "origin": [
+      "finance",
+      "consulting"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Forest green and cream wealth firm, serif",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:46.529289Z"
+}

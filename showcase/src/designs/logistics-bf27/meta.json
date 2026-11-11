@@ -1,0 +1,146 @@
+{
+  "id": "logistics-bf27",
+  "name": "Logistics",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "logistics-html-template",
+    "format": "html-page",
+    "hash": "bf2747f5e48ce20d4d8338ee02f88c41e6c554e535af16c196335d80119407ac",
+    "original": "test-templates/uiuxlabz/logistics-html-template",
+    "repo": "https://github.com/uiuxlabz/logistics-html-template",
+    "group": "uiuxlabz",
+    "commit": "59133235ff0a53c271840ffdcc4e97bb640bf618"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "logos",
+    "services",
+    "process",
+    "stats",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Moving the World, On Time.",
+      "Trusted Logistics Partner Since 1999",
+      "Comprehensive Logistics Solutions",
+      "Track Your Shipment Every Step of the Way",
+      "What Our Clients Say",
+      "Ready to Streamline Your Supply Chain?"
+    ],
+    "ctas": [
+      "Get Quote",
+      "Request a Quote",
+      "Our Services",
+      "Learn More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#ea580c",
+      "#1e293b",
+      "#334155",
+      "#0f172a",
+      "#f97316",
+      "#fb923c"
+    ],
+    "dark": null,
+    "fonts": [
+      "Barlow",
+      "Inter"
+    ],
+    "images": 5,
+    "motion": true,
+    "lines": 1020,
+    "css": {
+      "palette": [
+        "#ea580c",
+        "#1e293b",
+        "#334155",
+        "#0f172a",
+        "#f97316",
+        "#fb923c"
+      ],
+      "radius_px": 2,
+      "gradients": 3,
+      "shadows": 13,
+      "keyframes": 0,
+      "transitions": 67,
+      "uppercase": 4,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "logos",
+      "services",
+      "process",
+      "stats",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "corporate",
+      "bold",
+      "modern"
+    ],
+    "tone": 4,
+    "energy": 3,
+    "luxury": 1,
+    "density": 4,
+    "warmth": 2,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "icons",
+      "logos"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "manufacturing",
+      "local-services"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "logos",
+      "services",
+      "process",
+      "stats",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Orange and slate logistics corporate page",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:48.630163Z"
+}

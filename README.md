@@ -11,6 +11,7 @@ your feedback + picks ──▶ memory ──▶ better, less repetitive shortli
 
 **Start here:** [docs/USER-GUIDE.md](docs/USER-GUIDE.md) (what to say to Claude, step by step).
 **Current state, what is paused, and the Lovable plan:** [docs/PROJECT-STATE.md](docs/PROJECT-STATE.md).
+**End-to-end test script (fresh Sonnet chat):** [docs/TEST-RUN.md](docs/TEST-RUN.md).
 **How matching and memory work:** [docs/ALGORITHM.md](docs/ALGORITHM.md).
 **Admin dashboard (edit tags, notes, preferences in the showcase):** [docs/ADMIN-DASHBOARD.md](docs/ADMIN-DASHBOARD.md).
 **What went to main and how to bring it back:** [docs/releases/](docs/releases/README.md).
@@ -47,6 +48,8 @@ Parallel subagents run only when they save time: tagging more than 40 designs, o
 ## Commands (Claude runs these; listed for reference)
 | Command | Purpose |
 |---|---|
+| `npm run import:pages -- <dir> --group <name>` | Convert full-page HTML templates (one folder each) into page designs: JSX + scoped CSS + compressed images + template JS (zero tokens) |
+| `npm run usage -- --out .. --in .. --cw .. --cr .. --cost ..` | Tokens and cost used by the last message (numbers from get_session) |
 | `npm run add` | Import everything in `incoming/`; a zip or folder holding many designs becomes many designs (`--offline`, `--keep`, `--converted <id>`) |
 | `npm run showcase:check -- --smoke` | Install + build the showcase, render every design, flag broken ones |
 | `npm run tag -- queue / apply <file> / list` | Tagging round trip (`--limit 40 --offset 0` for batches) |

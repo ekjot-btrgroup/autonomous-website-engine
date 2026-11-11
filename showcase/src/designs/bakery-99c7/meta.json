@@ -1,0 +1,144 @@
+{
+  "id": "bakery-99c7",
+  "name": "Bakery",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "bakery-html-template",
+    "format": "html-page",
+    "hash": "99c7d646040117d48f39ab4dbe41b39f2f6b4dbc4667a32ea1f3637151854f9c",
+    "original": "test-templates/uiuxlabz/bakery-html-template",
+    "repo": "https://github.com/uiuxlabz/bakery-html-template",
+    "group": "uiuxlabz",
+    "commit": "4f92835e7e518a686d797aa042a3bae0af9135a4"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "about",
+    "pricing",
+    "services",
+    "testimonials",
+    "team",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Baked fresh, every single morning.",
+      "This week’s favourites",
+      "Where tradition meets the neighbourhood",
+      "Services & custom orders",
+      "Loved by our community",
+      "The hands behind the hearth"
+    ],
+    "ctas": [
+      "Order Now",
+      "Browse Our Bakes",
+      "Our Story",
+      "View Full Menu"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#5c3a21",
+      "#7a957a",
+      "#d4a054",
+      "#d4934a",
+      "#fff8f0"
+    ],
+    "dark": null,
+    "fonts": [
+      "Nunito",
+      "Playfair Display"
+    ],
+    "images": 19,
+    "motion": true,
+    "lines": 1123,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#5c3a21",
+        "#7a957a",
+        "#d4a054",
+        "#d4934a",
+        "#fff8f0"
+      ],
+      "radius_px": 190,
+      "gradients": 12,
+      "shadows": 30,
+      "keyframes": 5,
+      "transitions": 59,
+      "uppercase": 9,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "services",
+      "testimonials",
+      "team",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "cards",
+      "split"
+    ],
+    "style": [
+      "warm",
+      "playful",
+      "organic"
+    ],
+    "tone": 1,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 5,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales",
+      "info"
+    ],
+    "origin": [
+      "restaurant"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "services",
+      "testimonials",
+      "team",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Warm rounded bakery page, lively motion, earthy palette",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:19.287070Z"
+}

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+:root { --primary: #6b4f3a; --accent-color: #d9a441; }
+body { margin: 0; font-family: Inter, sans-serif; color: #222; background: #fffaf3; }
+.hero { background-size: cover; color: var(--primary); }
+.btn, a.btn:hover { background: var(--primary); color: #fff; border-radius: 12px; }
+@media (max-width: 600px) { .hero h1 { font-size: 28px; } }
+@keyframes fade { from { opacity: 0 } to { opacity: 1 } }

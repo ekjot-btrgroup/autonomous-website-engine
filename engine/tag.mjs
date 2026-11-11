@@ -25,10 +25,13 @@ if (cmd === 'queue') {
   console.log(`# axes 1-5: ${AXES.map((x) => `${x} (${v.axes[x]})`).join('; ')}`);
   console.log('# One JSON array to a file, one object per design (omit fields you cannot judge; scheme/typography/motion/image_need default from code):');
   console.log('# {"id","category","also":[],"layout":[<=2],"style":[<=3],"tone":n,"energy":n,"luxury":n,"density":n,"warmth":n,"modernity":n,"media":[],"image_need":0-2,"goals":[<=3],"origin":[<=2],"quality":1-5,"note":"<=12 words"}');
+  console.log('# Full pages (kind page): category "page"; judge the whole page; css = radius px, gradients, shadows, keyframes, glass, uppercase counts.');
   console.log('# then: npm run tag -- apply <file>');
   for (const m of batch) {
     const s = m.summary || {};
-    const line = { id: m.id, guess: m.guess?.category, h: s.headings, cta: s.ctas, t: s.texts?.slice(0, 4), colors: s.colors, dark: s.dark, fonts: s.fonts?.length ? s.fonts : undefined, img: s.images, motion: s.motion || undefined, lines: s.lines };
+    const line = m.kind === 'page'
+      ? { id: m.id, name: m.name, kind: 'page', sections: m.page_sections, h: s.headings?.slice(0, 3), cta: s.ctas?.slice(0, 3), colors: s.colors?.slice(0, 5), dark: s.dark, fonts: s.fonts, img: s.images, motion: s.motion || undefined, css: s.css }
+      : { id: m.id, guess: m.guess?.category, h: s.headings, cta: s.ctas, t: s.texts?.slice(0, 4), colors: s.colors, dark: s.dark, fonts: s.fonts?.length ? s.fonts : undefined, img: s.images, motion: s.motion || undefined, lines: s.lines };
     console.log(JSON.stringify(line, (k, val) => (Array.isArray(val) && !val.length ? undefined : val)));
   }
 } else if (cmd === 'apply') {

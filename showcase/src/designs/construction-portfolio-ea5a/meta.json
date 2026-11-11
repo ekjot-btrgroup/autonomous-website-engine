@@ -1,0 +1,139 @@
+{
+  "id": "construction-portfolio-ea5a",
+  "name": "Construction Portfolio",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "construction-portfolio-html-template",
+    "format": "html-page",
+    "hash": "ea5a4b0f172ed1492ecebbcd8fc56777235b3eb20943783218b536f5f2d9f84a",
+    "original": "test-templates/uiuxlabz/construction-portfolio-html-template",
+    "repo": "https://github.com/uiuxlabz/construction-portfolio-html-template",
+    "group": "uiuxlabz",
+    "commit": "74aad8d0404eeacf686612b8fff97fc8c9f7c48a"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "stats",
+    "pricing",
+    "about",
+    "services",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "We Build Structures That Stand the Test of Time",
+      "Milestones That Define Us",
+      "Crafting Spaces Where Life Happens",
+      "Construction Services",
+      "From the Field",
+      "Ready to Start Your Next Project?"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Start Your Project",
+      "Our Story",
+      "Learn More"
+    ],
+    "texts": [],
+    "colors": [
+      "#2d2d2d",
+      "#faf6f0",
+      "#8b6f47",
+      "#c45a3c",
+      "#d4c5a9",
+      "#ffffff"
+    ],
+    "dark": null,
+    "fonts": [
+      "DM Serif Display",
+      "Source Sans 3",
+      "Space Mono"
+    ],
+    "images": 17,
+    "motion": true,
+    "lines": 940,
+    "css": {
+      "palette": [
+        "#2d2d2d",
+        "#faf6f0",
+        "#8b6f47",
+        "#c45a3c",
+        "#d4c5a9",
+        "#ffffff"
+      ],
+      "radius_px": 0,
+      "gradients": 1,
+      "shadows": 12,
+      "keyframes": 0,
+      "transitions": 52,
+      "uppercase": 15,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "pricing",
+      "about",
+      "services",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "split"
+    ],
+    "style": [
+      "editorial",
+      "warm",
+      "classic"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 3,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "leads"
+    ],
+    "origin": [
+      "construction",
+      "architecture"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "pricing",
+      "about",
+      "services",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Earthy construction portfolio, DM Serif, sharp corners",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:28.695521Z"
+}

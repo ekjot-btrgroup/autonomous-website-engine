@@ -1,0 +1,1363 @@
+/* assets/css/style.css (scoped to .tpl-investment-consulting-0715) */
+.tpl-investment-consulting-0715{
+  --clr-ivory: #faf8f2;
+  --clr-sand: #f2ede2;
+  --clr-pine: #15352c;
+  --clr-pine-deep: #0e2420;
+  --clr-pine-mid: #1e4a3d;
+  --clr-brass: #c09a3e;
+  --clr-brass-soft: #e5d5a8;
+  --clr-brass-dark: #a07f2e;
+  --clr-ink: #1a3a31;
+  --clr-text: #5a6d64;
+  --clr-text-soft: #7d8e85;
+  --clr-mist: #eef1ec;
+  --clr-line: #d8ddd6;
+  --clr-white: #ffffff;
+  --clr-dark: #0f1a16;
+  --clr-err: #b34a3a;
+
+  --ff-display: 'Fraunces', Georgia, serif;
+  --ff-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3.25rem;
+
+  --container: 1200px;
+  --gap: 2rem;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-pill: 999px;
+  --transition: 0.3s ease;
+}
+.tpl-investment-consulting-0715 *, .tpl-investment-consulting-0715 *::before, .tpl-investment-consulting-0715 *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.tpl-investment-consulting-0715{
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+.tpl-investment-consulting-0715{
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--clr-text);
+  background: var(--clr-ivory);
+  -webkit-font-smoothing: antialiased;
+}
+.tpl-investment-consulting-0715 img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.tpl-investment-consulting-0715 a{
+  color: var(--clr-brass);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.tpl-investment-consulting-0715 a:hover{
+  color: var(--clr-brass-dark);
+}
+.tpl-investment-consulting-0715 ul{
+  list-style: none;
+}
+.tpl-investment-consulting-0715 .container{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+.tpl-investment-consulting-0715 .sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+.tpl-investment-consulting-0715 .skip-link{
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--clr-white);
+  color: var(--clr-ink);
+  padding: 0.5rem 1rem;
+  z-index: 10000;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+.tpl-investment-consulting-0715 .skip-link:focus{
+  top: 0.5rem;
+}
+.tpl-investment-consulting-0715 h1, .tpl-investment-consulting-0715 h2, .tpl-investment-consulting-0715 h3, .tpl-investment-consulting-0715 h4, .tpl-investment-consulting-0715 h5, .tpl-investment-consulting-0715 h6{
+  font-family: var(--ff-display);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--clr-ink);
+}
+.tpl-investment-consulting-0715 h1 em, .tpl-investment-consulting-0715 h2 em, .tpl-investment-consulting-0715 h3 em{
+  font-style: italic;
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 h1{ font-size: var(--fs-5xl); }
+.tpl-investment-consulting-0715 h2{ font-size: var(--fs-4xl); }
+.tpl-investment-consulting-0715 h3{ font-size: var(--fs-2xl); }
+.tpl-investment-consulting-0715 p{ margin-bottom: 1rem; }
+.tpl-investment-consulting-0715 p:last-child{ margin-bottom: 0; }
+.tpl-investment-consulting-0715 .topbar{
+  background: var(--clr-pine-deep);
+  color: var(--clr-brass-soft);
+  font-size: var(--fs-sm);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--clr-pine-mid);
+}
+.tpl-investment-consulting-0715 .topbar-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.tpl-investment-consulting-0715 .topbar-item{
+  margin: 0;
+}
+.tpl-investment-consulting-0715 .topbar-icon{
+  margin-right: 0.35rem;
+}
+.tpl-investment-consulting-0715 .topbar-mid{
+  color: var(--clr-text-soft);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.tpl-investment-consulting-0715 .topbar-end a{
+  color: var(--clr-brass-soft);
+  margin-left: 1.25rem;
+  font-size: var(--fs-sm);
+}
+.tpl-investment-consulting-0715 .topbar-end a:hover{
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .site-header{
+  background: var(--clr-white);
+  border-bottom: 1px solid var(--clr-line);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.tpl-investment-consulting-0715 .nav-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem var(--gap);
+}
+.tpl-investment-consulting-0715 .brand{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--ff-display);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  color: var(--clr-ink);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.tpl-investment-consulting-0715 .brand:hover{
+  color: var(--clr-ink);
+}
+.tpl-investment-consulting-0715 .brand-mark{
+  width: 32px;
+  height: 32px;
+  background: var(--clr-pine);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.tpl-investment-consulting-0715 .brand-mark::after{
+  content: 'C';
+  color: var(--clr-brass);
+  font-family: var(--ff-display);
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  font-style: italic;
+}
+.tpl-investment-consulting-0715 .brand-text span{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .nav-toggle{
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--clr-ink);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.tpl-investment-consulting-0715 .nav-links{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.tpl-investment-consulting-0715 .nav-link{
+  padding: 0.5rem 1rem;
+  color: var(--clr-text);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+}
+.tpl-investment-consulting-0715 .nav-link:hover, .tpl-investment-consulting-0715 .nav-link[aria-current="page"]{
+  background: var(--clr-mist);
+  color: var(--clr-ink);
+}
+.tpl-investment-consulting-0715 .nav-cta{
+  margin-left: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  background: var(--clr-brass);
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background var(--transition);
+}
+.tpl-investment-consulting-0715 .nav-cta:hover{
+  background: var(--clr-brass-dark);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: center;
+  white-space: nowrap;
+}
+.tpl-investment-consulting-0715 .btn-primary{
+  background: var(--clr-brass);
+  color: var(--clr-white);
+  border-color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .btn-primary:hover{
+  background: var(--clr-brass-dark);
+  border-color: var(--clr-brass-dark);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .btn-ghost-light{
+  background: transparent;
+  color: var(--clr-white);
+  border-color: rgba(255,255,255,0.35);
+}
+.tpl-investment-consulting-0715 .btn-ghost-light:hover{
+  border-color: var(--clr-white);
+  background: rgba(255,255,255,0.08);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .btn-ghost-dark{
+  background: transparent;
+  color: var(--clr-ink);
+  border-color: var(--clr-line);
+}
+.tpl-investment-consulting-0715 .btn-ghost-dark:hover{
+  border-color: var(--clr-brass);
+  color: var(--clr-ink);
+}
+.tpl-investment-consulting-0715 .btn-ghost-pine{
+  background: transparent;
+  color: var(--clr-pine);
+  border-color: var(--clr-pine);
+}
+.tpl-investment-consulting-0715 .btn-ghost-pine:hover{
+  background: var(--clr-pine);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .btn-sm{
+  padding: 0.5rem 1.25rem;
+  font-size: var(--fs-xs);
+}
+.tpl-investment-consulting-0715 .hero{
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--clr-pine-deep);
+}
+.tpl-investment-consulting-0715 .hero-bg{
+  position: absolute;
+  inset: 0;
+}
+.tpl-investment-consulting-0715 .hero-bg img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.tpl-investment-consulting-0715 .hero-bg img.active{
+  opacity: 1;
+}
+.tpl-investment-consulting-0715 .hero-shade{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15,26,22,0.85) 0%, rgba(15,26,22,0.5) 50%, rgba(15,26,22,0.35) 100%);
+  z-index: 1;
+}
+.tpl-investment-consulting-0715 .hero-inner{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem var(--gap);
+}
+.tpl-investment-consulting-0715 .hero-copy{
+  flex: 1 1 55%;
+  max-width: 620px;
+}
+.tpl-investment-consulting-0715 .hero-eyebrow{
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-brass);
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .hero-copy h1{
+  color: var(--clr-white);
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  margin-bottom: 1.25rem;
+}
+.tpl-investment-consulting-0715 .hero-sub{
+  color: rgba(255,255,255,0.7);
+  font-size: var(--fs-lg);
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+.tpl-investment-consulting-0715 .hero-actions{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tpl-investment-consulting-0715 .snapshot-card{
+  flex: 0 0 340px;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.tpl-investment-consulting-0715 .snap-head{
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-line);
+}
+.tpl-investment-consulting-0715 .snap-label{
+  font-family: var(--ff-display);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  color: var(--clr-ink);
+  margin-bottom: 0.15rem;
+}
+.tpl-investment-consulting-0715 .snap-meta{
+  font-size: var(--fs-xs);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .snap-alloc{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.tpl-investment-consulting-0715 .alloc-row{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tpl-investment-consulting-0715 .alloc-label{
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--clr-text);
+  min-width: 80px;
+}
+.tpl-investment-consulting-0715 .alloc-track{
+  flex: 1;
+  height: 8px;
+  background: var(--clr-mist);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.tpl-investment-consulting-0715 .alloc-fill{
+  display: block;
+  height: 100%;
+  width: var(--alloc);
+  background: var(--clr-pine);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+.tpl-investment-consulting-0715 .alloc-fill.fill-gold{
+  background: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .alloc-fill.fill-mist{
+  background: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .alloc-fill.fill-line{
+  background: var(--clr-line);
+}
+.tpl-investment-consulting-0715 .alloc-val{
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--clr-ink);
+  min-width: 36px;
+  text-align: right;
+}
+.tpl-investment-consulting-0715 .snap-foot{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clr-line);
+}
+.tpl-investment-consulting-0715 .snap-stat{
+  text-align: left;
+}
+.tpl-investment-consulting-0715 .snap-num{
+  display: block;
+  font-family: var(--ff-display);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  color: var(--clr-pine);
+  line-height: 1.2;
+}
+.tpl-investment-consulting-0715 .snap-desc{
+  font-size: var(--fs-xs);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .snap-foot .btn{
+  margin-left: auto;
+}
+.tpl-investment-consulting-0715 .ticker-strip{
+  background: var(--clr-pine);
+  border-top: 1px solid var(--clr-pine-mid);
+  border-bottom: 1px solid var(--clr-pine-mid);
+  padding: 0.75rem 0;
+  overflow: hidden;
+}
+.tpl-investment-consulting-0715 .ticker-inner{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tpl-investment-consulting-0715 .ticker-label{
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--clr-brass);
+  margin: 0;
+}
+.tpl-investment-consulting-0715 .ticker-item{
+  font-family: var(--ff-display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--fs-base);
+  color: var(--clr-brass-soft);
+  margin: 0;
+  position: relative;
+}
+.tpl-investment-consulting-0715 .ticker-item::before{
+  content: '·';
+  position: absolute;
+  left: -1.15rem;
+  color: var(--clr-pine-mid);
+}
+.tpl-investment-consulting-0715 .section{
+  padding: 5rem 0;
+}
+.tpl-investment-consulting-0715 .section-pine{
+  background: var(--clr-pine);
+  color: rgba(255,255,255,0.8);
+}
+.tpl-investment-consulting-0715 .section-pine .section-title, .tpl-investment-consulting-0715 .section-pine h2, .tpl-investment-consulting-0715 .section-pine h3{
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .section-pine .eyebrow{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .section-pine .section-sub{
+  color: rgba(255,255,255,0.6);
+}
+.tpl-investment-consulting-0715 .section-sand{
+  background: var(--clr-sand);
+}
+.tpl-investment-consulting-0715 .section-head{
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+.tpl-investment-consulting-0715 .eyebrow{
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-brass);
+  margin-bottom: 0.75rem;
+}
+.tpl-investment-consulting-0715 .section-title{
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .section-sub{
+  font-size: var(--fs-lg);
+  color: var(--clr-text-soft);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tpl-investment-consulting-0715 .section-cta{
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.tpl-investment-consulting-0715 .strategy-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .strategy-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: box-shadow var(--transition), transform var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.tpl-investment-consulting-0715 .strategy-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.tpl-investment-consulting-0715 .strategy-icon{
+  font-size: 2rem;
+  line-height: 1;
+}
+.tpl-investment-consulting-0715 .strategy-card h3{
+  font-size: var(--fs-lg);
+  margin-bottom: 0;
+}
+.tpl-investment-consulting-0715 .strategy-card p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+  flex: 1;
+}
+.tpl-investment-consulting-0715 .stat-band{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+.tpl-investment-consulting-0715 .stat-item{
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.tpl-investment-consulting-0715 .stat-num{
+  font-family: var(--ff-display);
+  font-weight: 600;
+  font-size: var(--fs-4xl);
+  color: var(--clr-brass);
+  line-height: 1.1;
+}
+.tpl-investment-consulting-0715 .section-pine .stat-num{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .stat-label{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+  font-weight: 500;
+}
+.tpl-investment-consulting-0715 .section-pine .stat-label{
+  color: rgba(255,255,255,0.6);
+}
+.tpl-investment-consulting-0715 .method-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  counter-reset: method;
+}
+.tpl-investment-consulting-0715 .method-step{
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  position: relative;
+  transition: box-shadow var(--transition);
+}
+.tpl-investment-consulting-0715 .method-step:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.tpl-investment-consulting-0715 .method-num{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--clr-pine);
+  color: var(--clr-brass);
+  font-family: var(--ff-display);
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .method-step h3{
+  font-size: var(--fs-lg);
+  margin-bottom: 0.5rem;
+}
+.tpl-investment-consulting-0715 .method-step p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .case-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .case-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.tpl-investment-consulting-0715 .case-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.tpl-investment-consulting-0715 .case-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tpl-investment-consulting-0715 .case-body{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.tpl-investment-consulting-0715 .case-tag{
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--clr-brass);
+  margin-bottom: 0.25rem;
+}
+.tpl-investment-consulting-0715 .case-body h3{
+  font-size: var(--fs-lg);
+}
+.tpl-investment-consulting-0715 .case-body p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .case-result{
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clr-line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tpl-investment-consulting-0715 .case-result span{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .case-result strong{
+  font-family: var(--ff-display);
+  font-weight: 600;
+  color: var(--clr-pine);
+  font-size: var(--fs-lg);
+}
+.tpl-investment-consulting-0715 .tst-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .tst-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: box-shadow var(--transition);
+}
+.tpl-investment-consulting-0715 .tst-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.tpl-investment-consulting-0715 .tst-head{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tpl-investment-consulting-0715 .tst-avatar{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.tpl-investment-consulting-0715 .tst-head h3{
+  font-size: var(--fs-base);
+  margin-bottom: 0.15rem;
+}
+.tpl-investment-consulting-0715 .tst-role{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+  margin: 0;
+}
+.tpl-investment-consulting-0715 .tst-card > p{
+  font-size: var(--fs-sm);
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--clr-text);
+  flex: 1;
+}
+.tpl-investment-consulting-0715 .blog-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .post-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.tpl-investment-consulting-0715 .post-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.tpl-investment-consulting-0715 .post-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tpl-investment-consulting-0715 .post-body{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tpl-investment-consulting-0715 .post-meta{
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .post-body h3{
+  font-size: var(--fs-lg);
+}
+.tpl-investment-consulting-0715 .post-body h3 a{
+  color: var(--clr-ink);
+  text-decoration: none;
+}
+.tpl-investment-consulting-0715 .post-body h3 a:hover{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .post-body p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+  flex: 1;
+}
+.tpl-investment-consulting-0715 .post-link{
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--clr-brass);
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+.tpl-investment-consulting-0715 .post-link:hover{
+  color: var(--clr-brass-dark);
+}
+.tpl-investment-consulting-0715 .cta-section{
+  background: var(--clr-pine-deep);
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+}
+.tpl-investment-consulting-0715 .cta-inner{
+  max-width: 680px;
+}
+.tpl-investment-consulting-0715 .cta-section .eyebrow{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .cta-title{
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--clr-white);
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .cta-sub{
+  font-size: var(--fs-lg);
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 2rem;
+}
+.tpl-investment-consulting-0715 .cta-actions{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tpl-investment-consulting-0715 .page-banner{
+  background: var(--clr-pine);
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.tpl-investment-consulting-0715 .page-banner::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15,26,22,0.4) 0%, transparent 100%);
+}
+.tpl-investment-consulting-0715 .page-banner .container{
+  position: relative;
+  z-index: 1;
+}
+.tpl-investment-consulting-0715 .page-banner .eyebrow{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .page-banner h1{
+  color: var(--clr-white);
+  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 700px;
+  margin: 0 auto 0.75rem;
+}
+.tpl-investment-consulting-0715 .page-banner p{
+  color: rgba(255,255,255,0.65);
+  font-size: var(--fs-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tpl-investment-consulting-0715 .crumb{
+  margin-top: 1.5rem;
+  font-size: var(--fs-sm) !important;
+  color: rgba(255,255,255,0.45) !important;
+}
+.tpl-investment-consulting-0715 .crumb a{
+  color: var(--clr-brass-soft);
+}
+.tpl-investment-consulting-0715 .crumb a:hover{
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.tpl-investment-consulting-0715 .split-reverse .split-media{
+  order: 1;
+}
+.tpl-investment-consulting-0715 .split-reverse .split-copy{
+  order: 0;
+}
+.tpl-investment-consulting-0715 .split-media{
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tpl-investment-consulting-0715 .split-media img{
+  width: 100%;
+  border-radius: var(--radius);
+}
+.tpl-investment-consulting-0715 .exp-badge{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: var(--clr-brass);
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+}
+.tpl-investment-consulting-0715 .exp-num{
+  display: block;
+  font-family: var(--ff-display);
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  line-height: 1;
+}
+.tpl-investment-consulting-0715 .exp-label{
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.04em;
+  margin-top: 0.2rem;
+}
+.tpl-investment-consulting-0715 .split-copy .eyebrow{
+  text-align: left;
+}
+.tpl-investment-consulting-0715 .split-copy .section-title{
+  text-align: left;
+}
+.tpl-investment-consulting-0715 .split-copy p{
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .check-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.tpl-investment-consulting-0715 .check-item{
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: var(--fs-sm);
+  color: var(--clr-text);
+}
+.tpl-investment-consulting-0715 .check-item::before{
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--clr-brass);
+  font-weight: 700;
+}
+.tpl-investment-consulting-0715 .value-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .value-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow var(--transition);
+}
+.tpl-investment-consulting-0715 .value-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.tpl-investment-consulting-0715 .value-card h3{
+  font-size: var(--fs-lg);
+  margin-bottom: 0.75rem;
+  color: var(--clr-pine);
+}
+.tpl-investment-consulting-0715 .value-card p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .team-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.tpl-investment-consulting-0715 .team-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.tpl-investment-consulting-0715 .team-card:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.tpl-investment-consulting-0715 .team-card img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.tpl-investment-consulting-0715 .team-body{
+  padding: 1.25rem;
+  text-align: center;
+}
+.tpl-investment-consulting-0715 .team-body h3{
+  font-size: var(--fs-lg);
+  margin-bottom: 0.25rem;
+}
+.tpl-investment-consulting-0715 .team-role{
+  font-size: var(--fs-sm);
+  color: var(--clr-brass);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.tpl-investment-consulting-0715 .team-body p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.tpl-investment-consulting-0715 .form-card{
+  background: var(--clr-white);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.tpl-investment-consulting-0715 .form-card h3{
+  font-size: var(--fs-xl);
+  margin-bottom: 1.5rem;
+}
+.tpl-investment-consulting-0715 .form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.tpl-investment-consulting-0715 .form-field{
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .form-field label{
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--clr-ink);
+  margin-bottom: 0.35rem;
+}
+.tpl-investment-consulting-0715 .form-field input, .tpl-investment-consulting-0715 .form-field textarea, .tpl-investment-consulting-0715 .form-field select{
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  color: var(--clr-ink);
+  background: var(--clr-ivory);
+  border: 1px solid var(--clr-line);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition);
+}
+.tpl-investment-consulting-0715 .form-field input:focus, .tpl-investment-consulting-0715 .form-field textarea:focus, .tpl-investment-consulting-0715 .form-field select:focus{
+  outline: none;
+  border-color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .form-field textarea{
+  resize: vertical;
+}
+.tpl-investment-consulting-0715 .form-field select{
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6' fill='%235a6d64'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+}
+.tpl-investment-consulting-0715 .form-msg{
+  font-size: var(--fs-sm);
+  margin-top: 0.75rem;
+  display: none;
+}
+.tpl-investment-consulting-0715 .form-msg.show{
+  display: block;
+}
+.tpl-investment-consulting-0715 .form-msg.form-ok{ color: var(--clr-pine); }
+.tpl-investment-consulting-0715 .form-msg.form-err{ color: var(--clr-err); }
+.tpl-investment-consulting-0715 .info-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.tpl-investment-consulting-0715 .info-ico{
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+.tpl-investment-consulting-0715 .info-list h3{
+  font-size: var(--fs-base);
+  margin-bottom: 0.2rem;
+}
+.tpl-investment-consulting-0715 .info-list p{
+  font-size: var(--fs-sm);
+  color: var(--clr-text-soft);
+}
+.tpl-investment-consulting-0715 .map-frame{
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tpl-investment-consulting-0715 .map-frame img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.tpl-investment-consulting-0715 .error-wrap{
+  text-align: center;
+  padding: 3rem 0;
+}
+.tpl-investment-consulting-0715 .error-code{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: clamp(5rem, 12vw, 10rem);
+  color: var(--clr-brass-soft);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .error-wrap h2{
+  margin-bottom: 0.75rem;
+}
+.tpl-investment-consulting-0715 .error-wrap p{
+  color: var(--clr-text-soft);
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+.tpl-investment-consulting-0715 .error-actions{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tpl-investment-consulting-0715 .site-footer{
+  background: var(--clr-dark);
+  color: rgba(255,255,255,0.5);
+  padding: 4rem 0 0;
+  font-size: var(--fs-sm);
+  border-top: 3px solid var(--clr-pine-mid);
+}
+.tpl-investment-consulting-0715 .footer-grid{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+}
+.tpl-investment-consulting-0715 .footer-brand .brand-text{
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .footer-brand .brand-text span{
+  color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .footer-brand .brand-mark{
+  background: var(--clr-pine-mid);
+}
+.tpl-investment-consulting-0715 .footer-col p{
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.5);
+}
+.tpl-investment-consulting-0715 .footer-col h3{
+  font-size: var(--fs-base);
+  font-weight: 600;
+  color: var(--clr-white);
+  margin-bottom: 1rem;
+}
+.tpl-investment-consulting-0715 .footer-social{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.tpl-investment-consulting-0715 .footer-social a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--clr-brass-soft);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  transition: background var(--transition);
+}
+.tpl-investment-consulting-0715 .footer-social a:hover{
+  background: var(--clr-brass);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tpl-investment-consulting-0715 .footer-links a{
+  color: rgba(255,255,255,0.5);
+  font-size: var(--fs-sm);
+}
+.tpl-investment-consulting-0715 .footer-links a:hover{
+  color: var(--clr-brass-soft);
+}
+.tpl-investment-consulting-0715 .footer-contact li{
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.25rem;
+}
+.tpl-investment-consulting-0715 .footer-contact a{
+  color: rgba(255,255,255,0.5);
+}
+.tpl-investment-consulting-0715 .footer-contact a:hover{
+  color: var(--clr-brass-soft);
+}
+.tpl-investment-consulting-0715 .newsletter{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.tpl-investment-consulting-0715 .newsletter input{
+  flex: 1;
+  min-width: 140px;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  color: var(--clr-white);
+}
+.tpl-investment-consulting-0715 .newsletter input::placeholder{
+  color: rgba(255,255,255,0.3);
+}
+.tpl-investment-consulting-0715 .newsletter input:focus{
+  outline: none;
+  border-color: var(--clr-brass);
+}
+.tpl-investment-consulting-0715 .newsletter .form-msg{
+  width: 100%;
+  font-size: var(--fs-xs);
+  margin-top: 0.35rem;
+}
+.tpl-investment-consulting-0715 .newsletter .form-ok{ color: var(--clr-brass-soft); }
+.tpl-investment-consulting-0715 .newsletter .form-err{ color: var(--clr-err); }
+.tpl-investment-consulting-0715 .footer-bottom{
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tpl-investment-consulting-0715 .footer-bottom .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tpl-investment-consulting-0715 .footer-bottom p{
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.35);
+  margin: 0;
+}
+.tpl-investment-consulting-0715 .back-to-top{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clr-brass);
+  color: var(--clr-white);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tpl-investment-consulting-0715 .back-to-top.visible{
+  opacity: 1;
+  visibility: visible;
+}
+.tpl-investment-consulting-0715 .back-to-top:hover{
+  background: var(--clr-brass-dark);
+  transform: translateY(-2px);
+}
+.tpl-investment-consulting-0715 .reveal{
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.tpl-investment-consulting-0715 .reveal.revealed, .tpl-investment-consulting-0715 .reveal.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce){.tpl-investment-consulting-0715 .reveal{ opacity: 1; transform: none; }
+.tpl-investment-consulting-0715 .hero-bg img{ transition: none; }
+.tpl-investment-consulting-0715 .back-to-top{ transition: none; }
+.tpl-investment-consulting-0715 *{ animation-duration: 0.01ms !important; }}
+@media (max-width: 1100px){.tpl-investment-consulting-0715 .snapshot-card{ flex: 0 0 300px; }
+.tpl-investment-consulting-0715 .hero-inner{ gap: 2.5rem; }
+.tpl-investment-consulting-0715 .footer-grid{ grid-template-columns: repeat(2, 1fr); }}
+@media (max-width: 992px){.tpl-investment-consulting-0715 .nav-toggle{ display: block; }
+.tpl-investment-consulting-0715 .nav-links{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--clr-white);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.25rem;
+    border-bottom: 1px solid var(--clr-line);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+.tpl-investment-consulting-0715 .nav-links.open{ display: flex; }
+.tpl-investment-consulting-0715 .nav-cta{ margin-left: 0; }
+.tpl-investment-consulting-0715 .hero-inner{
+    flex-direction: column;
+    padding: 3rem var(--gap);
+    gap: 2rem;
+  }
+.tpl-investment-consulting-0715 .hero-copy{ max-width: 100%; flex: 1 1 auto; }
+.tpl-investment-consulting-0715 .snapshot-card{ flex: 0 0 auto; width: 100%; max-width: 400px; }
+.tpl-investment-consulting-0715 .strategy-grid, .tpl-investment-consulting-0715 .case-grid, .tpl-investment-consulting-0715 .tst-grid, .tpl-investment-consulting-0715 .blog-grid, .tpl-investment-consulting-0715 .value-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-investment-consulting-0715 .method-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-investment-consulting-0715 .team-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-investment-consulting-0715 .split{ grid-template-columns: 1fr; gap: 2rem; }
+.tpl-investment-consulting-0715 .split-reverse .split-media{ order: 0; }
+.tpl-investment-consulting-0715 .split-reverse .split-copy{ order: 1; }
+.tpl-investment-consulting-0715 .contact-grid{ grid-template-columns: 1fr; gap: 2rem; }
+.tpl-investment-consulting-0715 .stat-band{ grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.tpl-investment-consulting-0715 .footer-grid{ gap: 2rem; }}
+@media (max-width: 576px){.tpl-investment-consulting-0715 .section{ padding: 3rem 0; }
+.tpl-investment-consulting-0715 .cta-section{ padding: 3rem 0; }
+.tpl-investment-consulting-0715 .topbar-mid{ display: none; }
+.tpl-investment-consulting-0715 .topbar-end a{ margin-left: 0.75rem; }
+.tpl-investment-consulting-0715 .hero{ min-height: auto; }
+.tpl-investment-consulting-0715 .hero-inner{ padding: 2rem var(--gap); }
+.tpl-investment-consulting-0715 .hero-copy h1{ font-size: var(--fs-3xl); }
+.tpl-investment-consulting-0715 .hero-actions{ flex-direction: column; }
+.tpl-investment-consulting-0715 .hero-actions .btn{ width: 100%; justify-content: center; }
+.tpl-investment-consulting-0715 .strategy-grid, .tpl-investment-consulting-0715 .case-grid, .tpl-investment-consulting-0715 .tst-grid, .tpl-investment-consulting-0715 .blog-grid, .tpl-investment-consulting-0715 .value-grid, .tpl-investment-consulting-0715 .method-grid, .tpl-investment-consulting-0715 .team-grid{ grid-template-columns: 1fr; }
+.tpl-investment-consulting-0715 .stat-band{ grid-template-columns: 1fr; gap: 1.5rem; }
+.tpl-investment-consulting-0715 .section-head{ margin-bottom: 2rem; }
+.tpl-investment-consulting-0715 h1{ font-size: var(--fs-3xl); }
+.tpl-investment-consulting-0715 h2{ font-size: var(--fs-2xl); }
+.tpl-investment-consulting-0715 .footer-grid{ grid-template-columns: 1fr; }
+.tpl-investment-consulting-0715 .footer-bottom .container{ flex-direction: column; text-align: center; }
+.tpl-investment-consulting-0715 .snap-foot{ flex-direction: column; align-items: flex-start; }
+.tpl-investment-consulting-0715 .snap-foot .btn{ margin-left: 0; }
+.tpl-investment-consulting-0715 .form-row{ grid-template-columns: 1fr; }}

@@ -1,0 +1,8 @@
+{
+  "name": "plumbing-html-template",
+  "repo": "https://github.com/uiuxlabz/plumbing-html-template",
+  "design_id": "plumbing-3a82",
+  "license": "see LICENSE (MIT per upstream README)",
+  "note": "Original text files; images stay in the upstream repo at the recorded commit.",
+  "commit": "1a888df7d0f6c4076836faad9c880f8f9354b072"
+}

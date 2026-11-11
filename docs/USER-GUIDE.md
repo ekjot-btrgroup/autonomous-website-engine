@@ -3,7 +3,7 @@
 You never run commands yourself. You talk to Claude in a chat on this repo, and Claude runs the scripts. Each step below says what you do and what Claude does.
 
 ## Quick test without Lovable (current mode)
-Lovable is parked (`lovable.enabled: false` in `engine.config.json`). To test the engine:
+The showcase stays off Lovable (`lovable.showcase: false`); client sites can go to their own new Lovable project (`lovable.sites: true`). Full test script: [TEST-RUN.md](TEST-RUN.md). To test the engine:
 1. Open a **new chat** on this repo and upload one or more zips. A zip may hold 10 or 20 designs (one folder per design, or one file per design). Say: *"Add these designs."*
 2. Say: *"New website for <brand>."* Answer the 3 questions (animations, colours, brand brief).
 3. Claude replies with the top 10. Each design gets a one-line reason it fits your client, and you also get a **contact sheet** image: every design rendered live at desktop and mobile size.

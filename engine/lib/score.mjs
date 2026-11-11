@@ -73,7 +73,13 @@ export function scoreDesign(m, q, mem = buildMemory([])) {
   const reasons = [], parts = {};
   const add = (k, pts, why) => { if (!pts) return; parts[k] = Math.round((parts[k] || 0) + pts); if (why) reasons.push(why); };
 
-  if (q.sections.includes(cat)) add('section', WEIGHTS.section * (t ? 1 : 0.5), `fills the ${cat} section`);
+  if (m.kind === 'page') {
+    // Full page: how much of the brief's page it already covers.
+    const have = t?.sections || m.page_sections || [];
+    const covered = q.sections.filter((x) => have.includes(x));
+    const ratio = q.sections.length ? covered.length / q.sections.length : 0;
+    add('section', WEIGHTS.section * ratio, `full page covering ${covered.length}/${q.sections.length} wanted sections${covered.length < q.sections.length ? ` (missing ${q.sections.filter((x) => !have.includes(x)).slice(0, 3).join(', ')})` : ''}`);
+  } else if (q.sections.includes(cat)) add('section', WEIGHTS.section * (t ? 1 : 0.5), `fills the ${cat} section`);
   else if ((t?.also || []).some((c) => q.sections.includes(c))) add('section', WEIGHTS.sectionAlso, `can serve as ${t.also.find((c) => q.sections.includes(c))}`);
 
   if (t) {
@@ -137,7 +143,11 @@ export function rank(metas, brief, { top = 10, maxPerCategory = 3, freshSlots = 
   const usable = metas.filter(isUsable);
   const scored = usable.map((m) => scoreDesign(m, q, mem)).sort((x, y) => y.score - x.score || x.id.localeCompare(y.id));
   const chosen = [], per = {};
-  const take = (d, why) => { chosen.push({ ...d, why }); per[d.category] = (per[d.category] || 0) + 1; };
+  // Variety key: section type for sections; for full pages the niche they were built for (max 4 pages per niche).
+  const byId = new Map(usable.map((m) => [m.id, m]));
+  const keyOf = (d) => (d.category === 'page' ? `page:${byId.get(d.id)?.tags?.origin?.[0] || byId.get(d.id)?.source?.folder || d.id}` : d.category);
+  const capOf = (d) => (d.category === 'page' ? 4 : maxPerCategory);
+  const take = (d, why) => { chosen.push({ ...d, why }); per[keyOf(d)] = (per[keyOf(d)] || 0) + 1; };
   for (const sec of q.sections) {
     if (chosen.length >= top) break;
     const best = scored.find((d) => d.category === sec && !chosen.some((c) => c.id === d.id));
@@ -145,7 +155,7 @@ export function rank(metas, brief, { top = 10, maxPerCategory = 3, freshSlots = 
   }
   for (const d of scored) {
     if (chosen.length >= top) break;
-    if (!chosen.some((c) => c.id === d.id) && (per[d.category] || 0) < maxPerCategory) take(d, 'score');
+    if (!chosen.some((c) => c.id === d.id) && (per[keyOf(d)] || 0) < capOf(d)) take(d, 'score');
   }
   // Exploration: make sure new designs get seen instead of the same favourites every time.
   const bestScore = scored[0]?.score || 0;

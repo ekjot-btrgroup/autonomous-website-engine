@@ -1,24 +1,90 @@
 {
-  "generated_at": "2026-11-11T12:40:41.487Z",
+  "generated_at": "2026-11-11T13:25:11.928Z",
   "engine_repo": "ekjot-btrgroup/autonomous-website-engine",
   "showcase_url": "https://automated-website-system.lovable.app",
   "sites": [],
-  "briefs": [],
+  "briefs": [
+    {
+      "slug": "zz-probe-spa",
+      "company": "Serene Spa",
+      "niche": "wellness",
+      "style": "calm, minimal, organic, premium",
+      "tone": null,
+      "goals": [
+        "appointments",
+        "trust"
+      ],
+      "sections": [
+        "navbar",
+        "hero",
+        "services",
+        "about",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "animations": "subtle",
+      "scheme": "light",
+      "colors": {},
+      "profile": {
+        "tone": 3,
+        "energy": 1,
+        "luxury": 4,
+        "density": 1,
+        "warmth": 5,
+        "modernity": 3
+      },
+      "picks": 3
+    }
+  ],
   "memory": {
     "counts": {
       "note": 0,
       "pref": 0,
-      "shown": 0,
+      "shown": 1,
       "pick": 0,
       "used": 0
     },
     "picks": [],
     "usage": {},
-    "shown_ids": [],
+    "shown_ids": [
+      "plastic-surgery-c5ad",
+      "spa-wellness-8f4f",
+      "dental-clinic-e882",
+      "beauty-salon-0dbd",
+      "restaurant-c6ae",
+      "hair-salon-1600",
+      "yoga-d2d9",
+      "physical-therapy-8283",
+      "dental-practice-e12b",
+      "architecture-studio-7f70"
+    ],
     "notes": [],
     "prefs": []
   },
   "releases": [
+    {
+      "file": "2026-11-11-1257-test-ready-engine-without-lovable-multi.md",
+      "title": "Test-ready engine without Lovable: multi-design zips, why lines, contact sheet, project state file",
+      "at": "2026-11-11 12:57 UTC",
+      "merge": "4736639",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "38 files changed, 3997 insertions(+), 39 deletions(-)",
+      "commits": [
+        {
+          "sha": "51ef8cf",
+          "subject": "Test-ready without Lovable: multi-design zips, one-line why per design, contact sheet"
+        },
+        {
+          "sha": "497c4cc",
+          "subject": "WIP: paused admin v2 redesign moved to wip/; backend schema SQL saved"
+        },
+        {
+          "sha": "b0b534d",
+          "subject": "Engine snapshot for the admin dashboard; showcase live URL saved"
+        }
+      ]
+    },
     {
       "file": "2026-11-11-1232-showcase-with-admin-dashboard-published.md",
       "title": "Showcase with admin dashboard published to the Lovable repo",

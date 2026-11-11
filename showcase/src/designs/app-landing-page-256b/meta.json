@@ -1,0 +1,135 @@
+{
+  "id": "app-landing-page-256b",
+  "name": "App Landing Page",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "app-landing-page-html-template",
+    "format": "html-page",
+    "hash": "256b1c739dd16bb3f47095944becfdf72e31ba3b9401b9848fd066b170442cdb",
+    "original": "test-templates/uiuxlabz/app-landing-page-html-template",
+    "repo": "https://github.com/uiuxlabz/app-landing-page-html-template",
+    "group": "uiuxlabz",
+    "commit": "e8bef262081597a7d94e5d87e73c7c8731884aca"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "features",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Take charge of your health & fitness , every day",
+      "Everything you need to feel your best",
+      "One app. Your entire wellbeing.",
+      "Loved by thousands",
+      "Start your 14-day free trial"
+    ],
+    "ctas": [
+      "Get the App",
+      "Start Free Today",
+      "Watch Demo",
+      "Get Started Free"
+    ],
+    "texts": [],
+    "colors": [
+      "#7c3aed",
+      "#0d9488",
+      "#100e28",
+      "#1e1b4b",
+      "#c4b5fd",
+      "#332e63"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Poppins"
+    ],
+    "images": 15,
+    "motion": true,
+    "lines": 1120,
+    "css": {
+      "palette": [
+        "#7c3aed",
+        "#0d9488",
+        "#100e28",
+        "#1e1b4b",
+        "#c4b5fd",
+        "#332e63"
+      ],
+      "radius_px": 309,
+      "gradients": 18,
+      "shadows": 29,
+      "keyframes": 1,
+      "transitions": 21,
+      "uppercase": 5,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "gradient",
+      "playful",
+      "modern"
+    ],
+    "tone": 2,
+    "energy": 4,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 5,
+    "media": [
+      "product",
+      "icons"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "download",
+      "signup"
+    ],
+    "origin": [
+      "health",
+      "fitness"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Purple gradient wellness app landing, rounded pills",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:17.624304Z"
+}

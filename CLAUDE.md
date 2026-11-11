@@ -2,7 +2,8 @@
 
 All designs live in ONE Lovable **showcase** project. Brief -> algorithm picks 10 (live links) -> user picks ~3 -> those go into a NEW Lovable project for that client (`sites/<slug>/`, pushed via GitHub). Docs: `README.md`, `docs/USER-GUIDE.md`, `docs/ALGORITHM.md`.
 **Read `docs/PROJECT-STATE.md` first** (what is done, what is paused, the Lovable plan); update it whenever the plan changes.
-**Lovable is parked while `lovable.enabled` is false in `engine.config.json`:** skip every `npm run push`/`pull` to Lovable; show results with `npm run sheet` (contact sheet image) instead.
+**Lovable switches in `engine.config.json`:** `lovable.showcase` false = never push the showcase to Lovable (show shortlists with `npm run sheet`); `lovable.sites` true = a finished client site may be pushed to its own new Lovable project (GitHub sync, 0 Lovable credits). Never use Lovable AI messages (they cost credits).
+**After every reply (main chat only; helper agents skip this), report usage:** call `get_session` (claude-code-remote), then `npm run -s usage -- --out <output_tokens> --in <input_tokens> --cw <cache_write_tokens> --cr <cache_read_tokens> --cost <cost_usd>` with the numbers from `external_metadata.usage`, and end the reply with its two lines.
 
 ## Spend tokens only on judgement
 Scripts do all deterministic work and print compact output. Use `npm run -s <script>`.

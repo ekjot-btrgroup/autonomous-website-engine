@@ -1,0 +1,144 @@
+{
+  "id": "auto-service-2572",
+  "name": "Auto Service",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "auto-service-html-template",
+    "format": "html-page",
+    "hash": "2572bdf494477b761539dd7a7e1c1338aa57d827a38128dca5d8f1b66412fa00",
+    "original": "test-templates/uiuxlabz/auto-service-html-template",
+    "repo": "https://github.com/uiuxlabz/auto-service-html-template",
+    "group": "uiuxlabz",
+    "commit": "00d5580aa18fa751cb80cea194881d86d4001852"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "stats",
+    "services",
+    "about",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Fast, honest auto repair",
+      "Popular Services",
+      "Built on trust, driven by skill",
+      "Meet the Mechanics",
+      "Ready to Get Moving?"
+    ],
+    "ctas": [
+      "Book Now",
+      "View Services",
+      "Book Appointment",
+      "(800) 555-1234"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#1a1e22",
+      "#c8d0d8",
+      "#8ea0b2",
+      "#23282e",
+      "#2e353d"
+    ],
+    "dark": null,
+    "fonts": [
+      "Space Grotesk",
+      "Inter",
+      "JetBrains Mono"
+    ],
+    "images": 9,
+    "motion": true,
+    "lines": 746,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#1a1e22",
+        "#c8d0d8",
+        "#8ea0b2",
+        "#23282e",
+        "#2e353d"
+      ],
+      "radius_px": 406,
+      "gradients": 0,
+      "shadows": 6,
+      "keyframes": 0,
+      "transitions": 7,
+      "uppercase": 4,
+      "glass": 1
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "bold",
+      "modern",
+      "technical"
+    ],
+    "tone": 3,
+    "energy": 3,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "trust"
+    ],
+    "origin": [
+      "automotive"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Dark steel auto repair, pill buttons, grotesk type",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:18.479183Z"
+}

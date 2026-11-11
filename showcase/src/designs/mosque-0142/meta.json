@@ -1,0 +1,141 @@
+{
+  "id": "mosque-0142",
+  "name": "Mosque",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "mosque-html-template",
+    "format": "html-page",
+    "hash": "0142aa06b68abc4f529f238caff3bbe0ddb0f8d6407614b563f0765757f8cf0d",
+    "original": "test-templates/uiuxlabz/mosque-html-template",
+    "repo": "https://github.com/uiuxlabz/mosque-html-template",
+    "group": "uiuxlabz",
+    "commit": "e99001da5b9d7eed819f1d3db0e231745f8fc6a1"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "about",
+    "stats",
+    "portfolio",
+    "cta",
+    "blog",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "A Place of Peace, Learning & Community",
+      "A Beacon of Faith Since 1985",
+      "Recent Khutbahs",
+      "Join Us",
+      "Nurturing the Next Generation",
+      "Reflections & Insights"
+    ],
+    "ctas": [
+      "Donate",
+      "Discover Our Mosque",
+      "Get in Touch",
+      "Learn Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#06241f",
+      "#0b3a31",
+      "#10493e",
+      "#155b4d",
+      "#126354",
+      "#17745f"
+    ],
+    "dark": null,
+    "fonts": [
+      "Amiri",
+      "Inter"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 1091,
+    "css": {
+      "palette": [
+        "#06241f",
+        "#0b3a31",
+        "#10493e",
+        "#155b4d",
+        "#126354",
+        "#17745f"
+      ],
+      "radius_px": 252,
+      "gradients": 5,
+      "shadows": 25,
+      "keyframes": 0,
+      "transitions": 24,
+      "uppercase": 4,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "stats",
+      "portfolio",
+      "cta",
+      "blog",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "classic",
+      "organic",
+      "warm"
+    ],
+    "tone": 4,
+    "energy": 1,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 2,
+    "media": [
+      "photo",
+      "pattern"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "info",
+      "trust"
+    ],
+    "origin": [
+      "nonprofit"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "stats",
+      "portfolio",
+      "cta",
+      "blog",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Deep green community page with Amiri type",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:50.829387Z"
+}

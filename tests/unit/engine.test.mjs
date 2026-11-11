@@ -236,3 +236,52 @@ test('multi-design zips split into designs; why lines are stored on the shortlis
   assert.equal(JSON.parse(fs.readFileSync(listFile, 'utf8')).items.find((i) => i.id === first).why, 'Calm layout that suits a spa.');
   fs.rmSync(root, { recursive: true, force: true });
 });
+
+test('full-page HTML templates: convert, scope CSS, rank as pages, build page routes, theme template vars', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'pages-'));
+  for (const d of ['engine', 'templates', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(root, d), { recursive: true });
+  for (const d of ['briefs', 'sites', 'showcase/src/designs']) fs.mkdirSync(path.join(root, d), { recursive: true });
+  const env = { ...process.env, ENGINE_ROOT: root };
+  const out = execFileSync('python3', ['-I', path.join(root, 'engine/tools/html_page.py'), path.join(REPO, 'tests/fixtures/pages'), '--group', 'fixture'], { cwd: root, encoding: 'utf8', env });
+  assert.match(out, /Converted 2\/2/);
+  const ids = fs.readdirSync(path.join(root, 'showcase/src/designs'));
+  const cafe = ids.find((i) => i.startsWith('mini-cafe')), law = ids.find((i) => i.startsWith('mini-law'));
+  const page = fs.readFileSync(path.join(root, 'showcase/src/designs', cafe, 'code/Page.tsx'), 'utf8');
+  assert.match(page, new RegExp(`className="tpl-${cafe} home"`));
+  assert.match(page, /className="hero"/);
+  assert.match(page, /style=\{\{ backgroundImage: `url\(\$\{a\d+\}\)`, paddingTop: "40px" \}\}/);
+  assert.match(page, /htmlFor="e"/);
+  assert.match(page, /required=\{true\}/);
+  assert.match(page, /\{"Fresh \{daily\} roasts\."\}/, 'braces in text are escaped');
+  assert.doesNotMatch(page, /onclick/i);
+  assert.match(page, /fonts\.googleapis\.com\/css2\?family=Lora/);
+  const css = fs.readFileSync(path.join(root, 'showcase/src/designs', cafe, 'code/template.css'), 'utf8');
+  assert.match(css, new RegExp(`\\.tpl-${cafe}\\{ --primary`), ':root becomes the wrapper');
+  assert.match(css, new RegExp(`\\.tpl-${cafe} \\.btn, \\.tpl-${cafe} a\\.btn:hover`));
+  assert.match(css, /@media \(max-width: 600px\)\{\.tpl-[a-z0-9-]+ \.hero h1/);
+  assert.match(css, /@keyframes fade\{ from \{ opacity: 0 \}/, "keyframes untouched");
+  assert.match(page, /family=Inter/, '@import fonts moved to links');
+  const meta = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/designs', cafe, 'meta.json'), 'utf8'));
+  assert.equal(meta.kind, 'page');
+  assert.deepEqual(meta.page_sections, ['navbar', 'hero', 'menu', 'testimonials', 'footer']);
+  assert.ok(fs.existsSync(path.join(root, 'test-templates/fixture/mini-cafe/index.html')), 'original kept');
+  const run = (script, ...argv) => execFileSync('node', [path.join(root, 'engine', script), ...argv], { cwd: root, encoding: 'utf8', env });
+  fs.writeFileSync(path.join(root, 'tags.json'), JSON.stringify([
+    { id: cafe, category: 'page', style: ['warm', 'organic'], tone: 2, energy: 2, luxury: 3, density: 2, warmth: 5, modernity: 3, origin: ['restaurant'], quality: 4 },
+    { id: law, category: 'page', style: ['classic', 'corporate'], tone: 5, energy: 1, luxury: 4, density: 3, warmth: 2, modernity: 2, origin: ['legal'], quality: 4 },
+  ]));
+  run('tag.mjs', 'apply', 'tags.json');
+  fs.writeFileSync(path.join(root, 'briefs/bistro.json'), JSON.stringify({ slug: 'bistro', company: 'Bistro', niche: 'restaurant', style: 'warm, cozy', sections: ['navbar', 'hero', 'menu', 'footer'], colors: { primary: '#225533' } }));
+  run('shortlist.mjs', 'bistro');
+  const sl = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/shortlists/bistro.json'), 'utf8'));
+  assert.equal(sl.items[0].id, cafe, 'warm restaurant page ranks first');
+  assert.ok(sl.items[0].reasons[0].startsWith('full page covering 4/4'));
+  run('site.mjs', 'new', 'bistro', '--pick', `${cafe},${law}`);
+  const app = fs.readFileSync(path.join(root, 'sites/bistro/src/App.tsx'), 'utf8');
+  assert.match(app, /path="\/" element=\{<P1 \/>\}/);
+  assert.match(app, /path="\/option-2" element=\{<P2 \/>\}/);
+  const siteCss = fs.readFileSync(path.join(root, 'sites/bistro/src/sections/01-page/code/template.css'), 'utf8');
+  assert.match(siteCss, /THEME:START[\s\S]*--primary: #225533/, 'brief colour mapped onto the template variable');
+  assert.ok(fs.existsSync(path.join(root, 'sites/bistro/src/lib/template-runtime.ts')));
+  fs.rmSync(root, { recursive: true, force: true });
+});

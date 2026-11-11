@@ -1,0 +1,143 @@
+{
+  "id": "gym-fitness-693f",
+  "name": "Gym Fitness",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "gym-fitness-html-template",
+    "format": "html-page",
+    "hash": "693f7cbeb2ea193e30741995fc2692ba791a17246bf56ddabaa6dd5b14e17f86",
+    "original": "test-templates/uiuxlabz/gym-fitness-html-template",
+    "repo": "https://github.com/uiuxlabz/gym-fitness-html-template",
+    "group": "uiuxlabz",
+    "commit": "8a2cdafb42a89e4d50b7d4e1c9762ce15d9e456f"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "features",
+    "about",
+    "services",
+    "team",
+    "pricing",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Push Your Limits. Break Every Record.",
+      "We Help You Become the Best Version of Yourself",
+      "Featured Training Programs",
+      "Meet the Trainers",
+      "Choose Your Plan",
+      "What Our Members Say"
+    ],
+    "ctas": [
+      "Join Now",
+      "Start Your Journey",
+      "View Classes",
+      "Learn More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#111827",
+      "#1f2937",
+      "#374151",
+      "#fef2f2",
+      "#ffffff",
+      "#dc2626"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Oswald"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 1365,
+    "css": {
+      "palette": [
+        "#111827",
+        "#1f2937",
+        "#374151",
+        "#fef2f2",
+        "#ffffff",
+        "#dc2626"
+      ],
+      "radius_px": 2,
+      "gradients": 2,
+      "shadows": 24,
+      "keyframes": 1,
+      "transitions": 53,
+      "uppercase": 21,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "services",
+      "team",
+      "pricing",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "bold",
+      "dark-luxe",
+      "modern"
+    ],
+    "tone": 2,
+    "energy": 5,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "signup",
+      "sales"
+    ],
+    "origin": [
+      "fitness"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "services",
+      "team",
+      "pricing",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Oswald uppercase gym page, dark grey and red",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:40.128200Z"
+}

@@ -40,6 +40,9 @@ function cmdNew() {
   for (const id of picks) if (!byId.has(id)) die(`Unknown design id ${id}`);
   const mem = buildMemory(loadEvents());
   const q = parseBrief(brief, mem);
+  // Full-page designs: each pick is a whole page; the first is the homepage, the others /option-2, /option-3.
+  const pageMode = picks.some((id) => byId.get(id).kind === 'page');
+  if (pageMode && picks.some((id) => byId.get(id).kind !== 'page')) console.log('Note: mixing full pages and sections; only the full pages are used.');
 
   // 1. Slots = brief sections, in page order. Picks take their category's slot.
   const slots = q.sections.map((s) => ({ slot: s, id: null, picked: false, reason: '' }));
@@ -72,15 +75,17 @@ function cmdNew() {
     }
     else s.reason = 'no design in library for this section';
   }
-  const sections = slots.filter((s) => s.id);
-  const missing = slots.filter((s) => !s.id).map((s) => s.slot);
+  const sections = pageMode
+    ? picks.filter((id) => byId.get(id).kind === 'page').map((id, i) => ({ slot: 'page', id, picked: true, reason: i ? `alternative at /option-${i + 1}` : 'homepage (/)' }))
+    : slots.filter((s) => s.id);
+  const missing = pageMode ? [] : slots.filter((s) => !s.id).map((s) => s.slot);
   // Picks keep the brief's section order; slots the user did not pick are dropped unless --fill.
 
   // 3. Scaffold from the base template + the showcase's tailwind/css (keeps any merged design extensions).
   if (a.force) fs.rmSync(sectionsDir, { recursive: true, force: true });
   copyDir(path.join(P.templates, 'lovable-base'), dir);
-  for (const f of ['tailwind.config.ts', 'src/index.css']) fs.copyFileSync(path.join(P.showcase, f), path.join(dir, f));
-  const showPkg = readJson(path.join(P.showcase, 'package.json'));
+  for (const f of ['tailwind.config.ts', 'src/index.css']) if (fs.existsSync(path.join(P.showcase, f))) fs.copyFileSync(path.join(P.showcase, f), path.join(dir, f));
+  const showPkg = readJson(path.join(P.showcase, 'package.json'), { dependencies: {} });
   const pkg = readJson(path.join(dir, 'package.json'));
   pkg.name = slug;
   for (const s of sections) for (const d of byId.get(s.id).deps || []) if (!pkg.dependencies[d] && showPkg.dependencies?.[d]) pkg.dependencies[d] = showPkg.dependencies[d];
@@ -95,7 +100,7 @@ function cmdNew() {
     fs.writeFileSync(idx, `// Section source: design ${s.id} (showcase/src/designs/${s.id})\n` + fs.readFileSync(idx, 'utf8'));
   });
   const motionOff = String(brief.animations || '').toLowerCase() === 'none';
-  writeIndex(sections, motionOff);
+  if (pageMode) writePageRoutes(sections); else writeIndex(sections, motionOff);
   const htmlFile = path.join(dir, 'index.html');
   const company = String(brief.company || slug).replace(/[<>&"]/g, '');
   fs.writeFileSync(htmlFile, fs.readFileSync(htmlFile, 'utf8').replace(/<title>.*<\/title>/, `<title>${company}</title>`));
@@ -105,9 +110,9 @@ function cmdNew() {
   const bc = [brief.brand_colors].flat().filter((x) => /^#?[0-9a-f]{3,6}$/i.test(String(x || '')));
   const theme = Object.fromEntries(Object.entries({ primary: c.primary || bc[0], accent: c.accent || bc[1], background: c.background, foreground: c.foreground, heading: brief.fonts?.heading, body: brief.fonts?.body })
     .filter(([, v]) => v).map(([k, v]) => [k, /^[0-9a-f]{3,6}$/i.test(v) ? `#${v}` : v]));
-  const applied = Object.keys(theme).length ? applyTheme(dir, theme) : [];
+  const applied = Object.keys(theme).length ? [...applyTheme(dir, theme), ...themeTemplates(theme)] : [];
   if (motionOff) { setMotionCss(true); applied.push('animations off'); }
-  writeJson(planFile, { slug, company, created_at: new Date().toISOString(), picks, sections, missing, filled: !!a.fill, theme: { ...theme, motion: motionOff ? 'off' : 'on' } });
+  writeJson(planFile, { slug, company, created_at: new Date().toISOString(), picks, sections, missing, mode: pageMode ? 'pages' : 'sections', filled: !!a.fill, theme: { ...theme, motion: motionOff ? 'off' : 'on' } });
 
   // Memory: what was picked for this kind of brief, and which designs are now in use (anti-repetition).
   const shortlist = readJson(path.join(P.shortlists, `${slug}.json`), null);
@@ -126,7 +131,7 @@ function cmdNew() {
 function cmdTheme() {
   const plan = readJson(planFile);
   const t = Object.fromEntries(['primary', 'accent', 'background', 'foreground', 'heading', 'body', 'radius'].filter((k) => a[k] && a[k] !== true).map((k) => [k, a[k]]));
-  const done = Object.keys(t).length ? applyTheme(dir, t) : [];
+  const done = Object.keys(t).length ? [...applyTheme(dir, t), ...themeTemplates(t)] : [];
   if (a.recolor || a.hex) {
     const map = Object.fromEntries(String(a.recolor || '').split(',').filter(Boolean).map((p) => p.split(':').map((x) => x.trim())));
     const hexMap = Object.fromEntries(String(a.hex || '').split(',').filter(Boolean).map((p) => p.split('=').map((x) => x.trim())));
@@ -155,6 +160,37 @@ function writeIndex(sections, motionOff) {
   const close = motionOff ? '  </MotionConfig>\n' : '';
   const head = motionOff ? 'import { MotionConfig } from "framer-motion";\n' : '';
   fs.writeFileSync(path.join(dir, 'src', 'pages', 'Index.tsx'), `${head}${imports.join('\n')}\n\nconst Index = () => (\n${open}  <div className="min-h-screen">\n${tags.join('\n')}\n  </div>\n${close});\n\nexport default Index;\n`);
+}
+
+// Full-page sites: first page at "/", the others at /option-2, /option-3 ... to compare.
+function writePageRoutes(sections) {
+  const imp = sections.map((s, i) => `import P${i + 1} from "@/sections/${s.folder}";`).join('\n');
+  const routes = sections.map((s, i) => `      <Route path="${i ? `/option-${i + 1}` : '/'}" element={<P${i + 1} />} />`).join('\n');
+  fs.writeFileSync(path.join(dir, 'src', 'App.tsx'), `import { BrowserRouter, Route, Routes } from "react-router-dom";\nimport NotFound from "./pages/NotFound";\n${imp}\n\nconst App = () => (\n  <BrowserRouter>\n    <Routes>\n${routes}\n      <Route path="*" element={<NotFound />} />\n    </Routes>\n  </BrowserRouter>\n);\n\nexport default App;\n`);
+  fs.writeFileSync(path.join(dir, 'src', 'pages', 'Index.tsx'), `import P1 from "@/sections/${sections[0].folder}";\n\nconst Index = () => <P1 />;\n\nexport default Index;\n`);
+}
+
+// Converted HTML templates keep their own CSS variables: map brand colours/fonts onto them (light touch).
+function themeTemplates(t) {
+  const done = [];
+  for (const f of walk(sectionsDir).filter((x) => x.endsWith('template.css'))) {
+    let css = fs.readFileSync(f, 'utf8').replace(/\n?\/\* THEME:START \*\/[\s\S]*?\/\* THEME:END \*\/\n?/, '\n');
+    const scope = (css.match(/^\.tpl-[a-z0-9-]+/m) || [])[0];
+    if (!scope) continue;
+    const vars = [...new Set([...css.matchAll(/(--[\w-]+)\s*:\s*(#[0-9a-fA-F]{3,8}|rgb[^;]+)/g)].map((m) => m[1]))];
+    const pickVars = (re, not) => vars.filter((v) => re.test(v) && !(not && not.test(v)));
+    const rules = [];
+    if (t.primary) { const v = pickVars(/primary|brand|main|theme|^--acc$|^--accent$|gold|^--color-1/i, /dark|light|rgb|bg|text|soft|pale/i); v.forEach((x) => rules.push(`${x}: ${t.primary};`)); if (v.length) done.push(`template colour vars ${v.join(', ')} -> ${t.primary}`); }
+    if (t.accent) { const v = pickVars(/accent|secondary|highlight/i, /dark|light|rgb|bg|text|soft|pale/i).filter((x) => !rules.some((r) => r.startsWith(x))); v.forEach((x) => rules.push(`${x}: ${t.accent};`)); if (v.length) done.push(`template accent vars ${v.join(', ')} -> ${t.accent}`); }
+    const extra = [];
+    if (t.body) extra.push(`${scope} { font-family: "${t.body}", sans-serif; }`);
+    if (t.heading) extra.push(`${scope} :is(h1,h2,h3,h4) { font-family: "${t.heading}", serif; }`);
+    if (!rules.length && !extra.length) continue;
+    css = css.trimEnd() + `\n\n/* THEME:START */\n${rules.length ? `${scope} { ${rules.join(' ')} }\n` : ''}${extra.join('\n')}\n/* THEME:END */\n`;
+    fs.writeFileSync(f, css);
+    if (extra.length) done.push('template fonts updated');
+  }
+  return done;
 }
 
 // CSS switch that stops CSS animations/transitions site-wide.

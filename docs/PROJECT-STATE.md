@@ -53,9 +53,14 @@ Last updated: 2026-11-11. Read this first in any new chat. Keep it current: upda
 4. Verify with a mocked Supabase in Playwright, build, then push the showcase (additive), confirm the Lovable build, release to main, update this file and docs/ADMIN-DASHBOARD.md (v2 replaces the GitHub-token v1).
 5. The user enables Lovable credits first and tests basics before steps 2-4.
 
+## 5b. Library now (2026-11-11)
+- 120 full-page designs (kind `page`) from the uiuxlabz templates, converted by `engine/tools/html_page.py` (script), originals in `test-templates/uiuxlabz/`, tagged by 3 parallel Sonnet taggers (~95k tokens total), all 120 build and render (smoke test), detected sections avg 6.2 per page.
+- `lovable.showcase` false (showcase never pushed), `lovable.sites` true (client sites go to their own new Lovable project via GitHub, 0 credits).
+- Usage reporting after every reply: `npm run usage` (CLAUDE.md rule). Test script for a fresh Sonnet chat: `docs/TEST-RUN.md`; reports go to `docs/test-runs/`.
+
 ## 6. Now: testing without Lovable (user will test in a new chat with 10-20 designs in zips)
-Built and tested for this (released to main): multi-design zips split into designs (also nested zips and flat zips of separate component files), `shortlist --why`, `npm run sheet` contact sheet, `npm run showcase:serve`, `lovable.enabled: false` switch honoured by the skills. 10 tests pass.
-Flow in the test chat (all on the main GitHub repo; skip every Lovable push while `lovable.enabled` is false in `engine.config.json`):
+Built and tested for this (released to main): multi-design zips split into designs (also nested zips and flat zips of separate component files), `shortlist --why`, `npm run sheet` contact sheet, `npm run showcase:serve`, Lovable switches (now `lovable.showcase` / `lovable.sites`) honoured by the skills. 10 tests pass.
+Flow in the test chat (see docs/TEST-RUN.md; the showcase is never pushed while `lovable.showcase` is false):
 1. User uploads zip(s). Claude copies them into `incoming/` and runs `/add-designs` (a zip with many design folders becomes many designs).
 2. `/shortlist`: 3 intake questions -> brief -> ranking -> Claude writes one "why" line per design (`npm run shortlist -- <slug> --why <file>`) -> `npm run sheet -- <slug>` renders a contact sheet image of the 10 (live renders, desktop + mobile) and Claude sends it to the user. Optional live preview: `npm run showcase:serve` + report the port.
 3. User replies with picks -> `/build-site` builds `sites/<slug>/` and checks the build; the Lovable push is skipped while Lovable is parked.

@@ -1,0 +1,142 @@
+{
+  "id": "italian-restaurant-e0f1",
+  "name": "Italian Restaurant",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "italian-restaurant-html-template",
+    "format": "html-page",
+    "hash": "e0f193e73323b1be80327ab4f798e569baeae14845e1b05b8e4959b8d0c8f757",
+    "original": "test-templates/uiuxlabz/italian-restaurant-html-template",
+    "repo": "https://github.com/uiuxlabz/italian-restaurant-html-template",
+    "group": "uiuxlabz",
+    "commit": "6b6e43999f08280b52536e26fb0e2f6949bf1820"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "contact",
+    "navbar",
+    "hero",
+    "stats",
+    "pricing",
+    "features",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Authentic Italian, Made with Love",
+      "From Our Kitchen",
+      "A Taste of Italy in Every Bite",
+      "What Our Guests Say",
+      "Book Your Table Tonight"
+    ],
+    "ctas": [
+      "Reserve a Table",
+      "Explore Our Menu",
+      "Learn Our Story",
+      "Reserve Now"
+    ],
+    "texts": [],
+    "colors": [
+      "#fffbeb",
+      "#1c1917",
+      "#ffffff",
+      "#c2410c",
+      "#9a3412",
+      "#ea580c"
+    ],
+    "dark": false,
+    "fonts": [
+      "Playfair Display",
+      "Lato"
+    ],
+    "images": 5,
+    "motion": true,
+    "lines": 583,
+    "css": {
+      "palette": [
+        "#fffbeb",
+        "#1c1917",
+        "#ffffff",
+        "#c2410c",
+        "#9a3412",
+        "#ea580c"
+      ],
+      "radius_px": 0,
+      "gradients": 0,
+      "shadows": 0,
+      "keyframes": 0,
+      "transitions": 19,
+      "uppercase": 19,
+      "glass": 0
+    },
+    "sections": [
+      "contact",
+      "navbar",
+      "hero",
+      "stats",
+      "pricing",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "classic",
+      "warm",
+      "editorial"
+    ],
+    "tone": 3,
+    "energy": 2,
+    "luxury": 3,
+    "density": 2,
+    "warmth": 5,
+    "modernity": 2,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "info"
+    ],
+    "origin": [
+      "restaurant"
+    ],
+    "sections": [
+      "contact",
+      "navbar",
+      "hero",
+      "stats",
+      "pricing",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 3,
+    "note": "Cream and terracotta trattoria, Playfair, flat",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:46.949398Z"
+}

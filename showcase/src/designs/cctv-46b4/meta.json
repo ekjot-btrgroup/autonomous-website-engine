@@ -1,0 +1,125 @@
+{
+  "id": "cctv-46b4",
+  "name": "Cctv",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "cctv-html-template",
+    "format": "html-page",
+    "hash": "46b49ecdfe228625aa42e9a64b8d6b402af5f6f59b54eabdaf460a1ea8b125b7",
+    "original": "test-templates/uiuxlabz/cctv-html-template",
+    "repo": "https://github.com/uiuxlabz/cctv-html-template",
+    "group": "uiuxlabz",
+    "commit": "94702742591bc584b155e23672565f19f776125a"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Every corner covered. Every threat seen.",
+      "One provider for your entire security layer",
+      "Technology you can trust, humans who answer",
+      "From survey to secure in four steps",
+      "See what a professional survey finds"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Request a Site Survey",
+      "Explore Services",
+      "Read Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#12e2b2",
+      "#ffc24d",
+      "#ff5c5c",
+      "#f4f7fb",
+      "#ffffff",
+      "#050b17"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "JetBrains Mono"
+    ],
+    "images": 4,
+    "motion": true,
+    "lines": 909,
+    "css": {
+      "palette": [
+        "#12e2b2",
+        "#ffc24d",
+        "#ff5c5c",
+        "#f4f7fb",
+        "#ffffff",
+        "#050b17"
+      ],
+      "radius_px": 4,
+      "gradients": 12,
+      "shadows": 33,
+      "keyframes": 3,
+      "transitions": 29,
+      "uppercase": 11,
+      "glass": 5
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "futuristic",
+      "technical",
+      "dark-luxe"
+    ],
+    "tone": 4,
+    "energy": 4,
+    "luxury": 2,
+    "density": 4,
+    "warmth": 1,
+    "modernity": 5,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "local-services"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Techy security page, neon teal accents, mono labels",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:25.403096Z"
+}

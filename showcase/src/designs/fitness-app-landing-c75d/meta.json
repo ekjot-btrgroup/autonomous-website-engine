@@ -1,0 +1,125 @@
+{
+  "id": "fitness-app-landing-c75d",
+  "name": "Fitness App Landing",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "fitness-app-landing-html-template",
+    "format": "html-page",
+    "hash": "c75dfb552859ad246b74f63be5eabda1617f5cbc47bb3c542b77c71b98e2349a",
+    "original": "test-templates/uiuxlabz/fitness-app-landing-html-template",
+    "repo": "https://github.com/uiuxlabz/fitness-app-landing-html-template",
+    "group": "uiuxlabz",
+    "commit": "9c053c707a0cddf156b54feb54b25fb526c31111"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Push Your Limits Build Your Best Body",
+      "One App. Total Transformation",
+      "Your Coach. Your Plan. Your Results.",
+      "Ready to Train ?"
+    ],
+    "ctas": [
+      "Start Free",
+      "Download the App",
+      "Why PulseFit",
+      ""
+    ],
+    "texts": [],
+    "colors": [
+      "#111111",
+      "#ffffff",
+      "#0b0b0f",
+      "#ff6b2c",
+      "#c6f432",
+      "#9ca3af"
+    ],
+    "dark": null,
+    "fonts": [
+      "Bebas Neue",
+      "Manrope"
+    ],
+    "images": 7,
+    "motion": true,
+    "lines": 685,
+    "css": {
+      "palette": [
+        "#111111",
+        "#ffffff",
+        "#0b0b0f",
+        "#ff6b2c",
+        "#c6f432",
+        "#9ca3af"
+      ],
+      "radius_px": 3,
+      "gradients": 4,
+      "shadows": 15,
+      "keyframes": 1,
+      "transitions": 44,
+      "uppercase": 12,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "centered"
+    ],
+    "style": [
+      "bold",
+      "dark-luxe",
+      "modern"
+    ],
+    "tone": 2,
+    "energy": 5,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "product",
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "download",
+      "signup"
+    ],
+    "origin": [
+      "fitness",
+      "saas"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Dark app landing with orange and lime accents",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:37.695706Z"
+}

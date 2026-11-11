@@ -1,0 +1,126 @@
+{
+  "id": "organic-farm-ddc3",
+  "name": "Organic Farm",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "organic-farm-html-template",
+    "format": "html-page",
+    "hash": "ddc3e73deb99636afe5577bb93bde78f7d576efcbe492f424a4f2712291d120e",
+    "original": "test-templates/uiuxlabz/organic-farm-html-template",
+    "repo": "https://github.com/uiuxlabz/organic-farm-html-template",
+    "group": "uiuxlabz",
+    "commit": "39ab64ae0f96cb3e4bbebc66a9aaea60bf9cac84"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "From sunlit fields to your table",
+      "A family farm that grows food the honest way",
+      "Good food, grown on purpose",
+      "Farm services, all season long",
+      "Fresh out of the ground",
+      "Loved by the whole neighbourhood"
+    ],
+    "ctas": [
+      "Order a Box",
+      "Shop the Harvest →",
+      "Our Farm Services",
+      "Read Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#b8872a",
+      "#a97f1e",
+      "#fbf6ec",
+      "#f4ecdc",
+      "#eae0cb",
+      "#fffdf7"
+    ],
+    "dark": null,
+    "fonts": [
+      "Playfair Display",
+      "Nunito Sans",
+      "Caveat"
+    ],
+    "images": 14,
+    "motion": true,
+    "lines": 1223,
+    "css": {
+      "palette": [
+        "#b8872a",
+        "#a97f1e",
+        "#fbf6ec",
+        "#f4ecdc",
+        "#eae0cb",
+        "#fffdf7"
+      ],
+      "radius_px": 28,
+      "gradients": 8,
+      "shadows": 38,
+      "keyframes": 4,
+      "transitions": 36,
+      "uppercase": 19,
+      "glass": 3
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "organic",
+      "warm",
+      "handcrafted"
+    ],
+    "tone": 2,
+    "energy": 2,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 5,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales",
+      "trust"
+    ],
+    "origin": [
+      "local-services"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Cream and gold farm with script accents",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:56.135698Z"
+}
