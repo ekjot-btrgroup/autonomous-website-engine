@@ -185,6 +185,8 @@ test('release: merges branch into main, tags it, writes a restorable note; sync 
   const work = path.join(base, 'work');
   g(work, 'config', 'user.email', 't@t'); g(work, 'config', 'user.name', 't');
   for (const d of ['engine', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(work, d), { recursive: true });
+  const cfg = JSON.parse(fs.readFileSync(path.join(work, 'engine.config.json'), 'utf8'));
+  fs.writeFileSync(path.join(work, 'engine.config.json'), JSON.stringify({ ...cfg, release_target: 'main' }));
   g(work, 'add', '-A'); g(work, 'commit', '-qm', 'init'); g(work, 'push', '-q', 'origin', 'main');
   g(work, 'checkout', '-qb', 'feature');
   fs.writeFileSync(path.join(work, 'a.txt'), 'a'); g(work, 'add', '-A'); g(work, 'commit', '-qm', 'Feature A');
