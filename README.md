@@ -85,7 +85,7 @@ Parallel subagents run only when they save time: tagging more than 40 designs, o
 | `knowledge/` | `vocabulary.json` (allowed trait words, synonyms) and `niche-presets.json` (target feel per niche) |
 | `engine/` | Scripts; `engine.config.json` holds the showcase URL and shortlist settings |
 | `templates/` | Base Lovable app (Vite, React 18, TypeScript, Tailwind 3, shadcn/ui) and the showcase pages |
-| `.claude/` | Skills (`add-designs`, `shortlist`, `build-site`) and agents (`design-tagger`, `section-converter`) |
+| `.claude/` | Skills (`add-designs`, `shortlist`, `build-site`; design guidance `apple-design` and `mobile-native` from emilkowalski/skills, MIT) and agents (`design-tagger`, `section-converter`) |
 | `tests/` | Unit tests, a full pipeline test, and fixture designs |
 | `docs/` | User guide, algorithm, admin dashboard, release notes (`docs/releases/`), and the original starter kit for reference |
 | `.github/workflows/` | Optional auto-publish of the showcase to Lovable after edits |
