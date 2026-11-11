@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync, execFileSync } from 'node:child_process';
+import { writeSnapshot } from './lib/snapshot.mjs';
 import { P, ROOT, copyDir, readJson, writeJson, rel, args, metaPath, config } from './lib/util.mjs';
 
 const BASE = () => path.join(P.templates, 'lovable-base');
@@ -23,13 +24,14 @@ export function engineRepo() {
 }
 
 // Files the admin dashboard reads, refreshed on every run (vocabulary + where to save edits).
-function writeAdminData() {
+export function writeAdminData() {
   const dir = path.join(P.showcase, 'src', 'showcase');
   if (!fs.existsSync(dir)) return;
   fs.copyFileSync(P.vocab, path.join(dir, 'vocabulary.json'));
   const cfgFile = path.join(dir, 'admin-config.json');
   const next = { engine_repo: engineRepo(), branch: 'main' };
   if (JSON.stringify(readJson(cfgFile, {})) !== JSON.stringify(next)) writeJson(cfgFile, next);
+  writeSnapshot(next.engine_repo);
 }
 
 export function ensureShowcase({ refresh = false } = {}) {

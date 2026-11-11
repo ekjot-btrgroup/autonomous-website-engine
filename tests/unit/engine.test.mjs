@@ -138,6 +138,16 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   assert.ok(sl5.items.find((i) => i.id === id('navbar-glass')).reasons.some((r) => r.includes('used in 1')));
   assert.match(run('remember.mjs', 'list'), /Pick history: 1 briefs/);
 
+  // Dashboard snapshot: sites, briefs, memory and scoring weights exported for the admin pages.
+  run('showcase.mjs', 'init');
+  const snap = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/showcase/engine-data.json'), 'utf8'));
+  assert.equal(snap.sites.length, 1);
+  assert.equal(snap.sites[0].sections.length, 3);
+  assert.ok(snap.briefs.some((b) => b.slug === 'acme' && b.niche === 'architecture'));
+  assert.ok(snap.memory.counts.pick >= 1 && snap.memory.usage[id('navbar-glass')] === 1);
+  assert.equal(snap.scoring.weights.style, 24);
+  assert.ok(snap.presets.wellness && snap.niche_families.tech);
+
   // Admin dashboard overrides: admin tags win, hidden designs disappear, pinned designs gain points.
   const ovDir = path.join(root, 'showcase/src/overrides');
   fs.mkdirSync(ovDir, { recursive: true });
