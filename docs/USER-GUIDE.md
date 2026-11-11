@@ -7,7 +7,7 @@ The showcase stays off Lovable (`lovable.showcase: false`); client sites can go 
 1. Open a **new chat** on this repo and upload one or more zips. A zip may hold 10 or 20 designs (one folder per design, or one file per design). Say: *"Add these designs."*
 2. Say: *"New website for <brand>."* Answer the 3 questions (animations, colours, brand brief).
 3. Claude replies with the top 10. Each design gets a one-line reason it fits your client, and you also get a **contact sheet** image: every design rendered live at desktop and mobile size.
-4. Reply *"Build site <slug> with designs: a, b, c"*. Claude builds `sites/<slug>/` and checks that it compiles. The Lovable push is skipped while Lovable is parked.
+4. Reply *"Build site <slug> with designs: a, b, c"*. The site has all three options (`/`, `/option-2`, `/option-3`) and a floating **Designs** button (bottom right) that opens a full-screen picker to switch between them. Claude builds `sites/<slug>/` and checks that it compiles. The Lovable push is skipped while Lovable is parked.
 5. Optional: ask *"Show me the showcase live"*. Claude runs `npm run showcase:serve` and opens it as a preview in the Claude app.
 
 ## Part A: one-time setup (about 10 minutes)
