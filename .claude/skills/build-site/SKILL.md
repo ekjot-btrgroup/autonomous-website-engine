@@ -14,3 +14,5 @@ description: Copy the user's picked designs into a new Lovable-ready project, ap
 5. Only if `lovable.sites` is true (otherwise stop after step 4 and say the site is ready in `sites/<slug>/`). New Lovable project: the user creates a blank Lovable project, connects GitHub (Lovable makes the repo) and tells you the repo `owner/name`. Add it to the session with push access, then `npm run -s push -- sites/<slug> --repo owner/name`.
    If it says Lovable has newer edits: `npm run -s pull -- sites/<slug>` first.
 6. Commit, then `npm run -s release -- "Site <slug>"`. Reply in at most 8 lines: sections used, colours/fonts/animation applied, the Lovable repo, anything left out.
+
+Optional polish (only when the user asks for it or a check finds a mobile/motion problem): `/mobile-native` for phone fixes (tap delay, 100vh, safe areas, input zoom) and `/apple-design` for motion and interaction feel. Do not load them by default (token cost).
