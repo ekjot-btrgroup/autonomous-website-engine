@@ -1,0 +1,109 @@
+{
+  "type": "pick",
+  "at": "2026-11-11T13:50:37.106Z",
+  "slug": "form-and-function-studio",
+  "context": [
+    "interior",
+    "luxury",
+    "warm",
+    "organic",
+    "editorial",
+    "elegant",
+    "bangalore",
+    "homeowner",
+    "buying",
+    "renovating",
+    "premium",
+    "apartment",
+    "villa",
+    "minimalist",
+    "natural",
+    "texture",
+    "understated",
+    "timeless",
+    "refined",
+    "approachable",
+    "conversational"
+  ],
+  "profile": {
+    "tone": 3,
+    "energy": 1,
+    "luxury": 3,
+    "density": 1,
+    "warmth": 5,
+    "modernity": 3
+  },
+  "shown": [
+    "architecture-studio-7f70",
+    "construction-portfolio-ea5a",
+    "carpenter-a4cf",
+    "restaurant-c6ae",
+    "interior-design-3673",
+    "financial-consulting-3f64",
+    "consulting-89d8",
+    "charity-3d9b",
+    "medical-clinic-9af9",
+    "italian-restaurant-e0f1"
+  ],
+  "picked": [
+    "architecture-studio-7f70",
+    "carpenter-a4cf",
+    "interior-design-3673"
+  ],
+  "picked_traits": [
+    {
+      "id": "architecture-studio-7f70",
+      "tone": 4,
+      "energy": 2,
+      "luxury": 4,
+      "density": 2,
+      "warmth": 2,
+      "modernity": 4,
+      "style": [
+        "editorial",
+        "elegant",
+        "minimal"
+      ],
+      "layout": [
+        "grid",
+        "full-bleed"
+      ]
+    },
+    {
+      "id": "carpenter-a4cf",
+      "tone": 3,
+      "energy": 2,
+      "luxury": 3,
+      "density": 3,
+      "warmth": 5,
+      "modernity": 3,
+      "style": [
+        "handcrafted",
+        "warm",
+        "editorial"
+      ],
+      "layout": [
+        "split",
+        "grid"
+      ]
+    },
+    {
+      "id": "interior-design-3673",
+      "tone": 4,
+      "energy": 2,
+      "luxury": 4,
+      "density": 2,
+      "warmth": 4,
+      "modernity": 3,
+      "style": [
+        "elegant",
+        "editorial",
+        "warm"
+      ],
+      "layout": [
+        "full-bleed",
+        "masonry"
+      ]
+    }
+  ]
+}
