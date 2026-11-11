@@ -1,0 +1,14 @@
+{
+  "slug": "acme-architects",
+  "company": "Acme Architects",
+  "industry": "architecture",
+  "audience": "premium residential clients and developers",
+  "style": "minimal, editorial, luxury",
+  "tone": "calm, confident, precise",
+  "goals": ["qualified enquiries", "showcase selected projects"],
+  "sections": ["navbar", "hero", "about", "portfolio", "services", "testimonials", "cta", "footer"],
+  "scheme": "light",
+  "avoid": "playful",
+  "picks": 3,
+  "facts": "Founded 2009 in Lisbon. 120 projects. Contact: hello@acme.example"
+}

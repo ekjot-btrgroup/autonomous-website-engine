@@ -1,0 +1,26 @@
+{
+  "slug": "example-architecture-studio",
+  "company": "Example Architecture Studio",
+  "industry": "architecture",
+  "audience": "premium residential clients and commercial developers",
+  "style": "luxury editorial, minimal, contemporary",
+  "visual_direction": "architectural photography, refined typography, generous whitespace",
+  "goals": [
+    "qualified enquiries",
+    "showcase selected projects"
+  ],
+  "required_sections": [
+    "hero",
+    "about",
+    "portfolio",
+    "services",
+    "testimonial",
+    "cta",
+    "footer"
+  ],
+  "constraints": [
+    "mobile responsive",
+    "accessible contrast",
+    "fast loading"
+  ]
+}

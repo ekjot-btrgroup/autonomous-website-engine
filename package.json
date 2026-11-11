@@ -1,0 +1,20 @@
+{
+  "name": "autonomous-website-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Low-cost design library -> shortlist -> Lovable site engine. Scripts do the work; Claude only tags, writes briefs, picks colours/fonts and writes copy.",
+  "scripts": {
+    "add": "node engine/add-designs.mjs",
+    "tag": "node engine/tag.mjs",
+    "shortlist": "node engine/shortlist.mjs",
+    "site": "node engine/site.mjs",
+    "push": "node engine/sync.mjs push",
+    "pull": "node engine/sync.mjs pull",
+    "status": "node engine/status.mjs",
+    "showcase:init": "node engine/showcase.mjs init",
+    "showcase:check": "node engine/showcase.mjs check",
+    "test": "node --test tests/unit/*.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
