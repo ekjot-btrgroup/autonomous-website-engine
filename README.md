@@ -60,7 +60,7 @@ Parallel subagents run only when they save time: tagging more than 40 designs, o
 | `npm run push -- <showcase or sites/slug> --repo owner/name` | Push to the Lovable GitHub repo (repo remembered afterwards) |
 | `npm run pull -- sites/<slug>` | Bring Lovable edits back before changing a site |
 | `npm run sync` | Pull the latest `main` into this chat's branch (dashboard edits, other chats) |
-| `npm run release -- "summary"` | Merge this branch into `main`, tag it, write `docs/releases/<date>-<summary>.md` |
+| `npm run release -- "summary"` | Merge this branch into `main`, write `docs/releases/<date>-<summary>.md` (names the merge commit) |
 | `npm run releases` | List releases and their commits |
 | `npm run status` | Overview of library, shortlists, sites |
 | `npm test` | Engine tests |

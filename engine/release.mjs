@@ -23,7 +23,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function withRetry(fn, label) {
   for (let i = 0, wait = 2000; ; i++, wait *= 2) {
     try { return fn(); } catch (e) {
-      if (i >= 4 || !/network|timed out|Could not resolve|Connection|unable to access|RPC failed|reset/i.test(e.message)) throw e;
+      if (i >= 4 || /\b40[0-9]\b|denied|forbidden|rejected/i.test(e.message) || !/network|timed out|Could not resolve|Connection|unable to access|RPC failed|reset/i.test(e.message)) throw e;
       console.log(`${label} failed (network), retrying in ${wait / 1000}s...`); await sleep(wait);
     }
   }
@@ -56,30 +56,9 @@ async function release() {
   const stamp = now.toISOString().slice(0, 16).replace(/[-:T]/g, '').replace(/^(\d{8})(\d{4})$/, '$1-$2');
   const slug = slugify(summary, 40);
   const tag = `release-${stamp}-${slug}`;
-  const noteFile = path.join(RELEASES, `${now.toISOString().slice(0, 10)}-${stamp.slice(9)}-${slug}.md`);
-  fs.mkdirSync(RELEASES, { recursive: true });
-  fs.writeFileSync(noteFile, `# ${summary}
+  const rel = `docs/releases/${now.toISOString().slice(0, 10)}-${stamp.slice(9)}-${slug}.md`;
 
-- Released: ${now.toISOString().slice(0, 16).replace('T', ' ')} UTC
-- Tag: \`${tag}\` (the merge commit on main)
-- From branch: \`${br}\`
-- Changed: ${stat}
-- Areas: ${areas.join(', ')}
-
-## Commits (each one can be brought back on its own)
-| Commit | What |
-|---|---|
-${commits.map(([h, s]) => `| \`${h}\` | ${s.replace(/\|/g, '/')} |`).join('\n')}
-
-## Bring it back
-- Whole release on a new branch: \`git fetch origin --tags && git checkout -b restore-${slug.slice(0, 24)} ${tag}\`
-- One feature onto your current branch: \`git cherry-pick <commit from the table>\`
-- Undo the whole release on main: \`git revert -m 1 ${tag}\`
-- If the tag is missing: \`git log origin/main --merges --grep "${summary.replace(/"/g, '')}" --format=%h\` gives the merge commit to use instead.
-`);
-  git('add', noteFile);
-  git('commit', '--quiet', '-m', `Release note: ${summary}`);
-
+  // 1. Merge the branch into main and push (retry if main moved meanwhile).
   let mergeSha;
   for (let attempt = 1; ; attempt++) {
     git('checkout', '--quiet', '--detach', 'origin/main');
@@ -96,14 +75,51 @@ ${commits.map(([h, s]) => `| \`${h}\` | ${s.replace(/\|/g, '/')} |`).join('\n')}
       die(`Push to main failed: ${e.message.slice(0, 300)}\n(Branch protection or missing permission? The branch itself is intact.)`);
     }
   }
-  let tagNote = 'tag pushed';
-  try { git('tag', '-a', tag, '-m', summary, mergeSha); await withRetry(() => git('push', '--quiet', 'origin', tag), 'tag push'); }
-  catch (e) { tagNote = `tag not pushed (${e.message.split('\n')[0].slice(0, 80)}); the note's commit list still works`; }
+  const short = mergeSha.slice(0, 7);
+
+  // 2. Optional tag (some environments block tag pushes; the merge commit is the reliable handle).
+  let tagged = false;
+  try { git('tag', '-a', tag, '-m', summary, mergeSha); git('push', '--quiet', 'origin', tag); tagged = true; }
+  catch { tryGit('tag', '-d', tag); }
+  const ref = tagged ? tag : short;
+
+  // 3. Release note on main, naming the exact merge commit.
+  fs.mkdirSync(RELEASES, { recursive: true });
+  fs.writeFileSync(path.join(ROOT, rel), `# ${summary}
+
+- Released: ${now.toISOString().slice(0, 16).replace('T', ' ')} UTC
+- Merge commit on main: \`${short}\`${tagged ? ` (tag \`${tag}\`)` : ''}
+- From branch: \`${br}\`
+- Changed: ${stat}
+- Areas: ${areas.join(', ')}
+
+## Commits (each one can be brought back on its own)
+| Commit | What |
+|---|---|
+${commits.map(([h, subj]) => `| \`${h}\` | ${subj.replace(/\|/g, '/')} |`).join('\n')}
+
+## Bring it back
+- Whole release on a new branch: \`git fetch origin && git checkout -b restore-${slug.slice(0, 24)} ${ref}\`
+- One feature onto your current branch: \`git cherry-pick <commit from the table>\`
+- Undo the whole release on main: \`git revert -m 1 ${ref}\`
+`);
+  git('add', rel);
+  git('commit', '--quiet', '-m', `Release note: ${summary}`);
+  for (let attempt = 1; ; attempt++) {
+    try { await withRetry(() => git('push', '--quiet', 'origin', 'HEAD:main'), 'push'); break; }
+    catch (e) {
+      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { git('fetch', '--quiet', 'origin', 'main'); git('rebase', '--quiet', 'origin/main'); continue; }
+      console.log(`Warning: release note not pushed (${e.message.split('\n')[0].slice(0, 120)}); the release itself is on main.`); break;
+    }
+  }
+  const finalSha = git('rev-parse', 'HEAD');
+
+  // 4. Bring the branch level with main.
   git('checkout', '--quiet', br);
-  tryGit('merge', '--quiet', '--ff-only', mergeSha);
+  tryGit('merge', '--quiet', '--ff-only', finalSha);
   tryGit('push', '--quiet', '-u', 'origin', br);
-  console.log(`Released to main: ${mergeSha.slice(0, 7)} "${summary}" (${commits.length} commit(s), ${stat}); ${tagNote}.`);
-  console.log(`Release note: ${path.relative(ROOT, noteFile)}`);
+  console.log(`Released to main: ${short} "${summary}" (${commits.length} commit(s), ${stat})${tagged ? `, tag ${tag}` : ''}.`);
+  console.log(`Release note: ${rel}`);
 }
 
 function list() {
@@ -112,9 +128,9 @@ function list() {
   for (const f of notes.slice(0, Number(a.limit || 30))) {
     const txt = fs.readFileSync(path.join(RELEASES, f), 'utf8');
     const title = txt.split('\n')[0].replace(/^# /, '');
-    const tag = (txt.match(/Tag: `([^`]+)`/) || [])[1] || '';
+    const merge = (txt.match(/Merge commit on main: `([0-9a-f]+)`/) || [])[1] || '';
     const commits = [...txt.matchAll(/^\| `([0-9a-f]+)` \| (.*) \|$/gm)].map((m) => `${m[1]} ${m[2]}`);
-    console.log(`${f.slice(0, 15)}  ${title}\n   tag ${tag}\n${commits.map((c) => `   - ${c}`).join('\n')}`);
+    console.log(`${f.slice(0, 15)}  ${title}\n   merge ${merge}\n${commits.map((c) => `   - ${c}`).join('\n')}`);
   }
 }
 
