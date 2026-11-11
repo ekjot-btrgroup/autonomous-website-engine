@@ -66,7 +66,8 @@ export function OptionSwitcher({ options, brand, kind = "homepage", accent = "#6
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
-  if (options.length < 2 || !current) return null;
+  // Hidden during HTML export (the exported files get a static copy of this switcher).
+  if (options.length < 2 || !current || /[?&]export=1\b/.test(location.search)) return null;
 
   return (
     <>

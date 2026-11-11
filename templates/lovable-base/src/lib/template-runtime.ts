@@ -5,6 +5,8 @@
 import { useEffect, useRef } from "react";
 
 const loaded = new Map<string, Promise<void>>();
+// HTML export (`?export=1`): capture the page without running the template script; the exported file runs it itself.
+export const IS_EXPORT = typeof location !== "undefined" && /[?&]export=1\b/.test(location.search);
 
 function addStylesheet(href: string) {
   if (document.querySelector(`link[data-tpl-href="${CSS.escape(href)}"]`)) return;
@@ -96,7 +98,7 @@ export function useTemplateRuntime(links: string[], scripts: string[], code?: st
     let cleanup: (() => void) | undefined;
     let cancelled = false;
     Promise.all(scripts.map(addScript)).then(() => {
-      if (!cancelled && code && code.trim()) cleanup = runTemplateScript(code);
+      if (!cancelled && !IS_EXPORT && code && code.trim()) cleanup = runTemplateScript(code);
     });
     return () => { cancelled = true; cleanup?.(); };
     // eslint-disable-next-line react-hooks/exhaustive-deps

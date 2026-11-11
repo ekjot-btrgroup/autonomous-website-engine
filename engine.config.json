@@ -1,5 +1,7 @@
 {
-  "_note": "showcase_url: the published URL of the Lovable showcase project (e.g. https://design-showcase.lovable.app). Used to print live links.",
+  "_note": "delivery: lovable (final site to a new Lovable project via GitHub) or html (final designs as HTML files via npm run export). release_target: the branch releases merge into.",
+  "delivery": "lovable",
+  "release_target": "main",
   "showcase_url": "https://automated-website-system.lovable.app",
   "shortlist_size": 10,
   "fresh_slots": 2,
@@ -8,5 +10,6 @@
     "showcase": false,
     "sites": true,
     "_note": "showcase=false: never push the showcase/library to Lovable (results shown with npm run sheet). sites=true: a built client site may be pushed to its own new Lovable project via GitHub sync (0 Lovable credits)."
-  }
+  },
+  "showcase_note": "showcase_url: the published URL of the Lovable showcase project (e.g. https://design-showcase.lovable.app). Used to print live links."
 }

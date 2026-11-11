@@ -63,7 +63,7 @@ h2{margin:0;font-size:16px}.id{margin:2px 0 0;color:#71717a;font:12px ui-monospa
 .shots{display:flex;gap:10px;align-items:flex-start}.desk{width:76%;border:1px solid #e4e4e7;border-radius:8px}.mob{width:22%;border:1px solid #e4e4e7;border-radius:8px}
 </style></head><body><div class="top"><h1>${esc(list.company)}: top ${list.items.length} designs</h1>
 <p>${esc([b.niche && `For: ${b.niche}`, b.style && `Style: ${b.style}`, b.animations && `Animations: ${b.animations}`, b.scheme && `Scheme: ${b.scheme}`].filter(Boolean).join(' · '))}</p>
-<p>Pick ${list.picks || 3}: reply "Build site ${esc(slug)} with designs: id1, id2, id3"</p></div><div class="grid">${cards.join('\n')}</div></body></html>`;
+<p>Pick ${list.picks || 3}: reply with their numbers, for example 2, 5, 7</p></div><div class="grid">${cards.join('\n')}</div></body></html>`;
   fs.writeFileSync(path.join(out, 'shortlist.html'), html);
   const page = await browser.newPage({ viewport: { width: 1600, height: 1000 } });
   await page.goto(`file://${path.join(out, 'shortlist.html')}`, { waitUntil: 'load' });
