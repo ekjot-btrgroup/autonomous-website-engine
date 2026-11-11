@@ -26,6 +26,8 @@ const eng = path.join(dir, '.engine');
 const planFile = path.join(eng, 'site.json');
 const sectionsDir = path.join(dir, 'src', 'sections');
 const codeFiles = () => walk(sectionsDir).filter((f) => /\.(tsx|ts|jsx|js)$/.test(f));
+// Text rewriting skips converted templates' own scripts (rewriting their strings could break menus/sliders).
+const copyFiles = () => codeFiles().filter((f) => path.basename(f) !== 'template.js');
 
 const commands = { new: cmdNew, theme: cmdTheme, copy: cmdCopy, 'copy-apply': cmdCopyApply, check: cmdCheck, plan: () => console.log(JSON.stringify(readJson(planFile), null, 2)) };
 (commands[cmd] || (() => die(`Unknown command ${cmd}`)))();
@@ -203,7 +205,7 @@ function setMotionCss(off) {
 
 function collect() {
   const index = {}, view = {};
-  for (const f of codeFiles()) {
+  for (const f of copyFiles()) {
     const r = path.relative(sectionsDir, f).split(path.sep).join('/');
     const sec = r.split('/')[0].slice(0, 2);
     const items = extractStrings(fs.readFileSync(f, 'utf8'));
