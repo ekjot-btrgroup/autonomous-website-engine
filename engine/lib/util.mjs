@@ -17,6 +17,7 @@ export const P = {
   templates: path.join(ROOT, 'templates'),
   vocab: path.join(ROOT, 'knowledge', 'vocabulary.json'),
   cache: path.join(ROOT, '.cache'),
+  memory: path.join(ROOT, 'memory', 'events'),
 };
 
 export const rel = (p) => path.relative(ROOT, p) || '.';
@@ -101,7 +102,7 @@ export function die(msg) { console.error(`ERROR: ${msg}`); process.exit(1); }
 
 export function table(rows, cols) {
   if (!rows.length) return '(none)';
-  const w = cols.map((c) => Math.min(48, Math.max(c.length, ...rows.map((r) => String(r[c] ?? '').length))));
+  const w = cols.map((c) => Math.min(70, Math.max(c.length, ...rows.map((r) => String(r[c] ?? '').length))));
   const line = (vals) => vals.map((v, i) => String(v ?? '').slice(0, w[i]).padEnd(w[i])).join('  ');
   return [line(cols), line(w.map((n) => '-'.repeat(n))), ...rows.map((r) => line(cols.map((c) => r[c])))].join('\n');
 }
@@ -115,3 +116,9 @@ export function loadMetas() {
 }
 export const categoryOf = (m) => m.tags?.category || m.guess?.category || 'unknown';
 export const metaPath = (id) => path.join(P.designs, id, 'meta.json');
+
+export function config() {
+  const c = readJson(path.join(ROOT, 'engine.config.json'), {});
+  return { showcase_url: '', shortlist_size: 10, fresh_slots: 2, max_per_section_type: 3, ...c, showcase_url: String(c.showcase_url || '').replace(/\/+$/, '') };
+}
+export const liveLink = (route) => { const u = config().showcase_url; return u ? `${u}${route}` : route; };

@@ -5,14 +5,33 @@ export type DesignStatus = "ok" | "needs_conversion" | "needs_attention" | "buil
 export type DesignTags = {
   category: string;
   also?: string[];
-  style?: string[];
-  mood?: string[];
-  industries?: string[];
-  scheme?: string;
   layout?: string[];
+  style?: string[];
+  /** Feel axes 1-5: tone (playful..formal), energy, luxury, density, warmth, modernity. */
+  tone?: number;
+  energy?: number;
+  luxury?: number;
+  density?: number;
+  warmth?: number;
+  modernity?: number;
+  media?: string[];
+  image_need?: number;
+  typography?: string;
+  motion?: string;
+  goals?: string[];
+  scheme?: string;
   quality?: number;
   note?: string;
 };
+
+export const AXES: { key: "tone" | "energy" | "luxury" | "density" | "warmth" | "modernity"; low: string; high: string }[] = [
+  { key: "tone", low: "playful", high: "formal" },
+  { key: "energy", low: "calm", high: "energetic" },
+  { key: "luxury", low: "everyday", high: "premium" },
+  { key: "density", low: "airy", high: "dense" },
+  { key: "warmth", low: "cool", high: "warm" },
+  { key: "modernity", low: "classic", high: "cutting-edge" },
+];
 
 export type DesignMeta = {
   id: string;
@@ -90,7 +109,7 @@ export function categoryOf(meta: DesignMeta | undefined): string {
 export function tagsOf(meta: DesignMeta): string[] {
   const t = meta.tags;
   if (!t) return [];
-  return [...(t.style ?? []), ...(t.mood ?? [])];
+  return [...(t.style ?? []), ...(t.layout ?? [])];
 }
 
 const lazyCache = new Map<string, LazyExoticComponent<ComponentType>>();

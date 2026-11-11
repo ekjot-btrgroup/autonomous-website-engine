@@ -9,6 +9,7 @@
     "tag": "node engine/tag.mjs",
     "shortlist": "node engine/shortlist.mjs",
     "site": "node engine/site.mjs",
+    "remember": "node engine/remember.mjs",
     "push": "node engine/sync.mjs push",
     "pull": "node engine/sync.mjs pull",
     "status": "node engine/status.mjs",
@@ -16,5 +17,7 @@
     "showcase:check": "node engine/showcase.mjs check",
     "test": "node --test tests/unit/*.test.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

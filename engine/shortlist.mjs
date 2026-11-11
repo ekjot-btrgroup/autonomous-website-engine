@@ -1,12 +1,15 @@
 // npm run shortlist -- <slug> [--top 10]
-// Reads briefs/<slug>.json, ranks the library, writes showcase/src/shortlists/<slug>.json.
-// The showcase page /s/<slug> then shows the live designs for the user to pick from. Zero Claude tokens.
+// Reads briefs/<slug>.json, ranks the whole library (docs/ALGORITHM.md), writes showcase/src/shortlists/<slug>.json
+// and prints live links. The showcase page /s/<slug> lets the user pick. Zero Claude tokens.
 import fs from 'node:fs';
 import path from 'node:path';
-import { P, args, die, loadMetas, readJson, writeJson, table, rel } from './lib/util.mjs';
+import { P, args, die, loadMetas, readJson, writeJson, table, rel, config, liveLink } from './lib/util.mjs';
 import { rank, isUsable } from './lib/score.mjs';
+import { record, loadEvents } from './lib/memory.mjs';
+import { AXES } from './lib/vocab.mjs';
 
 const a = args();
+const cfg = config();
 const slug = (a._[0] || '').replace(/^briefs\//, '').replace(/\.json$/, '') || die('Usage: npm run shortlist -- <brief-slug>   (brief file: briefs/<slug>.json)');
 const briefFile = path.join(P.briefs, `${slug}.json`);
 if (!fs.existsSync(briefFile)) die(`Missing ${rel(briefFile)}. Create it first (see briefs/_template.json).`);
@@ -14,17 +17,28 @@ const brief = readJson(briefFile);
 const metas = loadMetas();
 if (!metas.length) die('The library is empty. Run: npm run add');
 
-const r = rank(metas, brief, { top: Number(a.top || 10) });
+const events = loadEvents();
+const r = rank(metas, brief, { top: Number(a.top || cfg.shortlist_size), freshSlots: cfg.fresh_slots, maxPerCategory: cfg.max_per_section_type, events });
+const q = r.query;
 const out = {
   slug, company: brief.company || slug, created_at: new Date().toISOString(), picks: Number(brief.picks || 3),
-  brief: { industry: brief.industry, style: brief.style, audience: brief.audience, sections: r.query.sections },
-  items: r.items.map(({ id, rank: rk, score, category, reasons }) => ({ id, rank: rk, score, category, reasons })),
+  brief: { niche: q.niche || brief.industry, style: brief.style, animations: q.animations, scheme: q.scheme, sections: q.sections },
+  items: r.items.map(({ id, rank: rk, score, category, reasons, parts }) => ({ id, rank: rk, score, category, reasons, parts })),
 };
 writeJson(path.join(P.shortlists, `${slug}.json`), out);
 
-console.log(`Brief understood as: sections=${r.query.sections.join(',')} | industries=${r.query.industries.join(',') || '-'} | style=${r.query.style.join(',') || '-'} | scheme=${r.query.scheme || 'any'}`);
-console.log(table(out.items.map((i) => ({ ...i, why: i.reasons.join('; ') })), ['rank', 'id', 'category', 'score', 'why']));
+// Remember what was shown (freshness + "shown but skipped" learning). Skip if identical to the last showing.
+const last = events.filter((e) => e.type === 'shown' && e.slug === slug).pop();
+const ids = out.items.map((i) => i.id);
+if (!last || last.ids.join() !== ids.join()) record('shown', { slug, context: [...q.ctx], ids });
+
+const feel = AXES.map((x) => `${x} ${q.profile[x]}${q.source[x] === 'brief' ? '*' : ''}`).join(', ');
+console.log(`Brief read as: niche=${q.niche || '-'} | sections=${q.sections.join(',')} | style=${[...q.style].join(',') || '-'} | goals=${[...q.goals].join(',') || '-'} | animations=${q.animations || 'any'} | scheme=${q.scheme || 'any'}`);
+console.log(`Target feel (1-5, * = from brief): ${feel}${q.learned.n ? ` | adjusted ${Math.round(q.learned.weight * 100)}% from your picks for: ${q.learned.briefs.join(', ')}` : ''}`);
+console.log(table(out.items.map((i) => ({ ...i, why: i.reasons.slice(0, 3).join('; ') })), ['rank', 'id', 'category', 'score', 'why']));
+console.log(`\nLive links:\n${out.items.map((i) => `${String(i.rank).padStart(2)}. ${liveLink(`/d/${i.id}`)}`).join('\n')}`);
 if (r.missing.length) console.log(`\nLibrary has no usable design for: ${r.missing.join(', ')}`);
 if (r.excluded.length) console.log(`Excluded (needs conversion or crashes when rendered): ${r.excluded.map((e) => `${e.id} [${e.status}]`).join(', ')}`);
 if (metas.some((m) => isUsable(m) && !m.tags)) console.log('Note: some designs are untagged; run npm run tag -- queue for better ranking.');
-console.log(`\nWrote ${rel(path.join(P.shortlists, `${slug}.json`))}. Next: npm run push -- showcase, then open /s/${slug} in the Lovable showcase.`);
+console.log(`\nPick page: ${liveLink(`/s/${slug}`)}${cfg.showcase_url ? '' : '  (set showcase_url in engine.config.json for full links)'}`);
+console.log(`Next: npm run push -- showcase  (then the links are live)`);

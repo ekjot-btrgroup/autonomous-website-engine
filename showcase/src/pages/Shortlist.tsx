@@ -80,7 +80,7 @@ const Shortlist = () => {
     setPicks((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : prev.length >= max ? prev : [...prev, id]));
   };
 
-  const industry = briefText(list.brief, "industry");
+  const industry = briefText(list.brief, "niche") || briefText(list.brief, "industry");
   const style = briefText(list.brief, "style");
 
   return (
@@ -91,7 +91,7 @@ const Shortlist = () => {
           <h1 className="mt-2 text-xl font-semibold">{list.company || list.slug}</h1>
           {(industry || style) && (
             <p className="text-sm text-zinc-600">
-              {industry && <span>Industry: {industry}</span>}
+              {industry && <span>For: {industry}</span>}
               {industry && style && <span> · </span>}
               {style && <span>Style: {style}</span>}
             </p>

@@ -65,7 +65,7 @@ test('hex to hsl', () => {
 
 test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'engine-'));
-  for (const d of ['engine', 'templates', 'knowledge']) fs.cpSync(path.join(REPO, d), path.join(root, d), { recursive: true });
+  for (const d of ['engine', 'templates', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(root, d), { recursive: true });
   fs.cpSync(path.join(REPO, 'tests/fixtures/designs'), path.join(root, 'incoming'), { recursive: true });
   for (const d of ['briefs', 'sites', 'library/originals']) fs.mkdirSync(path.join(root, d), { recursive: true });
   const run = (script, ...argv) => execFileSync('node', [path.join(root, 'engine', script), ...argv], { cwd: root, encoding: 'utf8', env: { ...process.env, ENGINE_ROOT: root } });
@@ -83,25 +83,60 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   assert.match(run('add-designs.mjs', '--offline'), /duplicate/);
 
   const tags = [
-    { id: id('aurora-hero'), category: 'hero', style: ['futuristic'], industries: ['saas'], scheme: 'dark', quality: 4 },
-    { id: id('navbar-glass'), category: 'navbar', style: ['minimal'], industries: ['architecture'], scheme: 'light', quality: 4 },
-    { id: id('minimal-footer'), category: 'footer', style: ['minimal'], industries: ['architecture'], scheme: 'light', quality: 3 },
-    { id: id('testimonials-marquee'), category: 'testimonials', style: ['editorial'], mood: ['premium'], industries: ['architecture'], scheme: 'light', quality: 4 },
-    { id: id('simple-pricing'), category: 'pricing', style: ['corporate'], industries: ['saas'], scheme: 'light', quality: 3 },
+    { id: id('aurora-hero'), category: 'hero', layout: ['centered'], style: ['futuristic', 'gradient'], tone: 2, energy: 5, luxury: 3, density: 2, warmth: 1, modernity: 5, goals: ['signup'], scheme: 'dark', quality: 4, industries: ['saas'] },
+    { id: id('navbar-glass'), category: 'navbar', layout: ['sticky'], style: ['glassmorphism', 'minimal'], tone: 4, energy: 2, luxury: 4, density: 1, warmth: 3, modernity: 4, scheme: 'light', quality: 4 },
+    { id: id('minimal-footer'), category: 'footer', style: ['minimal'], tone: 4, energy: 1, luxury: 3, density: 1, warmth: 3, modernity: 3, scheme: 'light', quality: 3 },
+    { id: id('testimonials-marquee'), category: 'testimonials', layout: ['marquee'], style: ['editorial', 'warm'], tone: 4, energy: 2, luxury: 4, density: 2, warmth: 4, modernity: 3, goals: ['trust'], quality: 4 },
+    { id: id('simple-pricing'), category: 'pricing', layout: ['cards'], style: ['corporate'], tone: 4, energy: 3, luxury: 2, density: 3, warmth: 2, modernity: 4, goals: ['sales'], quality: 3 },
   ];
   fs.writeFileSync(path.join(root, 'tags.json'), JSON.stringify(tags));
-  assert.match(run('tag.mjs', 'apply', 'tags.json'), /saved/);
+  const applied = run('tag.mjs', 'apply', 'tags.json');
+  assert.match(applied, /saved/);
+  assert.match(applied, /industries ignored/);
+  const auroraMeta = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/designs', id('aurora-hero'), 'meta.json'), 'utf8'));
+  assert.equal(auroraMeta.tags.industries, undefined, 'no industry tags stored');
+  assert.equal(auroraMeta.tags.motion, 'subtle', 'motion derived from code (framer-motion)');
+  assert.equal(auroraMeta.tags.warmth, 1);
 
-  fs.copyFileSync(path.join(REPO, 'briefs/_template.json'), path.join(root, 'briefs/acme.json'));
-  run('shortlist.mjs', 'acme');
+  const brief = { slug: 'acme', company: 'Acme Architects', niche: 'architecture', style: 'minimal, editorial', goals: ['qualified enquiries'], sections: ['navbar', 'hero', 'testimonials', 'footer'], scheme: 'light', animations: 'subtle', colors: { primary: '#1f3a2e' }, picks: 3 };
+  fs.writeFileSync(path.join(root, 'briefs/acme.json'), JSON.stringify(brief));
+  const out1 = run('shortlist.mjs', 'acme');
+  assert.match(out1, /niche=architecture/);
   const sl = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/shortlists/acme.json'), 'utf8'));
-  assert.equal(sl.items[0].category === 'navbar' || sl.items[0].category === 'testimonials' || sl.items[0].category === 'footer', true);
   assert.ok(!sl.items.some((i) => i.id === id('html-cta')), 'unconverted design excluded');
+  const rankOf = (list, x) => list.items.find((i) => i.id === x)?.rank;
+  // calm, light, minimal brief: the dark energetic hero must rank below the calm light navbar
+  assert.ok(rankOf(sl, id('navbar-glass')) < rankOf(sl, id('aurora-hero')));
+
+  // Memory: a note that the aurora hero is great for architects lifts it for architecture briefs only.
+  const before = sl.items.find((i) => i.id === id('aurora-hero')).score;
+  run('remember.mjs', id('aurora-hero'), '--good', 'architects, architecture studios');
+  run('shortlist.mjs', 'acme');
+  const sl2 = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/shortlists/acme.json'), 'utf8'));
+  const after = sl2.items.find((i) => i.id === id('aurora-hero'));
+  assert.ok(after.score > before && after.score - before <= 15, `note boost is capped (${before} -> ${after.score})`);
+  assert.ok(after.reasons.some((r) => r.includes('you noted')));
+  fs.writeFileSync(path.join(root, 'briefs/bakery.json'), JSON.stringify({ ...brief, slug: 'bakery', company: 'Bun', niche: 'restaurant' }));
+  run('shortlist.mjs', 'bakery');
+  const sl3 = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/shortlists/bakery.json'), 'utf8'));
+  assert.ok(!sl3.items.find((i) => i.id === id('aurora-hero')).reasons.some((r) => r.includes('you noted')), 'note does not leak to other niches');
+
+  // Preference: avoid glassmorphism for architecture briefs.
+  run('remember.mjs', '--for', 'architecture', '--avoid', 'glassmorphism');
+  run('shortlist.mjs', 'acme');
+  const sl4 = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/shortlists/acme.json'), 'utf8'));
+  assert.ok(sl4.items.find((i) => i.id === id('navbar-glass')).reasons.some((r) => r.includes('avoid')));
 
   run('site.mjs', 'new', 'acme', '--pick', [id('navbar-glass'), id('testimonials-marquee'), id('minimal-footer')].join(','));
   const page = fs.readFileSync(path.join(root, 'sites/acme/src/pages/Index.tsx'), 'utf8');
   assert.match(page, /01-navbar/);
   assert.match(page, /footer/);
+  assert.doesNotMatch(page, /hero/, 'only picks by default');
+  assert.match(fs.readFileSync(path.join(root, 'sites/acme/src/index.css'), 'utf8'), /--primary: 153/, 'brief colour applied');
+  // Picks are remembered; used designs get an anti-repetition penalty next time.
+  const sl5 = JSON.parse(run('shortlist.mjs', 'bakery') && fs.readFileSync(path.join(root, 'showcase/src/shortlists/bakery.json'), 'utf8'));
+  assert.ok(sl5.items.find((i) => i.id === id('navbar-glass')).reasons.some((r) => r.includes('used in 1')));
+  assert.match(run('remember.mjs', 'list'), /Pick history: 1 briefs/);
   const copy = JSON.parse(run('site.mjs', 'copy', 'acme'));
   const key = Object.entries(copy.sections).flatMap(([, v]) => Object.entries(v)).find(([, t]) => t === 'What our clients say')[0];
   fs.writeFileSync(path.join(root, 'sites/acme/.engine/copy.out.json'), JSON.stringify({ [key]: 'Kind words from clients' }));

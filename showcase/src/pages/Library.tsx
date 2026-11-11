@@ -23,7 +23,7 @@ const Library = () => {
       if (category !== "all" && categoryOf(d) !== category) return false;
       if (status !== "all" && d.status !== status) return false;
       if (!q) return true;
-      const hay = [d.name, d.id, categoryOf(d), ...tagsOf(d), ...(d.tags?.industries ?? []), ...(d.tags?.layout ?? [])]
+      const hay = [d.name, d.id, categoryOf(d), ...tagsOf(d), ...(d.tags?.media ?? []), ...(d.tags?.goals ?? []), d.tags?.typography ?? "", d.tags?.motion ?? "", d.tags?.scheme ?? "", d.tags?.note ?? ""]
         .join(" ")
         .toLowerCase();
       return hay.includes(q);

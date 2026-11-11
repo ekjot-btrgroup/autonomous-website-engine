@@ -1,6 +1,9 @@
-// npm run site -- new <slug> --pick id1,id2,id3 [--only-picks] [--force]   plan + scaffold sites/<slug>/ (Lovable-ready)
+// npm run site -- new <slug> --pick id1,id2,id3 [--fill] [--force]
+//      Builds sites/<slug>/ (Lovable-ready) from the picked designs only. --fill also adds the best-matching
+//      design for every other section in the brief. Brief colours/fonts/animations are applied automatically.
 // npm run site -- theme <slug> [--primary #hex] [--accent #hex] [--background #hex] [--foreground #hex]
-//                              [--heading "Font"] [--body "Font"] [--radius 0.75rem] [--recolor blue:emerald,indigo:teal] [--hex "#1e40af=#0f766e"]
+//                              [--heading "Font"] [--body "Font"] [--radius 0.75rem] [--recolor blue:emerald,indigo:teal]
+//                              [--hex "#1e40af=#0f766e"] [--motion off|on]
 // npm run site -- copy <slug>          print the site's text strings as compact JSON (what Claude rewrites)
 // npm run site -- copy-apply <slug>    apply sites/<slug>/.engine/copy.out.json  {"<key>": "new text", ...}
 // npm run site -- check <slug>         npm install + vite build (local, zero tokens)
@@ -9,6 +12,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { P, args, die, loadMetas, readJson, writeJson, copyDir, table, rel, categoryOf, walk } from './lib/util.mjs';
 import { parseBrief, scoreDesign, isUsable } from './lib/score.mjs';
+import { buildMemory, loadEvents, record } from './lib/memory.mjs';
+import { AXES } from './lib/vocab.mjs';
 import { extractStrings, applyToSource, recolor, applyTheme } from './lib/sitekit.mjs';
 import { buildApp } from './showcase.mjs';
 
@@ -32,7 +37,8 @@ function cmdNew() {
   const picks = String(a.pick || '').split(',').map((s) => s.trim()).filter(Boolean);
   if (!picks.length) die('Give the chosen designs: --pick id1,id2,id3');
   for (const id of picks) if (!byId.has(id)) die(`Unknown design id ${id}`);
-  const q = parseBrief(brief);
+  const mem = buildMemory(loadEvents());
+  const q = parseBrief(brief, mem);
 
   // 1. Slots = brief sections, in page order. Picks take their category's slot.
   const slots = q.sections.map((s) => ({ slot: s, id: null, picked: false, reason: '' }));
@@ -54,9 +60,9 @@ function cmdNew() {
   const used = new Set(picks);
   for (const s of slots) {
     if (s.id) continue;
-    if (a['only-picks']) { s.reason = 'skipped (--only-picks)'; continue; }
+    if (!a.fill) continue;
     const best = metas.filter((m) => isUsable(m) && categoryOf(m) === s.slot && !used.has(m.id))
-      .map((m) => { const r = scoreDesign(m, q); return { m, score: r.score + (mainScheme && m.tags?.scheme === mainScheme ? 12 : 0) }; })
+      .map((m) => { const r = scoreDesign(m, q, mem); return { m, score: r.score + (mainScheme && m.tags?.scheme === mainScheme ? 12 : 0) }; })
       .sort((x, y) => y.score - x.score)[0];
     if (best) {
       const sch = best.m.tags?.scheme;
@@ -67,6 +73,7 @@ function cmdNew() {
   }
   const sections = slots.filter((s) => s.id);
   const missing = slots.filter((s) => !s.id).map((s) => s.slot);
+  // Picks keep the brief's section order; slots the user did not pick are dropped unless --fill.
 
   // 3. Scaffold from the base template + the showcase's tailwind/css (keeps any merged design extensions).
   if (a.force) fs.rmSync(sectionsDir, { recursive: true, force: true });
@@ -79,25 +86,39 @@ function cmdNew() {
   pkg.dependencies = Object.fromEntries(Object.entries(pkg.dependencies).sort(([x], [y]) => x.localeCompare(y)));
   writeJson(path.join(dir, 'package.json'), pkg);
 
-  const imports = [], tags = [];
   sections.forEach((s, i) => {
     const folder = `${String(i + 1).padStart(2, '0')}-${s.slot}`;
     s.folder = folder;
     copyDir(path.join(P.designs, s.id), path.join(sectionsDir, folder));
     const idx = path.join(sectionsDir, folder, 'index.tsx');
     fs.writeFileSync(idx, `// Section source: design ${s.id} (showcase/src/designs/${s.id})\n` + fs.readFileSync(idx, 'utf8'));
-    imports.push(`import S${i + 1} from "@/sections/${folder}";`);
-    tags.push(`      <S${i + 1} />`);
   });
-  fs.writeFileSync(path.join(dir, 'src', 'pages', 'Index.tsx'), `${imports.join('\n')}\n\nconst Index = () => (\n  <div className="min-h-screen">\n${tags.join('\n')}\n  </div>\n);\n\nexport default Index;\n`);
+  const motionOff = String(brief.animations || '').toLowerCase() === 'none';
+  writeIndex(sections, motionOff);
   const htmlFile = path.join(dir, 'index.html');
   const company = String(brief.company || slug).replace(/[<>&"]/g, '');
   fs.writeFileSync(htmlFile, fs.readFileSync(htmlFile, 'utf8').replace(/<title>.*<\/title>/, `<title>${company}</title>`));
   fs.writeFileSync(path.join(dir, 'README.md'), `# ${company}\n\nBuilt by the website engine from designs: ${sections.map((s) => s.id).join(', ')}.\nEdit in Lovable or in this folder.\n`);
-  writeJson(planFile, { slug, company, created_at: new Date().toISOString(), picks, sections, missing, theme: {} });
+  // Brief colours/fonts -> theme automatically (zero tokens). Accepts colors:{primary,accent,...} or brand_colors:[...].
+  const c = brief.colors || {};
+  const bc = [brief.brand_colors].flat().filter((x) => /^#?[0-9a-f]{3,6}$/i.test(String(x || '')));
+  const theme = Object.fromEntries(Object.entries({ primary: c.primary || bc[0], accent: c.accent || bc[1], background: c.background, foreground: c.foreground, heading: brief.fonts?.heading, body: brief.fonts?.body })
+    .filter(([, v]) => v).map(([k, v]) => [k, /^[0-9a-f]{3,6}$/i.test(v) ? `#${v}` : v]));
+  const applied = Object.keys(theme).length ? applyTheme(dir, theme) : [];
+  if (motionOff) { setMotionCss(true); applied.push('animations off'); }
+  writeJson(planFile, { slug, company, created_at: new Date().toISOString(), picks, sections, missing, filled: !!a.fill, theme: { ...theme, motion: motionOff ? 'off' : 'on' } });
+
+  // Memory: what was picked for this kind of brief, and which designs are now in use (anti-repetition).
+  const shortlist = readJson(path.join(P.shortlists, `${slug}.json`), null);
+  record('pick', {
+    slug, context: [...q.ctx], profile: q.profile, shown: shortlist?.items?.map((i) => i.id) || [], picked: picks,
+    picked_traits: picks.map((id) => { const t = byId.get(id).tags || {}; return { id, ...Object.fromEntries(AXES.filter((x) => t[x]).map((x) => [x, t[x]])), style: t.style || [], layout: t.layout || [] }; }),
+  });
+  record('used', { slug, ids: sections.map((s) => s.id) });
 
   console.log(table(sections.map((s) => ({ folder: s.folder, design: s.id, why: s.reason })), ['folder', 'design', 'why']));
-  if (missing.length) console.log(`\nNo library design for: ${missing.join(', ')} (left out).`);
+  if (applied.length) console.log(`\nFrom the brief: ${applied.join('; ')}`);
+  if (missing.length) console.log(a.fill ? `\nNo library design for: ${missing.join(', ')} (left out).` : `\nOnly your picks are used. Brief sections not included: ${missing.join(', ')} (add --fill to complete them automatically).`);
   console.log(`\nCreated ${rel(dir)}. Next: theme (optional) -> copy -> copy-apply -> check -> push.`);
 }
 
@@ -113,9 +134,34 @@ function cmdTheme() {
     done.push(`recoloured ${total} classes/values (${a.recolor || ''} ${a.hex || ''})`.trim());
     t.recolor = a.recolor; t.hex = a.hex;
   }
+  if (a.motion === 'off' || a.motion === 'on') {
+    const off = a.motion === 'off';
+    writeIndex(plan.sections, off);
+    setMotionCss(off);
+    t.motion = a.motion;
+    done.push(`animations ${a.motion}`);
+  }
   plan.theme = { ...plan.theme, ...t };
   writeJson(planFile, plan);
   console.log(done.length ? `Theme updated: ${done.join('; ')}` : 'Nothing to change. Pass --primary/--heading/--body/--recolor ...');
+}
+
+// Page = sections in order. With animations off, framer-motion is told to skip motion (MotionConfig).
+function writeIndex(sections, motionOff) {
+  const imports = sections.map((s, i) => `import S${i + 1} from "@/sections/${s.folder}";`);
+  const tags = sections.map((s, i) => `      <S${i + 1} />`);
+  const open = motionOff ? '  <MotionConfig reducedMotion="always">\n' : '';
+  const close = motionOff ? '  </MotionConfig>\n' : '';
+  const head = motionOff ? 'import { MotionConfig } from "framer-motion";\n' : '';
+  fs.writeFileSync(path.join(dir, 'src', 'pages', 'Index.tsx'), `${head}${imports.join('\n')}\n\nconst Index = () => (\n${open}  <div className="min-h-screen">\n${tags.join('\n')}\n  </div>\n${close});\n\nexport default Index;\n`);
+}
+
+// CSS switch that stops CSS animations/transitions site-wide.
+function setMotionCss(off) {
+  const f = path.join(dir, 'src', 'index.css');
+  let css = fs.readFileSync(f, 'utf8').replace(/\n?\/\* MOTION:OFF \*\/[\s\S]*?\/\* \/MOTION:OFF \*\/\n?/, '\n');
+  if (off) css = css.trimEnd() + '\n\n/* MOTION:OFF */\n*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }\n/* /MOTION:OFF */\n';
+  fs.writeFileSync(f, css);
 }
 
 function collect() {

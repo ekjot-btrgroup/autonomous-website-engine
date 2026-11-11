@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Frame } from "@/showcase/Frame";
-import { categoryOf, getDesign, statusLabel } from "@/showcase/data";
+import { categoryOf, getDesign, statusLabel, AXES } from "@/showcase/data";
 
 const VIEWPORTS = [
   { label: "Desktop", width: 1440 },
@@ -24,7 +24,16 @@ const DesignDetail = () => {
   }
 
   const tags = meta.tags;
-  const chips = [...(tags?.style ?? []), ...(tags?.mood ?? []), ...(tags?.layout ?? []), ...(tags?.industries ?? [])];
+  const chips = [
+    ...(tags?.style ?? []),
+    ...(tags?.layout ?? []),
+    ...(tags?.media ?? []).map((m) => `media: ${m}`),
+    ...(tags?.goals ?? []).map((g) => `goal: ${g}`),
+    ...(tags?.typography ? [`type: ${tags.typography}`] : []),
+    ...(tags?.motion ? [`motion: ${tags.motion}`] : []),
+    ...(tags?.scheme ? [tags.scheme] : []),
+  ];
+  const feel = AXES.filter((a) => typeof tags?.[a.key] === "number");
 
   return (
     <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900">
@@ -53,6 +62,19 @@ const DesignDetail = () => {
             <div className="mt-3 flex flex-wrap gap-1">
               {chips.map((t, i) => (
                 <span key={`${t}-${i}`} className="rounded border border-zinc-200 px-2 py-0.5 text-[11px] text-zinc-600">{t}</span>
+              ))}
+            </div>
+          )}
+          {feel.length > 0 && (
+            <div className="mt-3 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
+              {feel.map((a) => (
+                <div key={a.key} className="flex items-center gap-2 text-[11px] text-zinc-500">
+                  <span className="w-16 text-right">{a.low}</span>
+                  <div className="relative h-1.5 flex-1 rounded bg-zinc-200">
+                    <div className="absolute top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-800" style={{ left: `${(((tags?.[a.key] as number) - 1) / 4) * 100}%` }} />
+                  </div>
+                  <span className="w-20">{a.high}</span>
+                </div>
               ))}
             </div>
           )}
