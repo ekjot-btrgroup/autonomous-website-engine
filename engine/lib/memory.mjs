@@ -10,14 +10,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { P, readJson, writeJson } from './util.mjs';
-import { vocab, AXES } from './vocab.mjs';
+import { vocab, AXES, contextOf } from './vocab.mjs';
 
 const HALF_LIFE_DAYS = 180;
 export const LIMITS = { memory: [-20, 15], prefs: [-15, 10], usagePerSite: 5, usageMax: 15, recentSites: 10, learnedMaxWeight: 0.3 };
 
 export function record(type, data) {
   const at = new Date().toISOString();
-  const file = path.join(P.memory, `${at.replace(/[:.]/g, '-')}-${type}-${crypto.randomBytes(2).toString('hex')}.json`);
+  const tag = type === 'note' && data.design ? `${type}-${data.design}` : type;
+  const file = path.join(P.memory, `${at.replace(/[:.]/g, '-')}-${tag}-${crypto.randomBytes(2).toString('hex')}.json`);
   writeJson(file, { type, at, ...data });
   return file;
 }
@@ -27,7 +28,17 @@ export function loadEvents() {
   return fs.readdirSync(P.memory).filter((f) => f.endsWith('.json'))
     .map((f) => ({ ...readJson(path.join(P.memory, f), {}), _file: f }))
     .filter((e) => e.type)
+    .map(normalizeEvent)
     .sort((a, b) => String(a.at).localeCompare(String(b.at)));
+}
+
+// Events written by the admin dashboard hold raw words; give them the same normalised context as CLI events.
+function normalizeEvent(e) {
+  if (e.source !== 'admin') return e;
+  const ctx = (list) => [...contextOf([list].flat().filter(Boolean).join(' '))];
+  if (e.type === 'note') return { ...e, good: ctx(e.good), bad: ctx(e.bad) };
+  if (e.type === 'pref') return { ...e, context: ctx(e.context) };
+  return e;
 }
 
 const decay = (at, now = Date.now()) => 0.5 ** (Math.max(0, now - Date.parse(at)) / 864e5 / HALF_LIFE_DAYS);

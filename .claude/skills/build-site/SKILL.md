@@ -4,6 +4,7 @@ description: Copy the user's picked designs into a new Lovable-ready project, ap
 ---
 # Build site (any chat; touches only sites/<slug>/)
 
+0. `npm run -s sync` (latest main: admin dashboard edits, other chats' work).
 1. `npm run -s site -- new <slug> --pick <id1>,<id2>,<id3>`
    Uses only the picks, in page order. Brief `colors`, `fonts` and `animations: none` are applied automatically, and the picks are saved to memory.
    Add `--fill` only if the user asks for a complete page (best match for every other brief section).
@@ -12,4 +13,4 @@ description: Copy the user's picked designs into a new Lovable-ready project, ap
 4. `npm run -s site -- check <slug>` must PASS. On FAIL fix only the reported file, max 2 tries, then report.
 5. New Lovable project: the user creates a blank Lovable project, connects GitHub (Lovable makes the repo) and tells you the repo `owner/name`. Add it to the session with push access, then `npm run -s push -- sites/<slug> --repo owner/name`.
    If it says Lovable has newer edits: `npm run -s pull -- sites/<slug>` first.
-6. Commit + push the branch. Reply in at most 8 lines: sections used, colours/fonts/animation applied, the Lovable repo, anything left out.
+6. Commit, then `npm run -s release -- "Site <slug>"`. Reply in at most 8 lines: sections used, colours/fonts/animation applied, the Lovable repo, anything left out.

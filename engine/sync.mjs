@@ -20,6 +20,7 @@ const syncFile = path.join(dir, '.engine', 'sync.json');
 const sync = readJson(syncFile, {});
 const repo = a.repo || sync.repo || die(`No repo known for ${target}. Pass --repo owner/name (the GitHub repo Lovable created for this project).`);
 const url = /^[\w.-]+\/[\w.-]+$/.test(repo) ? `https://github.com/${repo}.git` : repo;
+const shown = String(repo).replace(/\/\/[^@/]*@/, '//***@'); // never print or store tokens
 
 const EXCLUDE = /^(node_modules|dist|\.engine|\.cache|\.shots)(\/|$)|(^|\/)(package-lock\.json|bun\.lockb?|yarn\.lock|pnpm-lock\.yaml|\.DS_Store)$/;
 const PROTECT = /^(\.git|supabase|\.github|public\/lovable-uploads)(\/|$)|^\.env/; // never deleted in the Lovable repo
@@ -56,7 +57,7 @@ function push(attempt = 1) {
     fs.copyFileSync(path.join(dir, r), path.join(work, r));
   }
   git(work, 'add', '-A');
-  if (!git(work, 'status', '--porcelain')) { console.log(`Up to date: ${repo} already matches ${target}.`); save(head, branch); return; }
+  if (!git(work, 'status', '--porcelain')) { console.log(`Up to date: ${shown} already matches ${target}.`); save(head, branch); return; }
   const who = spawnSync('git', ['config', 'user.email'], { cwd: work, encoding: 'utf8' }).stdout.trim();
   if (!who) { git(work, 'config', 'user.email', 'website-engine@users.noreply.github.com'); git(work, 'config', 'user.name', 'Website Engine'); }
   git(work, 'commit', '--quiet', '-m', `Sync ${target} from website engine`);
@@ -66,7 +67,7 @@ function push(attempt = 1) {
     die(`Push failed: ${e.message}\nIn a Claude cloud chat the repo must be added to the session first (add_repo with push access).`);
   }
   save(git(work, 'rev-parse', 'HEAD'), branch);
-  console.log(`Pushed ${target} -> ${repo} (${branch}). Lovable picks it up from GitHub in a few seconds.`);
+  console.log(`Pushed ${target} -> ${shown} (${branch}). Lovable picks it up from GitHub in a few seconds.`);
 }
 
 function pull() {
@@ -76,9 +77,9 @@ function pull() {
   for (const r of filesOf(dir, EXCLUDE)) if (!remote.includes(r)) fs.rmSync(path.join(dir, r), { force: true });
   for (const r of remote) { if (EXCLUDE.test(r)) continue; fs.mkdirSync(path.dirname(path.join(dir, r)), { recursive: true }); fs.copyFileSync(path.join(work, r), path.join(dir, r)); }
   save(head, branch);
-  console.log(`Pulled ${repo} (${branch} @ ${head.slice(0, 7)}) into ${rel(dir)}. Commit it to keep this repo in step.`);
+  console.log(`Pulled ${shown} (${branch} @ ${head.slice(0, 7)}) into ${rel(dir)}. Commit it to keep this repo in step.`);
 }
 
-function save(sha, branch) { writeJson(syncFile, { repo, branch, sha, synced_at: new Date().toISOString() }); }
+function save(sha, branch) { writeJson(syncFile, { repo: shown, branch, sha, synced_at: new Date().toISOString() }); }
 
 mode === 'pull' ? pull() : push();

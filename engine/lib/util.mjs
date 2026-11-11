@@ -18,6 +18,7 @@ export const P = {
   vocab: path.join(ROOT, 'knowledge', 'vocabulary.json'),
   cache: path.join(ROOT, '.cache'),
   memory: path.join(ROOT, 'memory', 'events'),
+  overrides: path.join(ROOT, 'showcase', 'src', 'overrides'),
 };
 
 export const rel = (p) => path.relative(ROOT, p) || '.';

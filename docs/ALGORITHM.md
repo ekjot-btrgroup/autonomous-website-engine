@@ -3,9 +3,9 @@
 Everything on this page runs as plain scripts. No AI model is called while ranking, so a shortlist costs zero Claude tokens.
 Code: `engine/lib/score.mjs` (matching), `engine/lib/memory.mjs` (learning), `engine/tag.mjs` (traits), `knowledge/` (word lists and presets).
 
-## 1. Designs are described by what they are, never by industry
+## 1. Designs are judged mainly by style and feel
 
-A hero with a big photo and calm serif type can serve a spa, a law firm or an architect. So designs never carry an industry tag. Each design gets these traits once, when it is added:
+A hero with a big photo and calm serif type can serve a spa, a law firm or an architect. So the main traits describe the design itself. The niche its demo content is written for (`origin`) is recorded too, as a small signal. Each design gets these traits once, when it is added (and you can change any of them in the admin dashboard):
 
 | Trait | Values | Who sets it |
 |---|---|---|
@@ -19,9 +19,13 @@ A hero with a big photo and calm serif type can serve a spa, a law firm or an ar
 | `motion` | none, subtle, heavy | read from code (framer-motion etc.), Claude can correct |
 | `goals` | leads, sales, signup, booking, showcase, trust, info, contact, download | Claude |
 | `scheme` | light, dark, mixed | read from code, Claude can correct |
+| `origin` | up to 2 niches the demo copy targets (for example saas, ai) | Claude; minor ranking signal |
 | `quality` | 1-5 | Claude |
+| `hidden`, `pinned` | on/off | you, in the admin dashboard |
 
-Allowed words live in `knowledge/vocabulary.json`; anything else is dropped when tags are saved, so the library stays consistent at 500+ designs. Tags given as industries are ignored.
+Allowed words live in `knowledge/vocabulary.json`; anything else is dropped when tags are saved, so the library stays consistent at 500+ designs. Niches are grouped into families (tech, hospitality, wellbeing, property, professional, creative, commerce, community) for the origin signal.
+
+**Who wins:** your admin dashboard edits (`showcase/src/overrides/<id>.json`) are laid over Claude's tags field by field, so your values always win. Claude never overwrites them.
 
 ## 2. Briefs carry the niche, as a target feel
 
@@ -38,9 +42,10 @@ The target feel comes from three layers, strongest first:
 |---|---|---|
 | Section | +30 (+15 if untagged) | its category is a section the brief needs; +15 if it can serve one (`also`) |
 | Feel | 0 to +30 | average closeness on the six axes: `1 - |design - target| / 4` |
-| Style | up to +16 | +8 per brief style word it has, +4 per niche-preset style |
+| Style | up to +24 | +12 per brief style word it has, +6 per niche-preset style (style is a main signal) |
 | Layout | up to +10 | +5 per layout the brief asks for |
 | Goals | up to +12 | +6 per shared goal (for example booking) |
+| Current niche | +8 / +4 | its `origin` is the brief's niche (+8) or in the same family (+4); deliberately small next to style and feel |
 | Media | -10 | it needs photos/products/video the brand said it lacks |
 | Scheme | +8 / -8 | light/dark matches or contradicts the brief |
 | Animation | +8 / -8 | motion fits the answer (none: none; subtle: none or subtle; rich: subtle or heavy) |
@@ -49,9 +54,12 @@ The target feel comes from three layers, strongest first:
 | Memory | -20 to +15 | your notes and pick history (section 4) |
 | Preferences | -15 to +10 | your stated tastes (section 4) |
 | Repeat | 0 to -15 | -5 for each of the last 10 built sites that used it |
+| Pinned | +10 | you pinned it in the admin dashboard |
 | Open issues | -5 | design flagged but still renders |
 
-Designs that need conversion, or that crashed in the render test, are never shortlisted.
+Designs that need conversion, crashed in the render test, or that you hid in the dashboard are never shortlisted.
+
+**What matters most:** with all parts present, section fit (30), feel (30) and style (24) make up most of a typical score. Goals (12), layout (10) and current niche (8) refine it; memory and preferences adjust it within their caps.
 
 ## 4. Memory: what the engine learns
 
@@ -59,8 +67,8 @@ Each event is one small file in `memory/events/`, so ten chats can learn at the 
 
 | Event | Created by | Effect |
 |---|---|---|
-| `note` | you: "this hero is great for bakeries" -> `npm run remember -- <id> --good "bakeries"` | +10 for briefs whose context matches "bakeries" (`--bad`: -15). A `--rating` with no context: (rating-3) x 2 everywhere |
-| `pref` | you: "for luxury brands use serif and dark, no gradients" -> `remember --for "luxury" --prefer "serif, dark" --avoid "gradient"` | +4 per preferred trait, -8 per avoided trait, only for matching briefs (or all briefs without `--for`) |
+| `note` | you: "this hero is great for bakeries" -> `npm run remember -- <id> --good "bakeries"`, or the design's page in the admin dashboard | +10 for briefs whose context matches "bakeries" (`--bad`: -15). A `--rating` with no context: (rating-3) x 2 everywhere |
+| `pref` | you: "for luxury brands use serif and dark, no gradients" -> `remember --for "luxury" --prefer "serif, dark" --avoid "gradient"`, or the admin Memory page | +4 per preferred trait, -8 per avoided trait, only for matching briefs (or all briefs without `--for`) |
 | `shown` | automatic, each shortlist | marks designs as seen (for exploration, below) |
 | `pick` | automatic, when a site is built | +6 next time for designs you picked for similar briefs; -1.5 for ones shown and skipped; feeds the learned feel (section 2) |
 | `used` | automatic, when a site is built | anti-repetition penalty (section 3) |

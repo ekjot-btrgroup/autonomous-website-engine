@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { P, args, die, loadMetas, readJson, writeJson, table, rel, config, liveLink } from './lib/util.mjs';
+import { loadLibrary } from './lib/library.mjs';
 import { rank, isUsable } from './lib/score.mjs';
 import { record, loadEvents } from './lib/memory.mjs';
 import { AXES } from './lib/vocab.mjs';
@@ -14,7 +15,7 @@ const slug = (a._[0] || '').replace(/^briefs\//, '').replace(/\.json$/, '') || d
 const briefFile = path.join(P.briefs, `${slug}.json`);
 if (!fs.existsSync(briefFile)) die(`Missing ${rel(briefFile)}. Create it first (see briefs/_template.json).`);
 const brief = readJson(briefFile);
-const metas = loadMetas();
+const metas = loadLibrary();
 if (!metas.length) die('The library is empty. Run: npm run add');
 
 const events = loadEvents();

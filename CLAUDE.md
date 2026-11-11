@@ -7,7 +7,8 @@ Scripts do all deterministic work and print compact output. Use `npm run -s <scr
 Claude only: tags designs from summaries, writes briefs, picks colours when asked, writes copy as JSON, records feedback, converts non-React designs, fixes flagged designs.
 
 ## Hard rules
-- Tags describe the SECTION (layout, feel, media, motion), never an industry. Niches live only in briefs and memory.
+- Judge a design mainly by style and feel (layout, style, 6 feel axes, media, motion). `origin` = the niche its demo content targets: record it (<=2), it is a minor signal.
+- Admin dashboard edits (`showcase/src/overrides/`, admin memory events) always win over Claude's tags. Never overwrite or delete them.
 - Never read `showcase/src/designs/*/code/` or `sites/*/src/sections/` unless converting or fixing that one flagged design.
 - Never read `library/originals/` except to convert a `needs_conversion` design. Never edit originals; never delete designs.
 - Design look stays as-is: colours/typography change only when the brief asks, lightly.
@@ -17,11 +18,13 @@ Claude only: tags designs from summaries, writes briefs, picks colours when aske
 - A site chat touches only `briefs/<slug>.json`, `showcase/src/shortlists/<slug>.json`, `sites/<slug>/**`, `memory/events/*`.
 - Library changes (`npm run add`, tagging, conversions) happen in one chat at a time.
 - No screenshots, subagents or Lovable AI messages unless the user asks or a skill says so.
-- No secrets in the repo. Commit and push to the session branch at the end of every task.
+- No secrets in the repo.
+- Start of every task: `npm run -s sync` (pulls main: dashboard edits, other chats' work).
+- End of every task: commit, then `npm run -s release -- "<one-line summary>"`. It merges into `main` and writes `docs/releases/` notes. The user authorised this: do not ask. On conflict it pushes nothing; run `npm run sync`, resolve, release again.
 
 ## Workflows (load the skill)
 - New designs -> `/add-designs`
 - User wants a website / gives a brief -> `/shortlist` (asks 3 questions: animations, colours, brand brief)
 - User sends "Build site <slug> with designs: a, b, c" -> `/build-site`
 
-`npm run status` shows everything. `npm run remember -- list` shows what has been learned.
+`npm run status` shows everything. `npm run remember -- list` shows what has been learned. `npm run releases` lists what went to main.

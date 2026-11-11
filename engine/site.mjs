@@ -11,6 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { P, args, die, loadMetas, readJson, writeJson, copyDir, table, rel, categoryOf, walk } from './lib/util.mjs';
+import { loadLibrary } from './lib/library.mjs';
 import { parseBrief, scoreDesign, isUsable } from './lib/score.mjs';
 import { buildMemory, loadEvents, record } from './lib/memory.mjs';
 import { AXES } from './lib/vocab.mjs';
@@ -32,7 +33,7 @@ const commands = { new: cmdNew, theme: cmdTheme, copy: cmdCopy, 'copy-apply': cm
 function cmdNew() {
   const brief = readJson(path.join(P.briefs, `${slug}.json`), null) || die(`Missing briefs/${slug}.json`);
   if (fs.existsSync(planFile) && !a.force) die(`sites/${slug} already exists. Use --force to rebuild its sections (theme/copy edits will be lost).`);
-  const metas = loadMetas();
+  const metas = loadLibrary();
   const byId = new Map(metas.map((m) => [m.id, m]));
   const picks = String(a.pick || '').split(',').map((s) => s.trim()).filter(Boolean);
   if (!picks.length) die('Give the chosen designs: --pick id1,id2,id3');

@@ -359,5 +359,60 @@
     "directions": "contact",
     "app": "download",
     "install": "download"
+  },
+  "niche_families": {
+    "tech": [
+      "saas",
+      "ai",
+      "fintech",
+      "crypto",
+      "gaming",
+      "energy"
+    ],
+    "hospitality": [
+      "restaurant",
+      "hospitality",
+      "travel",
+      "events"
+    ],
+    "wellbeing": [
+      "health",
+      "fitness",
+      "wellness",
+      "beauty"
+    ],
+    "property": [
+      "architecture",
+      "interior",
+      "real-estate",
+      "construction"
+    ],
+    "professional": [
+      "legal",
+      "finance",
+      "consulting",
+      "manufacturing",
+      "automotive"
+    ],
+    "creative": [
+      "agency",
+      "portfolio",
+      "media",
+      "fashion",
+      "jewellery"
+    ],
+    "commerce": [
+      "ecommerce",
+      "fashion",
+      "jewellery",
+      "beauty",
+      "automotive"
+    ],
+    "community": [
+      "nonprofit",
+      "education",
+      "local-services",
+      "general"
+    ]
   }
 }

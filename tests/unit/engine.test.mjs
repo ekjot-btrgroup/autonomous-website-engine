@@ -92,9 +92,9 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   fs.writeFileSync(path.join(root, 'tags.json'), JSON.stringify(tags));
   const applied = run('tag.mjs', 'apply', 'tags.json');
   assert.match(applied, /saved/);
-  assert.match(applied, /industries ignored/);
   const auroraMeta = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/designs', id('aurora-hero'), 'meta.json'), 'utf8'));
-  assert.equal(auroraMeta.tags.industries, undefined, 'no industry tags stored');
+  assert.equal(auroraMeta.tags.industries, undefined, 'no industry field stored');
+  assert.deepEqual(auroraMeta.tags.origin, ['saas'], 'current niche kept as a minor origin signal');
   assert.equal(auroraMeta.tags.motion, 'subtle', 'motion derived from code (framer-motion)');
   assert.equal(auroraMeta.tags.warmth, 1);
 
@@ -137,6 +137,27 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   const sl5 = JSON.parse(run('shortlist.mjs', 'bakery') && fs.readFileSync(path.join(root, 'showcase/src/shortlists/bakery.json'), 'utf8'));
   assert.ok(sl5.items.find((i) => i.id === id('navbar-glass')).reasons.some((r) => r.includes('used in 1')));
   assert.match(run('remember.mjs', 'list'), /Pick history: 1 briefs/);
+
+  // Admin dashboard overrides: admin tags win, hidden designs disappear, pinned designs gain points.
+  const ovDir = path.join(root, 'showcase/src/overrides');
+  fs.mkdirSync(ovDir, { recursive: true });
+  const scoreOf = (slug, x) => JSON.parse(fs.readFileSync(path.join(root, `showcase/src/shortlists/${slug}.json`), 'utf8')).items.find((i) => i.id === x);
+  run('shortlist.mjs', 'acme');
+  const pricingBefore = scoreOf('acme', id('simple-pricing'));
+  fs.writeFileSync(path.join(ovDir, `${id('simple-pricing')}.json`), JSON.stringify({ id: id('simple-pricing'), pinned: true, tags: { style: ['minimal', 'editorial'], origin: ['architecture'] }, updated_at: new Date().toISOString(), updated_by: 'admin' }));
+  fs.writeFileSync(path.join(ovDir, `${id('aurora-hero')}.json`), JSON.stringify({ id: id('aurora-hero'), hidden: true, updated_at: new Date().toISOString() }));
+  run('shortlist.mjs', 'acme');
+  const pricingAfter = scoreOf('acme', id('simple-pricing'));
+  assert.ok(pricingAfter.reasons.includes('pinned by you'));
+  assert.ok(pricingAfter.reasons.includes('already used for architecture'));
+  assert.ok(pricingAfter.score > (pricingBefore?.score ?? 0) + 20, 'admin style/origin/pin raise the score');
+  assert.equal(scoreOf('acme', id('aurora-hero')), undefined, 'hidden design never shortlisted');
+  assert.match(run('tag.mjs', 'list'), /admin/);
+
+  // Admin-written memory events (raw words) are normalised like CLI ones.
+  fs.writeFileSync(path.join(root, 'memory/events', `2026-01-01T00-00-00-000Z-note-${id('minimal-footer')}-abcd.json`), JSON.stringify({ type: 'note', at: new Date().toISOString(), design: id('minimal-footer'), good: ['architecture studios'], bad: [], text: 'admin', source: 'admin' }));
+  run('shortlist.mjs', 'acme');
+  assert.ok(scoreOf('acme', id('minimal-footer')).reasons.some((r) => r.includes('you noted')));
   const copy = JSON.parse(run('site.mjs', 'copy', 'acme'));
   const key = Object.entries(copy.sections).flatMap(([, v]) => Object.entries(v)).find(([, t]) => t === 'What our clients say')[0];
   fs.writeFileSync(path.join(root, 'sites/acme/.engine/copy.out.json'), JSON.stringify({ [key]: 'Kind words from clients' }));
@@ -144,4 +165,34 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   const t = fs.readdirSync(path.join(root, 'sites/acme/src/sections')).find((d) => d.includes('testimonials'));
   assert.match(fs.readFileSync(path.join(root, 'sites/acme/src/sections', t, 'code/testimonials.tsx'), 'utf8'), /Kind words from clients/);
   fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('release: merges branch into main, tags it, writes a restorable note; sync pulls main', () => {
+  const base = fs.mkdtempSync(path.join(os.tmpdir(), 'rel-'));
+  const g = (cwd, ...argv) => execFileSync('git', argv, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+  g(base, 'init', '-q', '--bare', '-b', 'main', 'origin.git');
+  g(base, 'clone', '-q', 'origin.git', 'work');
+  const work = path.join(base, 'work');
+  g(work, 'config', 'user.email', 't@t'); g(work, 'config', 'user.name', 't');
+  for (const d of ['engine', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(work, d), { recursive: true });
+  g(work, 'add', '-A'); g(work, 'commit', '-qm', 'init'); g(work, 'push', '-q', 'origin', 'main');
+  g(work, 'checkout', '-qb', 'feature');
+  fs.writeFileSync(path.join(work, 'a.txt'), 'a'); g(work, 'add', '-A'); g(work, 'commit', '-qm', 'Feature A');
+  const run = (...argv) => execFileSync('node', [path.join(work, 'engine/release.mjs'), ...argv], { cwd: work, encoding: 'utf8', env: { ...process.env, ENGINE_ROOT: work } });
+  assert.match(run('release', 'Feature A release'), /Released to main/);
+  assert.ok(g(work, 'log', 'origin/main', '--oneline').includes('Release: Feature A release'));
+  assert.match(g(work, 'ls-remote', '--tags', 'origin'), /release-\d{8}-\d{4}-feature-a-release/);
+  const note = fs.readdirSync(path.join(work, 'docs/releases')).find((f) => f.endsWith('feature-a-release.md'));
+  const txt = fs.readFileSync(path.join(work, 'docs/releases', note), 'utf8');
+  assert.match(txt, /\| `[0-9a-f]+` \| Feature A \|/);
+  assert.match(txt, /git cherry-pick/);
+  assert.match(run('releases'), /Feature A release/);
+  // Another writer (e.g. the admin dashboard) commits to main; sync brings it in.
+  g(base, 'clone', '-q', 'origin.git', 'other');
+  const other = path.join(base, 'other');
+  g(other, 'config', 'user.email', 't@t'); g(other, 'config', 'user.name', 't');
+  fs.writeFileSync(path.join(other, 'admin.json'), '{}'); g(other, 'add', '-A'); g(other, 'commit', '-qm', 'admin: edit'); g(other, 'push', '-q', 'origin', 'main');
+  assert.match(run('sync'), /Pulled 1 commit/);
+  assert.ok(fs.existsSync(path.join(work, 'admin.json')));
+  fs.rmSync(base, { recursive: true, force: true });
 });

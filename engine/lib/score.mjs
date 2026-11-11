@@ -10,11 +10,13 @@ import { terms, norm, vocab, presets, contextOf, goalsOf, clean, clampAxis, AXES
 import { buildMemory, designMemory, prefScore, usagePenalty, learnedProfile, LIMITS } from './memory.mjs';
 
 export const DEFAULT_SECTIONS = ['navbar', 'hero', 'features', 'about', 'testimonials', 'cta', 'footer'];
-export const WEIGHTS = { section: 30, sectionAlso: 15, feel: 30, style: 16, layout: 10, goals: 12, media: -10, scheme: 8, motion: 8, quality: 4, avoid: -20 };
+export const WEIGHTS = { section: 30, sectionAlso: 15, feel: 30, style: 24, styleWord: 12, styleHint: 6, layout: 10, goals: 12, origin: 8, originFamily: 4, media: -10, scheme: 8, motion: 8, quality: 4, avoid: -20, pinned: 10 };
 const AXIS_WORDS = { tone: ['playful', 'formal'], energy: ['calm', 'energetic'], luxury: ['everyday', 'premium'], density: ['airy', 'dense'], warmth: ['cool', 'warm'], modernity: ['classic', 'cutting-edge'] };
 const ANIMATION = { none: ['none'], subtle: ['none', 'subtle'], rich: ['subtle', 'heavy'] };
 
-export const isUsable = (m) => ['ok', 'needs_attention'].includes(m.status) && m.rendered?.ok !== false;
+export const isUsable = (m) => ['ok', 'needs_attention'].includes(m.status) && m.rendered?.ok !== false && !m.hidden;
+
+const familyOf = (niche) => Object.entries(vocab().niche_families || {}).filter(([, list]) => list.includes(niche)).map(([f]) => f);
 
 export function parseBrief(b, mem = buildMemory([])) {
   const v = vocab();
@@ -62,7 +64,7 @@ export function parseBrief(b, mem = buildMemory([])) {
 // All descriptive terms of a design (for preferences/avoid matching).
 const designTerms = (m) => {
   const t = m.tags || {};
-  return new Set([categoryOf(m), ...(t.also || []), ...(t.style || []), ...(t.layout || []), ...(t.media || []), t.typography, t.scheme, t.motion].filter(Boolean));
+  return new Set([categoryOf(m), ...(t.also || []), ...(t.style || []), ...(t.layout || []), ...(t.media || []), ...(t.origin || []), t.typography, t.scheme, t.motion].filter(Boolean));
 };
 
 export function scoreDesign(m, q, mem = buildMemory([])) {
@@ -85,7 +87,15 @@ export function scoreDesign(m, q, mem = buildMemory([])) {
     }
     const st = (t.style || []).filter((x) => q.style.has(x));
     const hint = (t.style || []).filter((x) => q.styleHint.has(x));
-    add('style', Math.min(WEIGHTS.style, st.length * 8 + hint.length * 4), st.length || hint.length ? `style: ${[...st, ...hint].join(', ')}` : null);
+    add('style', Math.min(WEIGHTS.style, st.length * WEIGHTS.styleWord + hint.length * WEIGHTS.styleHint), st.length || hint.length ? `style: ${[...st, ...hint].join(', ')}` : null);
+    // Current niche (who the demo content targets): a small signal next to style and feel.
+    if (q.niche && (t.origin || []).length) {
+      if (t.origin.includes(q.niche)) add('origin', WEIGHTS.origin, `already used for ${q.niche}`);
+      else {
+        const fam = familyOf(q.niche).find((f) => t.origin.some((o) => familyOf(o).includes(f)));
+        if (fam) add('origin', WEIGHTS.originFamily, `built for a related niche (${t.origin.join(', ')})`);
+      }
+    }
     const lay = (t.layout || []).filter((x) => q.layout.has(x));
     add('layout', Math.min(WEIGHTS.layout, lay.length * 5), lay.length ? `layout: ${lay.join(', ')}` : null);
     const g = (t.goals || []).filter((x) => q.goals.has(x));
@@ -113,6 +123,7 @@ export function scoreDesign(m, q, mem = buildMemory([])) {
   add('prefs', pf.score, pf.reasons.join('; ') || null);
   const up = usagePenalty(mem, m.id);
   add('repeat', up.score, up.reason);
+  if (m.pinned) add('pinned', WEIGHTS.pinned, 'pinned by you');
   if (m.status === 'needs_attention') add('issues', -5, 'has open issues');
   const score = Math.round(Object.values(parts).reduce((x, y) => x + y, 0));
   return { id: m.id, category: cat, score, parts, reasons, fresh: !mem.shown.has(m.id) };
@@ -150,7 +161,7 @@ export function rank(metas, brief, { top = 10, maxPerCategory = 3, freshSlots = 
   return {
     query: q,
     items: chosen.map((d, i) => ({ ...d, rank: i + 1 })),
-    excluded: metas.filter((m) => !usable.includes(m)).map((m) => ({ id: m.id, status: m.status })),
+    excluded: metas.filter((m) => !usable.includes(m)).map((m) => ({ id: m.id, status: m.hidden ? 'hidden' : m.status })),
     missing: q.sections.filter((s) => !usable.some((m) => categoryOf(m) === s)),
     memoryEvents: mem.count,
   };

@@ -20,7 +20,7 @@ You never run commands yourself. You talk to Claude in a chat on this repo, and 
    - imports them, keeping every original untouched in `library/originals/`;
    - test-builds the showcase and opens every design in a headless browser to catch crashes;
    - fixes small problems (missing default data, custom Tailwind settings) and converts HTML/Vue/Svelte designs into React once;
-   - tags each design by its traits (layout, style, feel, media, motion), never by industry;
+   - tags each design mainly by style and feel (layout, style, six feel sliders, media, motion), plus the niche it is currently built for as a small extra signal;
    - pushes the showcase. Every design gets a live page: `<showcase URL>/d/<design-id>`.
 4. Browse everything at `<showcase URL>/`, with search and filters.
 
@@ -56,10 +56,26 @@ Your picks are remembered automatically, so the next brief of the same kind star
 
 Ask *"What have you learned?"* to see it (Claude runs `npm run remember -- list`).
 
+## Part D2: manage designs yourself in the admin dashboard
+
+Open `<showcase URL>/admin`:
+- Switch between grid and list view.
+- Open any design to change its tags, feel sliders, current niche, hidden/pinned status and use-case notes.
+- Saves are free: no Lovable credits, no Claude tokens.
+- Claude picks up your edits at the start of its next task.
+
+Setup and details: [ADMIN-DASHBOARD.md](ADMIN-DASHBOARD.md).
+
 ## Part E: after the site is in Lovable
 
 - Edit freely in Lovable. If you later ask Claude to change that site, Claude first pulls your Lovable edits back, so nothing is overwritten. The push command refuses to overwrite them.
-- Each chat works on its own branch. Merge each chat's branch into `main` (ask Claude to open a pull request), and start new chats from `main` so they see the latest library and memory.
+- Each chat works on its own branch. At the end of every task Claude merges it into `main` automatically and writes a release note in `docs/releases/`. Every chat starts by pulling `main`, so it sees the latest library, memory and your dashboard edits.
+- To bring something back:
+  - Ask Claude *"restore the release about X"*, or run `npm run releases` to find it.
+  - A whole release: `git checkout -b restore-x <tag>`.
+  - One feature: `git cherry-pick <commit>`.
+  - Undo a release: `git revert -m 1 <tag>`.
+  - Details: [releases/README.md](releases/README.md).
 
 ## Costs at a glance
 - **Claude:**

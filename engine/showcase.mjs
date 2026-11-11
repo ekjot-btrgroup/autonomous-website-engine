@@ -2,14 +2,35 @@
 // npm run showcase:check  -> npm install + vite build of showcase; marks designs that break the build.
 import fs from 'node:fs';
 import path from 'node:path';
-import { spawnSync } from 'node:child_process';
-import { P, ROOT, copyDir, readJson, writeJson, rel, args, metaPath } from './lib/util.mjs';
+import { spawnSync, execFileSync } from 'node:child_process';
+import { P, ROOT, copyDir, readJson, writeJson, rel, args, metaPath, config } from './lib/util.mjs';
 
 const BASE = () => path.join(P.templates, 'lovable-base');
 const OVERLAY = () => path.join(P.templates, 'showcase-overlay');
 
 // Files the engine owns in showcase/ (refreshed from templates on init). Designs/shortlists are never touched.
-const OWNED = (r) => !r.startsWith('src/designs/') && !r.startsWith('src/shortlists/') && r !== 'package.json' && r !== 'tailwind.config.ts' && r !== 'src/index.css';
+const OWNED = (r) => !r.startsWith('src/designs/') && !r.startsWith('src/shortlists/') && !r.startsWith('src/overrides/') && r !== 'package.json' && r !== 'tailwind.config.ts' && r !== 'src/index.css';
+
+// Engine repo "owner/name" for the admin dashboard: engine.config.json `engine_repo`, else the git remote.
+export function engineRepo() {
+  const cfg = config();
+  if (cfg.engine_repo) return cfg.engine_repo;
+  try {
+    const url = execFileSync('git', ['remote', 'get-url', 'origin'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    const m = url.replace(/\.git$/, '').match(/([\w.-]+)\/([\w.-]+)$/);
+    return m ? `${m[1]}/${m[2]}` : '';
+  } catch { return ''; }
+}
+
+// Files the admin dashboard reads, refreshed on every run (vocabulary + where to save edits).
+function writeAdminData() {
+  const dir = path.join(P.showcase, 'src', 'showcase');
+  if (!fs.existsSync(dir)) return;
+  fs.copyFileSync(P.vocab, path.join(dir, 'vocabulary.json'));
+  const cfgFile = path.join(dir, 'admin-config.json');
+  const next = { engine_repo: engineRepo(), branch: 'main' };
+  if (JSON.stringify(readJson(cfgFile, {})) !== JSON.stringify(next)) writeJson(cfgFile, next);
+}
 
 export function ensureShowcase({ refresh = false } = {}) {
   const fresh = !fs.existsSync(path.join(P.showcase, 'package.json'));
@@ -18,7 +39,8 @@ export function ensureShowcase({ refresh = false } = {}) {
     copyDir(OVERLAY(), P.showcase, { filter: (r) => fresh || OWNED(r) });
     fs.mkdirSync(P.designs, { recursive: true });
     fs.mkdirSync(P.shortlists, { recursive: true });
-    for (const d of [P.designs, P.shortlists]) if (!fs.existsSync(path.join(d, '.gitkeep'))) fs.writeFileSync(path.join(d, '.gitkeep'), '');
+    for (const d of [P.designs, P.shortlists, P.overrides]) fs.mkdirSync(d, { recursive: true });
+    for (const d of [P.designs, P.shortlists, P.overrides]) if (!fs.existsSync(path.join(d, '.gitkeep'))) fs.writeFileSync(path.join(d, '.gitkeep'), '');
     if (fresh) {
       const pkg = readJson(path.join(P.showcase, 'package.json'));
       pkg.name = 'design-showcase';
@@ -27,6 +49,7 @@ export function ensureShowcase({ refresh = false } = {}) {
       fs.writeFileSync(html, fs.readFileSync(html, 'utf8').replace('<title>Site</title>', '<title>Design showcase</title>'));
     }
   }
+  writeAdminData();
   return fresh;
 }
 

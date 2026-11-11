@@ -4,6 +4,7 @@ description: Turn a client request into the top 10 matching designs from the sho
 ---
 # Shortlist (any chat)
 
+0. `npm run -s sync` (latest main: admin dashboard edits, other chats' work).
 1. **Intake, one message, only what is missing** (skip any question the user already answered):
    1. Animations: none, subtle, or rich?
    2. Colours: brand colours (hex or names), "choose for me", or "keep the designs' own colours"?
@@ -18,7 +19,7 @@ description: Turn a client request into the top 10 matching designs from the sho
    - `fonts`: only if the user named fonts or the brand clearly needs a change.
 3. `npm run -s shortlist -- <slug>` (zero tokens; ranking + reasons + live links).
 4. If it reports untagged designs, run `/add-designs` step 5 first, then repeat step 3.
-5. `npm run -s push -- showcase` (so the shortlist page is live), then commit + push the branch.
+5. `npm run -s push -- showcase` (so the shortlist page is live), then commit and `npm run -s release -- "Shortlist for <slug>"`.
 6. Reply in at most 12 lines: the 10 as `rank. id (category): one reason`, the live links block from the output, sections the library lacks, then:
    "Open <pick page link>, tick 3, press Copy, paste it here."
    Stop. Do not build until the user sends their picks.

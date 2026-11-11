@@ -2,8 +2,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { P, loadMetas, readJson, table, categoryOf } from './lib/util.mjs';
+import { loadLibrary } from './lib/library.mjs';
 
-const metas = loadMetas();
+const metas = loadLibrary();
 const by = (f) => metas.reduce((c, m) => ((c[f(m)] = (c[f(m)] || 0) + 1), c), {});
 console.log(`Library: ${metas.length} designs | status ${JSON.stringify(by((m) => m.status))} | tagged ${metas.filter((m) => m.tags).length}/${metas.length}`);
 console.log(`Categories: ${Object.entries(by(categoryOf)).sort((x, y) => y[1] - x[1]).map(([k, v]) => `${k} ${v}`).join(', ') || '-'}`);
