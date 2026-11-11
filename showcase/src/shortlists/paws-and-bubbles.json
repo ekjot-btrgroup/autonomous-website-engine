@@ -1,0 +1,256 @@
+{
+  "slug": "paws-and-bubbles",
+  "company": "Paws & Bubbles",
+  "created_at": "2026-11-11T15:31:52.921Z",
+  "picks": 3,
+  "brief": {
+    "niche": "beauty",
+    "style": "playful, friendly, bright, rounded",
+    "animations": "subtle",
+    "scheme": "light",
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "pricing",
+      "testimonials",
+      "contact",
+      "footer"
+    ]
+  },
+  "items": [
+    {
+      "id": "plastic-surgery-c5ad",
+      "rank": 1,
+      "score": 86,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, contact)",
+        "feel 50%: more formal, less energetic, more premium, less warm than wanted",
+        "style: elegant, soft",
+        "already used for beauty",
+        "serves goal: booking, trust",
+        "quality 5/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 15,
+        "style": 12,
+        "origin": 8,
+        "goals": 12,
+        "motion": 8,
+        "quality": 8
+      },
+      "why": "Soft salon-style booking page, but more formal and premium than a cheerful pet groomer needs."
+    },
+    {
+      "id": "spa-wellness-8f4f",
+      "rank": 2,
+      "score": 83,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing services, contact)",
+        "feel 67%: less energetic, more premium than wanted",
+        "style: elegant, soft",
+        "built for a related niche (wellness)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 20,
+        "style": 12,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Calm pampering mood suits grooming as a treat; quieter and more upmarket than wanted."
+    },
+    {
+      "id": "beauty-salon-0dbd",
+      "rank": 3,
+      "score": 82,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, contact)",
+        "feel 71%: less energetic, more premium than wanted",
+        "style: elegant, soft",
+        "already used for beauty",
+        "serves goal: booking",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 21,
+        "style": 12,
+        "origin": 8,
+        "goals": 6,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Salon layout maps directly to grooming services and appointments; easy to warm up with teal and yellow."
+    },
+    {
+      "id": "dental-clinic-e882",
+      "rank": 4,
+      "score": 81,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, testimonials)",
+        "feel 79%: less energetic than wanted",
+        "style: soft",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 24,
+        "style": 6,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Friendly, trust-led booking page; its 'care pathway' story fits gentle, certified pet handling."
+    },
+    {
+      "id": "driving-school-167a",
+      "rank": 5,
+      "score": 79,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, contact)",
+        "feel 79%",
+        "style: playful, soft",
+        "serves goal: booking"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 24,
+        "style": 18,
+        "goals": 6,
+        "motion": 8
+      },
+      "why": "Most playful and energetic of the ten, with a bright friendly tone that suits a family pet brand."
+    },
+    {
+      "id": "salon-beauty-d352",
+      "rank": 6,
+      "score": 77,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, contact)",
+        "feel 67%: less energetic, more premium than wanted",
+        "style: elegant",
+        "already used for beauty",
+        "serves goal: booking, trust"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 20,
+        "style": 6,
+        "origin": 8,
+        "goals": 12,
+        "motion": 8
+      },
+      "why": "Elegant salon structure for services and stylists; needs a lighter, more playful touch."
+    },
+    {
+      "id": "medical-clinic-9af9",
+      "rank": 7,
+      "score": 75,
+      "category": "page",
+      "reasons": [
+        "full page covering 3/8 wanted sections (missing services, about, pricing)",
+        "feel 79%: less energetic than wanted",
+        "style: soft, elegant",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 11,
+        "feel": 24,
+        "style": 12,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Reassuring care feel but thin on sections; would need services and pricing added."
+    },
+    {
+      "id": "restaurant-c6ae",
+      "rank": 8,
+      "score": 75,
+      "category": "page",
+      "reasons": [
+        "full page covering 7/8 wanted sections (missing services)",
+        "feel 75%: less energetic than wanted",
+        "serves goal: booking",
+        "light as requested",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 26,
+        "feel": 23,
+        "goals": 6,
+        "scheme": 8,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Covers almost every section with a warm welcome; food-led imagery would need replacing."
+    },
+    {
+      "id": "physical-therapy-8283",
+      "rank": 9,
+      "score": 74,
+      "category": "page",
+      "reasons": [
+        "full page covering 3/8 wanted sections (missing services, about, pricing)",
+        "feel 71%: less energetic than wanted",
+        "style: soft",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "light as requested",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 11,
+        "feel": 21,
+        "style": 6,
+        "origin": 4,
+        "goals": 12,
+        "scheme": 8,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Gentle, caring tone fits nervous pets, but the page is short and needs more sections."
+    },
+    {
+      "id": "auto-service-2572",
+      "rank": 10,
+      "score": 72,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/8 wanted sections (missing pricing, contact)",
+        "feel 71%: less warm than wanted",
+        "built for a related niche (automotive)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 21,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Clear service-and-booking structure; cooler, more mechanical feel than a pet brand wants."
+    }
+  ]
+}

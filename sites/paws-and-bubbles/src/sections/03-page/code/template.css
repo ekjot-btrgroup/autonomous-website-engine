@@ -1,0 +1,398 @@
+/* assets/css/style.css (scoped to .tpl-beauty-salon-0dbd) */
+.tpl-beauty-salon-0dbd{
+  --rose: #C96F7A;
+  --rose-dark: #B25460;
+  --blush: #F8EAEC;
+  --blush-light: #FDF6F7;
+  --gold: #C9A45C;
+  --charcoal: #2E2A2B;
+  --ink: #1C1A1B;
+  --muted: #6E6769;
+  --line: #EDE3E5;
+  --white: #FFFFFF;
+  --shadow: 0 16px 40px rgba(46, 42, 43, 0.10);
+  --shadow-lg: 0 24px 60px rgba(46, 42, 43, 0.16);
+  --radius: 18px;
+  --radius-lg: 28px;
+  --font-head: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', 'Helvetica Neue', sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 96px; --space-10: 128px;
+}
+.tpl-beauty-salon-0dbd *{ margin: 0; padding: 0; box-sizing: border-box; }
+.tpl-beauty-salon-0dbd{ scroll-behavior: smooth; }
+.tpl-beauty-salon-0dbd{
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--charcoal);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+.tpl-beauty-salon-0dbd img{ max-width: 100%; display: block; }
+.tpl-beauty-salon-0dbd a{ text-decoration: none; color: inherit; }
+.tpl-beauty-salon-0dbd ul{ list-style: none; }
+.tpl-beauty-salon-0dbd .container{ width: min(1180px, 92%); margin: 0 auto; }
+.tpl-beauty-salon-0dbd .header{
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.tpl-beauty-salon-0dbd .nav{ display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.tpl-beauty-salon-0dbd .nav-logo{
+  font-family: var(--font-head);
+  font-size: 28px; font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.tpl-beauty-salon-0dbd .nav-logo span{ color: var(--rose); font-style: italic; }
+.tpl-beauty-salon-0dbd .nav-links{ display: flex; align-items: center; gap: 30px; }
+.tpl-beauty-salon-0dbd .nav-link{
+  font-size: 14.5px; font-weight: 500;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--charcoal); opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+.tpl-beauty-salon-0dbd .nav-link:hover, .tpl-beauty-salon-0dbd .nav-link.active{ color: var(--rose); opacity: 1; }
+.tpl-beauty-salon-0dbd .nav-cta{
+  background: var(--charcoal); color: var(--white);
+  padding: 12px 26px; border-radius: 999px;
+  text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px;
+  transition: background 0.2s;
+}
+.tpl-beauty-salon-0dbd .nav-cta:hover{ background: var(--rose); }
+.tpl-beauty-salon-0dbd .nav-toggle{
+  display: none; background: none; border: none; cursor: pointer;
+  width: 40px; height: 40px; flex-direction: column; justify-content: center;
+  align-items: center; gap: 5px;
+}
+.tpl-beauty-salon-0dbd .nav-toggle span{
+  display: block; width: 22px; height: 2px; background: var(--charcoal);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.tpl-beauty-salon-0dbd .nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+.tpl-beauty-salon-0dbd .nav-toggle.open span:nth-child(2){ opacity: 0; }
+.tpl-beauty-salon-0dbd .nav-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+.tpl-beauty-salon-0dbd .hero{
+  position: relative;
+  min-height: 640px;
+  display: flex; align-items: center;
+  background: linear-gradient(120deg, var(--blush-light) 0%, var(--blush) 60%, #F6E2E5 100%);
+  overflow: hidden;
+}
+.tpl-beauty-salon-0dbd .hero::after{
+  content: '';
+  position: absolute; right: -120px; top: -120px;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 164, 92, 0.18), transparent 65%);
+}
+.tpl-beauty-salon-0dbd .hero .container{ position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 60px; align-items: center; padding: 70px 0; }
+.tpl-beauty-salon-0dbd .hero-badge{
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--white); color: var(--rose-dark);
+  padding: 8px 18px; border-radius: 999px;
+  font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;
+  box-shadow: 0 6px 20px rgba(201, 111, 122, 0.16);
+}
+.tpl-beauty-salon-0dbd .hero-title{
+  font-family: var(--font-head);
+  font-size: clamp(44px, 6vw, 68px);
+  font-weight: 500; line-height: 1.06;
+  margin: 26px 0 20px; color: var(--ink);
+}
+.tpl-beauty-salon-0dbd .hero-title em{ font-style: italic; color: var(--rose); }
+.tpl-beauty-salon-0dbd .hero-desc{ font-size: 18px; color: var(--muted); max-width: 480px; margin-bottom: 34px; }
+.tpl-beauty-salon-0dbd .hero-actions{ display: flex; gap: 16px; flex-wrap: wrap; }
+.tpl-beauty-salon-0dbd .btn{
+  display: inline-block; padding: 15px 34px;
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+}
+.tpl-beauty-salon-0dbd .btn:hover{ transform: translateY(-2px); }
+.tpl-beauty-salon-0dbd .btn--rose{ background: var(--rose); color: var(--white); }
+.tpl-beauty-salon-0dbd .btn--rose:hover{ background: var(--rose-dark); }
+.tpl-beauty-salon-0dbd .btn--ghost{ border: 1.5px solid var(--charcoal); color: var(--charcoal); }
+.tpl-beauty-salon-0dbd .btn--ghost:hover{ background: var(--charcoal); color: var(--white); }
+.tpl-beauty-salon-0dbd .btn--dark{ background: var(--charcoal); color: var(--white); }
+.tpl-beauty-salon-0dbd .btn--dark:hover{ background: var(--rose); }
+.tpl-beauty-salon-0dbd .btn--gold{ background: var(--gold); color: var(--white); }
+.tpl-beauty-salon-0dbd .btn--gold:hover{ background: #B08F46; }
+.tpl-beauty-salon-0dbd .btn--white{ background: var(--white); color: var(--charcoal); }
+.tpl-beauty-salon-0dbd .btn--white:hover{ background: var(--blush); }
+.tpl-beauty-salon-0dbd .hero-visual{ position: relative; }
+.tpl-beauty-salon-0dbd .hero-img-wrap{
+  border-radius: var(--radius-lg);
+  overflow: hidden; aspect-ratio: 4 / 4.6;
+  box-shadow: var(--shadow-lg);
+}
+.tpl-beauty-salon-0dbd .hero-img-wrap img{ width: 100%; height: 100%; object-fit: cover; }
+.tpl-beauty-salon-0dbd .hero-card{
+  position: absolute; bottom: 24px; left: -30px;
+  background: var(--white); border-radius: var(--radius);
+  padding: 20px 24px; box-shadow: var(--shadow);
+  display: flex; align-items: center; gap: 14px;
+}
+.tpl-beauty-salon-0dbd .hero-card-num{ font-family: var(--font-head); font-size: 40px; color: var(--rose); line-height: 1; }
+.tpl-beauty-salon-0dbd .hero-card-label{ font-size: 13px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.tpl-beauty-salon-0dbd .hero-card-label strong{ display: block; color: var(--charcoal); font-size: 14px; text-transform: none; letter-spacing: 0; }
+.tpl-beauty-salon-0dbd .section{ padding: var(--space-9) 0; }
+.tpl-beauty-salon-0dbd .section--blush{ background: var(--blush-light); }
+.tpl-beauty-salon-0dbd .section--dark{ background: var(--ink); color: var(--white); }
+.tpl-beauty-salon-0dbd .section--dark .section-title{ color: var(--white); }
+.tpl-beauty-salon-0dbd .section--dark .section-desc{ color: rgba(255,255,255,0.65); }
+.tpl-beauty-salon-0dbd .section--dark .section-label{ color: var(--gold); }
+.tpl-beauty-salon-0dbd .text-center{ text-align: center; }
+.tpl-beauty-salon-0dbd .mx-auto{ margin-left: auto; margin-right: auto; }
+.tpl-beauty-salon-0dbd .section-label{
+  font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--rose); font-weight: 500;
+}
+.tpl-beauty-salon-0dbd .section-title{
+  font-family: var(--font-head);
+  font-size: clamp(34px, 4.5vw, 48px);
+  font-weight: 500; color: var(--ink);
+  margin: 12px 0 16px;
+}
+.tpl-beauty-salon-0dbd .section-desc{ color: var(--muted); font-size: 17px; max-width: 560px; }
+.tpl-beauty-salon-0dbd .section-head{ max-width: 640px; margin-bottom: var(--space-7); }
+.tpl-beauty-salon-0dbd .services-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.tpl-beauty-salon-0dbd .service-card{
+  background: var(--white); border-radius: var(--radius);
+  padding: 40px 30px; text-align: center;
+  border: 1px solid var(--line);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tpl-beauty-salon-0dbd .service-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow); }
+.tpl-beauty-salon-0dbd .service-card-img{
+  width: 74px; height: 74px; margin: 0 auto 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--blush); border-radius: 50%;
+}
+.tpl-beauty-salon-0dbd .service-card-img img{ width: 40px; height: 40px; object-fit: contain; }
+.tpl-beauty-salon-0dbd .service-card-title{ font-family: var(--font-head); font-size: 24px; font-weight: 600; margin-bottom: 10px; }
+.tpl-beauty-salon-0dbd .service-card-desc{ color: var(--muted); font-size: 15px; }
+.tpl-beauty-salon-0dbd .service-card-price{
+  margin-top: 18px; display: inline-block;
+  background: var(--blush); color: var(--rose-dark);
+  padding: 6px 16px; border-radius: 999px;
+  font-size: 14px; font-weight: 500;
+}
+.tpl-beauty-salon-0dbd .split{ display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+.tpl-beauty-salon-0dbd .split-img{
+  border-radius: var(--radius-lg); overflow: hidden;
+  aspect-ratio: 5 / 5.4; box-shadow: var(--shadow-lg);
+}
+.tpl-beauty-salon-0dbd .split-img img{ width: 100%; height: 100%; object-fit: cover; }
+.tpl-beauty-salon-0dbd .split-title{
+  font-family: var(--font-head);
+  font-size: clamp(32px, 4vw, 44px); font-weight: 500;
+  margin: 14px 0 18px; color: var(--ink);
+}
+.tpl-beauty-salon-0dbd .split-text{ color: var(--muted); font-size: 16.5px; margin-bottom: 16px; }
+.tpl-beauty-salon-0dbd .check-list{ margin: 24px 0 30px; display: grid; gap: 14px; }
+.tpl-beauty-salon-0dbd .check-list li{
+  display: flex; gap: 12px; align-items: flex-start;
+  font-size: 16px;
+}
+.tpl-beauty-salon-0dbd .check-list li::before{
+  content: '✦'; color: var(--gold);
+  font-size: 16px; line-height: 1.6;
+}
+.tpl-beauty-salon-0dbd .experience-row{ display: flex; gap: 40px; margin-top: 30px; }
+.tpl-beauty-salon-0dbd .experience-num{
+  font-family: var(--font-head); font-size: 44px;
+  color: var(--rose); line-height: 1;
+}
+.tpl-beauty-salon-0dbd .experience-label{ font-size: 13.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
+.tpl-beauty-salon-0dbd .pricing-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.tpl-beauty-salon-0dbd .pricing-card{
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 40px 34px; text-align: center;
+  border: 1px solid var(--line);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tpl-beauty-salon-0dbd .pricing-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow); }
+.tpl-beauty-salon-0dbd .pricing-card.featured{
+  background: var(--charcoal); color: var(--white);
+  border: none;
+}
+.tpl-beauty-salon-0dbd .pricing-card.featured .pricing-desc, .tpl-beauty-salon-0dbd .pricing-card.featured .pricing-row{ color: rgba(255,255,255,0.7); }
+.tpl-beauty-salon-0dbd .pricing-card.featured .pricing-row{ border-color: rgba(255,255,255,0.15); }
+.tpl-beauty-salon-0dbd .pricing-name{ font-family: var(--font-head); font-size: 26px; font-weight: 600; margin-bottom: 6px; }
+.tpl-beauty-salon-0dbd .pricing-desc{ color: var(--muted); font-size: 14.5px; margin-bottom: 24px; }
+.tpl-beauty-salon-0dbd .pricing-price{ font-family: var(--font-head); font-size: 52px; font-weight: 600; color: var(--rose); line-height: 1; }
+.tpl-beauty-salon-0dbd .pricing-card.featured .pricing-price{ color: var(--gold); }
+.tpl-beauty-salon-0dbd .pricing-price small{ font-size: 18px; font-family: var(--font-body); font-weight: 400; }
+.tpl-beauty-salon-0dbd .pricing-row{
+  display: flex; justify-content: space-between;
+  padding: 13px 0; border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.tpl-beauty-salon-0dbd .pricing-cta{ margin-top: 28px; }
+.tpl-beauty-salon-0dbd .team-grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.tpl-beauty-salon-0dbd .team-card{ background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); transition: transform 0.3s, box-shadow 0.3s; }
+.tpl-beauty-salon-0dbd .team-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow); }
+.tpl-beauty-salon-0dbd .team-card-img{ aspect-ratio: 4 / 4.4; overflow: hidden; }
+.tpl-beauty-salon-0dbd .team-card-img img{ width: 100%; height: 100%; object-fit: cover; }
+.tpl-beauty-salon-0dbd .team-card-body{ padding: 20px 22px 24px; text-align: center; }
+.tpl-beauty-salon-0dbd .team-card-name{ font-family: var(--font-head); font-size: 21px; font-weight: 600; }
+.tpl-beauty-salon-0dbd .team-card-role{ font-size: 13px; color: var(--rose); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 4px; }
+.tpl-beauty-salon-0dbd .team-card-social{ display: flex; gap: 12px; justify-content: center; margin-top: 14px; }
+.tpl-beauty-salon-0dbd .team-card-social a{
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--blush); color: var(--rose-dark);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; transition: background 0.2s, color 0.2s;
+}
+.tpl-beauty-salon-0dbd .team-card-social a:hover{ background: var(--rose); color: var(--white); }
+.tpl-beauty-salon-0dbd .testimonials-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.tpl-beauty-salon-0dbd .testimonial-card{
+  background: var(--white); border-radius: var(--radius);
+  padding: 36px 32px; border: 1px solid var(--line);
+  position: relative;
+}
+.tpl-beauty-salon-0dbd .testimonial-card::before{
+  content: '“';
+  position: absolute; top: 14px; left: 24px;
+  font-family: var(--font-head); font-size: 90px;
+  color: var(--blush); line-height: 1;
+}
+.tpl-beauty-salon-0dbd .testimonial-card-stars{ color: var(--gold); font-size: 16px; letter-spacing: 3px; margin-bottom: 16px; }
+.tpl-beauty-salon-0dbd .testimonial-card-text{ font-size: 16px; color: var(--charcoal); font-style: italic; margin-bottom: 22px; position: relative; }
+.tpl-beauty-salon-0dbd .testimonial-card-author{ display: flex; align-items: center; gap: 14px; }
+.tpl-beauty-salon-0dbd .testimonial-card-avatar{ width: 52px; height: 52px; border-radius: 50%; overflow: hidden; border: 2px solid var(--blush); }
+.tpl-beauty-salon-0dbd .testimonial-card-avatar img{ width: 100%; height: 100%; object-fit: cover; }
+.tpl-beauty-salon-0dbd .testimonial-card-name{ font-weight: 600; font-size: 15.5px; }
+.tpl-beauty-salon-0dbd .testimonial-card-role{ font-size: 13px; color: var(--muted); }
+.tpl-beauty-salon-0dbd .gallery-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tpl-beauty-salon-0dbd .gallery-item{
+  position: relative; border-radius: var(--radius);
+  overflow: hidden; aspect-ratio: 4 / 3;
+}
+.tpl-beauty-salon-0dbd .gallery-item img{ width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.tpl-beauty-salon-0dbd .gallery-item:hover img{ transform: scale(1.06); }
+.tpl-beauty-salon-0dbd .stats-row{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
+.tpl-beauty-salon-0dbd .stat-num{ font-family: var(--font-head); font-size: 48px; font-weight: 600; color: var(--gold); line-height: 1.1; }
+.tpl-beauty-salon-0dbd .stat-label{ font-size: 14px; color: rgba(255,255,255,0.7); letter-spacing: 1px; text-transform: uppercase; margin-top: 6px; }
+.tpl-beauty-salon-0dbd .cta-banner{
+  background: linear-gradient(120deg, var(--rose-dark), var(--rose));
+  padding: var(--space-9) 0;
+  text-align: center; color: var(--white);
+}
+.tpl-beauty-salon-0dbd .cta-title{ font-family: var(--font-head); font-size: clamp(34px, 4.5vw, 48px); font-weight: 500; margin-bottom: 14px; }
+.tpl-beauty-salon-0dbd .cta-desc{ font-size: 17px; opacity: 0.9; margin-bottom: 30px; }
+.tpl-beauty-salon-0dbd .booking-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.tpl-beauty-salon-0dbd .form{ display: flex; flex-direction: column; gap: 18px; }
+.tpl-beauty-salon-0dbd .form-row{ display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.tpl-beauty-salon-0dbd .form-group{ display: flex; flex-direction: column; gap: 7px; }
+.tpl-beauty-salon-0dbd .form-label{ font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--charcoal); font-weight: 500; }
+.tpl-beauty-salon-0dbd .form-input, .tpl-beauty-salon-0dbd .form-select, .tpl-beauty-salon-0dbd .form-textarea{
+  padding: 14px 16px; border: 1.5px solid var(--line);
+  border-radius: 12px; font-family: var(--font-body);
+  font-size: 15px; background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.tpl-beauty-salon-0dbd .form-input:focus, .tpl-beauty-salon-0dbd .form-select:focus, .tpl-beauty-salon-0dbd .form-textarea:focus{
+  outline: none; border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(201, 111, 122, 0.14);
+}
+.tpl-beauty-salon-0dbd .form-textarea{ resize: vertical; min-height: 130px; }
+.tpl-beauty-salon-0dbd .form-ok, .tpl-beauty-salon-0dbd .form-err{
+  display: none; padding: 13px 18px; border-radius: 10px;
+  font-size: 14.5px;
+}
+.tpl-beauty-salon-0dbd .form-ok.show, .tpl-beauty-salon-0dbd .form-err.show{ display: block; }
+.tpl-beauty-salon-0dbd .form-ok{ background: #EAF7EE; color: #1E7B44; }
+.tpl-beauty-salon-0dbd .form-err{ background: #FDEBEC; color: #B02A37; }
+.tpl-beauty-salon-0dbd .contact-card{
+  background: var(--blush-light); border-radius: var(--radius-lg);
+  padding: 38px 34px; border: 1px solid var(--line);
+}
+.tpl-beauty-salon-0dbd .contact-card h3{ font-family: var(--font-head); font-size: 28px; font-weight: 600; margin-bottom: 22px; }
+.tpl-beauty-salon-0dbd .contact-item{ display: flex; gap: 16px; align-items: flex-start; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.tpl-beauty-salon-0dbd .contact-item:last-child{ border-bottom: none; }
+.tpl-beauty-salon-0dbd .contact-item-icon{
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--rose); color: var(--white);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.tpl-beauty-salon-0dbd .contact-item-label{ font-size: 13px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.tpl-beauty-salon-0dbd .contact-item-text{ font-size: 15.5px; font-weight: 500; margin-top: 2px; }
+.tpl-beauty-salon-0dbd .hours-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; margin-top: 8px; }
+.tpl-beauty-salon-0dbd .hours-grid div{ display: flex; justify-content: space-between; font-size: 14.5px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.tpl-beauty-salon-0dbd .hours-grid .open{ color: #1E7B44; font-weight: 500; }
+.tpl-beauty-salon-0dbd .page-hero{
+  background: linear-gradient(120deg, var(--blush-light), var(--blush));
+  padding: 90px 0 70px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.tpl-beauty-salon-0dbd .page-hero::after{
+  content: ''; position: absolute; left: 50%; bottom: -60px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 111, 122, 0.10), transparent 65%);
+}
+.tpl-beauty-salon-0dbd .page-hero-title{ font-family: var(--font-head); font-size: clamp(40px, 5vw, 56px); font-weight: 500; color: var(--ink); position: relative; z-index: 2; }
+.tpl-beauty-salon-0dbd .page-hero-desc{ font-size: 17.5px; color: var(--muted); margin-top: 14px; position: relative; z-index: 2; }
+.tpl-beauty-salon-0dbd .footer{ background: var(--ink); color: rgba(255,255,255,0.75); padding: 70px 0 0; }
+.tpl-beauty-salon-0dbd .footer-grid{ display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; }
+.tpl-beauty-salon-0dbd .footer-brand-logo{ font-family: var(--font-head); font-size: 30px; color: var(--white); }
+.tpl-beauty-salon-0dbd .footer-brand-logo span{ color: var(--rose); font-style: italic; }
+.tpl-beauty-salon-0dbd .footer-brand-desc{ font-size: 15px; margin-top: 12px; max-width: 300px; color: rgba(255,255,255,0.55); }
+.tpl-beauty-salon-0dbd .footer-heading{ font-family: var(--font-head); font-size: 20px; color: var(--white); margin-bottom: 18px; }
+.tpl-beauty-salon-0dbd .footer-links{ display: grid; gap: 10px; }
+.tpl-beauty-salon-0dbd .footer-link{ font-size: 15px; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+.tpl-beauty-salon-0dbd .footer-link:hover{ color: var(--gold); }
+.tpl-beauty-salon-0dbd .footer-bottom{
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 22px 0; display: flex; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+  font-size: 14px; color: rgba(255,255,255,0.5);
+}
+.tpl-beauty-salon-0dbd .back-to-top{
+  position: fixed; bottom: 28px; right: 28px;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: var(--rose); color: var(--white); border: none;
+  font-size: 20px; cursor: pointer; z-index: 90;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.2s;
+  box-shadow: var(--shadow);
+}
+.tpl-beauty-salon-0dbd .back-to-top.show{ opacity: 1; pointer-events: auto; }
+.tpl-beauty-salon-0dbd .back-to-top:hover{ transform: translateY(-3px); background: var(--rose-dark); }
+.tpl-beauty-salon-0dbd .reveal{ opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.tpl-beauty-salon-0dbd .reveal.visible{ opacity: 1; transform: none; }
+@media (max-width: 980px){.tpl-beauty-salon-0dbd .hero .container{ grid-template-columns: 1fr; gap: 44px; padding: 60px 0; }
+.tpl-beauty-salon-0dbd .hero-visual{ max-width: 460px; }
+.tpl-beauty-salon-0dbd .hero-card{ left: 16px; }
+.tpl-beauty-salon-0dbd .split, .tpl-beauty-salon-0dbd .booking-grid{ grid-template-columns: 1fr; gap: 44px; }
+.tpl-beauty-salon-0dbd .services-grid, .tpl-beauty-salon-0dbd .pricing-grid, .tpl-beauty-salon-0dbd .testimonials-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-beauty-salon-0dbd .team-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-beauty-salon-0dbd .stats-row{ grid-template-columns: repeat(2, 1fr); }
+.tpl-beauty-salon-0dbd .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-beauty-salon-0dbd .footer-grid{ grid-template-columns: 1fr 1fr; }}
+@media (max-width: 720px){.tpl-beauty-salon-0dbd .nav-toggle{ display: flex; }
+.tpl-beauty-salon-0dbd .nav-links{
+    position: fixed; top: 76px; left: 0; right: 0;
+    background: var(--white); flex-direction: column;
+    padding: 24px; gap: 20px; align-items: flex-start;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    transform: translateY(-120%); transition: transform 0.35s ease;
+    z-index: 99;
+  }
+.tpl-beauty-salon-0dbd .nav-links.open{ transform: translateY(0); }
+.tpl-beauty-salon-0dbd .services-grid, .tpl-beauty-salon-0dbd .pricing-grid, .tpl-beauty-salon-0dbd .testimonials-grid, .tpl-beauty-salon-0dbd .team-grid, .tpl-beauty-salon-0dbd .gallery-grid{ grid-template-columns: 1fr; }
+.tpl-beauty-salon-0dbd .form-row{ grid-template-columns: 1fr; }
+.tpl-beauty-salon-0dbd .section{ padding: 64px 0; }
+.tpl-beauty-salon-0dbd .cta-banner{ padding: 64px 0; }}
+@media (prefers-reduced-motion: reduce){.tpl-beauty-salon-0dbd *{ animation: none !important; transition: none !important; }
+.tpl-beauty-salon-0dbd{ scroll-behavior: auto; }
+.tpl-beauty-salon-0dbd .reveal{ opacity: 1; transform: none; }}
+
+/* THEME:START */
+.tpl-beauty-salon-0dbd { --gold: #14a39a; --rose: #ffc857; --rose-dark: #f7b52d; }
+.tpl-beauty-salon-0dbd :is(nav, header, .nav-links) a:is(.btn-primary, .btn) { color: #fff; }
+.tpl-beauty-salon-0dbd { font-family: "Nunito", sans-serif; }
+.tpl-beauty-salon-0dbd :is(h1,h2,h3,h4) { font-family: "Fredoka", serif; }
+/* THEME:END */

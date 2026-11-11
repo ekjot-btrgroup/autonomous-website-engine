@@ -1,0 +1,43 @@
+{
+  "slug": "paws-and-bubbles",
+  "company": "Paws  Bubbles",
+  "created_at": "2026-11-11T15:32:10.991Z",
+  "picks": [
+    "driving-school-167a",
+    "dental-clinic-e882",
+    "beauty-salon-0dbd"
+  ],
+  "sections": [
+    {
+      "slot": "page",
+      "id": "driving-school-167a",
+      "picked": true,
+      "reason": "homepage (/)",
+      "folder": "01-page"
+    },
+    {
+      "slot": "page",
+      "id": "dental-clinic-e882",
+      "picked": true,
+      "reason": "alternative at /option-2",
+      "folder": "02-page"
+    },
+    {
+      "slot": "page",
+      "id": "beauty-salon-0dbd",
+      "picked": true,
+      "reason": "alternative at /option-3",
+      "folder": "03-page"
+    }
+  ],
+  "missing": [],
+  "mode": "pages",
+  "filled": false,
+  "theme": {
+    "primary": "#14a39a",
+    "accent": "#ffc857",
+    "heading": "Fredoka",
+    "body": "Nunito",
+    "motion": "on"
+  }
+}
