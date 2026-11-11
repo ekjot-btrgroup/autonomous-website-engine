@@ -1,0 +1,19 @@
+{
+  "slug": "balance-by-bita",
+  "company": "Balance by Bita",
+  "niche": "beauty",
+  "audience": "adults wanting natural, refreshed results; injectables newcomers and returning patients; Atlanta area, Chicago next",
+  "style": "calm, feminine, editorial, luxurious but warm, cream backgrounds, high-contrast serif",
+  "tone": "warm, first-person, reassuring, polished",
+  "goals": ["consultation bookings", "trust", "chicago waitlist"],
+  "sections": ["navbar", "hero", "services", "about", "pricing", "testimonials", "faq", "cta", "footer"],
+  "animations": "subtle",
+  "colors": { "primary": "#4a2c2f", "accent": "#b98b82" },
+  "fonts": { "heading": "Cormorant Garamond", "body": "Jost" },
+  "scheme": "light",
+  "media_available": ["photo"],
+  "profile": { "tone": 4, "energy": 1, "luxury": 5, "density": 1, "warmth": 4, "modernity": 3 },
+  "avoid": "clinical, neon, brutalist, loud gradients",
+  "picks": 3,
+  "facts": "Boutique injectables practice (neuromodulators, fillers, Sculptra, Radiesse, PRF) led by Bita, physician associate. Sandy Springs, GA; Chicago waitlist. Consult first. Mon-Fri 10-5, by appointment."
+}

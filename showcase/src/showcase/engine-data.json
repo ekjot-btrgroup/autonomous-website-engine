@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:58:19.913Z",
+  "generated_at": "2026-11-11T15:46:10.765Z",
   "engine_repo": "ekjot-btrgroup/autonomous-website-engine",
   "showcase_url": "https://automated-website-system.lovable.app",
   "sites": [
@@ -48,6 +48,44 @@
   ],
   "briefs": [
     {
+      "slug": "balance-by-bita",
+      "company": "Balance by Bita",
+      "niche": "beauty",
+      "style": "calm, feminine, editorial, luxurious but warm, cream backgrounds, high-contrast serif",
+      "tone": "warm, first-person, reassuring, polished",
+      "goals": [
+        "consultation bookings",
+        "trust",
+        "chicago waitlist"
+      ],
+      "sections": [
+        "navbar",
+        "hero",
+        "services",
+        "about",
+        "pricing",
+        "testimonials",
+        "faq",
+        "cta",
+        "footer"
+      ],
+      "animations": "subtle",
+      "scheme": "light",
+      "colors": {
+        "primary": "#4a2c2f",
+        "accent": "#b98b82"
+      },
+      "profile": {
+        "tone": 4,
+        "energy": 1,
+        "luxury": 5,
+        "density": 1,
+        "warmth": 4,
+        "modernity": 3
+      },
+      "picks": 3
+    },
+    {
       "slug": "form-and-function-studio",
       "company": "Form & Function Studio",
       "niche": "interior",
@@ -90,7 +128,7 @@
     "counts": {
       "note": 0,
       "pref": 0,
-      "shown": 2,
+      "shown": 3,
       "pick": 1,
       "used": 1
     },
@@ -134,12 +172,45 @@
       "mosque-0142",
       "spa-wellness-8f4f",
       "medical-clinic-9af9",
-      "italian-restaurant-e0f1"
+      "italian-restaurant-e0f1",
+      "plastic-surgery-c5ad",
+      "physical-therapy-8283",
+      "coral-resort-a022",
+      "dental-practice-e12b",
+      "beauty-salon-0dbd"
     ],
     "notes": [],
     "prefs": []
   },
   "releases": [
+    {
+      "file": "2026-11-11-1505-release-test-works-on-every-branch.md",
+      "title": "Release test works on every branch",
+      "at": "2026-11-11 15:05 UTC",
+      "merge": "c212e7c",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "1 file changed, 2 insertions(+)",
+      "commits": [
+        {
+          "sha": "86c4790",
+          "subject": "Release test sets its own target (works on every branch)"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-11-1505-conversation-flow-html-export-zip-friend.md",
+      "title": "Conversation flow, HTML export, zip-friendly setup",
+      "at": "2026-11-11 15:05 UTC",
+      "merge": "151eb77",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "23 files changed, 529 insertions(+), 100 deletions(-)",
+      "commits": [
+        {
+          "sha": "bd4e89b",
+          "subject": "Conversation flow, HTML export, zip-friendly setup"
+        }
+      ]
+    },
     {
       "file": "2026-11-11-1447-add-apple-design-and-mobile-native-skill.md",
       "title": "Add apple-design and mobile-native skills",

@@ -1,0 +1,261 @@
+{
+  "slug": "balance-by-bita",
+  "company": "Balance by Bita",
+  "created_at": "2026-11-11T15:46:03.222Z",
+  "picks": 3,
+  "brief": {
+    "niche": "beauty",
+    "style": "calm, feminine, editorial, luxurious but warm, cream backgrounds, high-contrast serif",
+    "animations": "subtle",
+    "scheme": "light",
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "pricing",
+      "testimonials",
+      "faq",
+      "cta",
+      "footer"
+    ]
+  },
+  "items": [
+    {
+      "id": "plastic-surgery-c5ad",
+      "rank": 1,
+      "score": 101,
+      "category": "page",
+      "reasons": [
+        "full page covering 8/9 wanted sections (missing pricing)",
+        "feel matches (88%)",
+        "style: elegant, soft",
+        "already used for beauty",
+        "serves goal: booking, trust",
+        "quality 5/5"
+      ],
+      "parts": {
+        "section": 27,
+        "feel": 26,
+        "style": 12,
+        "origin": 8,
+        "goals": 12,
+        "motion": 8,
+        "quality": 8
+      },
+      "why": "Closest match: aesthetics-focused, refined and calm, covers nearly every section you need."
+    },
+    {
+      "id": "restaurant-c6ae",
+      "rank": 2,
+      "score": 97,
+      "category": "page",
+      "reasons": [
+        "full page covering 7/9 wanted sections (missing services, faq)",
+        "feel 79%: less premium than wanted",
+        "style: editorial, warm",
+        "serves goal: booking",
+        "light as requested",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 23,
+        "feel": 24,
+        "style": 24,
+        "goals": 6,
+        "scheme": 8,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Warm, elegant and editorial in feel, but built for dining so content needs reworking."
+    },
+    {
+      "id": "italian-restaurant-e0f1",
+      "rank": 3,
+      "score": 87,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/9 wanted sections (missing services, about, faq)",
+        "feel 71%: less premium than wanted",
+        "style: warm, editorial",
+        "serves goal: booking",
+        "light as requested"
+      ],
+      "parts": {
+        "section": 20,
+        "feel": 21,
+        "style": 24,
+        "goals": 6,
+        "scheme": 8,
+        "motion": 8
+      },
+      "why": "Soft, warm and serif-led; a weaker fit since it lacks services and about content."
+    },
+    {
+      "id": "physical-therapy-8283",
+      "rank": 4,
+      "score": 87,
+      "category": "page",
+      "reasons": [
+        "full page covering 3/9 wanted sections (missing services, about, pricing)",
+        "feel 75%: less premium, more dense than wanted",
+        "style: warm, soft",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "light as requested",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 10,
+        "feel": 23,
+        "style": 18,
+        "origin": 4,
+        "goals": 12,
+        "scheme": 8,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Clean and reassuring care layout, though more clinical than your boutique feel."
+    },
+    {
+      "id": "construction-portfolio-ea5a",
+      "rank": 5,
+      "score": 86,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/9 wanted sections (missing testimonials, faq, cta)",
+        "feel 79%: less premium, more dense than wanted",
+        "style: editorial, warm",
+        "serves goal: leads",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 20,
+        "feel": 24,
+        "style": 24,
+        "goals": 6,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Spacious and polished, but a weak fit; the feel is more industrial than feminine."
+    },
+    {
+      "id": "spa-wellness-8f4f",
+      "rank": 6,
+      "score": 86,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/9 wanted sections (missing services, faq, cta)",
+        "feel matches (88%)",
+        "style: elegant, soft",
+        "built for a related niche (wellness)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 20,
+        "feel": 26,
+        "style": 12,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Calm, soft and unhurried, a good match for the gentle, warm side of your brand."
+    },
+    {
+      "id": "coral-resort-a022",
+      "rank": 7,
+      "score": 85,
+      "category": "page",
+      "reasons": [
+        "full page covering 5/9 wanted sections (missing services, about, faq)",
+        "feel matches (92%)",
+        "style: warm, elegant",
+        "serves goal: booking",
+        "quality 5/5"
+      ],
+      "parts": {
+        "section": 17,
+        "feel": 28,
+        "style": 18,
+        "goals": 6,
+        "motion": 8,
+        "quality": 8
+      },
+      "why": "Airy, luxurious and relaxed; suits the aspirational tone, less the medical trust cues."
+    },
+    {
+      "id": "medical-clinic-9af9",
+      "rank": 8,
+      "score": 85,
+      "category": "page",
+      "reasons": [
+        "full page covering 4/9 wanted sections (missing services, about, pricing)",
+        "feel 67%: less premium, more dense than wanted",
+        "style: warm, soft, elegant",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 13,
+        "feel": 20,
+        "style": 24,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Trustworthy and organised, though cooler and more clinical than you want."
+    },
+    {
+      "id": "dental-practice-e12b",
+      "rank": 9,
+      "score": 84,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/9 wanted sections (missing pricing, faq, cta)",
+        "feel 79%: less premium, more dense than wanted",
+        "style: warm",
+        "built for a related niche (health)",
+        "serves goal: booking, trust",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 20,
+        "feel": 24,
+        "style": 12,
+        "origin": 4,
+        "goals": 12,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Friendly and clear for booking, but less luxurious and editorial than your brand."
+    },
+    {
+      "id": "beauty-salon-0dbd",
+      "rank": 10,
+      "score": 83,
+      "category": "page",
+      "reasons": [
+        "full page covering 6/9 wanted sections (missing pricing, faq, cta)",
+        "feel matches (83%)",
+        "style: elegant, soft",
+        "already used for beauty",
+        "serves goal: booking",
+        "quality 4/5"
+      ],
+      "parts": {
+        "section": 20,
+        "feel": 25,
+        "style": 12,
+        "origin": 8,
+        "goals": 6,
+        "motion": 8,
+        "quality": 4
+      },
+      "why": "Feminine and beauty-focused, a natural fit for the brand, though lighter on luxury."
+    }
+  ]
+}
