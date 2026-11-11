@@ -1,0 +1,149 @@
+{
+  "id": "ac-repair-1263",
+  "name": "Ac Repair",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "ac-repair-html-template",
+    "format": "html-page",
+    "hash": "1263a6829f8ac5f3118203984fba73c909bfe61cb0867ff5cec83333c1f70531",
+    "original": "test-templates/uiuxlabz/ac-repair-html-template",
+    "repo": "https://github.com/uiuxlabz/ac-repair-html-template",
+    "group": "uiuxlabz",
+    "commit": "e8b8321202958344dd32161a5fe5ad35ac919fcf"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "stats",
+    "services",
+    "process",
+    "features",
+    "pricing",
+    "testimonials",
+    "faq",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Cool air, calmly delivered.",
+      "Care for every corner of your climate",
+      "Effortless, from call to cool",
+      "Measure first. Fix second. Always.",
+      "Plans that breathe easy",
+      "Comfort, appreciated"
+    ],
+    "ctas": [
+      "Book a Visit",
+      "Schedule Service →",
+      "Explore Services",
+      "Join the Plan"
+    ],
+    "texts": [],
+    "colors": [
+      "#22d3ee",
+      "#f59e0b",
+      "#10b981",
+      "#e4f0fa",
+      "#d4e7f7",
+      "#f5f9ff"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fraunces",
+      "Outfit"
+    ],
+    "images": 2,
+    "motion": true,
+    "lines": 1050,
+    "css": {
+      "palette": [
+        "#22d3ee",
+        "#f59e0b",
+        "#10b981",
+        "#e4f0fa",
+        "#d4e7f7",
+        "#f5f9ff"
+      ],
+      "radius_px": 3,
+      "gradients": 6,
+      "shadows": 26,
+      "keyframes": 2,
+      "transitions": 18,
+      "uppercase": 4,
+      "glass": 8
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "process",
+      "features",
+      "pricing",
+      "testimonials",
+      "faq",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "soft",
+      "modern"
+    ],
+    "tone": 3,
+    "energy": 2,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 4,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "leads"
+    ],
+    "origin": [
+      "local-services"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "process",
+      "features",
+      "pricing",
+      "testimonials",
+      "faq",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Calm airy service page, soft shadows, serif headings",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:16.475332Z"
+}

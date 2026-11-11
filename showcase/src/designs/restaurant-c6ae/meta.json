@@ -1,0 +1,148 @@
+{
+  "id": "restaurant-c6ae",
+  "name": "Restaurant",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "restaurant-html-template",
+    "format": "html-page",
+    "hash": "c6ae466770d53b002e0d24c4c515615297307d75ceffc2fa73ed1c868a864027",
+    "original": "test-templates/uiuxlabz/restaurant-html-template",
+    "repo": "https://github.com/uiuxlabz/restaurant-html-template",
+    "group": "uiuxlabz",
+    "commit": "ab670e9d36442d3e60e395751ca1e9501f76820b"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "contact",
+    "navbar",
+    "hero",
+    "about",
+    "pricing",
+    "features",
+    "gallery",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Seasonal kitchen, warm table",
+      "From the kitchen",
+      "Cooking is listening",
+      "Inside OLIVO",
+      "What they say",
+      "Reserve tonight"
+    ],
+    "ctas": [
+      "Reserve a Table",
+      "View Menu →",
+      "Reserve Tonight",
+      "Reserve a Table →"
+    ],
+    "texts": [],
+    "colors": [
+      "#faf6f0",
+      "#1c1a17",
+      "#6b1d2a",
+      "#4a1019",
+      "#d4944a",
+      "#e8b87a"
+    ],
+    "dark": false,
+    "fonts": [
+      "Playfair Display",
+      "Lora",
+      "DM Sans",
+      "JetBrains Mono"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 727,
+    "css": {
+      "palette": [
+        "#faf6f0",
+        "#1c1a17",
+        "#6b1d2a",
+        "#4a1019",
+        "#d4944a",
+        "#e8b87a"
+      ],
+      "radius_px": 0,
+      "gradients": 0,
+      "shadows": 0,
+      "keyframes": 0,
+      "transitions": 17,
+      "uppercase": 16,
+      "glass": 0
+    },
+    "sections": [
+      "contact",
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "features",
+      "gallery",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "list"
+    ],
+    "style": [
+      "editorial",
+      "warm",
+      "minimal"
+    ],
+    "tone": 3,
+    "energy": 1,
+    "luxury": 3,
+    "density": 2,
+    "warmth": 5,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "info"
+    ],
+    "origin": [
+      "restaurant"
+    ],
+    "sections": [
+      "contact",
+      "navbar",
+      "hero",
+      "about",
+      "pricing",
+      "features",
+      "gallery",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 4,
+    "note": "Flat cream and wine editorial restaurant",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:01.726577Z"
+}

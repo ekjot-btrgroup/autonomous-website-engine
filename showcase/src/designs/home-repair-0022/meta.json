@@ -1,0 +1,130 @@
+{
+  "id": "home-repair-0022",
+  "name": "Home Repair",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "home-repair-html-template",
+    "format": "html-page",
+    "hash": "00225b70e13b24531cc4e6939b669e7eaba3dfc7cfeb85e99c489e71f264731c",
+    "original": "test-templates/uiuxlabz/home-repair-html-template",
+    "repo": "https://github.com/uiuxlabz/home-repair-html-template",
+    "group": "uiuxlabz",
+    "commit": "ed7370a5993cd267f9381290218f226c4a78f26f"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Every Repair, Done Right the First Time",
+      "One Crew for Every Room in the House",
+      "A Crew That Treats Your Home Like Their Own",
+      "The Repair Experience We're Known For",
+      "Fresh from Our Job Sites",
+      "What Our Clients Say"
+    ],
+    "ctas": [
+      "Book a Visit",
+      "Explore Services",
+      "View All Six Services",
+      "More About FixHaven"
+    ],
+    "texts": [],
+    "colors": [
+      "#e85d2a",
+      "#2b4a5f",
+      "#0f1e28",
+      "#f5a623",
+      "#faf8f5",
+      "#f2efea"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Barlow"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 972,
+    "css": {
+      "palette": [
+        "#e85d2a",
+        "#2b4a5f",
+        "#0f1e28",
+        "#f5a623",
+        "#faf8f5",
+        "#f2efea"
+      ],
+      "radius_px": 2,
+      "gradients": 6,
+      "shadows": 26,
+      "keyframes": 0,
+      "transitions": 27,
+      "uppercase": 7,
+      "glass": 1
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "warm",
+      "modern",
+      "bold"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 1,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "trust"
+    ],
+    "origin": [
+      "local-services",
+      "construction"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Orange and slate repair crew page, friendly tone",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:41.861471Z"
+}

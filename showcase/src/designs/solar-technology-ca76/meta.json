@@ -1,0 +1,143 @@
+{
+  "id": "solar-technology-ca76",
+  "name": "Solar Technology",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "solar-technology-html-template",
+    "format": "html-page",
+    "hash": "ca762d5d8ed2e61235289133aa237d2cf330463db9c41a57927143de0832dae0",
+    "original": "test-templates/uiuxlabz/solar-technology-html-template",
+    "repo": "https://github.com/uiuxlabz/solar-technology-html-template",
+    "group": "uiuxlabz",
+    "commit": "0b4e67b75249edde2132e729a3f5c3a89a420f7e"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "stats",
+    "services",
+    "about",
+    "gallery",
+    "logos",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Innovating Solar, Empowering Futures",
+      "Comprehensive Solar Solutions",
+      "Pioneering Solar Energy Since 2012",
+      "Featured Installations",
+      "Industry-Leading Brands",
+      "What Our Clients Say"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Start Your Project",
+      "Our Services",
+      "Read Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#18181b",
+      "#3f3f46",
+      "#fefce8",
+      "#eab308",
+      "#facc15",
+      "#ca8a04"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Sora"
+    ],
+    "images": 19,
+    "motion": true,
+    "lines": 875,
+    "css": {
+      "palette": [
+        "#18181b",
+        "#3f3f46",
+        "#fefce8",
+        "#eab308",
+        "#facc15",
+        "#ca8a04"
+      ],
+      "radius_px": 2,
+      "gradients": 3,
+      "shadows": 17,
+      "keyframes": 1,
+      "transitions": 65,
+      "uppercase": 4,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "gallery",
+      "logos",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "corporate",
+      "modern",
+      "bold"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 2,
+    "density": 4,
+    "warmth": 2,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "energy"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "services",
+      "about",
+      "gallery",
+      "logos",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Charcoal and yellow long solar company page",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:03.350445Z"
+}

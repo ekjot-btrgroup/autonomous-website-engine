@@ -1,0 +1,137 @@
+{
+  "id": "project-management-1f62",
+  "name": "Project Management",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "project-management-html-template",
+    "format": "html-page",
+    "hash": "1f62b573bd053a4d8669f97788e9d53ecdfe042288917bd246e465180bbc651e",
+    "original": "test-templates/uiuxlabz/project-management-html-template",
+    "repo": "https://github.com/uiuxlabz/project-management-html-template",
+    "group": "uiuxlabz",
+    "commit": "55dcfc07e30205dc69e50abbafffe211242a06e2"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "portfolio",
+    "features",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Projects Delivered. On Time. On Budget.",
+      "End-to-End Project Management",
+      "Powerful Tools for Modern Teams",
+      "What Our Clients Say",
+      "Ready to Transform Your Project Management?"
+    ],
+    "ctas": [
+      "Get Started",
+      "Start Free Trial",
+      "View Services",
+      "Explore All Features"
+    ],
+    "texts": [],
+    "colors": [
+      "#0f172a",
+      "#1e293b",
+      "#334155",
+      "#2563eb",
+      "#1d4ed8",
+      "#3b82f6"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Space Grotesk"
+    ],
+    "images": 13,
+    "motion": true,
+    "lines": 664,
+    "css": {
+      "palette": [
+        "#0f172a",
+        "#1e293b",
+        "#334155",
+        "#2563eb",
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "radius_px": 0,
+      "gradients": 3,
+      "shadows": 11,
+      "keyframes": 1,
+      "transitions": 38,
+      "uppercase": 1,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "portfolio",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "corporate",
+      "technical",
+      "modern"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "signup"
+    ],
+    "origin": [
+      "consulting",
+      "saas"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "portfolio",
+      "features",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Slate blue square-cornered project services",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:00.679064Z"
+}

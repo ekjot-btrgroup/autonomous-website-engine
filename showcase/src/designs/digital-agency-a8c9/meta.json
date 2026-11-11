@@ -1,0 +1,149 @@
+{
+  "id": "digital-agency-a8c9",
+  "name": "Digital Agency",
+  "kind": "page",
+  "status": "ok",
+  "issues": [
+    "1 inline on* handlers removed (template script still runs)"
+  ],
+  "source": {
+    "folder": "digital-agency-html-template",
+    "format": "html-page",
+    "hash": "a8c920354b31d1ea77682a59e3a0f1cb3ec7185e5465ba90b64c9b3970062c23",
+    "original": "test-templates/uiuxlabz/digital-agency-html-template",
+    "repo": "https://github.com/uiuxlabz/digital-agency-html-template",
+    "group": "uiuxlabz",
+    "commit": "3d0f06e3c13740a1733ae846acbb8d90aa694153"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "menu",
+    "hero",
+    "stats",
+    "portfolio",
+    "about",
+    "services",
+    "testimonials",
+    "contact",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "We build digital experiences",
+      "Projects that speak volumes",
+      "A studio obsessed with craft",
+      "Services built for growth",
+      "What our clients say",
+      "Ready to build something extraordinary ?"
+    ],
+    "ctas": [
+      "Let's Talk",
+      "Start a Project",
+      "Our Story",
+      "Learn More"
+    ],
+    "texts": [],
+    "colors": [
+      "#1a0a3e",
+      "#7c3aed",
+      "#ec4899",
+      "#0f0a1a",
+      "#f8f5ff",
+      "#ffffff"
+    ],
+    "dark": null,
+    "fonts": [
+      "Space Grotesk",
+      "Inter",
+      "Fira Code"
+    ],
+    "images": 15,
+    "motion": true,
+    "lines": 1110,
+    "css": {
+      "palette": [
+        "#1a0a3e",
+        "#7c3aed",
+        "#ec4899",
+        "#0f0a1a",
+        "#f8f5ff",
+        "#ffffff"
+      ],
+      "radius_px": 18,
+      "gradients": 12,
+      "shadows": 6,
+      "keyframes": 6,
+      "transitions": 41,
+      "uppercase": 2,
+      "glass": 3
+    },
+    "sections": [
+      "navbar",
+      "menu",
+      "hero",
+      "stats",
+      "portfolio",
+      "about",
+      "services",
+      "testimonials",
+      "contact",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "split"
+    ],
+    "style": [
+      "gradient",
+      "bold",
+      "futuristic"
+    ],
+    "tone": 2,
+    "energy": 4,
+    "luxury": 3,
+    "density": 4,
+    "warmth": 2,
+    "modernity": 5,
+    "media": [
+      "photo"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "showcase"
+    ],
+    "origin": [
+      "agency"
+    ],
+    "sections": [
+      "navbar",
+      "menu",
+      "hero",
+      "stats",
+      "portfolio",
+      "about",
+      "services",
+      "testimonials",
+      "contact",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Purple-pink digital agency, animated, full-length sections",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:33.883102Z"
+}

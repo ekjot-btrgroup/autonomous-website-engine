@@ -1,0 +1,140 @@
+{
+  "id": "developer-portfolio-48b7",
+  "name": "Developer Portfolio",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "developer-portfolio-html-template",
+    "format": "html-page",
+    "hash": "48b756e162cc9547485957213d63d9cd7c5efff1387dc56c7babf2ce02842632",
+    "original": "test-templates/uiuxlabz/developer-portfolio-html-template",
+    "repo": "https://github.com/uiuxlabz/developer-portfolio-html-template",
+    "group": "uiuxlabz",
+    "commit": "28571666b574e80befbfe66537f0d06b105f9f71"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "about",
+    "stats",
+    "portfolio",
+    "testimonials",
+    "contact",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Hi, I'm John Doe",
+      "about_me",
+      "skills",
+      "projects",
+      "experience",
+      "testimonials"
+    ],
+    "ctas": [
+      "view_projects()",
+      "get_in_touch()",
+      "send_message()"
+    ],
+    "texts": [],
+    "colors": [
+      "#33ffb0",
+      "#0a0a0a",
+      "#141414",
+      "#1a1a1a",
+      "#222222",
+      "#00ff88"
+    ],
+    "dark": true,
+    "fonts": [
+      "Fira Code",
+      "Inter",
+      "JetBrains Mono"
+    ],
+    "images": 7,
+    "motion": true,
+    "lines": 1242,
+    "css": {
+      "palette": [
+        "#33ffb0",
+        "#0a0a0a",
+        "#141414",
+        "#1a1a1a",
+        "#222222",
+        "#00ff88"
+      ],
+      "radius_px": 3,
+      "gradients": 2,
+      "shadows": 11,
+      "keyframes": 1,
+      "transitions": 44,
+      "uppercase": 1,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "stats",
+      "portfolio",
+      "testimonials",
+      "contact",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "list"
+    ],
+    "style": [
+      "technical",
+      "dark-luxe",
+      "futuristic"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 1,
+    "modernity": 5,
+    "media": [
+      "none"
+    ],
+    "image_need": 0,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "contact"
+    ],
+    "origin": [
+      "portfolio"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "stats",
+      "portfolio",
+      "testimonials",
+      "contact",
+      "footer"
+    ],
+    "scheme": "dark",
+    "quality": 4,
+    "note": "Terminal-style dev portfolio, mint on black, monospace",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:33.112800Z"
+}

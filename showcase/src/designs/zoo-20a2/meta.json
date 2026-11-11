@@ -1,0 +1,125 @@
+{
+  "id": "zoo-20a2",
+  "name": "Zoo",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "zoo-html-template",
+    "format": "html-page",
+    "hash": "20a2695fcfc3420eed61f3051dbe4f98b95f4893a2e6035dd859db4ea1004b9b",
+    "original": "test-templates/uiuxlabz/zoo-html-template",
+    "repo": "https://github.com/uiuxlabz/zoo-html-template",
+    "group": "uiuxlabz",
+    "commit": "c7117d68f6c730103280611753077fdca0b7fb10"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Step Into a World of Wild Wonder",
+      "Conservation, Connection & Curiosity",
+      "Stars of the Savanna",
+      "An Adventure For Everyone",
+      "Life Inside The Enclosure",
+      "Roars of Approval"
+    ],
+    "ctas": [
+      "Book Tickets",
+      "Plan Your Visit",
+      "Meet the Animals",
+      "Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#10241a",
+      "#16301f",
+      "#1f402a",
+      "#2a5337",
+      "#3a6b46",
+      "#4c8357"
+    ],
+    "dark": null,
+    "fonts": [
+      "Fraunces",
+      "Outfit"
+    ],
+    "images": 18,
+    "motion": true,
+    "lines": 1096,
+    "css": {
+      "palette": [
+        "#10241a",
+        "#16301f",
+        "#1f402a",
+        "#2a5337",
+        "#3a6b46",
+        "#4c8357"
+      ],
+      "radius_px": 14,
+      "gradients": 20,
+      "shadows": 41,
+      "keyframes": 0,
+      "transitions": 27,
+      "uppercase": 13,
+      "glass": 5
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "organic",
+      "modern"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "sales",
+      "info"
+    ],
+    "origin": [
+      "events",
+      "hospitality"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Deep green wildlife zoo with ticket calls",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:13.278823Z"
+}

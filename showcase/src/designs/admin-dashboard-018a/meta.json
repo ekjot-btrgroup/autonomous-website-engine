@@ -1,0 +1,115 @@
+{
+  "id": "admin-dashboard-018a",
+  "name": "Admin Dashboard",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "admin-dashboard-html-template",
+    "format": "html-page",
+    "hash": "018a5a6e36e5ff6a4474df6bc85335d61c26e9ea22b8598c8af9e0df1d1dc6aa",
+    "original": "test-templates/uiuxlabz/admin-dashboard-html-template",
+    "repo": "https://github.com/uiuxlabz/admin-dashboard-html-template",
+    "group": "uiuxlabz",
+    "commit": "dcd8289e135cbce3bb7cd809f28612a6b9c4d25d"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "logos",
+    "hero"
+  ],
+  "summary": {
+    "headings": [
+      "Dashboard",
+      "Recent Activity",
+      "Recent Orders"
+    ],
+    "ctas": [
+      "View Report",
+      "+ Add User",
+      ""
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#eef2ff",
+      "#fef2f2",
+      "#ecfdf5",
+      "#dc2626",
+      "#fffbeb"
+    ],
+    "dark": false,
+    "fonts": [
+      "Inter"
+    ],
+    "images": 4,
+    "motion": true,
+    "lines": 1231,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#eef2ff",
+        "#fef2f2",
+        "#ecfdf5",
+        "#dc2626",
+        "#fffbeb"
+      ],
+      "radius_px": 11,
+      "gradients": 17,
+      "shadows": 18,
+      "keyframes": 1,
+      "transitions": 28,
+      "uppercase": 3,
+      "glass": 3
+    },
+    "sections": [
+      "logos",
+      "hero"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "sticky"
+    ],
+    "style": [
+      "corporate",
+      "modern"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 1,
+    "density": 5,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "icons"
+    ],
+    "image_need": 0,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "info"
+    ],
+    "origin": [
+      "saas"
+    ],
+    "sections": [
+      "logos",
+      "hero"
+    ],
+    "scheme": "light",
+    "quality": 3,
+    "note": "Light admin dashboard with cards and tables",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:16.531169Z"
+}

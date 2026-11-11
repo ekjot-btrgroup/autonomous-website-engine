@@ -21,8 +21,8 @@ description: Turn a client request into the top 10 matching designs from the sho
 4. If it reports untagged designs, run `/add-designs` step 5 first, then repeat step 3.
 5. **One line per design:** write `.cache/why-<slug>.json` as `{"<id>": "<why this design suits THIS client and brief, max ~20 words>"}` for all 10, then `npm run -s shortlist -- <slug> --why .cache/why-<slug>.json`. Base each line on the brief and the design's traits/reasons from the output; be honest when a design is a weaker fit.
 6. Show the results:
-   - Lovable parked (`lovable.enabled` false): `npm run -s sheet -- <slug>` then send `reports/<slug>/shortlist.png` to the user with the SendUserFile tool (display render). Do not read the image yourself.
-   - Lovable on: `npm run -s push -- showcase`; the pick page is `<showcase_url>/s/<slug>`.
+   - Showcase not on Lovable (`lovable.showcase` false): `npm run -s sheet -- <slug>` then send `reports/<slug>/shortlist.png` to the user with the SendUserFile tool (display render). Do not read the image yourself.
+   - `lovable.showcase` true: `npm run -s push -- showcase`; the pick page is `<showcase_url>/s/<slug>`.
    Then commit and `npm run -s release -- "Shortlist for <slug>"`.
 6b. Reply in at most 12 lines: the 10 as `rank. id (category): why line`, sections the library lacks, then:
    "Pick 3 and reply: Build site <slug> with designs: id1, id2, id3". Stop. Do not build until the user sends their picks.

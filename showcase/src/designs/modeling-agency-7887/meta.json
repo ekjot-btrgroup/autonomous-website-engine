@@ -1,0 +1,125 @@
+{
+  "id": "modeling-agency-7887",
+  "name": "Modeling Agency",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "modeling-agency-html-template",
+    "format": "html-page",
+    "hash": "7887e6bf376b2ac9c81872183cc3121b1c412957c250a9e95ef3a92c1ab07826",
+    "original": "test-templates/uiuxlabz/modeling-agency-html-template",
+    "repo": "https://github.com/uiuxlabz/modeling-agency-html-template",
+    "group": "uiuxlabz",
+    "commit": "6b73971382f85ca9ca347d5642d7d832dad8aaf3"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "POSE IFY",
+      "Not just models. The look behind the look.",
+      "Four ways to own the frame.",
+      "STRUT. STARE. OWN THE ROOM.",
+      "Faces on rotation .",
+      "They said yes to us."
+    ],
+    "ctas": [
+      "Book now",
+      "Meet the roster →",
+      "Book a model",
+      "Inside the studio →"
+    ],
+    "texts": [],
+    "colors": [
+      "#0a0a0b",
+      "#101013",
+      "#151518",
+      "#f4f1e8",
+      "#c9c5b9",
+      "#8f8b80"
+    ],
+    "dark": true,
+    "fonts": [
+      "Anton",
+      "Manrope"
+    ],
+    "images": 9,
+    "motion": true,
+    "lines": 1032,
+    "css": {
+      "palette": [
+        "#0a0a0b",
+        "#101013",
+        "#151518",
+        "#f4f1e8",
+        "#c9c5b9",
+        "#8f8b80"
+      ],
+      "radius_px": 0,
+      "gradients": 7,
+      "shadows": 3,
+      "keyframes": 2,
+      "transitions": 26,
+      "uppercase": 34,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "full-bleed",
+      "grid"
+    ],
+    "style": [
+      "dark-luxe",
+      "bold",
+      "editorial"
+    ],
+    "tone": 3,
+    "energy": 4,
+    "luxury": 5,
+    "density": 2,
+    "warmth": 1,
+    "modernity": 5,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "booking"
+    ],
+    "origin": [
+      "fashion"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "dark",
+    "quality": 5,
+    "note": "Dark Anton uppercase roster, cream text, fashion-forward",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:50.235252Z"
+}

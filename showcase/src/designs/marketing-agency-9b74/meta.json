@@ -1,0 +1,126 @@
+{
+  "id": "marketing-agency-9b74",
+  "name": "Marketing Agency",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "marketing-agency-html-template",
+    "format": "html-page",
+    "hash": "9b74c7895be4e75ea21e9f4452fc43655c401c5b2184219fba936372686531da",
+    "original": "test-templates/uiuxlabz/marketing-agency-html-template",
+    "repo": "https://github.com/uiuxlabz/marketing-agency-html-template",
+    "group": "uiuxlabz",
+    "commit": "0830c7e8b451bd0ade19777829f7f42ebb026839"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "We Make Your Brand Loud & Clear.",
+      "Services That Amplify Growth",
+      "A Creative Engine Built For Ambitious Brands",
+      "Selected Projects",
+      "Brands We Partner With",
+      "What Our Clients Say"
+    ],
+    "ctas": [
+      "Let's Talk",
+      "Explore Services",
+      "See Our Work",
+      "More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#e82d5a",
+      "#1a1940",
+      "#0f0e2e",
+      "#ff3d6a",
+      "#00d4ff",
+      "#7c6cf0"
+    ],
+    "dark": false,
+    "fonts": [
+      "Syne",
+      "Space Grotesk"
+    ],
+    "images": 27,
+    "motion": true,
+    "lines": 1351,
+    "css": {
+      "palette": [
+        "#e82d5a",
+        "#1a1940",
+        "#0f0e2e",
+        "#ff3d6a",
+        "#00d4ff",
+        "#7c6cf0"
+      ],
+      "radius_px": 26,
+      "gradients": 9,
+      "shadows": 13,
+      "keyframes": 3,
+      "transitions": 44,
+      "uppercase": 5,
+      "glass": 0
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "cards"
+    ],
+    "style": [
+      "bold",
+      "gradient",
+      "playful"
+    ],
+    "tone": 2,
+    "energy": 5,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 5,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "showcase"
+    ],
+    "origin": [
+      "agency"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 4,
+    "note": "Loud pink and cyan agency, Syne display, animated",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:49.149135Z"
+}

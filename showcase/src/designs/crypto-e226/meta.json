@@ -1,0 +1,130 @@
+{
+  "id": "crypto-e226",
+  "name": "Crypto",
+  "kind": "page",
+  "status": "ok",
+  "issues": [
+    "1 inline on* handlers removed (template script still runs)"
+  ],
+  "source": {
+    "folder": "crypto-html-template",
+    "format": "html-page",
+    "hash": "e226eaa23e07d2842c51aa5397a8da9fe9e6aed22e737756911037f9eebfef38",
+    "original": "test-templates/uiuxlabz/crypto-html-template",
+    "repo": "https://github.com/uiuxlabz/crypto-html-template",
+    "group": "uiuxlabz",
+    "commit": "beb1de436b7ac5d85710ac2537436d433aa5677e"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Trade on the meridian where liquidity never sleeps",
+      "An exchange engineered for the long run",
+      "Everything a serious trader needs, one terminal",
+      "The terminal that runs the books",
+      "Buy, sell, stake and borrow",
+      "Join the listing that could define the next cycle"
+    ],
+    "ctas": [
+      "Start Trading",
+      "Create Account",
+      "Explore MER Token",
+      "More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#000000",
+      "#04070f",
+      "#070e1d",
+      "#0a1428",
+      "#0d1b33",
+      "#12213d"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Space Grotesk",
+      "JetBrains Mono"
+    ],
+    "images": 16,
+    "motion": true,
+    "lines": 1821,
+    "css": {
+      "palette": [
+        "#000000",
+        "#04070f",
+        "#070e1d",
+        "#0a1428",
+        "#0d1b33",
+        "#12213d"
+      ],
+      "radius_px": 129,
+      "gradients": 22,
+      "shadows": 17,
+      "keyframes": 4,
+      "transitions": 20,
+      "uppercase": 13,
+      "glass": 6
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "futuristic",
+      "dark-luxe",
+      "glassmorphism"
+    ],
+    "tone": 3,
+    "energy": 5,
+    "luxury": 3,
+    "density": 4,
+    "warmth": 1,
+    "modernity": 5,
+    "media": [
+      "3d",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "signup",
+      "sales"
+    ],
+    "origin": [
+      "crypto",
+      "fintech"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Black trading terminal, heavy glow gradients and glass",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:30.355701Z"
+}

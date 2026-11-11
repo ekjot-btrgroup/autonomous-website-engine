@@ -1,6 +1,7 @@
 {
   "_note": "Controlled words. Designs are tagged with niche-NEUTRAL traits only (no industries). Niches live on the brief side (knowledge/niche-presets.json) and in memory.",
   "category": [
+    "page",
     "navbar",
     "hero",
     "logos",

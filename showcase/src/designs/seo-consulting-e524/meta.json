@@ -1,0 +1,138 @@
+{
+  "id": "seo-consulting-e524",
+  "name": "Seo Consulting",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "seo-consulting-html-template",
+    "format": "html-page",
+    "hash": "e5242964be7bf0d1fc6ba120a780ec0bcbfaa9af69bd65b8e4e941f99ed7f78b",
+    "original": "test-templates/uiuxlabz/seo-consulting-html-template",
+    "repo": "https://github.com/uiuxlabz/seo-consulting-html-template",
+    "group": "uiuxlabz",
+    "commit": "27622db087196fecc3f412416f6c07a173b49e58"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "stats",
+    "about",
+    "testimonials",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Rank Higher. Grow Faster.",
+      "SEO Services That Drive Results",
+      "We Eat, Sleep, and Breathe SEO",
+      "Real Results, Real Businesses",
+      "What Our Clients Say",
+      "Ready to Dominate Search?"
+    ],
+    "ctas": [
+      "Get Free Audit",
+      "Get Free SEO Audit",
+      "Our Services",
+      "Learn More About Us"
+    ],
+    "texts": [],
+    "colors": [
+      "#1f2937",
+      "#0d9488",
+      "#14b8a6",
+      "#0f766e",
+      "#f0fdfa",
+      "#ccfbf1"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter"
+    ],
+    "images": 5,
+    "motion": true,
+    "lines": 734,
+    "css": {
+      "palette": [
+        "#1f2937",
+        "#0d9488",
+        "#14b8a6",
+        "#0f766e",
+        "#f0fdfa",
+        "#ccfbf1"
+      ],
+      "radius_px": 667,
+      "gradients": 4,
+      "shadows": 10,
+      "keyframes": 0,
+      "transitions": 31,
+      "uppercase": 2,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "about",
+      "testimonials",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "modern",
+      "corporate",
+      "soft"
+    ],
+    "tone": 3,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "icons",
+      "logos"
+    ],
+    "image_need": 0,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "agency",
+      "consulting"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "stats",
+      "about",
+      "testimonials",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Teal rounded SEO agency, Inter only",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:02.494145Z"
+}

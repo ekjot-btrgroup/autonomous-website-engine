@@ -7,6 +7,7 @@
   "scripts": {
     "sync": "node engine/release.mjs sync",
     "add": "node engine/add-designs.mjs",
+    "import:pages": "python3 -I engine/tools/html_page.py",
     "tag": "node engine/tag.mjs",
     "shortlist": "node engine/shortlist.mjs",
     "sheet": "node engine/sheet.mjs",
@@ -17,6 +18,7 @@
     "release": "node engine/release.mjs release",
     "releases": "node engine/release.mjs releases",
     "status": "node engine/status.mjs",
+    "usage": "node engine/usage.mjs",
     "showcase:init": "node engine/showcase.mjs init",
     "showcase:check": "node engine/showcase.mjs check",
     "showcase:serve": "node engine/showcase.mjs serve",

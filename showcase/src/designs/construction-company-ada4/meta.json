@@ -1,0 +1,144 @@
+{
+  "id": "construction-company-ada4",
+  "name": "Construction Company",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "construction-company-html-template",
+    "format": "html-page",
+    "hash": "ada49a47ce19019f35dbea307c1384e9299e5f942f845ea7c7a1c3f040df582f",
+    "original": "test-templates/uiuxlabz/construction-company-html-template",
+    "repo": "https://github.com/uiuxlabz/construction-company-html-template",
+    "group": "uiuxlabz",
+    "commit": "48eef70ca7ad27a414bec6d9b025f1a2b667dc1b"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "process",
+    "about",
+    "portfolio",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "We build what matters.",
+      "From trench to turnover.",
+      "Straight talk. Tight sites. Buildings that hold.",
+      "On site, on record.",
+      "The crew behind the site.",
+      "What owners say at handover."
+    ],
+    "ctas": [
+      "Request a bid",
+      "See projects",
+      "Get a bid",
+      "Meet the company"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#ede9e2",
+      "#2a2e33",
+      "#3a3e42",
+      "#cfcac0",
+      "#000000"
+    ],
+    "dark": null,
+    "fonts": [
+      "Chakra Petch",
+      "IBM Plex Sans",
+      "JetBrains Mono"
+    ],
+    "images": 19,
+    "motion": true,
+    "lines": 1040,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#ede9e2",
+        "#2a2e33",
+        "#3a3e42",
+        "#cfcac0",
+        "#000000"
+      ],
+      "radius_px": 0,
+      "gradients": 6,
+      "shadows": 5,
+      "keyframes": 2,
+      "transitions": 13,
+      "uppercase": 26,
+      "glass": 0
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "process",
+      "about",
+      "portfolio",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "brutalist",
+      "bold",
+      "technical"
+    ],
+    "tone": 4,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 1,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "showcase"
+    ],
+    "origin": [
+      "construction"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "process",
+      "about",
+      "portfolio",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Square-cornered uppercase builder, concrete greys, mono",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:27.482369Z"
+}

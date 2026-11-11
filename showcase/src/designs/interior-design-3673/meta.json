@@ -1,0 +1,125 @@
+{
+  "id": "interior-design-3673",
+  "name": "Interior Design",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "interior-design-html-template",
+    "format": "html-page",
+    "hash": "3673fe6659c8795d716ffd8454c8eb18d1764afb93b6697bac57fa495ca95e8c",
+    "original": "test-templates/uiuxlabz/interior-design-html-template",
+    "repo": "https://github.com/uiuxlabz/interior-design-html-template",
+    "group": "uiuxlabz",
+    "commit": "ab1ed249e87c065cd341b700591971c4d929d02a"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Refined spaces, crafted around you .",
+      "The Willow Residence",
+      "A portfolio of quiet confidence",
+      "Full-service interior design",
+      "Trusted by people who live in our spaces",
+      "The people behind the polish"
+    ],
+    "ctas": [
+      "Start a Project",
+      "Explore Our Work",
+      "Book a Consultation",
+      "View All Projects"
+    ],
+    "texts": [],
+    "colors": [
+      "#23221f",
+      "#4c4a44",
+      "#7d7a72",
+      "#b9915b",
+      "#9a7745",
+      "#e3d3b8"
+    ],
+    "dark": null,
+    "fonts": [
+      "Marcellus",
+      "Outfit"
+    ],
+    "images": 20,
+    "motion": true,
+    "lines": 1390,
+    "css": {
+      "palette": [
+        "#23221f",
+        "#4c4a44",
+        "#7d7a72",
+        "#b9915b",
+        "#9a7745",
+        "#e3d3b8"
+      ],
+      "radius_px": 833,
+      "gradients": 6,
+      "shadows": 18,
+      "keyframes": 1,
+      "transitions": 28,
+      "uppercase": 11,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "full-bleed",
+      "masonry"
+    ],
+    "style": [
+      "elegant",
+      "editorial",
+      "warm"
+    ],
+    "tone": 4,
+    "energy": 2,
+    "luxury": 4,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "booking"
+    ],
+    "origin": [
+      "interior"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 5,
+    "note": "Quiet taupe and brass portfolio, photo-led",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:45.627827Z"
+}

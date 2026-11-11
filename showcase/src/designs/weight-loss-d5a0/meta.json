@@ -1,0 +1,127 @@
+{
+  "id": "weight-loss-d5a0",
+  "name": "Weight Loss",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "weight-loss-html-template",
+    "format": "html-page",
+    "hash": "d5a0cf79ef0b0658750b25fc125ccbc2278f29ca633f6dae5bd9e6a52b7a23e2",
+    "original": "test-templates/uiuxlabz/weight-loss-html-template",
+    "repo": "https://github.com/uiuxlabz/weight-loss-html-template",
+    "group": "uiuxlabz",
+    "commit": "e883541b1f12b198492acbf01b12f0451a244432"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Lose the weight. Keep the energy.",
+      "Everything your body needs to change for good",
+      "Three shifts. One new you.",
+      "The numbers don’t lie. Neither do our members.",
+      "Real people. Real shifts.",
+      "Invest in your health. No hidden fees."
+    ],
+    "ctas": [
+      "Start Free",
+      "Start Your Shift",
+      "See How It Works",
+      "Find Your Plan"
+    ],
+    "texts": [],
+    "colors": [
+      "#cfe6a4",
+      "#143d26",
+      "#237046",
+      "#6ea51f",
+      "#a6d645",
+      "#13271b"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Sora"
+    ],
+    "images": 6,
+    "motion": true,
+    "lines": 1432,
+    "css": {
+      "palette": [
+        "#cfe6a4",
+        "#143d26",
+        "#237046",
+        "#6ea51f",
+        "#a6d645",
+        "#13271b"
+      ],
+      "radius_px": 229,
+      "gradients": 14,
+      "shadows": 24,
+      "keyframes": 2,
+      "transitions": 15,
+      "uppercase": 6,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "modern",
+      "bold",
+      "gradient"
+    ],
+    "tone": 2,
+    "energy": 4,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 5,
+    "media": [
+      "product",
+      "photo"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "signup",
+      "sales"
+    ],
+    "origin": [
+      "health",
+      "fitness"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Deep green and lime pill-shaped wellness app",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:11.424353Z"
+}

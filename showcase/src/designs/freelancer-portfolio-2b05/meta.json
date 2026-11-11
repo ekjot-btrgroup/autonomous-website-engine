@@ -1,0 +1,152 @@
+{
+  "id": "freelancer-portfolio-2b05",
+  "name": "Freelancer Portfolio",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "freelancer-portfolio-html-template",
+    "format": "html-page",
+    "hash": "2b05b36163974a620a80e0120eb4b6aa9e7e2257c51d7c5d5db74f85b87c516d",
+    "original": "test-templates/uiuxlabz/freelancer-portfolio-html-template",
+    "repo": "https://github.com/uiuxlabz/freelancer-portfolio-html-template",
+    "group": "uiuxlabz",
+    "commit": "150b001ce74a87ea2a32f540cbb83fefd5bdfd77"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "cta",
+    "hero",
+    "about",
+    "portfolio",
+    "services",
+    "team",
+    "testimonials",
+    "blog",
+    "contact",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "I build things people love to use",
+      "8+ Years of Crafting Digital Experiences",
+      "Selected Projects",
+      "Services & Expertise",
+      "People I Collaborate With",
+      "What Clients Say"
+    ],
+    "ctas": [
+      "Let's Talk",
+      "View My Work",
+      "Get In Touch",
+      "Learn More About Me"
+    ],
+    "texts": [],
+    "colors": [
+      "#3730a3",
+      "#4f46e5",
+      "#1e1b4b",
+      "#f59e0b",
+      "#fbbf24",
+      "#d97706"
+    ],
+    "dark": null,
+    "fonts": [
+      "IBM Plex Mono",
+      "Nunito Sans",
+      "Poppins"
+    ],
+    "images": 18,
+    "motion": true,
+    "lines": 1260,
+    "css": {
+      "palette": [
+        "#3730a3",
+        "#4f46e5",
+        "#1e1b4b",
+        "#f59e0b",
+        "#fbbf24",
+        "#d97706"
+      ],
+      "radius_px": 3,
+      "gradients": 3,
+      "shadows": 12,
+      "keyframes": 2,
+      "transitions": 51,
+      "uppercase": 1,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "cta",
+      "hero",
+      "about",
+      "portfolio",
+      "services",
+      "team",
+      "testimonials",
+      "blog",
+      "contact",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "grid"
+    ],
+    "style": [
+      "modern",
+      "playful",
+      "soft"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 4,
+    "warmth": 3,
+    "modernity": 3,
+    "media": [
+      "photo",
+      "illustration"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase",
+      "leads",
+      "contact"
+    ],
+    "origin": [
+      "portfolio"
+    ],
+    "sections": [
+      "navbar",
+      "cta",
+      "hero",
+      "about",
+      "portfolio",
+      "services",
+      "team",
+      "testimonials",
+      "blog",
+      "contact",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Full indigo and amber freelancer one-pager",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:38.570460Z"
+}

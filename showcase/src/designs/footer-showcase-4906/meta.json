@@ -1,0 +1,121 @@
+{
+  "id": "footer-showcase-4906",
+  "name": "Footer Showcase",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "footer-showcase-html-template",
+    "format": "html-page",
+    "hash": "4906dd158c0bcd667b95ac38dbb080c57095e242f454d7cef8ca979e46921190",
+    "original": "test-templates/uiuxlabz/footer-showcase-html-template",
+    "repo": "https://github.com/uiuxlabz/footer-showcase-html-template",
+    "group": "uiuxlabz",
+    "commit": "5b378cab16806c70d4b57af4669f411bb513026e"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Footer Design Patterns",
+      "Six footers, six personalities",
+      "Copy. Paste. Ship."
+    ],
+    "ctas": [
+      "Browse patterns",
+      "Explore all 6 patterns",
+      "Skip to card footer",
+      "View all patterns"
+    ],
+    "texts": [],
+    "colors": [
+      "#5eead4",
+      "#0f766e",
+      "#94a3b8",
+      "#111827",
+      "#0f172a",
+      "#14b8a6"
+    ],
+    "dark": false,
+    "fonts": [
+      "Outfit",
+      "Inter"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 1801,
+    "css": {
+      "palette": [
+        "#5eead4",
+        "#0f766e",
+        "#94a3b8",
+        "#111827",
+        "#0f172a",
+        "#14b8a6"
+      ],
+      "radius_px": 12,
+      "gradients": 11,
+      "shadows": 15,
+      "keyframes": 0,
+      "transitions": 17,
+      "uppercase": 6,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "cards"
+    ],
+    "style": [
+      "modern",
+      "minimal",
+      "gradient"
+    ],
+    "tone": 3,
+    "energy": 2,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "pattern"
+    ],
+    "image_need": 0,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "showcase"
+    ],
+    "origin": [
+      "general"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 3,
+    "note": "Footer pattern gallery, teal accents, utility page",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:37.945352Z"
+}

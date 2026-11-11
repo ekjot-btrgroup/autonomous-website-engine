@@ -1,0 +1,127 @@
+{
+  "id": "insurance-b123",
+  "name": "Insurance",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "insurance-html-template",
+    "format": "html-page",
+    "hash": "b1236fa2466e8d94cfe03c24dec012b3e3b4ae77a3b1c2c4972279d9ea64be29",
+    "original": "test-templates/uiuxlabz/insurance-html-template",
+    "repo": "https://github.com/uiuxlabz/insurance-html-template",
+    "group": "uiuxlabz",
+    "commit": "ee92d8e76b0e89008fc4ddd48227b654bd052587"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Protecting What Matters Most With Plans That Fit Your Life",
+      "Insurance Built Around Your Life",
+      "A Partner You Can Count On, Through Every Chapter",
+      "Get Protected Today — In Under Five Minutes"
+    ],
+    "ctas": [
+      "Get a Free Quote",
+      "Explore Coverage",
+      "Discover Our Story",
+      "Request a Quote"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#0d1f3c",
+      "#132a4f",
+      "#1b355f",
+      "#f6f4ef",
+      "#c9993d"
+    ],
+    "dark": null,
+    "fonts": [
+      "Cormorant Garamond",
+      "Inter"
+    ],
+    "images": 5,
+    "motion": true,
+    "lines": 844,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#0d1f3c",
+        "#132a4f",
+        "#1b355f",
+        "#f6f4ef",
+        "#c9993d"
+      ],
+      "radius_px": 321,
+      "gradients": 15,
+      "shadows": 27,
+      "keyframes": 0,
+      "transitions": 58,
+      "uppercase": 7,
+      "glass": 1
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "classic",
+      "elegant",
+      "corporate"
+    ],
+    "tone": 5,
+    "energy": 2,
+    "luxury": 3,
+    "density": 3,
+    "warmth": 3,
+    "modernity": 2,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "finance"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Navy and gold insurance with serif headings",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:45.047969Z"
+}

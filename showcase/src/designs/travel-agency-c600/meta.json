@@ -1,0 +1,125 @@
+{
+  "id": "travel-agency-c600",
+  "name": "Travel Agency",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "travel-agency-html-template",
+    "format": "html-page",
+    "hash": "c6003916ae78f5c648adb89a604de2d20cf94e09985a94e9269a879eb5f0d6ac",
+    "original": "test-templates/uiuxlabz/travel-agency-html-template",
+    "repo": "https://github.com/uiuxlabz/travel-agency-html-template",
+    "group": "uiuxlabz",
+    "commit": "78fead7ba1fb762b5fedf03ed7f96cdc5ad6d2f5"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Your Next Adventure Starts Here",
+      "Plan Your Trip",
+      "Popular Tours This Season",
+      "Travel, Done Right",
+      "Crafted by Travelers, For Travelers",
+      "Destinations We Love"
+    ],
+    "ctas": [
+      "Book Now",
+      "Explore Tours",
+      "Our Story",
+      "View Tour"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#1e56d6",
+      "#1642ac",
+      "#f5a524",
+      "#d98b0b",
+      "#0f1b33"
+    ],
+    "dark": null,
+    "fonts": [
+      "Archivo",
+      "Karla"
+    ],
+    "images": 9,
+    "motion": true,
+    "lines": 997,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#1e56d6",
+        "#1642ac",
+        "#f5a524",
+        "#d98b0b",
+        "#0f1b33"
+      ],
+      "radius_px": 3,
+      "gradients": 5,
+      "shadows": 31,
+      "keyframes": 0,
+      "transitions": 70,
+      "uppercase": 15,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "grid",
+      "cards"
+    ],
+    "style": [
+      "bold",
+      "modern",
+      "playful"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 4,
+    "warmth": 3,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "sales"
+    ],
+    "origin": [
+      "travel"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 3,
+    "note": "Blue and orange tour packages grid",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:07.213580Z"
+}

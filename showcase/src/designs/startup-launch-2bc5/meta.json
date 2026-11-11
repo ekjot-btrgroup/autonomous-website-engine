@@ -1,0 +1,147 @@
+{
+  "id": "startup-launch-2bc5",
+  "name": "Startup Launch",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "startup-launch-html-template",
+    "format": "html-page",
+    "hash": "2bc57aeef8003f080058f72cfe41cfd22e411921ab17f1925977da3eddcdc5b2",
+    "original": "test-templates/uiuxlabz/startup-launch-html-template",
+    "repo": "https://github.com/uiuxlabz/startup-launch-html-template",
+    "group": "uiuxlabz",
+    "commit": "f211e94c6036106bd71f00b18e0c703743cd97c7"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "logos",
+    "process",
+    "services",
+    "stats",
+    "gallery",
+    "team",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Launch your product. Ignite your growth.",
+      "Everything you need to go from idea to launch",
+      "Launch services that cover every base",
+      "Operators who have launched before",
+      "Founders on what changed",
+      "Ready to ignite your next launch?"
+    ],
+    "ctas": [
+      "Get Started",
+      "Start Free Trial",
+      "Explore Services",
+      "Learn Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#a79bff",
+      "#8b7bf0",
+      "#0b1020",
+      "#6c5ce7",
+      "#5544d0"
+    ],
+    "dark": false,
+    "fonts": [
+      "Sora",
+      "Manrope"
+    ],
+    "images": 20,
+    "motion": true,
+    "lines": 945,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#a79bff",
+        "#8b7bf0",
+        "#0b1020",
+        "#6c5ce7",
+        "#5544d0"
+      ],
+      "radius_px": 8,
+      "gradients": 23,
+      "shadows": 40,
+      "keyframes": 1,
+      "transitions": 76,
+      "uppercase": 7,
+      "glass": 4
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "logos",
+      "process",
+      "services",
+      "stats",
+      "gallery",
+      "team",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "gradient",
+      "modern",
+      "glassmorphism"
+    ],
+    "tone": 2,
+    "energy": 4,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 5,
+    "media": [
+      "product",
+      "logos"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "signup",
+      "leads"
+    ],
+    "origin": [
+      "saas"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "logos",
+      "process",
+      "services",
+      "stats",
+      "gallery",
+      "team",
+      "cta",
+      "footer"
+    ],
+    "scheme": "light",
+    "quality": 4,
+    "note": "Violet gradient startup launch, polished",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:05.261470Z"
+}

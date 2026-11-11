@@ -1,0 +1,128 @@
+{
+  "id": "security-3d4c",
+  "name": "Security",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "security-html-template",
+    "format": "html-page",
+    "hash": "3d4ce48d15c386b16d7d285362c57f9cffee08b3383aafa05be349b8ff049c21",
+    "original": "test-templates/uiuxlabz/security-html-template",
+    "repo": "https://github.com/uiuxlabz/security-html-template",
+    "group": "uiuxlabz",
+    "commit": "6957e1c08dcec3bb60f585828b5af3bd3c9067a4"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "cta",
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Vigilance that never sleeps , protection that never yields.",
+      "A security partner built on discipline, not drama",
+      "Guarding services for every perimeter",
+      "Why teams choose us as their last line of defense",
+      "Ready to secure your premises?",
+      "What our clients say about us"
+    ],
+    "ctas": [
+      "Get a Quote",
+      "Explore Services",
+      "Request a Free Assessment",
+      "More About IronWatch"
+    ],
+    "texts": [],
+    "colors": [
+      "#04070d",
+      "#070c16",
+      "#0b1220",
+      "#111b2e",
+      "#1a2740",
+      "#24344f"
+    ],
+    "dark": null,
+    "fonts": [
+      "Barlow Condensed",
+      "Inter"
+    ],
+    "images": 14,
+    "motion": true,
+    "lines": 1438,
+    "css": {
+      "palette": [
+        "#04070d",
+        "#070c16",
+        "#0b1220",
+        "#111b2e",
+        "#1a2740",
+        "#24344f"
+      ],
+      "radius_px": 404,
+      "gradients": 9,
+      "shadows": 34,
+      "keyframes": 0,
+      "transitions": 34,
+      "uppercase": 17,
+      "glass": 1
+    },
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "dark-luxe",
+      "bold",
+      "modern"
+    ],
+    "tone": 5,
+    "energy": 2,
+    "luxury": 3,
+    "density": 3,
+    "warmth": 1,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "trust"
+    ],
+    "origin": [
+      "local-services"
+    ],
+    "sections": [
+      "cta",
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Deep navy condensed security guarding firm",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:02.194240Z"
+}

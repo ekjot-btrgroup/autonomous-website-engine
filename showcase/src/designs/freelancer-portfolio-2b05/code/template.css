@@ -1,0 +1,977 @@
+/* assets/css/base.css (scoped to .tpl-freelancer-portfolio-2b05) */
+.tpl-freelancer-portfolio-2b05{
+  --color-indigo: #3730A3;
+  --color-indigo-light: #4F46E5;
+  --color-indigo-dark: #1E1B4B;
+  --color-amber: #F59E0B;
+  --color-amber-light: #FBBF24;
+  --color-amber-dark: #D97706;
+  --color-cream: #FFFBEB;
+  --color-charcoal: #1F2937;
+  --color-gray-soft: #F3F4F6;
+  --color-gray-mid: #6B7280;
+  --color-gray-light: #D1D5DB;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 14px rgba(0,0,0,.1);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.12);
+  --shadow-xl: 0 20px 50px rgba(0,0,0,.15);
+
+  --transition-fast: .2s ease;
+  --transition-med: .35s ease;
+  --transition-slow: .6s ease;
+}
+.tpl-freelancer-portfolio-2b05 *, .tpl-freelancer-portfolio-2b05 *::before, .tpl-freelancer-portfolio-2b05 *::after{ box-sizing: border-box; margin: 0; padding: 0; }
+.tpl-freelancer-portfolio-2b05{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+.tpl-freelancer-portfolio-2b05{
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.tpl-freelancer-portfolio-2b05 img{ max-width: 100%; height: auto; display: block; }
+.tpl-freelancer-portfolio-2b05 a{ text-decoration: none; color: inherit; transition: color var(--transition-fast); }
+.tpl-freelancer-portfolio-2b05 ul, .tpl-freelancer-portfolio-2b05 ol{ list-style: none; }
+.tpl-freelancer-portfolio-2b05 h1, .tpl-freelancer-portfolio-2b05 h2, .tpl-freelancer-portfolio-2b05 h3, .tpl-freelancer-portfolio-2b05 h4, .tpl-freelancer-portfolio-2b05 h5, .tpl-freelancer-portfolio-2b05 h6{ font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+.tpl-freelancer-portfolio-2b05 code, .tpl-freelancer-portfolio-2b05 .mono{ font-family: var(--font-mono); }
+.tpl-freelancer-portfolio-2b05 .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.tpl-freelancer-portfolio-2b05 .section{ padding: 100px 0; }
+.tpl-freelancer-portfolio-2b05 .section--gray{ background: var(--color-gray-soft); }
+.tpl-freelancer-portfolio-2b05 .section--cream{ background: var(--color-cream); }
+.tpl-freelancer-portfolio-2b05 .text-center{ text-align: center; }
+.tpl-freelancer-portfolio-2b05 .text-indigo{ color: var(--color-indigo); }
+.tpl-freelancer-portfolio-2b05 .text-amber{ color: var(--color-amber); }
+.tpl-freelancer-portfolio-2b05 .visually-hidden{
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
+.tpl-freelancer-portfolio-2b05 .section-header{ margin-bottom: 56px; }
+.tpl-freelancer-portfolio-2b05 .section-header p{
+  font-family: var(--font-display);
+  font-size: .875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-amber);
+  margin-bottom: 8px;
+}
+.tpl-freelancer-portfolio-2b05 .section-header h2{
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--color-charcoal);
+}
+.tpl-freelancer-portfolio-2b05 .section-header h2 em{
+  font-style: normal;
+  color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-family: var(--font-display);
+  font-size: .9375rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+.tpl-freelancer-portfolio-2b05 .btn--primary{
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .btn--primary:hover{
+  background: var(--color-indigo-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(55,48,163,.35);
+}
+.tpl-freelancer-portfolio-2b05 .btn--amber{
+  background: var(--color-amber);
+  color: var(--color-charcoal);
+}
+.tpl-freelancer-portfolio-2b05 .btn--amber:hover{
+  background: var(--color-amber-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245,158,11,.35);
+}
+.tpl-freelancer-portfolio-2b05 .btn--outline{
+  background: transparent;
+  color: var(--color-indigo);
+  border: 2px solid var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .btn--outline:hover{
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .btn--outline-white{
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .btn--outline-white:hover{
+  background: var(--color-white);
+  color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  transition: all var(--transition-med);
+}
+.tpl-freelancer-portfolio-2b05 .navbar.scrolled{
+  box-shadow: var(--shadow-md);
+}
+.tpl-freelancer-portfolio-2b05 .navbar__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__logo{
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .navbar__logo span{ color: var(--color-amber); }
+.tpl-freelancer-portfolio-2b05 .navbar__links{
+  display: flex;
+  gap: 32px;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__links a{
+  font-family: var(--font-display);
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  position: relative;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__links a::after{
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-amber);
+  transition: width var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .navbar__links a:hover::after, .tpl-freelancer-portfolio-2b05 .navbar__links a.active::after{
+  width: 100%;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__links a:hover, .tpl-freelancer-portfolio-2b05 .navbar__links a.active{
+  color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .navbar__cta .btn{
+  padding: 10px 24px;
+  font-size: .8125rem;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__burger{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.tpl-freelancer-portfolio-2b05 .navbar__burger span{
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--color-charcoal);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .navbar__burger.open span:nth-child(1){ transform: rotate(45deg) translate(5px, 5px); }
+.tpl-freelancer-portfolio-2b05 .navbar__burger.open span:nth-child(2){ opacity: 0; }
+.tpl-freelancer-portfolio-2b05 .navbar__burger.open span:nth-child(3){ transform: rotate(-45deg) translate(6px, -6px); }
+.tpl-freelancer-portfolio-2b05 .mobile-nav{
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: var(--color-white);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.tpl-freelancer-portfolio-2b05 .mobile-nav.open{ display: flex; }
+.tpl-freelancer-portfolio-2b05 .mobile-nav a{
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+.tpl-freelancer-portfolio-2b05 .mobile-nav a:hover{ color: var(--color-indigo); }
+.tpl-freelancer-portfolio-2b05 .hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--color-cream);
+  padding-top: 72px;
+  position: relative;
+  overflow: hidden;
+}
+.tpl-freelancer-portfolio-2b05 .hero::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(55,48,163,.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.tpl-freelancer-portfolio-2b05 .hero__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.tpl-freelancer-portfolio-2b05 .hero__text h1{
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+.tpl-freelancer-portfolio-2b05 .hero__text h1 em{
+  font-style: normal;
+  color: var(--color-indigo);
+  position: relative;
+}
+.tpl-freelancer-portfolio-2b05 .hero__text h1 em::after{
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--color-amber);
+  opacity: .35;
+  border-radius: 4px;
+  z-index: -1;
+}
+.tpl-freelancer-portfolio-2b05 .hero__text p{
+  font-size: 1.125rem;
+  color: var(--color-gray-mid);
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+.tpl-freelancer-portfolio-2b05 .hero__btns{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.tpl-freelancer-portfolio-2b05 .hero__img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.tpl-freelancer-portfolio-2b05 .hero__img img{
+  max-width: 420px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 1;
+}
+.tpl-freelancer-portfolio-2b05 .hero__badges{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.tpl-freelancer-portfolio-2b05 .skill-badge{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--color-white);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-display);
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  white-space: nowrap;
+}
+.tpl-freelancer-portfolio-2b05 .skill-badge i{
+  color: var(--color-indigo);
+  font-size: 1rem;
+}
+.tpl-freelancer-portfolio-2b05 .skill-badge--1{ top: 8%; left: 0; animation: floatBadge 4s ease-in-out infinite; }
+.tpl-freelancer-portfolio-2b05 .skill-badge--2{ top: 30%; right: 0; animation: floatBadge 4.5s ease-in-out infinite .5s; }
+.tpl-freelancer-portfolio-2b05 .skill-badge--3{ bottom: 20%; left: 5%; animation: floatBadge 5s ease-in-out infinite 1s; }
+.tpl-freelancer-portfolio-2b05 .skill-badge--4{ bottom: 5%; right: 10%; animation: floatBadge 4.2s ease-in-out infinite .3s; }
+@keyframes floatBadge{
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.tpl-freelancer-portfolio-2b05 .about__grid{
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+.tpl-freelancer-portfolio-2b05 .about__img{
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.tpl-freelancer-portfolio-2b05 .about__img img{
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+.tpl-freelancer-portfolio-2b05 .about__img::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-amber);
+  border-radius: var(--radius-lg);
+  transform: translate(12px, 12px);
+  z-index: -1;
+}
+.tpl-freelancer-portfolio-2b05 .about__text h2{
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .about__text p{
+  color: var(--color-gray-mid);
+  margin-bottom: 24px;
+}
+.tpl-freelancer-portfolio-2b05 .skills{ margin-top: 32px; }
+.tpl-freelancer-portfolio-2b05 .skill{ margin-bottom: 20px; }
+.tpl-freelancer-portfolio-2b05 .skill__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: .875rem;
+  font-weight: 600;
+}
+.tpl-freelancer-portfolio-2b05 .skill__header span:last-child{ color: var(--color-indigo); }
+.tpl-freelancer-portfolio-2b05 .skill__bar{
+  height: 10px;
+  background: var(--color-gray-soft);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+.tpl-freelancer-portfolio-2b05 .skill__fill{
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-indigo), var(--color-indigo-light));
+  border-radius: var(--radius-full);
+  width: 0;
+  transition: width 1.2s ease;
+}
+.tpl-freelancer-portfolio-2b05 .projects__filter{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.tpl-freelancer-portfolio-2b05 .projects__filter button{
+  padding: 8px 20px;
+  border: 2px solid var(--color-gray-light);
+  border-radius: var(--radius-full);
+  background: transparent;
+  font-family: var(--font-display);
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--color-gray-mid);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .projects__filter button:hover, .tpl-freelancer-portfolio-2b05 .projects__filter button.active{
+  border-color: var(--color-indigo);
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .projects__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.tpl-freelancer-portfolio-2b05 .project-card{
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-med);
+  opacity: 0;
+  transform: translateY(30px);
+}
+.tpl-freelancer-portfolio-2b05 .project-card.revealed{
+  opacity: 1;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.tpl-freelancer-portfolio-2b05 .project-card__img{
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.tpl-freelancer-portfolio-2b05 .project-card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+.tpl-freelancer-portfolio-2b05 .project-card:hover .project-card__img img{
+  transform: scale(1.08);
+}
+.tpl-freelancer-portfolio-2b05 .project-card__overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(55,48,163,.85) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+.tpl-freelancer-portfolio-2b05 .project-card:hover .project-card__overlay{
+  opacity: 1;
+}
+.tpl-freelancer-portfolio-2b05 .project-card__overlay h3{
+  color: var(--color-white);
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+.tpl-freelancer-portfolio-2b05 .project-card__tags{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tpl-freelancer-portfolio-2b05 .project-card__tag{
+  padding: 3px 12px;
+  background: rgba(255,255,255,.2);
+  border-radius: var(--radius-full);
+  font-size: .75rem;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.tpl-freelancer-portfolio-2b05 .services__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.tpl-freelancer-portfolio-2b05 .service-card{
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-soft);
+  transition: all var(--transition-med);
+  opacity: 0;
+  transform: translateY(30px);
+}
+.tpl-freelancer-portfolio-2b05 .service-card.revealed{
+  opacity: 1;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .service-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .service-card__icon{
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+  color: var(--color-indigo);
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .service-card:hover .service-card__icon{
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .service-card h3{
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+.tpl-freelancer-portfolio-2b05 .service-card p{
+  color: var(--color-gray-mid);
+  font-size: .9375rem;
+}
+.tpl-freelancer-portfolio-2b05 .team__grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.tpl-freelancer-portfolio-2b05 .team-card{
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.tpl-freelancer-portfolio-2b05 .team-card.revealed{
+  opacity: 1;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .team-card__img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 4px solid var(--color-cream);
+  transition: border-color var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .team-card:hover .team-card__img{
+  border-color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .team-card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-freelancer-portfolio-2b05 .team-card h3{
+  font-size: 1.0625rem;
+  margin-bottom: 4px;
+}
+.tpl-freelancer-portfolio-2b05 .team-card h4{
+  font-size: .8125rem;
+  color: var(--color-amber);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.tpl-freelancer-portfolio-2b05 .team-card__social{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.tpl-freelancer-portfolio-2b05 .team-card__social a{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-gray-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-mid);
+  font-size: .875rem;
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .team-card__social a:hover{
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .testimonials{
+  background: var(--color-indigo);
+  position: relative;
+  overflow: hidden;
+}
+.tpl-freelancer-portfolio-2b05 .testimonials::before{
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(245,158,11,.1);
+  border-radius: 50%;
+}
+.tpl-freelancer-portfolio-2b05 .testimonials .section-header p{ color: var(--color-amber); }
+.tpl-freelancer-portfolio-2b05 .testimonials .section-header h2{ color: var(--color-white); }
+.tpl-freelancer-portfolio-2b05 .testimonial-carousel{
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-track{
+  display: flex;
+  transition: transform .5s ease;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide{
+  min-width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__quote{
+  font-size: 1.125rem;
+  color: rgba(255,255,255,.85);
+  line-height: 1.8;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__author{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__avatar{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-amber);
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__name{
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: 1rem;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-slide__role{
+  color: var(--color-amber);
+  font-size: .8125rem;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-nav{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-nav button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.4);
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .testimonial-nav button.active{
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+}
+.tpl-freelancer-portfolio-2b05 .blog__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.tpl-freelancer-portfolio-2b05 .blog-card{
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-med);
+  opacity: 0;
+  transform: translateY(30px);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card.revealed{
+  opacity: 1;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__img{
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card:hover .blog-card__img img{
+  transform: scale(1.05);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__body{
+  padding: 28px;
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__meta{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: .8125rem;
+  color: var(--color-gray-mid);
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__meta span{ display: flex; align-items: center; gap: 4px; }
+.tpl-freelancer-portfolio-2b05 .blog-card__body h3{
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+.tpl-freelancer-portfolio-2b05 .blog-card__body h3 a:hover{ color: var(--color-indigo); }
+.tpl-freelancer-portfolio-2b05 .blog-card__body p{
+  color: var(--color-gray-mid);
+  font-size: .9375rem;
+  margin-bottom: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .contact{
+  position: relative;
+  background: url(./assets/contact.webp) center/cover no-repeat;
+  min-height: 600px;
+}
+.tpl-freelancer-portfolio-2b05 .contact::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(30,27,75,.88);
+}
+.tpl-freelancer-portfolio-2b05 .contact__inner{
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 600px;
+  padding: 80px 0;
+}
+.tpl-freelancer-portfolio-2b05 .contact__info h2{
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .contact__info p{
+  color: rgba(255,255,255,.7);
+  margin-bottom: 28px;
+}
+.tpl-freelancer-portfolio-2b05 .contact__detail{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: rgba(255,255,255,.8);
+}
+.tpl-freelancer-portfolio-2b05 .contact__detail i{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-amber);
+}
+.tpl-freelancer-portfolio-2b05 .contact__form{
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  box-shadow: var(--shadow-xl);
+}
+.tpl-freelancer-portfolio-2b05 .contact__form h3{
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+.tpl-freelancer-portfolio-2b05 .form-group{ margin-bottom: 20px; }
+.tpl-freelancer-portfolio-2b05 .form-group label{
+  display: block;
+  font-family: var(--font-display);
+  font-size: .8125rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-charcoal);
+}
+.tpl-freelancer-portfolio-2b05 .form-group input, .tpl-freelancer-portfolio-2b05 .form-group textarea, .tpl-freelancer-portfolio-2b05 .form-group select{
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: .9375rem;
+  transition: border-color var(--transition-fast);
+  background: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .form-group input:focus, .tpl-freelancer-portfolio-2b05 .form-group textarea:focus, .tpl-freelancer-portfolio-2b05 .form-group select:focus{
+  outline: none;
+  border-color: var(--color-indigo);
+}
+.tpl-freelancer-portfolio-2b05 .form-group textarea{ resize: vertical; min-height: 120px; }
+.tpl-freelancer-portfolio-2b05 .form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .footer{
+  background: var(--color-charcoal);
+  color: rgba(255,255,255,.7);
+  padding: 60px 0 0;
+}
+.tpl-freelancer-portfolio-2b05 .footer__grid{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.tpl-freelancer-portfolio-2b05 .footer__brand h3{
+  font-size: 1.25rem;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+.tpl-freelancer-portfolio-2b05 .footer__brand h3 span{ color: var(--color-amber); }
+.tpl-freelancer-portfolio-2b05 .footer__brand p{
+  font-size: .9375rem;
+  margin-bottom: 20px;
+}
+.tpl-freelancer-portfolio-2b05 .footer__social{
+  display: flex;
+  gap: 12px;
+}
+.tpl-freelancer-portfolio-2b05 .footer__social a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,.6);
+  transition: all var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .footer__social a:hover{
+  background: var(--color-indigo);
+  color: var(--color-white);
+}
+.tpl-freelancer-portfolio-2b05 .footer__col h4{
+  font-size: .9375rem;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+.tpl-freelancer-portfolio-2b05 .footer__col a{
+  display: block;
+  padding: 4px 0;
+  font-size: .875rem;
+  transition: color var(--transition-fast);
+}
+.tpl-freelancer-portfolio-2b05 .footer__col a:hover{ color: var(--color-amber); }
+.tpl-freelancer-portfolio-2b05 .footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: .8125rem;
+}
+.tpl-freelancer-portfolio-2b05 .back-to-top{
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-indigo);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: all var(--transition-fast);
+  z-index: 100;
+  cursor: pointer;
+  border: none;
+}
+.tpl-freelancer-portfolio-2b05 .back-to-top.visible{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .back-to-top:hover{
+  background: var(--color-indigo-light);
+  transform: translateY(-3px);
+}
+.tpl-freelancer-portfolio-2b05 .preloader{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .4s ease;
+}
+.tpl-freelancer-portfolio-2b05 .preloader.hidden{ opacity: 0; pointer-events: none; }
+.tpl-freelancer-portfolio-2b05 .preloader__spinner{
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--color-gray-light);
+  border-top-color: var(--color-indigo);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin{ to { transform: rotate(360deg); } }
+.tpl-freelancer-portfolio-2b05 .reveal{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.tpl-freelancer-portfolio-2b05 .reveal.revealed{
+  opacity: 1;
+  transform: translateY(0);
+}
+.tpl-freelancer-portfolio-2b05 .reveal-delay-1{ transition-delay: .1s; }
+.tpl-freelancer-portfolio-2b05 .reveal-delay-2{ transition-delay: .2s; }
+.tpl-freelancer-portfolio-2b05 .reveal-delay-3{ transition-delay: .3s; }
+.tpl-freelancer-portfolio-2b05 .reveal-delay-4{ transition-delay: .4s; }
+@media (max-width: 1024px){.tpl-freelancer-portfolio-2b05 .hero__grid{ grid-template-columns: 1fr; text-align: center; gap: 40px; }
+.tpl-freelancer-portfolio-2b05 .hero__text p{ margin: 0 auto 32px; }
+.tpl-freelancer-portfolio-2b05 .hero__btns{ justify-content: center; }
+.tpl-freelancer-portfolio-2b05 .hero__img{ order: -1; }
+.tpl-freelancer-portfolio-2b05 .hero__img img{ max-width: 300px; }
+.tpl-freelancer-portfolio-2b05 .hero__badges{ display: none; }
+.tpl-freelancer-portfolio-2b05 .about__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .about__img{ max-width: 400px; margin: 0 auto; }
+.tpl-freelancer-portfolio-2b05 .projects__grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-freelancer-portfolio-2b05 .services__grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-freelancer-portfolio-2b05 .team__grid{ grid-template-columns: repeat(2, 1fr); }
+.tpl-freelancer-portfolio-2b05 .contact__inner{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .footer__grid{ grid-template-columns: repeat(2, 1fr); }}
+@media (max-width: 768px){.tpl-freelancer-portfolio-2b05 .section{ padding: 64px 0; }
+.tpl-freelancer-portfolio-2b05 .navbar__links{ display: none; }
+.tpl-freelancer-portfolio-2b05 .navbar__cta{ display: none; }
+.tpl-freelancer-portfolio-2b05 .navbar__burger{ display: flex; }
+.tpl-freelancer-portfolio-2b05 .projects__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .services__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .blog__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .form-row{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .footer__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .footer__bottom{ flex-direction: column; gap: 8px; text-align: center; }
+.tpl-freelancer-portfolio-2b05 .team__grid{ grid-template-columns: 1fr 1fr; }}
+@media (max-width: 480px){.tpl-freelancer-portfolio-2b05 .team__grid{ grid-template-columns: 1fr; }
+.tpl-freelancer-portfolio-2b05 .hero__text h1{ font-size: 1.75rem; }
+.tpl-freelancer-portfolio-2b05 .btn{ padding: 12px 24px; font-size: .875rem; }}

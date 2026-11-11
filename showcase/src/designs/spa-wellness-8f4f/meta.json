@@ -1,0 +1,140 @@
+{
+  "id": "spa-wellness-8f4f",
+  "name": "Spa Wellness",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "spa-wellness-html-template",
+    "format": "html-page",
+    "hash": "8f4fe4d02073231a44bff2d0e73444b96abc1b6146c3a3990f963dceb9082fcb",
+    "original": "test-templates/uiuxlabz/spa-wellness-html-template",
+    "repo": "https://github.com/uiuxlabz/spa-wellness-html-template",
+    "group": "uiuxlabz",
+    "commit": "b1b00e02e5c19a860ab4db0f7ab98e9530673fcc"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "pricing",
+    "about",
+    "stats",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Find Your Peace",
+      "Signature Experiences",
+      "Where Nature Meets Nurture",
+      "Our Therapists",
+      "What Our Guests Say",
+      "Ready to Escape?"
+    ],
+    "ctas": [
+      "Book Now",
+      "Book a Treatment",
+      "Explore Services",
+      "Learn More"
+    ],
+    "texts": [],
+    "colors": [
+      "#7c9a8c",
+      "#2c3e35",
+      "#21302a",
+      "#4e6e5c",
+      "#f7f5f0",
+      "#fdfcf9"
+    ],
+    "dark": null,
+    "fonts": [
+      "Marcellus",
+      "Montserrat"
+    ],
+    "images": 17,
+    "motion": true,
+    "lines": 756,
+    "css": {
+      "palette": [
+        "#7c9a8c",
+        "#2c3e35",
+        "#21302a",
+        "#4e6e5c",
+        "#f7f5f0",
+        "#fdfcf9"
+      ],
+      "radius_px": 6,
+      "gradients": 1,
+      "shadows": 9,
+      "keyframes": 0,
+      "transitions": 15,
+      "uppercase": 12,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "pricing",
+      "about",
+      "stats",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "full-bleed",
+      "split"
+    ],
+    "style": [
+      "elegant",
+      "organic",
+      "soft"
+    ],
+    "tone": 3,
+    "energy": 1,
+    "luxury": 4,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "trust"
+    ],
+    "origin": [
+      "wellness"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "pricing",
+      "about",
+      "stats",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Sage green airy spa with Marcellus serif",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:04.601019Z"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "consulting-89d8",
+  "name": "Consulting",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "consulting-html-template",
+    "format": "html-page",
+    "hash": "89d8dcddd9bcff342b085cb6fcacb2e8f79a24616dd0fec451a80a85d2e5b69b",
+    "original": "test-templates/uiuxlabz/consulting-html-template",
+    "repo": "https://github.com/uiuxlabz/consulting-html-template",
+    "group": "uiuxlabz",
+    "commit": "a0d0a31f56363f7d53865fae8dc44e54e0d4a32b"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "services",
+    "process",
+    "portfolio",
+    "cta",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Strategy that ships .",
+      "Advisory that compounds",
+      "Diagnose → Design → Deliver",
+      "Selected outcomes",
+      "Partners who have run the work",
+      "Writing from the work"
+    ],
+    "ctas": [
+      "Start a diagnostic",
+      "Book a working session",
+      "Explore services",
+      "Book a session"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#e2e8f0",
+      "#0f172a",
+      "#1e293b",
+      "#cbd5e1",
+      "#1d4ed8"
+    ],
+    "dark": null,
+    "fonts": [
+      "Instrument Serif",
+      "Inter",
+      "Newsreader"
+    ],
+    "images": 8,
+    "motion": true,
+    "lines": 946,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#e2e8f0",
+        "#0f172a",
+        "#1e293b",
+        "#cbd5e1",
+        "#1d4ed8"
+      ],
+      "radius_px": 327,
+      "gradients": 5,
+      "shadows": 7,
+      "keyframes": 0,
+      "transitions": 6,
+      "uppercase": 10,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "process",
+      "portfolio",
+      "cta",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "list"
+    ],
+    "style": [
+      "editorial",
+      "minimal",
+      "elegant"
+    ],
+    "tone": 5,
+    "energy": 2,
+    "luxury": 3,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "leads",
+      "booking"
+    ],
+    "origin": [
+      "consulting"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "process",
+      "portfolio",
+      "cta",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Instrument Serif consultancy, slate palette, restrained",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:29.309926Z"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "tourist-guide-da5e",
+  "name": "Tourist Guide",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "tourist-guide-html-template",
+    "format": "html-page",
+    "hash": "da5e98063a1dbce70a934051b1d4f192f939908e1c6025a7d322524d3b8f94ce",
+    "original": "test-templates/uiuxlabz/tourist-guide-html-template",
+    "repo": "https://github.com/uiuxlabz/tourist-guide-html-template",
+    "group": "uiuxlabz",
+    "commit": "66b6d15f80268dd8f716fbcdc4a8bca99286bd4c"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "features",
+    "about",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Discover Your Next Adventure",
+      "Featured Destinations",
+      "Why Voyageur?",
+      "Our Story",
+      "Travel Smart",
+      "Ready to Explore?"
+    ],
+    "ctas": [
+      "Plan a Trip",
+      "Explore Destinations",
+      "Learn Our Story",
+      "View All Destinations"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#c45d33",
+      "#f6efe4",
+      "#d96b3f",
+      "#0e5e5a",
+      "#0a4643"
+    ],
+    "dark": null,
+    "fonts": [
+      "Bricolage Grotesque",
+      "Figtree"
+    ],
+    "images": 6,
+    "motion": true,
+    "lines": 641,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#c45d33",
+        "#f6efe4",
+        "#d96b3f",
+        "#0e5e5a",
+        "#0a4643"
+      ],
+      "radius_px": 2,
+      "gradients": 4,
+      "shadows": 13,
+      "keyframes": 0,
+      "transitions": 56,
+      "uppercase": 2,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "warm",
+      "modern",
+      "organic"
+    ],
+    "tone": 2,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 5,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "showcase"
+    ],
+    "origin": [
+      "travel"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "features",
+      "about",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Terracotta and teal destination guide",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:06.451628Z"
+}

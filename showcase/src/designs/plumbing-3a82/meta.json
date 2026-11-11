@@ -1,0 +1,124 @@
+{
+  "id": "plumbing-3a82",
+  "name": "Plumbing",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "plumbing-html-template",
+    "format": "html-page",
+    "hash": "3a826fc9e7dd6a2fe90048104d9d7420f069bf19d5bed9d1b01032c82c229af6",
+    "original": "test-templates/uiuxlabz/plumbing-html-template",
+    "repo": "https://github.com/uiuxlabz/plumbing-html-template",
+    "group": "uiuxlabz",
+    "commit": "1a888df7d0f6c4076836faad9c880f8f9354b072"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Portland's Premier Pipe & HVAC Service",
+      "We Keep Your Home Flowing Smoothly",
+      "Professional Plumbing & HVAC Services",
+      "Emergency Plumbing Service When You Need It Most",
+      "Built on Trust & Craftsmanship",
+      "From Call to Completion"
+    ],
+    "ctas": [
+      "Book a Service",
+      "Our Services",
+      "Learn Our Story",
+      "View Full Team"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#000000",
+      "#081426",
+      "#0c1a2b",
+      "#12263f",
+      "#1f3a5c"
+    ],
+    "dark": null,
+    "fonts": [
+      "Inter",
+      "Space Grotesk"
+    ],
+    "images": 15,
+    "motion": true,
+    "lines": 1580,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#000000",
+        "#081426",
+        "#0c1a2b",
+        "#12263f",
+        "#1f3a5c"
+      ],
+      "radius_px": 8,
+      "gradients": 17,
+      "shadows": 34,
+      "keyframes": 2,
+      "transitions": 22,
+      "uppercase": 6,
+      "glass": 3
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "modern",
+      "corporate"
+    ],
+    "tone": 3,
+    "energy": 3,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 2,
+    "modernity": 4,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "leads"
+    ],
+    "origin": [
+      "local-services"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Navy plumbing and HVAC, clean modern",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:24:00.423783Z"
+}
