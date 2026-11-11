@@ -1,4 +1,6 @@
-# Autonomous Website Engine (Lovable edition)
+# Autonomous Website Engine (local edition)
+
+> This branch delivers everything as HTML files: the 10-design shortlist and the 3 final designs open with a double click, ready to send to a client or host anywhere. No Lovable account needed. Run on your own computer: Node 20+, `npm run setup`, open the folder in Claude Code and say hi.
 
 A library of coded **website sections** (React + Tailwind), kept in one Lovable **showcase** project. For each client brief, an algorithm picks the 10 best-matching designs with live links. You pick 3, and those 3 become a new Lovable project for the client, with your colours, animation choice and brand copy.
 

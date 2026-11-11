@@ -1,6 +1,6 @@
 # Autonomous website creation system: rules for Claude (loads every turn; keep short)
 
-Design library -> brand brief -> 10 relevant designs -> user picks 3 -> 3 final client-ready designs.
+Design library -> brand brief -> 10 relevant designs -> user picks 3 -> 3 final client-ready designs. **Local edition: deliver HTML files only; no Lovable.**
 `engine.config.json` `delivery`: `lovable` = final site goes to a new Lovable project (GitHub sync, 0 credits; never use Lovable AI); `html` = final designs are HTML files (`npm run export`). Engine work: read `docs/PROJECT-STATE.md` first.
 
 ## Talking to the user (always)

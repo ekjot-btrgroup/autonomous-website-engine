@@ -1,14 +1,14 @@
 {
-  "_note": "delivery: lovable (final site to a new Lovable project via GitHub) or html (final designs as HTML files via npm run export). release_target: the branch releases merge into.",
-  "delivery": "lovable",
-  "release_target": "main",
+  "_note": "LOCAL EDITION: delivery html = the 10 designs and the final 3 are HTML files (npm run export). No Lovable needed. release_target: this branch.",
+  "delivery": "html",
+  "release_target": "autonomous-website-engine-local",
   "showcase_url": "https://automated-website-system.lovable.app",
   "shortlist_size": 10,
   "fresh_slots": 2,
   "max_per_section_type": 3,
   "lovable": {
     "showcase": false,
-    "sites": true,
+    "sites": false,
     "_note": "showcase=false: never push the showcase/library to Lovable (results shown with npm run sheet). sites=true: a built client site may be pushed to its own new Lovable project via GitHub sync (0 Lovable credits)."
   },
   "showcase_note": "showcase_url: the published URL of the Lovable showcase project (e.g. https://design-showcase.lovable.app). Used to print live links."
