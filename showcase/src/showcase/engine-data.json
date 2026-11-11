@@ -1,35 +1,41 @@
 {
-  "generated_at": "2026-11-11T13:25:11.928Z",
+  "generated_at": "2026-11-11T13:45:17.122Z",
   "engine_repo": "ekjot-btrgroup/autonomous-website-engine",
   "showcase_url": "https://automated-website-system.lovable.app",
   "sites": [],
   "briefs": [
     {
-      "slug": "zz-probe-spa",
-      "company": "Serene Spa",
-      "niche": "wellness",
-      "style": "calm, minimal, organic, premium",
-      "tone": null,
+      "slug": "form-and-function-studio",
+      "company": "Form & Function Studio",
+      "niche": "interior",
+      "style": "warm minimalist, natural textures, understated, timeless, editorial",
+      "tone": "refined but approachable, warm, conversational",
       "goals": [
-        "appointments",
-        "trust"
+        "leads",
+        "trust",
+        "portfolio"
       ],
       "sections": [
         "navbar",
         "hero",
         "services",
+        "projects",
+        "process",
+        "why-us",
         "about",
-        "testimonials",
-        "contact",
+        "cta",
         "footer"
       ],
       "animations": "subtle",
       "scheme": "light",
-      "colors": {},
+      "colors": {
+        "primary": "#8a6f52",
+        "accent": "#e8dfd2"
+      },
       "profile": {
         "tone": 3,
         "energy": 1,
-        "luxury": 4,
+        "luxury": 3,
         "density": 1,
         "warmth": 5,
         "modernity": 3
@@ -41,28 +47,58 @@
     "counts": {
       "note": 0,
       "pref": 0,
-      "shown": 1,
+      "shown": 2,
       "pick": 0,
       "used": 0
     },
     "picks": [],
     "usage": {},
     "shown_ids": [
-      "plastic-surgery-c5ad",
-      "spa-wellness-8f4f",
-      "dental-clinic-e882",
-      "beauty-salon-0dbd",
+      "architecture-studio-7f70",
+      "construction-portfolio-ea5a",
+      "carpenter-a4cf",
       "restaurant-c6ae",
-      "hair-salon-1600",
-      "yoga-d2d9",
-      "physical-therapy-8283",
-      "dental-practice-e12b",
-      "architecture-studio-7f70"
+      "interior-design-3673",
+      "financial-consulting-3f64",
+      "consulting-89d8",
+      "charity-3d9b",
+      "mosque-0142",
+      "spa-wellness-8f4f",
+      "medical-clinic-9af9",
+      "italian-restaurant-e0f1"
     ],
     "notes": [],
     "prefs": []
   },
   "releases": [
+    {
+      "file": "2026-11-11-1332-copy-rewriting-never-touches-template-sc.md",
+      "title": "Copy rewriting never touches template scripts",
+      "at": "2026-11-11 13:32 UTC",
+      "merge": "8066a66",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "2 files changed, 6 insertions(+), 1 deletion(-)",
+      "commits": [
+        {
+          "sha": "c225920",
+          "subject": "Copy rewriting skips converted templates' own scripts"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-11-1327-120-full-page-templates-imported-usage-r.md",
+      "title": "120 full-page templates imported, usage reporting, test-run script",
+      "at": "2026-11-11 13:27 UTC",
+      "merge": "24ae7e4",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "2783 files changed, 522127 insertions(+), 26 deletions(-)",
+      "commits": [
+        {
+          "sha": "7421a6e",
+          "subject": "Import 120 uiuxlabz full-page templates as page designs; usage reporting; test-run script"
+        }
+      ]
+    },
     {
       "file": "2026-11-11-1257-test-ready-engine-without-lovable-multi.md",
       "title": "Test-ready engine without Lovable: multi-design zips, why lines, contact sheet, project state file",
