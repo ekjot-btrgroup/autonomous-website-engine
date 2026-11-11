@@ -22,6 +22,8 @@ export type DesignTags = {
   scheme?: string;
   quality?: number;
   note?: string;
+  /** Niche the demo content currently targets (max 2; minor ranking signal). */
+  origin?: string[];
 };
 
 export const AXES: { key: "tone" | "energy" | "luxury" | "density" | "warmth" | "modernity"; low: string; high: string }[] = [
@@ -44,6 +46,23 @@ export type DesignMeta = {
   guess?: { category: string; confidence: number };
   tags?: DesignTags | null;
   added_at: string;
+  /** Admin overrides (src/overrides/<id>.json) merged in at build time. */
+  hidden?: boolean;
+  pinned?: boolean;
+  edited?: boolean;
+  updated_at?: string;
+  /** Claude's tags before admin overrides (for "reset" and comparison in the admin). */
+  originalTags?: DesignTags | null;
+};
+
+export type DesignOverride = {
+  id: string;
+  name?: string;
+  tags?: Partial<DesignTags>;
+  hidden?: boolean;
+  pinned?: boolean;
+  updated_at?: string;
+  updated_by?: string;
 };
 
 export type ShortlistItem = {
@@ -73,6 +92,31 @@ const loaders = import.meta.glob("../designs/*/index.tsx") as Record<
   () => Promise<{ default: ComponentType }>
 >;
 
+const overrideModules = import.meta.glob("../overrides/*.json", {
+  eager: true,
+  import: "default",
+}) as Record<string, DesignOverride>;
+
+export const bundledOverrides = new Map<string, DesignOverride>();
+for (const o of Object.values(overrideModules)) if (o && typeof o === "object" && o.id) bundledOverrides.set(o.id, o);
+
+/** Apply an admin override on top of a design (admin values win). */
+export function applyOverride(meta: DesignMeta, o: DesignOverride | undefined): DesignMeta {
+  if (!o) return meta;
+  const base = meta.originalTags !== undefined ? meta.originalTags : meta.tags ?? null;
+  const tags = o.tags ? ({ ...(base ?? {}), ...o.tags } as DesignTags) : base;
+  return {
+    ...meta,
+    name: o.name || meta.name,
+    tags,
+    hidden: o.hidden ?? false,
+    pinned: o.pinned ?? false,
+    edited: true,
+    updated_at: o.updated_at,
+    originalTags: base,
+  };
+}
+
 const shortlistModules = import.meta.glob("../shortlists/*.json", {
   eager: true,
   import: "default",
@@ -90,13 +134,19 @@ const metaById = new Map<string, DesignMeta>();
 const folderById = new Map<string, string>();
 for (const [path, meta] of Object.entries(metaModules)) {
   if (!meta || typeof meta !== "object" || !meta.id) continue;
-  metaById.set(meta.id, meta);
+  metaById.set(meta.id, applyOverride({ ...meta, originalTags: meta.tags ?? null }, bundledOverrides.get(meta.id)));
   folderById.set(meta.id, folderOf(path));
 }
 
-export const designs: DesignMeta[] = [...metaById.values()].sort((a, b) =>
+/** Every design, including ones hidden by the admin. */
+export const allDesigns: DesignMeta[] = [...metaById.values()].sort((a, b) =>
   (b.added_at ?? "").localeCompare(a.added_at ?? "") || a.id.localeCompare(b.id),
 );
+
+/** Public pages: hidden designs left out, pinned ones first. */
+export const designs: DesignMeta[] = allDesigns
+  .filter((d) => !d.hidden)
+  .sort((a, b) => Number(!!b.pinned) - Number(!!a.pinned));
 
 export function getDesign(id: string | undefined): DesignMeta | undefined {
   return id ? metaById.get(id) : undefined;
@@ -134,6 +184,7 @@ export function getShortlist(slug: string | undefined): Shortlist | undefined {
 }
 
 export const categories: string[] = [...new Set(designs.map(categoryOf))].sort();
+export const allCategories: string[] = [...new Set(allDesigns.map(categoryOf))].sort();
 
 export const statusLabel: Record<DesignStatus, string> = {
   ok: "ok",

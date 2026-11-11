@@ -44,9 +44,14 @@ const Library = () => {
               {designs.length} design{designs.length === 1 ? "" : "s"} · {filtered.length} shown
             </p>
           </div>
-          <Link to="/s" className="rounded-md border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-100">
-            Shortlists ({shortlists.length})
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link to="/admin" className="text-sm text-zinc-400 hover:text-zinc-700 hover:underline">
+              Admin
+            </Link>
+            <Link to="/s" className="rounded-md border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-100">
+              Shortlists ({shortlists.length})
+            </Link>
+          </div>
         </div>
       </header>
 
