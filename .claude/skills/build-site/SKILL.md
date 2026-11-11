@@ -6,7 +6,7 @@ description: Copy the user's picked designs into a new Lovable-ready project, ap
 
 0. `npm run -s sync` (latest main: admin dashboard edits, other chats' work).
 1. `npm run -s site -- new <slug> --pick <id1>,<id2>,<id3>`
-   Uses only the picks, in page order. Brief `colors`, `fonts` and `animations: none` are applied automatically, and the picks are saved to memory.
+   Uses only the picks, in page order. Full-page picks: pick 1 at `/`, others at `/option-2`, `/option-3`, with the floating "Designs" switcher (bottom right, full-screen picker showing each option's why line) added automatically; refresh it with `npm run -s site -- switcher <slug>`. Brief `colors`, `fonts` and `animations: none` are applied automatically, and the picks are saved to memory.
    Add `--fill` only if the user asks for a complete page (best match for every other brief section).
 2. Extra colour work only if the picked designs clash with the brand: `npm run -s site -- theme <slug> --recolor violet:emerald` (Tailwind palette swap inside the sections). Keep changes light.
 3. Copy: `npm run -s site -- copy <slug>` prints `{brief, sections:{key:text}}`. Write ONLY changed keys to `sites/<slug>/.engine/copy.out.json` as `{"key":"new text"}`. Rules: brand voice, similar length to the original, facts from the brief only (no invented numbers, awards or quotes; testimonial names become generic like "Client name"). Then `npm run -s site -- copy-apply <slug>`.

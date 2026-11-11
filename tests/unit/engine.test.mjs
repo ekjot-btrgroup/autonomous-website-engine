@@ -280,6 +280,8 @@ test('full-page HTML templates: convert, scope CSS, rank as pages, build page ro
   const app = fs.readFileSync(path.join(root, 'sites/bistro/src/App.tsx'), 'utf8');
   assert.match(app, /path="\/" element=\{<P1 \/>\}/);
   assert.match(app, /path="\/option-2" element=\{<P2 \/>\}/);
+  assert.match(app, /<OptionSwitcher options=\{OPTIONS\} brand="Bistro"/, "switcher in every multi-option site");
+  assert.ok(fs.existsSync(path.join(root, "sites/bistro/src/components/OptionSwitcher.tsx")));
   const siteCss = fs.readFileSync(path.join(root, 'sites/bistro/src/sections/01-page/code/template.css'), 'utf8');
   assert.match(siteCss, /THEME:START[\s\S]*--primary: #225533/, 'brief colour mapped onto the template variable');
   assert.ok(fs.existsSync(path.join(root, 'sites/bistro/src/lib/template-runtime.ts')));

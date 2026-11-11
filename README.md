@@ -58,6 +58,7 @@ Parallel subagents run only when they save time: tagging more than 40 designs, o
 | `npm run sheet -- <slug>` | Contact sheet: the shortlist rendered live (desktop + mobile) into `reports/<slug>/shortlist.png` |
 | `npm run showcase:serve` | Build and serve the showcase locally (preview in the Claude app) |
 | `npm run site -- new <slug> --pick a,b,c` | Build `sites/<slug>/` from the picks (`--fill` completes the page, `--force` rebuilds) |
+| `npm run site -- switcher <slug>` | Add/refresh the floating "Designs" switcher (bottom right) that opens a full-screen picker of the site's options |
 | `npm run site -- theme <slug> ...` | `--primary/--accent/--background/--foreground #hex`, `--heading/--body "Font"`, `--recolor blue:emerald`, `--motion off|on` |
 | `npm run site -- copy <slug>` / `copy-apply <slug>` | Text round trip (Claude edits `.engine/copy.out.json`) |
 | `npm run site -- check <slug>` | npm install + build |

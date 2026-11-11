@@ -1,8 +1,51 @@
 {
-  "generated_at": "2026-11-11T13:45:17.122Z",
+  "generated_at": "2026-11-11T14:14:01.601Z",
   "engine_repo": "ekjot-btrgroup/autonomous-website-engine",
   "showcase_url": "https://automated-website-system.lovable.app",
-  "sites": [],
+  "sites": [
+    {
+      "slug": "form-and-function-studio",
+      "company": "Form  Function Studio",
+      "created_at": "2026-11-11T13:50:37.105Z",
+      "picks": [
+        "architecture-studio-7f70",
+        "carpenter-a4cf",
+        "interior-design-3673"
+      ],
+      "sections": [
+        {
+          "folder": "01-page",
+          "id": "architecture-studio-7f70",
+          "slot": "page",
+          "picked": true,
+          "reason": "homepage (/)"
+        },
+        {
+          "folder": "02-page",
+          "id": "carpenter-a4cf",
+          "slot": "page",
+          "picked": true,
+          "reason": "alternative at /option-2"
+        },
+        {
+          "folder": "03-page",
+          "id": "interior-design-3673",
+          "slot": "page",
+          "picked": true,
+          "reason": "alternative at /option-3"
+        }
+      ],
+      "missing": [],
+      "filled": false,
+      "theme": {
+        "primary": "#8a6f52",
+        "accent": "#e8dfd2",
+        "motion": "on"
+      },
+      "lovable_repo": null,
+      "last_push": null
+    }
+  ],
   "briefs": [
     {
       "slug": "form-and-function-studio",
@@ -48,11 +91,37 @@
       "note": 0,
       "pref": 0,
       "shown": 2,
-      "pick": 0,
-      "used": 0
+      "pick": 1,
+      "used": 1
     },
-    "picks": [],
-    "usage": {},
+    "picks": [
+      {
+        "slug": "form-and-function-studio",
+        "at": "2026-11-11T13:50:37.106Z",
+        "picked": [
+          "architecture-studio-7f70",
+          "carpenter-a4cf",
+          "interior-design-3673"
+        ],
+        "shown": [
+          "architecture-studio-7f70",
+          "construction-portfolio-ea5a",
+          "carpenter-a4cf",
+          "restaurant-c6ae",
+          "interior-design-3673",
+          "financial-consulting-3f64",
+          "consulting-89d8",
+          "charity-3d9b",
+          "medical-clinic-9af9",
+          "italian-restaurant-e0f1"
+        ]
+      }
+    ],
+    "usage": {
+      "architecture-studio-7f70": 1,
+      "carpenter-a4cf": 1,
+      "interior-design-3673": 1
+    },
     "shown_ids": [
       "architecture-studio-7f70",
       "construction-portfolio-ea5a",
@@ -71,6 +140,34 @@
     "prefs": []
   },
   "releases": [
+    {
+      "file": "2026-11-11-1353-site-form-and-function-studio.md",
+      "title": "Site form-and-function-studio",
+      "at": "2026-11-11 13:53 UTC",
+      "merge": "6ef2d5f",
+      "branch": "claude/ffs-site",
+      "changed": "100 files changed, 8335 insertions(+)",
+      "commits": [
+        {
+          "sha": "11fe25e",
+          "subject": "Site form-and-function-studio: 3 picks, brief copy and colours"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-11-1347-shortlist-for-form-and-function-studio.md",
+      "title": "Shortlist for form-and-function-studio",
+      "at": "2026-11-11 13:47 UTC",
+      "merge": "0e4f9ac",
+      "branch": "claude/ffs-shortlist",
+      "changed": "5 files changed, 408 insertions(+), 22 deletions(-)",
+      "commits": [
+        {
+          "sha": "677a69f",
+          "subject": "Shortlist for form-and-function-studio"
+        }
+      ]
+    },
     {
       "file": "2026-11-11-1332-copy-rewriting-never-touches-template-sc.md",
       "title": "Copy rewriting never touches template scripts",

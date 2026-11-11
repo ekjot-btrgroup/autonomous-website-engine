@@ -58,6 +58,12 @@ Last updated: 2026-11-11. Read this first in any new chat. Keep it current: upda
 - `lovable.showcase` false (showcase never pushed), `lovable.sites` true (client sites go to their own new Lovable project via GitHub, 0 credits).
 - Usage reporting after every reply: `npm run usage` (CLAUDE.md rule). Test script for a fresh Sonnet chat: `docs/TEST-RUN.md`; reports go to `docs/test-runs/`.
 
+## 5c. Test run 1 (Sonnet chat, 2026-11-11): form-and-function-studio
+- Shortlist + site built and released (pages: architecture-studio, carpenter, interior-design). Not pushed to Lovable (no sync record).
+- The new Lovable project "Website Automation Testing" (Borderless workspace) uses Lovable's newer TanStack Start stack; our sites are Vite + React: pushing over it is untested.
+- Added after review: floating "Designs" switcher in every multi-option site (`site -- switcher <slug>`), modelled on the "Design Testing" project's DesignSwitcher; template runtime now cleans up script listeners/intervals on page switch.
+- Known issue: copy rewriting works per text node, so headlines split across styled spans can mix old/new words, and some template brand names stay (seen on option 2: "Craft & Grain", "Homes designed around you pieces"). Next fix: group a heading's inline text into one copy item.
+
 ## 6. Now: testing without Lovable (user will test in a new chat with 10-20 designs in zips)
 Built and tested for this (released to main): multi-design zips split into designs (also nested zips and flat zips of separate component files), `shortlist --why`, `npm run sheet` contact sheet, `npm run showcase:serve`, Lovable switches (now `lovable.showcase` / `lovable.sites`) honoured by the skills. 10 tests pass.
 Flow in the test chat (see docs/TEST-RUN.md; the showcase is never pushed while `lovable.showcase` is false):
