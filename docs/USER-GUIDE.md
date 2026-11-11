@@ -72,9 +72,9 @@ Setup and details: [ADMIN-DASHBOARD.md](ADMIN-DASHBOARD.md).
 - Each chat works on its own branch. At the end of every task Claude merges it into `main` automatically and writes a release note in `docs/releases/`. Every chat starts by pulling `main`, so it sees the latest library, memory and your dashboard edits.
 - To bring something back:
   - Ask Claude *"restore the release about X"*, or run `npm run releases` to find it.
-  - A whole release: `git checkout -b restore-x <tag>`.
+  - A whole release: `git checkout -b restore-x <merge commit>`.
   - One feature: `git cherry-pick <commit>`.
-  - Undo a release: `git revert -m 1 <tag>`.
+  - Undo a release: `git revert -m 1 <merge commit>`.
   - Details: [releases/README.md](releases/README.md).
 
 ## Costs at a glance

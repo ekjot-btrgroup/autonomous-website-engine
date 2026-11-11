@@ -186,6 +186,8 @@ test('release: merges branch into main, tags it, writes a restorable note; sync 
   const txt = fs.readFileSync(path.join(work, 'docs/releases', note), 'utf8');
   assert.match(txt, /\| `[0-9a-f]+` \| Feature A \|/);
   assert.match(txt, /git cherry-pick/);
+  const mergeSha = g(work, 'rev-parse', '--short=7', 'origin/main~1');
+  assert.match(txt, new RegExp(`Merge commit on main: \`${mergeSha}\``), 'note names the exact merge commit');
   assert.match(run('releases'), /Feature A release/);
   // Another writer (e.g. the admin dashboard) commits to main; sync brings it in.
   g(base, 'clone', '-q', 'origin.git', 'other');

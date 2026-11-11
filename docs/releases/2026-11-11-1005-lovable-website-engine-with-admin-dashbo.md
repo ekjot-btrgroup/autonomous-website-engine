@@ -1,7 +1,7 @@
 # Lovable website engine with admin dashboard, learning memory and auto-release
 
 - Released: 2026-11-11 10:05 UTC
-- Tag: `release-20261111-1005-lovable-website-engine-with-admin-dashbo` (the merge commit on main)
+- Merge commit on main: `3deb2c8` (tag could not be pushed from the cloud environment)
 - From branch: `claude/laughing-planck-rph3e0`
 - Changed: 182 files changed, 10782 insertions(+), 1 deletion(-)
 - Areas: .claude, .github, briefs, docs, engine, incoming, knowledge, library, memory, root, showcase, sites, templates, tests
@@ -15,7 +15,6 @@
 | `2a473e1` | Build Lovable website engine: design library, showcase, shortlist, site builder |
 
 ## Bring it back
-- Whole release on a new branch: `git fetch origin --tags && git checkout -b restore-lovable-website-engine-w release-20261111-1005-lovable-website-engine-with-admin-dashbo`
+- Whole release on a new branch: `git fetch origin --tags && git checkout -b restore-lovable-website-engine-w 3deb2c8`
 - One feature onto your current branch: `git cherry-pick <commit from the table>`
-- Undo the whole release on main: `git revert -m 1 release-20261111-1005-lovable-website-engine-with-admin-dashbo`
-- If the tag is missing: `git log origin/main --merges --grep "Lovable website engine with admin dashboard, learning memory and auto-release" --format=%h` gives the merge commit to use instead.
+- Undo the whole release on main: `git revert -m 1 3deb2c8`
