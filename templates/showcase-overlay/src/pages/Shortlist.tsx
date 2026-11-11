@@ -140,6 +140,7 @@ const Shortlist = () => {
                   Pick
                 </label>
               </div>
+              {item.why && <p className="mt-2 text-sm font-medium text-zinc-800">{item.why}</p>}
               {item.reasons.length > 0 && (
                 <ul className="mb-3 list-disc pl-5 text-sm text-zinc-700">
                   {item.reasons.map((r, i) => <li key={i}>{r}</li>)}

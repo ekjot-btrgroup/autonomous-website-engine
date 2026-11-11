@@ -150,6 +150,15 @@ if (isMain) {
     const fresh = ensureShowcase({ refresh: !!a.refresh });
     console.log(fresh ? `Created ${rel(P.showcase)} from templates.` : a.refresh ? `Refreshed engine-owned files in ${rel(P.showcase)}.` : `${rel(P.showcase)} already exists (use --refresh to update engine-owned files).`);
   } else if (cmd === 'check') check();
-  else { console.error('Usage: npm run showcase:init [-- --refresh] | npm run showcase:check'); process.exit(1); }
+  else if (cmd === 'serve') {
+    // Live preview for the Claude app: build, then serve on 0.0.0.0:<port> until stopped.
+    ensureShowcase();
+    const b = buildApp(P.showcase);
+    if (!b.ok) { console.error(b.output.slice(-1500)); process.exit(1); }
+    const port = String(a.port || 4173);
+    console.log(`Showcase preview on port ${port} (library /, design /d/<id>, pick page /s/<slug>)`);
+    spawnSync('npx', ['vite', 'preview', '--host', '0.0.0.0', '--port', port, '--strictPort'], { cwd: P.showcase, stdio: 'inherit' });
+  }
+  else { console.error('Usage: npm run showcase:init [-- --refresh] | showcase:check [-- --smoke] | showcase:serve [-- --port 4173]'); process.exit(1); }
 }
 void ROOT;

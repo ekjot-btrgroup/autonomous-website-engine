@@ -1,6 +1,8 @@
 # Website engine: rules for Claude (keep this file short; it loads every turn)
 
 All designs live in ONE Lovable **showcase** project. Brief -> algorithm picks 10 (live links) -> user picks ~3 -> those go into a NEW Lovable project for that client (`sites/<slug>/`, pushed via GitHub). Docs: `README.md`, `docs/USER-GUIDE.md`, `docs/ALGORITHM.md`.
+**Read `docs/PROJECT-STATE.md` first** (what is done, what is paused, the Lovable plan); update it whenever the plan changes.
+**Lovable is parked while `lovable.enabled` is false in `engine.config.json`:** skip every `npm run push`/`pull` to Lovable; show results with `npm run sheet` (contact sheet image) instead.
 
 ## Spend tokens only on judgement
 Scripts do all deterministic work and print compact output. Use `npm run -s <script>`.

@@ -1,4 +1,5 @@
-// npm run add                     -> import every new design in incoming/ (folders, single files or .zip)
+// npm run add                     -> import every new design in incoming/ (folders, single files or .zip;
+//                                    a zip/folder holding many designs becomes many designs)
 // npm run add -- --offline        -> do not look up versions of new npm packages
 // npm run add -- --keep           -> leave processed items in incoming/ (default: moved to .cache/processed/)
 // npm run add -- --converted <id> -> re-inspect a design after Claude converted it by hand (HTML/Vue/... -> TSX)
@@ -94,30 +95,63 @@ function placeholderIndex(id) {
 }
 
 // ---------- discover incoming items ----------
+// Folders that are parts of ONE design (never split into separate designs).
+const PART_DIRS = new Set(['components', 'component', 'lib', 'utils', 'hooks', 'src', 'app', 'pages', 'public', 'assets', 'styles', 'style', 'css', 'js', 'ui', 'images', 'img', 'icons', 'fonts', 'data', 'types', 'sections', 'demo', 'demos', 'examples', 'node_modules', 'dist', 'build']);
+const DESIGN_FILE = /\.(tsx|jsx|html?|vue|svelte|astro)$/i;
+const visible = (dir) => fs.readdirSync(dir, { withFileTypes: true }).filter((x) => !x.name.startsWith('.') && x.name !== '__MACOSX' && x.name !== 'README.md');
+
+function unzipTo(zipPath) {
+  const out = path.join(P.cache, 'unzipped', `${slugify(path.basename(zipPath).replace(/\.zip$/i, ''))}-${Date.now().toString(36)}`);
+  fs.mkdirSync(out, { recursive: true });
+  sh('unzip', ['-q', '-o', zipPath, '-d', out]);
+  return out;
+}
+
+// Turn one dropped item (folder or extracted zip) into one or many designs.
+//  - a folder that only wraps one folder -> look inside it
+//  - zips inside -> each zip is expanded the same way
+//  - several sub-folders and no design file at the top (and none of them are parts like components/ or lib/)
+//    -> each sub-folder is a design
+//  - several independent component files at the top (no relative imports between them) -> each file is a design
+//  - otherwise the folder is one design
+function expand(dir, name, src, depth = 0) {
+  let entries = visible(dir);
+  while (entries.length === 1 && entries[0].isDirectory() && depth < 5) { dir = path.join(dir, entries[0].name); entries = visible(dir); depth++; }
+  const zips = entries.filter((e) => e.isFile() && /\.zip$/i.test(e.name));
+  const subdirs = entries.filter((e) => e.isDirectory());
+  const topFiles = entries.filter((e) => e.isFile() && DESIGN_FILE.test(e.name));
+  const items = [];
+  for (const z of zips) {
+    try { items.push(...expand(unzipTo(path.join(dir, z.name)), z.name.replace(/\.zip$/i, ''), src, depth + 1)); }
+    catch (err) { console.warn(`Skip ${z.name}: unzip failed (${err.message.split('\n')[0]})`); }
+  }
+  const container = !topFiles.length && subdirs.length >= 2 && subdirs.every((d) => !PART_DIRS.has(d.name.toLowerCase()));
+  if (container) {
+    for (const d of subdirs) items.push(...expand(path.join(dir, d.name), d.name, src, depth + 1));
+    return items;
+  }
+  const code = topFiles.filter((f) => /\.(tsx|jsx)$/i.test(f.name));
+  const independent = !subdirs.length && code.length >= 2 && code.length === topFiles.length
+    && code.every((f) => !/from\s+['"]\.\.?\//.test(fs.readFileSync(path.join(dir, f.name), 'utf8')));
+  if (independent) {
+    for (const f of code) items.push({ name: f.name.replace(/\.\w+$/, ''), dir, files: [path.join(dir, f.name)], src, single: true });
+    return items;
+  }
+  const files = walk(dir).filter((f) => !/\.zip$/i.test(f));
+  if (files.length) items.push({ name, dir, files, src });
+  return items;
+}
+
 function discover() {
   if (!fs.existsSync(P.incoming)) return [];
   const items = [];
-  for (const e of fs.readdirSync(P.incoming, { withFileTypes: true })) {
-    if (e.name.startsWith('.') || e.name === 'README.md') continue;
+  for (const e of visible(P.incoming)) {
     const p = path.join(P.incoming, e.name);
-    if (e.isDirectory()) {
-      // A folder that only wraps one folder (common after unzipping) -> use the inner folder.
-      let dir = p;
-      const inner = fs.readdirSync(dir, { withFileTypes: true }).filter((x) => !x.name.startsWith('.') && x.name !== '__MACOSX');
-      if (inner.length === 1 && inner[0].isDirectory()) dir = path.join(dir, inner[0].name);
-      items.push({ name: e.name, dir, files: walk(dir), src: p });
-    } else if (/\.zip$/i.test(e.name)) {
-      const out = path.join(P.cache, 'unzipped', slugify(e.name.replace(/\.zip$/i, '')));
-      fs.rmSync(out, { recursive: true, force: true });
-      fs.mkdirSync(out, { recursive: true });
-      try { sh('unzip', ['-q', '-o', p, '-d', out]); } catch (err) { console.warn(`Skip ${e.name}: unzip failed (${err.message.split('\n')[0]})`); continue; }
-      let dir = out;
-      const inner = fs.readdirSync(out, { withFileTypes: true }).filter((x) => !x.name.startsWith('.') && x.name !== '__MACOSX');
-      if (inner.length === 1 && inner[0].isDirectory()) dir = path.join(out, inner[0].name);
-      items.push({ name: e.name.replace(/\.zip$/i, ''), dir, files: walk(dir), src: p });
-    } else if (/\.(tsx|jsx|html?|vue|svelte|astro)$/i.test(e.name)) {
-      items.push({ name: e.name.replace(/\.\w+$/, ''), dir: P.incoming, files: [p], src: p });
-    }
+    if (e.isDirectory()) items.push(...expand(p, e.name, p));
+    else if (/\.zip$/i.test(e.name)) {
+      try { items.push(...expand(unzipTo(p), e.name.replace(/\.zip$/i, ''), p)); }
+      catch (err) { console.warn(`Skip ${e.name}: unzip failed (${err.message.split('\n')[0]})`); }
+    } else if (DESIGN_FILE.test(e.name)) items.push({ name: e.name.replace(/\.\w+$/, ''), dir: P.incoming, files: [p], src: p, single: true });
   }
   return items;
 }
@@ -151,15 +185,16 @@ if (a.converted) {
 } else {
   const byHash = new Map(loadMetas().map((m) => [m.source?.hash, m.id]));
   const items = discover();
+  var doneSrc = new Set();
   if (!items.length) console.log(`Nothing to add. Put design folders, .zip files or single .tsx/.html files in ${rel(P.incoming)}/`);
   for (const it of items) {
     if (!it.files.length) continue;
     const hash = hashFiles(it.dir, it.files);
-    if (byHash.has(hash)) { rows.push({ id: byHash.get(hash), format: '-', status: 'duplicate', guess: '-', issues: 0, note: `same content as existing (${it.name})` }); moveDone(it); continue; }
+    if (byHash.has(hash)) { rows.push({ id: byHash.get(hash), format: '-', status: 'duplicate', guess: '-', issues: 0, note: `same content as existing (${it.name})` }); doneSrc.add(it.src); continue; }
     const id = `${slugify(it.name, 32)}-${hash.slice(0, 4)}`;
     // 1. preserve the original exactly
     const orig = path.join(P.originals, id);
-    if (it.files.length === 1 && it.dir === P.incoming) { fs.mkdirSync(orig, { recursive: true }); fs.copyFileSync(it.files[0], path.join(orig, path.basename(it.files[0]))); }
+    if (it.single) { fs.mkdirSync(orig, { recursive: true }); fs.copyFileSync(it.files[0], path.join(orig, path.basename(it.files[0]))); }
     else copyDir(it.dir, orig);
     // 2. normalise
     const format = detectFormat(it.files);
@@ -186,9 +221,10 @@ if (a.converted) {
     writeJson(metaPath(id), meta);
     byHash.set(hash, id);
     rows.push({ id, format, status, guess: `${meta.guess.category} (${meta.guess.confidence})`, issues: res.issues.length, note: res.issues[0] || '' });
-    moveDone(it);
+    doneSrc.add(it.src);
   }
 }
+for (const src of (typeof doneSrc !== 'undefined' ? doneSrc : [])) moveDone({ src });
 if (Object.keys(newDeps).length) {
   pkg.dependencies = Object.fromEntries(Object.entries({ ...pkg.dependencies, ...newDeps }).sort(([x], [y]) => x.localeCompare(y)));
   writeJson(pkgFile, pkg);
@@ -200,7 +236,7 @@ console.log(`\nSummary: ${Object.entries(counts).map(([k, v]) => `${k} ${v}`).jo
 if (rows.some((r) => r.status !== 'duplicate')) console.log('Next: npm run showcase:check  (build test), then npm run tag -- queue  (one-time tagging).');
 
 function moveDone(it) {
-  if (a.keep) return;
+  if (a.keep || !fs.existsSync(it.src)) return; // several designs can come from one zip or folder
   const dest = path.join(P.cache, 'processed', new Date().toISOString().slice(0, 10), path.basename(it.src));
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.rmSync(dest, { recursive: true, force: true });

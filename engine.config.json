@@ -3,5 +3,9 @@
   "showcase_url": "https://automated-website-system.lovable.app",
   "shortlist_size": 10,
   "fresh_slots": 2,
-  "max_per_section_type": 3
+  "max_per_section_type": 3,
+  "lovable": {
+    "enabled": false,
+    "_note": "false = Lovable parked: skills skip pushes to Lovable and show shortlists as a contact sheet image (npm run sheet)."
+  }
 }
