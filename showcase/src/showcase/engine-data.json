@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:14:01.601Z",
+  "generated_at": "2026-11-11T14:58:19.913Z",
   "engine_repo": "ekjot-btrgroup/autonomous-website-engine",
   "showcase_url": "https://automated-website-system.lovable.app",
   "sites": [
@@ -140,6 +140,48 @@
     "prefs": []
   },
   "releases": [
+    {
+      "file": "2026-11-11-1447-add-apple-design-and-mobile-native-skill.md",
+      "title": "Add apple-design and mobile-native skills",
+      "at": "2026-11-11 14:47 UTC",
+      "merge": "e849228",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "8 files changed, 656 insertions(+), 1 deletion(-)",
+      "commits": [
+        {
+          "sha": "096f1f6",
+          "subject": "Add apple-design and mobile-native skills (emilkowalski/skills, MIT)"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-11-1415-fix-switcher-test-pattern.md",
+      "title": "Fix switcher test pattern",
+      "at": "2026-11-11 14:15 UTC",
+      "merge": "37bf76a",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "1 file changed, 1 insertion(+), 1 deletion(-)",
+      "commits": [
+        {
+          "sha": "7d83762",
+          "subject": "Fix switcher test pattern"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-11-1415-designs-switcher-in-every-multi-option-s.md",
+      "title": "Designs switcher in every multi-option site",
+      "at": "2026-11-11 14:15 UTC",
+      "merge": "365b740",
+      "branch": "claude/laughing-planck-rph3e0",
+      "changed": "14 files changed, 901 insertions(+), 73 deletions(-)",
+      "commits": [
+        {
+          "sha": "55fe9e9",
+          "subject": "Designs switcher in every multi-option site; template runtime cleans up on page switch"
+        }
+      ]
+    },
     {
       "file": "2026-11-11-1353-site-form-and-function-studio.md",
       "title": "Site form-and-function-studio",

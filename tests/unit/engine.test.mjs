@@ -290,3 +290,18 @@ test('full-page HTML templates: convert, scope CSS, rank as pages, build page ro
   assert.doesNotMatch(copy, /template\.js|data-ready/, 'template scripts are never rewritten');
   fs.rmSync(root, { recursive: true, force: true });
 });
+
+test('downloaded zip (no git): sync and release succeed quietly; static switcher snippet', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'zipcopy-'));
+  for (const d of ['engine', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(root, d), { recursive: true });
+  const run = (...argv) => execFileSync('node', [path.join(root, 'engine/release.mjs'), ...argv], { cwd: root, encoding: 'utf8', env: { ...process.env, ENGINE_ROOT: root } });
+  assert.match(run('sync'), /nothing to sync/);
+  assert.match(run('release', 'anything'), /saved on this computer/);
+  const { switcherSnippet } = await import('../../engine/lib/static-switcher.mjs');
+  const html = switcherSnippet({ options: [{ href: 'index.html', name: 'A', tagline: 'a <b>', swatches: ['#111111'] }, { href: 'option-2.html', name: 'B', tagline: 'b', swatches: [] }], current: 1, brand: 'Acme & Co', accent: '#abcdef' });
+  assert.match(html, /Two directions\. <em>One Acme &amp; Co\.<\/em>/);
+  assert.match(html, /href="option-2.html" aria-current="page"/);
+  assert.match(html, /a &lt;b&gt;/, 'taglines are escaped');
+  assert.equal(switcherSnippet({ options: [{ href: 'index.html', name: 'A' }], current: 0, brand: 'X' }), '', 'no switcher for one option');
+  fs.rmSync(root, { recursive: true, force: true });
+});

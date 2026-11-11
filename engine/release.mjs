@@ -29,27 +29,36 @@ async function withRetry(fn, label) {
   }
 }
 const branch = () => git('rev-parse', '--abbrev-ref', 'HEAD');
+// Works from a downloaded zip too: without a git repository (or without a remote) there is nothing to sync or release.
+const hasGit = () => tryGit('rev-parse', '--is-inside-work-tree') === 'true' && !!tryGit('remote', 'get-url', 'origin');
+const TARGET = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'engine.config.json'), 'utf8')).release_target || 'main'; } catch { return 'main'; } })();
 
 async function sync() {
-  await withRetry(() => git('fetch', '--quiet', 'origin', 'main'), 'fetch');
-  const behind = Number(git('rev-list', '--count', 'HEAD..origin/main'));
+  if (!hasGit()) { console.log('Local copy (no git remote): nothing to sync.'); return; }
+  await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch');
+  const behind = Number(git('rev-list', '--count', `HEAD..origin/${TARGET}`));
   if (!behind) { console.log('Already up to date with main.'); return; }
-  try { git('merge', '--autostash', '--no-edit', 'origin/main'); }
-  catch (e) { tryGit('merge', '--abort'); die(`Could not merge main automatically (conflict):\n${e.message.slice(0, 400)}\nResolve by hand: git merge origin/main`); }
-  console.log(`Pulled ${behind} commit(s) from main (admin dashboard edits, other chats' releases).`);
+  try { git('merge', '--autostash', '--no-edit', `origin/${TARGET}`); }
+  catch (e) { tryGit('merge', '--abort'); die(`Could not merge ${TARGET} automatically (conflict):\n${e.message.slice(0, 400)}\nResolve by hand: git merge origin/${TARGET}`); }
+  console.log(`Pulled ${behind} commit(s) from ${TARGET}.`);
 }
 
 async function release() {
   const summary = String(a._[0] || a.summary || '').trim() || die('Usage: npm run release -- "what this release does"');
+  if (!hasGit()) { console.log('Local copy (no git remote): files are saved on this computer; nothing to release.'); return; }
   const br = branch();
-  if (br === 'main' || br === 'HEAD') die('Run this from a feature branch, not main.');
+  if (br === TARGET || br === 'HEAD') {
+    if (git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); }
+    try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); console.log(`Pushed to ${TARGET}.`); } catch (e) { console.log(`Saved locally; push failed (${e.message.split('\n')[0].slice(0, 80)}).`); }
+    return;
+  }
   if (git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); console.log('Committed pending changes.'); }
-  await withRetry(() => git('fetch', '--quiet', 'origin', 'main'), 'fetch');
+  await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch');
 
-  const commits = git('log', '--no-merges', '--format=%h\t%s', 'origin/main..HEAD').split('\n').filter(Boolean).map((l) => l.split('\t'));
-  if (!commits.length) { console.log('Nothing new to release: main already has everything from this branch.'); return; }
-  const stat = git('diff', '--shortstat', 'origin/main...HEAD') || 'no file changes';
-  const files = git('diff', '--name-only', 'origin/main...HEAD').split('\n').filter(Boolean);
+  const commits = git('log', '--no-merges', '--format=%h\t%s', `origin/${TARGET}..HEAD`).split('\n').filter(Boolean).map((l) => l.split('\t'));
+  if (!commits.length) { console.log(`Nothing new to release: ${TARGET} already has everything from this branch.`); return; }
+  const stat = git('diff', '--shortstat', `origin/${TARGET}...HEAD`) || 'no file changes';
+  const files = git('diff', '--name-only', `origin/${TARGET}...HEAD`).split('\n').filter(Boolean);
   const areas = [...new Set(files.map((f) => (f.includes('/') ? f.split('/')[0] : 'root')))].sort();
 
   const now = new Date();
@@ -61,18 +70,18 @@ async function release() {
   // 1. Merge the branch into main and push (retry if main moved meanwhile).
   let mergeSha;
   for (let attempt = 1; ; attempt++) {
-    git('checkout', '--quiet', '--detach', 'origin/main');
+    git('checkout', '--quiet', '--detach', `origin/${TARGET}`);
     try { git('merge', '--no-ff', '--no-edit', '-m', `Release: ${summary} (from ${br})`, br); }
     catch (e) {
       tryGit('merge', '--abort'); git('checkout', '--quiet', br);
       die(`Merge into main has conflicts; nothing was pushed.\nFix: npm run sync (resolve conflicts), then npm run release -- "${summary}" again.\n${e.message.slice(0, 300)}`);
     }
     mergeSha = git('rev-parse', 'HEAD');
-    try { await withRetry(() => git('push', '--quiet', 'origin', 'HEAD:main'), 'push'); break; }
+    try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
     catch (e) {
       git('checkout', '--quiet', br);
-      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { console.log('main moved meanwhile; retrying...'); await withRetry(() => git('fetch', '--quiet', 'origin', 'main'), 'fetch'); continue; }
-      die(`Push to main failed: ${e.message.slice(0, 300)}\n(Branch protection or missing permission? The branch itself is intact.)`);
+      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { console.log('main moved meanwhile; retrying...'); await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch'); continue; }
+      die(`Push to ${TARGET} failed: ${e.message.slice(0, 300)}\n(Branch protection or missing permission? The branch itself is intact.)`);
     }
   }
   const short = mergeSha.slice(0, 7);
@@ -88,7 +97,7 @@ async function release() {
   fs.writeFileSync(path.join(ROOT, rel), `# ${summary}
 
 - Released: ${now.toISOString().slice(0, 16).replace('T', ' ')} UTC
-- Merge commit on main: \`${short}\`${tagged ? ` (tag \`${tag}\`)` : ''}
+- Merge commit on ${TARGET}: \`${short}\`${tagged ? ` (tag \`${tag}\`)` : ''}
 - From branch: \`${br}\`
 - Changed: ${stat}
 - Areas: ${areas.join(', ')}
@@ -101,14 +110,14 @@ ${commits.map(([h, subj]) => `| \`${h}\` | ${subj.replace(/\|/g, '/')} |`).join(
 ## Bring it back
 - Whole release on a new branch: \`git fetch origin && git checkout -b restore-${slug.slice(0, 24)} ${ref}\`
 - One feature onto your current branch: \`git cherry-pick <commit from the table>\`
-- Undo the whole release on main: \`git revert -m 1 ${ref}\`
+- Undo the whole release on ${TARGET}: \`git revert -m 1 ${ref}\`
 `);
   git('add', rel);
   git('commit', '--quiet', '-m', `Release note: ${summary}`);
   for (let attempt = 1; ; attempt++) {
-    try { await withRetry(() => git('push', '--quiet', 'origin', 'HEAD:main'), 'push'); break; }
+    try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
     catch (e) {
-      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { git('fetch', '--quiet', 'origin', 'main'); git('rebase', '--quiet', 'origin/main'); continue; }
+      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { git('fetch', '--quiet', 'origin', TARGET); git('rebase', '--quiet', `origin/${TARGET}`); continue; }
       console.log(`Warning: release note not pushed (${e.message.split('\n')[0].slice(0, 120)}); the release itself is on main.`); break;
     }
   }
@@ -118,7 +127,7 @@ ${commits.map(([h, subj]) => `| \`${h}\` | ${subj.replace(/\|/g, '/')} |`).join(
   git('checkout', '--quiet', br);
   tryGit('merge', '--quiet', '--ff-only', finalSha);
   tryGit('push', '--quiet', '-u', 'origin', br);
-  console.log(`Released to main: ${short} "${summary}" (${commits.length} commit(s), ${stat})${tagged ? `, tag ${tag}` : ''}.`);
+  console.log(`Released to ${TARGET}: ${short} "${summary}" (${commits.length} commit(s), ${stat})${tagged ? `, tag ${tag}` : ''}.`);
   console.log(`Release note: ${rel}`);
 }
 
@@ -128,7 +137,7 @@ function list() {
   for (const f of notes.slice(0, Number(a.limit || 30))) {
     const txt = fs.readFileSync(path.join(RELEASES, f), 'utf8');
     const title = txt.split('\n')[0].replace(/^# /, '');
-    const merge = (txt.match(/Merge commit on main: `([0-9a-f]+)`/) || [])[1] || '';
+    const merge = (txt.match(/Merge commit on [\w./-]+: `([0-9a-f]+)`/) || [])[1] || '';
     const commits = [...txt.matchAll(/^\| `([0-9a-f]+)` \| (.*) \|$/gm)].map((m) => `${m[1]} ${m[2]}`);
     console.log(`${f.slice(0, 15)}  ${title}\n   merge ${merge}\n${commits.map((c) => `   - ${c}`).join('\n')}`);
   }

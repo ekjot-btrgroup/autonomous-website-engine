@@ -62,7 +62,7 @@ function releases() {
     const get = (re) => (t.match(re) || [])[1] || null;
     return {
       file: f, title: (t.split('\n')[0] || '').replace(/^# /, ''),
-      at: get(/Released: ([^\n]+)/), merge: get(/Merge commit on main: `([0-9a-f]+)`/) || get(/Tag: `([^`]+)`/),
+      at: get(/Released: ([^\n]+)/), merge: get(/Merge commit on [\w./-]+: `([0-9a-f]+)`/) || get(/Tag: `([^`]+)`/),
       branch: get(/From branch: `([^`]+)`/), changed: get(/Changed: ([^\n]+)/),
       commits: [...t.matchAll(/^\| `([0-9a-f]+)` \| (.*) \|$/gm)].map((m) => ({ sha: m[1], subject: m[2] })),
     };

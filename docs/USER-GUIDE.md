@@ -2,6 +2,13 @@
 
 You never run commands yourself. You talk to Claude in a chat on this repo, and Claude runs the scripts. Each step below says what you do and what Claude does.
 
+## The conversation
+Say hi and the system asks for your brand brief. Then it asks 3 quick questions (animations, colours, typography), shows 10 designs with a reason each, and you reply with the numbers of your 3 favourites. Every reply ends with a short Requirements list of what it still needs from you. If you give something early, it is kept and the next step is asked politely.
+
+## Two editions
+- `main`: final designs go to a new Lovable project (GitHub sync, no Lovable credits).
+- `autonomous-website-engine-local`: the same system, but final designs (and the 10-design shortlist) are HTML files you can open with a double click, send to a client or host anywhere. Works from a downloaded zip: `npm run setup` once, then open the folder in Claude Code.
+
 ## Quick test without Lovable (current mode)
 The showcase stays off Lovable (`lovable.showcase: false`); client sites can go to their own new Lovable project (`lovable.sites: true`). Full test script: [TEST-RUN.md](TEST-RUN.md). To test the engine:
 1. Open a **new chat** on this repo and upload one or more zips. A zip may hold 10 or 20 designs (one folder per design, or one file per design). Say: *"Add these designs."*

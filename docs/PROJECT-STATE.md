@@ -64,6 +64,12 @@ Last updated: 2026-11-11. Read this first in any new chat. Keep it current: upda
 - Added after review: floating "Designs" switcher in every multi-option site (`site -- switcher <slug>`), modelled on the "Design Testing" project's DesignSwitcher; template runtime now cleans up script listeners/intervals on page switch.
 - Known issue: copy rewriting works per text node, so headlines split across styled spans can mix old/new words, and some template brand names stay (seen on option 2: "Craft & Grain", "Homes designed around you pieces"). Next fix: group a heading's inline text into one copy item.
 
+## 5d. Conversation, HTML export, local edition (2026-11-11)
+- CLAUDE.md now fixes the conversation: exact welcome message, strict order (brief -> animations/colours/typography -> 10 designs -> 3 picks by number -> final), "I have noted the company brief and have last 3 questions.", Requirements bullets at the end of every reply, instructions = INSTRUCTIONS.md, no talk of git/scripts/tokens. Usage reporting removed from chats (npm run usage still exists).
+- `npm run export -- <slug> [--shortlist]`: static HTML (captured from the built app, template script re-attached, images copied, static Designs switcher), opens via file://; zips in output/<slug>/.
+- `engine.config.json`: `delivery` (lovable | html), `release_target` (branch releases merge into). Sync/release work without git (zip download). `npm run setup` for new computers.
+- Branch `autonomous-website-engine-local`: same code with delivery html and release_target = that branch. Keep it in step by merging main into it.
+
 ## 6. Now: testing without Lovable (user will test in a new chat with 10-20 designs in zips)
 Built and tested for this (released to main): multi-design zips split into designs (also nested zips and flat zips of separate component files), `shortlist --why`, `npm run sheet` contact sheet, `npm run showcase:serve`, Lovable switches (now `lovable.showcase` / `lovable.sites`) honoured by the skills. 10 tests pass.
 Flow in the test chat (see docs/TEST-RUN.md; the showcase is never pushed while `lovable.showcase` is false):

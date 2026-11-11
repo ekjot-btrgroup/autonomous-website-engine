@@ -22,3 +22,5 @@ incoming/*
 *.log
 # contact sheets and screenshots (regenerated with npm run sheet)
 reports/
+# exported HTML deliverables (npm run export)
+output/

@@ -5,6 +5,7 @@
   "type": "module",
   "description": "Low-cost design library -> shortlist -> Lovable site engine. Scripts do the work; Claude only tags, writes briefs, picks colours/fonts and writes copy.",
   "scripts": {
+    "setup": "node engine/setup.mjs",
     "sync": "node engine/release.mjs sync",
     "add": "node engine/add-designs.mjs",
     "import:pages": "python3 -I engine/tools/html_page.py",
@@ -12,6 +13,7 @@
     "shortlist": "node engine/shortlist.mjs",
     "sheet": "node engine/sheet.mjs",
     "site": "node engine/site.mjs",
+    "export": "node engine/export.mjs",
     "remember": "node engine/remember.mjs",
     "push": "node engine/sync.mjs push",
     "pull": "node engine/sync.mjs pull",
