@@ -283,5 +283,8 @@ test('full-page HTML templates: convert, scope CSS, rank as pages, build page ro
   const siteCss = fs.readFileSync(path.join(root, 'sites/bistro/src/sections/01-page/code/template.css'), 'utf8');
   assert.match(siteCss, /THEME:START[\s\S]*--primary: #225533/, 'brief colour mapped onto the template variable');
   assert.ok(fs.existsSync(path.join(root, 'sites/bistro/src/lib/template-runtime.ts')));
+  const copy = run('site.mjs', 'copy', 'bistro');
+  assert.match(copy, /Coffee & calm/, 'page text is offered for rewriting');
+  assert.doesNotMatch(copy, /template\.js|data-ready/, 'template scripts are never rewritten');
   fs.rmSync(root, { recursive: true, force: true });
 });
