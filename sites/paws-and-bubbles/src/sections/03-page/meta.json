@@ -1,0 +1,139 @@
+{
+  "id": "beauty-salon-0dbd",
+  "name": "Beauty Salon",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "beauty-salon-html-template",
+    "format": "html-page",
+    "hash": "0dbd295ee082577fd6c29680fee707eafd150708b23ae20904c84654c3f0c39b",
+    "original": "test-templates/uiuxlabz/beauty-salon-html-template",
+    "repo": "https://github.com/uiuxlabz/beauty-salon-html-template",
+    "group": "uiuxlabz",
+    "commit": "81fa25e1a4a0be275bf7209e694a7b885f4c1c0b"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "services",
+    "about",
+    "stats",
+    "team",
+    "testimonials",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Reveal Your Radiance with LUMIÈRE",
+      "Treatments Tailored to You",
+      "A Sanctuary for Your Everyday Glow",
+      "The Artists Behind the Glow",
+      "What Our Clients Say",
+      "Your Glow Starts Here"
+    ],
+    "ctas": [
+      "Book Now",
+      "Book an Appointment",
+      "Explore Services",
+      "Our Story"
+    ],
+    "texts": [],
+    "colors": [
+      "#1e7b44",
+      "#c96f7a",
+      "#b25460",
+      "#f8eaec",
+      "#fdf6f7",
+      "#c9a45c"
+    ],
+    "dark": null,
+    "fonts": [
+      "Cormorant Garamond",
+      "Jost"
+    ],
+    "images": 15,
+    "motion": true,
+    "lines": 764,
+    "css": {
+      "palette": [
+        "#1e7b44",
+        "#c96f7a",
+        "#b25460",
+        "#f8eaec",
+        "#fdf6f7",
+        "#c9a45c"
+      ],
+      "radius_px": 576,
+      "gradients": 5,
+      "shadows": 14,
+      "keyframes": 0,
+      "transitions": 15,
+      "uppercase": 11,
+      "glass": 1
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "stats",
+      "team",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "centered"
+    ],
+    "style": [
+      "elegant",
+      "soft",
+      "luxury"
+    ],
+    "tone": 3,
+    "energy": 2,
+    "luxury": 4,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3,
+    "media": [
+      "photo"
+    ],
+    "image_need": 2,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking"
+    ],
+    "origin": [
+      "beauty"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "stats",
+      "team",
+      "testimonials",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Blush pink salon, Cormorant serif, gold accents",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:19.985458Z"
+}

@@ -70,6 +70,12 @@ Last updated: 2026-11-11. Read this first in any new chat. Keep it current: upda
 - `engine.config.json`: `delivery` (lovable | html), `release_target` (branch releases merge into). Sync/release work without git (zip download). `npm run setup` for new computers.
 - Branch `autonomous-website-engine-local`: same code with delivery html and release_target = that branch. Keep it in step by merging main into it.
 
+## 5e. Photos + client-ready polish (2026-11-11)
+- `site -- images` / `images-apply`: Openverse photos (licence_type=commercial), parallel, size-aware (thumbnails for small, full size for hero), cropped to the original size, credits in `.engine/image-credits.json` and `IMAGE-CREDITS.txt` in exports. Needs host `api.openverse.org` (added to the Website Engine environment; LoremFlickr was down, Wikimedia blocks anonymous downloads).
+- `export --single`: self-contained HTML per option. Switcher shows neutral direction names from style tags (never template names).
+- Template theming maps the most-used strong colour + accent when variables are not named primary/brand; keeps menu buttons readable on dark brand colours; copy extraction now includes `{"text"}` JSX children and price tags.
+- Demo: `sites/paws-and-bubbles` (pet grooming, a niche the library does not have): 3 options, 31 photos replaced, copy rewritten, exported.
+
 ## 6. Now: testing without Lovable (user will test in a new chat with 10-20 designs in zips)
 Built and tested for this (released to main): multi-design zips split into designs (also nested zips and flat zips of separate component files), `shortlist --why`, `npm run sheet` contact sheet, `npm run showcase:serve`, Lovable switches (now `lovable.showcase` / `lovable.sites`) honoured by the skills. 10 tests pass.
 Flow in the test chat (see docs/TEST-RUN.md; the showcase is never pushed while `lovable.showcase` is false):

@@ -1,0 +1,141 @@
+{
+  "id": "dental-clinic-e882",
+  "name": "Dental Clinic",
+  "kind": "page",
+  "status": "ok",
+  "issues": [],
+  "source": {
+    "folder": "dental-clinic-html-template",
+    "format": "html-page",
+    "hash": "e8821f5e33898873c3ad8ea461bf10191a9e96bcf236b8f0e1c670ed4bfb6365",
+    "original": "test-templates/uiuxlabz/dental-clinic-html-template",
+    "repo": "https://github.com/uiuxlabz/dental-clinic-html-template",
+    "group": "uiuxlabz",
+    "commit": "c35a7af10e1e3ec89f48b323ca14dc53d091c465"
+  },
+  "entry": "code/Page.tsx",
+  "deps": [],
+  "page_sections": [
+    "navbar",
+    "hero",
+    "services",
+    "about",
+    "team",
+    "process",
+    "contact",
+    "footer"
+  ],
+  "summary": {
+    "headings": [
+      "Care that makes you smile",
+      "Six treatments, one care pathway",
+      "Sterile where it counts, warm where it matters",
+      "Clinicians you can trust",
+      "Real smiles, gentle journey",
+      "Book your visit — we hold the chair"
+    ],
+    "ctas": [
+      "Book visit",
+      "Book an appointment →",
+      "Explore treatments",
+      "Reserve"
+    ],
+    "texts": [],
+    "colors": [
+      "#ffffff",
+      "#0ea5a0",
+      "#0c8e8a",
+      "#0a7672",
+      "#e0f2f7",
+      "#f0fafc"
+    ],
+    "dark": null,
+    "fonts": [
+      "Outfit",
+      "Inter"
+    ],
+    "images": 12,
+    "motion": true,
+    "lines": 803,
+    "css": {
+      "palette": [
+        "#ffffff",
+        "#0ea5a0",
+        "#0c8e8a",
+        "#0a7672",
+        "#e0f2f7",
+        "#f0fafc"
+      ],
+      "radius_px": 16,
+      "gradients": 3,
+      "shadows": 22,
+      "keyframes": 1,
+      "transitions": 5,
+      "uppercase": 2,
+      "glass": 2
+    },
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "team",
+      "process",
+      "contact",
+      "footer"
+    ]
+  },
+  "guess": {
+    "category": "page",
+    "confidence": 1
+  },
+  "tags": {
+    "category": "page",
+    "also": [],
+    "layout": [
+      "split",
+      "cards"
+    ],
+    "style": [
+      "soft",
+      "modern",
+      "minimal"
+    ],
+    "tone": 3,
+    "energy": 2,
+    "luxury": 2,
+    "density": 3,
+    "warmth": 4,
+    "modernity": 4,
+    "media": [
+      "photo",
+      "icons"
+    ],
+    "image_need": 1,
+    "typography": "sans",
+    "motion": "subtle",
+    "goals": [
+      "booking",
+      "trust"
+    ],
+    "origin": [
+      "health"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "services",
+      "about",
+      "team",
+      "process",
+      "contact",
+      "footer"
+    ],
+    "scheme": "mixed",
+    "quality": 4,
+    "note": "Clean teal dental clinic, rounded cards, calm",
+    "by": "claude",
+    "at": "2026-11-11"
+  },
+  "added_at": "2026-11-11T13:23:32.527489Z"
+}

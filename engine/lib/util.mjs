@@ -123,3 +123,15 @@ export function config() {
   return { showcase_url: '', shortlist_size: 10, fresh_slots: 2, max_per_section_type: 3, ...c, showcase_url: String(c.showcase_url || '').replace(/\/+$/, '') };
 }
 export const liveLink = (route) => { const u = config().showcase_url; return u ? `${u}${route}` : route; };
+
+// Client-facing option name from a design's style tags ("Playful & Soft"); never the template's own name.
+export function directionNames(metas) {
+  const seen = new Map();
+  return metas.map((m, i) => {
+    const st = (m?.tags?.style || []).slice(0, 2).map((w) => w.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()));
+    let name = st.length ? st.join(' & ') : `Direction ${i + 1}`;
+    const n = (seen.get(name) || 0) + 1; seen.set(name, n);
+    if (n > 1) name = `${name} ${n}`;
+    return name;
+  });
+}

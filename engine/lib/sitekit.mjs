@@ -34,7 +34,9 @@ export function extractStrings(src) {
     const text = raw.replace(/\\(['"`\\])/g, '$1').replace(/\\n/g, '\n');
     if (!/[A-Za-z]/.test(text) || looksLikeCode(text) || classLike(text)) continue;
     const words = text.trim().split(/\s+/).length;
-    const ctx = PROP_CTX.test(before);
+    // {"text"} written as a JSX child (converted templates keep spacing this way) is always page text.
+    const jsxChild = /\{\s*$/.test(before) && /^\s*\}/.test(src.slice(m.index + full.length, m.index + full.length + 4)) && !/=\s*\{\s*$/.test(before);
+    const ctx = PROP_CTX.test(before) || jsxChild;
     if (!(ctx || words >= 2)) continue;
     if (!ctx && /^[a-z0-9-]+$/.test(text)) continue;
     items.push({ kind: 'str', quote: q, start, end, raw, text });
@@ -45,7 +47,7 @@ export function extractStrings(src) {
     const prev = src[m.index - 1];
     if (prev === '=' || prev === '-') continue; // => or ->
     const raw = m[1];
-    if (!/[A-Za-z]/.test(raw) || /[;=()]|&&|\|\|/.test(raw)) continue;
+    if (!(/[A-Za-z]/.test(raw) || /[$€£₹]\s?\d/.test(raw)) || /[;=()]|&&|\|\|/.test(raw)) continue;
     const lead = raw.length - raw.trimStart().length;
     const trimmed = raw.trim();
     if (!trimmed || /^\/\//.test(trimmed)) continue;

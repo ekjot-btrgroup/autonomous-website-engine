@@ -1,4 +1,5 @@
 // npm run export -- <slug>               final site  -> output/<slug>/final/index.html (option 1), option-2.html, ... + output/<slug>/<slug>-final.zip
+// npm run export -- <slug> --single      final site as self-contained HTML files (images + scripts inside each file)
 // npm run export -- <slug> --shortlist   shortlist   -> output/<slug>/shortlist/index.html (gallery) + one HTML file per design
 //
 // Static, client-ready HTML: each page is captured from the built app in a headless browser (template script NOT run),
@@ -7,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
-import { P, ROOT, args, die, readJson, rel } from './lib/util.mjs';
+import { P, ROOT, args, die, readJson, rel, directionNames } from './lib/util.mjs';
 import { loadLibrary } from './lib/library.mjs';
 import { ensureShowcase, buildApp, loadChromium } from './showcase.mjs';
 import { switcherSnippet } from './lib/static-switcher.mjs';
@@ -15,7 +16,7 @@ import { switcherSnippet } from './lib/static-switcher.mjs';
 const a = args();
 const slug = a._[0] || die('Usage: npm run export -- <slug> [--shortlist]');
 const OUT = path.join(ROOT, 'output', slug);
-const FINAL = path.join(OUT, 'final');
+const FINAL = path.join(OUT, a.single ? 'final-single' : 'final');
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const metas = new Map(loadLibrary().map((m) => [m.id, m]));
 const brief = readJson(path.join(P.briefs, `${slug}.json`), {});
@@ -110,6 +111,30 @@ function pageScripts(designDir, assetsDir, name) {
   return tags.join('\n');
 }
 
+// Self-contained files: images become data URIs, the template script goes inline; the assets folder is removed.
+function inlineAll(dirPath, files) {
+  const mime = { '.webp': 'image/webp', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.avif': 'image/avif', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ico': 'image/x-icon' };
+  const cache = new Map();
+  const dataUri = (name) => {
+    if (!cache.has(name)) {
+      const f = path.join(dirPath, 'assets', name), ext = path.extname(name).toLowerCase();
+      cache.set(name, fs.existsSync(f) && mime[ext] ? `data:${mime[ext]};base64,${fs.readFileSync(f).toString('base64')}` : null);
+    }
+    return cache.get(name);
+  };
+  for (const file of files) {
+    const p = path.join(dirPath, file);
+    let html = fs.readFileSync(p, 'utf8');
+    html = html.replace(/<script src="assets\/([\w.-]+\.js)"><\/script>/g, (m, n) => {
+      const f = path.join(dirPath, 'assets', n);
+      return fs.existsSync(f) ? `<script>\n${fs.readFileSync(f, 'utf8').replace(/<\/script/gi, '<\\/script')}\n</script>` : m;
+    });
+    html = html.replace(/assets\/([\w.-]+\.(?:webp|jpe?g|png|gif|svg|avif|woff2?|ico))/gi, (m, n) => dataUri(n) || m);
+    fs.writeFileSync(p, html);
+  }
+  fs.rmSync(path.join(dirPath, 'assets'), { recursive: true, force: true });
+}
+
 const inject = (html, snippet) => html.replace(/<\/body>/i, `${snippet}\n</body>`);
 
 async function exportFinal() {
@@ -122,10 +147,11 @@ async function exportFinal() {
   fs.mkdirSync(path.join(FINAL, 'assets'), { recursive: true });
   const pages = plan.mode === 'pages' ? plan.sections : [{ folder: null, id: plan.slug, slot: 'page' }];
   const brand = String(brief.company || plan.company || slug);
+  const names = directionNames(pages.map((s) => metas.get(s.id)));
   const options = pages.map((s, i) => {
     const m = metas.get(s.id) || {};
     const sw = (m.summary?.colors || []).filter((c) => /^#[0-9a-f]{6}$/i.test(c)).slice(0, 3);
-    return { href: i ? `option-${i + 1}.html` : 'index.html', route: i ? `/option-${i + 1}` : '/', name: m.name || brand, tagline: why.get(s.id) || m.tags?.note || '', swatches: sw.length ? sw : ['#e7e2d8', '#1b1d22'], folder: s.folder };
+    return { href: i ? `option-${i + 1}.html` : 'index.html', route: i ? `/option-${i + 1}` : '/', name: names[i], tagline: why.get(s.id) || m.tags?.note || '', swatches: sw.length ? sw : ['#e7e2d8', '#1b1d22'], folder: s.folder };
   });
   const accent = accentOf(brief.colors?.primary || plan.theme?.primary);
   const browser = await loadChromium();
@@ -141,10 +167,14 @@ async function exportFinal() {
       console.log(`  ${o.href}  ${o.name}`);
     }
   } finally { await browser.close(); srv.stop(); }
+  const credits = readJson(path.join(dir, '.engine', 'image-credits.json'), []);
+  if (credits.length) fs.writeFileSync(path.join(FINAL, 'IMAGE-CREDITS.txt'), `Photos from Openverse (licences allow commercial use; keep these credits when publishing):\n\n${credits.map((c) => `- ${c.title || 'Untitled'} by ${c.creator || 'unknown'} (${c.license}) ${c.source || ''}`).join('\n')}\n`);
+  if (a.single) inlineAll(FINAL, options.map((o) => o.href));
   fs.writeFileSync(path.join(FINAL, 'README.txt'), `${brand}: ${options.length} homepage directions\n\nOpen index.html in a browser (double click). Use the Designs button (bottom right) to switch between options.\n${options.map((o, i) => `${i + 1}. ${o.href}  ${o.name}${o.tagline ? `: ${o.tagline}` : ''}`).join('\n')}\n`);
-  fs.rmSync(path.join(OUT, `${slug}-final.zip`), { force: true });
-  const zip = spawnSync('zip', ['-qr', `${slug}-final.zip`, 'final'], { cwd: OUT });
-  console.log(`\nReady: ${rel(path.join(FINAL, 'index.html'))}${zip.status === 0 ? `  (zip: ${rel(path.join(OUT, `${slug}-final.zip`))})` : ''}`);
+  const zipName = `${slug}-${path.basename(FINAL)}.zip`;
+  fs.rmSync(path.join(OUT, zipName), { force: true });
+  const zip = spawnSync('zip', ['-qr', zipName, path.basename(FINAL)], { cwd: OUT });
+  console.log(`\nReady: ${rel(path.join(FINAL, 'index.html'))}${zip.status === 0 ? `  (zip: ${rel(path.join(OUT, zipName))})` : ''}`);
 }
 
 async function exportShortlist() {
