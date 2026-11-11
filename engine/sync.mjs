@@ -16,6 +16,8 @@ const target = (a._.find((x) => x !== 'pull' && x !== 'push') || die(`Usage: npm
 const dir = path.resolve(ROOT, target);
 if (!fs.existsSync(path.join(dir, 'package.json'))) die(`${target} is not an app folder`);
 const isShowcase = path.resolve(dir) === path.resolve(P.showcase);
+// Refresh the dashboard's data (vocabulary, repo, engine snapshot) before publishing the showcase.
+if (isShowcase && process.argv[2] !== 'pull') (await import('./showcase.mjs')).writeAdminData();
 const syncFile = path.join(dir, '.engine', 'sync.json');
 const sync = readJson(syncFile, {});
 const repo = a.repo || sync.repo || die(`No repo known for ${target}. Pass --repo owner/name (the GitHub repo Lovable created for this project).`);

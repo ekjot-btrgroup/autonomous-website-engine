@@ -9,6 +9,7 @@
     "add": "node engine/add-designs.mjs",
     "tag": "node engine/tag.mjs",
     "shortlist": "node engine/shortlist.mjs",
+    "sheet": "node engine/sheet.mjs",
     "site": "node engine/site.mjs",
     "remember": "node engine/remember.mjs",
     "push": "node engine/sync.mjs push",
@@ -18,6 +19,7 @@
     "status": "node engine/status.mjs",
     "showcase:init": "node engine/showcase.mjs init",
     "showcase:check": "node engine/showcase.mjs check",
+    "showcase:serve": "node engine/showcase.mjs serve",
     "test": "node --test tests/unit/*.test.mjs"
   },
   "engines": {

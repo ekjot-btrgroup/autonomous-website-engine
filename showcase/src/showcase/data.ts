@@ -71,6 +71,8 @@ export type ShortlistItem = {
   score: number;
   category: string;
   reasons: string[];
+  /** One line from Claude: why this design suits this client. */
+  why?: string;
 };
 
 export type Shortlist = {

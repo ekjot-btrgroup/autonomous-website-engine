@@ -10,6 +10,7 @@ your feedback + picks ──▶ memory ──▶ better, less repetitive shortli
 ```
 
 **Start here:** [docs/USER-GUIDE.md](docs/USER-GUIDE.md) (what to say to Claude, step by step).
+**Current state, what is paused, and the Lovable plan:** [docs/PROJECT-STATE.md](docs/PROJECT-STATE.md).
 **How matching and memory work:** [docs/ALGORITHM.md](docs/ALGORITHM.md).
 **Admin dashboard (edit tags, notes, preferences in the showcase):** [docs/ADMIN-DASHBOARD.md](docs/ADMIN-DASHBOARD.md).
 **What went to main and how to bring it back:** [docs/releases/](docs/releases/README.md).
@@ -46,10 +47,13 @@ Parallel subagents run only when they save time: tagging more than 40 designs, o
 ## Commands (Claude runs these; listed for reference)
 | Command | Purpose |
 |---|---|
-| `npm run add` | Import everything in `incoming/` (`--offline`, `--keep`, `--converted <id>`) |
+| `npm run add` | Import everything in `incoming/`; a zip or folder holding many designs becomes many designs (`--offline`, `--keep`, `--converted <id>`) |
 | `npm run showcase:check -- --smoke` | Install + build the showcase, render every design, flag broken ones |
 | `npm run tag -- queue / apply <file> / list` | Tagging round trip (`--limit 40 --offset 0` for batches) |
 | `npm run shortlist -- <slug>` | Rank the library for `briefs/<slug>.json`; prints reasons and live links |
+| `npm run shortlist -- <slug> --why <file>` | Save Claude's one-line reason per design (`{"id": "why"}`) |
+| `npm run sheet -- <slug>` | Contact sheet: the shortlist rendered live (desktop + mobile) into `reports/<slug>/shortlist.png` |
+| `npm run showcase:serve` | Build and serve the showcase locally (preview in the Claude app) |
 | `npm run site -- new <slug> --pick a,b,c` | Build `sites/<slug>/` from the picks (`--fill` completes the page, `--force` rebuilds) |
 | `npm run site -- theme <slug> ...` | `--primary/--accent/--background/--foreground #hex`, `--heading/--body "Font"`, `--recolor blue:emerald`, `--motion off|on` |
 | `npm run site -- copy <slug>` / `copy-apply <slug>` | Text round trip (Claude edits `.engine/copy.out.json`) |

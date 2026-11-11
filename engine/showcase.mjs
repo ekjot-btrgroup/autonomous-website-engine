@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync, execFileSync } from 'node:child_process';
+import { writeSnapshot } from './lib/snapshot.mjs';
 import { P, ROOT, copyDir, readJson, writeJson, rel, args, metaPath, config } from './lib/util.mjs';
 
 const BASE = () => path.join(P.templates, 'lovable-base');
@@ -23,13 +24,14 @@ export function engineRepo() {
 }
 
 // Files the admin dashboard reads, refreshed on every run (vocabulary + where to save edits).
-function writeAdminData() {
+export function writeAdminData() {
   const dir = path.join(P.showcase, 'src', 'showcase');
   if (!fs.existsSync(dir)) return;
   fs.copyFileSync(P.vocab, path.join(dir, 'vocabulary.json'));
   const cfgFile = path.join(dir, 'admin-config.json');
   const next = { engine_repo: engineRepo(), branch: 'main' };
   if (JSON.stringify(readJson(cfgFile, {})) !== JSON.stringify(next)) writeJson(cfgFile, next);
+  writeSnapshot(next.engine_repo);
 }
 
 export function ensureShowcase({ refresh = false } = {}) {
@@ -148,6 +150,15 @@ if (isMain) {
     const fresh = ensureShowcase({ refresh: !!a.refresh });
     console.log(fresh ? `Created ${rel(P.showcase)} from templates.` : a.refresh ? `Refreshed engine-owned files in ${rel(P.showcase)}.` : `${rel(P.showcase)} already exists (use --refresh to update engine-owned files).`);
   } else if (cmd === 'check') check();
-  else { console.error('Usage: npm run showcase:init [-- --refresh] | npm run showcase:check'); process.exit(1); }
+  else if (cmd === 'serve') {
+    // Live preview for the Claude app: build, then serve on 0.0.0.0:<port> until stopped.
+    ensureShowcase();
+    const b = buildApp(P.showcase);
+    if (!b.ok) { console.error(b.output.slice(-1500)); process.exit(1); }
+    const port = String(a.port || 4173);
+    console.log(`Showcase preview on port ${port} (library /, design /d/<id>, pick page /s/<slug>)`);
+    spawnSync('npx', ['vite', 'preview', '--host', '0.0.0.0', '--port', port, '--strictPort'], { cwd: P.showcase, stdio: 'inherit' });
+  }
+  else { console.error('Usage: npm run showcase:init [-- --refresh] | showcase:check [-- --smoke] | showcase:serve [-- --port 4173]'); process.exit(1); }
 }
 void ROOT;

@@ -19,10 +19,13 @@ description: Turn a client request into the top 10 matching designs from the sho
    - `fonts`: only if the user named fonts or the brand clearly needs a change.
 3. `npm run -s shortlist -- <slug>` (zero tokens; ranking + reasons + live links).
 4. If it reports untagged designs, run `/add-designs` step 5 first, then repeat step 3.
-5. `npm run -s push -- showcase` (so the shortlist page is live), then commit and `npm run -s release -- "Shortlist for <slug>"`.
-6. Reply in at most 12 lines: the 10 as `rank. id (category): one reason`, the live links block from the output, sections the library lacks, then:
-   "Open <pick page link>, tick 3, press Copy, paste it here."
-   Stop. Do not build until the user sends their picks.
+5. **One line per design:** write `.cache/why-<slug>.json` as `{"<id>": "<why this design suits THIS client and brief, max ~20 words>"}` for all 10, then `npm run -s shortlist -- <slug> --why .cache/why-<slug>.json`. Base each line on the brief and the design's traits/reasons from the output; be honest when a design is a weaker fit.
+6. Show the results:
+   - Lovable parked (`lovable.enabled` false): `npm run -s sheet -- <slug>` then send `reports/<slug>/shortlist.png` to the user with the SendUserFile tool (display render). Do not read the image yourself.
+   - Lovable on: `npm run -s push -- showcase`; the pick page is `<showcase_url>/s/<slug>`.
+   Then commit and `npm run -s release -- "Shortlist for <slug>"`.
+6b. Reply in at most 12 lines: the 10 as `rank. id (category): why line`, sections the library lacks, then:
+   "Pick 3 and reply: Build site <slug> with designs: id1, id2, id3". Stop. Do not build until the user sends their picks.
 7. **Feedback at any time** (one command each, zero thinking needed):
    - "X is great for bakeries": `npm run -s remember -- <id> --good "bakeries"`
    - "X is wrong for law firms": `npm run -s remember -- <id> --bad "law firms"`

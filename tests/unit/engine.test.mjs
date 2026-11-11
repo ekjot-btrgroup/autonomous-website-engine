@@ -138,6 +138,16 @@ test('pipeline: add -> tag -> shortlist -> site -> copy (no installs)', () => {
   assert.ok(sl5.items.find((i) => i.id === id('navbar-glass')).reasons.some((r) => r.includes('used in 1')));
   assert.match(run('remember.mjs', 'list'), /Pick history: 1 briefs/);
 
+  // Dashboard snapshot: sites, briefs, memory and scoring weights exported for the admin pages.
+  run('showcase.mjs', 'init');
+  const snap = JSON.parse(fs.readFileSync(path.join(root, 'showcase/src/showcase/engine-data.json'), 'utf8'));
+  assert.equal(snap.sites.length, 1);
+  assert.equal(snap.sites[0].sections.length, 3);
+  assert.ok(snap.briefs.some((b) => b.slug === 'acme' && b.niche === 'architecture'));
+  assert.ok(snap.memory.counts.pick >= 1 && snap.memory.usage[id('navbar-glass')] === 1);
+  assert.equal(snap.scoring.weights.style, 24);
+  assert.ok(snap.presets.wellness && snap.niche_families.tech);
+
   // Admin dashboard overrides: admin tags win, hidden designs disappear, pinned designs gain points.
   const ovDir = path.join(root, 'showcase/src/overrides');
   fs.mkdirSync(ovDir, { recursive: true });
@@ -197,4 +207,32 @@ test('release: merges branch into main, tags it, writes a restorable note; sync 
   assert.match(run('sync'), /Pulled 1 commit/);
   assert.ok(fs.existsSync(path.join(work, 'admin.json')));
   fs.rmSync(base, { recursive: true, force: true });
+});
+
+test('multi-design zips split into designs; why lines are stored on the shortlist', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'multi-'));
+  for (const d of ['engine', 'templates', 'knowledge', 'engine.config.json']) fs.cpSync(path.join(REPO, d), path.join(root, d), { recursive: true });
+  for (const d of ['incoming', 'briefs', 'library/originals', 'pack/designs/hero-one', 'pack/designs/footer-two', 'flat']) fs.mkdirSync(path.join(root, d), { recursive: true });
+  const F = path.join(REPO, 'tests/fixtures/designs');
+  fs.cpSync(path.join(F, 'aurora-hero'), path.join(root, 'pack/designs/hero-one'), { recursive: true });
+  fs.copyFileSync(path.join(F, 'minimal-footer.tsx'), path.join(root, 'pack/designs/footer-two/footer.tsx'));
+  fs.copyFileSync(path.join(F, 'navbar-glass/navbar.tsx'), path.join(root, 'flat/navbar.tsx'));
+  fs.copyFileSync(path.join(F, 'simple-pricing/pricing.tsx'), path.join(root, 'flat/pricing.tsx'));
+  execFileSync('zip', ['-qr', path.join(root, 'incoming/pack.zip'), 'designs'], { cwd: path.join(root, 'pack') });
+  execFileSync('zip', ['-q', path.join(root, 'incoming/flat.zip'), 'navbar.tsx', 'pricing.tsx'], { cwd: path.join(root, 'flat') });
+  const run = (script, ...argv) => execFileSync('node', [path.join(root, 'engine', script), ...argv], { cwd: root, encoding: 'utf8', env: { ...process.env, ENGINE_ROOT: root } });
+  const out = run('add-designs.mjs', '--offline');
+  assert.match(out, /ok 4/, '2 zips -> 4 designs (folder pack + flat files)');
+  const ids = fs.readdirSync(path.join(root, 'showcase/src/designs')).filter((d) => !d.startsWith('.'));
+  for (const prefix of ['hero-one', 'footer-two', 'navbar', 'pricing']) assert.ok(ids.some((i) => i.startsWith(prefix)), prefix);
+  assert.ok(fs.existsSync(path.join(root, 'library/originals', ids.find((i) => i.startsWith('navbar')), 'navbar.tsx')), 'single-file original kept alone');
+  fs.writeFileSync(path.join(root, 'briefs/spa.json'), JSON.stringify({ slug: 'spa', company: 'Spa', niche: 'wellness', sections: ['navbar', 'hero', 'footer'] }));
+  run('shortlist.mjs', 'spa');
+  const listFile = path.join(root, 'showcase/src/shortlists/spa.json');
+  const first = JSON.parse(fs.readFileSync(listFile, 'utf8')).items[0].id;
+  fs.writeFileSync(path.join(root, 'why.json'), JSON.stringify({ [first]: 'Calm   layout that suits a spa.' }));
+  assert.match(run('shortlist.mjs', 'spa', '--why', 'why.json'), /Calm layout that suits a spa\./);
+  run('shortlist.mjs', 'spa'); // re-ranking keeps the line
+  assert.equal(JSON.parse(fs.readFileSync(listFile, 'utf8')).items.find((i) => i.id === first).why, 'Calm layout that suits a spa.');
+  fs.rmSync(root, { recursive: true, force: true });
 });

@@ -20,3 +20,5 @@ incoming/*
 !.env.example
 .DS_Store
 *.log
+# contact sheets and screenshots (regenerated with npm run sheet)
+reports/

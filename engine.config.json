@@ -1,7 +1,11 @@
 {
   "_note": "showcase_url: the published URL of the Lovable showcase project (e.g. https://design-showcase.lovable.app). Used to print live links.",
-  "showcase_url": "",
+  "showcase_url": "https://automated-website-system.lovable.app",
   "shortlist_size": 10,
   "fresh_slots": 2,
-  "max_per_section_type": 3
+  "max_per_section_type": 3,
+  "lovable": {
+    "enabled": false,
+    "_note": "false = Lovable parked: skills skip pushes to Lovable and show shortlists as a contact sheet image (npm run sheet)."
+  }
 }
