@@ -1,0 +1,28 @@
+# Republishes showcase/ to the Lovable showcase repo whenever main changes it
+# (admin dashboard edits, new designs, new shortlists). Zero Claude tokens, zero Lovable credits.
+# Opt-in: set repository variable SHOWCASE_REPO (owner/name) and secret SHOWCASE_TOKEN
+# (fine-grained token with Contents: read & write on the showcase repo). Without them this job is skipped.
+name: Publish showcase to Lovable
+on:
+  push:
+    branches: [main]
+    paths: ['showcase/**']
+  workflow_dispatch:
+concurrency: publish-showcase
+jobs:
+  publish:
+    if: ${{ vars.SHOWCASE_REPO != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Push showcase/ to the Lovable repo
+        env:
+          TOKEN: ${{ secrets.SHOWCASE_TOKEN }}
+          REPO: ${{ vars.SHOWCASE_REPO }}
+        run: |
+          git config --global user.email "website-engine@users.noreply.github.com"
+          git config --global user.name "Website Engine"
+          node engine/sync.mjs push showcase --repo "https://x-access-token:${TOKEN}@github.com/${REPO}.git"

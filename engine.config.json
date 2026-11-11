@@ -1,0 +1,7 @@
+{
+  "_note": "showcase_url: the published URL of the Lovable showcase project (e.g. https://design-showcase.lovable.app). Used to print live links.",
+  "showcase_url": "",
+  "shortlist_size": 10,
+  "fresh_slots": 2,
+  "max_per_section_type": 3
+}

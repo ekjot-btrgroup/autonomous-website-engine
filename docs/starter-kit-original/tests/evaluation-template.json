@@ -1,0 +1,24 @@
+{
+  "brief_id": "replace-me",
+  "retrieval_precision_notes": [],
+  "top10": [
+    {
+      "design_id": "D-...",
+      "rank": 1,
+      "reason": "evidence-based",
+      "confidence": "medium"
+    }
+  ],
+  "coverage_gaps": [],
+  "technical_risks": [],
+  "preview_status_summary": {},
+  "human_selection_ids": [],
+  "generation_result": null,
+  "qa": {
+    "passed": [],
+    "failed": [],
+    "skipped": [],
+    "unverified": []
+  },
+  "improvements": []
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "serene-spa",
+  "company": "Serene Spa",
+  "niche": "wellness",
+  "audience": "busy professionals, 30-55, who want to switch off",
+  "style": "calm, minimal, organic, premium",
+  "tone": "warm, reassuring, unhurried",
+  "goals": ["appointments", "trust"],
+  "sections": ["navbar", "hero", "services", "about", "testimonials", "cta", "footer"],
+  "animations": "subtle",
+  "colors": { "primary": "#4a6b5d", "accent": "#d8c3a5" },
+  "fonts": { "heading": "Cormorant Garamond", "body": "Inter" },
+  "scheme": "light",
+  "media_available": ["photo"],
+  "profile": { "tone": 3, "energy": 1, "luxury": 4, "density": 1, "warmth": 5, "modernity": 3 },
+  "avoid": "brutalist, neon",
+  "picks": 3,
+  "facts": "Day spa in Bristol since 2015. Massage, facials, sauna. Open 7 days."
+}

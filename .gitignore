@@ -1,0 +1,22 @@
+# dependencies and builds (every app folder)
+node_modules/
+dist/
+package-lock.json
+bun.lockb
+bun.lock
+yarn.lock
+pnpm-lock.yaml
+# engine scratch
+.cache/
+.shots/
+*.tmp
+# drop zone: designs are preserved in library/originals after `npm run add`
+incoming/*
+!incoming/.gitkeep
+!incoming/README.md
+# secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
