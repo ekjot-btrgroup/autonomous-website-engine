@@ -1,5 +1,5 @@
 {
-  "_note": "LOCAL EDITION: delivery html = the 10 designs and the final 3 are HTML files (npm run export). No Lovable needed. release_target: this branch.",
+  "_note": "LOCAL EDITION: delivery html = the 10 designs and the final 3 are HTML files. No Lovable needed. release_target: this branch.",
   "delivery": "html",
   "release_target": "autonomous-website-engine-local",
   "showcase_url": "https://automated-website-system.lovable.app",
