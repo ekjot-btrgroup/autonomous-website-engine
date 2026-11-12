@@ -11,11 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f7f6f2; --surface:#ecebe5; --ink:#111315; --muted:#55585c; --accent:#f2d000; --line:#dcdad3;
-  --paper:#ffffff; --ink-2:#1b1e21; --on-ink:#f7f6f2; --on-ink-muted:#b4b6b8; --line-ink:#2c3034;
+  --bg:#f7f6f2; --surface:#e6e4dc; --ink:#111315; --muted:#55585c; --accent:#f2d000; --line:#dcdad3;
+  --paper:#ffffff; --on-ink:#f7f6f2; --on-ink-muted:#b4b6b8; --line-ink:#33373b; --perf:#a9a7a0;
   --display:"Inter Tight", "Inter", ui-sans-serif, sans-serif;
   --text:"Inter", ui-sans-serif, sans-serif;
-  /* six sizes */
+  /* the six type sizes */
   --fs-display:clamp(2.75rem, 1.55rem + 4.6vw, 5rem);
   --fs-h2:clamp(2.125rem, 1.45rem + 2.5vw, 3.25rem);
   --fs-h3:1.375rem;
@@ -26,10 +26,13 @@
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px; --s10:128px;
   --r-xl:24px; --r-lg:16px; --r-md:12px; --r-sm:8px; --pill:999px;
   --max:1240px; --gutter:20px; --section:80px;
+  /* one ledger grid: 4 + 8 columns; every right-hand block starts on the 8-column line */
+  --split:minmax(0,4fr) minmax(0,8fr); --split-gap:var(--s7);
+  --notch:12px;
   --ease:cubic-bezier(.22,1,.36,1);
-  --shadow:0 1px 2px rgba(17,19,21,.06), 0 6px 16px rgba(17,19,21,.07), 0 24px 48px rgba(17,19,21,.08);
 }
 @media (min-width:768px){ :root{ --gutter:40px; --section:128px; } }
+@media (min-width:1024px){ :root{ --split-gap:var(--s9); } }
 
 *,*::before,*::after{ box-sizing:border-box; }
 html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:80px; }
@@ -40,7 +43,9 @@ main img{ filter:saturate(.85) contrast(1.05); }
 a{ color:inherit; }
 h1,h2,h3{ font-family:var(--display); font-weight:500; margin:0; text-wrap:balance; }
 p{ margin:0; text-wrap:pretty; }
-ul,ol{ margin:0; padding:0; list-style:none; }
+ul,ol,dl,dd{ margin:0; padding:0; list-style:none; }
+fieldset{ border:0; margin:0; padding:0; min-width:0; }
+legend{ padding:0; }
 button,input,select{ font:inherit; color:inherit; }
 :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; border-radius:6px; }
 .on-ink :focus-visible{ outline-color:var(--accent); }
@@ -50,10 +55,13 @@ button,input,select{ font:inherit; color:inherit; }
 .skip:focus{ top:var(--s4); }
 .wrap{ width:100%; max-width:calc(var(--max) + 2 * var(--gutter)); margin-inline:auto; padding-inline:var(--gutter); }
 .section{ padding-block:var(--section); }
+.band{ background:var(--surface); border-block:1px solid var(--line); }
 .label{ font-family:var(--text); font-size:var(--fs-label); font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
 .lead{ color:var(--muted); max-width:52ch; }
 h2{ font-size:var(--fs-h2); line-height:1.08; letter-spacing:-.03em; }
 h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
+.split{ display:grid; grid-template-columns:var(--split); column-gap:var(--split-gap); }
+@media (max-width:899px){ .split{ grid-template-columns:minmax(0,1fr); } }
 
 /* buttons */
 .btn{ display:inline-flex; align-items:center; justify-content:center; gap:var(--s2); min-height:48px; padding:0 var(--s5); border-radius:var(--pill); border:1px solid transparent; font-family:var(--display); font-size:var(--fs-body); font-weight:500; letter-spacing:-.005em; text-decoration:none; cursor:pointer; white-space:nowrap; transition:background-color .2s ease, border-color .2s ease, transform .2s var(--ease), color .2s ease; }
@@ -62,8 +70,6 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .btn:active{ transform:scale(.98); }
 .btn--book{ background:var(--accent); color:var(--ink); }
 .btn--book:hover{ background:#ffdf1f; }
-.btn--ink{ background:var(--ink); color:var(--on-ink); }
-.btn--ink:hover{ background:#2a2e32; }
 .btn--line{ border-color:var(--line); background:transparent; color:var(--ink); }
 .btn--line:hover{ border-color:var(--ink); }
 .btn--sm{ min-height:44px; padding:0 var(--s4); font-size:var(--fs-small); }
@@ -81,7 +87,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .brand__mark{ width:32px; height:32px; flex:none; }
 .nav{ display:flex; align-items:center; gap:var(--s6); }
 .nav__links{ display:flex; gap:var(--s5); }
-.nav__links a{ font-size:var(--fs-small); font-weight:500; text-decoration:none; color:var(--ink); padding:var(--s2) 0; position:relative; }
+.nav__links a{ font-size:var(--fs-small); font-weight:500; text-decoration:none; padding:var(--s2) 0; position:relative; }
 .nav__links a::after{ content:""; position:absolute; left:0; right:0; bottom:2px; height:1px; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease); }
 .nav__links a:hover::after{ transform:scaleX(1); }
 .status{ display:inline-flex; align-items:center; gap:var(--s2); font-size:var(--fs-small); color:var(--muted); }
@@ -102,45 +108,48 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 }
 @media (max-width:479px){ .bar .btn--book{ display:none; } }
 
-/* hero: headline on paper, inset 2:1 photo, a real tear-off ticket, shop facts on the rule below */
-.hero{ padding-top:var(--s8); padding-bottom:var(--s9); }
-.hero__head{ display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s5) var(--s7); align-items:end; padding-bottom:var(--s7); }
-.hero__head .label{ margin-bottom:var(--s4); }
-.hero h1{ font-size:var(--fs-display); line-height:1.05; letter-spacing:-.025em; font-weight:500; max-width:12ch; }
-.hero__lead{ color:var(--muted); max-width:44ch; }
-.hero__actions{ display:flex; flex-wrap:wrap; align-items:center; gap:var(--s3) var(--s5); margin-top:var(--s5); }
-.hero__media{ position:relative; }
-.hero__photo{ margin:0; border-radius:var(--r-md); overflow:hidden; aspect-ratio:2/1; background:var(--surface); }
-.hero__photo img{ width:100%; height:100%; object-fit:cover; object-position:50% 50%; }
-.hero__facts{ display:flex; min-height:var(--s9); margin-right:calc(var(--ticket) + var(--s7)); }
-.hero__facts li{ flex:1 1 0; min-width:0; display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s5) var(--s5) 0 0; }
-.hero__facts li+li{ padding-left:var(--s5); border-left:1px solid var(--line); }
-.hero__facts svg{ width:22px; height:22px; flex:none; margin-top:2px; }
-.hero__facts b{ display:block; font-weight:500; }
-.hero__facts span{ color:var(--muted); font-size:var(--fs-small); }
-:root{ --ticket:392px; --notch:12px; }
+/* section header: one system for the whole page.
+   Ink rule, number + label in the 4-column, heading (and intro) on the 8-column line. */
+.sh{ border-top:1px solid var(--ink); padding-top:var(--s4); margin-bottom:var(--s8); row-gap:var(--s4); }
+.sh__meta{ display:flex; gap:var(--s3); align-items:baseline; padding-top:6px; }
+.sh__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; }
+.sh .lead{ margin-top:var(--s5); }
+.on-ink .sh{ border-top-color:var(--on-ink); }
+.on-ink .sh .label{ color:var(--on-ink-muted); }
+.on-ink .sh .lead{ color:var(--on-ink-muted); }
+@media (max-width:899px){ .sh{ margin-bottom:var(--s7); } }
 
-/* the ticket: two halves joined by a perforation, notches cut at the tear line */
-.ticket{ filter:drop-shadow(0 1px 1px rgba(17,19,21,.07)) drop-shadow(0 8px 18px rgba(17,19,21,.09)) drop-shadow(0 22px 36px rgba(17,19,21,.07)); }
-.ticket__top, .ticket__stub{ background:var(--paper); }
-.ticket__top{ border-radius:var(--r-md) var(--r-md) 0 0;
-  -webkit-mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px));
-  mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
-.ticket__stub{ position:relative; border-radius:0 0 var(--r-md) var(--r-md);
-  -webkit-mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px));
-  mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
-.ticket__stub::before{ content:""; position:absolute; top:0; left:calc(var(--notch) + 6px); right:calc(var(--notch) + 6px); border-top:1px dashed #a9a7a0; }
-.ticket__head{ display:flex; justify-content:space-between; align-items:center; gap:var(--s3); min-height:48px; padding:0 var(--s5); border-bottom:1px solid var(--line); }
-.ticket__title{ font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--ink); }
-.ticket__title span{ color:var(--muted); }
-.ticket__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; color:var(--ink); font-variant-numeric:tabular-nums; }
+/* HERO: a ledger page. Ruled head with the h1 on the 8-column line,
+   then one joined sheet: the photo runs flush into a landscape ticket. */
+.hero{ padding-top:var(--s7); padding-bottom:var(--s9); }
+.hero__head{ border-top:1px solid var(--ink); padding-top:var(--s4); grid-template-areas:"eye h1" "side h1"; grid-template-rows:auto 1fr; row-gap:var(--s5); }
+.hero__eye{ grid-area:eye; padding-top:6px; }
+.hero h1{ grid-area:h1; align-self:end; font-size:var(--fs-display); line-height:1.02; letter-spacing:-.03em; }
+.hero__side{ grid-area:side; align-self:end; }
+.hero__side .lead{ max-width:36ch; }
+.hero__side .link-arrow{ margin-top:var(--s3); }
 
-.pick{ position:absolute; z-index:3; right:0; bottom:calc(-1 * var(--s9)); width:var(--ticket); }
-.pick .ticket__top{ padding-bottom:var(--s5); }
-.pick fieldset{ border:0; margin:var(--s4) var(--s5) 0; padding:0; min-width:0; }
-.pick .ticket__stub{ padding:var(--s5) var(--s5) var(--s5); }
-.pick .ticket__stub fieldset{ margin:0; }
-.pick legend{ padding:0; margin:0 0 var(--s2); }
+.sheet{ display:grid; grid-template-columns:var(--split); column-gap:var(--split-gap); margin-top:var(--s7); min-height:460px;
+  filter:drop-shadow(0 1px 1px rgba(17,19,21,.06)) drop-shadow(0 10px 24px rgba(17,19,21,.08)); }
+.sheet__photo{ position:relative; margin:0 calc(-1 * var(--split-gap)) 0 0; border-radius:var(--r-md) 0 0 var(--r-md); overflow:hidden; background:var(--surface); }
+.sheet__photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 55%; }
+
+/* the ticket: a main part and a stub, joined by a perforation with two cut notches */
+.tk{ display:grid; grid-template-columns:minmax(0,1fr) 312px; color:var(--ink); }
+.tk__main, .tk__stub{ background:var(--paper); display:flex; flex-direction:column; }
+.tk__main{ padding:0 var(--s6) var(--s6);
+  -webkit-mask:radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px));
+  mask:radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+.tk__stub{ position:relative; padding:var(--s5) var(--s6) var(--s6); border-radius:0 var(--r-md) var(--r-md) 0;
+  -webkit-mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px));
+  mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+.tk__stub::before{ content:""; position:absolute; left:0; top:calc(var(--notch) + 6px); bottom:calc(var(--notch) + 6px); border-left:1px dashed var(--perf); }
+.tk__head{ display:flex; justify-content:space-between; align-items:center; gap:var(--s3); min-height:56px; border-bottom:1px solid var(--line); margin-bottom:var(--s5); }
+.tk__head .label{ color:var(--ink); }
+.tk__head .label span{ color:var(--muted); }
+.tk legend, .tk .legend{ display:block; margin:0 0 var(--s2); }
+.tk__stub .btn{ width:100%; margin-top:auto; }
+
 .rows{ border-top:1px solid var(--line); }
 .row-opt{ position:relative; display:grid; grid-template-columns:20px 1fr auto; align-items:center; gap:var(--s3); min-height:48px; padding:0 var(--s2); border-bottom:1px solid var(--line); cursor:pointer; transition:background-color .2s ease; }
 .row-opt:hover{ background:#f6f5f1; }
@@ -160,47 +169,50 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .chip:hover span{ border-color:#a9aaa6; }
 .chip input:checked + span{ background:var(--ink); border-color:var(--ink); color:var(--on-ink); }
 .chip input:focus-visible + span{ outline:2px solid var(--ink); outline-offset:2px; }
-.pick .btn{ width:100%; margin-top:var(--s5); }
-.pick__note{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); text-align:center; }
+/* the small print on the stub carries the shop facts */
+.terms{ margin:var(--s5) 0; border-top:1px solid var(--line); }
+.terms div{ display:flex; justify-content:space-between; gap:var(--s3); padding:var(--s2) 0; border-bottom:1px solid var(--line); font-size:var(--fs-small); }
+.terms dt{ color:var(--muted); }
+.terms dd{ font-weight:500; text-align:right; }
 #pick{ scroll-margin-top:96px; }
 
 @media (max-width:1023px){
-  .hero{ padding-top:var(--s7); padding-bottom:var(--s8); }
-  .hero__head{ grid-template-columns:1fr; padding-bottom:var(--s6); }
-  .pick{ position:relative; right:auto; bottom:auto; width:auto; max-width:480px; margin:calc(-1 * var(--s7)) var(--s5) 0 auto; }
-  .hero__facts{ margin-right:0; margin-top:var(--s6); border-top:1px solid var(--line); min-height:0; }
+  .hero{ padding-top:var(--s6); padding-bottom:var(--s8); }
+  .sheet{ grid-template-columns:minmax(0,1fr); min-height:0; margin-top:var(--s6); }
+  .sheet__photo{ margin:0; aspect-ratio:16/9; border-radius:var(--r-md) var(--r-md) 0 0; }
+  .sheet__photo img{ object-position:50% 45%; }
+  .sheet .tk__stub{ border-radius:0 0 var(--r-md) 0; }
+  .sheet .tk__main{ border-radius:0 0 0 var(--r-md); }
 }
-@media (max-width:599px){
-  .hero__photo{ aspect-ratio:4/3; }
-  .pick{ max-width:none; margin:calc(-1 * var(--s6)) var(--s3) 0; }
-  .hero__facts{ flex-direction:column; }
-  .hero__facts li, .hero__facts li+li{ padding:var(--s4) 0; border-left:0; border-bottom:1px solid var(--line); }
+@media (max-width:899px){
+  .hero__head{ grid-template-areas:"eye" "h1" "side"; grid-template-rows:auto; row-gap:var(--s4); }
+}
+/* narrow: the ticket turns upright; perforation runs across */
+@media (max-width:639px){
+  .sheet__photo{ aspect-ratio:4/3; }
+  .tk{ grid-template-columns:minmax(0,1fr); }
+  .tk__main{ padding:0 var(--s5) var(--s5); border-radius:0 !important;
+    -webkit-mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px));
+    mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+  .tk__stub{ padding:var(--s5); border-radius:0 0 var(--r-md) var(--r-md) !important;
+    -webkit-mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px));
+    mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+  .tk__stub::before{ left:calc(var(--notch) + 6px); right:calc(var(--notch) + 6px); top:0; bottom:auto; border-left:0; border-top:1px dashed var(--perf); }
 }
 
-/* section heads: eyebrow + H2 left, paragraph right (Services only) */
-.head{ display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s5) var(--s7); align-items:end; margin-bottom:var(--s8); }
-.head .label{ margin-bottom:var(--s4); }
-.head .lead{ justify-self:start; }
-@media (max-width:899px){ .head{ grid-template-columns:1fr; margin-bottom:var(--s7); } }
-/* ledger heads: rule, page number, H2 (The work, Barbers, Questions) */
-.lhead{ display:grid; grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:var(--s4) var(--s9); align-items:baseline; border-top:1px solid var(--ink); padding-top:var(--s4); margin-bottom:var(--s7); }
-.lhead__meta{ display:flex; gap:var(--s4); align-items:baseline; }
-.lhead__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; }
-.lhead h2{ font-size:2.5rem; line-height:1.1; }
-@media (max-width:899px){ .lhead{ grid-template-columns:1fr; } .lhead h2{ font-size:2rem; } }
-
-/* services: three equal cards, 4:3 photos */
-.band{ background:var(--surface); }
+/* services: three equal cards, 4:3 photos, price on the number row */
 .svc-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:var(--s5); align-items:stretch; }
 .card{ background:var(--paper); border-radius:var(--r-lg); padding:var(--s2); display:flex; flex-direction:column; transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
 .card:hover{ transform:translateY(-3px); box-shadow:0 1px 2px rgba(17,19,21,.05), 0 12px 32px rgba(17,19,21,.08); }
 .card__media{ position:relative; border-radius:var(--r-sm); overflow:hidden; aspect-ratio:4/3; background:var(--surface); flex:none; }
 .card__media img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .8s var(--ease); }
 .card:hover .card__media img{ transform:scale(1.03); }
-.card__body{ padding:var(--s4) var(--s3) var(--s2); display:flex; flex-direction:column; flex:1; }
-.card__no{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; color:var(--muted); font-variant-numeric:tabular-nums; margin-bottom:var(--s2); }
+.card__body{ padding:var(--s4) var(--s3) var(--s3); display:flex; flex-direction:column; flex:1; }
+.card__top{ display:flex; justify-content:space-between; align-items:baseline; gap:var(--s3); padding-bottom:var(--s3); margin-bottom:var(--s3); border-bottom:1px solid var(--line); }
+.card__no{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; color:var(--muted); }
+.card__pr{ font-family:var(--display); font-size:var(--fs-h3); font-weight:500; letter-spacing:-.015em; }
+.card__pr.tbc{ font-family:var(--text); font-size:var(--fs-small); color:var(--muted); letter-spacing:0; }
 .card__body p{ margin-top:var(--s2); color:var(--muted); max-width:52ch; }
-.card__body .link-arrow{ margin-top:auto; padding-top:var(--s4); align-self:flex-start; }
 @media (max-width:899px){
   .svc-grid{ grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(300px, 46%); overflow-x:auto; scroll-snap-type:x mandatory; margin-inline:calc(-1 * var(--gutter)); padding-inline:var(--gutter); scroll-padding-inline:var(--gutter); padding-bottom:var(--s3); overscroll-behavior-x:contain; scrollbar-width:none; }
   .svc-grid::-webkit-scrollbar{ display:none; }
@@ -208,42 +220,31 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 }
 @media (max-width:599px){ .svc-grid{ grid-auto-columns:82%; } }
 
-/* ledger */
-.ledger-sec .grid{ display:grid; grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:var(--s7) var(--s9); align-items:start; }
-.ledger-intro{ position:sticky; top:112px; }
-.ledger-intro .label{ margin-bottom:var(--s4); }
-.ledger-intro .lead{ margin-top:var(--s5); }
-.ledger-intro .btn{ margin-top:var(--s6); }
+/* price ledger */
+.ledger-side{ position:sticky; top:112px; align-self:start; }
+.ledger-side .btn{ margin-top:var(--s6); }
 .ledger{ border-top:2px solid var(--ink); }
-.ledger__cols{ display:grid; grid-template-columns:56px 1fr auto 120px; gap:var(--s4); padding:var(--s3) 0; border-bottom:1px solid var(--line); }
+.ledger__cols{ display:grid; grid-template-columns:56px 1fr auto 96px; gap:var(--s4); padding:var(--s3) 0; border-bottom:1px solid var(--line); }
 .ledger__cols span{ font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:500; }
 .ledger__cols span:nth-child(3){ text-align:right; }
-.ledger__row{ display:grid; grid-template-columns:56px 1fr auto 120px; gap:var(--s4); align-items:center; padding:var(--s5) 0; border-bottom:1px solid var(--line); transition:background-color .2s ease; }
-.ledger__row:hover{ background:linear-gradient(90deg, rgba(236,235,229,0) 0%, rgba(236,235,229,.7) 12%, rgba(236,235,229,.7) 88%, rgba(236,235,229,0) 100%); }
+.ledger__row{ display:grid; grid-template-columns:56px 1fr auto 96px; gap:var(--s4); align-items:center; padding:var(--s5) 0; border-bottom:1px solid var(--line); transition:background-color .2s ease; }
+.ledger__row:hover{ background:linear-gradient(90deg, rgba(230,228,220,0) 0%, rgba(230,228,220,.6) 12%, rgba(230,228,220,.6) 88%, rgba(230,228,220,0) 100%); }
 .ledger__no{ font-family:var(--display); font-size:var(--fs-small); color:var(--muted); font-weight:500; }
-.ledger__svc h3{ font-size:var(--fs-h3); }
 .ledger__svc p{ color:var(--muted); font-size:var(--fs-small); margin-top:2px; }
-.ledger__svc .calc{ display:flex; flex-wrap:wrap; gap:var(--s1) var(--s3); margin-top:var(--s2); padding-top:var(--s2); border-top:1px dashed var(--line); font-size:var(--fs-small); color:var(--muted); max-width:34ch; }
-.ledger__svc .calc b{ font-weight:500; color:var(--ink); }
+.ledger__svc .calc{ display:inline-block; margin-top:var(--s2); padding-top:var(--s2); border-top:1px dashed var(--line); color:var(--ink); text-wrap:balance; }
 .ledger__amt{ font-family:var(--display); font-size:var(--fs-h2); font-weight:500; letter-spacing:-.035em; line-height:1; text-align:right; }
-.ledger__amt sup{ font-size:.42em; vertical-align:top; position:relative; top:.18em; margin-right:2px; letter-spacing:0; color:var(--muted); }
+.ledger__amt sup{ font-size:var(--fs-small); vertical-align:top; position:relative; top:.3em; margin-right:3px; letter-spacing:0; color:var(--muted); }
 .ledger__amt.tbc{ font-family:var(--text); font-size:var(--fs-small); font-weight:500; letter-spacing:0; color:var(--muted); line-height:1.4; }
 .ledger__go{ justify-self:end; }
-.tbc-s{ display:none; }
 .ledger__foot{ display:flex; justify-content:space-between; gap:var(--s4); flex-wrap:wrap; padding-top:var(--s4); font-size:var(--fs-small); color:var(--muted); }
-@media (max-width:899px){
-  .ledger-sec .grid{ grid-template-columns:1fr; }
-  .ledger-intro{ position:static; }
-}
+@media (max-width:899px){ .ledger-side{ position:static; margin-bottom:var(--s7); } }
 @media (max-width:599px){
   .ledger__cols{ display:none; }
   .ledger__row{ grid-template-columns:32px 1fr auto; row-gap:var(--s2); padding:var(--s5) 0 var(--s4); }
   .ledger__go{ grid-column:2 / -1; justify-self:start; }
-  .ledger__amt{ font-size:2.125rem; }
-  .tbc-l{ display:none; } .tbc-s{ display:inline; }
 }
 
-/* the work: an even strip of four 4:3 photos, captions underneath */
+/* the work: four 4:3 photos, numbered captions */
 .strip{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:var(--s5); }
 .shot{ margin:0; }
 .shot__img{ border-radius:var(--r-md); overflow:hidden; aspect-ratio:4/3; background:var(--paper); }
@@ -253,83 +254,75 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .shot figcaption .num{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; }
 @media (max-width:899px){ .strip{ grid-template-columns:1fr 1fr; gap:var(--s5) var(--s4); } }
 
-/* barbers: chair ledger with round portrait slots for the client's own photos */
-.chairs{ border-top:2px solid var(--ink); }
-.chair{ display:grid; grid-template-columns:112px 64px minmax(0,1fr) minmax(0,1fr) auto; gap:var(--s5); align-items:center; padding:var(--s4) 0; border-bottom:1px solid var(--line); }
-.chair__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; text-transform:uppercase; }
-.chair__ph{ width:64px; height:64px; border-radius:50%; border:1px dashed #a3a4a0; background:var(--surface); display:grid; place-items:center; color:#6f7174; }
-.chair__ph svg{ width:28px; height:28px; }
-.chair h3{ font-size:var(--fs-h3); }
-.chair p{ color:var(--muted); font-size:var(--fs-small); }
-.ph{ display:inline-block; font-size:var(--fs-label); font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); border:1px dashed #a3a4a0; border-radius:var(--pill); padding:3px 8px; white-space:nowrap; }
-@media (max-width:767px){
-  .chair{ grid-template-columns:64px minmax(0,1fr); grid-template-areas:"ph no" "ph nm" "ph sp"; gap:2px var(--s4); }
-  .chair__ph{ grid-area:ph; } .chair__no{ grid-area:no; } .chair h3{ grid-area:nm; } .chair p{ grid-area:sp; } .chair .ph{ display:none; }
-}
+/* barbers: a short interlude. One drawn placeholder frame + the chair register */
+.section--short{ padding-block:var(--s9); }
+@media (max-width:767px){ .section--short{ padding-block:var(--s8); } }
+.team-frame{ margin:0; }
+.team-frame__art{ position:relative; aspect-ratio:4/3; border-radius:var(--r-md); border:1px dashed #b3b1a9; background:var(--surface); display:grid; place-items:end center; overflow:hidden; }
+.team-frame__art svg{ width:88%; height:auto; color:var(--ink); }
+.team-frame__art .label{ position:absolute; left:var(--s4); top:var(--s3); }
+.team-frame figcaption{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); }
+.chairs{ border-top:2px solid var(--ink); margin-top:var(--s6); }
+.chairs li{ display:grid; grid-template-columns:96px minmax(0,1fr) minmax(0,1fr); gap:var(--s4); align-items:baseline; padding:var(--s3) 0; border-bottom:1px solid var(--line); font-size:var(--fs-small); }
+.chairs .no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
+.chairs .sp{ color:var(--muted); }
+.team-note{ max-width:44ch; }
+@media (max-width:899px){ .team-frame{ margin-top:var(--s7); order:2; } }
+@media (max-width:519px){ .chairs li{ grid-template-columns:80px minmax(0,1fr); } .chairs .sp{ grid-column:2; } }
 
-/* booking (dark): the ticket stub, carrying the hero choice */
+/* booking (dark band): hours in the 4-column, the ticket stub on the 8-column line */
 .book-sec{ padding:0 var(--s2); }
 .book{ background:var(--ink); color:var(--on-ink); border-radius:var(--r-xl); padding-block:var(--s10); }
-.book__grid{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:var(--s7) var(--s9); align-items:start; }
-.book__intro .label{ color:var(--on-ink-muted); margin-bottom:var(--s4); }
 .book h2{ color:var(--on-ink); }
-.book__lead{ margin-top:var(--s5); color:var(--on-ink-muted); max-width:42ch; }
-.hours{ margin-top:var(--s7); border-top:1px solid var(--line-ink); }
+.hours{ border-top:1px solid var(--line-ink); }
 .hours li{ display:flex; justify-content:space-between; gap:var(--s4); padding:var(--s3) 0; border-bottom:1px solid var(--line-ink); font-size:var(--fs-small); }
 .hours li span:first-child{ color:var(--on-ink-muted); }
 .hours li.is-today span{ color:var(--on-ink); }
 .hours li.is-today span:first-child::after{ content:" · today"; color:var(--accent); }
 .hours .hours__sum{ display:none; }
-@media (max-width:599px){ .hours .hours__sum{ display:flex; } .hours li[data-day="2"], .hours li[data-day="3"], .hours li[data-day="4"], .hours li[data-day="5"], .hours li[data-day="6"]{ display:none; } .hours{ margin-top:var(--s6); } }
 .book__addr{ margin-top:var(--s5); font-size:var(--fs-small); color:var(--on-ink-muted); }
 .book__addr a{ color:var(--on-ink); }
-.form{ color:var(--ink); filter:none; }
-.form .label{ color:var(--muted); }
-.form .ticket__top{ padding:var(--s5) var(--s6) var(--s6); }
-.form__sum{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:var(--s2) var(--s4); align-items:end; }
-.form__sum .label{ grid-column:1 / -1; display:flex; justify-content:space-between; }
-.sum{ font-family:var(--display); font-size:1.75rem; font-weight:500; letter-spacing:-.02em; line-height:1.2; }
+.form .tk__head{ margin-bottom:var(--s4); }
+.form .tk__main{ padding-bottom:var(--s5); }
+.sum{ font-family:var(--display); font-size:var(--fs-h3); font-weight:500; letter-spacing:-.015em; line-height:1.3; padding-bottom:var(--s4); margin-bottom:var(--s4); border-bottom:1px solid var(--line); }
 .sum i{ font-style:normal; color:#8a8c8f; padding:0 .2em; }
-.form .ticket__stub{ padding:var(--s6); }
-.fields{ display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr); gap:var(--s4); margin-bottom:var(--s5); }
-.field label{ display:block; margin-bottom:var(--s2); }
-.field input, .field select{ width:100%; min-height:48px; border:1px solid var(--line); border-radius:var(--r-sm); background:var(--bg); padding:0 var(--s3); font-size:var(--fs-body); transition:border-color .2s ease, background-color .2s ease; }
-.field select{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23111315' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:36px; }
-.field input:hover, .field select:hover{ border-color:#b9bab5; }
-.field input:focus, .field select:focus{ outline:none; border-color:var(--ink); background-color:var(--paper); }
-.form .btn{ width:100%; }
-.form__note{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); text-align:center; }
-.form__done{ margin-top:var(--s4); padding:var(--s3) var(--s4); border-radius:var(--r-sm); background:var(--surface); font-size:var(--fs-small); }
-@media (max-width:1023px){ .fields{ grid-template-columns:1fr 1fr; } .fields .field:first-child{ grid-column:1 / -1; } }
-@media (max-width:899px){ .book__grid{ grid-template-columns:1fr; } .book{ padding-block:var(--s8); } }
+.line-field{ display:block; margin-bottom:var(--s5); }
+.line-field .label{ display:block; }
+.line-field input{ width:100%; min-height:48px; border:0; border-bottom:1px solid var(--ink); background:transparent; padding:0 2px; font-size:var(--fs-body); border-radius:0; transition:border-color .2s ease, background-color .2s ease; }
+.line-field input:hover{ background:#f6f5f1; }
+.line-field input:focus{ outline:none; border-bottom:2px solid var(--ink); background:#f6f5f1; }
+.form__note{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); }
+.form__done{ margin-top:var(--s3); padding:var(--s3); border-radius:var(--r-sm); background:var(--surface); font-size:var(--fs-small); }
+.form .tk__stub .btn{ margin-top:var(--s2); }
+.book__side{ margin-bottom:0; }
+@media (max-width:899px){ .book{ padding-block:var(--s8); } .book__side{ margin-bottom:var(--s7); } }
 @media (max-width:767px){ .book-sec{ padding:0; } .book{ border-radius:0; } }
-@media (max-width:519px){ .form .ticket__top, .form .ticket__stub{ padding-inline:var(--s5); } .fields{ grid-template-columns:1fr; } .sum{ font-size:1.5rem; } }
+@media (max-width:1023px) and (min-width:640px){ .form.tk{ grid-template-columns:minmax(0,1fr) 280px; } }
+@media (max-width:639px){ .form .tk__main, .form .tk__stub{ border-radius:0; } .form .tk__main{ border-radius:var(--r-md) var(--r-md) 0 0 !important; } }
+@media (max-width:599px){ .hours .hours__sum{ display:flex; } .hours li[data-day]:not([data-day="0,1"]){ display:none; } }
 
-/* faq: numbered question ledger, answers always visible */
-.qs{ border-top:2px solid var(--ink); margin:0; }
-.q{ display:grid; grid-template-columns:56px minmax(0,5fr) minmax(0,6fr); gap:var(--s4) var(--s6); padding:var(--s5) 0; border-bottom:1px solid var(--line); align-items:baseline; }
-.q__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; }
-.q h3{ font-family:var(--display); font-size:var(--fs-h3); font-weight:500; letter-spacing:-.015em; line-height:1.3; }
+/* faq: question in the 4-column, answer on the 8-column line */
+.qs{ border-top:2px solid var(--ink); }
+.q{ padding:var(--s5) 0; border-bottom:1px solid var(--line); row-gap:var(--s2); align-items:baseline; }
+.q__no{ display:block; font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; margin-bottom:var(--s2); }
 .q p{ color:var(--muted); max-width:56ch; }
-@media (max-width:767px){ .q{ grid-template-columns:40px minmax(0,1fr); row-gap:var(--s2); } .q p{ grid-column:2; } }
 
-/* visit: address plate + details */
-.visit{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:var(--s7) var(--s9); align-items:stretch; }
-.plate{ background:var(--paper); border:1px solid var(--line); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; justify-content:space-between; gap:var(--s7); min-height:360px; }
+/* visit: route ledger on the 8-column line, address plate in the 4-column */
+.plate{ background:var(--paper); border:1px solid var(--line); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; justify-content:space-between; gap:var(--s7); }
 .plate__top{ display:flex; justify-content:space-between; align-items:center; gap:var(--s3); border-bottom:1px solid var(--line); padding-bottom:var(--s3); }
 .plate__no{ font-family:var(--display); font-size:var(--fs-display); font-weight:500; letter-spacing:-.03em; line-height:1; }
 .plate__no small{ font-size:var(--fs-h3); letter-spacing:-.01em; color:var(--muted); margin-right:var(--s2); vertical-align:top; position:relative; top:.4em; }
 .plate__st{ font-family:var(--display); font-size:var(--fs-h2); font-weight:500; letter-spacing:-.03em; line-height:1.08; margin-top:var(--s2); }
 .plate__foot{ display:flex; justify-content:space-between; gap:var(--s3); flex-wrap:wrap; border-top:1px solid var(--line); padding-top:var(--s3); font-size:var(--fs-small); color:var(--muted); }
-.visit__info{ display:flex; flex-direction:column; justify-content:space-between; gap:var(--s6); }
-.visit__info .label{ margin-bottom:var(--s4); }
-.visit__info .lead{ margin-top:var(--s4); }
-.dl{ border-top:1px solid var(--line); }
-.dl div{ display:grid; grid-template-columns:110px 1fr; gap:var(--s4); padding:var(--s3) 0; border-bottom:1px solid var(--line); font-size:var(--fs-small); }
-.dl dt{ color:var(--muted); }
-.dl dd{ margin:0; }
-.visit__actions{ display:flex; flex-wrap:wrap; gap:var(--s3); }
-@media (max-width:899px){ .visit{ grid-template-columns:1fr; } .plate{ min-height:0; } }
+.route{ border-top:2px solid var(--ink); counter-reset:step; }
+.route li{ display:grid; grid-template-columns:56px minmax(0,1fr) auto; gap:var(--s4); align-items:baseline; padding:var(--s5) 0; border-bottom:1px solid var(--line); }
+.route .no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; }
+.route .when{ font-size:var(--fs-small); color:var(--muted); text-align:right; }
+.reach{ display:flex; flex-wrap:wrap; gap:var(--s2) var(--s6); margin-top:var(--s5); font-size:var(--fs-small); color:var(--muted); }
+.reach b{ font-weight:500; color:var(--ink); margin-right:var(--s2); }
+.visit__actions{ display:flex; flex-wrap:wrap; gap:var(--s3); margin-top:var(--s6); }
+@media (max-width:899px){ .visit-info{ order:-1; } .plate{ margin-top:var(--s7); padding:var(--s5); gap:var(--s6); } }
+@media (max-width:519px){ .route li{ grid-template-columns:40px minmax(0,1fr); } .route .when{ grid-column:2; text-align:left; } }
 
 /* footer */
 .foot{ border-top:1px solid var(--line); padding:var(--s8) 0 var(--s6); }
@@ -344,7 +337,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 @media (max-width:899px){ .foot__grid{ grid-template-columns:1fr 1fr; } .foot__brand{ grid-column:1 / -1; } }
 @media (max-width:599px){ .foot__contact{ grid-column:1 / -1; } }
 
-/* phone sticky book bar */
+/* phone book bar */
 .dock{ position:fixed; left:var(--s3); right:var(--s3); bottom:calc(var(--s3) + env(safe-area-inset-bottom)); z-index:40; display:none; align-items:center; justify-content:space-between; gap:var(--s3); padding:var(--s2) var(--s2) var(--s2) var(--s4); background:var(--ink); color:var(--on-ink); border-radius:var(--pill); box-shadow:0 8px 24px rgba(17,19,21,.25); transform:translateY(140%); visibility:hidden; opacity:0; transition:transform .45s var(--ease), opacity .3s ease, visibility 0s linear .45s; }
 .dock p{ font-size:var(--fs-small); color:var(--on-ink-muted); line-height:1.3; }
 .dock p b{ color:var(--on-ink); font-weight:500; display:block; }
@@ -366,13 +359,11 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
-  <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 20.5V4.5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16M3.5 20.5h17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14.5" cy="12.5" r="1" fill="currentColor"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
   <symbol id="i-up" viewBox="0 0 20 20"><path d="M10 16V5m-4.5 4.5L10 5l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-down" viewBox="0 0 20 20"><path d="M10 4v11m-4.5-4.5L10 15l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-menu" viewBox="0 0 20 20"><path d="M3 6.5h14M3 13.5h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
   <symbol id="mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#111315"/><rect x="7" y="9" width="18" height="3" rx="1.5" fill="#f7f6f2"/><rect x="7" y="14.5" width="13" height="3" rx="1.5" fill="#f7f6f2" opacity=".8"/><rect x="7" y="20" width="7" height="3" rx="1.5" fill="#f7f6f2" opacity=".55"/></symbol>
+  <symbol id="chair" viewBox="0 0 100 150"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="38" y="2" width="24" height="13" rx="5"/><path d="M50 15v6"/><rect x="28" y="21" width="44" height="58" rx="9"/><rect x="21" y="79" width="58" height="15" rx="6"/><rect x="11" y="61" width="21" height="8" rx="4"/><rect x="68" y="61" width="21" height="8" rx="4"/><path d="M19 69v18M81 69v18"/><path d="M44 94v28h12V94"/><path d="M30 110h40"/><ellipse cx="50" cy="132" rx="34" ry="6"/></g></symbol>
 </svg>
 
 <header class="site-header" id="top">
@@ -410,31 +401,26 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 
 <main id="main">
 
-  <!-- HERO -->
+  <!-- HERO: ledger head + one joined sheet (photo | ticket | stub) -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <div class="hero__head">
-        <div>
-          <p class="label">Neighbourhood barbershop · King Street, Leeds</p>
-          <h1 id="hero-title">Booked, seated, sorted.</h1>
-        </div>
-        <div>
-          <p class="hero__lead">Cuts, beard trims and hot-towel shaves at 12 King Street. Say what you want, sit back, and leave looking like you meant it.</p>
-          <div class="hero__actions">
-            <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            <a class="link-arrow" href="#prices"><span>See the price list</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
+      <div class="hero__head split">
+        <p class="label hero__eye">Barbershop · King Street, Leeds</p>
+        <h1 id="hero-title">Booked, seated, sorted.</h1>
+        <div class="hero__side">
+          <p class="lead">Cuts, beard trims and hot-towel shaves at 12 King Street. Say what you want, sit back, and leave looking like you meant it.</p>
+          <a class="link-arrow" href="#prices"><span>See the price list</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
 
-      <div class="hero__media">
-        <figure class="hero__photo"><img src="img/hero.jpg" width="2000" height="1000" alt="A bright barbershop with white barber chairs, light wood mirror stations and barbers at work" fetchpriority="high"></figure>
+      <div class="sheet">
+        <figure class="sheet__photo"><img src="img/hero.jpg" width="1200" height="1240" alt="Side view of a barber trimming a customer’s beard line with scissors, the customer in a striped cape" fetchpriority="high"></figure>
 
-        <form class="pick ticket" id="pick" action="#book" aria-labelledby="pick-title">
-          <div class="ticket__top">
-            <div class="ticket__head">
-              <p class="ticket__title" id="pick-title">Ticket <span>· <span data-ticket-date>Book a chair</span></span></p>
-              <p class="ticket__no" aria-label="Ticket number 12, after 12 King Street">No. 0012</p>
+        <form class="tk" id="pick" action="#book" aria-labelledby="pick-title">
+          <div class="tk__main">
+            <div class="tk__head">
+              <p class="label" id="pick-title">Ticket <span>· <span data-ticket-date>Book a chair</span></span></p>
+              <p class="label">Fade &amp; Co</p>
             </div>
             <fieldset>
               <legend class="label">What are you in for?</legend>
@@ -446,7 +432,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
               </div>
             </fieldset>
           </div>
-          <div class="ticket__stub">
+          <div class="tk__stub">
             <fieldset>
               <legend class="label">Which day?</legend>
               <div class="days">
@@ -457,236 +443,247 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
                 <label class="chip"><input type="radio" name="h-day" value="Sat"><span>Sat</span></label>
               </div>
             </fieldset>
+            <dl class="terms" aria-label="Shop details">
+              <div><dt>Open</dt><dd class="num">Tue–Sat, 9–7</dd></div>
+              <div><dt>Walk-ins</dt><dd>Before noon</dd></div>
+              <div><dt>Where</dt><dd>12 King Street</dd></div>
+            </dl>
             <button class="btn btn--book" type="submit">Book a chair · <span class="num" data-pick-price>£24</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-            <p class="pick__note">Walk-ins welcome before noon.</p>
           </div>
         </form>
       </div>
-
-      <ul class="hero__facts" aria-label="Shop details">
-        <li data-reveal><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Open Tue–Sat</b><span class="num">9am to 7pm</span></div></li>
-        <li data-reveal style="--i:1"><svg aria-hidden="true"><use href="#i-door"/></svg><div><b>Walk in before noon</b><span>No booking needed till 12</span></div></li>
-        <li data-reveal style="--i:2"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>12 King Street</b><span>Leeds</span></div></li>
-      </ul>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- 01 SERVICES -->
   <section class="section band" id="services" aria-labelledby="svc-title">
     <div class="wrap">
-      <div class="head">
-        <div data-reveal>
-          <p class="label"><span class="num">01</span> · Services</p>
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">01</span><span class="label">Services</span></p>
+        <div>
           <h2 id="svc-title">Cuts, beards, hot towels. That’s it.</h2>
+          <p class="lead">A short menu on purpose: fewer things, done every day, done well.</p>
         </div>
-        <p class="lead" data-reveal style="--i:1">The whole menu fits on one line, and it’s short on purpose: fewer things, done every day, done well.</p>
       </div>
 
       <div class="svc-grid">
         <article class="card" data-reveal>
           <div class="card__media"><img src="img/svc-cut.jpg" width="1200" height="900" loading="lazy" alt="Barber in a white shirt taking a clipper fade up the side of a customer’s head"></div>
           <div class="card__body">
-            <p class="card__no num">01</p>
+            <div class="card__top"><span class="card__no num">01</span><span class="card__pr num">£24</span></div>
             <h3>The cut</h3>
             <p>Clippers, scissors or both. Tell us what you want or show us a photo, and we’ll tell you straight if it’ll suit you.</p>
-            <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
         </article>
         <article class="card" data-reveal style="--i:1">
           <div class="card__media"><img src="img/svc-beard.jpg" width="1200" height="900" loading="lazy" alt="Barber lifting hair with a comb and trimming over it with scissors, close to the customer’s beard line"></div>
           <div class="card__body">
-            <p class="card__no num">02</p>
+            <div class="card__top"><span class="card__no num">02</span><span class="card__pr num">£12</span></div>
             <h3>Beard trim</h3>
             <p>Shaped, lined up and taken down to the length you actually asked for.</p>
-            <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
         </article>
         <article class="card" data-reveal style="--i:2">
-          <div class="card__media"><img src="img/svc-shave.jpg" width="1200" height="900" loading="lazy" alt="A straight razor and a shaving brush resting against a cream shaving mug"></div>
+          <div class="card__media"><img src="img/svc-shave.jpg" width="1200" height="900" loading="lazy" alt="Barber pressing a hot towel over a reclined customer’s face in a warm-lit shop with framed pictures and round mirrors"></div>
           <div class="card__body">
-            <p class="card__no num">03</p>
+            <div class="card__top"><span class="card__no num">03</span><span class="card__pr tbc">[Price TBC]</span></div>
             <h3>Hot-towel shave</h3>
             <p>Hot towels, a sharp blade and a slow, close finish. Book it when you can sit back.</p>
-            <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PRICE LEDGER -->
-  <section class="section ledger-sec" id="prices" aria-labelledby="price-title">
-    <div class="wrap grid">
-      <div class="ledger-intro" data-reveal>
-        <p class="label"><span class="num">02</span> · Price list</p>
+  <!-- 02 PRICE LEDGER -->
+  <section class="section" id="prices" aria-labelledby="price-title">
+    <div class="wrap">
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">02</span><span class="label">Price list</span></p>
         <h2 id="price-title">Plain prices. No small print.</h2>
-        <p class="lead">Four lines, worth knowing before you sit down. Book any of them, or just walk in before noon.</p>
-        <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-
-      <div>
-        <div class="ledger" role="list" aria-label="Prices">
-          <div class="ledger__cols" aria-hidden="true"><span>No.</span><span>Service</span><span>Price</span><span></span></div>
-          <div class="ledger__row" role="listitem" data-reveal>
-            <span class="ledger__no num">01</span>
-            <div class="ledger__svc"><h3>Cut</h3><p>Clipper or scissor cut, finished and styled</p></div>
-            <p class="ledger__amt num"><sup>£</sup>24</p>
-            <a class="link-arrow ledger__go" href="#book" data-svc="cut"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
-          <div class="ledger__row" role="listitem" data-reveal style="--i:1">
-            <span class="ledger__no num">02</span>
-            <div class="ledger__svc"><h3>Beard trim</h3><p>Shape, line-up and tidy</p></div>
-            <p class="ledger__amt num"><sup>£</sup>12</p>
-            <a class="link-arrow ledger__go" href="#book" data-svc="beard"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
-          <div class="ledger__row" role="listitem" data-reveal style="--i:2">
-            <span class="ledger__no num">03</span>
-            <div class="ledger__svc"><h3>Cut + beard</h3><p>Both, in one sitting</p><p class="calc num"><span>Lines 01 + 02 add up to £36.</span><b>This line: £32.</b></p></div>
-            <p class="ledger__amt num"><sup>£</sup>32</p>
-            <a class="link-arrow ledger__go" href="#book" data-svc="combo"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
-          <div class="ledger__row" role="listitem" data-reveal style="--i:3">
-            <span class="ledger__no num">04</span>
-            <div class="ledger__svc"><h3>Hot-towel shave</h3><p>Hot towels, straight razor, close finish</p></div>
-            <p class="ledger__amt tbc"><span class="tbc-l">[Price to be confirmed]</span><span class="tbc-s">[TBC]</span></p>
-            <a class="link-arrow ledger__go" href="#book" data-svc="shave"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
+      <div class="split">
+        <div class="ledger-side" data-reveal>
+          <p class="lead">Worth knowing before you sit down. Book any line, or just walk in before noon.</p>
+          <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <div class="ledger__foot"><span>Open Tuesday to Saturday, 9am to 7pm</span><span>Walk-ins welcome until 12</span></div>
+        <div>
+          <div class="ledger" role="list" aria-label="Prices">
+            <div class="ledger__cols" aria-hidden="true"><span>No.</span><span>Service</span><span>Price</span><span></span></div>
+            <div class="ledger__row" role="listitem" data-reveal>
+              <span class="ledger__no num">01</span>
+              <div class="ledger__svc"><h3>Cut</h3><p>Clipper or scissor cut, finished and styled</p></div>
+              <p class="ledger__amt num"><sup>£</sup>24</p>
+              <a class="link-arrow ledger__go" href="#book" data-svc="cut"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="ledger__row" role="listitem" data-reveal style="--i:1">
+              <span class="ledger__no num">02</span>
+              <div class="ledger__svc"><h3>Beard trim</h3><p>Shape, line-up and tidy</p></div>
+              <p class="ledger__amt num"><sup>£</sup>12</p>
+              <a class="link-arrow ledger__go" href="#book" data-svc="beard"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="ledger__row" role="listitem" data-reveal style="--i:2">
+              <span class="ledger__no num">03</span>
+              <div class="ledger__svc"><h3>Cut + beard</h3><p>Both, in one sitting</p><p class="calc num">Cut and beard together: £32, not £36.</p></div>
+              <p class="ledger__amt num"><sup>£</sup>32</p>
+              <a class="link-arrow ledger__go" href="#book" data-svc="combo"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="ledger__row" role="listitem" data-reveal style="--i:3">
+              <span class="ledger__no num">04</span>
+              <div class="ledger__svc"><h3>Hot-towel shave</h3><p>Hot towels, straight razor, close finish</p></div>
+              <p class="ledger__amt tbc">[Price TBC]</p>
+              <a class="link-arrow ledger__go" href="#book" data-svc="shave"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <div class="ledger__foot"><span>Open Tuesday to Saturday, 9am to 7pm</span><span>Walk-ins welcome until 12</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- THE WORK -->
+  <!-- 03 THE WORK -->
   <section class="section band" id="work" aria-labelledby="work-title">
     <div class="wrap">
-      <div class="lhead" data-reveal>
-        <div class="lhead__meta"><span class="lhead__no">03</span><span class="label">The work</span></div>
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">03</span><span class="label">The work</span></p>
         <h2 id="work-title">Fades, tapers, line&#8209;ups and beards.</h2>
       </div>
       <ul class="strip">
         <li><figure class="shot" data-reveal><div class="shot__img"><img src="img/work-1.jpg" width="1000" height="750" loading="lazy" alt="Barber holding a comb steady while taking a skin fade up the back of a customer’s head"></div><figcaption><span class="num">03.1</span><span class="label">Skin fade</span></figcaption></figure></li>
         <li><figure class="shot" data-reveal style="--i:1"><div class="shot__img"><img src="img/work-2.jpg" width="1000" height="750" loading="lazy" alt="Scissors cutting over a comb to tidy the back of a short haircut"></div><figcaption><span class="num">03.2</span><span class="label">Scissor over comb</span></figcaption></figure></li>
         <li><figure class="shot" data-reveal style="--i:2"><div class="shot__img"><img src="img/work-3.jpg" width="1000" height="750" loading="lazy" alt="Close-up of a trimmer cleaning up the hairline above a customer’s ear"></div><figcaption><span class="num">03.3</span><span class="label">Line-up</span></figcaption></figure></li>
-        <li><figure class="shot" data-reveal style="--i:3"><div class="shot__img"><img src="img/work-4.jpg" width="1000" height="750" loading="lazy" alt="A textured crop with a soft fade, lit by daylight from a window"></div><figcaption><span class="num">03.4</span><span class="label">Textured fade</span></figcaption></figure></li>
+        <li><figure class="shot" data-reveal style="--i:3"><div class="shot__img"><img src="img/work-4.jpg" width="1000" height="750" loading="lazy" alt="Barber’s hand steadying a customer’s head while a clipper tapers the hair at the temple"></div><figcaption><span class="num">03.4</span><span class="label">Temple taper</span></figcaption></figure></li>
       </ul>
     </div>
   </section>
 
-  <!-- BARBERS -->
-  <section class="section" id="barbers" aria-labelledby="team-title">
+  <!-- 04 BARBERS -->
+  <section class="section section--short" id="barbers" aria-labelledby="team-title">
     <div class="wrap">
-      <div class="lhead" data-reveal>
-        <div class="lhead__meta"><span class="lhead__no">04</span><span class="label">Barbers</span></div>
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">04</span><span class="label">Barbers</span></p>
         <h2 id="team-title">On the chairs.</h2>
       </div>
-      <ol class="chairs">
-        <li class="chair" data-reveal><span class="chair__no">Chair 01</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
-        <li class="chair" data-reveal style="--i:1"><span class="chair__no">Chair 02</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
-        <li class="chair" data-reveal style="--i:2"><span class="chair__no">Chair 03</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section class="book-sec on-ink" id="book" aria-labelledby="book-title">
-    <div class="book">
-      <div class="wrap book__grid">
-        <div class="book__intro" data-reveal>
-          <p class="label"><span class="num">05</span> · Booking</p>
-          <h2 id="book-title">Hold a chair for later.</h2>
-          <p class="book__lead">Your ticket from the top of the page comes with you. Add a time and a mobile number and we’ll hold a chair. Before noon, skip all this and walk in.</p>
-          <ul class="hours" aria-label="Opening hours">
-            <li class="hours__sum"><span>Tuesday to Saturday</span><span class="num">9am–7pm</span></li>
-            <li data-day="2"><span>Tuesday</span><span class="num">9am–7pm</span></li>
-            <li data-day="3"><span>Wednesday</span><span class="num">9am–7pm</span></li>
-            <li data-day="4"><span>Thursday</span><span class="num">9am–7pm</span></li>
-            <li data-day="5"><span>Friday</span><span class="num">9am–7pm</span></li>
-            <li data-day="6"><span>Saturday</span><span class="num">9am–7pm</span></li>
-            <li data-day="0,1"><span>Sunday and Monday</span><span>Closed</span></li>
-          </ul>
-          <p class="book__addr">12 King Street, Leeds · <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Get directions</a></p>
+      <div class="split">
+        <figure class="team-frame" data-reveal>
+          <div class="team-frame__art">
+            <span class="label">Team photo to be supplied</span>
+            <svg viewBox="0 0 400 190" aria-hidden="true"><use href="#chair" x="20" y="22" width="100" height="150"/><use href="#chair" x="150" y="22" width="100" height="150"/><use href="#chair" x="280" y="22" width="100" height="150"/><path d="M0 172h400" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <figcaption>[Team photo to be supplied by Fade &amp; Co]</figcaption>
+        </figure>
+        <div data-reveal style="--i:1">
+          <p class="lead team-note">Real names and faces go here, not stock models. They arrive with the shop’s own photos.</p>
+          <ol class="chairs">
+            <li><span class="no">Chair 01</span><span>[Barber name]</span><span class="sp">[Speciality]</span></li>
+            <li><span class="no">Chair 02</span><span>[Barber name]</span><span class="sp">[Speciality]</span></li>
+            <li><span class="no">Chair 03</span><span>[Barber name]</span><span class="sp">[Speciality]</span></li>
+          </ol>
         </div>
-
-        <form class="form ticket" id="book-form" data-reveal style="--i:1" novalidate aria-labelledby="stub-title">
-          <div class="ticket__top form__sum">
-            <p class="label"><span id="stub-title">Your ticket</span><span class="num">No. 0012</span></p>
-            <p class="sum" aria-live="polite"><span data-sum-svc>Cut</span><i aria-hidden="true">·</i><span data-sum-day>Tue</span><i aria-hidden="true">·</i><span class="num" data-sum-price>£24</span></p>
-            <a class="link-arrow" href="#pick" data-change><span>Change</span><svg aria-hidden="true"><use href="#i-up"/></svg></a>
-            <input type="hidden" name="svc" value="cut">
-            <input type="hidden" name="day" value="Tue">
-          </div>
-          <div class="ticket__stub">
-            <div class="fields">
-              <div class="field">
-                <label class="label" for="f-time">Time of day</label>
-                <select id="f-time" name="time">
-                  <option>Morning, 9 to 12</option>
-                  <option>Early afternoon, 12 to 3</option>
-                  <option>Late afternoon, 3 to 5</option>
-                  <option>Evening, 5 to 7</option>
-                </select>
-              </div>
-              <div class="field">
-                <label class="label" for="f-name">Your name</label>
-                <input id="f-name" name="name" type="text" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label class="label" for="f-phone">Mobile</label>
-                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
-              </div>
-            </div>
-            <button class="btn btn--book" type="submit">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-            <p class="form__note">[Booking system or inbox to be connected by Fade &amp; Co]</p>
-            <p class="form__done" role="status" aria-live="polite" hidden></p>
-          </div>
-        </form>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- 05 BOOKING -->
+  <section class="book-sec on-ink" id="book" aria-labelledby="book-title">
+    <div class="book">
+      <div class="wrap">
+        <div class="sh split" data-reveal>
+          <p class="sh__meta"><span class="sh__no">05</span><span class="label">Booking</span></p>
+          <div>
+            <h2 id="book-title">Hold a chair for later.</h2>
+            <p class="lead">Your ticket from the top of the page comes with you. Pick a time, add a name and a mobile number. Before noon, skip all this and walk in.</p>
+          </div>
+        </div>
+        <div class="split">
+          <div class="book__side" data-reveal>
+            <ul class="hours" aria-label="Opening hours">
+              <li class="hours__sum"><span>Tuesday to Saturday</span><span class="num">9am–7pm</span></li>
+              <li data-day="2"><span>Tuesday</span><span class="num">9am–7pm</span></li>
+              <li data-day="3"><span>Wednesday</span><span class="num">9am–7pm</span></li>
+              <li data-day="4"><span>Thursday</span><span class="num">9am–7pm</span></li>
+              <li data-day="5"><span>Friday</span><span class="num">9am–7pm</span></li>
+              <li data-day="6"><span>Saturday</span><span class="num">9am–7pm</span></li>
+              <li data-day="0,1"><span>Sunday and Monday</span><span>Closed</span></li>
+            </ul>
+            <p class="book__addr">12 King Street, Leeds · <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Get directions</a></p>
+          </div>
+
+          <form class="form tk" id="book-form" data-reveal style="--i:1" novalidate aria-labelledby="stub-title">
+            <div class="tk__main">
+              <div class="tk__head">
+                <p class="label" id="stub-title">Your ticket</p>
+                <a class="link-arrow" href="#pick" data-change><span>Change</span><svg aria-hidden="true"><use href="#i-up"/></svg></a>
+              </div>
+              <p class="sum" aria-live="polite"><span data-sum-svc>Cut</span><i aria-hidden="true">·</i><span data-sum-day>Tue</span><i aria-hidden="true">·</i><span class="num" data-sum-price>£24</span></p>
+              <input type="hidden" name="svc" value="cut">
+              <input type="hidden" name="day" value="Tue">
+              <fieldset>
+                <legend class="label">Time of day</legend>
+                <div class="rows">
+                  <label class="row-opt"><input type="radio" name="time" value="Morning" checked><span class="dot" aria-hidden="true"></span><span class="nm">Morning</span><span class="pr num">9–12</span></label>
+                  <label class="row-opt"><input type="radio" name="time" value="Early afternoon"><span class="dot" aria-hidden="true"></span><span class="nm">Early afternoon</span><span class="pr num">12–3</span></label>
+                  <label class="row-opt"><input type="radio" name="time" value="Late afternoon"><span class="dot" aria-hidden="true"></span><span class="nm">Late afternoon</span><span class="pr num">3–5</span></label>
+                  <label class="row-opt"><input type="radio" name="time" value="Evening"><span class="dot" aria-hidden="true"></span><span class="nm">Evening</span><span class="pr num">5–7</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="tk__stub">
+              <label class="line-field"><span class="label">Your name</span><input id="f-name" name="name" type="text" autocomplete="name" required></label>
+              <label class="line-field"><span class="label">Mobile</span><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+              <button class="btn btn--book" type="submit">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="form__note">[Booking system or inbox to be connected by Fade &amp; Co]</p>
+              <p class="form__done" role="status" aria-live="polite" hidden></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 FAQ -->
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="wrap">
-      <div class="lhead" data-reveal>
-        <div class="lhead__meta"><span class="lhead__no">06</span><span class="label">Questions</span></div>
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">06</span><span class="label">Questions</span></p>
         <h2 id="faq-title">Before you sit down.</h2>
       </div>
       <ol class="qs">
-        <li class="q" data-reveal><span class="q__no" aria-hidden="true">Q.01</span><h3>Do I need to book?</h3><p>Not before noon. Walk-ins are welcome until 12, Tuesday to Saturday. After that, book a chair.</p></li>
-        <li class="q" data-reveal style="--i:1"><span class="q__no" aria-hidden="true">Q.02</span><h3>What’s on the menu?</h3><p>Three services and four lines on the <a href="#prices">price list</a>: cut £24, beard trim £12, cut + beard £32, and the hot-towel shave [price to be confirmed].</p></li>
-        <li class="q" data-reveal style="--i:2"><span class="q__no" aria-hidden="true">Q.03</span><h3>Which days are you shut?</h3><p>Sunday and Monday. Tuesday to Saturday the door is open from 9am to 7pm.</p></li>
-        <li class="q" data-reveal style="--i:3"><span class="q__no" aria-hidden="true">Q.04</span><h3>Where are you?</h3><p>12 King Street, Leeds. <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Open it in Maps</a>.</p></li>
+        <li class="q split" data-reveal><h3><span class="q__no" aria-hidden="true">Q.01</span>Do I need to book?</h3><p>Not before noon. Walk-ins are welcome until 12, Tuesday to Saturday. After that, book a chair.</p></li>
+        <li class="q split" data-reveal style="--i:1"><h3><span class="q__no" aria-hidden="true">Q.02</span>What does it cost?</h3><p>Cut £24, beard trim £12, cut + beard £32. The hot-towel shave is [price TBC]. All of it is on the <a href="#prices">price list</a>.</p></li>
+        <li class="q split" data-reveal style="--i:2"><h3><span class="q__no" aria-hidden="true">Q.03</span>Which days are you shut?</h3><p>Sunday and Monday. Tuesday to Saturday the door is open from 9am to 7pm.</p></li>
+        <li class="q split" data-reveal style="--i:3"><h3><span class="q__no" aria-hidden="true">Q.04</span>Where are you?</h3><p>12 King Street, Leeds. <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Open it in Maps</a>.</p></li>
       </ol>
     </div>
   </section>
 
-  <!-- VISIT -->
+  <!-- 07 VISIT -->
   <section class="section band" id="visit" aria-labelledby="visit-title">
-    <div class="wrap visit">
-      <div class="plate" data-reveal>
-        <div class="plate__top"><span class="label">Fade &amp; Co</span><span class="label num">Tue–Sat · 9am–7pm</span></div>
-        <div>
-          <p class="plate__no num"><small>No.</small>12</p>
-          <p class="plate__st">King Street<br>Leeds</p>
-        </div>
-        <div class="plate__foot"><span>Walk-ins before noon</span><span>Sun &amp; Mon closed</span></div>
+    <div class="wrap">
+      <div class="sh split" data-reveal>
+        <p class="sh__meta"><span class="sh__no">07</span><span class="label">Visit</span></p>
+        <h2 id="visit-title">Find the shop.</h2>
       </div>
-      <div class="visit__info" data-reveal style="--i:1">
-        <div>
-          <p class="label"><span class="num">07</span> · Visit</p>
-          <h2 id="visit-title">Find the shop.</h2>
-          <p class="lead">Number 12, King Street, Leeds. Walk in before noon, or hold a chair for later in the day.</p>
+      <div class="split">
+        <div class="plate" data-reveal>
+          <div class="plate__top"><span class="label">Fade &amp; Co</span><span class="label num">Tue–Sat · 9–7</span></div>
+          <div>
+            <p class="plate__no num"><small>No.</small>12</p>
+            <p class="plate__st">King Street<br>Leeds</p>
+          </div>
+          <div class="plate__foot"><span>Walk-ins before noon</span><span>Sun &amp; Mon closed</span></div>
         </div>
-        <dl class="dl">
-          <div><dt>Address</dt><dd>12 King Street, Leeds</dd></div>
-          <div><dt>Hours</dt><dd class="num">Tue–Sat, 9am to 7pm</dd></div>
-          <div><dt>Phone</dt><dd>[Phone number to be supplied]</dd></div>
-          <div><dt>Email</dt><dd>[Email to be supplied]</dd></div>
-        </dl>
-        <div class="visit__actions">
-          <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Get directions</a>
+        <div class="visit-info" data-reveal style="--i:1">
+          <ol class="route" aria-label="How to get a chair">
+            <li><span class="no num">01</span><span>Find number 12 on King Street, Leeds.</span><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds"><span>Directions</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><span class="no num">02</span><span>Before noon, walk straight in.</span><span class="when">Tue–Sat, 9–12</span></li>
+            <li><span class="no num">03</span><span>After noon, book a chair first.</span><span class="when">Until 7pm</span></li>
+          </ol>
+          <p class="reach"><span><b>Phone</b>[Phone number to be supplied]</span><span><b>Email</b>[Email to be supplied]</span></p>
+          <div class="visit__actions">
+            <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Get directions</a>
+          </div>
         </div>
       </div>
     </div>
@@ -713,7 +710,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
         <ul><li>[Phone to be supplied]</li><li>[Email to be supplied]</li><li><a href="#book">Book a chair</a></li></ul>
       </div>
     </div>
-    <div class="legal"><span>© 2026 Fade &amp; Co. All rights reserved.</span><span>Photography: Unsplash stand-ins until Fade &amp; Co’s own shots are supplied</span></div>
+    <div class="legal"><span>© 2026 Fade &amp; Co. All rights reserved.</span><span>Stand-in photos until the shop’s own are supplied</span></div>
   </div>
 </footer>
 
@@ -731,7 +728,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   var DAYS={Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
   var reduce=matchMedia('(prefers-reduced-motion: reduce)');
 
-  // header border + dock
+  // header border + phone dock
   var header=d.querySelector('.site-header'), dock=d.querySelector('.dock'), hero=d.querySelector('.hero');
   var onScroll=function(){ header.classList.toggle('is-scrolled', window.scrollY>8); };
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
@@ -770,7 +767,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   };
   if(openDay) setRadio('h-day',['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day]);
   pick.addEventListener('change', sync); sync();
-  var go=function(){ bookSec.scrollIntoView({behavior: reduce.matches?'auto':'smooth'}); setTimeout(function(){ d.getElementById('f-time').focus({preventScroll:true}); }, 500); };
+  var go=function(){ bookSec.scrollIntoView({behavior: reduce.matches?'auto':'smooth'}); setTimeout(function(){ var t=form.querySelector('input[name="time"]:checked'); if(t) t.focus({preventScroll:true}); }, 500); };
   pick.addEventListener('submit', function(e){ e.preventDefault(); sync(); go(); });
   d.querySelectorAll('[data-svc]').forEach(function(a){ a.addEventListener('click', function(){ setRadio('h-svc',a.dataset.svc); sync(); }); });
   d.querySelector('[data-change]').addEventListener('click', function(e){ e.preventDefault(); pick.scrollIntoView({behavior: reduce.matches?'auto':'smooth', block:'center'}); setTimeout(function(){ var c=pick.querySelector('input[name="h-svc"]:checked'); if(c) c.focus({preventScroll:true}); }, 500); });
@@ -780,7 +777,8 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
     e.preventDefault();
     var name=form.querySelector('#f-name'), phone=form.querySelector('#f-phone'), done=form.querySelector('.form__done');
     if(!name.value.trim()){ name.focus(); return; } if(!phone.value.trim()){ phone.focus(); return; }
-    done.hidden=false; done.textContent='Thanks, '+name.value.trim().split(' ')[0]+'. Request noted for '+NAMES[form.elements.svc.value]+' on '+DAYS[form.elements.day.value]+', '+form.querySelector('#f-time').value.toLowerCase()+'.';
+    var t=form.querySelector('input[name="time"]:checked');
+    done.hidden=false; done.textContent='Thanks, '+name.value.trim().split(' ')[0]+'. Request noted for '+NAMES[form.elements.svc.value]+' on '+DAYS[form.elements.day.value]+', '+(t?t.value.toLowerCase():'any time')+'.';
   });
 
   // reveal on scroll
