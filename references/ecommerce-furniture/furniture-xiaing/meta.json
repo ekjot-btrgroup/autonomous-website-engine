@@ -1,0 +1,19 @@
+{
+  "name": "Furniture XIAING",
+  "industry": "ecommerce-furniture",
+  "also": ["agency-architecture", "hospitality-hotels", "real-estate-listings"],
+  "summary": "Warm, moody slow-furniture store with dim interior photography, a sans headline broken by one serif italic phrase, and sticky full-bleed room scenes carrying shoppable product cards.",
+  "style": ["warm-organic", "cinematic", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 5, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "brown",
+  "palette": { "bg": "#f0ebe5", "surface": "#e8e2da", "ink": "#1e1712", "muted": "#6a635e", "accent": "#a14d08", "line": "#cfc6bc" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "sans", "pairing": "medium grotesk headlines with a single Instrument Serif italic phrase dropped in for warmth; serif also on small uppercase labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "services", "gallery", "products", "stats", "blog", "newsletter"],
+  "motion": 4,
+  "signature": ["hero headline in white grotesk with one phrase swapped to a grey serif italic", "three stacked sticky full-screen room scenes, each with a numbered label, rust tag chip and a glassy product card bottom right", "category cards in a staggered stair-step row with a notched white label tab cut into the bottom corner"],
+  "imagery": "dim, warm, AI-staged interiors and terraces at dusk, soft studio shots of timber pieces on cream walls",
+  "layout_grid": "1440px canvas, 32px side gutters, 120px section padding, 4-column card grid, 16px image radius, hero inset 8px",
+  "quality": 4
+}

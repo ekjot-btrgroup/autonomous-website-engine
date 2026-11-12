@@ -6,42 +6,6 @@
   "license": "Unsplash License"
  },
  {
-  "file": "hero-beard.jpg",
-  "source": "https://images.unsplash.com/photo-1517832606299-7ae9b720a186",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "razor.jpg",
-  "source": "https://images.unsplash.com/photo-1524230616393-d6229fcd2eff",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "shave.jpg",
-  "source": "https://images.unsplash.com/photo-1675746435874-e72d846bdca5",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "lather.jpg",
-  "source": "https://images.unsplash.com/photo-1532710093739-9470acff878f",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "beard.jpg",
-  "source": "https://images.unsplash.com/photo-1599011176306-4a96f1516d4d",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "cut.jpg",
-  "source": "https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
   "file": "fade.jpg",
   "source": "https://images.unsplash.com/photo-1640301133543-41fe25ad6450",
   "credit": "Unsplash",
@@ -70,5 +34,37 @@
   "source": "https://images.unsplash.com/photo-1493256338651-d82f7acb2b38",
   "credit": "Unsplash",
   "license": "Unsplash License"
+ },
+ {
+  "file": "cut.jpg",
+  "source": "https://images.unsplash.com/photo-1520338661084-680395057c93",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "hero-chair.jpg",
+  "source": "https://images.unsplash.com/photo-1635273051937-a0ddef9573b6",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "kit.jpg",
+  "source": "https://images.unsplash.com/photo-1549271568-e87e07c5406b",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "beard-cut.webp",
+  "source": "https://images.unsplash.com/photo-1629189784191-9afdcbcb0398",
+  "credit": "Unsplash",
+  "license": "Unsplash License",
+  "note": "background removed, greyscale"
+ },
+ {
+  "file": "shave-cut.webp",
+  "source": "https://images.unsplash.com/photo-1634136933697-b1adb1545135",
+  "credit": "Unsplash",
+  "license": "Unsplash License",
+  "note": "cropped to head and shoulders, background removed"
  }
 ]

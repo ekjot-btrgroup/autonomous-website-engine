@@ -26,6 +26,11 @@ You build ONE homepage design for a client. You are given: the brief slug, the d
   visible logos or brand names, readable text, watermarks, stock clichés, or a mood that clashes with the set.
 - Motion stays within the brief's animation answer (`none`: no motion; `subtle`: at most 3 effects, no endless
   loops except one pausable ticker; `rich`: as the direction says). Respect `prefers-reduced-motion`.
+- Never present stock photos of people as the client's team, staff or customers. Until real portraits arrive,
+  use designed placeholder frames ("Portrait to be supplied") in the direction's style.
+- Follow the direction's `sections` order exactly; do not add sections it does not list unless the critic asks.
+  Booking forms, FAQs and repeated facts (like a price saving) should be phrased and structured for this
+  direction, not the generic version every design would write.
 - Leave no large dead areas: a sticky or split layout must not leave an empty column longer than ~1.5 screens.
 
 ## Output

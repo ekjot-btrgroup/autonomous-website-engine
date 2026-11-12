@@ -1,0 +1,19 @@
+{
+  "name": "Kairox",
+  "industry": "software-ai",
+  "also": ["agency-web", "services-consulting", "software-saas"],
+  "summary": "Precise monochrome AI-automation studio site on a visible hairline rail grid, with a copper and steel prism hero and isometric line drawings instead of photos.",
+  "style": ["technical", "swiss", "monochrome"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 2, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "black",
+  "palette": { "bg": "#ffffff", "surface": "#f5f5f6", "ink": "#1c1c1e", "muted": "#8e8e91", "accent": "#b1715b", "line": "#cfcfd2" },
+  "fonts": { "display": "Geist", "body": "Geist", "class": "sans", "pairing": "one neutral grotesk at regular weight with tight negative tracking; uppercase 12px tags for metadata" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "logos", "features", "services", "about", "process", "features", "testimonials", "pricing", "faq", "cta"],
+  "motion": 2,
+  "signature": ["two vertical hairline rails 40px in from each edge run the whole page, crossed by horizontal rules at every 160px divider band", "animated glass prism streaks in copper, steel blue and black behind the hero and closing CTA", "isometric wireframe illustrations (stacked boxes, servers, paper sheets) used as the only imagery in feature cards"],
+  "imagery": "generative prism glass flow, thin-line isometric diagrams, one warm documentary team photo",
+  "layout_grid": "1440px canvas, 40px outer rails, content inset about 64px inside the rails, 160px empty divider bands between sections, square corners everywhere",
+  "quality": 5
+}

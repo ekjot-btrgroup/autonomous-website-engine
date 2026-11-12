@@ -12,18 +12,6 @@
   "license": "Unsplash License"
  },
  {
-  "file": "svc-beard.jpg",
-  "source": "https://images.unsplash.com/photo-1517832606299-7ae9b720a186",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "svc-shave.jpg",
-  "source": "https://images.unsplash.com/photo-1532710093739-9470acff878f",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
   "file": "night.jpg",
   "source": "https://images.unsplash.com/photo-1546664278-c0a27e0cdc88",
   "credit": "Unsplash",
@@ -48,14 +36,50 @@
   "license": "Unsplash License"
  },
  {
-  "file": "g-pouch.jpg",
-  "source": "https://images.unsplash.com/photo-1644258559678-2eac1b8b79b6",
+  "file": "svc-beard.jpg",
+  "source": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "svc-shave.jpg",
+  "source": "https://images.unsplash.com/photo-1739302493888-6f96cbc37105",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "g-shop.jpg",
+  "source": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "g-window.jpg",
+  "source": "https://images.unsplash.com/photo-1761064039763-0d9aa5124510",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "team-1.jpg",
+  "source": "https://images.unsplash.com/photo-1595294572864-ddb46d169dbb",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "team-2.jpg",
+  "source": "https://images.unsplash.com/photo-1553521041-d168abd31de3",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "team-3.jpg",
+  "source": "https://images.unsplash.com/photo-1639511177364-0866c0da16fa",
   "credit": "Unsplash",
   "license": "Unsplash License"
  },
  {
   "file": "g-razor.jpg",
-  "source": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a",
+  "source": "https://images.unsplash.com/photo-1735150949874-ec9c9c82b2c4",
   "credit": "Unsplash",
   "license": "Unsplash License"
  }

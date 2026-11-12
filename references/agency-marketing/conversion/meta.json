@@ -1,0 +1,19 @@
+{
+  "name": "Conversion",
+  "industry": "agency-marketing",
+  "also": ["software-ai", "agency-web", "services-consulting"],
+  "summary": "All-black paid-ads agency site with a floating pill nav, centred grotesk headlines that swap one word to an italic serif, and a molten red-orange glow rising from the hero floor.",
+  "style": ["futuristic-dark", "minimal", "editorial"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 2, "warmth": 3, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "red",
+  "palette": { "bg": "#000000", "surface": "#0D0D0D", "ink": "#FFFFFF", "muted": "rgba(255,255,255,0.56)", "accent": "#FF4533", "line": "rgba(255,255,255,0.12)" },
+  "fonts": { "display": "Satoshi", "body": "Satoshi", "class": "sans", "pairing": "Satoshi 500 with -0.04em tracking for headings; one word per heading set in Instrument Serif italic; Satoshi 500 for body at 56% white" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "testimonials", "about", "stats", "services", "features", "process", "testimonials", "team", "faq", "cta"],
+  "motion": 2,
+  "signature": ["blurred red, orange and white glow blooming from the bottom of the hero like a sunrise", "single italic serif word inside each centred heading", "service cards on near-black with a coloured gradient bleeding in from one corner", "two-column comparison: muted list for other agencies versus a glowing card with checkmarks"],
+  "imagery": "almost no photography; gradient glows, client logos, small avatars and Lottie icons on black",
+  "layout_grid": "1072px content (1200 frame, 64px sides), 64px section padding, everything centred, 24px card radius, fully round pills and avatars, 12% white borders",
+  "quality": 3
+}

@@ -36,7 +36,8 @@ available, use general-purpose agents told to read and follow `.claude/agents/de
 7. `npm run -s review -- <slug>`. Then launch 4-5 `design-critic` agents in parallel (2-3 designs each, never
    the builder). For every design with verdict `fix`, or `FIX` in the review: send its critique to a
    `design-builder` (mode `fix`). Repeat review + critique once more for those. A design still failing after
-   2 rounds: rebuild it from a revised direction.
+   2 rounds: one more fix round if its remaining fixes are small (no item below 3, average 3.7+), otherwise
+   rebuild it from a revised direction. Never show the user a design that has not passed.
 8. `npm run -s review -- <slug> --gallery`. Send `reports/<slug>/designs.png` with SendUserFile (render) and
    `output/<slug>/<slug>-designs.zip` (attach) if that tool exists; otherwise say
    "Open output/<slug>/designs/index.html". Silently commit + release.
