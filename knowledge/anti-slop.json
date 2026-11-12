@@ -1,0 +1,40 @@
+{
+  "_about": "Rules for npm run slop. 'error' blocks delivery until fixed or justified in the art direction; 'warn' needs a second look. Add to these lists when the user flags something as generic.",
+  "phrases": {
+    "error": [
+      "lorem ipsum", "elevate your", "unlock (your|the)", "unleash", "supercharge", "revolutioni[sz]e", "game[- ]chang(er|ing)",
+      "next[- ]level", "cutting[- ]edge", "state[- ]of[- ]the[- ]art", "in today'?s fast[- ]paced", "look no further",
+      "harness the power", "take (your|it) .{0,20}to the next level", "seamless(ly)?", "empower(ing|s)? (you|your|businesses)",
+      "one[- ]stop[- ]shop", "best[- ]in[- ]class", "world[- ]class", "synerg(y|ies)", "delve", "tapestry", "testament to",
+      "your trusted partner", "we'?ve got you covered", "transform your (life|business|space)", "innovative solutions",
+      "tailored solutions", "unparalleled", "embark on", "in the realm of", "dive into", "a symphony of", "elevated experience"
+    ],
+    "warn": [
+      "journey", "passionate about", "crafted with (care|love)", "we pride ourselves", "second to none", "redefin(e|ing)",
+      "reimagin(e|ed|ing)", "curated", "bespoke", "holistic", "robust", "leverage", "streamline", "effortless(ly)?",
+      "discover the", "experience the difference", "your one[- ]stop", "high[- ]quality", "top[- ]notch", "premium quality"
+    ]
+  },
+  "generic_headings": [
+    "our services", "services", "why choose us", "why us", "about us", "what our clients say", "testimonials",
+    "get in touch", "contact us", "our team", "meet the team", "our process", "how it works", "features",
+    "frequently asked questions", "faq", "our work", "our mission", "welcome to"
+  ],
+  "fake_claims": [
+    "\\b\\d{1,3}(,\\d{3})*\\+?\\s*(happy|satisfied|loyal)\\s+(customers|clients|patients|guests|members)",
+    "\\b(9\\d|100)(\\.\\d)?%\\s*(satisfaction|success|uptime|happy)",
+    "\\b(trusted|loved|used)\\s+by\\s+\\d[\\d,.]*\\s*(k|\\+|thousand|million)?",
+    "\\b\\d+\\+?\\s+years? of (experience|excellence)",
+    "\\b(john|jane) (doe|smith)\\b", "\\bacme\\b", "\\b5[- ]star (rated|reviews?)\\b"
+  ],
+  "default_fonts": ["Inter", "Roboto", "Open Sans", "Poppins", "Montserrat", "Lato", "Arial", "Helvetica", "system-ui", "Nunito"],
+  "limits": {
+    "exclamations": 2,
+    "learn_more_ctas": 1,
+    "emoji": 0,
+    "backdrop_blur": 3,
+    "gradient_text": 1,
+    "same_grid": 2,
+    "em_dashes": 3
+  }
+}

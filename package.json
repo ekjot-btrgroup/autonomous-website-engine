@@ -24,7 +24,9 @@
     "showcase:init": "node engine/showcase.mjs init",
     "showcase:check": "node engine/showcase.mjs check",
     "showcase:serve": "node engine/showcase.mjs serve",
-    "test": "node --test tests/unit/*.test.mjs"
+    "test": "node --test tests/unit/*.test.mjs",
+    "capture": "node engine/capture.mjs",
+    "slop": "node engine/slop.mjs"
   },
   "engines": {
     "node": ">=20"
