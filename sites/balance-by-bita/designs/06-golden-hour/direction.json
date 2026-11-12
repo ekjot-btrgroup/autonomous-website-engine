@@ -1,0 +1,44 @@
+{
+  "n": 6,
+  "name": "Golden Hour",
+  "concept": "Warm, sunlit portraits in large rounded photo windows: natural radiance and the glow after a good appointment.",
+  "refs": [
+    "health-wellness/stillhour",
+    "hospitality-travel/wayfare"
+  ],
+  "style": "cinematic",
+  "scheme": "mixed",
+  "palette": {
+    "bg": "#f3e9dc",
+    "surface": "#e9dac6",
+    "ink": "#2b211b",
+    "muted": "#6a5a4e",
+    "accent": "#b5762a",
+    "line": "#d8c4ab"
+  },
+  "fonts": {
+    "display": "Instrument Serif",
+    "body": "Manrope",
+    "class": "serif"
+  },
+  "hero": "inset-photo-window",
+  "sections": [
+    "hero",
+    "about",
+    "services",
+    "testimonials",
+    "pricing",
+    "process",
+    "contact",
+    "faq",
+    "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+    "full-width photo windows inset 12px from the page edge for hero, treatments and closing call",
+    "manifesto headline with small inline pill-shaped photos between the words",
+    "warm amber accent used only on booking actions"
+  ],
+  "imagery": "golden-hour light on skin, sun through linen, warm diverse skin tones in close crop (mood images, never labelled as patients)",
+  "why": "Sells the feeling patients want: rested, glowing and still themselves."
+}

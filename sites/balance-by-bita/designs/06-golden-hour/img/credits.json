@@ -1,0 +1,44 @@
+[
+ {
+  "file": "hero.jpg",
+  "source": "https://images.unsplash.com/photo-1511945863317-d60e146e9016",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "treatments.jpg",
+  "source": "https://images.unsplash.com/photo-1601583844062-7487c80b56b7",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "closing.jpg",
+  "source": "https://images.unsplash.com/photo-1785435269070-3f980c7b8d65",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "pill-light.jpg",
+  "source": "https://images.unsplash.com/photo-1551184451-76b762941ad6",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "pill-shadow.jpg",
+  "source": "https://images.unsplash.com/photo-1564132254865-639bfec4c5bf",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "pill-profile.jpg",
+  "source": "https://images.unsplash.com/photo-1729075510531-bed3ee89bc6c",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "skin.jpg",
+  "source": "https://images.unsplash.com/photo-1594556754132-d05bd5a8c36a",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ }
+]

@@ -1,0 +1,44 @@
+{
+  "n": 4,
+  "name": "Precision Grid",
+  "concept": "'Precision, respect and intention' as a design system: a Swiss grid, hairline rules, numbered treatments and one calm teal.",
+  "refs": [
+    "hospitality-hotels/skandic",
+    "health-medical/curevanta"
+  ],
+  "style": "swiss",
+  "scheme": "light",
+  "palette": {
+    "bg": "#ffffff",
+    "surface": "#f4f4f1",
+    "ink": "#141414",
+    "muted": "#5c5c58",
+    "accent": "#2c5e63",
+    "line": "#dcdcd5"
+  },
+  "fonts": {
+    "display": "Hanken Grotesk",
+    "body": "Hanken Grotesk",
+    "class": "sans"
+  },
+  "hero": "asymmetric",
+  "sections": [
+    "hero",
+    "services",
+    "pricing",
+    "process",
+    "about",
+    "faq",
+    "testimonials",
+    "waitlist",
+    "contact"
+  ],
+  "motion": 1,
+  "signature": [
+    "12-column grid made visible with fine rules; every treatment numbered like a specification",
+    "neuromodulator / filler / regenerative comparison table with units, areas and what to expect",
+    "two-tone headlines where the second clause drops to grey"
+  ],
+  "imagery": "clean, bright, high-key images of the treatment room and products, precise crops, no people as stand-ins for patients",
+  "why": "Shows medical expertise and transparency without feeling cold or clinical."
+}
