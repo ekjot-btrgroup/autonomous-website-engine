@@ -39,3 +39,9 @@ either printed straight onto the red (multiply, two-colour screenprint) or hand-
 Anton (display, uppercase) + Archivo (body; expanded width for labels). Six sizes: hero, h2, h3, lead, body, label.
 Red #8f1d17 dominant, cream #fff8ee ink, yellow #f4c430 only on stickers, the primary button, ticker and booking.
 Deep oxblood #2b0a08 for the team/footer blocks and as ink on yellow.
+
+## Build notes
+- Hero h1 runs up to 132px (about 7.8x body) on purpose: it is the poster headline. Section h2s stay within 5x.
+- Services: a razor still life is printed straight onto the red (same multiply treatment as the hero) to balance the column.
+- Self-critique (desktop + phone): no item below 4; weakest are Imagery (stand-in stock until the shop's own work)
+  and Team (placeholders by necessity). Review: ok, slop: clean.
