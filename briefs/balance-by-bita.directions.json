@@ -1,0 +1,442 @@
+[
+ {
+  "n": 1,
+  "name": "The Lily Room",
+  "concept": "The current brand, elevated: a deep plum-brown room, cream type, dusty-rose details and white lilies, set like a luxury hotel welcome.",
+  "refs": [
+   "hospitality-hotels/noire",
+   "health-wellness/lustre"
+  ],
+  "style": "luxury",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#2b1a20",
+   "surface": "#3a252c",
+   "ink": "#f5ece4",
+   "muted": "#cdb9b0",
+   "accent": "#d9a3a0",
+   "line": "#4d3540"
+  },
+  "fonts": {
+   "display": "Bodoni Moda",
+   "body": "Jost",
+   "class": "display"
+  },
+  "hero": "full-bleed-image",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "process",
+   "pricing",
+   "testimonials",
+   "faq",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "oversized high-contrast serif wordmark across the hero with a fine script-like italic 'by Bita' beneath",
+   "numbered chapter eyebrows with a short rose rule before each section",
+   "treatment menu set like a hotel card: categories, hairline rules, price placeholders right-aligned"
+  ],
+  "imagery": "still life of white lilies and hydrangea on deep plum, soft window light, skin-texture close-ups without identifiable faces",
+  "why": "Keeps the plum-and-cream identity patients know, with the polish of a luxury hotel."
+ },
+ {
+  "n": 2,
+  "name": "Cover Story",
+  "concept": "An editorial magazine cover for natural beauty: big serif headline, issue-style index of treatments, cream paper and an oxblood accent.",
+  "refs": [
+   "publishing-magazines/kendi",
+   "ecommerce-beauty/essential"
+  ],
+  "style": "editorial",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f6f0e7",
+   "surface": "#ede4d6",
+   "ink": "#2a211d",
+   "muted": "#6b5d55",
+   "accent": "#7b2d3b",
+   "line": "#d9ccbb"
+  },
+  "fonts": {
+   "display": "Fraunces",
+   "body": "Inter",
+   "class": "serif"
+  },
+  "hero": "big-type-editorial",
+  "sections": [
+   "hero",
+   "services",
+   "about",
+   "testimonials",
+   "process",
+   "pricing",
+   "faq",
+   "contact",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "headline set across the full width in two lines, second line in grey, with a 'contents' list of treatment categories opposite",
+   "founder story laid out as a magazine feature with a pull quote of the signature line",
+   "FAQ as a numbered 'reader questions' column"
+  ],
+  "imagery": "calm editorial portraits of skin and hands, cream backdrops, natural daylight; Bita's portrait as a clearly marked placeholder",
+  "why": "Feels like a beauty editor recommended her: credible, calm and quietly luxurious."
+ },
+ {
+  "n": 3,
+  "name": "Soft Arches",
+  "concept": "Gentle arch shapes and sage calm: a reassuring, nurse-the-nerves first visit for people new to injectables.",
+  "refs": [
+   "health-therapy/therapist",
+   "health-wellness/wellges"
+  ],
+  "style": "warm-organic",
+  "scheme": "light",
+  "palette": {
+   "bg": "#eef0e9",
+   "surface": "#e2e6dc",
+   "ink": "#1f2a22",
+   "muted": "#566253",
+   "accent": "#4f6f53",
+   "line": "#cfd6c7"
+  },
+  "fonts": {
+   "display": "Gilda Display",
+   "body": "Karla",
+   "class": "serif"
+  },
+  "hero": "split-image-right",
+  "sections": [
+   "hero",
+   "process",
+   "services",
+   "about",
+   "pricing",
+   "faq",
+   "testimonials",
+   "contact",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "full-radius arch masks on the hero photo, the founder portrait and treatment cards",
+   "hairline three-step 'your first visit' row with large serif numerals, right under the hero",
+   "price list as ruled rows grouped by unit, syringe, vial and session"
+  ],
+  "imagery": "soft daylight, botanicals, linen and stone textures, calm close-ups of skin; sage and cream tones",
+  "why": "Puts first-timers at ease by explaining the consultation before anything else."
+ },
+ {
+  "n": 4,
+  "name": "Precision Grid",
+  "concept": "'Precision, respect and intention' as a design system: a Swiss grid, hairline rules, numbered treatments and one calm teal.",
+  "refs": [
+   "hospitality-hotels/skandic",
+   "health-medical/curevanta"
+  ],
+  "style": "swiss",
+  "scheme": "light",
+  "palette": {
+   "bg": "#ffffff",
+   "surface": "#f4f4f1",
+   "ink": "#141414",
+   "muted": "#5c5c58",
+   "accent": "#2c5e63",
+   "line": "#dcdcd5"
+  },
+  "fonts": {
+   "display": "Hanken Grotesk",
+   "body": "Hanken Grotesk",
+   "class": "sans"
+  },
+  "hero": "asymmetric",
+  "sections": [
+   "hero",
+   "services",
+   "pricing",
+   "process",
+   "about",
+   "faq",
+   "testimonials",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "12-column grid made visible with fine rules; every treatment numbered like a specification",
+   "neuromodulator / filler / regenerative comparison table with units, areas and what to expect",
+   "two-tone headlines where the second clause drops to grey"
+  ],
+  "imagery": "clean, bright, high-key images of the treatment room and products, precise crops, no people as stand-ins for patients",
+  "why": "Shows medical expertise and transparency without feeling cold or clinical."
+ },
+ {
+  "n": 5,
+  "name": "Cherry on Top",
+  "concept": "The signature line made visual: a confident wine-red brand world with blush pink, a cherry motif and friendly luxury.",
+  "refs": [
+   "hospitality-hotels/luxevara",
+   "health-wellness/lustre"
+  ],
+  "style": "bold-graphic",
+  "scheme": "colour",
+  "palette": {
+   "bg": "#5e1224",
+   "surface": "#701a2e",
+   "ink": "#fbeff0",
+   "muted": "#e3bfc4",
+   "accent": "#f3b9c3",
+   "line": "#86304a"
+  },
+  "fonts": {
+   "display": "DM Serif Display",
+   "body": "DM Sans",
+   "class": "display"
+  },
+  "hero": "centered-type",
+  "sections": [
+   "hero",
+   "about",
+   "testimonials",
+   "services",
+   "pricing",
+   "process",
+   "faq",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "'you, with the cherry on top' as the giant centred hero line with a small drawn cherry mark",
+   "cherry mark reused as list bullets and section dividers",
+   "blush cards on wine-red for each treatment category"
+  ],
+  "imagery": "bold colour-blocked still lifes in reds and blush; cherries, silk, petals; warm studio light",
+  "why": "Turns her signature line into a memorable brand that feels friendly, never stiff."
+ },
+ {
+  "n": 6,
+  "name": "Golden Hour",
+  "concept": "Warm, sunlit portraits in large rounded photo windows: natural radiance and the glow after a good appointment.",
+  "refs": [
+   "health-wellness/stillhour",
+   "hospitality-travel/wayfare"
+  ],
+  "style": "cinematic",
+  "scheme": "mixed",
+  "palette": {
+   "bg": "#f3e9dc",
+   "surface": "#e9dac6",
+   "ink": "#2b211b",
+   "muted": "#6a5a4e",
+   "accent": "#b5762a",
+   "line": "#d8c4ab"
+  },
+  "fonts": {
+   "display": "Instrument Serif",
+   "body": "Manrope",
+   "class": "serif"
+  },
+  "hero": "inset-photo-window",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "testimonials",
+   "pricing",
+   "process",
+   "contact",
+   "faq",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "full-width photo windows inset 12px from the page edge for hero, treatments and closing call",
+   "manifesto headline with small inline pill-shaped photos between the words",
+   "warm amber accent used only on booking actions"
+  ],
+  "imagery": "golden-hour light on skin, sun through linen, warm diverse skin tones in close crop (mood images, never labelled as patients)",
+  "why": "Sells the feeling patients want: rested, glowing and still themselves."
+ },
+ {
+  "n": 7,
+  "name": "Dear Patient",
+  "concept": "A personal letter from Bita: ivory stationery, ink-blue serif, handwritten-feeling warmth and a first-person welcome.",
+  "refs": [
+   "publishing-blogs/letterhead",
+   "publishing-blogs/memoir"
+  ],
+  "style": "minimal",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f8f2e6",
+   "surface": "#efe7d6",
+   "ink": "#1d2638",
+   "muted": "#535d70",
+   "accent": "#34528f",
+   "line": "#e0d8c8"
+  },
+  "fonts": {
+   "display": "Libre Caslon Display",
+   "body": "Libre Franklin",
+   "class": "serif"
+  },
+  "hero": "letter",
+  "sections": [
+   "hero",
+   "about",
+   "process",
+   "services",
+   "faq",
+   "pricing",
+   "testimonials",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "hero written as a letter: 'Hi, I'm Bita!' salutation, short note and a signature line",
+   "stationery details: ruled margins, a postmark-style 'by appointment only' stamp",
+   "FAQ as 'notes before your visit' with clear timing rules"
+  ],
+  "imagery": "few, quiet images: paper, flowers on a desk, Bita's portrait placeholder framed like a photo clipped to the letter",
+  "why": "Leads with Bita herself, so trust starts before the first appointment."
+ },
+ {
+  "n": 8,
+  "name": "Hydrangea Night",
+  "concept": "A dark botanical evening: deep forest green, lavender hydrangea tones and elegant italic serif, quiet luxury for returning patients.",
+  "refs": [
+   "hospitality-hotels/elowenra",
+   "health-wellness/wellges"
+  ],
+  "style": "luxury",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#16231e",
+   "surface": "#20302a",
+   "ink": "#efe9df",
+   "muted": "#b9b4a8",
+   "accent": "#b9a7da",
+   "line": "#31443c"
+  },
+  "fonts": {
+   "display": "Cormorant Garamond",
+   "body": "Work Sans",
+   "class": "serif"
+  },
+  "hero": "split-image-left",
+  "sections": [
+   "hero",
+   "services",
+   "about",
+   "process",
+   "testimonials",
+   "pricing",
+   "waitlist",
+   "faq",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "headings that split into upright sans and a lavender italic serif tail",
+   "image masks mixing a tall arch, a circle and a soft rectangle across sections",
+   "dark treatment cards with lavender hairlines and price placeholders"
+  ],
+  "imagery": "hydrangea and lily close-ups on deep green, low evening light, dewy textures",
+  "why": "Feels exclusive and calm, made for patients who want a long-term provider."
+ },
+ {
+  "n": 9,
+  "name": "Blush Studio",
+  "concept": "A modern beauty studio: blush and clay tones, rounded sans type, product-like treatment cards and a friendly, contemporary voice.",
+  "refs": [
+   "ecommerce-beauty/essential",
+   "agency-design/pane"
+  ],
+  "style": "soft-pastel",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f3d9d3",
+   "surface": "#ecc9c1",
+   "ink": "#33221f",
+   "muted": "#6e5550",
+   "accent": "#9c3d5a",
+   "line": "#e0b9b0"
+  },
+  "fonts": {
+   "display": "Outfit",
+   "body": "Outfit",
+   "class": "sans"
+  },
+  "hero": "product-cards",
+  "sections": [
+   "hero",
+   "services",
+   "process",
+   "pricing",
+   "about",
+   "testimonials",
+   "faq",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "treatment categories as product-style cards with brand names (Xeomin, Dysport, Daxxify, Sculptra) and areas",
+   "bento grid mixing a quote, the consultation steps and a Chicago waitlist card",
+   "two-line centred headlines with the second line in clay"
+  ],
+  "imagery": "soft blush backdrops, product-free flat lays of tools and skincare textures, rounded crops",
+  "why": "Approachable and modern for newcomers, with treatments explained like a clear menu."
+ },
+ {
+  "n": 10,
+  "name": "Atelier",
+  "concept": "A quiet art-gallery atelier: taupe walls, black type in a refined grotesk, one chocolate accent and generous white space; every face treated like a portrait.",
+  "refs": [
+   "agency-architecture/luneo",
+   "agency-architecture/datum"
+  ],
+  "style": "editorial",
+  "scheme": "mixed",
+  "palette": {
+   "bg": "#dcd4ca",
+   "surface": "#cfc5b9",
+   "ink": "#1b1715",
+   "muted": "#5f5650",
+   "accent": "#5a3a2c",
+   "line": "#bfb3a6"
+  },
+  "fonts": {
+   "display": "Archivo",
+   "body": "Inter",
+   "class": "sans"
+  },
+  "hero": "gallery-collage",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "pricing",
+   "faq",
+   "process",
+   "testimonials",
+   "contact",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "hero as a gallery wall: three framed images of different sizes with museum-style captions",
+   "headline split over two lines with the second line indented to form a step",
+   "treatments listed like an exhibition index with numbers and short captions"
+  ],
+  "imagery": "black-and-white and muted-colour portraits of texture, flowers and the studio; framed with white mats and captions",
+  "why": "Matches her 'every face treated with intention' promise with a calm, artful feel."
+ }
+]
