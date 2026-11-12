@@ -1,0 +1,19 @@
+{
+  "name": "Agnos",
+  "industry": "agency-design",
+  "also": ["agency-web", "agency-marketing"],
+  "summary": "Warm off-white studio site with a single hot orange accent, tight Geist headlines, handwritten Caveat asides and a dense bento of tactile white cards nested inside soft grey trays.",
+  "style": ["corporate-clean", "playful", "minimal"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 4, "warmth": 4, "modernity": 4 },
+  "scheme": "light",
+  "hue": "orange",
+  "palette": { "bg": "#f5f4f3", "surface": "#ffffff", "ink": "#060612", "muted": "#69686e", "accent": "#ff6321", "line": "#e7e2dd" },
+  "fonts": { "display": "Geist", "body": "Geist", "class": "sans", "pairing": "one grotesk at 500 with -0.03em tracking for every heading, Geist body in warm grey, Caveat script in orange for small handwritten callouts" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "gallery", "features", "about", "services", "portfolio", "process", "pricing", "testimonials", "blog", "faq", "cta"],
+  "motion": 4,
+  "signature": ["centered headline whose last word flips to orange, flanked by huge concentric embossed arcs carrying slowly rotating tool-icon tiles", "Caveat script note with a hand-drawn arrow pointing at the primary button", "white cards nested inside a 1px grey tray with a 16px outer and 8px inner radius, used for compare, bento, pricing and CTA", "two opposing image tickers behind a centered badge card, faded at both edges", "sticky scroll-driven process step that swaps variants as each stage scrolls past"],
+  "imagery": "studio flat-lays and product props on white, portraits shot against saturated orange, warm-toned project mockups",
+  "layout_grid": "1200px canvas, about 1000px content tray, 160px top padding per section, 4-column bento grids, 2-column pricing",
+  "quality": 4
+}

@@ -1,0 +1,889 @@
+{
+ "title": "Impacta (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/case-studies",
+  "/case-studies/:O41mQHuW9",
+  "/blogs",
+  "/blogs/:ALGvrZdK0",
+  "/contact",
+  "/404",
+  "/legal/:rCxgCzCOz"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Dark",
+   "light": "rgb(28, 28, 28)"
+  },
+  {
+   "name": "Dark 2",
+   "light": "rgb(29, 29, 29)"
+  },
+  {
+   "name": "Dark 3",
+   "light": "rgb(36, 36, 36)"
+  },
+  {
+   "name": "Text",
+   "light": "rgb(87, 87, 87)"
+  },
+  {
+   "name": "Accent",
+   "light": "rgb(255, 0, 61)"
+  },
+  {
+   "name": "Accent (20%)",
+   "light": "rgba(255, 0, 61, 0.2)"
+  },
+  {
+   "name": "Stroke (14%)",
+   "light": "rgba(255, 255, 255, 0.14)"
+  },
+  {
+   "name": "Stroke",
+   "light": "rgb(205, 205, 205)"
+  },
+  {
+   "name": "BG",
+   "light": "rgb(238, 238, 238)"
+  },
+  {
+   "name": "Shade 1",
+   "light": "rgb(253, 253, 253)"
+  },
+  {
+   "name": "Shade 2",
+   "light": "rgb(249, 249, 249)"
+  },
+  {
+   "name": "Shade 3",
+   "light": "rgb(220, 220, 220)"
+  },
+  {
+   "name": "Dark (20%)",
+   "light": "rgba(253, 253, 253, 0.2)"
+  },
+  {
+   "name": "Accent (10%)",
+   "light": "rgba(255, 0, 61, 0.1)"
+  },
+  {
+   "name": "Green",
+   "light": "rgb(22, 183, 13)"
+  },
+  {
+   "name": "Green 2",
+   "light": "rgb(177, 225, 174)"
+  },
+  {
+   "name": "Stroke (8%)",
+   "light": "rgba(255, 255, 255, 0.08)"
+  },
+  {
+   "name": "Blue",
+   "light": "rgb(53, 143, 228)"
+  },
+  {
+   "name": "Gray 60",
+   "light": "rgb(84, 84, 84)"
+  },
+  {
+   "name": "Dark 0",
+   "light": "rgba(28, 28, 28, 0)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.04em",
+   "leading": "1.1em",
+   "color": "token:7bda47cb-57b7-4d29-9301-549dfb7fd843, rgb(28, 28, 28)",
+   "responsive": {
+    "default": "64px",
+    "medium": "48px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.04em",
+   "leading": "1.2em",
+   "color": "token:7bda47cb-57b7-4d29-9301-549dfb7fd843, rgb(28, 28, 28)",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.04em",
+   "leading": "1.2em",
+   "color": "token:7bda47cb-57b7-4d29-9301-549dfb7fd843, rgb(28, 28, 28)",
+   "responsive": {
+    "default": "36px",
+    "medium": "24px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.04em",
+   "leading": "1.4em",
+   "color": "token:7bda47cb-57b7-4d29-9301-549dfb7fd843, rgb(28, 28, 28)",
+   "responsive": {
+    "default": "24px",
+    "medium": "24px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.04em",
+   "leading": "1.4em",
+   "color": "token:7bda47cb-57b7-4d29-9301-549dfb7fd843, rgb(28, 28, 28)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body 18",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.03em",
+   "leading": "1.4em",
+   "color": "token:32897350-6b10-45c3-aff6-0de46aacf432, rgb(87, 87, 87)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Body 16",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:32897350-6b10-45c3-aff6-0de46aacf432, rgb(87, 87, 87)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Body 14",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:32897350-6b10-45c3-aff6-0de46aacf432, rgb(87, 87, 87)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body 12",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:32897350-6b10-45c3-aff6-0de46aacf432, rgb(87, 87, 87)",
+   "responsive": {
+    "default": "12px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Link",
+  "Logo",
+  "Nav bar",
+  "Footer",
+  "Video",
+  "Check Icon",
+  "Profile",
+  "Showcase Logo",
+  "Metrics",
+  "Tag",
+  "Divider",
+  "Result",
+  "Card Tags",
+  "Project Card",
+  "Point",
+  "Pricing Card",
+  "Toggle",
+  "Price Component",
+  "Testimonial",
+  "Blog Arrow",
+  "Blog Card",
+  "FAQ Icon",
+  "Accordian",
+  "FAQ Section",
+  "Social Icon",
+  "Process Card",
+  "Team Card",
+  "Result CMS",
+  "Back Button",
+  "Submit Button",
+  "Phone",
+  "Number",
+  "Comparison",
+  "Contact Point",
+  "Custom Cursor",
+  "Roles",
+  "Testimonial Big",
+  "Arrow",
+  "Filter Button",
+  "Projects Filter",
+  "Blog Filter"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "CTA Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav bar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:BG"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1272,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "180px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 5,
+   "words": 34,
+   "images": 9,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2,
+    "Video": 4
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1,
+    "ticker": 2
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body 18": 2,
+    "Body 12": 2
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Showcase",
+   "type": "FrameNode",
+   "y": 1272,
+   "h": 1400,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Container"
+   ],
+   "text": 2,
+   "words": 17,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Showcase Logo": 5,
+    "Metrics": 5
+   },
+   "effects": {
+    "appear": 10,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 2
+   },
+   "shot": "sections/02-showcase.jpg"
+  },
+  {
+   "name": "Results",
+   "type": "FrameNode",
+   "y": 2672,
+   "h": 1053,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Result": 3,
+    "Divider": 2,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "scrollVariant": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/03-results.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 3725,
+   "h": 1623,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 8,
+   "words": 62,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Lottie": 3,
+    "Point": 9,
+    "Button": 3
+   },
+   "effects": {
+    "appear": 4,
+    "styleTransform": 2,
+    "sticky": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 4,
+    "Heading 3": 3
+   },
+   "shot": "sections/04-services.jpg"
+  },
+  {
+   "name": "Mission",
+   "type": "FrameNode",
+   "y": 5348,
+   "h": 800,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 23,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "Tag": 1,
+    "Animated Number Counter": 2
+   },
+   "effects": {
+    "appear": 6,
+    "sticky": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1,
+    "Body 14": 2
+   },
+   "shot": "sections/05-mission.jpg"
+  },
+  {
+   "name": "Projects",
+   "type": "FrameNode",
+   "y": 6148,
+   "h": 1577,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 17,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Tag": 1,
+    "Project Card": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/06-projects.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 7725,
+   "h": 1470,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Process Card": 3
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 6
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/07-process.jpg"
+  },
+  {
+   "name": "Comparison",
+   "type": "FrameNode",
+   "y": 9195,
+   "h": 766,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 18,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Comparison": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/08-comparison.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 9961,
+   "h": 1254,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 38,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Tag": 1,
+    "Price Component": 1,
+    "Point": 4,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 2,
+    "Heading 4": 1
+   },
+   "shot": "sections/09-pricing.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 11215,
+   "h": 1286,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Testimonial Big": 1,
+    "Testimonial": 10
+   },
+   "effects": {
+    "appear": 10,
+    "ticker": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/10-testimonials.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 12501,
+   "h": 685,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Button": 2,
+    "FAQ Section": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 4
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/11-faq.jpg"
+  },
+  {
+   "name": "Blogs",
+   "type": "FrameNode",
+   "y": 13186,
+   "h": 1128,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "20px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Tag": 1,
+    "Blog Card": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 16": 1
+   },
+   "shot": "sections/12-blogs.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 68,
+  "text": 3,
+  "ticker": 4,
+  "scrollVariant": 2,
+  "styleTransform": 2,
+  "sticky": 6
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 100,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 300,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0.8s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 100,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 300,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0.8s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "character",
+   "delay": "0.8s",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "0px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.7s",
+     "bounce": 0,
+     "delay": "0s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 50,
+   "hoverModifier": "50%",
+   "directionModifier": "default",
+   "draggable": false
+  },
+  "scrollVariant": {
+   "trigger": "onInView",
+   "threshold": 0.5,
+   "replay": true,
+   "fromVariant": "HCEcy5xqO",
+   "toVariant": "oSlGhhkcE"
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "middle",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "RKhvHUO7o",
+     "opacity": 0.5,
+     "x": "0px",
+     "y": "-32px",
+     "scale": 0.96,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "20px",
+   6
+  ],
+  [
+   "0px",
+   5
+  ],
+  [
+   "1000px",
+   4
+  ],
+  [
+   "8px",
+   3
+  ],
+  [
+   "100px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 5,
+  "blur": 0
+ },
+ "desktopFill": "token:BG",
+ "pageHeight": 15799,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/5bfbdd60-3e9a-4bbf-93c8-d8fc3001df24.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/9d0b91ad-7cfd-4bad-b389-8afeaa40deb7.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-marketing/impacta",
+ "industry": "agency-marketing",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  15798
+ ]
+}
