@@ -1,0 +1,423 @@
+{
+ "title": "wellness\u00e9 (copy)",
+ "pages": [
+  "/",
+  "/blog/:XYOT9I9v9",
+  "/blog",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1439.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "T 1",
+   "light": "rgb(61, 54, 30)"
+  },
+  {
+   "name": "BG",
+   "light": "rgb(238, 236, 224)"
+  },
+  {
+   "name": "BG-Dark",
+   "light": "rgb(221, 218, 201)"
+  },
+  {
+   "name": "T 2",
+   "light": "rgba(82, 77, 63, 0.66)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Title",
+   "tag": "h1",
+   "font": "Plus Jakarta Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.03em",
+   "leading": "110%",
+   "transform": "uppercase",
+   "color": "rgb(61, 53, 30)",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Eyebrow-Text",
+   "font": "Plus Jakarta Sans",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0.01em",
+   "leading": "100%",
+   "transform": "uppercase",
+   "color": "rgb(61, 54, 30)",
+   "responsive": {
+    "medium": "14px",
+    "small": "12px"
+   }
+  },
+  {
+   "name": "Description",
+   "font": "Plus Jakarta Sans",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0.02em",
+   "leading": "130%",
+   "transform": "capitalize",
+   "color": "token:58c88007-5bf8-45c9-8067-d0788834e18e, rgba(82, 77, 63, 0.66)",
+   "responsive": {
+    "medium": "14px",
+    "small": "12px"
+   }
+  },
+  {
+   "name": "Blog-Heading",
+   "tag": "h2",
+   "font": "Plus Jakarta Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "27px",
+   "tracking": "-0.03em",
+   "leading": "120%",
+   "transform": "capitalize",
+   "color": "token:7919caec-0ae0-4725-b5e2-2674c2c83a18, rgb(61, 54, 30) /* {\"name\":\"T 1\"} */",
+   "responsive": {
+    "default": "27px",
+    "medium": "19px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Blog-Body",
+   "font": "Plus Jakarta Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.01em",
+   "leading": "140%",
+   "color": "token:58c88007-5bf8-45c9-8067-d0788834e18e, rgba(82, 77, 63, 0.66) /* {\"name\":\"T 2\"} */",
+   "responsive": {
+    "default": "19px",
+    "medium": "14px",
+    "small": "12px"
+   }
+  },
+  {
+   "name": "Main -Heading",
+   "tag": "h1",
+   "font": "Plus Jakarta Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "74px",
+   "tracking": "-0.03em",
+   "leading": "110%",
+   "transform": "uppercase",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {
+    "default": "74px",
+    "medium": "50px",
+    "small": "32px"
+   }
+  }
+ ],
+ "components": [
+  "Nav Menu-Button",
+  "accordion list",
+  "accordion item",
+  "Steps-Card",
+  "Pricing-Card",
+  "FAQs",
+  "Accordion 2",
+  "Signs-Card",
+  "Primary-Button",
+  "Footer",
+  "Articles-Hover",
+  "Bento",
+  "Links-Underline",
+  "Sample-Card",
+  "Contact-Popup",
+  "Submit Button",
+  "Services-Section",
+  "Services-Cards",
+  "Wellnese-Side Navigation",
+  "Copy-Link",
+  "Bento-Card-3",
+  "Bento-Card-4",
+  "Bento-Card-5",
+  "Bento-Card-2",
+  "Bento-Graph-Card",
+  "bento-button",
+  "Logo",
+  "Burger Menu Icon",
+  "About-Img"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": null,
+ "sections": [
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Wellnese-Side Navigation",
+   "y": 0,
+   "h": 800,
+   "w": 1440,
+   "childNames": [
+    "FixedOverlayNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Wellnese-Side Navigation": 1,
+    "Contact-Popup": 1
+   },
+   "effects": {
+    "fixed": 1,
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/01-wellnese-side-navigation.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "NoiseGrain",
+   "y": 0,
+   "h": 800,
+   "w": 1440,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "NoiseGrain": 1
+   },
+   "effects": {
+    "fixed": 1
+   },
+   "styles": {},
+   "shot": "sections/02-noisegrain.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Smooth Scroll",
+   "y": 0,
+   "h": 24,
+   "w": 24,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Smooth Scroll": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/03-smooth-scroll.jpg"
+  },
+  {
+   "name": "Content-Wrapper",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 9951,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Hero-Section",
+    "Signs-Section",
+    "About-Section",
+    "Process-Section",
+    "ComponentInstanceNode",
+    "Pricing-Section",
+    "Blogs-Section",
+    "Reviews-Section"
+   ],
+   "text": 41,
+   "words": 272,
+   "images": 7,
+   "icons": 6,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Sample-Card": 1,
+    "Signs-Card": 9,
+    "About-Img": 1,
+    "Primary-Button": 4,
+    "Contact-Popup": 8,
+    "Steps-Card": 6,
+    "Services-Section": 1,
+    "Pricing-Card": 2,
+    "Articles-Hover": 1,
+    "Links-Underline": 1,
+    "TestimonialFolio": 1,
+    "Bento": 1,
+    "accordion list": 1,
+    "FAQs": 1,
+    "Footer": 1
+   },
+   "effects": {
+    "hover": 1,
+    "appear": 8
+   },
+   "styles": {
+    "Main -Heading": 2,
+    "Description": 8,
+    "Title": 6,
+    "Eyebrow-Text": 9
+   },
+   "shot": "sections/04-content-wrapper.jpg"
+  }
+ ],
+ "effects": {
+  "fixed": 2,
+  "appear": 9,
+  "hover": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.4s",
+     "bounce": 0.2,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.4s",
+     "bounce": 0.2,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "hover": {
+   "opacity": 0,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.44,
+     0,
+     0.56,
+     1
+    ],
+    "duration": "0.5s",
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {
+  "Plus Jakarta Sans": 28,
+  "Geist": 2
+ },
+ "radii": [
+  [
+   "0px",
+   40
+  ],
+  [
+   "16px",
+   7
+  ],
+  [
+   "100px",
+   7
+  ],
+  [
+   "4px",
+   5
+  ],
+  [
+   "71.68px",
+   4
+  ],
+  [
+   "20px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 10,
+  "borders": 14,
+  "blur": 7
+ },
+ "desktopFill": "token:BG",
+ "pageHeight": 9951,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/ce337c14-d9b0-4cbf-b7bd-72ef9f38ab30.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/e8c3b174-506b-46e7-9015-27e71f120ee3.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "health-wellness/wellnesse",
+ "industry": "health-wellness",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  11551
+ ]
+}

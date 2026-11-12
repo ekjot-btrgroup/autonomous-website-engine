@@ -1,0 +1,932 @@
+{
+ "title": "CUREVANTA (copy)",
+ "pages": [
+  "/",
+  "/treatments",
+  "/reviews",
+  "/about",
+  "/blog",
+  "/contact",
+  "/treatments/:ol9jhFf8M",
+  "/blog/:VTQPUG02i"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Ink",
+   "light": "#111111"
+  },
+  {
+   "name": "Ink Raised",
+   "light": "#1C1C1C"
+  },
+  {
+   "name": "Paper",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "Mist",
+   "light": "#F3F3F0"
+  },
+  {
+   "name": "Muted",
+   "light": "#6B6B66"
+  },
+  {
+   "name": "Muted on Dark",
+   "light": "rgba(255,255,255,0.62)"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(17,17,17,0.10)"
+  },
+  {
+   "name": "Line on Dark",
+   "light": "rgba(255,255,255,0.12)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading/H1",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "68px",
+   "tracking": "-0.035em",
+   "leading": "1.04em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "68px",
+    "medium": "54px",
+    "small": "42px"
+   }
+  },
+  {
+   "name": "Heading/H2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "46px",
+   "tracking": "-0.03em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "46px",
+    "medium": "38px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading/H3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.01em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "22px",
+    "medium": "21px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading/Stat",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.04em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "54px",
+    "small": "46px"
+   }
+  },
+  {
+   "name": "Heading/Quote",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.02em",
+   "leading": "1.35em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Body/Large",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "-0.01em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "17px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body/Regular",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Body/Small",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Body/Label",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Body/Button",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Body/Eyebrow",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "11px",
+   "tracking": "0.08em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "11px"
+   }
+  },
+  {
+   "name": "Heading/H4",
+   "tag": "h4",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.35em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Heading/Card Quote",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "21px",
+   "tracking": "-0.015em",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "21px"
+   }
+  },
+  {
+   "name": "Heading/Card Title",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.025em",
+   "leading": "1.15em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "28px",
+    "small": "25px"
+   }
+  },
+  {
+   "name": "Article/Heading",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "28px",
+    "medium": "28px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Article/Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.75em",
+   "transform": "none",
+   "color": "#3A3A36",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Article/Heading 1",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.025em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Eyebrow",
+  "Card/Treatment",
+  "Card/Feature",
+  "Card/Step",
+  "Card/Stat",
+  "Card/Review",
+  "Card/Doctor",
+  "Card/Article",
+  "Card/FAQ",
+  "Card/Contact",
+  "Check Item",
+  "Submit Button",
+  "Navigation"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Site Layout",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Nav Wrapper",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrapper",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Paper"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 832,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Card"
+   ],
+   "text": 9,
+   "words": 56,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading/H1": 1,
+    "Body/Large": 1,
+    "Heading/H4": 1,
+    "Body/Regular": 3,
+    "Heading/H3": 3
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Trust & Credibility",
+   "type": "FrameNode",
+   "y": 832,
+   "h": 1146,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 44,
+   "images": 1,
+   "icons": 1,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Check Item": 4
+   },
+   "effects": {
+    "appear": 3,
+    "parallax": 1
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1,
+    "Heading/H4": 1,
+    "Body/Small": 1
+   },
+   "shot": "sections/02-trust-credibility.jpg"
+  },
+  {
+   "name": "About CUREVANTA",
+   "type": "FrameNode",
+   "y": 1978,
+   "h": 1050,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 37,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/Feature": 3
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/03-about-curevanta.jpg"
+  },
+  {
+   "name": "Our Treatments",
+   "type": "FrameNode",
+   "y": 3028,
+   "h": 1433,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/Treatment": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/04-our-treatments.jpg"
+  },
+  {
+   "name": "Our Values",
+   "type": "FrameNode",
+   "y": 4461,
+   "h": 924,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Our Values Card"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Card/Feature": 6
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/05-our-values.jpg"
+  },
+  {
+   "name": "Patient Stories",
+   "type": "FrameNode",
+   "y": 5385,
+   "h": 909,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 5,
+   "words": 35,
+   "images": 0,
+   "icons": 5,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Card/Review": 3,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1,
+    "Heading/Stat": 1,
+    "Body/Label": 1,
+    "Body/Regular": 1
+   },
+   "shot": "sections/06-patient-stories.jpg"
+  },
+  {
+   "name": "Why Choose CUREVANTA",
+   "type": "FrameNode",
+   "y": 6294,
+   "h": 1025,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 26,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Card/Step": 4,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 7
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/07-why-choose-curevanta.jpg"
+  },
+  {
+   "name": "Our Care Approach",
+   "type": "FrameNode",
+   "y": 7319,
+   "h": 716,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/Feature": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/08-our-care-approach.jpg"
+  },
+  {
+   "name": "Meet Our Doctors",
+   "type": "FrameNode",
+   "y": 8035,
+   "h": 929,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 17,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/Doctor": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/09-meet-our-doctors.jpg"
+  },
+  {
+   "name": "Healthcare at a Glance",
+   "type": "FrameNode",
+   "y": 8964,
+   "h": 499,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Healthcare at a Glance Card"
+   ],
+   "text": 2,
+   "words": 20,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Card/Stat": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/10-healthcare-at-a-glance.jpg"
+  },
+  {
+   "name": "Latest Health Insights",
+   "type": "FrameNode",
+   "y": 9463,
+   "h": 943,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/Article": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/11-latest-health-insights.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 10406,
+   "h": 830,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 48px 112px 48px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Card/FAQ": 7
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/12-faq.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 11236,
+   "h": 572,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 12px 12px",
+   "gap": "0px",
+   "childNames": [
+    "CTA Card"
+   ],
+   "text": 2,
+   "words": 29,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 2
+   },
+   "effects": {
+    "parallax": 1,
+    "appear": 1
+   },
+   "styles": {
+    "Heading/H2": 1,
+    "Body/Large": 1
+   },
+   "shot": "sections/13-final-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 68,
+  "parallax": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.12,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "1.8s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.12,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "1.8s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 90
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "28px",
+   8
+  ],
+  [
+   "22px",
+   1
+  ],
+  [
+   "20px",
+   1
+  ],
+  [
+   "100px",
+   1
+  ],
+  [
+   "24px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 1,
+  "blur": 1
+ },
+ "desktopFill": "white",
+ "pageHeight": 12853,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/7aa1a8c2-95ff-49cc-9007-b0541de91b36.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/e0d73bcc-9cb1-4825-bef6-1f507a9fa7b9.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "health-medical/curevanta",
+ "industry": "health-medical",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  12853
+ ]
+}

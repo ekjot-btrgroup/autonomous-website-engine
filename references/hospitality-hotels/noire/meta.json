@@ -1,0 +1,19 @@
+{
+  "name": "NOIRE",
+  "industry": "hospitality-hotels",
+  "also": ["hospitality-travel", "events-weddings", "hospitality-restaurants"],
+  "summary": "Dark-first lakeside grand hotel site in ink and bone with a hairline Boska serif, a giant wordmark tucked behind the hero landscape, numbered chapters and scroll-pinned room and experience stages.",
+  "style": ["luxury", "cinematic", "editorial"],
+  "feel": { "tone": 1, "energy": 2, "luxury": 5, "density": 2, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "black",
+  "palette": { "bg": "#0d0c0a", "surface": "#eee8dd", "ink": "#f2ede4", "muted": "#a39c8f", "accent": "#b9966a", "line": "rgba(242,237,228,0.12)" },
+  "fonts": { "display": "Boska", "body": "Satoshi", "class": "serif", "pairing": "light 300 high-contrast serif with italic emphasis for display, numerals and quotes; Satoshi for body and widely tracked uppercase labels" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "about", "stats", "rooms", "contact", "features", "pricing", "testimonials", "blog", "gallery"],
+  "motion": 4,
+  "signature": ["oversized hairline wordmark layered behind a cut-out mountain horizon in the hero", "numbered chapter eyebrows (01 to 06) with a short champagne rule before each label", "hand-drawn style lake map beside a distance table of nearby places", "booking bar in a ruled strip at the foot of the hero with a bone-coloured action block"],
+  "imagery": "dusk and blue-hour lake landscapes, villa terraces, sunlit breakfast tables, warm interiors; desaturated cinematic grade",
+  "layout_grid": "1200px canvas, 80px side padding, 160px section padding, asymmetric 1/3 label column and 2/3 content column, zero radius",
+  "quality": 5
+}

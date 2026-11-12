@@ -1,0 +1,501 @@
+{
+ "title": "Luneo (copy)",
+ "pages": [
+  "/",
+  "/projects",
+  "/projects/:cRvWoHp9r",
+  "/contact",
+  "/service",
+  "/404",
+  "/privacy-policy",
+  "/terms-conditions",
+  "/studio",
+  "/news",
+  "/news/:lB2Lfr2UC",
+  "/service/:Y4kyIkEGT"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Light",
+   "light": "rgb(247, 246, 242)"
+  },
+  {
+   "name": "Dark",
+   "light": "rgb(23, 23, 21)"
+  },
+  {
+   "name": "Background",
+   "light": "rgb(242, 237, 228)"
+  },
+  {
+   "name": "Dark Weak",
+   "light": "rgb(122, 117, 107)"
+  },
+  {
+   "name": "Light Weak",
+   "light": "rgba(247, 246, 242, 0.8)"
+  },
+  {
+   "name": "Border",
+   "light": "rgba(115, 115, 115, 0.1)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Label S",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1em",
+   "color": "token:e08f18a4-625f-4fb3-866f-b53aa7458ad1, rgb(247, 246, 242)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "96px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "transform": "capitalize",
+   "color": "token:e08f18a4-625f-4fb3-866f-b53aa7458ad1, rgb(247, 246, 242)",
+   "responsive": {
+    "default": "96px",
+    "medium": "80px",
+    "small": "64px"
+   }
+  },
+  {
+   "name": "Body M",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "leading": "1.3em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21) /* {\"name\":\"Dark\"} */",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "transform": "capitalize",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "80px",
+    "medium": "64px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Label M",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "transform": "capitalize",
+   "color": "token:e08f18a4-625f-4fb3-866f-b53aa7458ad1, rgb(247, 246, 242)",
+   "responsive": {}
+  },
+  {
+   "name": "Label L",
+   "font": "Archivo",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "color": "token:e08f18a4-625f-4fb3-866f-b53aa7458ad1, rgb(247, 246, 242)",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Body S",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1.3em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {}
+  },
+  {
+   "name": "Heading 1b",
+   "tag": "h1",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "120px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "transform": "uppercase",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "120px",
+    "medium": "96px",
+    "small": "48px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.01em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "32px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "leading": "1.3em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "24px",
+    "medium": "20px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading 6b",
+   "tag": "h6",
+   "font": "Archivo",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0em",
+   "leading": "1.3em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {}
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.03em",
+   "leading": "1.1em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading 6",
+   "tag": "h6",
+   "font": "Archivo",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "leading": "1.3em",
+   "color": "token:d4728451-3a09-4edb-a6b1-c96b2515f5f1, rgb(23, 23, 21)",
+   "responsive": {
+    "default": "20px"
+   }
+  }
+ ],
+ "components": [
+  "Link text",
+  "Text button",
+  "Nav bar",
+  "Logo",
+  "Chip",
+  "Button",
+  "Project card",
+  "State",
+  "Service card",
+  "Navigation button",
+  "Testimonial Card",
+  "Testimonial Carousel",
+  "Section Heading",
+  "Heading tag",
+  "Process Card",
+  "Separator",
+  "Footer",
+  "Tab",
+  "Submit button",
+  "Contact form",
+  "FAQ Container",
+  "FAQ Card",
+  "Service detail card",
+  "About image",
+  "Award List",
+  "Team card",
+  "Arrow button",
+  "Project Carousel",
+  "Work Video",
+  "Blog Card"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav bar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Button",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "CTA",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Lenis Smooth Scroll",
+   "type": "ComponentInstanceNode",
+   "comp": "Lenis",
+   "y": 0,
+   "h": 0,
+   "w": 0,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Lenis": 1
+   },
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": "Hero section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Bg",
+    "Content"
+   ],
+   "text": 3,
+   "words": 24,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Chip": 1,
+    "Button": 1
+   },
+   "effects": {
+    "fixed": 1,
+    "appear": 6
+   },
+   "styles": {
+    "Heading 1": 2,
+    "Body M": 1
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "Transparent",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/02-transparent.jpg"
+  },
+  {
+   "name": "Main",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 7924,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "About us",
+    "Work",
+    "Services",
+    "Video",
+    "Process",
+    "Testimonial ",
+    "News"
+   ],
+   "text": 17,
+   "words": 187,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Heading": 6,
+    "Separator": 1,
+    "Button": 2,
+    "Project card": 4,
+    "Service card": 4,
+    "Work Video": 1,
+    "Process Card": 3,
+    "Testimonial Carousel": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "appear": 16,
+    "sticky": 4
+   },
+   "styles": {
+    "Body M": 2,
+    "Heading 5": 1,
+    "Body S": 5
+   },
+   "shot": "sections/03-main.jpg"
+  }
+ ],
+ "effects": {
+  "fixed": 1,
+  "appear": 22,
+  "sticky": 4
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0,
+      0.39,
+      0.63,
+      0.99
+     ],
+     "duration": "2s",
+     "delay": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.4s",
+     "bounce": 0.2,
+     "delay": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "20px",
+   9
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 9,
+  "blur": 0
+ },
+ "desktopFill": "token:Background",
+ "pageHeight": 10317,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/02eeeb32-b37a-46f6-920b-100bc4ee9a94.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/7380450f-92cc-4177-9e1e-50c65e38ae4e.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-architecture/luneo",
+ "industry": "agency-architecture",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  10274
+ ]
+}

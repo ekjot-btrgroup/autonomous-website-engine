@@ -1,0 +1,40 @@
+{
+ "n": 4,
+ "name": "Barber Pole Poster",
+ "concept": "Loud and local: deep red poster blocks, a heavy condensed display and yellow stickers for prices.",
+ "refs": [
+  "hospitality-restaurants/irish-cafe"
+ ],
+ "style": "bold-graphic",
+ "scheme": "colour",
+ "palette": {
+  "bg": "#8f1d17",
+  "surface": "#a3241c",
+  "ink": "#fff8ee",
+  "muted": "#f1d9cf",
+  "accent": "#f4c430",
+  "line": "#b8473f"
+ },
+ "fonts": {
+  "display": "Anton",
+  "body": "Archivo",
+  "class": "display"
+ },
+ "hero": "collage",
+ "sections": [
+  "hero",
+  "pricing",
+  "services",
+  "team",
+  "gallery",
+  "booking",
+  "contact"
+ ],
+ "motion": 3,
+ "signature": [
+  "hero collage of cut-out photos and price stickers",
+  "scrolling ticker of services between sections"
+ ],
+ "imagery": "high-contrast cut-out portraits and tools on flat colour",
+ "why": "Impossible to miss on a busy street; great if walk-ins and young customers matter most."
+}

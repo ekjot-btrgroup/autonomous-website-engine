@@ -1,0 +1,707 @@
+{
+ "title": "Hotellia (copy)",
+ "pages": [
+  "/",
+  "/404",
+  "/thankyou",
+  "/reserve",
+  "/gallery",
+  "/terms",
+  "/privacy",
+  "/offers/:sUEQmmXze",
+  "/rooms",
+  "/rooms/:Izsau_psL",
+  "/wine-dine",
+  "/bar-menu",
+  "/restaurant-menu"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Neutral 0",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Neutral 100",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Neutral 80",
+   "light": "rgb(34, 34, 34)"
+  },
+  {
+   "name": "Neutral 40",
+   "light": "rgb(235, 235, 235)"
+  },
+  {
+   "name": "Neutral 60",
+   "light": "rgb(179, 179, 179)"
+  },
+  {
+   "name": "Neutral 20",
+   "light": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Accent",
+   "light": "rgb(28, 61, 45)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Libre Baskerville",
+   "weight": 400,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "0em",
+   "transform": "uppercase",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {
+    "default": "80px",
+    "medium": "48px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Libre Baskerville",
+   "weight": 400,
+   "style": "normal",
+   "size": "40px",
+   "tracking": "-0.04em",
+   "transform": "uppercase",
+   "color": "rgb(43, 40, 34)",
+   "responsive": {
+    "default": "40px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Libre Baskerville",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "transform": "uppercase",
+   "color": "token:4db20bfa-ebc5-41cf-8d93-8939badb3752, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "32px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h4",
+   "font": "Libre Baskerville",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "transform": "uppercase",
+   "color": "#000",
+   "responsive": {
+    "default": "20px",
+    "medium": "16px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 700,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.04em",
+   "leading": "1.4em",
+   "color": "#000",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h6",
+   "font": "Libre Baskerville",
+   "weight": 600,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "#000",
+   "responsive": {}
+  },
+  {
+   "name": "Body L Regular",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "transform": "uppercase",
+   "color": "token:4db20bfa-ebc5-41cf-8d93-8939badb3752, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Body XL Regular",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "transform": "uppercase",
+   "color": "token:4db20bfa-ebc5-41cf-8d93-8939badb3752, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "32px"
+   }
+  },
+  {
+   "name": "Body M Regular",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "leading": "1.2em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Caption",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Body M Bold",
+   "font": "Manrope",
+   "weight": 700,
+   "style": "normal",
+   "leading": "1.5em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {}
+  },
+  {
+   "name": "Body M Bold 2",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1.5em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {}
+  },
+  {
+   "name": "Body S Regular",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body S Bold",
+   "font": "Inter",
+   "weight": 700,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  }
+ ],
+ "components": [
+  "Nav",
+  "Room Tag",
+  "Form Button",
+  "Icon Link",
+  "Button",
+  "Sale Card",
+  "Logo",
+  "Experiences",
+  "Dine Card",
+  "Offer Card",
+  "Round Icon Button",
+  "Question",
+  "Question Items",
+  "Navigation Dot",
+  "Reviews",
+  "Room Card",
+  "Amenity Card",
+  "Menu Item",
+  "Reserve Icon Hover"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav",
+    "position": "absolute"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Header Blur",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Section",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Neutral 0"
+ },
+ "sections": [
+  {
+   "name": "Hero Section",
+   "type": "FrameNode",
+   "y": 1,
+   "h": 741,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Content"
+   ],
+   "text": 3,
+   "words": 10,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "sticky": 1,
+    "styleTransform": 2,
+    "appear": 5
+   },
+   "styles": {
+    "Hxa6IS4JM": 2
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "Offer Section",
+   "type": "FrameNode",
+   "y": 742,
+   "h": 184,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 0px 64px 0px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Sale Card": 3,
+    "Logo": 3
+   },
+   "effects": {
+    "ticker": 1
+   },
+   "styles": {},
+   "shot": "sections/02-offer-section.jpg"
+  },
+  {
+   "name": "Dine Section",
+   "type": "FrameNode",
+   "y": 926,
+   "h": 788,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 30,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Dine Card": 2
+   },
+   "effects": {},
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/03-dine-section.jpg"
+  },
+  {
+   "name": "Experieces Section",
+   "type": "FrameNode",
+   "y": 1714,
+   "h": 1679,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Experiences": 4
+   },
+   "effects": {
+    "sticky": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/04-experieces-section.jpg"
+  },
+  {
+   "name": "Rooms Section",
+   "type": "FrameNode",
+   "y": 3393,
+   "h": 1388,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 24,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Room Card": 1
+   },
+   "effects": {},
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/05-rooms-section.jpg"
+  },
+  {
+   "name": "Offers Section",
+   "type": "FrameNode",
+   "y": 4781,
+   "h": 809,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 12,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Offer Card": 1
+   },
+   "effects": {},
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/06-offers-section.jpg"
+  },
+  {
+   "name": "Reviews Section",
+   "type": "FrameNode",
+   "y": 5590,
+   "h": 889,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Reviews": 1
+   },
+   "effects": {},
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/07-reviews-section.jpg"
+  },
+  {
+   "name": "Note Section",
+   "type": "FrameNode",
+   "y": 6479,
+   "h": 1328,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 123,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Logo": 1
+   },
+   "effects": {
+    "styleTransform": 1
+   },
+   "styles": {
+    "Body M Bold": 1
+   },
+   "shot": "sections/08-note-section.jpg"
+  },
+  {
+   "name": "FAQ Section",
+   "type": "FrameNode",
+   "y": 7807,
+   "h": 567,
+   "w": 1200,
+   "fill": "token:Neutral 20",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 20px 64px 20px",
+   "gap": "64px",
+   "childNames": [
+    "Wrapper"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Question Items": 1
+   },
+   "effects": {},
+   "styles": {
+    "Heading 2": 1,
+    "Body M Regular": 1
+   },
+   "shot": "sections/09-faq-section.jpg"
+  },
+  {
+   "name": "Hero Scroll Section",
+   "type": "FrameNode",
+   "y": 739,
+   "h": 994,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/10-hero-scroll-section.jpg"
+  }
+ ],
+ "effects": {
+  "sticky": 4,
+  "styleTransform": 3,
+  "appear": 5,
+  "ticker": 1
+ },
+ "effectSamples": {
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "end",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "x2SYnq7tt",
+     "opacity": 1,
+     "x": "0px",
+     "y": "-300px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  },
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.6,
+      -0.01,
+      0.3,
+      0.99
+     ],
+     "duration": "2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.6,
+      -0.01,
+      0.3,
+      0.99
+     ],
+     "duration": "2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 50,
+   "hoverModifier": "10%",
+   "directionModifier": "default",
+   "draggable": false
+  }
+ },
+ "fontsUsed": {
+  "Libre Baskerville": 2
+ },
+ "radii": [
+  [
+   "0px",
+   8
+  ]
+ ],
+ "surfaces": {
+  "shadows": 2,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Neutral 0",
+ "pageHeight": 8986,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/54476163-e08a-4d1e-ab8c-e9c4c5fea970.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/357a4d2d-0d70-43e7-af96-07ca34e9020d.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-hotels/hotellia",
+ "industry": "hospitality-hotels",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  9095
+ ]
+}

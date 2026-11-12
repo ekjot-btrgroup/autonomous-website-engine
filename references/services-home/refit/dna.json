@@ -1,0 +1,747 @@
+{
+ "title": "Refit (copy)",
+ "pages": [
+  "/",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1439.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Text & BG - dark",
+   "light": "rgb(16, 16, 20)"
+  },
+  {
+   "name": "Text - light",
+   "light": "rgb(208, 209, 219)"
+  },
+  {
+   "name": "Border - dark",
+   "light": "rgb(34, 34, 34)"
+  },
+  {
+   "name": "Border - mid",
+   "light": "rgb(219, 218, 217)"
+  },
+  {
+   "name": "Text - mid",
+   "light": "rgb(61, 61, 71)"
+  },
+  {
+   "name": "Border - light",
+   "light": "rgb(230, 230, 230)"
+  },
+  {
+   "name": "Background - mid",
+   "light": "rgb(233, 236, 242)"
+  },
+  {
+   "name": "Background - light",
+   "light": "rgb(250, 250, 250)"
+  },
+  {
+   "name": "Error",
+   "light": "rgb(255, 34, 68)"
+  },
+  {
+   "name": "BG - mid",
+   "light": "rgb(40, 40, 44)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Text Light",
+   "light": "rgb(194, 194, 194)"
+  },
+  {
+   "name": "Text Dark",
+   "light": "rgb(65, 65, 66)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 58,
+   "tracking": "-1px",
+   "leading": "120%",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "58px",
+    "medium": "51px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 2 (label)",
+   "tag": "h2",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0.5px",
+   "leading": "100%",
+   "transform": "none",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 50,
+   "tracking": "-0.8px",
+   "leading": "110%",
+   "color": "token:293955a5-6f9a-470e-8eb8-8f52a27509f0, rgb(16, 16, 20)",
+   "responsive": {
+    "default": "50px",
+    "medium": "42px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 42,
+   "tracking": "-1px",
+   "leading": "110%",
+   "color": "token:293955a5-6f9a-470e-8eb8-8f52a27509f0, rgb(16, 16, 20)",
+   "responsive": {
+    "default": "42px",
+    "medium": "36px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Footer Title",
+   "tag": "h4",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 24,
+   "tracking": "-0.4px",
+   "leading": "110%",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Accordion Title",
+   "tag": "h4",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 22,
+   "tracking": "-0.2px",
+   "leading": "140%",
+   "color": "token:293955a5-6f9a-470e-8eb8-8f52a27509f0, rgb(16, 16, 20)",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Statistic Title",
+   "tag": "h4",
+   "font": "Manrope",
+   "weight": 600,
+   "style": "normal",
+   "size": 20,
+   "tracking": "-0.2px",
+   "leading": "150%",
+   "color": "token:293955a5-6f9a-470e-8eb8-8f52a27509f0, rgb(16, 16, 20)",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Button Text Small",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 14,
+   "leading": "130%",
+   "transform": "inherit",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body M",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "size": 18,
+   "tracking": "-0.1px",
+   "leading": "150%",
+   "color": "token:30e48027-3b22-4ff1-a546-6bd64e851575, rgb(61, 61, 71)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Body S",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.1px",
+   "leading": "130%",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "Menu Item",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 18,
+   "tracking": "-0.1px",
+   "leading": "100%",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "14px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Contact Label",
+   "font": "Manrope",
+   "weight": 600,
+   "style": "normal",
+   "size": 18,
+   "tracking": "-0.1px",
+   "leading": "130%",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Quote",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "size": 20,
+   "tracking": "-0.2px",
+   "leading": "140%",
+   "color": "token:30e48027-3b22-4ff1-a546-6bd64e851575, rgb(61, 61, 71)",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Button Text",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "leading": "130%",
+   "transform": "inherit",
+   "color": "token:0c2325eb-32e6-4468-b86d-b2000f27f938, rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "Notification Badge",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "size": 14,
+   "leading": "1em",
+   "color": "token:187cde52-4d3c-4c42-b84c-d6d602ac62bc, rgb(208, 209, 219)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Intro",
+   "font": "Manrope",
+   "weight": 400,
+   "style": "normal",
+   "size": 22,
+   "tracking": "-0.3px",
+   "leading": "150%",
+   "color": "token:187cde52-4d3c-4c42-b84c-d6d602ac62bc, rgb(208, 209, 219)",
+   "responsive": {
+    "default": "22px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Form Label",
+   "font": "Manrope",
+   "weight": 500,
+   "style": "normal",
+   "size": 16,
+   "tracking": "-0.1px",
+   "leading": "100%",
+   "color": "token:293955a5-6f9a-470e-8eb8-8f52a27509f0, rgb(16, 16, 20)",
+   "responsive": {
+    "default": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Form Button",
+  "Header",
+  "Footer",
+  "FAQs",
+  "Services Row",
+  "Ticker Image",
+  "Review Card",
+  "Services",
+  "Badge",
+  "Case Study Card",
+  "FAQs Row",
+  "Star Rating",
+  "Testimonials",
+  "Gallery",
+  "Statistic",
+  "Hamburger Icon",
+  "Contact Form",
+  "New Template",
+  "Logo"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Header",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrapper",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Remove Me (Remix Button)",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Remove Me (New Template)",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:White"
+ },
+ "sections": [
+  {
+   "name": "Banner",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1440,
+   "fill": "token:Text & BG - dark",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "50px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Background",
+    "Container",
+    "Review"
+   ],
+   "text": 4,
+   "words": 41,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Pulse": 1,
+    "Button": 1,
+    "Star Rating": 1
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Notification Badge": 1,
+    "Heading 1": 1,
+    "Intro": 1,
+    "Body S": 1
+   },
+   "shot": "sections/01-banner.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 950,
+   "h": 1071,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "100px",
+   "childNames": [
+    "Intro",
+    "ComponentInstanceNode",
+    "Statistics"
+   ],
+   "text": 2,
+   "words": 67,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Badge": 1,
+    "Gallery": 1,
+    "Statistic": 4
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1
+   },
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 2171,
+   "h": 1091,
+   "w": 1440,
+   "fill": "token:Background - light",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 0px 100px 0px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Services": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1
+   },
+   "shot": "sections/03-services.jpg"
+  },
+  {
+   "name": "Our Work",
+   "type": "FrameNode",
+   "y": 3412,
+   "h": 2578,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 18,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Case Study Card": 3
+   },
+   "effects": {
+    "appear": 1,
+    "sticky": 3,
+    "styleTransform": 2
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1
+   },
+   "shot": "sections/04-our-work.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 6140,
+   "h": 870,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "60px",
+   "childNames": [
+    "Container",
+    "ComponentInstanceNode"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Testimonials": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1
+   },
+   "shot": "sections/05-testimonials.jpg"
+  },
+  {
+   "name": "FAQs",
+   "type": "FrameNode",
+   "y": 7160,
+   "h": 699,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 11,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Button": 1,
+    "FAQs": 1
+   },
+   "effects": {
+    "appear": 2,
+    "sticky": 1
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1
+   },
+   "shot": "sections/06-faqs.jpg"
+  },
+  {
+   "name": "Contact",
+   "type": "FrameNode",
+   "y": 8009,
+   "h": 687,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "60px 0px 60px 0px",
+   "gap": "80px",
+   "childNames": [
+    "Background",
+    "Container"
+   ],
+   "text": 9,
+   "words": 40,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Badge": 1,
+    "Contact Form": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Intro": 1,
+    "Contact Label": 4,
+    "Body M": 3
+   },
+   "shot": "sections/07-contact.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 14,
+  "text": 1,
+  "sticky": 4,
+  "styleTransform": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 250,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 250,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "character",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "0px",
+    "transition": {
+     "type": "spring",
+     "stiffness": 400,
+     "damping": 40,
+     "mass": 1,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "end",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "SW2EJl4ld",
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 0.9,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "10px",
+   5
+  ],
+  [
+   "0px",
+   1
+  ],
+  [
+   "16px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 1
+ },
+ "desktopFill": "token:White",
+ "pageHeight": 9074,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/4eed5223-df1a-4b6b-b78f-1fd474d27fcb.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/fa230dba-4be6-4aba-b2eb-e67d4b315897.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "services-home/refit",
+ "industry": "services-home",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  10674
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "CUREVANTA",
+  "industry": "health-medical",
+  "also": ["health-wellness", "services-consulting", "health-therapy"],
+  "summary": "Monochrome multi-specialty clinic site: black, white and warm mist grey, inset photo hero with a glass stats panel, tidy numbered cards and plus-icon pill buttons.",
+  "style": ["corporate-clean", "monochrome", "minimal"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "black",
+  "palette": { "bg": "#ffffff", "surface": "#f3f3f0", "ink": "#111111", "muted": "#6b6b66", "accent": "#111111", "line": "rgba(17,17,17,0.10)" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "sans", "pairing": "Inter Display 500 with tight negative tracking for headings and stats, Inter for body, small caps eyebrows in pills" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "features", "services", "features", "testimonials", "stats", "process", "features", "team", "stats", "blog", "faq", "cta"],
+  "motion": 3,
+  "signature": ["inset rounded photo hero with floating dark glass nav bar and a translucent stats panel bottom right", "pill buttons ending in a round plus disc", "black rating bar with a giant 4.9/5 under the review cards", "small numbered chips sitting on card photo corners"],
+  "imagery": "bright clinical stock photography of clinicians, families and labs, natural light, full colour against a colourless UI",
+  "layout_grid": "1104px content, 48px side padding, 112px section padding, 12px gutter for full-width dark cards, 3 and 4 column card grids",
+  "quality": 4
+}

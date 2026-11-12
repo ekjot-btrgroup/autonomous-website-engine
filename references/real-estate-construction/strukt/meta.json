@@ -1,0 +1,19 @@
+{
+  "name": "STRUKT",
+  "industry": "real-estate-construction",
+  "also": ["services-home", "agency-architecture", "real-estate-management"],
+  "summary": "Technical, spec-sheet construction site: 10px-inset dusk hero, tight Switzer headlines with grey second halves, IBM Plex Mono labels, a red accent used only in tiny doses and a ruler tick motif.",
+  "style": ["technical", "swiss", "corporate-clean"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "black",
+  "palette": { "bg": "#ffffff", "surface": "#f2f2f2", "ink": "#000000", "muted": "#6e6e6e", "accent": "#ff2600", "line": "#e4e4e4" },
+  "fonts": { "display": "Switzer", "body": "Inter", "class": "sans", "pairing": "Switzer 500 with very tight tracking for display, Inter for reading text, IBM Plex Mono 500 uppercase for labels, buttons and giant numerals" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "about", "stats", "services", "portfolio", "process", "testimonials", "faq", "blog", "contact", "footer"],
+  "motion": 4,
+  "signature": ["two-tone headlines: first clause in ink or white, second clause in grey, at -0.05em tracking", "ruler tick strip along the hero bottom edge and mono spec rows (est., projects, sq ft, certification) like a drawing title block", "giant mono numerals with a red unit or percent sign"],
+  "imagery": "dusk cranes and glass towers, aerial site shots, hard-hat crews in orange PPE, crisp finished villas and concrete",
+  "layout_grid": "1280px canvas, 10px outer frame on hero, 26px side padding, 140px section padding, 4-column service cards, 10px image radii, 4 to 6px button radii",
+  "quality": 5
+}

@@ -1,0 +1,944 @@
+{
+ "title": "Studio Website (copy)",
+ "pages": [
+  "/",
+  "/work",
+  "/work/:jZkuJyU53",
+  "/services",
+  "/pricing",
+  "/about",
+  "/journal",
+  "/journal/:djHNTQxVB",
+  "/careers",
+  "/careers/:hVfFjkKcW",
+  "/contact",
+  "/404",
+  "/privacy",
+  "/terms",
+  "/services/:nAa7XSPS3",
+  "/design-system"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background",
+   "light": "rgb(248, 247, 244)",
+   "dark": "rgb(17, 17, 19)"
+  },
+  {
+   "name": "Surface Muted",
+   "light": "rgb(241, 239, 234)",
+   "dark": "rgb(24, 24, 27)"
+  },
+  {
+   "name": "Surface",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(30, 30, 34)"
+  },
+  {
+   "name": "Border",
+   "light": "rgb(228, 225, 218)",
+   "dark": "rgb(42, 42, 47)"
+  },
+  {
+   "name": "Border Strong",
+   "light": "rgb(205, 201, 192)",
+   "dark": "rgb(61, 61, 68)"
+  },
+  {
+   "name": "Text Primary",
+   "light": "rgb(23, 23, 26)",
+   "dark": "rgb(242, 241, 238)"
+  },
+  {
+   "name": "Text Body",
+   "light": "rgb(70, 68, 76)",
+   "dark": "rgb(200, 198, 206)"
+  },
+  {
+   "name": "Text Muted",
+   "light": "rgb(108, 106, 115)",
+   "dark": "rgb(156, 154, 164)"
+  },
+  {
+   "name": "Accent",
+   "light": "rgb(51, 70, 211)",
+   "dark": "rgb(142, 156, 255)"
+  },
+  {
+   "name": "Accent Soft",
+   "light": "rgb(230, 233, 251)",
+   "dark": "rgb(34, 38, 74)"
+  },
+  {
+   "name": "Text On Primary",
+   "light": "rgb(248, 247, 244)",
+   "dark": "rgb(17, 17, 19)"
+  },
+  {
+   "name": "Surface Dark",
+   "light": "rgb(20, 20, 22)",
+   "dark": "rgb(11, 11, 13)"
+  },
+  {
+   "name": "Text On Image",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Glass",
+   "light": "rgba(255, 255, 255, 0.62)",
+   "dark": "rgba(255, 255, 255, 0.22)"
+  },
+  {
+   "name": "Success",
+   "light": "rgb(31, 138, 91)",
+   "dark": "rgb(92, 211, 154)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "72px",
+   "tracking": "-0.035em",
+   "leading": "1.02em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "72px",
+    "medium": "58px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "68px",
+   "tracking": "-0.032em",
+   "leading": "1.04em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "68px",
+    "medium": "54px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.03em",
+   "leading": "1.06em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "52px",
+    "medium": "44px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "H3 Serif",
+   "tag": "h3",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "38px",
+   "tracking": "-0.025em",
+   "leading": "1.12em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "38px",
+    "medium": "34px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Quote",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.022em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "36px",
+    "medium": "30px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Stat",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "52px",
+    "medium": "46px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "Price",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "52px",
+    "medium": "46px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Large",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.02em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "28px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.01em",
+   "leading": "1.35em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "20px",
+    "medium": "20px",
+    "small": "19px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h3",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "-0.005em",
+   "leading": "1.4em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "17px",
+    "medium": "17px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Lead",
+   "font": "Satoshi",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.005em",
+   "leading": "1.5em",
+   "color": "token:Text Body",
+   "responsive": {
+    "default": "19px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body",
+   "font": "Satoshi",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1.6em",
+   "color": "token:Text Body",
+   "responsive": {
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Small",
+   "font": "Satoshi",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "leading": "1.5em",
+   "color": "token:Text Body",
+   "responsive": {
+    "default": "15px",
+    "medium": "15px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "leading": "1.35em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "15px",
+    "medium": "15px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Caption",
+   "font": "Satoshi",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0.005em",
+   "leading": "1.4em",
+   "color": "token:Text Muted",
+   "responsive": {
+    "default": "13px",
+    "medium": "13px",
+    "small": "13px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "color": "token:Text On Primary",
+   "responsive": {
+    "default": "15px",
+    "medium": "15px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Nav",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "15px",
+    "medium": "15px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Post Heading",
+   "tag": "h2",
+   "font": "Geist Serif Regular",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.02em",
+   "leading": "1.15em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "32px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Submit Button",
+  "FAQ Item",
+  "Nav Link",
+  "Text Link",
+  "Nav Phone",
+  "Plans",
+  "Announcement",
+  "Work Tabs",
+  "Review Carousel",
+  "Nav Services",
+  "Nav Work",
+  "Nav Company",
+  "Nav Pages"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Site Layout",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Nav Wrap",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Nav Phone Wrap",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Use Template Button",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrap",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Smooth Scroll",
+    "comp": "SmoothScroll",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Count Up",
+    "comp": "CountUp",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1301,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "198px 70px 40px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Scroll Tilt"
+   ],
+   "text": 5,
+   "words": 42,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2,
+    "ScrollTilt": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 3,
+    "loop": 2,
+    "ticker": 1
+   },
+   "styles": {
+    "Display": 1,
+    "Lead": 1,
+    "Small": 1,
+    "Caption": 2
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 1301,
+   "h": 884,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 7,
+   "words": 61,
+   "images": 6,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {},
+   "effects": {
+    "text": 1,
+    "appear": 3
+   },
+   "styles": {
+    "H2": 1,
+    "H3": 3,
+    "Body": 3
+   },
+   "shot": "sections/02-services.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 2185,
+   "h": 2024,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 7,
+   "words": 76,
+   "images": 6,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 3
+   },
+   "effects": {
+    "text": 1,
+    "sticky": 3
+   },
+   "styles": {
+    "H2": 1,
+    "H3 Serif": 3,
+    "Body": 3
+   },
+   "shot": "sections/03-process.jpg"
+  },
+  {
+   "name": "Work",
+   "type": "FrameNode",
+   "y": 4209,
+   "h": 978,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 1,
+    "Work Tabs": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1
+   },
+   "shot": "sections/04-work.jpg"
+  },
+  {
+   "name": "Reasons",
+   "type": "FrameNode",
+   "y": 5187,
+   "h": 1219,
+   "w": 1200,
+   "fill": "token:Surface Muted",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 44,
+   "words": 189,
+   "images": 0,
+   "icons": 8,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "text": 1,
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "Lead": 1,
+    "Stat": 2,
+    "Small": 9,
+    "H3": 4,
+    "Body": 4,
+    "Caption": 22,
+    "Label": 1
+   },
+   "shot": "sections/05-reasons.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 6406,
+   "h": 982,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 18,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Plans": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Caption": 1
+   },
+   "shot": "sections/06-pricing.jpg"
+  },
+  {
+   "name": "Case Study",
+   "type": "FrameNode",
+   "y": 7388,
+   "h": 911,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 10,
+   "words": 52,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 7
+   },
+   "styles": {
+    "H2": 1,
+    "Quote": 1,
+    "Label": 1,
+    "Small": 4,
+    "Stat": 3
+   },
+   "shot": "sections/07-case-study.jpg"
+  },
+  {
+   "name": "Reviews",
+   "type": "FrameNode",
+   "y": 8299,
+   "h": 685,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 24px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Review Carousel": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "H2": 1
+   },
+   "shot": "sections/08-reviews.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 8984,
+   "h": 569,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "FAQ Item": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "H2": 1
+   },
+   "shot": "sections/09-faq.jpg"
+  },
+  {
+   "name": "CTA",
+   "type": "FrameNode",
+   "y": 9553,
+   "h": 576,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 22,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "H2": 1,
+    "Body": 1
+   },
+   "shot": "sections/10-cta.jpg"
+  }
+ ],
+ "effects": {
+  "text": 9,
+  "appear": 25,
+  "loop": 2,
+  "ticker": 1,
+  "sticky": 3
+ },
+ "effectSamples": {
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "16px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "4px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.2,
+      0,
+      0,
+      1
+     ],
+     "duration": "0.5s",
+     "delay": "0.04s"
+    }
+   }
+  },
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 18,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.2,
+      0,
+      0,
+      1
+     ],
+     "duration": "0.7s",
+     "delay": "0.24s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 18,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.2,
+      0,
+      0,
+      1
+     ],
+     "duration": "0.7s",
+     "delay": "0.24s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0.6s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 22,
+   "y": -12,
+   "scale": 1,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.45,
+     0,
+     0.55,
+     1
+    ],
+    "duration": "4.2s",
+    "delay": "0s"
+   }
+  },
+  "ticker": {
+   "velocity": 36,
+   "hoverModifier": "40%",
+   "directionModifier": "default",
+   "draggable": false
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "4px",
+   12
+  ],
+  [
+   "12px",
+   11
+  ],
+  [
+   "16px",
+   10
+  ],
+  [
+   "99px",
+   6
+  ],
+  [
+   "18px",
+   5
+  ],
+  [
+   "20px",
+   5
+  ]
+ ],
+ "surfaces": {
+  "shadows": 8,
+  "borders": 15,
+  "blur": 0
+ },
+ "desktopFill": "token:Background",
+ "pageHeight": 10641,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/c550c7a8-b3fb-41d6-9c6e-66e80aca1aa5.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/c38e82b3-8ecf-4f1c-b121-1504ad677d49.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-design/pane",
+ "industry": "agency-design",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  10880
+ ]
+}

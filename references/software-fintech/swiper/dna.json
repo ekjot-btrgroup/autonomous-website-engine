@@ -1,0 +1,1007 @@
+{
+ "title": "#014 / Swiper / Fintech SaaS Website Template (copy)",
+ "pages": [
+  "/",
+  "/cases",
+  "/cases/:aQzV76Hjh",
+  "/about",
+  "/404",
+  "/:QvEVMRCNP",
+  "/get-started"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 768px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 767.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background",
+   "light": "rgb(242, 242, 242)",
+   "dark": "rgb(10, 10, 10)"
+  },
+  {
+   "name": "Surface",
+   "light": "rgb(250, 250, 250)",
+   "dark": "rgb(16, 16, 18)"
+  },
+  {
+   "name": "Border Card",
+   "light": "rgb(224, 224, 224)",
+   "dark": "rgb(44, 44, 48)"
+  },
+  {
+   "name": "Text Primary",
+   "light": "rgb(10, 10, 10)",
+   "dark": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Text Secondary",
+   "light": "rgb(94, 94, 94)",
+   "dark": "rgb(143, 143, 148)"
+  },
+  {
+   "name": "Accent Green",
+   "light": "rgb(8, 141, 58)",
+   "dark": "rgb(74, 222, 128)"
+  },
+  {
+   "name": "Accent Green Background",
+   "light": "rgba(8, 141, 58, 0.08)",
+   "dark": "rgba(74, 222, 128, 0.08)"
+  },
+  {
+   "name": "Accent Green Border",
+   "light": "rgba(8, 141, 58, 0.14)",
+   "dark": "rgba(74, 222, 128, 0.16)"
+  },
+  {
+   "name": "Accent Purple",
+   "light": "rgb(52, 38, 220)",
+   "dark": "rgb(178, 140, 255)"
+  },
+  {
+   "name": "Accent Purple Background",
+   "light": "rgba(52, 38, 220, 0.08)",
+   "dark": "rgba(180, 129, 247, 0.08)"
+  },
+  {
+   "name": "Accent Purple Border",
+   "light": "rgba(52, 38, 220, 0.14)",
+   "dark": "rgba(170, 129, 247, 0.16)"
+  },
+  {
+   "name": "Light",
+   "light": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Accent Blue",
+   "light": "rgb(6, 67, 239)",
+   "dark": "rgb(66, 151, 255)"
+  },
+  {
+   "name": "Accent Blue Background",
+   "light": "rgba(6, 67, 239, 0.08)",
+   "dark": "rgba(96, 165, 250, 0.08)"
+  },
+  {
+   "name": "Accent Blue Border",
+   "light": "rgba(6, 67, 239, 0.14)",
+   "dark": "rgba(96, 165, 250, 0.16)"
+  },
+  {
+   "name": "Accent Yellow",
+   "light": "rgb(168, 99, 0)",
+   "dark": "rgb(250, 204, 21)"
+  },
+  {
+   "name": "Accent Yellow Background",
+   "light": "rgba(168, 99, 0, 0.09)",
+   "dark": "rgba(250, 204, 21, 0.08)"
+  },
+  {
+   "name": "Accent Yellow Border",
+   "light": "rgba(168, 99, 0, 0.16)",
+   "dark": "rgba(250, 204, 21, 0.16)"
+  },
+  {
+   "name": "Accent Red",
+   "light": "rgb(205, 8, 8)",
+   "dark": "rgb(255, 99, 99)"
+  },
+  {
+   "name": "Accent Red Background",
+   "light": "rgba(205, 8, 8, 0.08)",
+   "dark": "rgba(248, 113, 113, 0.08)"
+  },
+  {
+   "name": "Accent Red Border",
+   "light": "rgba(205, 8, 8, 0.14)",
+   "dark": "rgba(248, 113, 113, 0.16)"
+  },
+  {
+   "name": "Card",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(30, 30, 33)"
+  },
+  {
+   "name": "Brand",
+   "light": "rgb(0, 132, 255)",
+   "dark": "rgb(0, 132, 255)"
+  },
+  {
+   "name": "Border Surface",
+   "light": "rgb(232, 232, 235)",
+   "dark": "rgb(32, 32, 36)"
+  },
+  {
+   "name": "Text Tertiary",
+   "light": "rgb(112, 112, 112)",
+   "dark": "rgb(100, 100, 105)"
+  },
+  {
+   "name": "Dark",
+   "light": "rgb(10, 10, 10)",
+   "dark": "rgb(10, 10, 10)"
+  },
+  {
+   "name": "Accent Turquoise Border",
+   "light": "rgba(5, 104, 98, 0.14)",
+   "dark": "rgba(45, 212, 191, 0.16)"
+  },
+  {
+   "name": "Accent Turquoise Background",
+   "light": "rgba(5, 104, 98, 0.08)",
+   "dark": "rgba(45, 212, 191, 0.08)"
+  },
+  {
+   "name": "Accent Turquoise",
+   "light": "rgb(5, 104, 98)",
+   "dark": "rgb(45, 212, 191)"
+  },
+  {
+   "name": "Accent Orange Border",
+   "light": "rgba(171, 43, 1, 0.14)",
+   "dark": "rgba(251, 146, 60, 0.16)"
+  },
+  {
+   "name": "Accent Orange Background",
+   "light": "rgba(171, 43, 1, 0.08)",
+   "dark": "rgba(251, 146, 60, 0.08)"
+  },
+  {
+   "name": "Accent Orange",
+   "light": "rgb(171, 43, 1)",
+   "dark": "rgb(251, 146, 60)"
+  },
+  {
+   "name": "Accent Gray Border",
+   "light": "rgba(47, 64, 89, 0.1)",
+   "dark": "rgba(148, 163, 184, 0.16)"
+  },
+  {
+   "name": "Accent Gray Background",
+   "light": "rgba(47, 64, 89, 0.06)",
+   "dark": "rgba(148, 163, 184, 0.08)"
+  },
+  {
+   "name": "Accent Gray",
+   "light": "rgb(89, 105, 128)",
+   "dark": "rgb(148, 163, 184)"
+  },
+  {
+   "name": "Text Primary Inverted",
+   "light": "rgb(242, 242, 242)",
+   "dark": "rgb(10, 10, 10)"
+  },
+  {
+   "name": "Background Inverted",
+   "light": "rgb(10, 10, 10)",
+   "dark": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Soul Black",
+   "light": "rgb(15, 15, 15)"
+  },
+  {
+   "name": "Cod Gray",
+   "light": "rgb(41, 41, 41)"
+  },
+  {
+   "name": "Pure White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Smoky White",
+   "light": "rgb(212, 212, 212)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Eyebrow",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.08em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:9a96ff37-d629-4c77-8652-b77dccbc5d63, rgb(109, 40, 217) /* {\"name\":\"Brand Color\"} */",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "-0.02em",
+   "leading": "1.05em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "56px",
+    "medium": "40px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "34px",
+    "medium": "28px",
+    "small": "23px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.3em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Body M",
+   "size": "15px",
+   "leading": "1.5em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Stat Number",
+   "font": "Inter",
+   "weight": 700,
+   "style": "normal",
+   "size": "38px",
+   "tracking": "-0.01em",
+   "leading": "1em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "38px",
+    "medium": "32px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Label M",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "13px",
+   "leading": "1.4em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "16px",
+   "leading": "1.3em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "H5",
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.4em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "H6",
+   "tag": "h6",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "13px",
+   "leading": "1.4em",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Body S",
+   "size": "13px",
+   "leading": "1.5em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Body L",
+   "size": "16px",
+   "leading": "1.5em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Tab Label",
+   "size": "13px",
+   "leading": "1em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Actions M",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "leading": "1em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Actions S",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "13px",
+   "leading": "1em",
+   "color": "token:aff45410-39fa-4df2-a45a-af1334095080, rgb(17, 17, 17) /* {\"name\":\"Text Primary\"} */",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Label S",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "leading": "1.2em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Detail",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "11px",
+   "color": "token:57d46d68-f348-47cc-a1e1-7bc8dc25086c, rgb(112, 112, 112) /* {\"name\":\"Text Tertiary\"} */",
+   "responsive": {
+    "default": "11px"
+   }
+  },
+  {
+   "name": "Actions L",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "leading": "1em",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Service Card",
+  "Header",
+  "Logo",
+  "Text CTA",
+  "Stat Card",
+  "Status Badge",
+  "Menu Icon",
+  "Posts Index",
+  "Filters Tab",
+  "Blog Card",
+  "Process Sequence",
+  "Story Card",
+  "Clients Logo Strip",
+  "Status Icon",
+  "Dashboard",
+  "Form Submit Button",
+  "Booking Form",
+  "Load More",
+  "Preloader",
+  "Review Card",
+  "Theme Toggle"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Smooth Scroll",
+    "comp": "Lenis",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Preloader",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "DELETE THIS",
+    "comp": "Pixco Badge (Vercel)",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Header",
+    "position": "relative"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "EmberGlow",
+   "y": 0,
+   "h": 940,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "EmberGlow": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/01-emberglow.jpg"
+  },
+  {
+   "name": "Section / Hero",
+   "type": "FrameNode",
+   "y": 71,
+   "h": 1012,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 16px 40px",
+   "gap": "40px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "Dashboard"
+   ],
+   "text": 4,
+   "words": 34,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Status Badge": 1,
+    "Button": 1,
+    "Dashboard": 1
+   },
+   "effects": {
+    "appear": 3,
+    "styleTransform": 1
+   },
+   "styles": {
+    "H1": 1,
+    "Body M": 1,
+    "Detail": 2
+   },
+   "shot": "sections/02-section-hero.jpg"
+  },
+  {
+   "name": "Section / Clients",
+   "type": "FrameNode",
+   "y": 1083,
+   "h": 196,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px",
+   "gap": "0px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "RichTextNode",
+    "Ticker"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Clients Logo Strip": 1
+   },
+   "effects": {
+    "appear": 1,
+    "ticker": 1
+   },
+   "styles": {
+    "Eyebrow": 1
+   },
+   "shot": "sections/03-section-clients.jpg"
+  },
+  {
+   "name": "Section / Platform",
+   "type": "FrameNode",
+   "y": 1279,
+   "h": 984,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 80px 40px",
+   "gap": "64px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "Container"
+   ],
+   "text": 10,
+   "words": 53,
+   "images": 0,
+   "icons": 2,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Status Badge": 1,
+    "Button": 1,
+    "Service Card": 4
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 1,
+    "Detail": 2,
+    "Body S": 1,
+    "Label M": 5
+   },
+   "shot": "sections/04-section-platform.jpg"
+  },
+  {
+   "name": "Section / Features",
+   "type": "FrameNode",
+   "y": 2263,
+   "h": 1047,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 80px 40px",
+   "gap": "96px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "FrameNode"
+   ],
+   "text": 22,
+   "words": 181,
+   "images": 0,
+   "icons": 9,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Status Badge": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 1,
+    "H3": 9,
+    "Body S": 9,
+    "Detail": 2
+   },
+   "shot": "sections/05-section-features.jpg"
+  },
+  {
+   "name": "Section / Testimonials",
+   "type": "FrameNode",
+   "y": 3310,
+   "h": 971,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 2,
+   "words": 31,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Status Badge": 2,
+    "Review Card": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 1
+   },
+   "shot": "sections/06-section-testimonials.jpg"
+  },
+  {
+   "name": "Section / Process",
+   "type": "FrameNode",
+   "y": 4281,
+   "h": 666,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 80px 40px",
+   "gap": "80px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "ComponentInstanceNode",
+    "CTA"
+   ],
+   "text": 15,
+   "words": 63,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Status Badge": 2,
+    "Process Sequence": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "H2": 1,
+    "H3": 4,
+    "Body M": 4,
+    "Detail": 2
+   },
+   "shot": "sections/07-section-process.jpg"
+  },
+  {
+   "name": "Section / Pricing",
+   "type": "FrameNode",
+   "y": 4947,
+   "h": 1197,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 80px 40px",
+   "gap": "56px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "Cards",
+    "Trust"
+   ],
+   "text": 28,
+   "words": 110,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Status Badge": 2,
+    "Billing Toggle": 1,
+    "Plan Price": 3,
+    "Status Icon": 19,
+    "Button": 3
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 1,
+    "H3": 3,
+    "Body S": 23
+   },
+   "shot": "sections/08-section-pricing.jpg"
+  },
+  {
+   "name": "Section / Cases",
+   "type": "FrameNode",
+   "y": 6144,
+   "h": 914,
+   "w": 1200,
+   "fill": "token:Surface",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Work Content"
+   ],
+   "text": 2,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Status Badge": 2,
+    "Text CTA": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 1
+   },
+   "shot": "sections/09-section-cases.jpg"
+  },
+  {
+   "name": "Section / FAQ",
+   "type": "FrameNode",
+   "y": 7058,
+   "h": 905,
+   "w": 1120,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 80px 40px",
+   "gap": "64px",
+   "maxWidth": "1120px",
+   "childNames": [
+    "Header",
+    "FAQ Accordion"
+   ],
+   "text": 14,
+   "words": 71,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Status Badge": 1,
+    "CustomAccordion": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "H2": 1,
+    "Body M": 5,
+    "H3": 4
+   },
+   "shot": "sections/10-section-faq.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 30,
+  "styleTransform": 1,
+  "ticker": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 14,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0,
+      0,
+      0.2,
+      1
+     ],
+     "duration": "0.5s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 14,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0,
+      0,
+      0.2,
+      1
+     ],
+     "duration": "0.5s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onInView",
+   "viewport": "start",
+   "transition": {
+    "type": "spring",
+    "duration": "0.3s",
+    "bounce": 0,
+    "delay": "0s"
+   },
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "16deg 0deg 0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  },
+  "ticker": {
+   "velocity": 25,
+   "hoverModifier": "100%",
+   "directionModifier": "default",
+   "draggable": true
+  }
+ },
+ "fontsUsed": {
+  "Inter": 16
+ },
+ "radii": [
+  [
+   "8px",
+   8
+  ],
+  [
+   "100px",
+   8
+  ],
+  [
+   "12px",
+   4
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 11,
+  "blur": 0
+ },
+ "desktopFill": "token:Light",
+ "pageHeight": 8635,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/f2ab8d68-d0dd-4820-8b78-f7256de11858.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/376f62c2-a40f-498f-b161-189e96587e71.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "software-fintech/swiper",
+ "industry": "software-fintech",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8635
+ ],
+ "chromeTop_raw": 400,
+ "y_fix": "section y shifted by -0 (getRect of sections is breakpoint-local, breakpoint sits at canvas y=-0)"
+}

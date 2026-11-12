@@ -1,0 +1,574 @@
+{
+ "title": "Voxera (copy)",
+ "pages": [
+  "/",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1400px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1399.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Light",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Brand",
+   "light": "rgb(251, 103, 4)"
+  },
+  {
+   "name": "Dark",
+   "light": "rgb(18, 18, 18)"
+  },
+  {
+   "name": "Brand-Hover",
+   "light": "rgb(255, 122, 26)"
+  },
+  {
+   "name": "Brand-Active",
+   "light": "rgb(232, 92, 0)"
+  },
+  {
+   "name": "Dark-80",
+   "light": "rgb(51, 51, 51)"
+  },
+  {
+   "name": "Dark-60",
+   "light": "rgb(102, 102, 102)"
+  },
+  {
+   "name": "Dark-40",
+   "light": "rgb(153, 153, 153)"
+  },
+  {
+   "name": "Dark-10",
+   "light": "rgb(229, 229, 229)"
+  },
+  {
+   "name": "Dark-20",
+   "light": "rgb(204, 204, 204)"
+  },
+  {
+   "name": "Dark-5",
+   "light": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(0, 0, 0)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.04em",
+   "leading": "72px",
+   "color": "token:1d7b11d4-bd9e-42e2-8355-e9cf0ed6d500, rgb(255, 255, 255) /* {\"name\":\"Light\"} */",
+   "responsive": {
+    "default": "64px",
+    "medium": "48px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.04em",
+   "leading": "56px",
+   "color": "token:3c111b75-88c4-4886-8a12-c4af83dac5d6, rgb(18, 18, 18) /* {\"name\":\"Dark\"} */",
+   "responsive": {
+    "default": "48px",
+    "medium": "36px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.04em",
+   "leading": "44px",
+   "color": "token:3c111b75-88c4-4886-8a12-c4af83dac5d6, rgb(18, 18, 18) /* {\"name\":\"Dark\"} */",
+   "responsive": {
+    "default": "36px",
+    "medium": "28px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.04em",
+   "leading": "36px",
+   "color": "token:3c111b75-88c4-4886-8a12-c4af83dac5d6, rgb(18, 18, 18) /* {\"name\":\"Dark\"} */",
+   "responsive": {
+    "default": "28px",
+    "medium": "24px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.04em",
+   "leading": "30px",
+   "color": "token:3c111b75-88c4-4886-8a12-c4af83dac5d6, rgb(18, 18, 18) /* {\"name\":\"Dark\"} */",
+   "responsive": {
+    "default": "22px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "28px",
+   "color": "token:1d7b11d4-bd9e-42e2-8355-e9cf0ed6d500, rgb(255, 255, 255) /* {\"name\":\"Light\"} */",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Body Regular",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "26px",
+   "color": "token:3c111b75-88c4-4886-8a12-c4af83dac5d6, rgb(18, 18, 18) /* {\"name\":\"Dark\"} */",
+   "responsive": {}
+  },
+  {
+   "name": "Body Small",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "22px",
+   "color": "token:1d7b11d4-bd9e-42e2-8355-e9cf0ed6d500, rgb(255, 255, 255) /* {\"name\":\"Light\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Labels Mono",
+   "font": "IBM Plex Mono",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0.04em",
+   "leading": "14px",
+   "transform": "uppercase",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {
+    "default": "14px"
+   }
+  }
+ ],
+ "components": [
+  "faq-accordion",
+  "button",
+  "faq-container",
+  "link",
+  "features-accordion",
+  "features",
+  "nav-bar",
+  "menu-icon",
+  "footer",
+  "GhostBadge",
+  "FeatureCard"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 400,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "nav-bar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "rgb(255, 255, 255)"
+ },
+ "sections": [
+  {
+   "name": "hero-container",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1400,
+   "fill": "data:framer/asset-reference,5bPb7q14FHHCXYCxIus0taTAm0Y.jpg?originalFilename=a940033e-dba2-4bdd-a38e-3c195213c548_3840w.jpg&preferredSize=auto&width=3840&height=2152",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "overlay",
+    "heading",
+    "bottom-container"
+   ],
+   "text": 3,
+   "words": 30,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "text": 1
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body Large": 1,
+    "Body Small": 1
+   },
+   "shot": "sections/01-hero-container.jpg"
+  },
+  {
+   "name": "intro-features",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 746,
+   "w": 1400,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "60px",
+   "gap": "48px",
+   "childNames": [
+    "Features"
+   ],
+   "text": 1,
+   "words": 11,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "GhostBadge": 1,
+    "FeatureCard": 3
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/02-intro-features.jpg"
+  },
+  {
+   "name": "features-expanded",
+   "type": "FrameNode",
+   "y": 1546,
+   "h": 897,
+   "w": 1400,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 60px 64px 60px",
+   "gap": "48px",
+   "childNames": [
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "features": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/03-features-expanded.jpg"
+  },
+  {
+   "name": "info-banner",
+   "type": "FrameNode",
+   "y": 2443,
+   "h": 876,
+   "w": 1400,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "60px",
+   "gap": "48px",
+   "childNames": [
+    "FrameNode"
+   ],
+   "text": 4,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 5": 2,
+    "Body Regular": 2
+   },
+   "shot": "sections/04-info-banner.jpg"
+  },
+  {
+   "name": "intro-features",
+   "type": "FrameNode",
+   "y": 3319,
+   "h": 898,
+   "w": 1400,
+   "fill": "rgb(247, 247, 247)",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "60px",
+   "gap": "48px",
+   "childNames": [
+    "Features"
+   ],
+   "text": 9,
+   "words": 98,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "GhostBadge": 1
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body Large": 4,
+    "Body Small": 4
+   },
+   "shot": "sections/05-intro-features.jpg"
+  },
+  {
+   "name": "testimonials",
+   "type": "FrameNode",
+   "y": 4217,
+   "h": 648,
+   "w": 1400,
+   "fill": "rgb(247, 247, 247)",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "64px 60px 64px 60px",
+   "gap": "48px",
+   "childNames": [
+    "FrameNode",
+    "cards"
+   ],
+   "text": 7,
+   "words": 21,
+   "images": 3,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 4,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 4,
+    "Body Regular": 3
+   },
+   "shot": "sections/06-testimonials.jpg"
+  },
+  {
+   "name": "faqs",
+   "type": "FrameNode",
+   "y": 4865,
+   "h": 645,
+   "w": 1400,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px",
+   "gap": "48px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "inner-container"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "GhostBadge": 1,
+    "button": 1,
+    "faq-container": 1
+   },
+   "effects": {
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/07-faqs.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 22,
+  "text": 5
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "target": "MXpHo2fse",
+   "threshold": 0.5,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 60,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 250,
+     "damping": 55,
+     "mass": 2.9,
+     "delay": "0.1s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "character",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.4s",
+     "bounce": 0,
+     "delay": "0.05s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "18px",
+   7
+  ],
+  [
+   "16px",
+   4
+  ],
+  [
+   "40px",
+   2
+  ],
+  [
+   "20px",
+   2
+  ],
+  [
+   "100px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "rgb(255, 255, 255)",
+ "pageHeight": 6214,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/fb07b069-5af0-4949-a0f9-5d3ae3c34c0a.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/d1fa59de-3581-4338-9ed6-fe7e44c75ce5.jpg",
+  "desktopWidth": 1400
+ },
+ "chromeTopNote": "extract returned 200 (from an invisible Smooth Scroll component); the real offset is +400 because the hero renders 1200px tall in the screenshot, so 400 aligns sections 2-7; hero is best seen in thumb.jpg",
+ "id": "software-ai/voxera",
+ "industry": "software-ai",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1400,
+  6614
+ ]
+}
