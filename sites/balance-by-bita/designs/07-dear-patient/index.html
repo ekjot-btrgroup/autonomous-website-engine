@@ -141,7 +141,7 @@ p{margin:0;text-wrap:pretty}
 .notes-side h2{font-size:var(--fs-h2);line-height:1.08;margin:var(--s4) 0 var(--s5)}
 .notes-side p{color:var(--muted)}
 .notes-side figure{margin:var(--s7) 0 0}
-.notes-side img{border-radius:var(--r-sm)}
+.notes-side img{border-radius:var(--r-sm);aspect-ratio:4/5;object-fit:cover;width:100%}
 .notepad{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-sm);padding:var(--s5) var(--s6) var(--s6) var(--s8);position:relative;box-shadow:0 1px 2px rgba(29,38,56,.05)}
 .notepad::before{content:"";position:absolute;top:0;bottom:0;left:var(--s7);border-left:1px solid rgba(52,82,143,.35)}
 .notepad-head{display:flex;justify-content:space-between;gap:var(--s4);padding:var(--s3) 0 var(--s4);border-bottom:1px solid var(--line)}
@@ -255,7 +255,7 @@ footer.site .signline{font-family:var(--display);font-size:var(--fs-h3);color:va
   .hero{padding:var(--s6) 0 var(--s8)}
   .sheet{padding:var(--s7) var(--s5) var(--s6) calc(var(--s5) + var(--s4));gap:var(--s6)}
   .sheet::before{left:var(--s4)}
-  .letterhead{margin-bottom:var(--s6)}
+  .letterhead{margin-bottom:var(--s6);padding-right:88px}
   .letterhead .label:last-child{display:none}
   .stamp{width:96px;height:96px;top:calc(-1 * var(--s5));right:var(--s2)}
   .hero h1{max-width:none}
