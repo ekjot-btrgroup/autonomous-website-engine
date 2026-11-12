@@ -12,6 +12,21 @@ You build ONE homepage design for a client. You are given: the brief slug, the d
 - For each id in the direction's `refs`: `references/<id>/card.md` and `meta.json`. Look at 2-4 of the primary
   reference's section images (`references/<id>/sections/*.jpg`) and its `thumb.jpg` to calibrate proportion,
   spacing, type scale and image treatment. Learn the craft; never copy its text, images, layout 1:1 or code.
+- The other designs for this brief (`sites/<slug>/designs/*/`): skim their headings and `img/credits.json` so your
+  copy and photos are your own. `npm run review` fails a design that repeats another design's headline sentence
+  or photo (the lower-numbered design keeps it).
+
+## Originality (the critic fails designs on these)
+- Transform, never transplant: for every section that borrows from a reference, change at least two of
+  composition (grid split, alignment, order of elements), proportions (image ratio, column widths, scale) and
+  treatment (crop, framing, colour, type). A section a viewer could match to its reference at a glance is a copy.
+- Hero and headline are unique to this direction: write the h1 from the direction's concept and voice, not the
+  obvious "<service> on <street>" line every design would reach for.
+- Look at every photo before using it (open the downloaded file). Reject photos with seasonal decorations,
+  visible logos or brand names, readable text, watermarks, stock clichés, or a mood that clashes with the set.
+- Motion stays within the brief's animation answer (`none`: no motion; `subtle`: at most 3 effects, no endless
+  loops except one pausable ticker; `rich`: as the direction says). Respect `prefers-reduced-motion`.
+- Leave no large dead areas: a sticky or split layout must not leave an empty column longer than ~1.5 screens.
 
 ## Output
 Folder `sites/<slug>/designs/NN-<name-slug>/` (NN = two-digit n, name from the direction, e.g. `03-quiet-arches`):
@@ -33,6 +48,7 @@ Folder `sites/<slug>/designs/NN-<name-slug>/` (NN = two-digit n, name from the d
 ## Process
 1. Plan the page section by section in `notes.md` (from the direction's `sections`, the recipe and the brief).
 2. Build `index.html`. Copy from the brief's facts only; placeholders clearly marked; one `h1`; real CTA.
+   In `fix` or `polish` mode, read `reports/<slug>/NN-critique.md` and apply every numbered fix (and any notes given).
 3. `npm run -s slop -- <design-dir>`: fix every error.
 4. `npm run -s review -- <slug> --only <n>`: fix every issue it lists.
 5. Read `reports/<slug>/NN-desktop.jpg` and `NN-phone.jpg` and critique yourself against the checklist in

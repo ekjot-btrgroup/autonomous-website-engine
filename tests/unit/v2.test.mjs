@@ -70,3 +70,17 @@ test('reference titles, extract unwrapping and diverse picking', () => {
   const picked = diversePick([r('a', 'Fraunces', 'light', 'editorial', 90), r('b', 'Fraunces', 'light', 'editorial', 88), r('c', 'Inter', 'dark', 'technical', 70)], 2);
   assert.deepEqual(picked.map((p) => p.r.id), ['a', 'c']);
 });
+
+test('crossCheck flags repeated headings and photos but not brief facts', async () => {
+  const { crossCheck } = await import('../../engine/lib/designs.mjs');
+  const os = await import('node:os'); const fsm = await import('node:fs'); const pth = await import('node:path');
+  const root = fsm.mkdtempSync(pth.join(os.tmpdir(), 'cross-'));
+  const mk = (folder, html, credits) => { const d = pth.join(root, folder); fsm.mkdirSync(pth.join(d, 'img'), { recursive: true }); fsm.writeFileSync(pth.join(d, 'index.html'), html); fsm.writeFileSync(pth.join(d, 'img', 'credits.json'), JSON.stringify(credits)); return { n: Number(folder.slice(0, 2)), dir: d, folder }; };
+  const a = mk('01-a', '<h1>A proper cut today</h1><h2>Hot towel shave</h2>', [{ file: 'x.jpg', source: 'https://images.unsplash.com/photo-1?w=10' }]);
+  const b = mk('02-b', '<h1>Something new here.</h1><h2>A proper cut today. More words</h2><h2>Hot towel shave</h2>', [{ file: 'y.jpg', source: 'https://images.unsplash.com/photo-1' }]);
+  const issues = crossCheck([a, b], { facts: ['Hot towel shave'] });
+  assert.equal(issues['01-a'], undefined);
+  assert.equal(issues['02-b'].length, 2);
+  assert.ok(issues['02-b'].some((s) => s.includes('a proper cut today')));
+  assert.ok(issues['02-b'].some((s) => s.includes('photo img/y.jpg')));
+});

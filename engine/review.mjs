@@ -12,7 +12,7 @@ import { pathToFileURL } from 'node:url';
 import { ROOT, P, args, die, readJson, writeJson, rel, copyDir } from './lib/util.mjs';
 import { loadChromium } from './showcase.mjs';
 import { checkPaths } from './slop.mjs';
-import { listDesigns as listIn, writeBrowsable, esc } from './lib/designs.mjs';
+import { listDesigns as listIn, writeBrowsable, esc, crossCheck } from './lib/designs.mjs';
 const listDesigns = () => listIn(DES);
 
 const a = args();
@@ -88,6 +88,12 @@ async function review(only) {
       console.log(`${d.folder.padEnd(28)} ${r.ok ? 'ok' : 'FIX'}  ${issues.join('; ')}${r.slop.length - slopErr.length ? `  (${r.slop.length - slopErr.length} slop warnings)` : ''}`);
     }
   } finally { await browser.close(); }
+  const cross = crossCheck(listDesigns(), readJson(path.join(P.briefs, `${slug}.json`), {}));
+  for (const d of list) {
+    const r = results[d.folder], extra = cross[d.folder] || [];
+    r.issues = (r.issues || []).filter((s) => !s.startsWith('across designs: ')).concat(extra.map((s) => `across designs: ${s}`)); r.ok = !r.issues.length;
+    if (extra.length) console.log(`${d.folder.padEnd(28)} FIX  ${extra.length} item(s) repeat another design: ${extra.slice(0, 3).join('; ')}${extra.length > 3 ? ' ...' : ''}`);
+  }
   writeJson(path.join(REP, 'review.json'), results);
   console.log(`\nScreenshots: ${rel(REP)}/NN-desktop.jpg and NN-phone.jpg. Give them to the critic.`);
 }
