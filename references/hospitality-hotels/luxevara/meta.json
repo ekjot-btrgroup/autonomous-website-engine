@@ -1,0 +1,19 @@
+{
+  "name": "Luxevara",
+  "industry": "hospitality-hotels",
+  "also": ["hospitality-travel", "real-estate-listings"],
+  "summary": "Swiss-modern boutique hotel group site with tight Inter Display headlines, a giant lowercase wordmark across a film-grain city photo, mist-blue and ink blocks and one electric lime accent.",
+  "style": ["swiss", "bold-graphic", "luxury"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "blue",
+  "palette": { "bg": "#ffffff", "surface": "#a9b7c4", "ink": "#0b0b0c", "muted": "#6e737a", "accent": "#d2f64b", "line": "rgba(11,11,12,0.12)" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "sans", "pairing": "single grotesk family: 500 weight with very tight negative tracking for display, 400 for body, uppercase tracked labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "listings", "services", "about", "stats", "features", "contact", "gallery", "cta"],
+  "motion": 3,
+  "signature": ["lime em-rule before the second line of every headline, set as part of the type", "giant lowercase wordmark spanning the full hero width over a grainy photo", "sticky stacked hotel cards with big outline index numbers 01 to 03", "numbered experience table rows with category tags on the right edge"],
+  "imagery": "analogue film-look Paris streets, rooftops and cafes, grainy and cool, interiors and food in warm light",
+  "layout_grid": "1200px canvas, 32px side padding, 128px section padding, 2-column split headers, 4-column service cards, pill buttons at 100px radius",
+  "quality": 5
+}

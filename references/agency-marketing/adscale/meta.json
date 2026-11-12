@@ -1,0 +1,19 @@
+{
+  "name": "AdScale",
+  "industry": "agency-marketing",
+  "also": ["software-saas", "agency-web", "services-consulting"],
+  "summary": "Smoke-grey performance ad agency site with tight grotesk headlines finished by an italic serif word, a glowing phone of sale notifications and one violet accent.",
+  "style": ["corporate-clean", "minimal", "editorial"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 3, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "purple",
+  "palette": { "bg": "#F7F7F7", "surface": "#FFFFFF", "ink": "#1A1A1A", "muted": "#6D6D6D", "accent": "#8554FF", "line": "rgba(26,26,26,0.1)" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "sans", "pairing": "Inter Display 400 with very tight negative tracking for headings; the last word of most headings swaps to Source Serif 4 italic" },
+  "hero": "split-image-right",
+  "sections": ["hero", "logos", "services", "stats", "process", "testimonials", "pricing", "team", "portfolio", "features", "testimonials", "faq", "cta"],
+  "motion": 3,
+  "signature": ["headline ends on an italic serif word in the same size (sans then serif switch)", "phone mock with stacked store-order notifications sliding in over a violet glow", "dark rounded process panel with four tilted note cards wired to a central glowing icon", "small pill chips with a sparkle icon above every section title"],
+  "imagery": "phone UI and platform dashboards with growth charts in soft pastel gradients; studio portraits and lifestyle product photos for team and case studies",
+  "layout_grid": "1080px content (1200 frame, 60px sides), 100px section padding, centred section headers, 16 to 32px card radius, white cards on a smoke background, a single dark rounded band",
+  "quality": 4
+}

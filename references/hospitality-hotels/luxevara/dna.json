@@ -1,0 +1,597 @@
+{
+ "title": "Luxevara (copy)",
+ "pages": [
+  "/",
+  "/our-story",
+  "/hotels",
+  "/services",
+  "/experiences",
+  "/gallery",
+  "/contact",
+  "/book",
+  "/faqs",
+  "/policies",
+  "/404",
+  "/services/:GL_kFjuDz",
+  "/experiences/:fSyp2Cp2y",
+  "/hotels/:WCFOlG4_1"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Ink",
+   "light": "#0B0B0C"
+  },
+  {
+   "name": "Paper",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "Mist",
+   "light": "#A9B7C4"
+  },
+  {
+   "name": "Mist Deep",
+   "light": "#8FA0B0"
+  },
+  {
+   "name": "Lime",
+   "light": "#D2F64B"
+  },
+  {
+   "name": "Stone",
+   "light": "#F2F3F1"
+  },
+  {
+   "name": "Muted",
+   "light": "#6E737A"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(11, 11, 12, 0.12)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "132px",
+   "tracking": "-0.055em",
+   "leading": "0.9em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "132px",
+    "medium": "92px",
+    "small": "58px"
+   }
+  },
+  {
+   "name": "Heading L",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "76px",
+   "tracking": "-0.05em",
+   "leading": "0.98em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "76px",
+    "medium": "58px",
+    "small": "42px"
+   }
+  },
+  {
+   "name": "Heading M",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.035em",
+   "leading": "1.08em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Heading S",
+   "tag": "h4",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "21px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "21px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.015em",
+   "leading": "1.45em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "19px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.06em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "12px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Navigation",
+  "Footer",
+  "Card/Hotel",
+  "Card/Service",
+  "Card/Feature",
+  "Card/Row",
+  "FAQ/Item",
+  "Card/Gallery",
+  "Button/Submit"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Site Layout",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "NAV",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "#ffffff"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 796,
+   "w": 1200,
+   "fill": "data:framer/asset-reference,TtonYS118oAQGj26mpl9X79zp8c.jpg?originalFilename=photo-1768245076659-d3dafb1c8466%3Fcrop%3Dentropy%26cs%3Dsrgb%26fm%3Djpg%26ixlib%3Drb-4.1.jpg&width=1800&height=1194",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "118px 32px 36px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Overlay",
+    "Top Row",
+    "RichTextNode",
+    "Bottom Row"
+   ],
+   "text": 9,
+   "words": 60,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Label": 5,
+    "Heading L": 1,
+    "Body": 2
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Featured Hotels",
+   "type": "FrameNode",
+   "y": 796,
+   "h": 2491,
+   "w": 1200,
+   "fill": "token:Mist",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Featured Hotels Inner"
+   ],
+   "text": 4,
+   "words": 23,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Hotel": 3
+   },
+   "effects": {
+    "appear": 5,
+    "sticky": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Heading L": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/02-featured-hotels.jpg"
+  },
+  {
+   "name": "Personalised Services",
+   "type": "FrameNode",
+   "y": 3287,
+   "h": 898,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Personalised Services Inner"
+   ],
+   "text": 3,
+   "words": 32,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Card/Service": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Heading L": 1,
+    "Body": 1
+   },
+   "shot": "sections/03-personalised-services.jpg"
+  },
+  {
+   "name": "Brand Statement",
+   "type": "FrameNode",
+   "y": 4185,
+   "h": 588,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Brand Statement Inner"
+   ],
+   "text": 13,
+   "words": 50,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 7
+   },
+   "styles": {
+    "Heading L": 1,
+    "Label": 6,
+    "Body": 1,
+    "Heading S": 5
+   },
+   "shot": "sections/04-brand-statement.jpg"
+  },
+  {
+   "name": "Experiences",
+   "type": "FrameNode",
+   "y": 4773,
+   "h": 1275,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Experiences Inner"
+   ],
+   "text": 4,
+   "words": 24,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Row": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading L": 1,
+    "Label": 1,
+    "Body": 1,
+    "Display": 1
+   },
+   "shot": "sections/05-experiences.jpg"
+  },
+  {
+   "name": "Planned Around You",
+   "type": "FrameNode",
+   "y": 6048,
+   "h": 816,
+   "w": 1200,
+   "fill": "token:Stone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Planned Around You Inner"
+   ],
+   "text": 3,
+   "words": 34,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading L": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/06-planned-around-you.jpg"
+  },
+  {
+   "name": "Gallery Preview",
+   "type": "FrameNode",
+   "y": 6864,
+   "h": 921,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 0px 128px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Gallery Preview Inner"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Card/Gallery": 7
+   },
+   "effects": {
+    "appear": 3,
+    "ticker": 1
+   },
+   "styles": {
+    "Heading L": 1,
+    "Body": 1
+   },
+   "shot": "sections/07-gallery-preview.jpg"
+  },
+  {
+   "name": "Booking CTA",
+   "type": "FrameNode",
+   "y": 7785,
+   "h": 777,
+   "w": 1200,
+   "fill": "token:Mist",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 32px 140px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Booking CTA Inner"
+   ],
+   "text": 3,
+   "words": 27,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Display": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/08-booking-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 31,
+  "sticky": 3,
+  "ticker": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.2,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 40,
+   "hoverModifier": "0.25%",
+   "directionModifier": "default",
+   "draggable": false
+  }
+ },
+ "fontsUsed": {
+  "Inter Display": 4
+ },
+ "radii": [
+  [
+   "100px",
+   7
+  ],
+  [
+   "18px",
+   1
+  ],
+  [
+   "28px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 1
+ },
+ "desktopFill": "white",
+ "pageHeight": 9395,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/8324c0de-214b-44df-a300-bef47d22ccbe.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/058152a8-d13d-4a46-8c90-fea13815abbb.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-hotels/luxevara",
+ "industry": "hospitality-hotels",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  9395
+ ]
+}

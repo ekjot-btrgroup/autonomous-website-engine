@@ -1,87 +1,9 @@
 [
- {
-  "file": "hero.jpg",
-  "w": 2000,
-  "h": 1250,
-  "url": "https://images.unsplash.com/photo-1593702295094-aea22597af65?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "svc-cut.jpg",
-  "w": 1200,
-  "h": 900,
-  "url": "https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "svc-beard.jpg",
-  "w": 1200,
-  "h": 900,
-  "url": "https://images.unsplash.com/photo-1599351431618-317f6a5f9a6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "svc-shave.jpg",
-  "w": 1200,
-  "h": 900,
-  "url": "https://images.unsplash.com/photo-1765501830223-01b4c5f78a8e?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "work-1.jpg",
-  "w": 1200,
-  "h": 900,
-  "url": "https://images.unsplash.com/photo-1527512950678-b88a241e9f4b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "work-2.jpg",
-  "w": 1600,
-  "h": 1200,
-  "url": "https://images.unsplash.com/photo-1672257493626-038f96997ade?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "work-3.jpg",
-  "w": 1200,
-  "h": 900,
-  "url": "https://images.unsplash.com/photo-1606333259737-6da197890fa2?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "work-4.jpg",
-  "w": 2000,
-  "h": 800,
-  "url": "https://images.unsplash.com/photo-1593702233354-259d1f794ed1?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "team-1.jpg",
-  "w": 900,
-  "h": 1125,
-  "url": "https://images.unsplash.com/photo-1598524374912-6b0b0bab43dd?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "team-2.jpg",
-  "w": 900,
-  "h": 1125,
-  "url": "https://images.unsplash.com/photo-1640301133857-c4bc5789c1bb?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- },
- {
-  "file": "team-3.jpg",
-  "w": 900,
-  "h": 1125,
-  "url": "https://images.unsplash.com/photo-1693755807658-17ce5331aacb?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash",
-  "note": "recropped by hand (barber centred) and brightened; rerunning photos will need the same crop"
- },
- {
-  "file": "visit.jpg",
-  "w": 1600,
-  "h": 1200,
-  "url": "https://images.unsplash.com/photo-1792735207211-a96ca7e6ea77?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
-  "credit": "Unsplash"
- }
+ {"file":"hero.jpg","w":2000,"h":1125,"url":"https://images.unsplash.com/photo-1792735207211-a96ca7e6ea77?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"svc-cut.jpg","w":1200,"h":900,"url":"https://images.unsplash.com/photo-1599351430140-c70f0250bd70?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"svc-beard.jpg","w":1200,"h":900,"url":"https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"svc-shave.jpg","w":1200,"h":900,"url":"https://images.unsplash.com/photo-1612036329215-e9f06711a7fa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"work-1.jpg","w":1600,"h":1200,"url":"https://images.unsplash.com/photo-1541533848490-bc8115cd6522?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"work-2.jpg","w":1000,"h":750,"url":"https://images.unsplash.com/photo-1606333259737-6da197890fa2?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"},
+ {"file":"work-3.jpg","w":1000,"h":750,"url":"https://images.unsplash.com/photo-1783908688260-0c47404926f3?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85","credit":"Unsplash"}
 ]
