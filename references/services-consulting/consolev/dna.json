@@ -1,0 +1,915 @@
+{
+ "title": "CONSOLEV (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/services",
+  "/services/business-strategy",
+  "/services/strategic-advisory",
+  "/services/operations-optimization",
+  "/services/growth-organizational-design",
+  "/case-studies",
+  "/insights",
+  "/contact",
+  "/book-a-call",
+  "/faq",
+  "/privacy-policy",
+  "/terms",
+  "/404",
+  "/case-studies/:yRBOdWjtA",
+  "/insights/:w1XUhU2tv"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Canvas",
+   "light": "#EEEBE5"
+  },
+  {
+   "name": "Surface",
+   "light": "#F7F5F0"
+  },
+  {
+   "name": "Ink",
+   "light": "#121210"
+  },
+  {
+   "name": "Ink Soft",
+   "light": "#3A3934"
+  },
+  {
+   "name": "Muted",
+   "light": "#6E6B64"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(18, 18, 16, 0.12)"
+  },
+  {
+   "name": "Night",
+   "light": "#0F0F0E"
+  },
+  {
+   "name": "Night Card",
+   "light": "#1A1A18"
+  },
+  {
+   "name": "Forest",
+   "light": "#1C2A21"
+  },
+  {
+   "name": "Sage",
+   "light": "#CFDDB8"
+  },
+  {
+   "name": "Cream",
+   "light": "#F4F1EA"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 300,
+   "style": "normal",
+   "size": "88px",
+   "tracking": "-0.045em",
+   "leading": "0.96em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "88px",
+    "medium": "64px",
+    "small": "46px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 300,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "-0.035em",
+   "leading": "1.02em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "56px",
+    "medium": "44px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Lead",
+   "tag": "p",
+   "font": "Inter Display",
+   "weight": 300,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.025em",
+   "leading": "1.18em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "36px",
+    "medium": "30px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "24px",
+    "medium": "24px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.005em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "16px",
+    "medium": "16px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Small",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "11px",
+   "tracking": "0.14em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "11px"
+   }
+  },
+  {
+   "name": "Quote",
+   "tag": "p",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "italic",
+   "size": "34px",
+   "tracking": "-0.01em",
+   "leading": "1.18em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Quote Small",
+   "tag": "p",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "italic",
+   "size": "25px",
+   "tracking": "-0.005em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "25px",
+    "medium": "25px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Body Strong",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Article/Heading",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 300,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.025em",
+   "leading": "1.15em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "34px",
+    "small": "27px"
+   }
+  },
+  {
+   "name": "Article/Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.7em",
+   "transform": "none",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Article/Title",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 300,
+   "style": "normal",
+   "size": "44px",
+   "tracking": "-0.03em",
+   "leading": "1.08em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "44px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Submit Button",
+  "Feature Card",
+  "Service Row",
+  "FAQ Item",
+  "Navigation"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Canvas"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 76,
+   "h": 828,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "8px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Card"
+   ],
+   "text": 13,
+   "words": 55,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1,
+    "loop": 1
+   },
+   "styles": {
+    "Label": 7,
+    "Display": 1,
+    "Body Large": 1,
+    "Small": 3
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Intro",
+   "type": "FrameNode",
+   "y": 904,
+   "h": 676,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 32px 110px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 11,
+   "words": 52,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 2,
+    "ticker": 1
+   },
+   "styles": {
+    "Label": 2,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/02-intro.jpg"
+  },
+  {
+   "name": "Core Principles",
+   "type": "FrameNode",
+   "y": 1580,
+   "h": 773,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Dark Panel"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Feature Card": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/03-core-principles.jpg"
+  },
+  {
+   "name": "Founder",
+   "type": "FrameNode",
+   "y": 2353,
+   "h": 940,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 32px 150px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 81,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Body Strong": 1,
+    "Small": 1,
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1,
+    "Quote Small": 1
+   },
+   "shot": "sections/04-founder.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 3293,
+   "h": 938,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "20px 32px 150px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 9,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Service Row": 4
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/05-services.jpg"
+  },
+  {
+   "name": "Framework",
+   "type": "FrameNode",
+   "y": 4231,
+   "h": 1168,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Light Panel"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Feature Card": 6
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 7
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/06-framework.jpg"
+  },
+  {
+   "name": "Case Studies",
+   "type": "FrameNode",
+   "y": 5399,
+   "h": 1023,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 32px 30px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2,
+    "hover": 1
+   },
+   "styles": {
+    "Label": 3,
+    "Heading 2": 1,
+    "Heading 3": 1,
+    "Body": 1
+   },
+   "shot": "sections/07-case-studies.jpg"
+  },
+  {
+   "name": "How We Work",
+   "type": "FrameNode",
+   "y": 6422,
+   "h": 718,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 32px 150px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 11,
+   "words": 68,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Label": 4,
+    "Heading 2": 1,
+    "Heading 3": 3,
+    "Body": 3
+   },
+   "shot": "sections/08-how-we-work.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 7140,
+   "h": 735,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Forest Panel"
+   ],
+   "text": 11,
+   "words": 97,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {},
+   "effects": {
+    "appear": 4,
+    "hover": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Quote Small": 3,
+    "Body Strong": 3,
+    "Small": 3
+   },
+   "shot": "sections/09-testimonials.jpg"
+  },
+  {
+   "name": "FAQ Preview",
+   "type": "FrameNode",
+   "y": 7875,
+   "h": 869,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 32px 150px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 11,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "FAQ Item": 5
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/10-faq-preview.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 8744,
+   "h": 680,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "CTA Panel"
+   ],
+   "text": 3,
+   "words": 35,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/11-final-cta.jpg"
+  },
+  {
+   "name": "Newsletter",
+   "type": "FrameNode",
+   "y": 9424,
+   "h": 400,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 32px 120px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 35,
+   "images": 0,
+   "icons": 0,
+   "inputs": 1,
+   "grids": [],
+   "components": {
+    "Submit Button": 1
+   },
+   "effects": {},
+   "styles": {
+    "Label": 1,
+    "Lead": 1,
+    "Body": 1,
+    "Small": 1
+   },
+   "shot": "sections/12-newsletter.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 44,
+  "text": 1,
+  "loop": 1,
+  "ticker": 1,
+  "sticky": 1,
+  "hover": 4
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.12,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "2.2s",
+     "bounce": 0,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.12,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "2.2s",
+     "bounce": 0,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "word",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "28px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "duration": "1.1s",
+     "bounce": 0,
+     "delay": "0.15s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": -10,
+   "scale": 1,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.45,
+     0,
+     0.55,
+     1
+    ],
+    "duration": "3.5s",
+    "delay": "0s"
+   }
+  },
+  "ticker": {
+   "velocity": 40,
+   "hoverModifier": "0.3%",
+   "directionModifier": "default",
+   "draggable": false
+  },
+  "hover": {
+   "opacity": 1,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1.06,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "spring",
+    "duration": "0.9s",
+    "bounce": 0,
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {
+  "Instrument Serif": 18,
+  "Inter Display": 8,
+  "Inter": 2
+ },
+ "radii": [
+  [
+   "100px",
+   9
+  ],
+  [
+   "4px",
+   6
+  ],
+  [
+   "32px",
+   5
+  ],
+  [
+   "24px",
+   5
+  ],
+  [
+   "320px",
+   1
+  ],
+  [
+   "200px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 7,
+  "blur": 8
+ },
+ "desktopFill": "white",
+ "pageHeight": 10620,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/ab905f61-29c8-48cd-b67c-b2d737bd6b9a.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/738b068f-3374-44ca-8fe0-fc6aa7c373b4.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-consulting/consolev",
+ "industry": "services-consulting",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  10628
+ ]
+}

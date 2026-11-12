@@ -1,0 +1,19 @@
+{
+  "name": "Letterhead",
+  "industry": "publishing-blogs",
+  "also": ["publishing-magazines", "services-consulting", "services-education"],
+  "summary": "Gentle, bookish newsletter site set entirely in EB Garamond, with painterly misty-landscape banners, soft green-grey bento tiles and one deep forest-green accent.",
+  "style": ["editorial", "warm-organic", "soft-pastel"],
+  "feel": { "tone": 2, "energy": 1, "luxury": 3, "density": 2, "warmth": 4, "modernity": 3 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#f3f6f2", "ink": "#14201a", "muted": "#4d5650", "accent": "#2f5d46", "line": "#dce3de" },
+  "fonts": { "display": "EB Garamond", "body": "EB Garamond", "class": "serif", "pairing": "one classical serif for everything; italic for meta, labels and the signature, regular 400 for all headings" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "about", "features", "blog", "cta", "about", "pricing", "testimonials", "newsletter"],
+  "motion": 2,
+  "signature": ["painterly watercolour landscape (mist, mountains, pavilions) inside 24px-radius banners, fading to white behind centred serif headlines", "bento feature tiles that illustrate the promise with tiny data graphics: a reading-time bar, a source grid with a few lit cells, a globe with a percentage"],
+  "imagery": "soft AI-painted watercolour landscapes and small illustrated objects, one warm portrait of the writer, pastel issue thumbnails",
+  "layout_grid": "1200px canvas, 40px side padding, 120px section padding, 24px radii on every card and banner, bento 2+3 grid",
+  "quality": 4
+}

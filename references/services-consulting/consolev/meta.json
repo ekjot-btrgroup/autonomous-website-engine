@@ -1,0 +1,19 @@
+{
+  "name": "CONSOLEV",
+  "industry": "services-consulting",
+  "also": ["services-legal", "agency-marketing", "software-fintech"],
+  "summary": "Quiet-premium strategy consultancy site: light-weight tight grotesk with italic serif accents, warm stone canvas, inset dark, cream and forest panels, numbered editorial labels.",
+  "style": ["editorial", "corporate-clean", "luxury"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "neutral",
+  "palette": { "bg": "#eeebe5", "surface": "#f7f5f0", "ink": "#121210", "muted": "#6e6b64", "accent": "#1c2a21", "line": "rgba(18,18,16,0.12)" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "sans", "pairing": "Inter Display 300 with -0.045em tracking for big headings, Instrument Serif italic for one emphasised word per heading and all quotes, Inter body and wide-tracked 11px caps labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "logos", "features", "about", "services", "process", "portfolio", "process", "testimonials", "faq", "cta", "newsletter"],
+  "motion": 3,
+  "signature": ["thin 300-weight grotesk headlines ending in one italic serif word", "numbered caps labels like (01) WHY on every section", "glass progress-bar card floating on the hero photo", "circular cut-out portrait with a pill caption for the founder", "forest-green panel with misty pine photo behind frosted quote cards"],
+  "imagery": "warm documentary office photography, candid teams, a calm founder portrait, misty forest and coastline landscapes",
+  "layout_grid": "1136px content, 32px side padding, 150px section padding, 12px gutter for inset panels, 4-column principle cards and 2-column framework grid",
+  "quality": 5
+}

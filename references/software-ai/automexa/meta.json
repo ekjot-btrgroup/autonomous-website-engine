@@ -1,0 +1,19 @@
+{
+  "name": "Automexa",
+  "industry": "software-ai",
+  "also": ["services-consulting", "agency-marketing", "software-saas"],
+  "summary": "Clean white AI-automation consultancy page with a hot coral-orange accent, a live workflow card in a glowing gradient frame, and two-tone headlines.",
+  "style": ["corporate-clean", "minimal", "bold-graphic"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 3, "density": 3, "warmth": 4, "modernity": 4 },
+  "scheme": "light",
+  "hue": "orange",
+  "palette": { "bg": "#ffffff", "surface": "#f6f5f3", "ink": "#0e0e12", "muted": "#6d6b73", "accent": "#ff4d2e", "line": "#ececed" },
+  "fonts": { "display": "Geist", "body": "Inter", "class": "sans", "pairing": "Geist 600 with tight -3.5% tracking for headings, Inter 400 for body, Inter 600 uppercase with wide tracking for orange eyebrows" },
+  "hero": "dashboard-mock",
+  "sections": ["hero", "stats", "logos", "services", "process", "features", "portfolio", "services", "features", "about", "testimonials", "pricing", "faq", "cta"],
+  "motion": 2,
+  "signature": ["hero workflow card (four pipeline steps, last one in a coral gradient, plus an activity log) wrapped in a soft peach-to-pink glowing border", "every section title split in two tones: black words then the key word in coral", "dark pill buttons carrying a small coral gradient icon disc at the right end"],
+  "imagery": "abstract 3D orange and red paper-curl and fluid renders for case studies; otherwise icons and UI cards",
+  "layout_grid": "1200 canvas, 24px gutters (1152 content), ~110px section padding, alternating white and #f6f5f3 bands, 3-4 column card grids, 18-28px radii",
+  "quality": 4
+}

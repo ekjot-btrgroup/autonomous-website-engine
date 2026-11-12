@@ -1,0 +1,19 @@
+{
+  "name": "Overtake",
+  "industry": "agency-marketing",
+  "also": ["software-saas", "agency-design"],
+  "summary": "Punchy performance-marketing agency site: heavy grotesk headlines with an inline icon pill, lime and pink highlight chips, rounded dark data cards next to bright lifestyle photos.",
+  "style": ["bold-graphic", "playful", "corporate-clean"],
+  "feel": { "tone": 3, "energy": 4, "luxury": 3, "density": 3, "warmth": 3, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#f0f0f0", "ink": "#0b0b0c", "muted": "#6a6e6e", "accent": "#9efc65", "line": "#e6e6e6" },
+  "fonts": { "display": "Switzer", "body": "Stack Sans Headline", "class": "sans", "pairing": "semibold Switzer display up to 100px with tight tracking, neutral Stack Sans for body" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "about", "services", "stats", "portfolio", "stats", "process", "features", "testimonials", "blog", "cta"],
+  "motion": 4,
+  "signature": ["an icon pill (dollar coin plus chevrons) set inline inside the H1 like a word", "keywords inside paragraphs wrapped in lime, pink and black highlight chips", "sticky stacked case-study cards that shrink and tilt -6deg as the next one slides over"],
+  "imagery": "saturated lifestyle and product photos in 30px-radius frames paired with deep-teal data cards (dot grids, ROAS figures, bar charts)",
+  "layout_grid": "1200px, 30px side padding, 30px card radius, 200px vertical rhythm on light bands, inset rounded hero and dark panels",
+  "quality": 4
+}

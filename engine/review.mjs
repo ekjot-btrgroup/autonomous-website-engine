@@ -35,7 +35,24 @@ async function inspect(page, width) {
     const wide = over > 2 ? [...document.querySelectorAll('body *')].filter((el) => el.getBoundingClientRect().right > w + 2).slice(0, 3).map((el) => `${el.tagName.toLowerCase()}${el.className && typeof el.className === 'string' ? '.' + el.className.split(' ')[0] : ''}`) : [];
     const fam = (sel) => { const el = document.querySelector(sel); return el ? getComputedStyle(el).fontFamily.split(',')[0].replace(/["']/g, '').trim() : null; };
     const fontsOk = [fam('h1'), fam('p')].filter(Boolean).every((f) => /^(ui-|system-ui|-apple|serif|sans-serif|monospace)/.test(f) || document.fonts.check(`16px "${f}"`));
+    // Text contrast: visible text against its first solid ancestor background (skipped over images/gradients).
+    const rgb = (c) => { const m = c.match(/rgba?\(([^)]+)\)/); if (!m) return null; const v = m[1].split(/[ ,/]+/).filter(Boolean).map(Number); return { r: v[0], g: v[1], b: v[2], a: v.length > 3 ? v[3] : 1 }; };
+    const lum = ({ r, g, b }) => { const f = (x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };
+    const ratio = (x, y) => { const [h, l] = [lum(x), lum(y)].sort((p, q) => q - p); return (h + 0.05) / (l + 0.05); };
+    const bgOf = (el) => { for (let e = el; e; e = e.parentElement) { const cs = getComputedStyle(e); if (cs.backgroundImage !== 'none') return null; const c = rgb(cs.backgroundColor); if (c && c.a >= 0.95) return c; if (c && c.a > 0.05) return null; } return { r: 255, g: 255, b: 255, a: 1 }; };
+    const lowContrast = [];
+    for (const el of document.querySelectorAll('body *')) {
+      if (lowContrast.length >= 8) break;
+      const own = [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim().length > 1);
+      if (!own || !vis(el) || el.closest('[aria-hidden=true], svg, .sr-only')) continue;
+      const cs = getComputedStyle(el); if (cs.visibility === 'hidden' || Number(cs.opacity) < 0.3) continue;
+      const fg = rgb(cs.color), bg = bgOf(el); if (!fg || !bg || fg.a < 0.5) continue;
+      const size = parseFloat(cs.fontSize), bold = Number(cs.fontWeight) >= 700, large = size >= 24 || (size >= 18.5 && bold);
+      const r = ratio(fg, bg), need = large ? 3 : 4.5;
+      if (r < need - 0.05) lowContrast.push(`"${el.textContent.trim().slice(0, 30)}" ${r.toFixed(1)}:1 (need ${need})`);
+    }
     return {
+      lowContrast,
       overflow: over > 2 ? over : 0, wide, h1, title: !!document.title.trim(), viewport: !!document.querySelector('meta[name=viewport]'),
       brokenImages: imgs.filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.getAttribute('src')).slice(0, 5),
       noAlt: imgs.filter((i) => !i.hasAttribute('alt')).length, smallTaps: taps.length, fontsOk, height: document.documentElement.scrollHeight,
@@ -78,6 +95,8 @@ async function review(only) {
       if (c.desktop.h1 !== 1) issues.push(`${c.desktop.h1} h1 headings (need exactly 1)`);
       if (!c.desktop.title) issues.push('missing <title>');
       if (!c.phone.viewport) issues.push('missing viewport meta');
+      const lc = [...new Set([...(c.desktop.lowContrast || []), ...(c.phone.lowContrast || [])])];
+      if (lc.length) issues.push(`${lc.length} low-contrast text: ${lc.slice(0, 3).join('; ')}`);
       if (c.desktop.noAlt) issues.push(`${c.desktop.noAlt} images without alt text`);
       if (c.phone.smallTaps > 2) issues.push(`${c.phone.smallTaps} tap targets smaller than 40px on phone`);
       if (!c.desktop.fontsOk) issues.push('heading or body font did not load');
