@@ -1,0 +1,19 @@
+{
+  "name": "kairu",
+  "industry": "services-education",
+  "also": ["ecommerce-digital", "software-saas", "services-consulting"],
+  "summary": "Single-product course sales page on warm off-white with one hot orange accent, a highlighter-pill headline, faint grid textures and generous 300px section breathing room.",
+  "style": ["minimal", "warm-organic", "technical"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 2, "density": 2, "warmth": 4, "modernity": 5 },
+  "scheme": "light",
+  "hue": "orange",
+  "palette": { "bg": "#f8f5f0", "surface": "#f0ede8", "ink": "#141412", "muted": "#9c9a97", "accent": "#ff6b35", "line": "rgba(20,20,18,0.08)" },
+  "fonts": { "display": "Cabinet Grotesk", "body": "Geist", "class": "sans", "pairing": "medium-weight Cabinet Grotesk headlines with tight -0.04em tracking over Geist body and wide-tracked caps labels" },
+  "hero": "centered-type",
+  "sections": ["hero", "video", "problem", "process", "testimonials", "curriculum", "stats", "cta", "audience", "about", "pricing", "faq", "contact"],
+  "motion": 4,
+  "signature": ["one headline phrase sits inside a soft peach rounded pill like a highlighter swipe", "ticker of mock payment notification cards under the hero buttons", "macOS-style window chrome framing the trailer video", "huge peach numerals on six beige module cards", "faint shimmer grid lines behind hero and pricing card"],
+  "imagery": "almost image-free; UI-like notification cards, one framed video still and a single instructor portrait",
+  "layout_grid": "1200px frame, 50px side padding, 300px top padding per section, 3-column module grid, 2-column problem and FAQ grids, single centred pricing card about 540px wide",
+  "quality": 4
+}

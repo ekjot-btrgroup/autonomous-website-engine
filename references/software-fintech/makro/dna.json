@@ -512,7 +512,7 @@
    "name": "Hero - Center - Girl",
    "type": "FrameNode",
    "y": 0,
-   "h": 1700,
+   "h": 1987,
    "w": 1200,
    "fill": "token:Background Alt",
    "layout": "stack",
@@ -549,7 +549,7 @@
   {
    "name": "About",
    "type": "FrameNode",
-   "y": 1700,
+   "y": 1987,
    "h": 4692,
    "w": 1200,
    "layout": "stack",
@@ -586,7 +586,7 @@
   {
    "name": "Bento Section",
    "type": "FrameNode",
-   "y": 6392,
+   "y": 6679,
    "h": 1574,
    "w": 1200,
    "layout": "stack",
@@ -627,7 +627,7 @@
   {
    "name": "Gallery Section",
    "type": "FrameNode",
-   "y": 7966,
+   "y": 8253,
    "h": 1650,
    "w": 1200,
    "layout": "stack",
@@ -656,7 +656,7 @@
   {
    "name": "Pricing",
    "type": "FrameNode",
-   "y": 9616,
+   "y": 9903,
    "h": 1607,
    "w": 1200,
    "layout": "stack",
@@ -689,7 +689,7 @@
   {
    "name": "Testimoinals",
    "type": "FrameNode",
-   "y": 11223,
+   "y": 11510,
    "h": 1128,
    "w": 1200,
    "layout": "stack",
@@ -722,7 +722,7 @@
   {
    "name": "FAQ",
    "type": "FrameNode",
-   "y": 12351,
+   "y": 12638,
    "h": 1369,
    "w": 1200,
    "layout": "stack",
@@ -754,7 +754,7 @@
   {
    "name": "Blogs",
    "type": "FrameNode",
-   "y": 13720,
+   "y": 14007,
    "h": 1003,
    "w": 1200,
    "fill": "linear-gradient(180deg, token:ccbbe51b-ea16-4c07-831c-16f31cf5f239, rgb(255, 255, 255) /* {\"name\":\"Background\"} */ 0%, token:63179b8e-7207-4483-969d-30dad423295a, rgb(235, 237, 250) /* {\"name\":\"Background Alt\"} */ 100%)",
@@ -958,5 +958,6 @@
  "screenshot_size": [
   1200,
   16876
- ]
+ ],
+ "y_fix": "hero renders 287px taller in the page screenshot than its measured rect (screenshot 16876 vs page 16589); later section y shifted by +287, hero h +287"
 }

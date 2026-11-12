@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0d0d0d; --surface:#181818; --surface-2:#1f1f1f; --ink:#f4f1ea; --muted:#a8a39a; --tail:#7f7a71; --dim:#6e6960; --nav-ink:#d8d3ca;
-  --accent:#d9824a; --accent-ink:#0d0d0d; --line:#2a2a2a;
+  --bg:#0d0d0d; --surface:#181818; --ink:#f4f1ea; --muted:#a8a39a; --tail:#8a857b; --nav-ink:#d8d3ca;
+  --accent:#d9824a; --accent-ink:#0d0d0d; --line:#2a2a2a; --line-2:#3a3a3a;
   --serif:"Instrument Serif", "Times New Roman", serif; --sans:"Manrope", ui-sans-serif, sans-serif;
   /* type scale: 6 sizes */
   --fs-label:.875rem; --fs-body:1.0625rem; --fs-lead:1.25rem; --fs-h3:1.75rem;
@@ -22,7 +22,7 @@
   --wrap:1200px; --pad:20px; --section:80px;
   --r-sm:10px; --r-img:14px; --r-card:20px; --r-pill:999px;
   --ease:cubic-bezier(.22,1,.36,1);
-  --nav-h:68px; --pills-h:68px;
+  --nav-h:68px;
   /* one photo grade for every image */
   --grade:sepia(.35) saturate(.55) contrast(1.08) brightness(.92);
 }
@@ -41,14 +41,12 @@ dl,dd{margin:0}
 button,input,select{font:inherit;color:inherit}
 ::selection{background:var(--accent);color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:var(--pad);top:-60px;z-index:100;background:var(--accent);color:var(--accent-ink);padding:var(--s3) var(--s5);border-radius:var(--r-pill);font-weight:600;font-size:var(--fs-label);transition:top .2s}
 .skip:focus{top:12px}
 .wrap{width:100%;max-width:calc(var(--wrap) + var(--pad)*2);margin-inline:auto;padding-inline:var(--pad)}
 .section{padding-top:var(--section)}
-.section.pb{padding-bottom:var(--section)}
 .num{font-variant-numeric:tabular-nums lining-nums}
-.split{display:grid;gap:var(--s7)}
-@media (min-width:960px){ .split{grid-template-columns:5fr 7fr;gap:var(--s8)} }
 
 /* type */
 .eyebrow{display:flex;align-items:center;gap:var(--s2);font-family:var(--serif);font-style:italic;font-size:var(--fs-body);color:var(--muted);margin-bottom:var(--s5)}
@@ -59,30 +57,29 @@ button,input,select{font:inherit;color:inherit}
 .h3{font-size:var(--fs-h3);line-height:1.15;letter-spacing:-.01em}
 .lead{font-size:var(--fs-lead);line-height:1.55;color:var(--muted);max-width:44ch}
 .body{color:var(--muted);max-width:60ch}
+/* signature 1: the grey tail, used four times only (hero, services, booking, visit) */
 .tail{color:var(--tail)}
-.brk .tail{display:block}
 .js .fade-line .tail{color:var(--ink);transition:color 1.8s var(--ease) .45s}
 .js .fade-line.in .tail{color:var(--tail)}
 .head{margin-bottom:var(--s8)}
-.head .body{margin-top:var(--s5);max-width:46ch}
 .tbc{font-family:var(--sans);font-size:var(--fs-label);font-weight:400;font-style:normal;letter-spacing:0;color:var(--muted)}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s3);min-height:48px;padding:14px var(--s5);border-radius:var(--r-pill);font-size:var(--fs-label);font-weight:600;letter-spacing:.02em;line-height:1.2;border:1px solid transparent;cursor:pointer;transition:background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease)}
-.btn svg{width:14px;height:14px;transition:transform .3s var(--ease)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s3);min-height:52px;padding:16px 28px;border-radius:var(--r-pill);font-size:1rem;font-weight:600;letter-spacing:.01em;line-height:1.2;border:1px solid transparent;cursor:pointer;transition:background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease)}
+.btn svg{width:15px;height:15px;transition:transform .3s var(--ease)}
 .btn-primary{background:var(--accent);color:var(--accent-ink)}
 .btn-primary:hover{background:#e6955f}
 .btn-primary:hover svg{transform:translateX(3px)}
-.btn-ghost{border-color:#3a3a3a;color:var(--ink)}
+.btn-ghost{border-color:var(--line-2);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--ink)}
 .btn:active{transform:translateY(1px)}
 
 /* photo treatment: one tungsten grade for every image */
 .ph{position:relative;overflow:hidden;border-radius:var(--r-img);background:var(--surface);isolation:isolate;margin:0}
-.ph img{width:100%;height:100%;object-fit:cover;filter:var(--grade);transition:filter .9s var(--ease),transform 1.4s var(--ease)}
+.ph img{width:100%;height:100%;object-fit:cover;filter:var(--grade);transition:transform 1.4s var(--ease)}
 .ph::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(217,130,74,.14);mix-blend-mode:soft-light;pointer-events:none}
 .ph::after{content:"";position:absolute;inset:0;z-index:1;box-shadow:inset 0 0 120px 10px rgba(0,0,0,.5);border-radius:inherit;pointer-events:none}
-.tag{position:absolute;left:var(--s4);bottom:var(--s4);z-index:2;display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);border-radius:var(--r-pill);background:rgba(13,13,13,.82);border:1px solid rgba(255,255,255,.08);font-size:var(--fs-label);font-weight:600;color:var(--ink)}
+.tag{position:absolute;left:var(--s4);bottom:var(--s4);z-index:2;display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);border-radius:var(--r-pill);background:rgba(13,13,13,.84);border:1px solid rgba(255,255,255,.08);font-size:var(--fs-label);font-weight:600;color:var(--ink)}
 .tag .n{color:var(--accent)}
 
 /* nav */
@@ -90,12 +87,13 @@ button,input,select{font:inherit;color:inherit}
 .nav.scrolled{background:rgba(13,13,13,.95);border-bottom-color:var(--line)}
 .nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:var(--s5)}
 .mark{font-family:var(--serif);font-size:var(--fs-h3);line-height:1;letter-spacing:-.01em;white-space:nowrap}
-.mark span{color:var(--tail)}
+.mark span{color:var(--accent)}
 .nav-links{display:none;align-items:center;gap:var(--s6)}
-.nav-links a{font-size:var(--fs-label);font-weight:500;color:var(--nav-ink);padding:var(--s3) 0;transition:color .25s}
+.nav-links a{font-size:.9375rem;font-weight:500;color:var(--nav-ink);padding:var(--s3) 0;transition:color .25s}
 .nav-links a:hover{color:var(--accent)}
 .nav-cta{display:none}
-.menu-btn{display:inline-flex;align-items:center;gap:var(--s3);min-height:44px;padding:0 var(--s4);border:1px solid #3a3a3a;border-radius:var(--r-pill);background:none;font-size:var(--fs-label);font-weight:600;cursor:pointer}
+.nav .nav-cta{min-height:44px;padding:12px 22px;font-size:.9375rem}
+.menu-btn{display:inline-flex;align-items:center;gap:var(--s3);min-height:44px;padding:0 var(--s4);border:1px solid var(--line-2);border-radius:var(--r-pill);background:none;font-size:var(--fs-label);font-weight:600;cursor:pointer}
 .menu-btn i{position:relative;display:block;width:14px;height:1px;background:currentColor;transition:background-color .2s}
 .menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;width:14px;height:1px;background:currentColor;transition:transform .3s var(--ease)}
 .menu-btn i::before{top:-4px}.menu-btn i::after{top:4px}
@@ -125,7 +123,7 @@ button,input,select{font:inherit;color:inherit}
 .fact{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s4);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
 .fact .v{font-family:var(--serif);font-size:var(--fs-h3);line-height:1.1;text-align:right}
 @media (min-width:760px){
-  .facts{grid-template-columns:repeat(3,1fr)}
+  .facts{grid-template-columns:1fr 1.35fr 1fr}
   .fact{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:var(--s3);padding:var(--s5) var(--s5) var(--s5) 0}
   .fact + .fact{border-left:1px solid var(--line);padding-left:var(--s5)}
   .fact .v{text-align:left}
@@ -136,143 +134,169 @@ button,input,select{font:inherit;color:inherit}
   .hero-copy{padding-bottom:var(--s5)}
 }
 
-/* about */
-.about-grid{align-items:center}
-.about-grid .body + .body{margin-top:var(--s4)}
-.about-photo{aspect-ratio:7/5}
+/* about: the shop, then the chairs (portraits to come) */
+.about-top{display:grid;gap:var(--s5)}
+.about-top .body + .body{margin-top:var(--s4)}
+@media (min-width:960px){ .about-top{grid-template-columns:6fr 5fr;gap:var(--s8);align-items:end} }
+.crew{margin-top:var(--s8)}
+.chairs{display:flex;gap:var(--s4);margin-top:var(--s5);margin-inline:calc(var(--pad) * -1);padding-inline:var(--pad);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);scrollbar-width:none}
+.chairs::-webkit-scrollbar{display:none}
+.chair{flex:0 0 80%;margin:0;scroll-snap-align:start}
+.frame{position:relative;aspect-ratio:4/5;max-height:360px;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-img);display:grid;place-items:center;overflow:hidden}
+.frame::before{content:"";position:absolute;inset:14px;border:1px dashed #2f2f2f;border-radius:6px;pointer-events:none}
+.frame .no{position:absolute;left:var(--s4);top:var(--s4);font-size:var(--fs-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--surface);padding:0 var(--s1)}
+.frame .ph-note{font-size:var(--fs-label);color:var(--muted);text-align:center;padding:0 var(--s5)}
+.chair figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s3);margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line)}
+.chair figcaption .h3{font-family:var(--serif);font-size:1.375rem}
+.chair figcaption span:last-child{font-size:var(--fs-label);color:var(--muted)}
+.chairs-intro{display:grid;gap:var(--s3)}
+.chairs-intro .h3{max-width:12ch}
+.chairs-intro p{font-size:var(--fs-label);color:var(--muted);max-width:30ch}
+@media (min-width:640px){
+  .chairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s6);overflow:visible;margin-inline:0;padding-inline:0}
+  .chair{flex:none}
+  .frame{max-height:none}
+}
+@media (min-width:960px){
+  .crew{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s6);align-items:end}
+  .chairs{grid-template-columns:repeat(3,288px);margin-top:0}
+  .chairs-intro{align-content:end;padding-bottom:calc(var(--s4) + 3.2rem)}
+}
 
-/* services: the index is the stage */
+/* services: photos on the left, the index rides along on the right */
 .svc{display:grid;gap:var(--s5)}
 .svc-pills{order:0;position:sticky;top:var(--nav-h);z-index:5;display:flex;gap:var(--s2);margin-inline:calc(var(--pad) * -1);padding:var(--s3) var(--pad);background:var(--bg);border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
 .svc-pills::-webkit-scrollbar{display:none}
-.svc-pills a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s4);border-radius:var(--r-pill);border:1px solid #3a3a3a;font-size:var(--fs-label);font-weight:600;color:var(--muted);white-space:nowrap;transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease)}
+.svc-pills a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s4);border-radius:var(--r-pill);border:1px solid var(--line-2);font-size:var(--fs-label);font-weight:600;color:var(--muted);white-space:nowrap;transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease)}
 .svc-pills a.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.svc-names,.svc-photos{display:contents}
-.svc-row:nth-child(1){order:2}.svc-row:nth-child(2){order:4}.svc-row:nth-child(3){order:6}
+.svc-photos,.svc-panel,.svc-detail{display:contents}
+.svc-index,.svc-cta{display:none}
+.svc-photo{aspect-ratio:4/3;scroll-margin-top:calc(var(--nav-h) + 84px)}
 .svc-photo:nth-child(1){order:1}.svc-photo:nth-child(2){order:3}.svc-photo:nth-child(3){order:5}
-.svc-photo{aspect-ratio:5/4;scroll-margin-top:calc(var(--nav-h) + var(--pills-h) + 16px)}
-.svc-photo:not(:first-child){margin-top:var(--s7)}
-.svc-name{font-size:var(--fs-h2);line-height:1.06;letter-spacing:-.015em}
-.svc-name a{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:var(--s2) var(--s4)}
-.svc-name .p{font-family:var(--serif);color:var(--accent);font-variant-numeric:tabular-nums lining-nums}
-.svc-name .tbc{align-self:center}
-.svc-more .body{margin-top:var(--s4)}
-.inc{margin-top:var(--s5);display:grid;gap:var(--s2)}
-.inc li{display:flex;align-items:baseline;gap:var(--s3);color:var(--ink);font-size:var(--fs-body)}
+.svc-more:nth-child(1){order:2}.svc-more:nth-child(2){order:4}.svc-more:nth-child(3){order:6}
+.svc-more{padding-bottom:var(--s6)}
+.svc-more .h3{display:flex;align-items:baseline;gap:var(--s3)}
+.svc-more .h3 .n{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;color:var(--accent)}
+.svc-more .body{margin-top:var(--s3)}
+.inc{margin-top:var(--s4);display:grid;gap:var(--s2)}
+.inc li{display:flex;align-items:baseline;gap:var(--s3);color:var(--ink)}
 .inc li::before{content:"";flex:none;width:14px;height:1px;background:var(--accent);transform:translateY(-5px)}
 @media (min-width:960px){
-  .svc{grid-template-columns:5fr 7fr;gap:var(--s8);align-items:start}
+  .svc{grid-template-columns:480px minmax(0,1fr);gap:var(--s9);align-items:start}
   .svc-pills{display:none}
-  .svc-names{display:block;position:sticky;top:96px;border-top:1px solid var(--line)}
   .svc-photos{display:grid;gap:var(--s5)}
-  .svc-photo{aspect-ratio:4/5;margin-top:0!important;scroll-margin-top:96px}
-  .svc-row{border-bottom:1px solid var(--line);padding:var(--s5) 0}
-  .svc-name{color:var(--dim);transition:color .5s var(--ease)}
-  .svc-name .p{color:var(--dim);transition:color .5s var(--ease)}
-  .svc-name:hover{color:var(--muted)}
-  .svc-row.on .svc-name{color:var(--ink)}
-  .svc-row.on .svc-name .p{color:var(--accent)}
-  .js .svc-more{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .6s var(--ease),opacity .5s var(--ease)}
-  .js .svc-more > div{overflow:hidden;min-height:0}
-  .js .svc-row.on .svc-more{grid-template-rows:1fr;opacity:1}
+  .svc-photo{aspect-ratio:1/1;scroll-margin-top:110px}
+  .svc-cta{display:flex;align-items:center;gap:var(--s5);margin-top:var(--s6)}
+  .svc-panel{display:block;position:sticky;top:120px}
+  .svc-index{display:block;border-top:1px solid var(--line)}
+  .svc-index a{display:grid;grid-template-columns:48px 1fr auto;align-items:baseline;gap:var(--s4);padding:var(--s4) 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.015em;color:var(--muted);transition:color .5s var(--ease)}
+  .svc-index a .n{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:.06em;color:var(--muted);transition:color .5s var(--ease)}
+  .svc-index a .dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--line-2);transition:background-color .5s var(--ease),border-color .5s var(--ease)}
+  .svc-index a:hover{color:var(--ink)}
+  .svc-index a.on{color:var(--ink)}
+  .svc-index a.on .n{color:var(--accent)}
+  .svc-index a.on .dot{background:var(--accent);border-color:var(--accent)}
+  .svc-detail{display:grid;margin-top:var(--s6);padding:var(--s6);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card)}
+  .svc-more{grid-area:1/1;padding:0}
+  .svc-more .h3{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .svc-more .body{margin-top:var(--s3);font-size:var(--fs-lead);line-height:1.5;color:var(--ink);max-width:40ch}
+  .js .svc-more{opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .5s var(--ease),transform .5s var(--ease),visibility 0s .5s}
+  .js .svc-more.on{opacity:1;visibility:visible;transform:none;transition:opacity .5s var(--ease) .1s,transform .5s var(--ease) .1s,visibility 0s}
 }
 
-/* gallery */
+/* gallery: details only, one shop */
 .gal{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
-.gal .ph{aspect-ratio:4/5}
-.gal .wide{grid-column:1 / -1;aspect-ratio:3/2}
+.gal .ph{aspect-ratio:1/1}
+.gal .wide{grid-column:1 / -1;aspect-ratio:4/3}
+.gal .tall{aspect-ratio:1/1}
+.gal .sq:last-child{grid-column:1 / -1;aspect-ratio:4/3}
 .gal .ph img{transform:scale(1.02)}
 .gal .ph:hover img{transform:scale(1.045)}
 @media (min-width:760px){
   .gal{grid-template-columns:repeat(12,1fr);gap:var(--s4)}
-  .gal .wide{grid-column:span 7;aspect-ratio:auto;height:520px}
-  .gal .tall{grid-column:span 5;aspect-ratio:auto;height:520px}
-  .gal .sq{grid-column:span 4;aspect-ratio:auto;height:420px}
+  .gal .wide{grid-column:span 7;aspect-ratio:3/2}
+  .gal .tall{grid-column:span 5;aspect-ratio:auto}
+  .gal .tall img{position:absolute;inset:0}
+  .gal .sq,.gal .sq:last-child{grid-column:span 4;aspect-ratio:1/1}
 }
 
-/* team */
-.team{display:grid;gap:var(--s7) var(--s5)}
-.member{margin:0}
-.member .ph{aspect-ratio:4/5}
-.member figcaption{margin-top:var(--s4);padding-top:var(--s4);border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:var(--s4)}
-.member .h3{color:var(--ink)}
-.member .role{font-size:var(--fs-label);color:var(--muted)}
-.team-note{margin-top:var(--s6)}
-@media (min-width:640px){ .team{grid-template-columns:repeat(3,1fr)} .member figcaption{flex-direction:column;gap:var(--s1)} }
-
-/* night band */
-.night{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
-.night .ph{position:absolute;inset:0;border-radius:0;z-index:-1}
-.night .ph img{filter:var(--grade) brightness(.68)}
-.night .ph::after{box-shadow:inset 0 0 200px 40px rgba(0,0,0,.75)}
-.night .scrim{position:absolute;inset:0;background:rgba(13,13,13,.42);z-index:-1}
-.night .wrap{padding-block:var(--section)}
-.night-grid{display:grid;gap:var(--s6)}
-.night .h2{max-width:18ch}
-.night .tail{color:#9a958b}
-.js .night .fade-line .tail{color:var(--ink)}
-.js .night .fade-line.in .tail{color:#9a958b}
-.night .body{color:#cfcac0}
-@media (min-width:960px){ .night-grid{grid-template-columns:8fr 4fr;align-items:end} }
-
 /* prices */
-.price-aside .note{margin-top:var(--s6);display:grid;gap:var(--s2)}
+.price-grid{display:grid;gap:var(--s7)}
+@media (min-width:960px){ .price-grid{grid-template-columns:5fr 7fr;gap:var(--s8)} }
+.price-aside .body{margin-top:var(--s5)}
 .price-aside .btn{margin-top:var(--s6)}
 .price-list{border-top:1px solid var(--line)}
 .price-row{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:var(--s4);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
 .price-row .name{font-family:var(--serif);font-size:var(--fs-h3);line-height:1.15}
 .price-row .name small{display:block;margin-top:var(--s1);font-family:var(--sans);font-size:var(--fs-label);color:var(--muted)}
 .price-row .dots{border-bottom:1px dotted #444;transform:translateY(-6px)}
-.price-row .amt{font-family:var(--serif);font-size:var(--fs-h3);line-height:1}
-.price-row .amt.tbc{font-family:var(--sans);font-size:var(--fs-label);line-height:1.4;text-align:right}
-@media (min-width:960px){ .price-list{margin-top:var(--s2)} }
+.price-row .amt{font-family:var(--serif);font-size:var(--fs-h3);line-height:1;white-space:nowrap}
+.price-row .amt s{font-size:var(--fs-lead);color:var(--muted);text-decoration-color:var(--accent);text-decoration-thickness:1px;margin-right:var(--s2)}
+.price-row .amt.tbc{font-family:var(--sans);font-size:var(--fs-label);line-height:1.4;text-align:right;white-space:normal}
 
-/* booking */
-.book-grid{display:grid;gap:var(--s7)}
+/* booking: one sentence, then who you are */
+.book-grid{display:grid;gap:var(--s8)}
+@media (min-width:960px){ .book-grid{grid-template-columns:7fr 5fr;gap:var(--s8);align-items:start} }
 .form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s6) var(--s5)}
-.form .h3{margin-bottom:var(--s2)}
-.form > .body{margin-bottom:var(--s6)}
-.field{display:grid;gap:var(--s2);margin-bottom:var(--s4)}
+.sentence{font-family:var(--serif);font-size:clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);line-height:1.5;letter-spacing:-.01em;color:var(--ink)}
+.pick{position:relative;display:inline-block}
+.pick select{appearance:none;-webkit-appearance:none;background:transparent;border:0;border-bottom:2px solid var(--accent);border-radius:0;color:var(--accent);font-family:var(--serif);font-size:inherit;line-height:1.15;padding:0 26px 2px 2px;cursor:pointer;min-height:44px;field-sizing:content}
+.pick select option{color:#0d0d0d;font-family:var(--sans);font-size:1rem}
+.pick::after{content:"";position:absolute;right:6px;top:50%;width:8px;height:8px;border-right:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.pick select:focus{outline:none;border-bottom-color:var(--ink)}
+.pick select:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.who{display:grid;gap:var(--s4);margin-top:var(--s6);padding-top:var(--s6);border-top:1px solid var(--line)}
+.field{display:grid;gap:var(--s2)}
 .field label{font-size:var(--fs-label);font-weight:600;color:var(--muted)}
-.field input,.field select{width:100%;min-height:52px;padding:0 var(--s4);border-radius:var(--r-sm);border:1px solid #333;background:var(--bg);font-size:var(--fs-body);transition:border-color .25s}
-.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23a8a39a' stroke-width='1.5'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:var(--s7)}
-.field input:hover,.field select:hover{border-color:#4a4a4a}
-.field input:focus,.field select:focus{outline:none;border-color:var(--accent)}
-.row2{display:grid;gap:0 var(--s4)}
-.form .btn{width:100%;margin-top:var(--s3)}
+.field input{width:100%;min-height:52px;padding:0 var(--s4);border-radius:var(--r-sm);border:1px solid #333;background:var(--bg);font-size:var(--fs-body);transition:border-color .25s}
+.field input:hover{border-color:#4a4a4a}
+.field input:focus{outline:none;border-color:var(--accent)}
+.form .btn{width:100%;margin-top:var(--s5)}
 .form-note{margin-top:var(--s4);font-size:var(--fs-label);color:var(--muted);text-align:center}
 .done{display:none;margin-top:var(--s4);padding:var(--s4);border-radius:var(--r-sm);border:1px solid rgba(217,130,74,.4);color:var(--ink)}
 .done.show{display:block}
-.visit-card{border-top:1px solid var(--line)}
-.visit-card div{display:grid;gap:var(--s1);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
-.visit-card dd{font-family:var(--serif);font-size:var(--fs-h3);line-height:1.2}
-.visit-card dd small{display:block;font-family:var(--sans);font-size:var(--fs-label);color:var(--muted);margin-top:var(--s1)}
-.visit-card a.link,.foot-grid a.link{border-bottom:1px solid #444;transition:border-color .25s,color .25s}
-.visit-card a.link:hover,.foot-grid a.link:hover{color:var(--accent);border-color:var(--accent)}
-.visit-aside .link{display:inline-block;margin-top:var(--s5);font-size:var(--fs-label);font-weight:600}
-@media (min-width:560px){ .row2{grid-template-columns:1fr 1fr} .form{padding:var(--s7)} }
-@media (min-width:960px){ .book-grid{grid-template-columns:7fr 5fr;gap:var(--s8);align-items:start} }
+@media (min-width:560px){ .who{grid-template-columns:1fr 1fr} .form{padding:var(--s7)} }
+/* before you sit down: short notes, not an accordion */
+.notes-title{margin-bottom:var(--s5)}
+.notes{border-top:1px solid var(--line)}
+.note{display:grid;grid-template-columns:40px 1fr;gap:var(--s1) var(--s3);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
+.note .n{grid-row:span 2;font-size:var(--fs-label);font-weight:600;color:var(--accent);padding-top:6px}
+.note dt{font-family:var(--serif);font-style:italic;font-size:1.375rem;line-height:1.25;color:var(--ink)}
+.note dd{color:var(--muted)}
 
-/* faq */
-.faq{border-top:1px solid var(--line);max-width:720px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--s4);min-height:64px;padding:var(--s3) 0;cursor:pointer;font-family:var(--serif);font-size:var(--fs-h3);line-height:1.2;color:var(--ink);transition:color .25s}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(currentColor,currentColor) center/14px 1px no-repeat,linear-gradient(currentColor,currentColor) center/1px 14px no-repeat;color:var(--muted);transition:transform .35s var(--ease)}
-.faq details[open] summary::after{transform:rotate(45deg);color:var(--accent)}
-.faq summary:hover{color:var(--accent)}
-.faq details p{padding:0 0 var(--s5);color:var(--muted);max-width:56ch}
+/* visit: closing-time band */
+.visit{position:relative;margin-top:var(--section);overflow:hidden;isolation:isolate}
+.visit .bg{position:absolute;inset:0;z-index:-2;margin:0}
+.visit .bg img{width:100%;height:100%;object-fit:cover;filter:var(--grade) brightness(.62)}
+.visit::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,13,13,.92) 0%,rgba(13,13,13,.55) 38%,rgba(13,13,13,.78) 100%)}
+.visit .wrap{padding-block:var(--section)}
+.visit .h2{max-width:18ch}
+.visit .tail{color:#a39e94}
+.js .visit .fade-line .tail{color:var(--ink)}
+.js .visit .fade-line.in .tail{color:#a39e94}
+.visit-card{display:grid;margin-top:var(--s8);border-top:1px solid rgba(255,255,255,.14)}
+.visit-card div{display:grid;gap:var(--s2);padding:var(--s5) 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.visit-card dt{color:#c9c4ba}
+.visit-card dd{font-family:var(--serif);font-size:var(--fs-h3);line-height:1.2}
+.visit-card dd small{display:block;font-family:var(--sans);font-size:var(--fs-label);color:#c9c4ba;margin-top:var(--s1)}
+.visit-card dd .ph-text{font-family:var(--sans);font-size:var(--fs-body);color:#c9c4ba}
+.link{border-bottom:1px solid #555;transition:border-color .25s,color .25s}
+.link:hover{color:var(--accent);border-color:var(--accent)}
+.visit-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s5);margin-top:var(--s7)}
+.visit-actions .link,.svc-cta .link{font-weight:600}
+@media (min-width:760px){
+  .visit-card{grid-template-columns:repeat(4,1fr)}
+  .visit-card div{padding-right:var(--s5)}
+  .visit-card div + div{border-left:1px solid rgba(255,255,255,.14);padding-left:var(--s5)}
+}
 
 /* footer */
-.foot{border-top:1px solid var(--line);padding-top:var(--section);padding-bottom:var(--s7)}
-.foot-mark{font-family:var(--serif);font-size:var(--fs-h1);line-height:.95;letter-spacing:-.02em}
-.foot-grid{display:grid;grid-template-columns:1fr;gap:var(--s6);margin-top:var(--s8);padding-top:var(--s6);border-top:1px solid var(--line)}
-.foot-grid h2{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--s3)}
-.foot-grid p,.foot-grid li{color:var(--ink)}
-.ph-text{color:var(--muted)}
-.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s3);margin-top:var(--s8);font-size:var(--fs-label);color:var(--muted)}
-@media (min-width:640px){ .foot-grid{grid-template-columns:repeat(2,1fr)} }
-@media (min-width:960px){ .foot-grid{grid-template-columns:repeat(4,1fr)} }
+.foot{border-top:1px solid var(--line);padding-block:var(--s7)}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--s5)}
+.foot-links{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5)}
+.foot-links a{font-size:var(--fs-label);color:var(--nav-ink);padding:var(--s3) 0}
+.foot-links a:hover{color:var(--accent)}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s3);margin-top:var(--s6);font-size:var(--fs-label);color:var(--muted)}
 
 /* reveal */
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0) * 80ms)}
@@ -283,7 +307,7 @@ button,input,select{font:inherit;color:inherit}
   *,*::before,*::after{transition:none!important;animation:none!important}
   .js .rv{opacity:1;transform:none}
   .js .fade-line .tail{color:var(--tail)}
-  .js .night .fade-line .tail{color:#9a958b}
+  .js .visit .fade-line .tail{color:#a39e94}
   .gal .ph:hover img{transform:scale(1.02)}
 }
 </style>
@@ -293,11 +317,11 @@ button,input,select{font:inherit;color:inherit}
 
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="Fade and Co, back to top">Fade <span>&amp; Co</span></a>
+    <a class="mark" href="#top" aria-label="Fade and Co, back to top">Fade <span>&amp;</span> Co</a>
     <nav class="nav-links" aria-label="Main">
+      <a href="#shop">The shop</a>
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
-      <a href="#team">Team</a>
       <a href="#prices">Prices</a>
       <a href="#visit">Visit</a>
     </nav>
@@ -307,9 +331,9 @@ button,input,select{font:inherit;color:inherit}
 </header>
 <div class="menu" id="menu">
   <nav aria-label="Mobile">
-    <a href="#services">Services <span>01</span></a>
-    <a href="#gallery">Gallery <span>02</span></a>
-    <a href="#team">Team <span>03</span></a>
+    <a href="#shop">The shop <span>01</span></a>
+    <a href="#services">Services <span>02</span></a>
+    <a href="#gallery">Gallery <span>03</span></a>
     <a href="#prices">Prices <span>04</span></a>
     <a href="#visit">Visit <span>05</span></a>
   </nav>
@@ -338,23 +362,44 @@ button,input,select{font:inherit;color:inherit}
       <dl class="facts num">
         <div class="fact rv"><dt class="label">Walk-ins</dt><dd class="v">Before noon</dd></div>
         <div class="fact rv" style="--d:1"><dt class="label">Open</dt><dd class="v">Tue to Sat, 9 till 7</dd></div>
-        <div class="fact rv" style="--d:2"><dt class="label">A cut</dt><dd class="v">£24</dd></div>
+        <div class="fact rv" style="--d:2"><dt class="label">Where</dt><dd class="v">12 King Street</dd></div>
       </dl>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT: the shop and its chairs -->
   <section class="section" id="shop" aria-labelledby="shop-title">
-    <div class="wrap split about-grid">
-      <div>
-        <p class="eyebrow rv">The shop</p>
-        <h2 class="h2 fade-line rv" id="shop-title">A barber you stop thinking about. <span class="tail">Because it’s right every time you sit down.</span></h2>
-        <p class="body rv" style="margin-top:var(--s6)">Fade &amp; Co does three things: haircuts, beard trims and hot-towel shaves. No lounge, no menu of extras, no lecture on pomade. Just a chair, a steady hand and a mirror at the end.</p>
-        <p class="body rv">Tell us what you want, or tell us what you don’t. We’ll take it from there.</p>
+    <div class="wrap">
+      <div class="about-top">
+        <div>
+          <p class="eyebrow rv">The shop</p>
+          <h2 class="h2 rv" id="shop-title">A barber you stop thinking about.</h2>
+        </div>
+        <div>
+          <p class="body rv" style="--d:1">Fade &amp; Co does three things: haircuts, beard trims and hot-towel shaves. No lounge, no menu of extras, no lecture on pomade. Just a chair, a steady hand and a mirror at the end.</p>
+          <p class="body rv" style="--d:2">Tell us what you want, or tell us what you don’t. We’ll take it from there.</p>
+        </div>
       </div>
-      <figure class="ph about-photo rv" style="--d:1">
-        <img src="img/about.jpg" width="1400" height="1000" loading="lazy" alt="Clippers, scissors, a comb and grooming pots laid out on a slate board on a wooden bench">
-      </figure>
+      <div class="crew">
+      <div class="chairs-intro rv">
+        <h3 class="h3">Who’s behind the chair.</h3>
+        <p>[Number of chairs, barber names and portraits to be supplied by Fade &amp; Co]</p>
+      </div>
+      <div class="chairs">
+        <figure class="chair rv">
+          <div class="frame"><span class="no">Chair 01</span><span class="ph-note">[Portrait to be supplied]</span></div>
+          <figcaption><span class="h3">[Barber name]</span><span>[Speciality]</span></figcaption>
+        </figure>
+        <figure class="chair rv" style="--d:1">
+          <div class="frame"><span class="no">Chair 02</span><span class="ph-note">[Portrait to be supplied]</span></div>
+          <figcaption><span class="h3">[Barber name]</span><span>[Speciality]</span></figcaption>
+        </figure>
+        <figure class="chair rv" style="--d:2">
+          <div class="frame"><span class="no">Chair 03</span><span class="ph-note">[Portrait to be supplied]</span></div>
+          <figcaption><span class="h3">[Barber name]</span><span>[Speciality]</span></figcaption>
+        </figure>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -367,37 +412,42 @@ button,input,select{font:inherit;color:inherit}
       </div>
       <div class="svc">
         <nav class="svc-pills" aria-label="Jump to a service">
-          <a href="#svc-cut" class="on" data-svc="svc-cut">Cut · £24</a>
-          <a href="#svc-beard" data-svc="svc-beard">Beard · £12</a>
+          <a href="#svc-cut" class="on" aria-current="true" data-svc="svc-cut">Haircut</a>
+          <a href="#svc-beard" data-svc="svc-beard">Beard trim</a>
           <a href="#svc-shave" data-svc="svc-shave">Hot-towel shave</a>
         </nav>
-        <ol class="svc-names">
-          <li class="svc-row on" data-svc="svc-cut">
-            <h3 class="svc-name"><a href="#svc-cut"><span class="t">Haircut</span> <span class="p">£24</span></a></h3>
-            <div class="svc-more"><div>
-              <p class="body">Clippers, scissors or both. A quick chat about what you want first, then a cut that still looks right in three weeks.</p>
-              <ul class="inc"><li>Fades and tapers</li><li>Short back and sides</li><li>Scissor work on top</li></ul>
-            </div></div>
-          </li>
-          <li class="svc-row" data-svc="svc-beard">
-            <h3 class="svc-name"><a href="#svc-beard"><span class="t">Beard trim</span> <span class="p">£12</span></a></h3>
-            <div class="svc-more"><div>
-              <p class="body">Shape, length and a clean neckline. Whether it’s a week of stubble or a year of growth, it leaves tidier than it came in.</p>
-              <ul class="inc"><li>Shape and length</li><li>Neck and cheek lines</li><li>With a cut: £32 for both</li></ul>
-            </div></div>
-          </li>
-          <li class="svc-row" data-svc="svc-shave">
-            <h3 class="svc-name"><a href="#svc-shave"><span class="t">Hot-towel shave</span> <span class="tbc">[Price to be supplied]</span></a></h3>
-            <div class="svc-more"><div>
-              <p class="body">Hot towels, lather and a slow, careful shave. Phone face down, eyes shut, nobody asking you anything.</p>
-              <ul class="inc"><li>Hot towels</li><li>Brush and lather</li><li>Close finish</li></ul>
-            </div></div>
-          </li>
-        </ol>
         <div class="svc-photos">
           <figure class="ph svc-photo rv" id="svc-cut"><img src="img/svc-cut.jpg" width="960" height="1200" loading="lazy" alt="A barber checks the line of a cut with scissors and a comb held level across a client’s head"><figcaption class="tag"><span class="n">01</span> Haircut</figcaption></figure>
           <figure class="ph svc-photo rv" id="svc-beard"><img src="img/svc-beard.jpg" width="960" height="1200" loading="lazy" alt="In a dark shop, a barber’s tattooed hand trims a client’s grey beard with scissors as he leans back"><figcaption class="tag"><span class="n">02</span> Beard trim</figcaption></figure>
           <figure class="ph svc-photo rv" id="svc-shave"><img src="img/svc-shave.jpg" width="960" height="1200" loading="lazy" alt="A barber holds a straight razor to a lathered cheek while the client lies back under a striped gown"><figcaption class="tag"><span class="n">03</span> Hot-towel shave</figcaption></figure>
+        </div>
+        <div class="svc-panel">
+          <nav class="svc-index" aria-label="Services">
+            <a href="#svc-cut" class="on" data-svc="svc-cut"><span class="n">01</span><span>Haircut</span><span class="dot" aria-hidden="true"></span></a>
+            <a href="#svc-beard" data-svc="svc-beard"><span class="n">02</span><span>Beard trim</span><span class="dot" aria-hidden="true"></span></a>
+            <a href="#svc-shave" data-svc="svc-shave"><span class="n">03</span><span>Hot-towel shave</span><span class="dot" aria-hidden="true"></span></a>
+          </nav>
+          <div class="svc-detail" aria-live="polite">
+            <div class="svc-more on" data-svc="svc-cut">
+              <h3 class="h3"><span class="n">01</span> Haircut</h3>
+              <p class="body">Clippers, scissors or both. A quick chat about what you want first, then a cut that still looks right in three weeks.</p>
+              <ul class="inc"><li>Fades and tapers</li><li>Short back and sides</li><li>Scissor work on top</li></ul>
+            </div>
+            <div class="svc-more" data-svc="svc-beard">
+              <h3 class="h3"><span class="n">02</span> Beard trim</h3>
+              <p class="body">Shape, length and a clean neckline. Whether it’s a week of stubble or a year of growth, it leaves tidier than it came in.</p>
+              <ul class="inc"><li>Shape and length</li><li>Neck and cheek lines</li><li>Pairs well with a cut</li></ul>
+            </div>
+            <div class="svc-more" data-svc="svc-shave">
+              <h3 class="h3"><span class="n">03</span> Hot-towel shave</h3>
+              <p class="body">Hot towels, lather and a slow, careful shave. Phone face down, eyes shut, nobody asking you anything.</p>
+              <ul class="inc"><li>Hot towels</li><li>Brush and lather</li><li>Close finish</li></ul>
+            </div>
+          </div>
+          <div class="svc-cta">
+            <a class="btn btn-primary" href="#book">Book a chair <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4"/></svg></a>
+            <a class="link" href="#prices">See prices</a>
+          </div>
         </div>
       </div>
     </div>
@@ -408,68 +458,31 @@ button,input,select{font:inherit;color:inherit}
     <div class="wrap">
       <div class="head">
         <p class="eyebrow rv">In the chair</p>
-        <h2 class="h2 fade-line rv" id="gal-title">Low light, sharp edges. <span class="tail">The work, up close.</span></h2>
+        <h2 class="h2 rv" id="gal-title">Low light, sharp edges.</h2>
       </div>
       <div class="gal">
-        <figure class="ph wide rv"><img src="img/g-shop.jpg" width="1200" height="800" loading="lazy" alt="Three black barber chairs in a row under warm pendant lamps against a brick wall"></figure>
+        <figure class="ph wide rv"><img src="img/g-steam.jpg" width="1400" height="934" loading="lazy" alt="Steam rises as a barber in black gloves shaves a reclining client’s jaw with a straight razor"></figure>
         <figure class="ph tall rv" style="--d:1"><img src="img/g-hands.jpg" width="800" height="1000" loading="lazy" alt="A barber’s hands guide clippers along the side of a client’s dark hair"></figure>
         <figure class="ph sq rv"><img src="img/g-fade.jpg" width="800" height="1000" loading="lazy" alt="Clippers blending a short fade at the back of a client’s head"></figure>
-        <figure class="ph sq rv" style="--d:1"><img src="img/g-razor.jpg" width="800" height="1000" loading="lazy" alt="Close up of a barber lining up the edge of a client’s hair with a razor"></figure>
-        <figure class="ph sq rv" style="--d:2"><img src="img/g-window.jpg" width="800" height="1000" loading="lazy" alt="Vintage barber chairs seen through a shop window after dark, with reflections across the glass"></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEAM -->
-  <section class="section pb" id="team" aria-labelledby="team-title">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow rv">The team</p>
-        <h2 class="h2 fade-line brk rv" id="team-title" style="max-width:26ch">The hands on King Street. <span class="tail">Say hello before you sit down.</span></h2>
-      </div>
-      <div class="team">
-        <figure class="member rv">
-          <div class="ph"><img src="img/team-1.jpg" width="800" height="1000" loading="lazy" alt="Placeholder portrait: a barber in black holding a straight razor and scissors, arms crossed, in low light"></div>
-          <figcaption><h3 class="h3">[Barber name]</h3><span class="role">[Speciality]</span></figcaption>
-        </figure>
-        <figure class="member rv" style="--d:1">
-          <div class="ph"><img src="img/team-2.jpg" width="800" height="1000" loading="lazy" alt="Placeholder portrait: a bearded barber holds a pair of scissors towards the camera"></div>
-          <figcaption><h3 class="h3">[Barber name]</h3><span class="role">[Speciality]</span></figcaption>
-        </figure>
-        <figure class="member rv" style="--d:2">
-          <div class="ph"><img src="img/team-3.jpg" width="800" height="1000" loading="lazy" alt="Placeholder portrait: a barber in a knitted hat concentrates on a client’s cut under a bare bulb"></div>
-          <figcaption><h3 class="h3">[Barber name]</h3><span class="role">[Speciality]</span></figcaption>
-        </figure>
-      </div>
-      <p class="label team-note rv">[Team names, specialities and photos to be supplied by Fade &amp; Co]</p>
-    </div>
-  </section>
-
-  <!-- NIGHT BAND -->
-  <section class="night" aria-labelledby="night-title">
-    <figure class="ph"><img src="img/night.jpg" width="2000" height="1100" loading="lazy" alt="A barber stands in a dark shop under strings of small lights, chairs empty after close"></figure>
-    <div class="scrim" aria-hidden="true"></div>
-    <div class="wrap">
-      <div class="night-grid">
-        <h2 class="h2 fade-line rv" id="night-title">Open till seven, Tuesday to Saturday. <span class="tail">Walk in before noon, or book for later.</span></h2>
-        <p class="body rv" style="--d:1">Closed Sunday and Monday. Mornings are first come, first served; afternoons and evenings run on bookings.</p>
+        <figure class="ph sq rv" style="--d:1"><img src="img/g-leather.jpg" width="900" height="900" loading="lazy" alt="Close up of diamond-stitched leather, like the seat of a barber chair"></figure>
+        <figure class="ph sq rv" style="--d:2"><img src="img/g-razor.jpg" width="800" height="1000" loading="lazy" alt="Close up of a barber lining up the edge of a client’s hair with a razor"></figure>
       </div>
     </div>
   </section>
 
   <!-- PRICES -->
   <section class="section" id="prices" aria-labelledby="price-title">
-    <div class="wrap split">
+    <div class="wrap price-grid">
       <div class="price-aside">
         <p class="eyebrow rv">Prices</p>
-        <h2 class="h2 fade-line brk rv" id="price-title">Four lines. <span class="tail">Easy to remember.</span></h2>
-        <div class="note rv"><p class="body">Walk-ins welcome before noon.</p><p class="body">Cut and beard together saves you £4.</p></div>
+        <h2 class="h2 rv" id="price-title">Four lines.</h2>
+        <p class="body rv" style="--d:1">Same price whether you book or walk in. Mornings before noon, just turn up.</p>
         <a class="btn btn-primary rv" href="#book">Book a chair <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4"/></svg></a>
       </div>
       <ul class="price-list num">
         <li class="price-row rv"><span class="name">Haircut</span><span class="dots" aria-hidden="true"></span><span class="amt">£24</span></li>
         <li class="price-row rv"><span class="name">Beard trim</span><span class="dots" aria-hidden="true"></span><span class="amt">£12</span></li>
-        <li class="price-row rv"><span class="name">Cut + beard<small>Saves you £4</small></span><span class="dots" aria-hidden="true"></span><span class="amt">£32</span></li>
+        <li class="price-row rv"><span class="name">Cut + beard<small>One sitting. The four quid stays in your pocket.</small></span><span class="dots" aria-hidden="true"></span><span class="amt"><s><span class="sr">Usually </span>£36</s><span class="sr">, now </span>£32</span></li>
         <li class="price-row rv"><span class="name">Hot-towel shave</span><span class="dots" aria-hidden="true"></span><span class="amt tbc">[Price to be supplied]</span></li>
       </ul>
     </div>
@@ -480,106 +493,71 @@ button,input,select{font:inherit;color:inherit}
     <div class="wrap">
       <div class="head">
         <p class="eyebrow rv">Book</p>
-        <h2 class="h2 fade-line rv" id="book-title">Book a chair. <span class="tail">Or just turn up before noon.</span></h2>
+        <h2 class="h2 fade-line rv" id="book-title">Say when. <span class="tail">Or just turn up before noon.</span></h2>
       </div>
       <div class="book-grid">
         <form class="form rv" id="book-form" novalidate>
-          <h3 class="h3">Request a time</h3>
-          <p class="body">Pick a service and a day. We’ll confirm your slot.</p>
-          <div class="field">
-            <label for="f-name">Name</label>
-            <input id="f-name" name="name" type="text" autocomplete="given-name" required>
-          </div>
-          <div class="field">
-            <label for="f-phone">Mobile</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
-          </div>
-          <div class="field">
-            <label for="f-svc">Service</label>
-            <select id="f-svc" name="service">
-              <option>Haircut, £24</option>
-              <option>Beard trim, £12</option>
-              <option>Cut + beard, £32</option>
-              <option>Hot-towel shave</option>
-            </select>
-          </div>
-          <div class="row2">
+          <p class="sentence">I’d like a
+            <span class="pick"><label class="sr" for="f-svc">Service</label><select id="f-svc" name="service"><option>haircut</option><option>beard trim</option><option>cut and beard</option><option>hot-towel shave</option></select></span>
+            on
+            <span class="pick"><label class="sr" for="f-day">Day</label><select id="f-day" name="day"><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option></select></span>
+            in the
+            <span class="pick"><label class="sr" for="f-time">Time of day</label><select id="f-time" name="time"><option>afternoon</option><option>evening</option><option>morning</option></select></span>.
+          </p>
+          <div class="who">
             <div class="field">
-              <label for="f-day">Day</label>
-              <select id="f-day" name="day"><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option></select>
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" required>
             </div>
             <div class="field">
-              <label for="f-time">Time</label>
-              <select id="f-time" name="time"><option>Afternoon</option><option>Evening, till 7</option><option>Morning</option></select>
+              <label for="f-phone">Mobile, for the confirmation</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
             </div>
           </div>
           <button class="btn btn-primary" type="submit">Book a chair <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4"/></svg></button>
           <p class="done" id="done" role="status" aria-live="polite"></p>
           <p class="form-note">[Booking system to be connected by Fade &amp; Co]</p>
         </form>
-        <aside class="visit-aside rv" style="--d:1" aria-label="Hours and address">
-          <dl class="visit-card num">
-            <div><dt class="label">Hours</dt><dd>Tue to Sat, 9 till 7<small>Closed Sunday and Monday</small></dd></div>
-            <div><dt class="label">Walk-ins</dt><dd>Any morning before noon<small>Afternoons and evenings by booking</small></dd></div>
-            <div><dt class="label">Address</dt><dd>12 King Street, Leeds</dd></div>
+        <aside class="rv" style="--d:1" aria-labelledby="notes-title">
+          <h3 class="h3 notes-title" id="notes-title">Small print, short answers</h3>
+          <dl class="notes">
+            <div class="note"><span class="n" aria-hidden="true">i</span><dt>Turning up at half eleven?</dt><dd>You’re a walk-in. Any morning until noon, no booking needed.</dd></div>
+            <div class="note"><span class="n" aria-hidden="true">ii</span><dt>After lunch, or after work?</dt><dd>Book it. From noon to 7, a booking is how you know the chair’s yours.</dd></div>
+            <div class="note"><span class="n" aria-hidden="true">iii</span><dt>Monday off?</dt><dd>So are we. Closed Sunday and Monday, back Tuesday at 9.</dd></div>
+            <div class="note"><span class="n" aria-hidden="true">iv</span><dt>Beard as well?</dt><dd>Pick “cut and beard” above. One sitting, one price.</dd></div>
           </dl>
-          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds" target="_blank" rel="noopener">Get directions</a>
         </aside>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section pb" id="faq" aria-labelledby="faq-title">
-    <div class="wrap split">
-      <div>
-        <p class="eyebrow rv">Questions</p>
-        <h2 class="h2 fade-line brk rv" id="faq-title">Fair enough. <span class="tail">A few answers.</span></h2>
-      </div>
-      <div class="faq rv" style="--d:1">
-        <details open>
-          <summary>Do I need to book?</summary>
-          <p>Not in the morning. Walk-ins are welcome until noon. After that, booking means a chair is free when you get here.</p>
-        </details>
-        <details>
-          <summary>When are you open?</summary>
-          <p>Tuesday to Saturday, 9am to 7pm. Closed Sunday and Monday.</p>
-        </details>
-        <details>
-          <summary>Can I get a cut and beard together?</summary>
-          <p>Yes. A cut is £24 and a beard trim £12, or £32 for both in one sitting.</p>
-        </details>
-        <details>
-          <summary>Where are you?</summary>
-          <p>12 King Street, Leeds.</p>
-        </details>
+  <!-- VISIT / CONTACT -->
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <figure class="bg"><img src="img/band.jpg" width="2000" height="1100" loading="lazy" alt=""></figure>
+    <div class="wrap">
+      <p class="eyebrow rv">Visit</p>
+      <h2 class="h2 fade-line rv" id="visit-title">Open till seven, Tuesday to Saturday. <span class="tail">Lights off Sunday and Monday.</span></h2>
+      <dl class="visit-card num">
+        <div class="rv"><dt class="label">Address</dt><dd>12 King Street<small>Leeds</small></dd></div>
+        <div class="rv" style="--d:1"><dt class="label">Hours</dt><dd>9 till 7<small>Tuesday to Saturday</small></dd></div>
+        <div class="rv" style="--d:2"><dt class="label">Walk-ins</dt><dd>Before noon<small>After that, by booking</small></dd></div>
+        <div class="rv" style="--d:3"><dt class="label">Contact</dt><dd><span class="ph-text">[Phone to be supplied]</span><small>[Email to be supplied]</small></dd></div>
+      </dl>
+      <div class="visit-actions rv">
+        <a class="btn btn-primary" href="#book">Book a chair <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4"/></svg></a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds" target="_blank" rel="noopener">Get directions</a>
       </div>
     </div>
   </section>
 </main>
 
-<!-- VISIT / FOOTER -->
-<footer class="foot" id="visit">
+<footer class="foot">
   <div class="wrap">
-    <p class="foot-mark fade-line rv" aria-hidden="true">Fade <span class="tail">&amp; Co</span></p>
-    <div class="foot-grid">
-      <div>
-        <h2>Find us</h2>
-        <p>12 King Street<br>Leeds</p>
-        <p style="margin-top:var(--s3)"><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds" target="_blank" rel="noopener">Get directions</a></p>
-      </div>
-      <div>
-        <h2>Hours</h2>
-        <ul class="num"><li>Tue–Sat, 9am–7pm</li><li style="color:var(--muted)">Sun and Mon, closed</li><li style="color:var(--muted)">Walk-ins before noon</li></ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <ul><li class="ph-text">[Phone number to be supplied]</li><li class="ph-text">[Email to be supplied]</li></ul>
-      </div>
-      <div>
-        <h2>Book</h2>
-        <a class="btn btn-primary" href="#book">Book a chair</a>
-      </div>
+    <div class="foot-row">
+      <a class="mark" href="#top" aria-label="Fade and Co, back to top">Fade <span>&amp;</span> Co</a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#shop">The shop</a><a href="#services">Services</a><a href="#prices">Prices</a><a href="#book">Book</a><a href="#visit">Visit</a>
+      </nav>
     </div>
     <div class="legal">
       <span>© 2026 Fade &amp; Co, barbers. 12 King Street, Leeds.</span>
@@ -610,17 +588,17 @@ button,input,select{font:inherit;color:inherit}
     items.forEach(function(el){ io.observe(el); });
   }
 
-  // service index: the name (desktop) and pill (phone) light up as each photo passes the middle of the screen
-  var rows=[].slice.call(d.querySelectorAll('.svc-row')), pills=[].slice.call(d.querySelectorAll('.svc-pills a'));
+  // signature 2: the index (desktop) and pills (phone) light up as each photo passes the middle of the screen
+  var links=[].slice.call(d.querySelectorAll('.svc-index a, .svc-pills a')), more=[].slice.call(d.querySelectorAll('.svc-more'));
   function setSvc(id){
-    rows.forEach(function(r){ r.classList.toggle('on', r.dataset.svc===id); });
-    pills.forEach(function(p){ var on=p.dataset.svc===id; p.classList.toggle('on', on); if(on) p.setAttribute('aria-current','true'); else p.removeAttribute('aria-current'); });
+    links.forEach(function(a){ var on=a.dataset.svc===id; a.classList.toggle('on', on); if(on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+    more.forEach(function(m){ m.classList.toggle('on', m.dataset.svc===id); });
   }
   if('IntersectionObserver' in window){
     var so=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) setSvc(e.target.id); }); }, {rootMargin:'-45% 0px -50% 0px'});
     d.querySelectorAll('.svc-photo').forEach(function(el){ so.observe(el); });
   }
-  rows.forEach(function(r){ r.querySelector('a').addEventListener('click', function(){ setSvc(r.dataset.svc); }); });
+  links.forEach(function(a){ a.addEventListener('click', function(){ setSvc(a.dataset.svc); }); });
 
   // open-now status (shop time, Europe/London): Tue-Sat 9-7
   var st=d.querySelector('[data-status]');
@@ -641,7 +619,7 @@ button,input,select{font:inherit;color:inherit}
     var name=f.name.value.trim(), phone=f.phone.value.trim();
     if(!name){ f.name.focus(); done.textContent='Add your name so we know who to expect.'; done.classList.add('show'); return; }
     if(!phone){ f.phone.focus(); done.textContent='Add a mobile number so we can confirm.'; done.classList.add('show'); return; }
-    done.textContent='Thanks, '+name+'. '+f.service.value.split(',')[0]+' on '+f.day.value+' ('+f.time.value.toLowerCase()+'). We’ll text you to confirm.';
+    done.textContent='Thanks, '+name+'. A '+f.service.value+' on '+f.day.value+' ('+f.time.value+'). We’ll text you to confirm.';
     done.classList.add('show');
   });
 })();

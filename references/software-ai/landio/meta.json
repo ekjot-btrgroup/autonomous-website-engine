@@ -7,7 +7,7 @@
   "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
   "scheme": "dark",
   "hue": "black",
-  "palette": { "bg": "#04070d", "surface": "#10131c", "ink": "#d5dbe6", "muted": "#b8c7d9", "accent": "#a6daff", "line": "#d8e7f212" },
+  "palette": { "bg": "#04070d", "surface": "#10131c", "ink": "#d5dbe6", "muted": "#b8c7d9", "accent": "#a6daff", "line": "#16191f" },
   "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 500 headlines with a closing italic Instrument Serif phrase in every H1 and H2; Inter body at 14-16 in 70% ink" },
   "hero": "full-bleed-video",
   "sections": ["hero", "about", "features", "services", "features", "process", "testimonials", "logos", "testimonials", "pricing", "faq", "features", "team", "cta"],

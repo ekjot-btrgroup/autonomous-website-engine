@@ -1,0 +1,19 @@
+{
+  "name": "Makro",
+  "industry": "software-fintech",
+  "also": ["software-saas", "software-ai", "services-consulting"],
+  "summary": "Calm, airy finance-clarity SaaS page: cool blue-grey ground, a cut-out portrait beside a light Inter Display headline, a large soft dashboard below, and a single acid-lime accent on button tabs, highlights and one testimonial card.",
+  "style": ["minimal", "soft-pastel", "corporate-clean"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 2, "modernity": 5 },
+  "scheme": "light",
+  "hue": "blue",
+  "palette": { "bg": "#ebeff5", "surface": "#ffffff", "ink": "#242426", "muted": "#5f6066", "accent": "#d9ff5c", "line": "#d9d5dc" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "sans", "pairing": "Inter Display 400 everywhere with -0.04em tracking on headings (88 jumbo H1, 56 H2); body 18/1.5 at 75% ink; a handwritten Havana script only for one tiny annotation" },
+  "hero": "split-image-right",
+  "sections": ["hero", "logos", "about", "features", "features", "gallery", "pricing", "testimonials", "faq", "blog", "cta"],
+  "motion": 4,
+  "signature": ["buttons built as a dark pill with a separate acid-lime square holding the arrow icon", "acid-lime highlighter block behind one word of each H2", "feature panels with misty blue-grey to blush gradients where small white UI cards float like paper", "sticky stacked feature rows that pin and swap as you scroll", "dark rounded testimonials slab with a full acid-lime case card next to a blush one in a carousel"],
+  "imagery": "one cut-out studio portrait fading into the page, soft desaturated UI renders (balance charts, invoice chips, bill cards), small editorial photos for blog cards, greyed placeholder client marks",
+  "layout_grid": "1200 canvas, 40px side padding, 24px gaps, 3-column bento of tall rounded panels, 12px and 24px radii, very tall sections with sticky interiors",
+  "quality": 4
+}
