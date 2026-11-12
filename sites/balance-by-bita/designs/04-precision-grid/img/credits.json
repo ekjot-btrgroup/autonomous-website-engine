@@ -1,0 +1,26 @@
+[
+ {
+  "file": "hero.jpg",
+  "source": "https://images.unsplash.com/photo-1554104683-c7063687d649",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "room.jpg",
+  "source": "https://images.unsplash.com/photo-1511389026070-a14ae610a1be",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "dropper.jpg",
+  "source": "https://images.unsplash.com/photo-1679394270597-e90694d70350",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "still.jpg",
+  "source": "https://images.unsplash.com/photo-1699885725103-2bf0a3c38cbc",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ }
+]

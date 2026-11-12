@@ -1,0 +1,44 @@
+{
+  "n": 1,
+  "name": "The Lily Room",
+  "concept": "The current brand, elevated: a deep plum-brown room, cream type, dusty-rose details and white lilies, set like a luxury hotel welcome.",
+  "refs": [
+    "hospitality-hotels/noire",
+    "health-wellness/lustre"
+  ],
+  "style": "luxury",
+  "scheme": "dark",
+  "palette": {
+    "bg": "#2b1a20",
+    "surface": "#3a252c",
+    "ink": "#f5ece4",
+    "muted": "#cdb9b0",
+    "accent": "#d9a3a0",
+    "line": "#4d3540"
+  },
+  "fonts": {
+    "display": "Bodoni Moda",
+    "body": "Jost",
+    "class": "display"
+  },
+  "hero": "full-bleed-image",
+  "sections": [
+    "hero",
+    "about",
+    "services",
+    "process",
+    "pricing",
+    "testimonials",
+    "faq",
+    "waitlist",
+    "contact"
+  ],
+  "motion": 1,
+  "signature": [
+    "oversized high-contrast serif wordmark across the hero with a fine script-like italic 'by Bita' beneath",
+    "numbered chapter eyebrows with a short rose rule before each section",
+    "treatment menu set like a hotel card: categories, hairline rules, price placeholders right-aligned"
+  ],
+  "imagery": "still life of white lilies and hydrangea on deep plum, soft window light, skin-texture close-ups without identifiable faces",
+  "why": "Keeps the plum-and-cream identity patients know, with the polish of a luxury hotel."
+}

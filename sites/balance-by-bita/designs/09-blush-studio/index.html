@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balance by Bita · Injectables and regenerative treatments in Sandy Springs, Atlanta</title>
+<meta name="description" content="Boutique medical aesthetics in Sandy Springs, Atlanta. Neuromodulators, dermal fillers, Sculptra, hyperdilute Radiesse and PRF with Bita, a nationally certified physician associate. New patients start with a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3d9d3; --surface:#ecc9c1; --card:#fbefeb; --ink:#33221f; --muted:#604843;
+  --accent:#9c3d5a; --accent-dk:#7f2f48; --clay:#823f30; --line:#e0b9b0; --line-dk:#d4a89e;
+  --tint-a:#f6dcd6; --tint-b:#efd2c4; --tint-c:#e9cdd3;
+  --f:"Outfit", ui-sans-serif, sans-serif;
+  /* six type sizes */
+  --t-sm:14px; --t-body:17px; --t-lead:20px; --t-h3:28px;
+  --t-h2:clamp(36px, 4.4vw, 54px); --t-h1:clamp(44px, 6.4vw, 80px);
+  --r-xl:32px; --r-lg:24px; --r-md:16px; --r-sm:10px; --pill:999px;
+  --wrap:1200px; --side:40px; --sec:112px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html.large-text{font-size:112.5%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:var(--t-body);line-height:1.6;font-weight:400}
+html.large-text body{--t-sm:16px;--t-body:19px;--t-lead:22px}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.wrap{max-width:calc(var(--wrap) + var(--side)*2);margin:0 auto;padding:0 var(--side)}
+.sec{padding:var(--sec) 0}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--card);padding:12px 18px;border-radius:var(--pill);z-index:50;text-decoration:none}
+.skip:focus{top:12px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.label{font-size:var(--t-sm);letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-sm);font-weight:500;padding:6px 14px;border-radius:var(--pill);background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:block}
+.h2{font-size:var(--t-h2);line-height:1.08;letter-spacing:-.025em;font-weight:400}
+.h2 .two,.h1 .two{display:block;color:var(--clay)}
+.head{text-align:center;max-width:760px;margin:0 auto 56px;display:grid;justify-items:center;gap:20px}
+.head p{color:var(--muted);font-size:var(--t-lead);line-height:1.5;max-width:56ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:var(--pill);font:500 var(--t-body)/1.2 var(--f);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dk)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--card)}
+.ph{background:rgba(156,61,90,.08);border:1px dashed var(--accent);color:var(--accent-dk);border-radius:6px;padding:0 6px;font-weight:500}
+.amt .ph{white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.logo b{font-weight:500;font-size:var(--t-h3);letter-spacing:-.03em;line-height:1}
+.logo span{font-size:var(--t-sm);color:var(--clay);font-weight:500;letter-spacing:.02em}
+.links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.links a{text-decoration:none;font-weight:500;font-size:var(--t-sm);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);padding:10px 0}
+.links a:hover{color:var(--accent)}
+.nav-r{display:flex;align-items:center;gap:12px}
+.a11y{min-height:44px;padding:0 16px;border-radius:var(--pill);border:1px solid var(--line-dk);background:var(--card);font:500 var(--t-sm) var(--f);color:var(--ink);cursor:pointer}
+.a11y[aria-pressed=true]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.menu-btn{display:none;min-height:44px;padding:0 18px;border-radius:var(--pill);border:1px solid var(--ink);background:transparent;font:500 var(--t-sm) var(--f);color:var(--ink);cursor:pointer}
+
+/* hero */
+.hero{padding:88px 0 0;text-align:center}
+.hero .tag{margin-bottom:28px}
+.h1{font-size:var(--t-h1);line-height:1.04;letter-spacing:-.03em;font-weight:400}
+.hero .lead{font-size:var(--t-lead);line-height:1.5;color:var(--muted);max-width:52ch;margin:28px auto 0}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.hero .who{margin-top:20px;font-size:var(--t-sm);color:var(--muted)}
+.shelf{display:grid;grid-template-columns:1fr 1.25fr 1fr 1fr;gap:16px;align-items:end;margin-top:72px;padding-bottom:0;position:relative}
+.shelf::after{content:"";position:absolute;left:-8px;right:-8px;bottom:-1px;height:1px;background:var(--line-dk)}
+.pcard{background:var(--card);border-radius:var(--r-xl) var(--r-xl) 0 0;padding:12px 12px 24px;text-align:left;display:flex;flex-direction:column;gap:18px;border:1px solid var(--line);border-bottom:0;text-decoration:none;color:var(--ink)}
+.pcard:hover .pname{color:var(--accent)}
+.pcard .pack{border-radius:var(--r-lg) var(--r-lg) var(--r-md) var(--r-md);aspect-ratio:4/3;display:grid;place-items:center;position:relative;overflow:hidden}
+.pcard .pack .no{position:absolute;left:16px;top:14px;font-size:var(--t-sm);font-weight:500;color:var(--muted)}
+.pcard .body{padding:0 12px;display:grid;gap:12px}
+.pname{font-size:var(--t-lead);font-weight:500;line-height:1.25;letter-spacing:-.01em}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.chips li{font-size:var(--t-sm);padding:3px 11px;border-radius:var(--pill);background:var(--bg);border:1px solid var(--line);line-height:1.5}
+.pmeta{font-size:var(--t-sm);color:var(--muted);display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.pcard.tall .pack{aspect-ratio:4/4.4}
+.pcard.photo{padding:12px 12px 0;background:var(--surface)}
+.pcard.photo img{width:100%;height:auto;aspect-ratio:5/6;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0}
+.pcard.photo .cap{position:absolute}
+
+/* goals (services) */
+.goals{background:var(--card);border-radius:var(--r-xl);border:1px solid var(--line);overflow:hidden}
+.goal{display:grid;grid-template-columns:72px 1.1fr 1.4fr 1fr;gap:32px;padding:36px 40px;border-top:1px solid var(--line);align-items:start}
+.goal:first-child{border-top:0}
+.goal .n{font-size:var(--t-sm);font-weight:500;color:var(--clay);padding-top:6px}
+.goal h3{font-size:var(--t-h3);line-height:1.15;letter-spacing:-.02em}
+.goal h3 small{display:block;font-size:var(--t-sm);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.goal p{color:var(--muted)}
+.goal .areas{display:grid;gap:10px}
+.goal .areas .label{color:var(--clay)}
+.goal .basis{font-size:var(--t-sm);color:var(--muted);text-align:right;padding-top:6px}
+.goal .basis b{display:block;color:var(--ink);font-weight:500;font-size:var(--t-body)}
+.goals-foot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 40px;background:var(--tint-b);border-top:1px solid var(--line);flex-wrap:wrap}
+.goals-foot p{font-size:var(--t-sm);color:var(--ink);max-width:70ch}
+
+/* process bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(280px,auto);gap:16px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.tile .step{display:flex;justify-content:space-between;align-items:center}
+.tile .step span{font-size:var(--t-sm);font-weight:500;color:var(--clay)}
+.tile h3{font-size:var(--t-lead);font-weight:500;line-height:1.3;margin-bottom:10px}
+.tile p{color:var(--muted)}
+.tile.quote{grid-column:span 2;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tile.quote blockquote{margin:0;font-size:var(--t-h2);line-height:1.08;letter-spacing:-.025em;font-weight:300}
+.tile.quote blockquote em{font-style:normal;color:#f0b9c6}
+.tile.quote .by{font-size:var(--t-sm);color:#e6cbc5;display:flex;gap:12px;align-items:center}
+.tile.quote .by i{width:28px;height:1px;background:#e6cbc5;display:block}
+.tile.pic{grid-column:span 2;padding:0;overflow:hidden;position:relative;background:var(--surface)}
+.tile.pic img{width:100%;height:100%;object-fit:cover}
+.tile.pic figcaption{position:absolute;left:16px;bottom:16px;right:16px;background:var(--card);border-radius:var(--r-md);padding:14px 18px;font-size:var(--t-sm);color:var(--ink);display:flex;gap:12px;align-items:center;max-width:420px}
+.tile.pic figure{margin:0;height:100%}
+.tile.chi{background:var(--accent);border-color:var(--accent);color:#fff}
+.tile.chi .label{color:#f6dbe3}
+.tile.chi p{color:#fbe9ee}
+.tile.chi a{color:#fff;font-weight:500;text-underline-offset:4px}
+.mini-steps{display:flex;gap:6px}
+.mini-steps i{width:22px;height:6px;border-radius:var(--pill);background:var(--line);display:block}
+.mini-steps i.on{background:var(--clay)}
+
+/* pricing */
+.price-grid{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start}
+.price-intro{display:grid;gap:24px}
+.price-intro .h2{text-align:left}
+.price-intro p{color:var(--muted);font-size:var(--t-lead);line-height:1.5}
+.note{background:var(--surface);border-radius:var(--r-lg);padding:24px 28px;display:grid;gap:10px}
+.note ul{margin:0;padding:0 0 0 18px;color:var(--ink)}
+.note li{margin:4px 0}
+.sheet{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:12px}
+.sheet-top{background:var(--tint-c);border-radius:var(--r-lg);padding:24px 28px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.sheet-top b{font-size:var(--t-h3);font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.sheet table{width:100%;border-collapse:collapse;margin-top:8px}
+.sheet caption{position:absolute;left:-9999px}
+.sheet th,.sheet td{text-align:left;padding:18px 16px;border-bottom:1px solid var(--line);vertical-align:baseline}
+.sheet tr:last-child th,.sheet tr:last-child td{border-bottom:0}
+.sheet th{font-weight:500}
+.sheet th small{display:block;font-weight:400;color:var(--muted);font-size:var(--t-sm)}
+.sheet td.per{color:var(--muted);font-size:var(--t-sm);white-space:nowrap}
+.sheet td.amt{text-align:right}
+.sheet .grp th{padding:20px 16px 8px;border-bottom:0}
+
+/* about */
+.about{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:center}
+.portrait{border-radius:200px 200px var(--r-xl) var(--r-xl);background:var(--surface);aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:32px;position:relative;overflow:hidden;border:1px solid var(--line-dk)}
+.portrait svg{position:absolute;inset:0;width:100%;height:100%}
+.portrait .ph-label{position:relative;display:grid;gap:8px;justify-items:center;background:var(--card);padding:16px 22px;border-radius:var(--r-md)}
+.portrait .ph-label b{font-weight:500}
+.portrait .ph-label span{font-size:var(--t-sm);color:var(--muted)}
+.about-text{display:grid;gap:24px}
+.about-text .h2{text-align:left}
+.about-text p{max-width:60ch}
+.about-text .sig{font-size:var(--t-lead);color:var(--clay);font-weight:500}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.value{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px}
+.value b{display:block;font-weight:500;margin-bottom:6px}
+.value p{font-size:var(--t-sm);color:var(--muted);line-height:1.55}
+
+/* testimonials */
+.voices{display:grid;grid-template-columns:7fr 5fr;gap:16px}
+.voice-big{background:var(--surface);border-radius:var(--r-xl);padding:48px;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:420px}
+.voice-big .qmark{font-size:var(--t-h1);line-height:.6;color:var(--clay);font-weight:300}
+.voice-big p.q{font-size:var(--t-h3);line-height:1.3;letter-spacing:-.015em}
+.voice-col{display:grid;gap:16px}
+.voice{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:32px;display:grid;gap:20px;align-content:space-between}
+.voice p.q{font-size:var(--t-lead);line-height:1.45}
+.who-line{display:flex;align-items:center;gap:12px;font-size:var(--t-sm);color:var(--muted)}
+.who-line .av{width:40px;height:40px;border-radius:50%;background:var(--bg);border:1px dashed var(--clay);display:grid;place-items:center;font-weight:500;color:var(--clay)}
+.voices-note{margin-top:20px;font-size:var(--t-sm);color:var(--muted);text-align:center}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:4fr 8fr;gap:64px;align-items:start}
+.faq-side{display:grid;gap:24px}
+.faq-side .h2{text-align:left}
+.help{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;display:grid;gap:12px}
+.help a{font-weight:500;text-underline-offset:4px}
+.faq-list{display:grid;gap:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg)}
+details[open]{background:#fdf6f3}
+summary{list-style:none;cursor:pointer;padding:22px 64px 22px 28px;font-weight:500;font-size:var(--t-lead);line-height:1.35;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:24px;top:50%;width:28px;height:28px;margin-top:-14px;border-radius:50%;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M9 14h10M14 9v10' stroke='%2333221f' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center/28px no-repeat}
+details[open] summary::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M9 14h10' stroke='%2333221f' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E")}
+summary:hover{color:var(--accent)}
+details .ans{padding:0 28px 24px;color:var(--muted);display:grid;gap:10px;max-width:64ch}
+details .ans .k{font-size:var(--t-sm);font-weight:500;color:var(--clay);letter-spacing:.06em;text-transform:uppercase}
+
+/* waitlist */
+.chicago{background:var(--surface);border-radius:var(--r-xl);padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chicago .left{padding:44px;display:grid;align-content:space-between;gap:32px}
+.chicago .left .h2{text-align:left}
+.chicago .left p{color:var(--ink);font-size:var(--t-lead);line-height:1.5;max-width:40ch}
+.chicago form{background:var(--card);border-radius:var(--r-lg);padding:36px;display:grid;gap:18px}
+.field{display:grid;gap:8px}
+.field label{font-size:var(--t-sm);font-weight:500}
+.field input,.field select{font:400 var(--t-body) var(--f);color:var(--ink);background:#fff;border:1px solid var(--line-dk);border-radius:var(--r-md);min-height:52px;padding:12px 16px;width:100%}
+.field input:focus,.field select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.form-note{font-size:var(--t-sm);color:var(--muted)}
+.city{display:flex;gap:8px;flex-wrap:wrap}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.c-main{grid-column:span 7;background:var(--ink);color:var(--bg);border-radius:var(--r-xl);padding:48px;display:grid;gap:28px;align-content:space-between}
+.c-main .h2{text-align:left}
+.c-main .h2 .two{color:#f0b9c6}
+.c-main p{color:#ecd3cd;max-width:46ch}
+.c-main .btn-ghost{color:var(--bg);border-color:var(--bg)}
+.c-main .btn-ghost:hover{background:var(--bg);color:var(--ink)}
+.c-main .btn-primary{background:#f0b9c6;color:var(--ink)}
+.c-main .btn-primary:hover{background:#fff}
+.c-side{grid-column:span 5;display:grid;gap:16px}
+.c-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:28px 32px;display:grid;gap:6px}
+.c-card a{font-size:var(--t-lead);font-weight:500;text-decoration:none}
+.c-card a:hover{color:var(--accent)}
+.c-card .big{font-size:var(--t-lead);font-weight:500}
+.ctas-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* footer */
+footer{padding:64px 0 48px;border-top:1px solid var(--line-dk);margin-top:var(--sec)}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.foot p,.foot li{font-size:var(--t-sm);color:var(--muted)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--accent)}
+.legal{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:var(--t-sm);color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:1080px){
+  .links{gap:18px}
+  .goal{grid-template-columns:56px 1fr 1fr;}
+  .goal .basis{grid-column:2 / -1;text-align:left}
+}
+@media (max-width:960px){
+  :root{--side:24px;--sec:88px}
+  .links,.nav-r .btn{display:none}
+  .menu-btn{display:inline-flex;align-items:center}
+  .nav.open .links{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--bg);padding:12px var(--side) 24px;border-bottom:1px solid var(--line);gap:0}
+  .nav.open .links a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:var(--t-body)}
+  .shelf{grid-template-columns:1fr 1fr}
+  .shelf .pcard.photo{grid-column:span 2;order:-1}
+  .pcard{border-radius:var(--r-xl);border-bottom:1px solid var(--line)}
+  .shelf{align-items:stretch}
+  .shelf::after{display:none}
+  .pcard.photo img{border-radius:var(--r-lg);aspect-ratio:16/10}
+  .pcard.photo{padding:12px}
+  .bento{grid-template-columns:1fr 1fr}
+  .price-grid,.about,.faq-grid{grid-template-columns:1fr;gap:40px}
+  .portrait{max-width:440px;width:100%}
+  .chicago{grid-template-columns:1fr}
+  .c-main,.c-side{grid-column:1 / -1}
+  .voices{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  :root{--side:20px;--sec:72px;--t-h3:24px;--t-lead:18px}
+  .nav .wrap{height:68px}
+  .nav.open .links{top:68px}
+  .a11y{padding:0 12px}
+  .hero{padding-top:56px}
+  .hero .ctas .btn{width:100%}
+  .shelf{grid-template-columns:1fr;margin-top:48px}
+  .shelf .pcard.photo{grid-column:auto}
+  .pcard .pack{aspect-ratio:16/9}
+  .pcard.tall .pack{aspect-ratio:16/9}
+  .goal{grid-template-columns:1fr;gap:14px;padding:28px 24px}
+  .goal .basis{grid-column:auto}
+  .goals-foot{padding:24px}
+  .bento{grid-template-columns:1fr}
+  .tile.quote,.tile.pic{grid-column:auto}
+  .tile.pic{min-height:300px}
+  .tile{padding:28px 24px}
+  .sheet-top{flex-direction:column;align-items:flex-start;padding:20px}
+  .sheet th,.sheet td{padding:16px 10px}
+  .values{grid-template-columns:1fr}
+  .voice-big{padding:32px 24px;min-height:0}
+  .chicago .left{padding:28px 20px}
+  .chicago form{padding:24px 20px}
+  .c-main{padding:32px 24px}
+  .c-card{padding:24px}
+  .foot{grid-template-columns:1fr}
+  .ctas-row .btn{width:100%}
+  .head{margin-bottom:40px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Balance by Bita, home"><b>balance</b><span>by Bita</span></a>
+    <nav aria-label="Main">
+      <ul class="links" id="menu">
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#visit">First visit</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#bita">Bita</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#chicago">Chicago</a></li>
+      </ul>
+    </nav>
+    <div class="nav-r">
+      <button class="a11y" type="button" aria-pressed="false" id="textsize">Larger text</button>
+      <a class="btn btn-primary" href="#book">Book a consultation</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" id="menubtn">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <span class="tag"><i aria-hidden="true"></i>Injectables and regenerative treatments only</span>
+    <h1 class="h1" id="h1">Pick from a short menu.<span class="two">Keep your own face.</span></h1>
+    <p class="lead">A boutique studio in Sandy Springs for natural, impactful results that honor your own features. Every new patient starts with a consultation, so nothing is chosen before we&rsquo;ve talked.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#book">Book a consultation</a>
+      <a class="btn btn-ghost" href="#prices">See treatments and prices</a>
+    </div>
+    <p class="who">With Bita, nationally certified physician associate &middot; Mon&ndash;Fri, by appointment</p>
+
+    <div class="shelf" aria-label="Treatment categories">
+      <a class="pcard" href="#treatments">
+        <div class="pack" style="background:var(--tint-a)">
+          <span class="no">No. 01</span>
+          <svg width="150" height="90" viewBox="0 0 150 90" aria-hidden="true">
+            <g fill="#9c3d5a"><circle cx="25" cy="25" r="6"/><circle cx="55" cy="25" r="6" opacity=".55"/><circle cx="85" cy="25" r="6"/><circle cx="115" cy="25" r="6" opacity=".55"/><circle cx="40" cy="55" r="6" opacity=".55"/><circle cx="70" cy="55" r="6"/><circle cx="100" cy="55" r="6" opacity=".55"/><circle cx="130" cy="55" r="6"/></g>
+          </svg>
+        </div>
+        <div class="body">
+          <h2 class="pname">Neuromodulators</h2>
+          <ul class="chips" aria-label="Products"><li>Xeomin</li><li>Dysport</li><li>Daxxify</li></ul>
+          <p class="pmeta"><span>Wrinkle relaxers</span><span>per unit</span></p>
+        </div>
+      </a>
+      <figure class="pcard photo" style="margin:0">
+        <img src="img/hero-serum.jpg" width="1200" height="1400" alt="An open glass bottle of golden serum with its dropper resting beside it on a soft blush backdrop">
+      </figure>
+      <a class="pcard tall" href="#treatments">
+        <div class="pack" style="background:var(--tint-b)">
+          <span class="no">No. 02</span>
+          <svg width="160" height="110" viewBox="0 0 160 110" aria-hidden="true">
+            <path d="M10 70c20-34 40-34 60 0s40 34 60 0 20-10 20-10" fill="none" stroke="#823f30" stroke-width="10" stroke-linecap="round"/>
+            <path d="M10 40c20-20 40-20 60 0s40 20 60 0" fill="none" stroke="#823f30" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h2 class="pname">Dermal fillers</h2>
+          <ul class="chips" aria-label="Areas"><li>Temple</li><li>Under-eye</li><li>Cheek</li><li>Smile lines</li><li>Lip</li><li>Jawline</li><li>Chin</li></ul>
+          <p class="pmeta"><span>Seven areas</span><span>per syringe</span></p>
+        </div>
+      </a>
+      <a class="pcard" href="#treatments">
+        <div class="pack" style="background:var(--tint-c)">
+          <span class="no">No. 03</span>
+          <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+            <g fill="none" stroke="#9c3d5a"><circle cx="60" cy="60" r="14" stroke-width="10"/><circle cx="60" cy="60" r="32" stroke-width="3" opacity=".6"/><circle cx="60" cy="60" r="48" stroke-width="2" opacity=".35"/></g>
+          </svg>
+        </div>
+        <div class="body">
+          <h2 class="pname">Biostimulators and PRF</h2>
+          <ul class="chips" aria-label="Products"><li>Sculptra</li><li>Hyperdilute Radiesse</li><li>PRF</li></ul>
+          <p class="pmeta"><span>Regenerative</span><span>per vial or session</span></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="treatments" aria-labelledby="t-h">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">The treatment menu</span>
+      <h2 class="h2" id="t-h">Browse by goal.<span class="two">Bita fits the treatment.</span></h2>
+      <p>You don&rsquo;t need to know product names before you arrive. Tell Bita what you&rsquo;d like to soften, restore or support, and she&rsquo;ll explain which option suits your face, and why.</p>
+    </div>
+    <div class="goals">
+      <article class="goal">
+        <span class="n">01</span>
+        <h3>Soften lines that come from movement<small>Neuromodulators</small></h3>
+        <div class="areas">
+          <span class="label">Products Bita uses</span>
+          <ul class="chips"><li>Xeomin</li><li>Dysport</li><li>Daxxify</li></ul>
+          <p>Three distinct neuromodulators. Bita recommends one based on your goals and how your face moves.</p>
+        </div>
+        <p class="basis"><b>Priced per unit</b>Units agreed in your plan</p>
+      </article>
+      <article class="goal">
+        <span class="n">02</span>
+        <h3>Restore shape and soft volume<small>Dermal fillers</small></h3>
+        <div class="areas">
+          <span class="label">Areas</span>
+          <ul class="chips"><li>Temple</li><li>Under-eye</li><li>Cheek</li><li>Smile lines</li><li>Lip</li><li>Jawline</li><li>Chin</li></ul>
+          <p>Placed to enhance your own features rather than change them.</p>
+        </div>
+        <p class="basis"><b>Priced per syringe</b>Syringes agreed in your plan</p>
+      </article>
+      <article class="goal">
+        <span class="n">03</span>
+        <h3>Support your skin over time<small>Biostimulators and regenerative</small></h3>
+        <div class="areas">
+          <span class="label">Options</span>
+          <ul class="chips"><li>Sculptra</li><li>Hyperdilute Radiesse</li><li>PRF (platelet-rich fibrin)</li></ul>
+          <p>PRF is prepared from your own blood. Bita will walk you through timing and aftercare for each option.</p>
+        </div>
+        <p class="basis"><b>Priced per vial or session</b>Sessions agreed in your plan</p>
+      </article>
+      <div class="goals-foot">
+        <p>Patients of every background and ethnicity are welcome. Your plan is built around your facial structure, not a template.</p>
+        <a class="btn btn-ghost" href="#prices">See the price sheet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS bento -->
+<section class="sec" id="visit" aria-labelledby="v-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Your first visit</span>
+      <h2 class="h2" id="v-h">It starts with a talk.<span class="two">Treatment comes after.</span></h2>
+    </div>
+    <div class="bento">
+      <article class="tile">
+        <div class="step"><span>Step 01</span><span class="mini-steps" aria-hidden="true"><i class="on"></i><i></i><i></i></span></div>
+        <div><h3>Bita looks at your facial structure</h3><p>New patients book a consultation only. Bita assesses your face as a whole before suggesting anything.</p></div>
+      </article>
+      <article class="tile">
+        <div class="step"><span>Step 02</span><span class="mini-steps" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span></div>
+        <div><h3>You talk goals, she builds your plan</h3><p>Your hopes, your events, your routine. Then a custom plan with the options explained.</p></div>
+      </article>
+      <figure class="tile quote">
+        <span class="label" style="color:#e6cbc5">How Bita puts it</span>
+        <blockquote>&ldquo;You, with <em>the cherry on top.</em>&rdquo;</blockquote>
+        <figcaption class="by"><i aria-hidden="true"></i>Bita&rsquo;s signature line</figcaption>
+      </figure>
+      <div class="tile pic">
+        <figure>
+          <img src="img/serum-pools.jpg" width="1400" height="900" loading="lazy" alt="Two overlapping pools of clear golden serum on a warm neutral surface">
+          <figcaption><span class="label" style="color:var(--clay)">Good to know</span> No pressure to treat on the day.</figcaption>
+        </figure>
+      </div>
+      <article class="tile">
+        <div class="step"><span>Step 03</span><span class="mini-steps" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+        <div><h3>You know what to expect</h3><p>Bruising, timing and aftercare are covered before you decide, so nothing comes as a surprise.</p></div>
+      </article>
+      <article class="tile chi">
+        <span class="label">Coming next</span>
+        <div><h3>A Chicago location is in the works</h3><p>Visiting Chicago? Join the priority waitlist. <a href="#chicago">Save your spot</a></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="prices" aria-labelledby="p-h" style="background:var(--surface)">
+  <div class="wrap price-grid">
+    <div class="price-intro">
+      <span class="label">Prices</span>
+      <h2 class="h2" id="p-h">Priced like a label.<span class="two">Per unit, syringe or session.</span></h2>
+      <p>Balance by Bita publishes its prices, so you can plan before you book. Your total depends on what your plan includes.</p>
+      <div class="note">
+        <span class="label" style="color:var(--clay)">What changes your total</span>
+        <ul>
+          <li>How many units a neuromodulator plan needs</li>
+          <li>How many syringes or vials your plan uses</li>
+          <li>How many sessions a regenerative plan includes</li>
+        </ul>
+      </div>
+      <div><a class="btn btn-primary" href="#book">Book a consultation</a></div>
+    </div>
+    <div class="sheet">
+      <div class="sheet-top">
+        <div><span class="label">Price sheet</span><br><b>Sandy Springs studio</b></div>
+        <span class="ph">Prices to be supplied</span>
+      </div>
+      <table class="num">
+        <caption>Balance by Bita prices</caption>
+        <tbody>
+          <tr class="grp"><th colspan="3"><span class="label" style="color:var(--clay)">Neuromodulators</span></th></tr>
+          <tr><th scope="row">Xeomin</th><td class="per">per unit</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr><th scope="row">Dysport</th><td class="per">per unit</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr><th scope="row">Daxxify</th><td class="per">per unit</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr class="grp"><th colspan="3"><span class="label" style="color:var(--clay)">Dermal fillers</span></th></tr>
+          <tr><th scope="row">Filler<small>Temple, under-eye, cheek, smile lines, lip, jawline, chin</small></th><td class="per">per syringe</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr class="grp"><th colspan="3"><span class="label" style="color:var(--clay)">Biostimulators and regenerative</span></th></tr>
+          <tr><th scope="row">Sculptra</th><td class="per">per vial</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr><th scope="row">Hyperdilute Radiesse</th><td class="per">per syringe</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr><th scope="row">PRF<small>Platelet-rich fibrin</small></th><td class="per">per session</td><td class="amt"><span class="ph">$[price]</span></td></tr>
+          <tr class="grp"><th colspan="3"><span class="label" style="color:var(--clay)">New patients</span></th></tr>
+          <tr><th scope="row">Consultation</th><td class="per">first visit</td><td class="amt"><span class="ph">[fee, if any]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="bita" aria-labelledby="b-h">
+  <div class="wrap about">
+    <div class="portrait" role="img" aria-label="Placeholder frame for Bita's portrait, to be supplied">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
+        <circle cx="200" cy="210" r="150" fill="#f3d9d3" opacity=".7"/>
+        <circle cx="200" cy="210" r="100" fill="none" stroke="#823f30" stroke-width="1.5" opacity=".4"/>
+        <path d="M0 430 C120 380 280 380 400 430 L400 500 L0 500Z" fill="#e0b9b0" opacity=".6"/>
+      </svg>
+      <div class="ph-label"><b>Portrait to be supplied</b><span>Bita, in the studio, natural light</span></div>
+    </div>
+    <div class="about-text">
+      <span class="label">Hi, I&rsquo;m Bita!</span>
+      <h2 class="h2" id="b-h">I&rsquo;ve sat in that chair.<span class="two">Now I hold the plan.</span></h2>
+      <p>My interest in skin began with acne at a young age, and I&rsquo;ve been an aesthetics patient myself. I worked in several aesthetic roles, then, after becoming a physician assistant, trained alongside a renowned injector. Today I run my own practice, and I treat people of all backgrounds and ethnicities.</p>
+      <p>I care about precision, respect and intention: natural, timeless results that enhance your features rather than change them.</p>
+      <div class="values">
+        <div class="value"><b>Your features, enhanced</b><p>Results meant to look like you on a good day, not a different face.</p></div>
+        <div class="value"><b>A higher standard of care</b><p>A whole-face approach, refined skill and a plan made for you.</p></div>
+        <div class="value"><b>Known, not processed</b><p>Trust built visit by visit, so you feel like a person here, not a booking.</p></div>
+      </div>
+      <p class="sig">Nationally certified physician associate <span class="ph" style="font-size:var(--t-sm)">[licence details to be supplied]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec" id="words" aria-labelledby="w-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Patient words</span>
+      <h2 class="h2" id="w-h">Known by name.<span class="two">Treated like a friend.</span></h2>
+      <p>Patients often say they feel treated as more than a patient or a number. Their own words will sit here, with permission.</p>
+    </div>
+    <div class="voices">
+      <figure class="voice-big" style="margin:0">
+        <span class="qmark" aria-hidden="true">&ldquo;</span>
+        <blockquote style="margin:0"><p class="q"><span class="ph" style="white-space:normal">[Patient quote to be supplied: in their words, about being treated as more than a patient or a number]</span></p></blockquote>
+        <figcaption class="who-line"><span class="av" aria-hidden="true">A.</span><span>[Initial] &middot; [Treatment] &middot; <span class="ph">[Review source link]</span></span></figcaption>
+      </figure>
+      <div class="voice-col">
+        <figure class="voice" style="margin:0">
+          <blockquote style="margin:0"><p class="q"><span class="ph" style="white-space:normal">[Patient quote to be supplied]</span></p></blockquote>
+          <figcaption class="who-line"><span class="av" aria-hidden="true">B.</span><span>[Initial] &middot; [Treatment]</span></figcaption>
+        </figure>
+        <figure class="voice" style="margin:0">
+          <blockquote style="margin:0"><p class="q"><span class="ph" style="white-space:normal">[Patient quote to be supplied]</span></p></blockquote>
+          <figcaption class="who-line"><span class="av" aria-hidden="true">C.</span><span>[Initial] &middot; [Treatment]</span></figcaption>
+        </figure>
+      </div>
+    </div>
+    <p class="voices-note">Real reviews only, shown with written permission. Results vary by person.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="questions" aria-labelledby="q-h" style="background:var(--surface)">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <span class="label">Timing questions</span>
+      <h2 class="h2" id="q-h">Plan around life.<span class="two">Clear timing rules.</span></h2>
+      <div class="help">
+        <img src="img/cream-smear.jpg" width="900" height="900" loading="lazy" alt="A single swipe of white cream on a warm beige surface" style="border-radius:var(--r-md);aspect-ratio:16/9;object-fit:cover;width:100%;height:auto">
+        <p>Not sure how a treatment fits your calendar? Ask before you book.</p>
+        <a href="tel:+16783895910">Call (678) 389-5910</a>
+      </div>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>I have a wedding coming up. When should I book?</summary>
+        <div class="ans"><span class="k">Bita&rsquo;s rule</span><p><span class="ph" style="white-space:normal">[Answer to be supplied: how many weeks before the date to book, for neuromodulators and for fillers]</span></p></div>
+      </details>
+      <details>
+        <summary>Can I have a chemical peel close to my treatment?</summary>
+        <div class="ans"><span class="k">Bita&rsquo;s rule</span><p><span class="ph" style="white-space:normal">[Answer to be supplied: spacing between a peel and injectables]</span></p></div>
+      </details>
+      <details>
+        <summary>What about facials before or after?</summary>
+        <div class="ans"><span class="k">Bita&rsquo;s rule</span><p><span class="ph" style="white-space:normal">[Answer to be supplied: facial timing]</span></p></div>
+      </details>
+      <details>
+        <summary>I get lash extensions or lifts. Does that matter?</summary>
+        <div class="ans"><span class="k">Bita&rsquo;s rule</span><p><span class="ph" style="white-space:normal">[Answer to be supplied: lash appointment timing]</span></p></div>
+      </details>
+      <details>
+        <summary>I&rsquo;m taking, or recently finished, Accutane. Can I be treated?</summary>
+        <div class="ans"><span class="k">Bita&rsquo;s rule</span><p><span class="ph" style="white-space:normal">[Answer to be supplied: Accutane timing]</span></p></div>
+      </details>
+      <details>
+        <summary>Will I bruise, and what is aftercare like?</summary>
+        <div class="ans"><span class="k">Covered at consultation</span><p>Bita goes through bruising, timing and aftercare with you before any treatment. <span class="ph" style="white-space:normal">[Short general answer to be supplied]</span></p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section class="sec" id="chicago" aria-labelledby="c-h">
+  <div class="wrap">
+    <div class="chicago">
+      <div class="left">
+        <span class="label">Priority waitlist</span>
+        <h2 class="h2" id="c-h">Chicago gets<span class="two">its own studio next.</span></h2>
+        <p>A Chicago location is in the works. Join the patient waitlist and you&rsquo;ll hear first when consultations open there.</p>
+        <div class="city"><span class="tag"><i aria-hidden="true"></i>Sandy Springs, Atlanta: open</span><span class="tag">Chicago: waitlist open</span></div>
+      </div>
+      <form action="mailto:balancebybita@gmail.com?subject=Chicago%20waitlist" method="post" enctype="text/plain" aria-labelledby="c-h">
+        <div class="field"><label for="wl-name">Your name</label><input id="wl-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="wl-email">Email</label><input id="wl-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="wl-int">I&rsquo;m most interested in</label>
+          <select id="wl-int" name="interest"><option>Not sure yet, a consultation</option><option>Neuromodulators</option><option>Dermal fillers</option><option>Sculptra or hyperdilute Radiesse</option><option>PRF</option></select></div>
+        <button class="btn btn-primary" type="submit">Join the Chicago waitlist</button>
+        <p class="form-note">Just your name, email and interest. Medical history is collected later, privately.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="book" aria-labelledby="k-h" style="padding-top:0">
+  <div class="wrap contact">
+    <div class="c-main">
+      <span class="label" style="color:#e6cbc5">Book</span>
+      <h2 class="h2" id="k-h">Book your first visit.<span class="two">We&rsquo;ll take it from there.</span></h2>
+      <p>By appointment only, Monday to Friday. Call or email to book your first visit with Bita in Sandy Springs.</p>
+      <div class="ctas-row">
+        <a class="btn btn-primary" href="tel:+16783895910">Book a consultation</a>
+        <a class="btn btn-ghost" href="mailto:balancebybita@gmail.com?subject=Consultation%20request">Email Bita</a>
+      </div>
+      <p style="font-size:var(--t-sm)"><span class="ph" style="background:#f0b9c6;color:var(--ink);border-color:#f0b9c6">[Online booking link to be supplied]</span></p>
+    </div>
+    <div class="c-side">
+      <div class="c-card"><span class="label">Phone</span><a href="tel:+16783895910">(678) 389-5910</a></div>
+      <div class="c-card"><span class="label">Email</span><a href="mailto:balancebybita@gmail.com">balancebybita@gmail.com</a></div>
+      <div class="c-card"><span class="label">Hours</span><span class="big num">Mon&ndash;Fri, 10:00 am&ndash;5:00 pm</span><span style="font-size:var(--t-sm);color:var(--muted)">By appointment only</span></div>
+      <div class="c-card"><span class="label">Studio</span><span class="big">Sandy Springs, Atlanta, GA</span><span class="ph" style="font-size:var(--t-sm);justify-self:start">[Street address to be supplied]</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top"><b>balance</b><span>by Bita</span></a>
+        <p style="margin-top:16px;max-width:44ch">Boutique medical aesthetics in Sandy Springs, Atlanta. Injectables and regenerative treatments only. Chicago waitlist open.</p>
+      </div>
+      <ul aria-label="Sections">
+        <li><a href="#treatments">Treatments</a></li><li><a href="#prices">Prices</a></li><li><a href="#bita">About Bita</a></li><li><a href="#questions">Timing questions</a></li>
+      </ul>
+      <ul aria-label="Contact">
+        <li><a href="tel:+16783895910">(678) 389-5910</a></li><li><a href="mailto:balancebybita@gmail.com">balancebybita@gmail.com</a></li><li>Mon&ndash;Fri 10:00 am&ndash;5:00 pm</li><li>By appointment only</li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>&copy; Balance by Bita. Results vary by person; every treatment follows a consultation.</span>
+      <span><span class="ph">[Medical director, licence and privacy notice to be supplied]</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.querySelector('.nav'),b=document.getElementById('menubtn');
+  b.addEventListener('click',function(){var o=nav.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';});});
+  var t=document.getElementById('textsize');
+  t.addEventListener('click',function(){var on=document.documentElement.classList.toggle('large-text');t.setAttribute('aria-pressed',on);});
+})();
+</script>
+</body>
+</html>

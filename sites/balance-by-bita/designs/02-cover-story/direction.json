@@ -1,0 +1,44 @@
+{
+  "n": 2,
+  "name": "Cover Story",
+  "concept": "An editorial magazine cover for natural beauty: big serif headline, issue-style index of treatments, cream paper and an oxblood accent.",
+  "refs": [
+    "publishing-magazines/kendi",
+    "ecommerce-beauty/essential"
+  ],
+  "style": "editorial",
+  "scheme": "light",
+  "palette": {
+    "bg": "#f6f0e7",
+    "surface": "#ede4d6",
+    "ink": "#2a211d",
+    "muted": "#6b5d55",
+    "accent": "#7b2d3b",
+    "line": "#d9ccbb"
+  },
+  "fonts": {
+    "display": "Fraunces",
+    "body": "Inter",
+    "class": "serif"
+  },
+  "hero": "big-type-editorial",
+  "sections": [
+    "hero",
+    "services",
+    "about",
+    "testimonials",
+    "process",
+    "pricing",
+    "faq",
+    "contact",
+    "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+    "headline set across the full width in two lines, second line in grey, with a 'contents' list of treatment categories opposite",
+    "founder story laid out as a magazine feature with a pull quote of the signature line",
+    "FAQ as a numbered 'reader questions' column"
+  ],
+  "imagery": "calm editorial portraits of skin and hands, cream backdrops, natural daylight; Bita's portrait as a clearly marked placeholder",
+  "why": "Feels like a beauty editor recommended her: credible, calm and quietly luxurious."
+}
