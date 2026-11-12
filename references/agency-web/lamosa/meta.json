@@ -1,0 +1,19 @@
+{
+  "name": "Lamosa",
+  "industry": "agency-web",
+  "also": ["agency-design", "software-saas"],
+  "summary": "Cool grey SaaS-studio site built from white cards nested in darker grey trays, bold tight Satoshi headlines, black pill buttons with a white arrow knob, and a coral red used only as tiny section markers and badges.",
+  "style": ["corporate-clean", "minimal"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 3, "density": 4, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#ebecef", "surface": "#fcfcfd", "ink": "#0a0a0a", "muted": "#616161", "accent": "#ff4d36", "line": "#d4d8dd" },
+  "fonts": { "display": "Satoshi", "body": "Inter", "class": "sans", "pairing": "Satoshi 700 at -0.05em for compact two-line headlines, Inter 500 for all body and UI text in mid grey" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "features", "stats", "services", "process", "portfolio", "pricing", "testimonials", "faq", "contact", "blog", "footer"],
+  "motion": 3,
+  "signature": ["centered headline flanked by two drifting columns of tilted, fading quote cards", "every section opens with a tiny coral square above a centered two-line heading", "grey 32px-radius tray holding white 24px cards, with one card per tray inverted to near-black", "black pill buttons with a separate white circular arrow knob inside", "faint dashed vertical guide lines framing the 1136px content column"],
+  "imagery": "dark moody product renders and devices on black, phone mockups, small square client avatars; mostly UI and icon driven",
+  "layout_grid": "1136px content column inside dashed guides, roughly 100px between sections, 3-column card trays, 2-column project and testimonial grids",
+  "quality": 4
+}

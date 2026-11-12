@@ -1,0 +1,19 @@
+{
+  "name": "Forma Studio",
+  "industry": "agency-architecture",
+  "also": ["services-home", "ecommerce-furniture"],
+  "summary": "Quiet interior and architecture studio site: a dark full-bleed interior photo hero with an edge-to-edge wordmark at its foot, pale grey editorial sections, a staggered project gallery, sticky service cards on near-black and a line-drawn floor plan process grid.",
+  "style": ["minimal", "luxury", "editorial"],
+  "feel": { "tone": 4, "energy": 2, "luxury": 4, "density": 2, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "neutral",
+  "palette": { "bg": "#f2f2f2", "surface": "#0f0f0f", "ink": "#0f0f0f", "muted": "#737373", "accent": "#d9d9d9", "line": "#2a2a2a" },
+  "fonts": { "display": "Mona Sans", "body": "Mona Sans", "class": "grotesk", "pairing": "Mona Sans 500 at -0.04em for 48 to 76px heads, 400 at 20 to 24px for statements; counters set in a monospaced face for a drafted, technical note" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "stats", "portfolio", "services", "process", "testimonials", "faq", "cta", "footer"],
+  "motion": 3,
+  "signature": ["wordmark set edge to edge along the bottom of the hero photo and again as a giant footer sign-off", "staggered project gallery: pairs of images at different widths, then one centred wide image, each with name left and year right", "service cards that stick on scroll in a right column while the section head stays pinned left", "process grid alternating text cells and cells of white line-drawn floor plans and isometric room renders"],
+  "imagery": "moody, warm-lit interior and architecture renders in browns, ambers and charcoal; square corners; line-art plans as illustration",
+  "layout_grid": "1200 canvas, 80px side padding, 120px section padding, 4-column process grid with 1px dark borders, no radii",
+  "quality": 4
+}
