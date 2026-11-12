@@ -1,0 +1,19 @@
+{
+  "name": "Royal",
+  "industry": "real-estate-agents",
+  "also": ["real-estate-listings", "agency-architecture", "hospitality-hotels"],
+  "summary": "Pitch-black luxury realtor site where full-bleed dusk property photos stack on scroll, with flat white uppercase grotesk and tiny square white buttons.",
+  "style": ["cinematic", "luxury", "minimal"],
+  "feel": { "tone": 1, "energy": 2, "luxury": 5, "density": 1, "warmth": 2, "modernity": 4 },
+  "scheme": "dark",
+  "hue": "black",
+  "palette": { "bg": "#000000", "surface": "#1c1c1c", "ink": "#ffffff", "muted": "#cccccc", "accent": "#ffffff", "line": "#222222" },
+  "fonts": { "display": "Switzer", "body": "Switzer", "class": "sans", "pairing": "single grotesk family at weight 500; uppercase for H1 and big H2, sentence case for body and labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "listings", "about", "gallery", "testimonials", "blog", "cta"],
+  "motion": 3,
+  "signature": ["four full-viewport property photos pinned with sticky so each slides over the last, title and address centred on the image", "hero headline bottom-left with a small thumbnail strip bottom-right acting as a slideshow index"],
+  "imagery": "moody dusk and night architecture photography, warm window glow against dark sky, dark-suited founder portrait",
+  "layout_grid": "1200px canvas, 40px side padding, 75px section padding, 45px heading-to-content gap, 3-column blog grid, square corners everywhere",
+  "quality": 4
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "fade-and-co",
+  "name": "Fade & Co",
+  "business": "Neighbourhood barbershop: cuts, beard trims, hot-towel shaves",
+  "industry": "services-home",
+  "audience": "men 20-45 in the area who want a reliable, unpretentious barber",
+  "location": "12 King Street, Leeds",
+  "voice": "friendly, direct, a little dry",
+  "cta": "Book a chair",
+  "facts": [
+    "Open Tue-Sat 9-7",
+    "Walk-ins welcome before noon",
+    "Cut \u00a324, beard trim \u00a312, cut + beard \u00a332"
+  ],
+  "contact": {
+    "phone": "",
+    "email": "",
+    "address": "12 King Street, Leeds",
+    "hours": "Tue-Sat 9-7"
+  },
+  "feel": {
+    "tone": 3,
+    "energy": 3,
+    "luxury": 2,
+    "density": 2,
+    "warmth": 4,
+    "modernity": 3
+  },
+  "style_words": "confident, classic, crafted",
+  "scheme": "any",
+  "animations": "subtle",
+  "colors": null,
+  "fonts": null,
+  "avoid": [
+    "neon",
+    "gradients"
+  ],
+  "sections": [
+    "hero",
+    "services",
+    "pricing",
+    "gallery",
+    "team",
+    "booking",
+    "faq",
+    "contact"
+  ],
+  "_demo": "Sample brief used to test the system end to end (fictional business)."
+}

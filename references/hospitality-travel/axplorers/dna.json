@@ -1,0 +1,821 @@
+{
+ "title": "Axplorers (copy)",
+ "pages": [
+  "/",
+  "/404",
+  "/about",
+  "/book",
+  "/contact",
+  "/utility/thank-you",
+  "/utility/coming-soon",
+  "/utility/maintenance",
+  "/careers",
+  "/careers/:bfi9wj9_1",
+  "/services",
+  "/services/:He0CkQf5W",
+  "/team",
+  "/team/:DEJvEPNCH",
+  "/legal/:Alk8FG0mn",
+  "/office-locations",
+  "/office-locations/:SlgiGU_WF",
+  "/blog",
+  "/blog/:GbSBLuhTX",
+  "/legal",
+  "/tour-package/:CG1aEHg05",
+  "/tour-package",
+  "/destinations",
+  "/destinations/:U4ZX98BGx",
+  "/categories/:QXArsxl4N",
+  "/experiences/:WZeg8_VtX"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Border",
+   "light": "rgba(255, 255, 255, 0.12)"
+  },
+  {
+   "name": "Dark",
+   "light": "rgba(23, 21, 20, 0.5)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(239, 232, 217)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(22, 19, 17)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(235, 222, 199)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(232, 217, 186)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(42, 36, 30)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(111, 102, 92)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(178, 137, 76)"
+  },
+  {
+   "name": "Inverse",
+   "light": "rgb(248, 244, 236)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(216, 200, 172)"
+  },
+  {
+   "name": "Inverse Secondary",
+   "light": "rgb(219, 219, 219)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(42, 36, 30)"
+  },
+  {
+   "name": "Border Strong",
+   "light": "rgba(255, 255, 255, 0.24)"
+  },
+  {
+   "name": "Light",
+   "light": "rgba(255, 255, 255, 0.1)"
+  },
+  {
+   "name": "Shade",
+   "light": "rgba(0, 0, 0, 0.24)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "404 Display",
+   "tag": "h1",
+   "font": "Aspekta Variable",
+   "weight": 180,
+   "style": "normal",
+   "size": "300px",
+   "tracking": "-0.04em",
+   "leading": "0.9em",
+   "color": "token:25e7e00c-e33a-4fec-8903-9b875c1d4d52, rgb(178, 137, 76) /* {\"name\":\"Accent\"} */",
+   "responsive": {
+    "default": "300px",
+    "medium": "240px",
+    "small": "180px"
+   }
+  },
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Parastoo",
+   "weight": 500,
+   "style": "normal",
+   "size": "96px",
+   "tracking": "-0.03em",
+   "leading": "0.9em",
+   "transform": "none",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "96px",
+    "medium": "78px",
+    "small": "64px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Parastoo",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.02em",
+   "leading": "0.95em",
+   "transform": "none",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "64px",
+    "medium": "52px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Parastoo",
+   "weight": 500,
+   "style": "normal",
+   "size": "44px",
+   "tracking": "-0.02em",
+   "leading": "0.9em",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "44px",
+    "medium": "38px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "font": "Google Sans Flex",
+   "weight": 500,
+   "style": "normal",
+   "leading": "1.6em",
+   "color": "token:dcae86ca-c6c5-4dd6-b77d-22b0fe36e21a, rgb(111, 102, 92) /* {\"name\":\"Secondary\"} */",
+   "responsive": {}
+  },
+  {
+   "name": "Body Small",
+   "font": "Google Sans Flex",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.5em",
+   "color": "token:dcae86ca-c6c5-4dd6-b77d-22b0fe36e21a, rgb(111, 102, 92) /* {\"name\":\"Secondary\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Eyebrow",
+   "font": "Google Sans Flex",
+   "weight": 600,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.06em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:25e7e00c-e33a-4fec-8903-9b875c1d4d52, rgb(178, 137, 76) /* {\"name\":\"Accent\"} */",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Google Sans Flex",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.3em",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Parastoo",
+   "weight": 700,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.01em",
+   "leading": "1em",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Display",
+   "tag": "h2",
+   "font": "Parastoo",
+   "weight": 500,
+   "style": "normal",
+   "size": "72px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "72px",
+    "medium": "58px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Body Extra Large",
+   "font": "Google Sans Flex",
+   "weight": 400,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:25813bd9-500b-4747-a74d-207980167b8d, rgb(42, 36, 30) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h4",
+   "font": "Parastoo",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "26px"
+   }
+  }
+ ],
+ "components": [
+  "Hero Scroll Button",
+  "Destination Card",
+  "Services Home Card",
+  "Service Number",
+  "Packages Card",
+  "Experience Home Card",
+  "Blog Card",
+  "Newsletter Submit Button",
+  "Cta",
+  "Footer",
+  "Consultation Process Card",
+  "Mission/Vision",
+  "Team Card",
+  "Career Component",
+  "Navbar Button",
+  "Careers Card",
+  "Button",
+  "Career Card Small",
+  "Location Card",
+  "Services Card",
+  "Tab",
+  "Faq Single",
+  "Experiences (small)",
+  "Service micro navigation",
+  "Tab 2",
+  "Legal Card",
+  "Blog Post Small",
+  "Category Tag",
+  "Hero Image",
+  "Destination Pill",
+  "Tour Row",
+  "Experience Pill",
+  "Contact Submit Button",
+  "Book Submit Button",
+  "Careers Apply Submit Button",
+  "Tour Enquiry Submit Button",
+  "Coming Soon Submit Button",
+  "Blog Subscribe Submit Button",
+  "Footer Subscribe Submit Button",
+  "Home Enquiry Submit Button",
+  "Team Card Blog Page",
+  "Select Trigger",
+  "Select Option",
+  "Navbar Overlay"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Header & Footer",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Smooth Scroll",
+    "comp": "Smooth Scroll",
+    "position": "absolute"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Progressive Blur",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navbar (Overlay)",
+    "comp": "Navbar Overlay",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Get this template for free",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Primary"
+ },
+ "sections": [
+  {
+   "name": "Hero Section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "40px",
+   "childNames": [
+    "Hero Background Overlay",
+    "Hero Background Video",
+    "Hero Content"
+   ],
+   "text": 6,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 3,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "Home Enquiry Submit Button": 1
+   },
+   "effects": {
+    "appear": 3,
+    "parallax": 2,
+    "text": 1
+   },
+   "styles": {
+    "H1": 1,
+    "Body Large": 1,
+    "Label": 4
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "About Section",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 663,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "32px",
+   "childNames": [
+    "About Story"
+   ],
+   "text": 8,
+   "words": 39,
+   "images": 3,
+   "icons": 1,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "text": 6,
+    "appear": 5
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Display": 6,
+    "Body Large": 1
+   },
+   "shot": "sections/02-about-section.jpg"
+  },
+  {
+   "name": "Packages Section",
+   "type": "FrameNode",
+   "y": 1463,
+   "h": 804,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 4,
+   "words": 32,
+   "images": 0,
+   "icons": 2,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Packages Card": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "H4": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/03-packages-section.jpg"
+  },
+  {
+   "name": "Services Section",
+   "type": "FrameNode",
+   "y": 2267,
+   "h": 1020,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 5,
+   "words": 32,
+   "images": 0,
+   "icons": 2,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2,
+    "Services Home Card": 1,
+    "Image Parallax": 1
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "H4": 1,
+    "Body Large": 1,
+    "Body Extra Large": 1
+   },
+   "shot": "sections/04-services-section.jpg"
+  },
+  {
+   "name": "Destinations Section",
+   "type": "FrameNode",
+   "y": 3287,
+   "h": 796,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "80px 40px 80px 40px",
+   "gap": "32px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 4,
+   "words": 34,
+   "images": 0,
+   "icons": 2,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1,
+    "Destination Card": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "H4": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/05-destinations-section.jpg"
+  },
+  {
+   "name": "Stats Section",
+   "type": "FrameNode",
+   "y": 4083,
+   "h": 1064,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 11,
+   "words": 45,
+   "images": 0,
+   "icons": 5,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Image Parallax": 1,
+    "Animated Counter": 4
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "Body Large": 1,
+    "Label": 4,
+    "Body Small": 4
+   },
+   "shot": "sections/06-stats-section.jpg"
+  },
+  {
+   "name": "Testimonials Section",
+   "type": "FrameNode",
+   "y": 5147,
+   "h": 835,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 15,
+   "words": 105,
+   "images": 0,
+   "icons": 1,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Image Parallax": 1
+   },
+   "effects": {
+    "appear": 11
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "Body Extra Large": 4,
+    "Body Small": 4,
+    "Label": 4
+   },
+   "shot": "sections/07-testimonials-section.jpg"
+  },
+  {
+   "name": "Journal Section",
+   "type": "FrameNode",
+   "y": 5982,
+   "h": 1018,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 4,
+   "words": 24,
+   "images": 0,
+   "icons": 2,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2": 1,
+    "H4": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/08-journal-section.jpg"
+  },
+  {
+   "name": "CTA Section",
+   "type": "FrameNode",
+   "y": 7000,
+   "h": 576,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, token:d6bd3db5-3d63-4700-9c7f-0cca307aa904, rgb(239, 232, 217) /* {\"name\":\"Primary\"} */ 0%, token:5d5762e8-d2d8-471d-9655-858b229e352e, rgb(233, 224, 204) /* {\"name\":\"Secondary\"} */ 100%)",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "CTA Banner"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Cta": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/09-cta-section.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 47,
+  "parallax": 2,
+  "text": 7
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.12,
+      0.23,
+      0.5,
+      1
+     ],
+     "duration": "0.8s",
+     "delay": "0.2s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.12,
+      0.23,
+      0.5,
+      1
+     ],
+     "duration": "0.8s",
+     "delay": "0.2s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 80
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0.3s",
+   "style": {
+    "opacity": 0,
+    "x": "-5px",
+    "y": "30px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "4px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.12,
+      0.23,
+      0.5,
+      1
+     ],
+     "duration": "0.6s",
+     "delay": "0.07s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {
+  "Cormorant Garamond": 2
+ },
+ "radii": [
+  [
+   "20px",
+   9
+  ],
+  [
+   "40px",
+   5
+  ],
+  [
+   "12px",
+   4
+  ],
+  [
+   "24px",
+   2
+  ],
+  [
+   "16px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 10,
+  "borders": 13,
+  "blur": 2
+ },
+ "desktopFill": "token:Primary",
+ "pageHeight": 8292,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/331c84ef-2746-463f-b3ba-bf3a27d3b04d.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/4d93fa72-5edd-499c-a62b-e8b037f78183.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-travel/axplorers",
+ "industry": "hospitality-travel",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8523
+ ]
+}

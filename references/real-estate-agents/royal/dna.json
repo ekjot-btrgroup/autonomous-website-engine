@@ -1,0 +1,592 @@
+{
+ "title": "Royaltemplate (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/properties/:C664GEbAT",
+  "/properties",
+  "/blog",
+  "/blog/:qaTyeRJgv",
+  "/contact",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Primary text",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Secondary text",
+   "light": "rgb(204, 204, 204)"
+  },
+  {
+   "name": "Card background",
+   "light": "rgb(28, 28, 28)"
+  },
+  {
+   "name": "Border",
+   "light": "rgb(34, 34, 34)"
+  },
+  {
+   "name": "Button Error",
+   "light": "rgb(255, 34, 68)"
+  },
+  {
+   "name": "Button error background",
+   "light": "rgba(255, 34, 68, 0.15)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "50px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "uppercase",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "50px",
+    "medium": "40px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 2b",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "45px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "uppercase",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "45px",
+    "medium": "36px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.04em",
+   "leading": "1.4em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "22px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.04em",
+   "leading": "1.4em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Heading 6",
+   "tag": "h6",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "Badge",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body S (medium)",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Body XL",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Numbers",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "uppercase",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "28px",
+    "medium": "22px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Card title",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.01em",
+   "leading": "1.2em",
+   "color": "token:1cf62b00-0a91-4eb4-a7c7-17c8465860a6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "20px",
+    "medium": "18px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Subheading",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "1.5em",
+   "color": "token:4579b7d3-7766-4446-8a2a-3045a0bf24ab, rgb(204, 204, 204)",
+   "responsive": {
+    "default": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Navigation/Navbar",
+  "nav items",
+  "CTA Button",
+  "Hero section",
+  "Scroll",
+  "Property card",
+  "community card",
+  "Footer",
+  "Story",
+  "Team card",
+  "Back button",
+  "Blog card",
+  "Form Button",
+  "Testimonial card",
+  "Navigation/hamburger",
+  "Value Card"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Navigation",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation/Navbar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Hero section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px",
+   "gap": "10px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Scroll": 1,
+    "Hero section": 1
+   },
+   "effects": {
+    "sticky": 1
+   },
+   "styles": {},
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "Featured properties",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 3310,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 50px 0px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Property card": 1,
+    "Spinner": 1
+   },
+   "effects": {
+    "sticky": 1
+   },
+   "styles": {},
+   "shot": "sections/02-featured-properties.jpg"
+  },
+  {
+   "name": "About us",
+   "type": "FrameNode",
+   "y": 4110,
+   "h": 1053,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "75px 40px 75px 40px",
+   "gap": "100px",
+   "childNames": [
+    "Upper section",
+    "Lower section"
+   ],
+   "text": 4,
+   "words": 120,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA Button": 1,
+    "Video": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Badge": 1,
+    "Heading 2": 1,
+    "Subheading": 2
+   },
+   "shot": "sections/03-about-us.jpg"
+  },
+  {
+   "name": "Our Communities",
+   "type": "FrameNode",
+   "y": 5163,
+   "h": 728,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "75px 40px 75px 40px",
+   "gap": "45px",
+   "childNames": [
+    "Header",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 2,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Ticker": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/04-our-communities.jpg"
+  },
+  {
+   "name": "Testimonial",
+   "type": "FrameNode",
+   "y": 5891,
+   "h": 678,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "75px 40px 75px 40px",
+   "gap": "45px",
+   "childNames": [
+    "Header",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 1,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    1
+   ],
+   "components": {
+    "Slideshow": 1,
+    "Testimonial card": 3
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/05-testimonial.jpg"
+  },
+  {
+   "name": "Blog section",
+   "type": "FrameNode",
+   "y": 6569,
+   "h": 713,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "75px 40px 75px 40px",
+   "gap": "45px",
+   "childNames": [
+    "Header",
+    "Blog Grid"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "CTA Button": 1,
+    "Blog card": 1,
+    "Spinner": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/06-blog-section.jpg"
+  },
+  {
+   "name": "CTA",
+   "type": "FrameNode",
+   "y": 7282,
+   "h": 700,
+   "w": 1200,
+   "fill": "token:Background",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "50px 40px 50px 40px",
+   "gap": "40px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 9,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "CTA Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Badge": 1,
+    "Heading 2b": 1
+   },
+   "shot": "sections/07-cta.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Smooth Scroll",
+   "y": 7982,
+   "h": 0,
+   "w": 0,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Smooth Scroll": 1
+   },
+   "effects": {},
+   "styles": {}
+  }
+ ],
+ "effects": {
+  "sticky": 2,
+  "appear": 8
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.5,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "2s",
+     "bounce": 0,
+     "delay": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Background",
+ "pageHeight": 8371,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/225274c4-103f-45f0-8528-e5cc3dbc0434.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/9ee51832-c233-44fe-93f8-daf654113a6b.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "real-estate-agents/royal",
+ "industry": "real-estate-agents",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8622
+ ]
+}

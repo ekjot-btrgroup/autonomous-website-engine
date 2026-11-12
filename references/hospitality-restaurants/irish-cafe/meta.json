@@ -1,0 +1,19 @@
+{
+  "name": "Irish Cafe",
+  "industry": "hospitality-restaurants",
+  "also": ["hospitality-food", "hospitality-hotels"],
+  "summary": "Butter-cream and espresso cafe site pairing a wide grotesk display with a soft text serif, moody amber photography and rounded tan frames around every image group.",
+  "style": ["warm-organic", "editorial", "playful"],
+  "feel": { "tone": 3, "energy": 2, "luxury": 3, "density": 3, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#ffebc7", "surface": "#f4d8b3", "ink": "#261912", "muted": "#553c2d", "accent": "#3d291e", "line": "rgba(61,41,30,0.15)" },
+  "fonts": { "display": "Clash Display", "body": "Fraunces", "class": "mixed", "pairing": "wide geometric grotesk at 500 to 600 for headings, warm low-contrast serif for body, labels and buttons" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "menu", "gallery", "about", "listings", "testimonials", "blog", "cta"],
+  "motion": 3,
+  "signature": ["dashed wavy path threading circular guest portraits with small coffee-bean nodes", "image groups sat inside a 40px-radius tan tray with 24px inner padding", "outlined serif pill eyebrows above every centred heading", "oversized gradient wordmark fading into the footer"],
+  "imagery": "dark amber cafe interiors, close food and drink still lifes, warm low-key grade, round headshots on tan discs",
+  "layout_grid": "1200px canvas, 40px side padding, 80px section padding, 48px header-to-content gap, 3-column cards, 40px radius",
+  "quality": 4
+}

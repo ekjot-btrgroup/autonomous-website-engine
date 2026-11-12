@@ -1,0 +1,19 @@
+{
+  "name": "Norfolk",
+  "industry": "services-home",
+  "also": ["real-estate-construction", "agency-architecture", "services-consulting"],
+  "summary": "Calm, premium trades site with a golden-hour sky hero, tight Onest headlines, olive accents and one charcoal band breaking a white page.",
+  "style": ["corporate-clean", "warm-organic", "minimal"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 2, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#f6f3ed", "ink": "#1e2428", "muted": "#5f6467", "accent": "#8a8f63", "line": "#d9d4c8" },
+  "fonts": { "display": "Onest", "body": "Onest", "class": "sans", "pairing": "Onest 500 to 600 with heavy negative tracking for headlines, Onest 400 body, tracked uppercase 700 eyebrows" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "stats", "services", "process", "about", "portfolio", "testimonials", "cta", "contact"],
+  "motion": 2,
+  "signature": ["centred headline floating in the sky of a full-bleed product photo, with the subject (the fence) filling the lower half", "dark band with an accordion list of four standards beside a tall photo"],
+  "imagery": "golden-hour residential exteriors, AI-styled modern fences and landscaping, crew group portrait, warm lit dusk shots",
+  "layout_grid": "1200px canvas, 24 to 100px side padding, 110 to 130px section padding, 3-column cards, 6px radii",
+  "quality": 4
+}

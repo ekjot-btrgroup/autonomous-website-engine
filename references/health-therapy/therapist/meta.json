@@ -1,0 +1,19 @@
+{
+  "name": "Therapist",
+  "industry": "health-therapy",
+  "also": ["health-wellness", "services-consulting"],
+  "summary": "Calm paper-toned solo practice site with tall arched photo frames, a quiet book-serif voice and one pine-green accent.",
+  "style": ["warm-organic", "editorial", "minimal"],
+  "feel": { "tone": 2, "energy": 1, "luxury": 3, "density": 2, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#f5f1ea", "surface": "#ece5da", "ink": "#22302a", "muted": "#56615b", "accent": "#335a4d", "line": "#d8cfc2" },
+  "fonts": { "display": "Source Serif 4", "body": "Inter", "class": "serif", "pairing": "regular-weight book serif for headings and numerals, neutral sans for body, labels and buttons" },
+  "hero": "split-image-right",
+  "sections": ["hero", "services", "process", "pricing", "about", "faq", "cta"],
+  "motion": 2,
+  "signature": ["full-radius arch masks repeated on hero, topic cards and portrait", "hairline-ruled 3-step row with large regular-weight serif numerals", "price list as ruled rows with a tiny caps label above each figure"],
+  "imagery": "warm natural-light interiors in beige and oat, AI-staged armchairs and windows, arched crops",
+  "layout_grid": "1120px content, 40px side padding, 96px section padding, 3-column cards, 5/7 split for text and lists",
+  "quality": 4
+}

@@ -1,0 +1,819 @@
+{
+ "title": "Tandem & Co Agency (copy)",
+ "pages": [
+  "/",
+  "/insight",
+  "/insight/:cQpCSoL_P",
+  "/case-study",
+  "/case-study/:noIfO9PyL",
+  "/contact",
+  "/404",
+  "/home2",
+  "/design-system",
+  "/about"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "neutral-50",
+   "light": "rgb(250, 250, 250)",
+   "dark": "rgb(250, 250, 250)"
+  },
+  {
+   "name": "neutral-100",
+   "light": "rgb(245, 245, 245)",
+   "dark": "rgb(245, 245, 245)"
+  },
+  {
+   "name": "neutral-200",
+   "light": "rgb(229, 229, 229)",
+   "dark": "rgb(229, 229, 229)"
+  },
+  {
+   "name": "neutral-300",
+   "light": "rgb(212, 212, 212)",
+   "dark": "rgb(212, 212, 212)"
+  },
+  {
+   "name": "neutral-400",
+   "light": "rgb(163, 163, 163)",
+   "dark": "rgb(163, 163, 163)"
+  },
+  {
+   "name": "neutral-500",
+   "light": "rgb(115, 115, 115)",
+   "dark": "rgb(115, 115, 115)"
+  },
+  {
+   "name": "neutral-600",
+   "light": "rgb(82, 82, 82)",
+   "dark": "rgb(82, 82, 82)"
+  },
+  {
+   "name": "neutral-700",
+   "light": "rgb(64, 64, 64)",
+   "dark": "rgb(64, 64, 64)"
+  },
+  {
+   "name": "neutral-800",
+   "light": "rgb(38, 38, 38)",
+   "dark": "rgb(38, 38, 38)"
+  },
+  {
+   "name": "neutral-900",
+   "light": "rgb(23, 23, 23)",
+   "dark": "rgb(23, 23, 23)"
+  },
+  {
+   "name": "neutral-950",
+   "light": "rgb(10, 10, 10)",
+   "dark": "rgb(10, 10, 10)"
+  },
+  {
+   "name": "600-77Opacity",
+   "light": "rgba(82, 82, 82, 0.77)"
+  },
+  {
+   "name": "Border",
+   "light": "rgba(255, 255, 255, 0.06)"
+  },
+  {
+   "name": "Surface 1",
+   "light": "rgb(17, 17, 19)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Accent",
+   "light": "rgb(33, 210, 237)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(176, 176, 176)"
+  },
+  {
+   "name": "Light",
+   "light": "rgb(245, 244, 240)"
+  },
+  {
+   "name": "Heading",
+   "light": "rgb(14, 24, 46)"
+  },
+  {
+   "name": "Body",
+   "light": "rgb(95, 98, 105)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "46px",
+   "tracking": "-0.02em",
+   "leading": "100%",
+   "color": "token:9e152870-0170-4909-9fb7-849c91e30dc4, rgb(250, 250, 250) /* {\"name\":\"50\"} */",
+   "responsive": {
+    "default": "46px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "#000",
+   "responsive": {
+    "default": "36px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.04em",
+   "leading": "1.3em",
+   "color": "token:3055d4d6-7b48-404e-ac5f-6609f5b9f06d, rgb(250, 250, 250) /* {\"name\":\"neutral-50\"} */",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "100%",
+   "color": "token:9e152870-0170-4909-9fb7-849c91e30dc4, rgb(250, 250, 250) /* {\"name\":\"50\"} */",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Heading 6",
+   "tag": "h6",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "#000",
+   "responsive": {}
+  },
+  {
+   "name": "Body",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "120%",
+   "color": "token:90888553-67da-4d34-bea1-78e2d9a69386, rgb(229, 229, 229) /* {\"name\":\"neutral-200\"} */",
+   "responsive": {}
+  },
+  {
+   "name": "Body-14-Medium",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body-14-Regular",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "#666",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Caption-12",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "#666",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Caption-14-Serif",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "color": "rgba(255, 255, 255, 0.8)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.03em",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "Heading 2-Serif",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.01em",
+   "color": "rgb(255, 255, 255)",
+   "responsive": {
+    "default": "36px"
+   }
+  }
+ ],
+ "components": [
+  "Services-Titles",
+  "Underline Button",
+  "Number Card",
+  "Services Card",
+  "Insight-Card",
+  "FAQ Item",
+  "FAW Wrapper",
+  "Form-Button",
+  "Navigation",
+  "Testimonial Interaction",
+  "Menu Link Item",
+  "Pricing Card",
+  "Button-Main",
+  "BlogComponentsCard",
+  "Bullet",
+  "Services-Card",
+  "Hero-Card",
+  "Contact Form Submit",
+  "Footer"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Button Delete",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Button Delete",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:neutral-950"
+ },
+ "sections": [
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "SmoothScroll",
+   "y": 0,
+   "h": 1,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "SmoothScroll": 1
+   },
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": "Section/Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Image Wrapper",
+    "Container"
+   ],
+   "text": 3,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Unicorn Studio Embed": 1,
+    "Hero-Card": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body-14-Medium": 1
+   },
+   "shot": "sections/02-section-hero.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 911,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 53,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Bullet": 1,
+    "Number Card": 4
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/03-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 1711,
+   "h": 2543,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 36,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "Services-Titles": 1,
+    "Services Card": 4
+   },
+   "effects": {
+    "text": 1,
+    "sticky": 5,
+    "scrollVariant": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/04-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 4254,
+   "h": 1017,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "Services-Card": 3
+   },
+   "effects": {
+    "text": 1,
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/05-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 5271,
+   "h": 2005,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 24px 112px 24px",
+   "gap": "56px",
+   "childNames": [
+    "Container",
+    "Insight-Cards"
+   ],
+   "text": 4,
+   "words": 30,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "BlogComponentsCard": 2
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2,
+    "sticky": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/06-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 7276,
+   "h": 847,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 24px 112px 24px",
+   "gap": "56px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 31,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "Testimonial Interaction": 1
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/07-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 8123,
+   "h": 1440,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 29,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "AdvanceCounter": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 2
+   },
+   "styles": {
+    "Body-14-Regular": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/08-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 9563,
+   "h": 1138,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "112px 24px 112px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 42,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "Pricing Card": 1
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/09-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 10701,
+   "h": 1392,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 24px 112px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 30,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "Insight-Card": 2
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/10-section.jpg"
+  },
+  {
+   "name": "Section",
+   "type": "FrameNode",
+   "y": 12093,
+   "h": 839,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "112px 24px 112px 24px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Bullet": 1,
+    "FAW Wrapper": 1
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body-14-Regular": 1
+   },
+   "shot": "sections/11-section.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 12,
+  "text": 9,
+  "sticky": 8,
+  "scrollVariant": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1s",
+     "bounce": 0.2,
+     "delay": "1.1s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1s",
+     "bounce": 0.2,
+     "delay": "1.1s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "line",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "5px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.44,
+      0,
+      0.56,
+      1
+     ],
+     "duration": "0.3s",
+     "delay": "0.6s"
+    }
+   }
+  },
+  "scrollVariant": {
+   "trigger": "onScrollTarget",
+   "threshold": 0.5,
+   "replay": true,
+   "sections": [
+    {
+     "target": "Z_MGfwbLb",
+     "variant": "duoJCrII6"
+    },
+    {
+     "target": "nBKJIbgSr",
+     "variant": "HLS9xFo9I"
+    },
+    {
+     "target": "D7KqPnNJu",
+     "variant": "ju68LX1T4"
+    },
+    {
+     "target": "lKgEHX1J9",
+     "variant": "g6RnAD06n"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "20px",
+   5
+  ],
+  [
+   "0px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 5,
+  "blur": 0
+ },
+ "desktopFill": "token:neutral-950",
+ "pageHeight": 13537,
+ "screenshots": {
+  "desktop": "file:///tmp/claude-0/-home-user/d109ccdc-a55d-57f0-af36-78b179f1364d/scratchpad/refs/tandem-co-agency-desktop.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/a4d648d3-579f-4f88-9d8d-d88f8ba34b02.jpg",
+  "desktopWidth": 1200,
+  "note": "desktop stitched from section screenshots; full-page screenshot timed out"
+ },
+ "id": "services-consulting/tandem-co-agency",
+ "industry": "services-consulting",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  13537
+ ]
+}
