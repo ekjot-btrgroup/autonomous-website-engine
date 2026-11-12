@@ -36,12 +36,6 @@
   "license": "Unsplash License"
  },
  {
-  "file": "g-razor.jpg",
-  "source": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
   "file": "svc-beard.jpg",
   "source": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1",
   "credit": "Unsplash",
@@ -80,6 +74,12 @@
  {
   "file": "team-3.jpg",
   "source": "https://images.unsplash.com/photo-1639511177364-0866c0da16fa",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "g-razor.jpg",
+  "source": "https://images.unsplash.com/photo-1735150949874-ec9c9c82b2c4",
   "credit": "Unsplash",
   "license": "Unsplash License"
  }
