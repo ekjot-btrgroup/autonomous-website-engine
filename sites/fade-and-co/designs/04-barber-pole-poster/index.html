@@ -262,23 +262,26 @@
   .svc .meta { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s5); }
   .chip { display: inline-flex; align-items: center; min-height: 36px; padding: 0 var(--s4); border-radius: 999px; background: var(--accent); color: var(--deep); font-weight: 700; font-variant-numeric: tabular-nums; }
   .chip.ghost { background: none; color: var(--ink); border: 1px solid var(--line); font-weight: 600; }
-  .svc-main { grid-column: 1 / 8; }
+  .svc-main { grid-column: 1 / 7; }
   .svc-main .ph-wrap { transform: rotate(-1.5deg); }
   .svc-main .cut-in { aspect-ratio: 3 / 2; }
   .svc-main .txt { display: grid; grid-template-columns: auto 1fr; column-gap: var(--s5); margin-top: var(--s7); }
   .svc-main .txt .no { grid-row: 1 / 4; }
-  .svc-print { margin: var(--s8) 0 0 auto; width: 64%; background: var(--bg); }
-  .svc-print img { width: 100%; mix-blend-mode: multiply; filter: grayscale(1) contrast(1.6) brightness(1.32); }
-  @media (max-width: 900px) { .svc-print { display: none; } }
-  .svc-side { grid-column: 9 / 13; display: grid; row-gap: var(--s8); align-content: start; }
-  .svc-side .svc { border-top: 1px solid var(--line); padding-top: var(--s5); }
-  .svc-side .ph-wrap { width: 78%; margin: var(--s5) 0 var(--s5) auto; }
-  .svc-side .svc:nth-child(1) .ph-wrap { transform: rotate(2.5deg); }
-  .svc-side .svc:nth-child(2) .ph-wrap { transform: rotate(-2deg); }
-  .svc-side .cut-in { aspect-ratio: 4 / 3; }
+  .svc-side { grid-column: 8 / 13; display: grid; row-gap: var(--s7); align-content: start; }
+  .svc-co { display: grid; grid-template-columns: minmax(0, 44%) minmax(0, 1fr); column-gap: var(--s5); align-items: end; border-top: 1px solid var(--line); padding-top: var(--s7); }
+  .svc-co .co-txt h3 { margin-top: var(--s2); }
+  .co { position: relative; margin: 0; padding: 10px; aspect-ratio: 4 / 5; filter: drop-shadow(0 14px 18px rgba(43, 10, 8, .35)); }
+  .co-paper { position: absolute; inset: 0; background: var(--paper); clip-path: var(--cut); }
+  .co-panel { position: absolute; inset: 10px; background: var(--surface); }
+  .co img { position: absolute; left: 10px; right: 10px; bottom: 10px; width: calc(100% - 20px); height: calc(100% - 20px + 24px); object-fit: contain; object-position: 50% 100%; filter: grayscale(1) contrast(1.35) brightness(1.05); }
+  .co-a { transform: rotate(2deg); }
+  .co-b { transform: rotate(-2deg); }
   @media (max-width: 900px) {
     .svc-main, .svc-side { grid-column: 1 / -1; }
-    .svc-side .ph-wrap { width: 88%; }
+  }
+  @media (max-width: 480px) {
+    .svc-co { grid-template-columns: minmax(0, 1fr); row-gap: var(--s5); }
+    .co { width: 72%; }
   }
 
   /* team */
@@ -560,29 +563,32 @@
       </div>
       <div class="svc-grid">
         <article class="svc svc-main" data-r>
-          <div class="ph-wrap"><div class="cut-in"><img src="img/cut.jpg" width="1200" height="800" loading="lazy" alt="Barber cutting a man’s hair with clippers, a comb held at the side"></div></div>
+          <div class="ph-wrap"><div class="cut-in"><img src="img/cut.jpg" width="1200" height="800" loading="lazy" alt="Barber taking scissors to the back of a client’s head, the client turned away from the camera"></div></div>
           <div class="txt">
             <span class="no num" aria-hidden="true">01</span>
             <h3>The cut</h3>
             <p>Skin fade, scissor crop, short back and sides, or a tidy-up before something important. Bring a photo if words fail you.</p>
             <div class="meta"><span class="chip">£24</span><span class="chip ghost">Walk in before noon</span></div>
           </div>
-          <figure class="svc-print" aria-hidden="true"><img src="img/razor.jpg" width="1200" height="800" loading="lazy" alt=""></figure>
         </article>
         <div class="svc-side">
-          <article class="svc" data-r style="--d:1">
-            <span class="no num" aria-hidden="true">02</span>
-            <h3>Beard trim</h3>
-            <div class="ph-wrap"><div class="cut-in"><img src="img/beard.jpg" width="900" height="1100" loading="lazy" alt="Barber shaping a man’s beard with scissors"></div></div>
-            <p>Length, shape and a sharp line, so it looks like a decision rather than an accident.</p>
-            <div class="meta"><span class="chip">£12</span><span class="chip ghost">£32 with a cut</span></div>
+          <article class="svc svc-co" data-r style="--d:1">
+            <figure class="co co-a"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/beard-cut.png" width="800" height="1000" loading="lazy" alt="Cut-out portrait of a man with a full, neatly shaped dark beard and a short faded haircut"></figure>
+            <div class="co-txt">
+              <span class="no num" aria-hidden="true">02</span>
+              <h3>Beard trim</h3>
+              <p>Length, shape and a sharp line, so it looks like a decision rather than an accident.</p>
+              <div class="meta"><span class="chip">£12</span><span class="chip ghost">£32 with a cut</span></div>
+            </div>
           </article>
-          <article class="svc" data-r style="--d:2">
-            <span class="no num" aria-hidden="true">03</span>
-            <h3>Hot-towel shave</h3>
-            <div class="ph-wrap"><div class="cut-in"><img src="img/shave.jpg" width="1200" height="800" loading="lazy" alt="Straight-razor shave in black and white, lather on the cheek"></div></div>
-            <p>The slow one. Hot towels, a straight razor and nobody asking anything of you for a while.</p>
-            <div class="meta"><span class="chip ghost ph">[Price to be confirmed]</span></div>
+          <article class="svc svc-co" data-r style="--d:2">
+            <figure class="co co-b"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/shave-cut.png" width="800" height="1000" loading="lazy" alt="Cut-out portrait of a man with a close buzz cut and a freshly tidied jaw"></figure>
+            <div class="co-txt">
+              <span class="no num" aria-hidden="true">03</span>
+              <h3>Hot-towel shave</h3>
+              <p>The slow one. Hot towels, a straight razor and nobody asking anything of you for a while.</p>
+              <div class="meta"><span class="chip ghost ph">[Price to be supplied]</span></div>
+            </div>
           </article>
         </div>
       </div>

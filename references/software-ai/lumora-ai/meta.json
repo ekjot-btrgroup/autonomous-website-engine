@@ -1,0 +1,19 @@
+{
+  "name": "Lumora AI",
+  "industry": "software-ai",
+  "also": ["services-consulting", "software-saas", "agency-web"],
+  "summary": "Pure black, engineered AI-automation agency site built on a visible 1px column grid, with halftone orange light, mono labels and terminal-style UI panels.",
+  "style": ["technical", "futuristic-dark", "swiss"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "black",
+  "palette": { "bg": "#000000", "surface": "#0a0a0a", "ink": "#ffffff", "muted": "#999999", "accent": "#ff6b35", "line": "#1f1f1f" },
+  "fonts": { "display": "Schibsted Grotesk", "body": "Cabin", "class": "sans", "pairing": "light-regular grotesk headlines with no tracking, humanist Cabin body, JetBrains Mono uppercase for tags and buttons" },
+  "hero": "split-image-right",
+  "sections": ["hero", "stats", "about", "features", "services", "testimonials", "portfolio", "process", "team", "pricing", "faq", "cta"],
+  "motion": 3,
+  "signature": ["visible page frame: 1px vertical rails and full-width separator bands with diagonal hatch fills between every section", "orange and white halftone dot light (liquid-gradient shader through a dot mask) behind a monospace workflow panel in the hero", "dot-matrix pixel arrow inside square-cornered white buttons", "sticky left tab list that switches the service panels as you scroll"],
+  "imagery": "almost no photography; terminal-like UI panels (workflow steps, struck-through task lists, segmented progress bars, app icon grids); one black and white founder portrait",
+  "layout_grid": "1200 canvas, 30px outer padding with 1px rails, content inside a framed column, 60px hatched separator bands, 2px radii everywhere",
+  "quality": 5
+}
