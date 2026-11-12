@@ -1,0 +1,44 @@
+{
+  "n": 10,
+  "name": "Atelier",
+  "concept": "A quiet art-gallery atelier: taupe walls, black type in a refined grotesk, one chocolate accent and generous white space; every face treated like a portrait.",
+  "refs": [
+    "agency-architecture/luneo",
+    "agency-architecture/datum"
+  ],
+  "style": "editorial",
+  "scheme": "mixed",
+  "palette": {
+    "bg": "#dcd4ca",
+    "surface": "#cfc5b9",
+    "ink": "#1b1715",
+    "muted": "#5f5650",
+    "accent": "#5a3a2c",
+    "line": "#bfb3a6"
+  },
+  "fonts": {
+    "display": "Archivo",
+    "body": "Inter",
+    "class": "sans"
+  },
+  "hero": "gallery-collage",
+  "sections": [
+    "hero",
+    "about",
+    "services",
+    "pricing",
+    "faq",
+    "process",
+    "testimonials",
+    "contact",
+    "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+    "hero as a gallery wall: three framed images of different sizes with museum-style captions",
+    "headline split over two lines with the second line indented to form a step",
+    "treatments listed like an exhibition index with numbers and short captions"
+  ],
+  "imagery": "black-and-white and muted-colour portraits of texture, flowers and the studio; framed with white mats and captions",
+  "why": "Matches her 'every face treated with intention' promise with a calm, artful feel."
+}

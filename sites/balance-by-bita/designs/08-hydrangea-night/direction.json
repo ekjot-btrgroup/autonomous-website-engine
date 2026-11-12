@@ -1,0 +1,44 @@
+{
+  "n": 8,
+  "name": "Hydrangea Night",
+  "concept": "A dark botanical evening: deep forest green, lavender hydrangea tones and elegant italic serif, quiet luxury for returning patients.",
+  "refs": [
+    "hospitality-hotels/elowenra",
+    "health-wellness/wellges"
+  ],
+  "style": "luxury",
+  "scheme": "dark",
+  "palette": {
+    "bg": "#16231e",
+    "surface": "#20302a",
+    "ink": "#efe9df",
+    "muted": "#b9b4a8",
+    "accent": "#b9a7da",
+    "line": "#31443c"
+  },
+  "fonts": {
+    "display": "Cormorant Garamond",
+    "body": "Work Sans",
+    "class": "serif"
+  },
+  "hero": "split-image-left",
+  "sections": [
+    "hero",
+    "services",
+    "about",
+    "process",
+    "testimonials",
+    "pricing",
+    "waitlist",
+    "faq",
+    "contact"
+  ],
+  "motion": 1,
+  "signature": [
+    "headings that split into upright sans and a lavender italic serif tail",
+    "image masks mixing a tall arch, a circle and a soft rectangle across sections",
+    "dark treatment cards with lavender hairlines and price placeholders"
+  ],
+  "imagery": "hydrangea and lily close-ups on deep green, low evening light, dewy textures",
+  "why": "Feels exclusive and calm, made for patients who want a long-term provider."
+}

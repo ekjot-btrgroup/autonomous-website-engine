@@ -1,0 +1,44 @@
+{
+  "n": 9,
+  "name": "Blush Studio",
+  "concept": "A modern beauty studio: blush and clay tones, rounded sans type, product-like treatment cards and a friendly, contemporary voice.",
+  "refs": [
+    "ecommerce-beauty/essential",
+    "agency-design/pane"
+  ],
+  "style": "soft-pastel",
+  "scheme": "light",
+  "palette": {
+    "bg": "#f3d9d3",
+    "surface": "#ecc9c1",
+    "ink": "#33221f",
+    "muted": "#6e5550",
+    "accent": "#9c3d5a",
+    "line": "#e0b9b0"
+  },
+  "fonts": {
+    "display": "Outfit",
+    "body": "Outfit",
+    "class": "sans"
+  },
+  "hero": "product-cards",
+  "sections": [
+    "hero",
+    "services",
+    "process",
+    "pricing",
+    "about",
+    "testimonials",
+    "faq",
+    "waitlist",
+    "contact"
+  ],
+  "motion": 1,
+  "signature": [
+    "treatment categories as product-style cards with brand names (Xeomin, Dysport, Daxxify, Sculptra) and areas",
+    "bento grid mixing a quote, the consultation steps and a Chicago waitlist card",
+    "two-line centred headlines with the second line in clay"
+  ],
+  "imagery": "soft blush backdrops, product-free flat lays of tools and skincare textures, rounded crops",
+  "why": "Approachable and modern for newcomers, with treatments explained like a clear menu."
+}
