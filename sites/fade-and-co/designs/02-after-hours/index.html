@@ -142,7 +142,7 @@ button,input,select{font:inherit;color:inherit}
 .seg b{font-family:var(--serif);font-weight:400;font-size:var(--fs-lead);line-height:1.2}
 .seg span{font-size:var(--fs-small);color:var(--muted)}
 .seg-walk{border-top-color:var(--ink)}
-.seg em{font-style:normal;font-size:var(--fs-small);font-weight:600;color:var(--ink);display:none}
+.seg em{white-space:nowrap;font-style:normal;font-size:var(--fs-small);font-weight:600;color:var(--ink);display:none}
 .seg.is-now em{display:inline}
 @media (min-width:960px){
   .hero{padding-top:calc(var(--nav-h) + var(--s7))}
@@ -231,7 +231,7 @@ button,input,select{font:inherit;color:inherit}
 .price-list{border-top:1px solid var(--line)}
 .price-row{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:var(--s4);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
 .price-row .name{font-family:var(--serif);font-size:var(--fs-h3);line-height:1.15}
-.price-row .name small{display:block;margin-top:var(--s1);font-family:var(--sans);font-size:var(--fs-small);color:var(--muted)}
+.price-row .price-note{grid-column:1 / -1;margin-top:calc(var(--s3) * -1);font-family:var(--sans);font-size:var(--fs-small);color:var(--muted)}
 .price-row .dots{border-bottom:1px dotted #444;transform:translateY(-6px)}
 .price-row .amt{font-family:var(--serif);font-size:var(--fs-h3);line-height:1;white-space:nowrap}
 .price-row .amt.tbc{font-family:var(--sans);font-size:var(--fs-small);line-height:1.4;text-align:right;white-space:normal}
@@ -360,8 +360,8 @@ button,input,select{font:inherit;color:inherit}
         <div class="day rv" style="--d:4" role="group" aria-labelledby="day-t">
           <p class="day-t" id="day-t"><span class="label">A day at the shop</span><span class="label">Tue to Sat</span></p>
           <div class="day-bar num">
-            <p class="seg seg-walk" data-seg="walk"><b>9am to noon</b><span>Walk in, no booking <em>· now</em></span></p>
-            <p class="seg seg-book" data-seg="book"><b>Noon to 7pm</b><span>Book a chair to be sure <em>· now</em></span></p>
+            <p class="seg seg-walk" data-seg="walk"><b>9am to noon</b><span>Walk in, no booking&nbsp;<em>· now</em></span></p>
+            <p class="seg seg-book" data-seg="book"><b>Noon to 7pm</b><span>Book a chair to be sure&nbsp;<em>· now</em></span></p>
           </div>
         </div>
       </div>
@@ -482,7 +482,7 @@ button,input,select{font:inherit;color:inherit}
       <ul class="price-list num r6">
         <li class="price-row rv"><span class="name">Haircut</span><span class="dots" aria-hidden="true"></span><span class="amt">£24</span></li>
         <li class="price-row rv"><span class="name">Beard trim</span><span class="dots" aria-hidden="true"></span><span class="amt">£12</span></li>
-        <li class="price-row rv"><span class="name">Cut + beard<small>Cut and beard together. £4 less than both apart.</small></span><span class="dots" aria-hidden="true"></span><span class="amt">£32</span></li>
+        <li class="price-row rv"><span class="name">Cut + beard</span><span class="dots" aria-hidden="true"></span><span class="amt">£32</span><span class="price-note">Cut and beard together. £4 less than both apart.</span></li>
         <li class="price-row rv"><span class="name">Hot-towel shave</span><span class="dots" aria-hidden="true"></span><span class="amt tbc">[Price to be supplied]</span></li>
       </ul>
     </div>
