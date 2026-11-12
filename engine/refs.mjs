@@ -29,13 +29,15 @@ export function unwrap(raw) {
   return j;
 }
 
-export function loadRefs() {
+// complete: only references whose import finished (meta.json and card.md written); used for matching briefs.
+export function loadRefs({ complete = false } = {}) {
   if (!fs.existsSync(REFS)) return [];
   const out = [];
   for (const ind of fs.readdirSync(REFS, { withFileTypes: true }).filter((e) => e.isDirectory())) {
     for (const r of fs.readdirSync(path.join(REFS, ind.name), { withFileTypes: true }).filter((e) => e.isDirectory())) {
       const dir = path.join(REFS, ind.name, r.name);
       const dna = readJson(path.join(dir, 'dna.json'), null); if (!dna) continue;
+      if (complete && !(fs.existsSync(path.join(dir, 'meta.json')) && fs.existsSync(path.join(dir, 'card.md')))) continue;
       out.push({ id: `${ind.name}/${r.name}`, industry: ind.name, dir, dna, meta: readJson(path.join(dir, 'meta.json'), {}), hasCard: fs.existsSync(path.join(dir, 'card.md')) });
     }
   }
@@ -157,7 +159,7 @@ function match() {
   const slug = a._[1] || die('Usage: npm run refs -- match <brief-slug>');
   const brief = readJson(path.join(P.briefs, `${slug}.json`));
   const n = Number(a.n || 10);
-  const refs = loadRefs(); const mem = memoryBonus(refs, brief);
+  const refs = loadRefs({ complete: true }); const mem = memoryBonus(refs, brief);
   const scored = refs.map((r) => ({ r, ...scoreRef(r, brief, mem) })).sort((x, y) => y.s - x.s);
   if (!scored.length) die('No references yet.');
   const picked = diversePick(scored, n);

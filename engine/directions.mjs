@@ -79,7 +79,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
   if (cmd === 'show') {
     dirs.forEach((d, i) => console.log(`${String(i + 1).padStart(2)}. ${d.name.padEnd(22)} ${String(d.style).padEnd(15)} ${String(d.scheme).padEnd(6)} ${d.palette?.bg} ${d.palette?.accent}  ${d.fonts?.display} / ${d.fonts?.body}  hero ${d.hero}  motion ${d.motion}`));
   } else {
-    const { errors, warns } = checkDirections(dirs, brief, new Set(loadRefs().map((r) => r.id)));
+    const { errors, warns } = checkDirections(dirs, brief, new Set(loadRefs({ complete: true }).map((r) => r.id)));
     for (const e of errors) console.log(`ERROR  ${e}`);
     for (const w of warns) console.log(`WARN   ${w}`);
     console.log(errors.length ? `\n${errors.length} problem(s): fix the directions and check again.` : `OK: 10 distinct directions${warns.length ? ` (${warns.length} warning(s))` : ''}.`);
