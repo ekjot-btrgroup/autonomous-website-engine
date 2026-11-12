@@ -1,0 +1,19 @@
+{
+  "name": "WELLGES",
+  "industry": "health-wellness",
+  "also": ["health-therapy", "ecommerce-beauty", "hospitality-hotels"],
+  "summary": "Inset-card spa site in bone, near-black moss and pale sage, mixing tight grotesk headlines with italic serif accent phrases and rich layered motion.",
+  "style": ["warm-organic", "editorial", "luxury"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 4, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "green",
+  "palette": { "bg": "#f3f1ec", "surface": "#ffffff", "ink": "#141712", "muted": "#7e837a", "accent": "#cfddb9", "line": "rgba(20,23,18,0.10)" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "sans", "pairing": "tight medium-weight grotesk headlines with an italic Instrument Serif phrase finishing each heading; Inter for body and caps labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "about", "features", "services", "about", "pricing", "testimonials", "process", "gallery", "blog", "faq", "cta", "newsletter"],
+  "motion": 4,
+  "signature": ["every heading splits into upright grotesk plus a sage or moss italic serif tail", "full-width rounded inset cards with 12px page gutter for hero, services and CTA", "sage marquee band under the hero mixing sans and italic serif", "giant edge-to-edge wordmark at the foot of the dark footer"],
+  "imagery": "warm editorial spa and tea photography, soft skin-tone portraits, botanical stills, misty landscapes",
+  "layout_grid": "1120px content, 12px gutter for inset full-width cards, 120-160px top padding per section, 4-column highlight cards, 3-column pricing",
+  "quality": 5
+}

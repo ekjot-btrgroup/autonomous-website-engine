@@ -1,0 +1,19 @@
+{
+  "name": "Voxera",
+  "industry": "software-ai",
+  "also": ["software-saas", "software-apps"],
+  "summary": "Cinematic AI voice-agent landing page: a blood-red canyon photo hero with a lone figure, black and pale-grey bands, and product UI chips floating over the same red landscape.",
+  "style": ["cinematic", "minimal", "technical"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 2, "warmth": 3, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "red",
+  "palette": { "bg": "#ffffff", "surface": "#f7f7f7", "ink": "#121212", "muted": "#666666", "accent": "#fb6704", "line": "#e5e5e5" },
+  "fonts": { "display": "Switzer", "body": "Switzer", "class": "sans", "pairing": "medium grotesk headlines at -0.04em, IBM Plex Mono uppercase labels with an orange dot" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "features", "features", "about", "features", "testimonials", "faq", "cta"],
+  "motion": 3,
+  "signature": ["one red canyon photograph reused as the backdrop of every product card so UI mockups feel set inside the brand world", "orange-dot mono eyebrow labels before each H2", "dark translucent call-flow chips (incoming, missed, on hold) as illustrations instead of screenshots"],
+  "imagery": "moody red desert canyon with a tiny silhouetted figure, warm lifestyle photos for results cards, dark glassy UI chips",
+  "layout_grid": "1400px canvas, 60px side padding, 60-100px section padding, 3-column card grid, 18px radius",
+  "quality": 4
+}

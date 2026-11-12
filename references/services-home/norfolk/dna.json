@@ -1,0 +1,657 @@
+{
+ "title": "Norfolk (copy)",
+ "pages": [
+  "/",
+  "/services",
+  "/fence-styles",
+  "/gallery",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/cookies",
+  "/404",
+  "/for-ai-agents"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Olive",
+   "light": "rgb(138, 143, 99)"
+  },
+  {
+   "name": "Olive Dark",
+   "light": "rgb(111, 116, 80)"
+  },
+  {
+   "name": "Warm Off White",
+   "light": "rgb(246, 243, 237)"
+  },
+  {
+   "name": "Stone",
+   "light": "rgb(217, 212, 200)"
+  },
+  {
+   "name": "Ink",
+   "light": "rgb(30, 36, 40)"
+  },
+  {
+   "name": "Muted",
+   "light": "rgb(95, 100, 103)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1 Hero",
+   "tag": "h1",
+   "font": "Onest",
+   "weight": 500,
+   "style": "normal",
+   "size": "70px",
+   "tracking": "-3.9px",
+   "leading": "67.2px",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "70px",
+    "medium": "58px",
+    "small": "46px"
+   }
+  },
+  {
+   "name": "H2 Section",
+   "tag": "h2",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "46px",
+   "tracking": "-0.035em",
+   "leading": "1.08em",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "46px",
+    "medium": "40px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "H3 Card",
+   "tag": "h3",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "H4 Supporting",
+   "tag": "h4",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.015em",
+   "leading": "1.25em",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "20px",
+    "medium": "19px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "H5 Small",
+   "tag": "h5",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "-0.04em",
+   "leading": "1.3em",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "17px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "font": "Onest",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "#5F6467",
+   "responsive": {}
+  },
+  {
+   "name": "Subtitle",
+   "font": "Onest",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "0em",
+   "leading": "20.1px",
+   "color": "#5F6467",
+   "responsive": {
+    "default": "17px"
+   }
+  },
+  {
+   "name": "Eyebrow",
+   "font": "Onest",
+   "weight": 700,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "2px",
+   "leading": "22.4px",
+   "transform": "uppercase",
+   "color": "#6F7450",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Link",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "transform": "uppercase",
+   "color": "#1E2428",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Card Description",
+   "font": "Onest",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.55em",
+   "color": "#5F6467",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Onest",
+   "weight": 600,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.045em",
+   "leading": "1em",
+   "transform": "uppercase",
+   "color": "#FFFFFF",
+   "responsive": {
+    "default": "12px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Eyebrow",
+  "Header",
+  "Footer",
+  "Stat Card",
+  "Service Card",
+  "Gallery Card",
+  "Testimonial Card",
+  "Page Hero",
+  "FAQ Item",
+  "Financing Band",
+  "CTA Band",
+  "Service Detail",
+  "Process Step",
+  "Product Row",
+  "Form Submit",
+  "Standard Showcase"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Home Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Header",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "#FFFFFF"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "fill": "data:framer/asset-reference,yizdypWr0HkYc1Gaia8a3SYJlg.png?originalFilename=imported.png&width=1672&height=941",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Image Overlay",
+    "Hero Title Content",
+    "Text Us QR Prompt"
+   ],
+   "text": 5,
+   "words": 41,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H1 Hero": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Craftsmanship",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 828,
+   "w": 1200,
+   "fill": "#FFFFFF",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 130px 32px",
+   "gap": "54px",
+   "childNames": [
+    "Craftsmanship Title Content",
+    "Craftsmanship Image Grid"
+   ],
+   "text": 3,
+   "words": 21,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Stat Card": 4
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2 Section": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/02-craftsmanship.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 1628,
+   "h": 881,
+   "w": 1200,
+   "fill": "#FFFFFF",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 24px 120px 24px",
+   "gap": "52px",
+   "childNames": [
+    "Services Section Header",
+    "Services Card Row"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Service Card": 3
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2 Section": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/03-services.jpg"
+  },
+  {
+   "name": "The Norfolk Standard",
+   "type": "FrameNode",
+   "y": 2509,
+   "h": 710,
+   "w": 1200,
+   "fill": "#1E2428",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px",
+   "gap": "0px",
+   "childNames": [
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Standard Showcase": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/04-the-norfolk-standard.jpg"
+  },
+  {
+   "name": "About Norfolk",
+   "type": "FrameNode",
+   "y": 3219,
+   "h": 710,
+   "w": 1200,
+   "fill": "#FFFFFF",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 100px 120px 100px",
+   "gap": "80px",
+   "childNames": [
+    "About Norfolk Image",
+    "About Norfolk Content"
+   ],
+   "text": 4,
+   "words": 42,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2 Section": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/05-about-norfolk.jpg"
+  },
+  {
+   "name": "Gallery Preview",
+   "type": "FrameNode",
+   "y": 3929,
+   "h": 724,
+   "w": 1200,
+   "fill": "#FFFFFF",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "108px 24px 108px 24px",
+   "gap": "46px",
+   "childNames": [
+    "Recent Work Header",
+    "Recent Work Project Grid"
+   ],
+   "text": 3,
+   "words": 17,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Gallery Card": 3
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2 Section": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/06-gallery-preview.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 4653,
+   "h": 791,
+   "w": 1200,
+   "fill": "#FFFFFF",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 0px 120px 0px",
+   "gap": "44px",
+   "childNames": [
+    "Testimonials Header",
+    "Testimonial Ticker Viewport"
+   ],
+   "text": 5,
+   "words": 36,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Testimonial Card": 2
+   },
+   "effects": {
+    "appear": 1,
+    "loop": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "H2 Section": 1,
+    "Subtitle": 1
+   },
+   "shot": "sections/07-testimonials.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Financing Band",
+   "y": 5444,
+   "h": 560,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Financing Band": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/08-financing-band.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "CTA Band",
+   "y": 6004,
+   "h": 271,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA Band": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/09-cta-band.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 14,
+  "loop": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 12,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.62s",
+     "delay": "0.08s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 12,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.62s",
+     "delay": "0.08s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "loop",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": -3424,
+   "y": 0,
+   "scale": 1,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "duration": "58s",
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {
+  "Onest": 13
+ },
+ "radii": [
+  [
+   "6px",
+   4
+  ],
+  [
+   "4px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "white",
+ "pageHeight": 6715,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/60555cb5-cec0-488b-9e00-c087caaa53a7.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/93b98ff8-dbcd-4e6e-9a48-c06069721d3a.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-home/norfolk",
+ "industry": "services-home",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  6765
+ ]
+}

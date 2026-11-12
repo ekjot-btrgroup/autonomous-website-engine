@@ -1,0 +1,19 @@
+{
+  "name": "VistaHaven",
+  "industry": "real-estate-agents",
+  "also": ["real-estate-listings", "real-estate-construction", "agency-architecture"],
+  "summary": "Clean white agency site with a rounded inset photo hero, uppercase Geist headlines, pill badges and a notched-corner image card motif.",
+  "style": ["corporate-clean", "minimal", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 3, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#ffffff", "surface": "#f3f3f3", "ink": "#2c2c2c", "muted": "#888888", "accent": "#000000", "line": "#dbdbdb" },
+  "fonts": { "display": "Geist", "body": "Geist", "class": "sans", "pairing": "Geist 600 uppercase for headings, Geist 300 for body and big light numerals" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "stats", "services", "features", "listings", "about", "team", "testimonials", "faq", "contact"],
+  "motion": 3,
+  "signature": ["inset 32px-radius hero photo whose bottom-right corner is cut out to hold an overlapping agent-avatar rating chip", "service accordion where inactive items collapse into vertical rotated uppercase labels beside the active image"],
+  "imagery": "twilight modern glass houses with warm interior light, crisp architectural daylight shots, corporate team portraits",
+  "layout_grid": "1280px canvas, 80px side padding, 80px section padding, 160px between subsections, 3-column card and listing grids, 32px radii",
+  "quality": 4
+}

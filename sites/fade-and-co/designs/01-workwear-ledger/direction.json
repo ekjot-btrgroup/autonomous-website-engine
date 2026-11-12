@@ -1,0 +1,41 @@
+{
+  "n": 1,
+  "name": "Workwear Ledger",
+  "concept": "An organised trade business: near-white bands, one tight grotesk, safety-yellow only where you book.",
+  "refs": [
+    "services-home/frontage"
+  ],
+  "style": "corporate-clean",
+  "scheme": "light",
+  "palette": {
+    "bg": "#f7f6f2",
+    "surface": "#ecebe5",
+    "ink": "#111315",
+    "muted": "#55585c",
+    "accent": "#f2d000",
+    "line": "#dcdad3"
+  },
+  "fonts": {
+    "display": "Inter Tight",
+    "body": "Inter",
+    "class": "sans"
+  },
+  "hero": "full-bleed-image",
+  "sections": [
+    "hero",
+    "services",
+    "pricing",
+    "gallery",
+    "team",
+    "booking",
+    "faq",
+    "contact"
+  ],
+  "motion": 2,
+  "signature": [
+    "inset rounded hero photo with a floating booking card that picks the service right there",
+    "price list as a clean ledger with tabular numerals and hairlines"
+  ],
+  "imagery": "bright, honest shop photography: chairs, clippers, real hands at work; 4:3 crops with 12px radius",
+  "why": "Feels organised and dependable, and puts booking a chair one tap away on every screen."
+}

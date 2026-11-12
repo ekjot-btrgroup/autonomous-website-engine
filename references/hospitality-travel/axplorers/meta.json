@@ -1,0 +1,19 @@
+{
+  "name": "Axplorers",
+  "industry": "hospitality-travel",
+  "also": ["hospitality-hotels", "events-weddings"],
+  "summary": "Warm paper-and-sand luxury travel agency site with a golden-hour video hero, a glass enquiry bar and pill-shaped photo inlays inside the headline type.",
+  "style": ["warm-organic", "editorial", "luxury"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 3, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#efe8d9", "surface": "#ebdec7", "ink": "#2a241e", "muted": "#6f665c", "accent": "#b2894c", "line": "#d8c8ac" },
+  "fonts": { "display": "Parastoo", "body": "Google Sans Flex", "class": "serif", "pairing": "soft bookish serif at 500 for headings and buttons, rounded geometric sans for body, labels and uppercase eyebrows" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "about", "listings", "services", "listings", "stats", "testimonials", "blog", "cta", "newsletter"],
+  "motion": 4,
+  "signature": ["pill-shaped photo capsules set inline between words of a centred display statement", "frosted glass enquiry form docked along the bottom of the video hero", "dark full-bleed photo cards with price chip top right, rating and duration pills and a full-width sand button", "headline accent word tinted gold, often italic, at the end of every H2"],
+  "imagery": "golden-hour AI travel photography: cliffside terraces, temples, aurora, candlelit dinners; warm amber grade throughout",
+  "layout_grid": "1200px canvas, 40px side padding, 80px section padding, 3-column card grids with 20px gaps, 20px card radius",
+  "quality": 4
+}

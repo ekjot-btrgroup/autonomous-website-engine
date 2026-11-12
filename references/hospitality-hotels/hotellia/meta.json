@@ -1,0 +1,19 @@
+{
+  "name": "Hotellia",
+  "industry": "hospitality-hotels",
+  "also": ["hospitality-travel", "hospitality-restaurants"],
+  "summary": "Square-cornered, grey-and-white Mediterranean boutique hotel site with an all-caps Baskerville voice, a giant wordmark bleeding off the hero and sticky stacked experience cards.",
+  "style": ["editorial", "minimal", "luxury"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 3, "warmth": 3, "modernity": 3 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#f2f2f2", "surface": "#ffffff", "ink": "#000000", "muted": "#222222", "accent": "#1c3d2d", "line": "#ebebeb" },
+  "fonts": { "display": "Libre Baskerville", "body": "Inter", "class": "serif", "pairing": "all-caps transitional serif for every heading and label, plain Inter for body copy" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "services", "features", "rooms", "pricing", "testimonials", "about", "faq"],
+  "motion": 3,
+  "signature": ["hotel name set as a giant all-caps serif wordmark cropped by the bottom of the hero and repeated in the footer", "experience rows as full-width white cards that stick and stack while scrolling", "a signed letter from the manager as a homepage section", "zero radius everywhere: photos, cards and buttons are hard rectangles on light grey"],
+  "imagery": "sunlit terracotta and whitewash Mediterranean architecture, pools, arched rooms with beamed ceilings, warm daylight",
+  "layout_grid": "1200px canvas, 20px side padding, 64px section padding and 64px header gap, 2-column rooms, 3-column experience rows",
+  "quality": 3
+}

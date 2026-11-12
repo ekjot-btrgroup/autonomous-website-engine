@@ -1,0 +1,19 @@
+{
+  "name": "Swiper",
+  "industry": "software-fintech",
+  "also": ["software-saas", "software-ai"],
+  "summary": "Near-black spend-management SaaS page led by a full product dashboard mock, with a disciplined Inter system, tiny status pills and one electric blue for action.",
+  "style": ["technical", "futuristic-dark", "corporate-clean"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 3, "warmth": 1, "modernity": 4 },
+  "scheme": "dark",
+  "hue": "blue",
+  "palette": { "bg": "#0a0a0a", "surface": "#101012", "ink": "#f2f2f2", "muted": "#8f8f94", "accent": "#0084ff", "line": "#2c2c30" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "single Inter system: 600 headings with -2% tracking, 13-16px secondary-grey body, 12px uppercase eyebrow pills" },
+  "hero": "dashboard-mock",
+  "sections": ["hero", "logos", "features", "features", "testimonials", "process", "pricing", "blog", "faq", "cta"],
+  "motion": 2,
+  "signature": ["hero dashboard mock tilted back 16deg that straightens on view, sitting in a soft ember glow with faint star specks", "every section opens with the same small outlined pill eyebrow, giving a product-UI rhythm", "semantic accent tokens (green, purple, blue, yellow, red) at 8% fill and 14% border used only for tiny status badges"],
+  "imagery": "almost none; product UI (sidebar dashboard, line chart, category bars) carries the page, case-study cards use aerial and industrial photos",
+  "layout_grid": "1200 canvas, 1120 max content with 40px padding (1040 inner), 120px top / 80px bottom section padding, 2x2 and 3x3 grids, 8-12px radius",
+  "quality": 4
+}

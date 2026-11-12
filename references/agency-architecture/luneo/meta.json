@@ -1,0 +1,19 @@
+{
+  "name": "Luneo",
+  "industry": "agency-architecture",
+  "also": ["ecommerce-furniture", "agency-design", "real-estate-listings"],
+  "summary": "Warm sand interior studio site with a fixed full-bleed hero the page scrolls over, staggered uppercase grotesk headlines and numbered section titles.",
+  "style": ["warm-organic", "editorial", "minimal"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#F2EDE4", "surface": "#F7F6F2", "ink": "#171715", "muted": "#7A756B", "accent": "#171715", "line": "rgba(115,115,115,0.1)" },
+  "fonts": { "display": "Archivo", "body": "Inter Display", "class": "sans", "pairing": "Archivo 400 with tight -0.03em tracking for headlines (capitalised or uppercase), Inter Display 400 for body and labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "portfolio", "services", "gallery", "process", "testimonials", "blog", "cta"],
+  "motion": 3,
+  "signature": ["fixed hero photo that the sand-coloured page slides up over", "headline split over two lines with the second line indented to form a step", "section titles with a small superscript index number", "staggered project grid where cards sit on different rows and offsets"],
+  "imagery": "warm, low-light AI-rendered interiors in clay, oak and plaster with arches and window light; mostly 4:3 crops with 20px corners on cards",
+  "layout_grid": "1200 frame, about 1136px content with 32px sides, large left section titles with right-aligned intro text, 20px radius on cards and media, hairline separators",
+  "quality": 4
+}

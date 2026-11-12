@@ -1,0 +1,19 @@
+{
+  "name": "Elowenra",
+  "industry": "hospitality-hotels",
+  "also": ["hospitality-travel", "health-wellness", "events-weddings"],
+  "summary": "Quiet boutique retreat site in stone and forest green, with a condensed serif voice, inset rounded hero and dark panels, and arch, circle and swoosh-cut image masks.",
+  "style": ["editorial", "warm-organic", "luxury"],
+  "feel": { "tone": 2, "energy": 1, "luxury": 4, "density": 2, "warmth": 3, "modernity": 3 },
+  "scheme": "mixed",
+  "hue": "green",
+  "palette": { "bg": "#e9e6dc", "surface": "#f4f2eb", "ink": "#16231f", "muted": "#5c655f", "accent": "#a8c38c", "line": "rgba(22,35,31,0.14)" },
+  "fonts": { "display": "Instrument Serif", "body": "Inter", "class": "serif", "pairing": "tall condensed serif at 400 for headings and italic quotes, Inter for body, wide-tracked uppercase eyebrows and buttons" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "rooms", "gallery", "testimonials", "contact", "about", "blog", "cta"],
+  "motion": 2,
+  "signature": ["page content inset 12px from the viewport so hero and dark panels read as huge rounded cards on stone", "image masks that mix a tall arch, a circle and one corner swept into a 320px curve", "numbered category cards with a hairline between index and uppercase label", "pale sage dot after every button and link label"],
+  "imagery": "lush architectural retreats, linen bedrooms, slow tables, English countryside, cool green-blue grade",
+  "layout_grid": "1200px canvas, 12px outer inset for panels, 40px content padding, 128px section padding, 3-column cards, 24 to 32px radius",
+  "quality": 4
+}

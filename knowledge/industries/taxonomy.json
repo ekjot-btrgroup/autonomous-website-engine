@@ -1,0 +1,22 @@
+{
+  "_about": "Industry folders in references/ are <category>-<sub> (e.g. health-therapy). Categories follow the Framer marketplace. A brief maps to the closest folder; 'related' lists folders worth borrowing from.",
+  "portfolio": ["artists", "designers", "photography", "resume"],
+  "software": ["ai", "apps", "fintech", "saas"],
+  "agency": ["architecture", "design", "marketing", "web"],
+  "ecommerce": ["beauty", "digital", "fashion", "furniture"],
+  "services": ["consulting", "education", "home", "legal"],
+  "health": ["fitness", "medical", "therapy", "wellness"],
+  "publishing": ["blogs", "entertainment", "magazines", "news"],
+  "real-estate": ["agents", "construction", "listings", "management"],
+  "hospitality": ["food", "hotels", "restaurants", "travel"],
+  "events": ["conferences", "music", "sports", "weddings"],
+  "related": {
+    "health-medical": ["health-wellness", "health-therapy", "services-consulting"],
+    "health-wellness": ["health-therapy", "ecommerce-beauty", "hospitality-hotels"],
+    "hospitality-restaurants": ["hospitality-food", "hospitality-hotels"],
+    "real-estate-listings": ["real-estate-agents", "hospitality-hotels", "agency-architecture"],
+    "software-saas": ["software-ai", "software-fintech", "software-apps"],
+    "services-legal": ["services-consulting", "software-fintech"],
+    "agency-architecture": ["agency-design", "real-estate-construction", "ecommerce-furniture"]
+  }
+}

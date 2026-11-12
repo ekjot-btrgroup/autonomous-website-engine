@@ -1,32 +1,48 @@
 ---
 name: shortlist
-description: Turn a brand brief into the 10 most relevant designs from the library, each with a one-line reason, then let the user pick 3. Handles the brief and the 3 questions (animations, colours, typography) in strict order. Use when the user gives a brief or asks for a website.
+description: Turn a brand brief into 10 new, distinct, client-ready homepage designs built from the reference library (Framer templates), each with a one-line reason, then let the user pick 3. Handles the brief and the 3 questions (animations, colours, typography) in strict order. Use when the user gives a brief or asks for a website.
 ---
-# Shortlist
+# Brief -> 10 designs
 
-Follow CLAUDE.md "Talking to the user". Steps run in order; keep anything the user gives early.
+Follow CLAUDE.md "Talking to the user". Steps run in order; keep anything the user gives early. Quality first:
+every design must pass `docs/DESIGN-QUALITY.md`. This skill authorises subagents (design-builder, design-critic)
+and reading screenshots. If the `design-builder` / `design-critic` agent types are not
+available, use general-purpose agents told to read and follow `.claude/agents/design-builder.md` / `design-critic.md`.
 
 0. Silently: `npm run -s sync`.
-1. **Brief received** (name, what they do, audience, feel; anything else is a bonus). Reply only:
-   "I have noted the company brief and have last 3 questions."
+1. **Brief received.** Reply only: "I have noted the company brief and have last 3 questions."
    **Requirements**
    - Animations: none, subtle or rich?
-   - Colours: your brand colours, "choose for me", or "keep the designs' colours"?
-   - Typography: font names, "choose for me", or "keep the designs' fonts"?
-   (List only the ones still unanswered. If the brief is missing something essential such as what the business does, ask for it in Requirements instead.)
-2. **Answers received.** Write `briefs/<slug>.json` (fields in `briefs/_template.json`; short values; never invent facts):
-   - `niche`: closest word from `niches` in `knowledge/vocabulary.json`.
-   - `profile`: your 1-5 reading of tone, energy, luxury, density, warmth, modernity (most important field for matching).
-   - `style`, `goals`, `scheme` (light/dark/omit), `animations` (none/subtle/rich), `avoid`, `sections` (page order; default `navbar, hero, features, about, testimonials, cta, footer` adapted to the business).
-   - `colors`: `{primary, accent}` hex if given; "choose for me" -> pick 2 that fit; "keep" -> omit.
-   - `fonts`: `{heading, body}` Google Fonts if given; "choose for me" -> pick a fitting pair; "keep" -> omit.
-3. `npm run -s shortlist -- <slug>`. If it reports untagged designs, run `/add-designs` step 5, then repeat.
-4. One line per design: write `.cache/why-<slug>.json` `{"<id>": "<why it suits THIS client, max ~20 words>"}` for all 10 (honest about weaker fits), then `npm run -s shortlist -- <slug> --why .cache/why-<slug>.json`.
-5. Show the 10:
-   - `npm run -s sheet -- <slug>` and send `reports/<slug>/shortlist.png` with SendUserFile (render) if that tool exists. Do not read the image yourself.
-   - `delivery` html: also `npm run -s export -- <slug> --shortlist`; send `output/<slug>/<slug>-shortlist.zip` with SendUserFile if available, otherwise say "Open output/<slug>/shortlist/index.html".
-   Then silently commit + release.
-6. Reply: one line per design, `1. <Name>: <why line>` (10 lines), nothing else, then
+   - Colours: your brand colours, or "choose for me"?
+   - Typography: font names, or "choose for me"?
+   (List only what is still unanswered. If the brief lacks something essential, such as what the business does
+   or where it is, ask for it in Requirements too.)
+2. **Answers received.** Write `briefs/<slug>.json` (format: `briefs/_template.json`). `industry` = closest
+   `<category>-<sub>` in `knowledge/industries/taxonomy.json`. `feel` = your 1-5 reading. `facts` only from the
+   user; never invent. Brand colours/fonts given: put them in `colors` / `fonts` (`{primary, accent}`, `{heading, body}`).
+3. **Industry knowledge.** If `knowledge/industries/<industry>.md` is missing: research 4-6 strong real sites in
+   this industry plus 1-2 guides (web search / web-fetch agent), add what the references in that industry show
+   (`npm run -s refs -- list --industry <industry>`), and write the recipe (format in `knowledge/industries/README.md`).
+4. `npm run -s refs -- match <slug>`: 10 diverse references ranked for this brief. Read the `card.md` and
+   `meta.json` of each (and of any other reference you want to borrow from).
+5. **10 art directions** in `briefs/<slug>.directions.json` (array of 10, fields listed at the top of
+   `engine/directions.mjs`). Each one: a named concept for THIS client, 1 primary reference (+0-2 secondary),
+   its own palette (hex, contrast-safe), its own Google Fonts pairing, hero layout, section order from the
+   recipe and brief, motion level within the animation answer, 2-3 signature moments, imagery direction and a
+   one-line `why` for this client (max ~20 words, honest). Brand colours given: every direction uses them, with
+   different roles, neutrals and backgrounds. Run `npm run -s directions -- check <slug>` and fix until OK.
+6. **Build in parallel:** launch 10 `design-builder` agents in one message (mode `build`, slug, direction n),
+   in the background. Wait for all 10.
+7. `npm run -s review -- <slug>`. Then launch 4-5 `design-critic` agents in parallel (2-3 designs each, never
+   the builder). For every design with verdict `fix`, or `FIX` in the review: send its critique to a
+   `design-builder` (mode `fix`). Repeat review + critique once more for those. A design still failing after
+   2 rounds: rebuild it from a revised direction.
+8. `npm run -s review -- <slug> --gallery`. Send `reports/<slug>/designs.png` with SendUserFile (render) and
+   `output/<slug>/<slug>-designs.zip` (attach) if that tool exists; otherwise say
+   "Open output/<slug>/designs/index.html". Silently commit + release.
+9. Reply: one line per design, `1. <Name>: <why>` (10 lines), nothing else, then
    **Requirements**
    - Your 3 picks: reply with their numbers (for example 2, 5, 7)
-7. Feedback at any time (one command each): "X is great for bakeries" -> `npm run -s remember -- <id> --good "bakeries"`; "not for law firms" -> `--bad "law firms"`; a taste -> `npm run -s remember -- --for "luxury" --prefer "serif, dark" --avoid "gradient"` (omit `--for` for all briefs). Reply "Noted." plus Requirements.
+10. Feedback any time: a taste ("more editorial", "no dark designs for clinics") ->
+    `npm run -s remember -- --for "<industry or kind of brief>" --prefer "<words>" --avoid "<words>"` (omit `--for` for all briefs).
+    Reply "Noted." plus Requirements.

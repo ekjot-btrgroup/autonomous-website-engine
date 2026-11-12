@@ -1,0 +1,19 @@
+{
+  "name": "Frontage",
+  "industry": "services-home",
+  "also": ["services-consulting", "real-estate-management"],
+  "summary": "Crisp off-white trade-services site with an inset photo hero card, a floating quote picker and one hit of safety yellow on every CTA.",
+  "style": ["corporate-clean", "minimal", "bold-graphic"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 3, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "yellow",
+  "palette": { "bg": "#fafaf8", "surface": "#f2f2ee", "ink": "#0c1018", "muted": "#5c5f66", "accent": "#fff555", "line": "#e5e5e0" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "sans", "pairing": "single grotesk family; medium 500 display with tight -0.045em tracking, regular 400 for paragraphs" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "stats", "gallery", "services", "testimonials", "process", "portfolio", "testimonials", "pricing", "contact", "faq", "booking", "cta"],
+  "motion": 3,
+  "signature": ["hero photo inset 6px into a rounded card with a glass pill nav floating over it and a white selection-chip quote widget docked bottom right", "before/after drag sliders in a 3-up grid", "services cards with a frosted tag pill on the photo and an icon meta row under a hairline"],
+  "imagery": "bright documentary photos of crews and clean house exteriors, one dusk shot for the plan card",
+  "layout_grid": "1200px canvas, 40px side padding, 112px section padding, 56px header-to-grid gap, 3-column cards with 20px gutters",
+  "quality": 4
+}

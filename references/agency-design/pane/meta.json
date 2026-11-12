@@ -1,0 +1,19 @@
+{
+  "name": "Pane",
+  "industry": "agency-design",
+  "also": ["agency-web", "software-saas", "services-consulting"],
+  "summary": "Warm off-white product design studio site with a soft serif display, a framed dashboard hero on a fluted-glass gradient and bento cards that show real UI artefacts.",
+  "style": ["editorial", "corporate-clean", "glassy"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 3, "warmth": 3, "modernity": 5 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#F8F7F4", "surface": "#FFFFFF", "ink": "#17171A", "muted": "#6C6A73", "accent": "#3346D3", "line": "#E4E1DA" },
+  "fonts": { "display": "Geist Serif", "body": "Satoshi", "class": "serif", "pairing": "Geist Serif 400 with tight negative tracking for display, stats and prices; Satoshi 400 to 500 for body, labels, nav and buttons" },
+  "hero": "dashboard-mock",
+  "sections": ["hero", "logos", "services", "process", "portfolio", "features", "pricing", "testimonials", "testimonials", "faq", "cta"],
+  "motion": 3,
+  "signature": ["product dashboard framed inside a rounded panel of fluted-glass gradient with named multiplayer cursors", "bento proof cards that show artefacts (avatars, a month bar chart, a file list, a pull-request checklist) instead of icons", "serif numerals for stats and prices set like headlines", "process steps as sticky cards each carrying a UI screenshot on a gradient panel"],
+  "imagery": "high-fidelity SaaS UI screenshots (tables, maps, mobile screens) on warm orange-to-lilac fluted glass gradients; one candid portrait for the case study",
+  "layout_grid": "1060px content (1200 frame, 70px sides), 112px section padding, centred section headers, 16 to 20px card radius, 1px warm borders, soft layered shadows on cards",
+  "quality": 5
+}

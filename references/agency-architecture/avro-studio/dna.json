@@ -1,0 +1,738 @@
+{
+ "title": "Avro Studio (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/contact",
+  "/projects/:NswYrO9HZ",
+  "/projects",
+  "/blogs",
+  "/blogs/:SKnD9r81s",
+  "/404",
+  "/legal/:oQxrH3IjB"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1439.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Primary Text (light)",
+   "light": "rgb(207, 207, 207)"
+  },
+  {
+   "name": "Primary Text (Dark)",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Black 10%",
+   "light": "rgba(0, 0, 0, 0.1)"
+  },
+  {
+   "name": "White 100%",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "BG",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "White 10%",
+   "light": "rgba(255, 255, 255, 0.1)"
+  },
+  {
+   "name": "White 5%",
+   "light": "rgba(255, 255, 255, 0.05)"
+  },
+  {
+   "name": "Text Secondery (Dark)",
+   "light": "rgba(18, 18, 18, 0.6)"
+  },
+  {
+   "name": "Secondary text (Light)",
+   "light": "rgba(255, 255, 255, 0.4)"
+  },
+  {
+   "name": "White 2%",
+   "light": "rgba(255, 255, 255, 0.02)"
+  },
+  {
+   "name": "White 20%",
+   "light": "rgba(255, 255, 255, 0.2)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(0, 0, 0)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "44px",
+   "transform": "none",
+   "color": "token:164e1757-a040-48e6-aa25-1a3c8495251c, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "44px",
+    "medium": "40px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Body L",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.5em",
+   "color": "token:164e1757-a040-48e6-aa25-1a3c8495251c, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body Normal",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:282f31e5-7d57-45cd-9733-3b39935d29f9, rgba(255, 255, 255, 0.6) /* {\"name\":\"Secondary text (Light)\"} */",
+   "responsive": {
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body XL",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:3ae77c60-aa7a-46e5-9329-38c4ce7d8df6, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "32px",
+    "medium": "32px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading 4b",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "transform": "none",
+   "color": "token:164e1757-a040-48e6-aa25-1a3c8495251c, rgb(230, 230, 230) /* {\"name\":\"Primary Text (light)\"} */",
+   "responsive": {
+    "default": "20px",
+    "medium": "19px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "100px",
+   "leading": "1em",
+   "transform": "uppercase",
+   "color": "token:3ae77c60-aa7a-46e5-9329-38c4ce7d8df6, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "100px",
+    "medium": "70px",
+    "small": "50px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 400,
+   "style": "normal",
+   "size": "44px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:164e1757-a040-48e6-aa25-1a3c8495251c, rgb(230, 230, 230) /* {\"name\":\"Primary Text (light)\"} */",
+   "responsive": {
+    "default": "44px",
+    "medium": "32px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.01em",
+   "leading": "120%",
+   "transform": "none",
+   "color": "token:164e1757-a040-48e6-aa25-1a3c8495251c, rgb(230, 230, 230) /* {\"name\":\"Primary Text (light)\"} */",
+   "responsive": {
+    "default": "36px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Heading 4a",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "color": "token:3ae77c60-aa7a-46e5-9329-38c4ce7d8df6, rgb(0, 0, 0) /* {\"name\":\"Black\"} */",
+   "responsive": {
+    "default": "24px",
+    "medium": "20px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body Small",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:3ae77c60-aa7a-46e5-9329-38c4ce7d8df6, rgb(0, 0, 0) /* {\"name\":\"Primary Text (Dark)\"} */",
+   "responsive": {
+    "default": "14px",
+    "medium": "14px",
+    "small": "13px"
+   }
+  },
+  {
+   "name": "Caption",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "leading": "1.5em",
+   "color": "token:282f31e5-7d57-45cd-9733-3b39935d29f9, rgb(156, 156, 156)",
+   "responsive": {
+    "default": "12px"
+   }
+  }
+ ],
+ "components": [
+  "Navbar",
+  "Statistics",
+  "Tag",
+  "Project Card",
+  "Arrow Icon",
+  "Button",
+  "List Item",
+  "FAQ Accordion",
+  "Blog Card",
+  "Footer",
+  "Logo",
+  "Company Logo",
+  "Hero Tag",
+  "Goals Card",
+  "Team Card",
+  "FAQ",
+  "Form Button",
+  "Author",
+  "Logo Mark",
+  "Cursor",
+  "Get Template",
+  "Plus",
+  "Testimonial - Slide show",
+  "Testimonail Card",
+  "Service Card",
+  "Background Color Change",
+  "Process Card",
+  "NavLinks"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "System",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navbar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "CTA",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Progressive Blur",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Get Template",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Black"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": -28,
+   "h": 800,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 30px 0px 30px",
+   "gap": "20px",
+   "childNames": [
+    "Overlay",
+    "BG image",
+    "Upper Container"
+   ],
+   "text": 2,
+   "words": 8,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 2,
+    "styleTransform": 1,
+    "text": 2
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Heading 4a": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 772,
+   "h": 713,
+   "w": 1440,
+   "fill": "token:BG",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "150px 30px 150px 30px",
+   "gap": "100px",
+   "childNames": [
+    "Upper container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "ScrollColorText": 1,
+    "Statistics": 3
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "Projects",
+   "type": "FrameNode",
+   "y": 1485,
+   "h": 2993,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "100px",
+   "childNames": [
+    "Heading",
+    "Card container",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Button": 1,
+    "Project Card": 5,
+    "Background Color Change": 1
+   },
+   "effects": {
+    "text": 1,
+    "scrollVariant": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/03-projects.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 4478,
+   "h": 1071,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "80px",
+   "childNames": [
+    "Header",
+    "Card "
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Service Card": 5
+   },
+   "effects": {
+    "text": 1,
+    "appear": 5
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/04-services.jpg"
+  },
+  {
+   "name": "Compare",
+   "type": "FrameNode",
+   "y": 5549,
+   "h": 1137,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "80px",
+   "childNames": [
+    "Header",
+    "FrameNode"
+   ],
+   "text": 2,
+   "words": 9,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "SplitReveal": 1
+   },
+   "effects": {
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 2
+   },
+   "shot": "sections/05-compare.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 6686,
+   "h": 2317,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "80px",
+   "childNames": [
+    "Header",
+    "FrameNode"
+   ],
+   "text": 2,
+   "words": 12,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 2,
+    "Process Card": 4
+   },
+   "effects": {
+    "text": 2,
+    "styleTransform": 4,
+    "sticky": 4
+   },
+   "styles": {
+    "Heading 2": 2
+   },
+   "shot": "sections/06-process.jpg"
+  },
+  {
+   "name": "Testimonial",
+   "type": "FrameNode",
+   "y": 9003,
+   "h": 1040,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 30px 150px 30px",
+   "gap": "80px",
+   "childNames": [
+    "Header container",
+    "ComponentInstanceNode"
+   ],
+   "text": 2,
+   "words": 11,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Testimonial - Slide show": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body Normal": 1
+   },
+   "shot": "sections/07-testimonial.jpg"
+  },
+  {
+   "name": "Blog",
+   "type": "FrameNode",
+   "y": 10043,
+   "h": 835,
+   "w": 1440,
+   "fill": "token:Black",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "80px",
+   "childNames": [
+    "Header container",
+    "Content"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body Normal": 1
+   },
+   "shot": "sections/08-blog.jpg"
+  }
+ ],
+ "effects": {
+  "sticky": 5,
+  "appear": 9,
+  "styleTransform": 5,
+  "text": 10,
+  "scrollVariant": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.27,
+      0.63,
+      0.45,
+      1.06
+     ],
+     "duration": "1.2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.27,
+      0.63,
+      0.45,
+      1.06
+     ],
+     "duration": "1.2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "end",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "sC_f9uX7J",
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 0.9,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "character",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "20px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "5px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.8s",
+     "bounce": 0,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "scrollVariant": {
+   "trigger": "onScrollTarget",
+   "threshold": 1,
+   "replay": true,
+   "sections": [
+    {
+     "target": "Itr6QztvM",
+     "variant": "nkKj0KIFe"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "0px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "rgb(255, 255, 255)",
+ "pageHeight": 11960,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/a059679c-d998-4f3a-876f-cce1305ec056.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/2f4233de-c5c0-4377-9da6-49afb986b98d.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "agency-architecture/avro-studio",
+ "industry": "agency-architecture",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  12760
+ ]
+}

@@ -1,0 +1,403 @@
+[
+ {
+  "n": 1,
+  "name": "Workwear Ledger",
+  "concept": "An organised trade business: near-white bands, one tight grotesk, safety-yellow only where you book.",
+  "refs": [
+   "services-home/frontage"
+  ],
+  "style": "corporate-clean",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f7f6f2",
+   "surface": "#ecebe5",
+   "ink": "#111315",
+   "muted": "#55585c",
+   "accent": "#f2d000",
+   "line": "#dcdad3"
+  },
+  "fonts": {
+   "display": "Inter Tight",
+   "body": "Inter",
+   "class": "sans"
+  },
+  "hero": "full-bleed-image",
+  "sections": [
+   "hero",
+   "services",
+   "pricing",
+   "gallery",
+   "team",
+   "booking",
+   "faq",
+   "contact"
+  ],
+  "motion": 2,
+  "signature": [
+   "inset rounded hero photo with a floating booking card that picks the service right there",
+   "price list as a clean ledger with tabular numerals and hairlines"
+  ],
+  "imagery": "bright, honest shop photography: chairs, clippers, real hands at work; 4:3 crops with 12px radius",
+  "why": "Feels organised and dependable, and puts booking a chair one tap away on every screen."
+ },
+ {
+  "n": 2,
+  "name": "After Hours",
+  "concept": "The shop at night: near-black, warm copper light, a quiet serif voice and two-tone headlines.",
+  "refs": [
+   "services-consulting/tandem-co-agency"
+  ],
+  "style": "cinematic",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#0d0d0d",
+   "surface": "#181818",
+   "ink": "#f4f1ea",
+   "muted": "#a8a39a",
+   "accent": "#d9824a",
+   "line": "#2a2a2a"
+  },
+  "fonts": {
+   "display": "Instrument Serif",
+   "body": "Manrope",
+   "class": "serif"
+  },
+  "hero": "big-type-editorial",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "gallery",
+   "pricing",
+   "booking",
+   "contact"
+  ],
+  "motion": 3,
+  "signature": [
+   "headlines where the second half fades to grey",
+   "sticky service index that lights up as the photos scroll past"
+  ],
+  "imagery": "low-key, warm tungsten photos of the chair, steam and blades; deep shadows",
+  "why": "Gives a neighbourhood barber a premium, grown-up edge without losing the friendly voice."
+ },
+ {
+  "n": 3,
+  "name": "Parchment Chair",
+  "concept": "A barbershop as a literary journal: cream bands, condensed serif, quiet confidence in craft.",
+  "refs": [
+   "agency-marketing/fathom"
+  ],
+  "style": "editorial",
+  "scheme": "light",
+  "palette": {
+   "bg": "#efe9dc",
+   "surface": "#e5dcc9",
+   "ink": "#1c1a18",
+   "muted": "#5a554c",
+   "accent": "#a4482f",
+   "line": "#d6cdb9"
+  },
+  "fonts": {
+   "display": "Libre Caslon Condensed",
+   "body": "Geist",
+   "class": "serif"
+  },
+  "hero": "split-image-left",
+  "sections": [
+   "hero",
+   "services",
+   "about",
+   "pricing",
+   "team",
+   "faq",
+   "booking",
+   "contact"
+  ],
+  "motion": 2,
+  "signature": [
+   "giant condensed service names beside small price chips",
+   "section header kit with dot eyebrow, hairlines and a running counter"
+  ],
+  "imagery": "film-toned portraits and close crops of tools, warm and slightly grainy",
+  "why": "Makes craft and tradition the story, ideal if the shop wants to feel classic rather than trendy."
+ },
+ {
+  "n": 4,
+  "name": "Barber Pole Poster",
+  "concept": "Loud and local: deep red poster blocks, a heavy condensed display and yellow stickers for prices.",
+  "refs": [
+   "hospitality-restaurants/irish-cafe"
+  ],
+  "style": "bold-graphic",
+  "scheme": "colour",
+  "palette": {
+   "bg": "#8f1d17",
+   "surface": "#a3241c",
+   "ink": "#fff8ee",
+   "muted": "#f1d9cf",
+   "accent": "#f4c430",
+   "line": "#b8473f"
+  },
+  "fonts": {
+   "display": "Anton",
+   "body": "Archivo",
+   "class": "display"
+  },
+  "hero": "collage",
+  "sections": [
+   "hero",
+   "pricing",
+   "services",
+   "team",
+   "gallery",
+   "booking",
+   "contact"
+  ],
+  "motion": 3,
+  "signature": [
+   "hero collage of cut-out photos and price stickers",
+   "scrolling ticker of services between sections"
+  ],
+  "imagery": "high-contrast cut-out portraits and tools on flat colour",
+  "why": "Impossible to miss on a busy street; great if walk-ins and young customers matter most."
+ },
+ {
+  "n": 5,
+  "name": "Northern Tile",
+  "concept": "Swiss clarity: white page, a strict grid, one cobalt accent, everything about booking fast.",
+  "refs": [
+   "software-saas/landa"
+  ],
+  "style": "swiss",
+  "scheme": "light",
+  "palette": {
+   "bg": "#ffffff",
+   "surface": "#f2f3f5",
+   "ink": "#0a0a0a",
+   "muted": "#5b5b5b",
+   "accent": "#1f4fd1",
+   "line": "#e3e4e8"
+  },
+  "fonts": {
+   "display": "Space Grotesk",
+   "body": "IBM Plex Sans",
+   "class": "sans"
+  },
+  "hero": "centered-type",
+  "sections": [
+   "hero",
+   "services",
+   "booking",
+   "pricing",
+   "faq",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "oversized opening hours grid as a design element",
+   "booking slots shown as a clean tile grid"
+  ],
+  "imagery": "few, precise black-and-white shots on a grid",
+  "why": "Clear and quick for busy regulars who just want the time, the price and the next free chair."
+ },
+ {
+  "n": 6,
+  "name": "Green Room",
+  "concept": "A calm, warm room: soft sage, rounded arches and an unhurried serif.",
+  "refs": [
+   "health-therapy/therapist",
+   "services-home/norfolk"
+  ],
+  "style": "warm-organic",
+  "scheme": "light",
+  "palette": {
+   "bg": "#eef1ea",
+   "surface": "#e1e7dc",
+   "ink": "#18241c",
+   "muted": "#4f5d53",
+   "accent": "#2f6b45",
+   "line": "#cfd8ca"
+  },
+  "fonts": {
+   "display": "Young Serif",
+   "body": "DM Sans",
+   "class": "serif"
+  },
+  "hero": "split-image-right",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "pricing",
+   "team",
+   "faq",
+   "contact"
+  ],
+  "motion": 2,
+  "signature": [
+   "arched photo frames repeated through the page",
+   "hot-towel ritual told as three calm steps"
+  ],
+  "imagery": "natural light, plants, wood and towels; arched crops",
+  "why": "Leans into the relaxing side of a hot-towel shave for customers who want a break, not a production line."
+ },
+ {
+  "n": 7,
+  "name": "Chrome and Smoke",
+  "concept": "Hotel-grade grooming: slate darkness, cool steel highlights, a sharp high-contrast serif.",
+  "refs": [
+   "hospitality-hotels/elowenra"
+  ],
+  "style": "luxury",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#121417",
+   "surface": "#1c2025",
+   "ink": "#eef0f2",
+   "muted": "#a3a9b1",
+   "accent": "#6fb7c7",
+   "line": "#2b3138"
+  },
+  "fonts": {
+   "display": "Bodoni Moda",
+   "body": "Jost",
+   "class": "serif"
+  },
+  "hero": "full-bleed-video",
+  "sections": [
+   "hero",
+   "services",
+   "gallery",
+   "about",
+   "booking",
+   "contact"
+  ],
+  "motion": 3,
+  "signature": [
+   "slow push-in on a full-bleed hero image",
+   "menu of services set like a hotel spa menu"
+  ],
+  "imagery": "moody steel, glass and leather details, cool highlights",
+  "why": "Positions the shop as the premium option in town, worth the price of a cut and beard."
+ },
+ {
+  "n": 8,
+  "name": "Trade Card",
+  "concept": "An old trade card brought up to date: paper tones, slab type, stamped details.",
+  "refs": [
+   "ecommerce-furniture/novariso"
+  ],
+  "style": "retro",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f1e6c8",
+   "surface": "#e7d8b1",
+   "ink": "#22190f",
+   "muted": "#5e5140",
+   "accent": "#24577a",
+   "line": "#d6c49a"
+  },
+  "fonts": {
+   "display": "Alfa Slab One",
+   "body": "Work Sans",
+   "class": "display"
+  },
+  "hero": "asymmetric",
+  "sections": [
+   "hero",
+   "services",
+   "gallery",
+   "pricing",
+   "booking",
+   "faq",
+   "contact"
+  ],
+  "motion": 2,
+  "signature": [
+   "stamp-style badges for walk-in hours",
+   "price list printed like a vintage trade card"
+  ],
+  "imagery": "warm, slightly faded photos with paper texture framing",
+  "why": "Celebrates the shop's local, old-school character with a modern, readable layout."
+ },
+ {
+  "n": 9,
+  "name": "Midnight Grid",
+  "concept": "Precise and modern: navy night, gold accent, a geometric display face and a booking-first layout.",
+  "refs": [
+   "software-fintech/payflux-fintech-app"
+  ],
+  "style": "technical",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#0e1a2b",
+   "surface": "#16263d",
+   "ink": "#f2f4f7",
+   "muted": "#a9b4c4",
+   "accent": "#e8b04b",
+   "line": "#24364f"
+  },
+  "fonts": {
+   "display": "Syne",
+   "body": "Inter",
+   "class": "display"
+  },
+  "hero": "card-stack",
+  "sections": [
+   "hero",
+   "booking",
+   "services",
+   "pricing",
+   "team",
+   "contact"
+  ],
+  "motion": 3,
+  "signature": [
+   "stacked booking cards in the hero showing today's free slots",
+   "service cards with clean icon meta rows"
+  ],
+  "imagery": "crisp, cool-toned portraits and detail shots",
+  "why": "Makes booking feel as easy as an app, which suits younger, phone-first customers."
+ },
+ {
+  "n": 10,
+  "name": "Soft Lather",
+  "concept": "Friendly and light: warm blush tones, a playful grotesk, rounded shapes and smiles.",
+  "refs": [
+   "hospitality-travel/axplorers"
+  ],
+  "style": "playful",
+  "scheme": "light",
+  "palette": {
+   "bg": "#fbf3ee",
+   "surface": "#f4e3da",
+   "ink": "#2a1d1a",
+   "muted": "#6a5650",
+   "accent": "#c2416c",
+   "line": "#ead3c7"
+  },
+  "fonts": {
+   "display": "Bricolage Grotesque",
+   "body": "Nunito Sans",
+   "class": "sans"
+  },
+  "hero": "split-image-left",
+  "sections": [
+   "hero",
+   "team",
+   "services",
+   "pricing",
+   "gallery",
+   "faq",
+   "booking",
+   "contact"
+  ],
+  "motion": 3,
+  "signature": [
+   "barbers introduced first, with relaxed portraits",
+   "rounded price chips you can tap to start booking"
+  ],
+  "imagery": "bright, candid photos of customers and barbers laughing",
+  "why": "Warm and welcoming for families and first-timers who want a friendly place to go."
+ }
+]

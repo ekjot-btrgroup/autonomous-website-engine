@@ -1,0 +1,591 @@
+{
+ "title": "Therapist (copy)",
+ "pages": [
+  "/",
+  "/who-i-help",
+  "/who-i-help/:sSt17Wh0_",
+  "/fees",
+  "/your-first-session",
+  "/about",
+  "/faq",
+  "/contact",
+  "/notes",
+  "/notes/:MYPE33UwE",
+  "/privacy",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Paper",
+   "light": "rgb(245, 241, 234)"
+  },
+  {
+   "name": "Paper Deep",
+   "light": "rgb(236, 229, 218)"
+  },
+  {
+   "name": "Ink",
+   "light": "rgb(34, 48, 42)"
+  },
+  {
+   "name": "Ink Soft",
+   "light": "rgb(86, 97, 91)"
+  },
+  {
+   "name": "Line",
+   "light": "rgb(216, 207, 194)"
+  },
+  {
+   "name": "Field Edge",
+   "light": "rgb(125, 133, 127)"
+  },
+  {
+   "name": "Pine",
+   "light": "rgb(51, 90, 77)"
+  },
+  {
+   "name": "Pine Deep",
+   "light": "rgb(40, 74, 63)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Source Serif 4",
+   "weight": 400,
+   "style": "normal",
+   "size": "68px",
+   "tracking": "-0.01em",
+   "leading": "1.06em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "68px",
+    "medium": "54px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Heading",
+   "tag": "h2",
+   "font": "Source Serif 4",
+   "weight": 400,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.005em",
+   "leading": "1.12em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "42px",
+    "medium": "36px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Heading (p)",
+   "font": "Source Serif 4",
+   "weight": 400,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.005em",
+   "leading": "1.12em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "42px",
+    "medium": "36px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Title",
+   "tag": "h3",
+   "font": "Source Serif 4",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.04em",
+   "leading": "1.3em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Title (h2)",
+   "tag": "h2",
+   "font": "Source Serif 4",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.04em",
+   "leading": "1.3em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Lead",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.55em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "20px",
+    "medium": "19px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body",
+   "size": "17px",
+   "tracking": "-0.02em",
+   "leading": "1.65em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "17px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Small",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.5em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "14px",
+    "medium": "14px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.08em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "12px",
+    "medium": "12px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Title (p)",
+   "font": "Source Serif 4",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "22px",
+    "medium": "21px",
+    "small": "20px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Text Link",
+  "Submit Button",
+  "Crisis Note",
+  "CTA Band",
+  "Navigation",
+  "FAQ Item"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Paper"
+ },
+ "sections": [
+  {
+   "name": "Introduction",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 793,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "72px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Introduction Inner"
+   ],
+   "text": 6,
+   "words": 42,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2
+   },
+   "effects": {},
+   "styles": {
+    "Label": 1,
+    "Display": 1,
+    "Lead": 1,
+    "Small": 3
+   },
+   "shot": "sections/01-introduction.jpg"
+  },
+  {
+   "name": "What We Can Work On",
+   "type": "FrameNode",
+   "y": 793,
+   "h": 827,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "What We Can Work On Inner"
+   ],
+   "text": 3,
+   "words": 9,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Text Link": 1,
+    "Spinner": 1
+   },
+   "effects": {
+    "appear": 1,
+    "hover": 1
+   },
+   "styles": {
+    "Heading": 1,
+    "Title": 1,
+    "Small": 1
+   },
+   "shot": "sections/02-what-we-can-work-on.jpg"
+  },
+  {
+   "name": "How It Starts",
+   "type": "FrameNode",
+   "y": 1620,
+   "h": 608,
+   "w": 1200,
+   "fill": "token:Paper Deep",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "How It Starts Inner"
+   ],
+   "text": 11,
+   "words": 60,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Text Link": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading": 1,
+    "Lead": 1,
+    "Heading (p)": 3,
+    "Title": 3,
+    "Body": 3
+   },
+   "shot": "sections/03-how-it-starts.jpg"
+  },
+  {
+   "name": "Fees",
+   "type": "FrameNode",
+   "y": 2228,
+   "h": 468,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Fees Inner"
+   ],
+   "text": 9,
+   "words": 28,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading": 1,
+    "Lead": 1,
+    "Small": 3,
+    "Label": 2,
+    "Heading (p)": 2
+   },
+   "shot": "sections/04-fees.jpg"
+  },
+  {
+   "name": "About Nora",
+   "type": "FrameNode",
+   "y": 2696,
+   "h": 717,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "About Nora Inner"
+   ],
+   "text": 4,
+   "words": 66,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading": 1,
+    "Body": 2,
+    "Small": 1
+   },
+   "shot": "sections/05-about-nora.jpg"
+  },
+  {
+   "name": "Questions",
+   "type": "FrameNode",
+   "y": 3413,
+   "h": 482,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 40px 96px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Questions Inner"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Link": 1,
+    "FAQ Item": 4
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading": 1
+   },
+   "shot": "sections/06-questions.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "CTA Band",
+   "y": 3895,
+   "h": 374,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA Band": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/07-cta-band.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 5,
+  "hover": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.15,
+   "replay": false,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 12,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.6s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 12,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.6s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "hover": {
+   "opacity": 1,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1.02,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "spring",
+    "duration": "0.4s",
+    "bounce": 0.2,
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "999px",
+   3
+  ],
+  [
+   "0px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Paper",
+ "pageHeight": 4941,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/f99fda36-5fab-4675-a6a1-90b5e311516b.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/0d8d85e6-f9a3-4acb-8639-f8039bda4fec.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "health-therapy/therapist",
+ "industry": "health-therapy",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  4941
+ ]
+}

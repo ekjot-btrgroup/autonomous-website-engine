@@ -1,5 +1,7 @@
 # Plan v2: reference-built design system (decided 2026-11-12)
 
+**Status 2026-11-12: live.** Built: Framer reference import (all 71 templates), directions check, design-builder/critic agents, review, gallery, final delivery. The section-variant library (1b) is replaced for now by per-design builds guided by reference cards; reusable sections can be harvested from delivered designs later.
+
 **Decision:** approach **B**. The user's Framer templates are *references*, not outputs. They become a design
 system (tokens + section variants + industry recipes); each brief gets 10 new designs composed from it.
 Cost is not a constraint: quality rules below are mandatory ("no template look, no AI slop").

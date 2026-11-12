@@ -1,0 +1,901 @@
+{
+ "title": "WELLGES (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/services",
+  "/pricing",
+  "/journal",
+  "/contact",
+  "/book",
+  "/privacy-policy",
+  "/terms",
+  "/services/:IOtgQjXhD",
+  "/journal/:W6t9LGde7",
+  "/team/:qiSzovKoI",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background",
+   "light": "#F3F1EC"
+  },
+  {
+   "name": "Surface",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "Ink",
+   "light": "#141712"
+  },
+  {
+   "name": "Deep Moss",
+   "light": "#1B201A"
+  },
+  {
+   "name": "Muted",
+   "light": "#7E837A"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(20, 23, 18, 0.10)"
+  },
+  {
+   "name": "Sage",
+   "light": "#CFDDB9"
+  },
+  {
+   "name": "Moss",
+   "light": "#4A5A3F"
+  },
+  {
+   "name": "On Dark",
+   "light": "#F3F1EC"
+  },
+  {
+   "name": "On Dark Muted",
+   "light": "rgba(243, 241, 236, 0.56)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "82px",
+   "tracking": "-0.045em",
+   "leading": "0.95em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "82px",
+    "medium": "72px",
+    "small": "52px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "-0.04em",
+   "leading": "1.02em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "56px",
+    "medium": "44px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.025em",
+   "leading": "1.15em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "28px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.015em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "18px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.08em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Button",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Article/Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.01em",
+   "leading": "1.75em",
+   "transform": "none",
+   "color": "rgb(52, 56, 49)",
+   "responsive": {
+    "default": "19px",
+    "medium": "19px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Article/Heading",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.03em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "34px",
+    "small": "28px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Navigation",
+  "Footer",
+  "Form Button",
+  "Eyebrow",
+  "Service Row",
+  "Pricing Card",
+  "FAQ Item",
+  "Testimonial Card",
+  "Journal Card",
+  "Service Card",
+  "Practitioner Card",
+  "CTA Banner",
+  "Filter Tab"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrap",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 80,
+   "h": 804,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "4px 12px 0px 12px",
+   "gap": "0px",
+   "maxWidth": "1680px",
+   "childNames": [
+    "Hero Card"
+   ],
+   "text": 4,
+   "words": 43,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 4,
+    "hover": 1,
+    "text": 1
+   },
+   "styles": {
+    "Display": 1,
+    "Body": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Offer Strip",
+   "type": "FrameNode",
+   "y": 884,
+   "h": 105,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px 12px 0px 12px",
+   "gap": "0px",
+   "maxWidth": "1680px",
+   "childNames": [
+    "Band"
+   ],
+   "text": 3,
+   "words": 18,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "ticker": 1
+   },
+   "styles": {},
+   "shot": "sections/02-offer-strip.jpg"
+  },
+  {
+   "name": "Introduction",
+   "type": "FrameNode",
+   "y": 989,
+   "h": 516,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "160px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 50,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Body Large": 1
+   },
+   "shot": "sections/03-introduction.jpg"
+  },
+  {
+   "name": "Wellness Highlights",
+   "type": "FrameNode",
+   "y": 1505,
+   "h": 715,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 14,
+   "words": 76,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {},
+   "effects": {
+    "appear": 6,
+    "hover": 4,
+    "loop": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 5,
+    "Label": 3,
+    "Heading 3": 4
+   },
+   "shot": "sections/04-wellness-highlights.jpg"
+  },
+  {
+   "name": "Our Services",
+   "type": "FrameNode",
+   "y": 2220,
+   "h": 1074,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 12px 0px 12px",
+   "gap": "0px",
+   "maxWidth": "1680px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Service Row": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/05-our-services.jpg"
+  },
+  {
+   "name": "Benefits",
+   "type": "FrameNode",
+   "y": 3294,
+   "h": 822,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 12,
+   "words": 78,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1
+   },
+   "effects": {
+    "appear": 5,
+    "parallax": 1,
+    "hover": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Heading 4": 3,
+    "Body": 3
+   },
+   "shot": "sections/06-benefits.jpg"
+  },
+  {
+   "name": "Pricing Preview",
+   "type": "FrameNode",
+   "y": 4116,
+   "h": 916,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Pricing Card": 3,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5,
+    "hover": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/07-pricing-preview.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 5032,
+   "h": 645,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Testimonial Card": 3
+   },
+   "effects": {
+    "appear": 5,
+    "hover": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/08-testimonials.jpg"
+  },
+  {
+   "name": "Our Approach",
+   "type": "FrameNode",
+   "y": 5677,
+   "h": 792,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 18,
+   "words": 106,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Eyebrow": 1
+   },
+   "effects": {
+    "appear": 10
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 5,
+    "Heading 4": 4
+   },
+   "shot": "sections/09-our-approach.jpg"
+  },
+  {
+   "name": "Gallery",
+   "type": "FrameNode",
+   "y": 6469,
+   "h": 720,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "48px",
+   "childNames": [
+    "Container",
+    "Gallery Ticker"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 7,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 2,
+    "ticker": 1,
+    "hover": 7
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/10-gallery.jpg"
+  },
+  {
+   "name": "Journal Preview",
+   "type": "FrameNode",
+   "y": 7189,
+   "h": 718,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1,
+    "Journal Card": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/11-journal-preview.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 7907,
+   "h": 744,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "FAQ Item": 6
+   },
+   "effects": {
+    "appear": 2,
+    "sticky": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/12-faq.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 8651,
+   "h": 780,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 12px 0px 12px",
+   "gap": "0px",
+   "maxWidth": "1680px",
+   "childNames": [
+    "CTA Card"
+   ],
+   "text": 2,
+   "words": 23,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "parallax": 1,
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Display": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/13-final-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 50,
+  "hover": 21,
+  "text": 2,
+  "ticker": 2,
+  "loop": 2,
+  "parallax": 2,
+  "sticky": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.14,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "2.2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.14,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "2.2s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "hover": {
+   "opacity": 1,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "backgroundColor": "rgba(255, 255, 255, 0.24)",
+   "transition": {
+    "type": "spring",
+    "duration": "0.4s",
+    "bounce": 0.2,
+    "delay": "0s"
+   }
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0.2s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "24px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "8px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "1s",
+     "delay": "0.05s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 50,
+   "hoverModifier": "0.25%",
+   "directionModifier": "default",
+   "draggable": false
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": 0,
+   "scale": 1.25,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.44,
+     0,
+     0.56,
+     1
+    ],
+    "duration": "4s",
+    "delay": "0s"
+   }
+  },
+  "parallax": {
+   "speed": 90
+  }
+ },
+ "fontsUsed": {
+  "Inter": 30,
+  "Inter Display": 5,
+  "Instrument Serif": 16
+ },
+ "radii": [
+  [
+   "24px",
+   12
+  ],
+  [
+   "100px",
+   6
+  ],
+  [
+   "32px",
+   4
+  ],
+  [
+   "28px",
+   4
+  ],
+  [
+   "100%",
+   4
+  ],
+  [
+   "16px",
+   4
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 9,
+  "blur": 2
+ },
+ "desktopFill": "white",
+ "pageHeight": 10450,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/e60f417e-7be6-41e8-88da-938538ae4938.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/65f0a8b2-f58e-4ad5-ad17-2e5f679d324c.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "health-wellness/wellges",
+ "industry": "health-wellness",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  10458
+ ]
+}

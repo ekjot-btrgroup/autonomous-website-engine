@@ -1,0 +1,19 @@
+{
+  "name": "Clover",
+  "industry": "software-fintech",
+  "also": ["software-saas", "software-apps"],
+  "summary": "Bright, friendly fintech landing page with lime-glow gradients, an italic centred headline, floating 3D coin renders and soft white chart cards.",
+  "style": ["soft-pastel", "corporate-clean", "playful"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 2, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#f7f8f5", "ink": "#1d1f13", "muted": "#5b5e52", "accent": "#a9ed42", "line": "#eaf0dd" },
+  "fonts": { "display": "General Sans", "body": "Inter", "class": "sans", "pairing": "General Sans medium for headings with an italic H1, Inter for body and small italic disclaimers" },
+  "hero": "centered-type",
+  "sections": ["hero", "features", "services", "process", "features", "pricing", "features", "faq", "testimonials", "cta"],
+  "motion": 3,
+  "signature": ["draggable floating 3D lime coin renders flanking the centred hero", "every section washed with a soft diagonal lime-to-white gradient plus a hand-drawn scribble doodle", "black gradient pill buttons with an arrow glyph against the pale lime field"],
+  "imagery": "glossy 3D coins, white dashboard chart cards with lime and dark-olive series, no photography",
+  "layout_grid": "1080px content, 60px side padding, 96px section padding, 3-column card grids, alternating 2-column feature rows",
+  "quality": 3
+}
