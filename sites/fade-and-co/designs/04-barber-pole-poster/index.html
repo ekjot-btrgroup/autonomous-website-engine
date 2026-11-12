@@ -297,14 +297,20 @@
   .plate { background: var(--deep); color: var(--ink); padding: var(--s5); display: grid; gap: var(--s2); }
   .plate .label { color: var(--accent); }
   .plate h3 { color: var(--ink); }
-  .plate p { color: var(--muted); }
+  .plate p { color: var(--muted); font-size: 15px; }
   .mug .ph-note { position: absolute; top: var(--s4); right: var(--s4); background: var(--paper); border: 1px dashed var(--paper-line); padding: var(--s1) var(--s3); color: var(--paper-muted); border-radius: var(--r-s); }
   .mug:nth-child(1) { transform: rotate(-1deg); }
   .mug:nth-child(3) { transform: rotate(1deg); }
-  @media (max-width: 900px) {
-    .team { grid-template-columns: 1fr; max-width: 420px; gap: var(--s7); }
+  @media (max-width: 900px) and (min-width: 721px) {
+    .team { gap: var(--s4); }
+    .plate { padding: var(--s4); }
+  }
+  @media (max-width: 720px) {
+    .team { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 78%; gap: var(--s4); overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; margin: 0 calc(var(--pad) * -1); padding: var(--s3) var(--pad) var(--s5); scroll-padding: 0 var(--pad); scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+    .mug { scroll-snap-align: start; max-height: 440px; }
+    .mug:nth-child(n), .js .mug[data-r].in:nth-child(n) { transform: none; }
     .mug .chart { aspect-ratio: 4 / 3.2; }
-    .mug .who { width: 52% !important; }
+    .mug .who { width: 50% !important; }
   }
 
   /* gallery */
@@ -330,11 +336,14 @@
   }
 
   /* booking */
-  .yellow { background: var(--accent); color: var(--deep); }
-  .yellow .eyebrow { color: var(--deep); }
-  .yellow .sec-head p { color: var(--deep); }
+  .book { background: var(--paper); color: var(--deep); }
+  .book h2 { color: var(--paper-ink); }
+  .book .eyebrow { color: var(--paper-ink); }
+  .book .sec-head p { color: var(--paper-muted); }
   .book-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--s5); row-gap: var(--s7); align-items: start; }
-  .form-card { grid-column: 1 / 8; background: var(--paper); border-radius: var(--r-m); padding: var(--s7); box-shadow: 0 6px 0 var(--deep); color: var(--deep); }
+  .form-card { position: relative; grid-column: 1 / 8; background: #fffdf9; border: 2px solid var(--deep); border-radius: var(--r-m); padding: var(--s7); box-shadow: 6px 6px 0 var(--deep); color: var(--deep); }
+  .form-card .corner { top: -30px; right: -18px; width: 124px; transform: rotate(10deg); }
+  .form-card .corner b { font-size: 22px; line-height: 1.05; }
   .form-card h3 { color: var(--paper-ink); margin-bottom: var(--s2); }
   .form-card > p { color: var(--paper-muted); margin-bottom: var(--s6); }
   .fields { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); }
@@ -687,17 +696,18 @@
     </div>
   </section>
 
-  <section class="sec yellow on-light" id="book" aria-labelledby="book-h">
+  <section class="sec book on-light" id="book" aria-labelledby="book-h">
     <div class="wrap">
       <div class="sec-head">
         <div data-r>
           <p class="eyebrow label">After noon, or any time you like</p>
-          <h2 id="book-h">Book a chair.</h2>
+          <h2 id="book-h">Save me a chair.</h2>
         </div>
         <p data-r style="--d:1">Pick a service and a day. We’ll come back to you to confirm the time.</p>
       </div>
       <div class="book-grid">
         <form class="form-card" id="book-form" data-r novalidate>
+          <span class="sticker burst corner" aria-hidden="true"><b>Walk-ins<br>before<br>noon</b></span>
           <h3>Your chair</h3>
           <p>Tuesday to Saturday, 9 to 7.</p>
           <div class="fields">
@@ -734,7 +744,7 @@
             </fieldset>
           </div>
           <div class="form-foot">
-            <button class="btn btn-r" type="submit">Book a chair <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+            <button class="btn btn-y" type="submit">Book a chair <svg aria-hidden="true"><use href="#arrow"/></svg></button>
             <small class="ph">[Connect to the shop’s booking system or inbox]</small>
           </div>
           <p class="sent" role="status" aria-live="polite"></p>
