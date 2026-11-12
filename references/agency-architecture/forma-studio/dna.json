@@ -1,0 +1,655 @@
+{
+ "title": "forma Studio (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/contact",
+  "/projects/:PgB1010iP",
+  "/legals/terms-conditions",
+  "/legals/privay-policy",
+  "/projects/project",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Light",
+   "light": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "dark",
+   "light": "rgb(15, 15, 15)"
+  },
+  {
+   "name": "Primary (Light)",
+   "light": "rgb(15, 15, 15)"
+  },
+  {
+   "name": "Secondary (Light)",
+   "light": "rgb(115, 115, 115)"
+  },
+  {
+   "name": "Primary (Dark)",
+   "light": "rgb(242, 242, 242)"
+  },
+  {
+   "name": "Secondary (Dark)",
+   "light": "rgb(181, 181, 181)"
+  },
+  {
+   "name": "muted for dark bg",
+   "light": "rgb(138, 138, 138)"
+  },
+  {
+   "name": "Light",
+   "light": "rgb(217, 217, 217)"
+  },
+  {
+   "name": "Dark",
+   "light": "rgb(42, 42, 42)"
+  },
+  {
+   "name": "muted for light bg",
+   "light": "rgb(115, 115, 115)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": null,
+   "tag": "h1",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-0.04em",
+   "leading": "1.1em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {
+    "default": "60px",
+    "medium": "60px",
+    "small": "48px"
+   }
+  },
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "76px",
+   "tracking": "-0.04em",
+   "leading": "1em",
+   "color": "token:c6127ac4-b7a8-4681-959c-29a6d0a19e6d, rgb(242, 242, 242) /* {\"name\":\"Primary (Dark)\"} */",
+   "responsive": {
+    "default": "76px",
+    "medium": "76px",
+    "small": "60px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h2",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.04em",
+   "leading": "1.1em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h3",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.04em",
+   "leading": "1.2em",
+   "color": "token:c6127ac4-b7a8-4681-959c-29a6d0a19e6d, rgb(242, 242, 242) /* {\"name\":\"Primary (Dark)\"} */",
+   "responsive": {
+    "default": "32px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h4",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.04em",
+   "leading": "1.2em",
+   "color": "token:c6127ac4-b7a8-4681-959c-29a6d0a19e6d, rgb(242, 242, 242) /* {\"name\":\"Primary (Dark)\"} */",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h5",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h6",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {}
+  },
+  {
+   "name": "paragraph small",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "color": "token:38682568-1c56-4733-b0fa-da14d251ba95, rgb(115, 115, 115) /* {\"name\":\"Secondary (Light)\"} */",
+   "responsive": {}
+  },
+  {
+   "name": "Paragraph large",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "paragraph",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "color": "token:b3eb08d4-e77a-4c34-ad01-dab8ccc119ea, rgb(15, 15, 15) /* {\"name\":\"Primary (Light)\"} */",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "label",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "color": "token:512d20f1-9ef2-4b96-853f-8e2a9b90b6c7, rgb(115, 115, 115) /* {\"name\":\"muted dark\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Link",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "color": "#666",
+   "responsive": {}
+  },
+  {
+   "name": "Link Large",
+   "font": "Mona Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "#666",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Mona Sans",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "color": "#666",
+   "responsive": {}
+  }
+ ],
+ "components": [
+  "Navigation",
+  "navlink",
+  "Text Button",
+  "Menu Toggle",
+  "Testimonials Card",
+  "Arrow Button",
+  "FAQ Item",
+  "Footer",
+  "Award Item",
+  "Form Button",
+  "Project Card",
+  "Brand Name",
+  "See All Works Button",
+  "Subscribe Button",
+  "Service Card",
+  "Team Member Card",
+  "CTA Section",
+  "Process card",
+  "FAQ",
+  "How We Work",
+  "Cover image",
+  "Cover image 2"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "FAQ",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "CTA Section",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ]
+ },
+ "sections": [
+  {
+   "name": "hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 852,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Freepik luxury-modern-interior-ar_2731128597",
+    "container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Text Button": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "paragraph small": 1
+   },
+   "y_tree": -2806,
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "about",
+   "type": "FrameNode",
+   "y": 852,
+   "h": 922,
+   "w": 1200,
+   "fill": "token:Light",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "80px",
+   "childNames": [
+    "About Content Box"
+   ],
+   "text": 5,
+   "words": 27,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "PulseDot": 1,
+    "Text Button": 1,
+    "CounterFX": 3
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "label": 1,
+    "ZsnGe0AK3": 1,
+    "paragraph": 3
+   },
+   "y_tree": -2006,
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "projects",
+   "type": "FrameNode",
+   "y": 1774,
+   "h": 2110,
+   "w": 1200,
+   "fill": "token:Light",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "0px",
+   "childNames": [
+    "Projects Header and Content Box"
+   ],
+   "text": 3,
+   "words": 12,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "PulseDot": 1,
+    "Project Card": 5,
+    "See All Works Button": 1
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "label": 1,
+    "XZ1J4Absr": 1,
+    "paragraph small": 1
+   },
+   "y_tree": -1180,
+   "shot": "sections/03-projects.jpg"
+  },
+  {
+   "name": "service",
+   "type": "FrameNode",
+   "y": 3884,
+   "h": 2424,
+   "w": 1200,
+   "fill": "token:dark",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 80px 120px 80px",
+   "gap": "200px",
+   "childNames": [
+    "Service Content Box"
+   ],
+   "text": 3,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "PulseDot": 1,
+    "Service Card": 4
+   },
+   "effects": {
+    "appear": 1,
+    "sticky": 5
+   },
+   "styles": {
+    "label": 1,
+    "XZ1J4Absr": 1,
+    "paragraph small": 1
+   },
+   "y_tree": 930,
+   "shot": "sections/04-service.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "How We Work",
+   "y": 6308,
+   "h": 1116,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "How We Work": 1
+   },
+   "effects": {},
+   "styles": {},
+   "y_tree": 3354,
+   "shot": "sections/05-how-we-work.jpg"
+  },
+  {
+   "name": "testimonials",
+   "type": "FrameNode",
+   "y": 7424,
+   "h": 642,
+   "w": 1200,
+   "fill": "token:Light",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "80px",
+   "childNames": [
+    "Testimonials Content Box"
+   ],
+   "text": 2,
+   "words": 5,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "PulseDot": 1,
+    "Testimonials Card": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "label": 1,
+    "XZ1J4Absr": 1
+   },
+   "y_tree": 4469,
+   "shot": "sections/06-testimonials.jpg"
+  },
+  {
+   "name": "FAQ (layout template)",
+   "type": "ComponentInstanceNode",
+   "comp": "FAQ",
+   "y": 8066,
+   "h": 762,
+   "w": 1200,
+   "note": "from the layout template, below the page placeholder",
+   "shot": "sections/07-faq-layout-template.jpg"
+  },
+  {
+   "name": "CTA (layout template)",
+   "type": "ComponentInstanceNode",
+   "comp": "CTA Section",
+   "y": 8828,
+   "h": 640,
+   "w": 1200,
+   "note": "from the layout template",
+   "shot": "sections/08-cta-layout-template.jpg"
+  },
+  {
+   "name": "Footer (layout template)",
+   "type": "ComponentInstanceNode",
+   "comp": "Footer",
+   "y": 9468,
+   "h": 597,
+   "w": 1200,
+   "note": "from the layout template",
+   "shot": "sections/09-footer-layout-template.jpg"
+  }
+ ],
+ "effects": {
+  "sticky": 6,
+  "appear": 11,
+  "text": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 80,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.23,
+      0.83,
+      0.56,
+      1
+     ],
+     "duration": "1s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 80,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.23,
+      0.83,
+      0.56,
+      1
+     ],
+     "duration": "1s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onInView",
+   "tokenization": "word",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "20px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "0px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.44,
+      0,
+      0.13,
+      0.96
+     ],
+     "duration": "1s",
+     "delay": "0.02s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {
+  "Mona Sans": 2
+ },
+ "radii": [],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "rgb(13, 13, 13)",
+ "pageHeight": 9919,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/7ac40f67-786a-4f17-87b6-1cd577ee2a7a.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/d25c292e-ac8f-4251-a65f-7da6b1221e7a.jpg",
+  "desktopWidth": 1200
+ },
+ "chromeTopNote": "tree y values were offset (hero at -2806) and the sticky hero renders 852px tall; section y and h re-measured from light and dark band edges in the screenshot. Template FAQ, CTA and footer added as sections; zero-height Smooth Scroll helper removed.",
+ "id": "agency-architecture/forma-studio",
+ "industry": "agency-architecture",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "crop_offset": 0,
+ "crop_stretch": 1.0,
+ "screenshot_size": [
+  1200,
+  10065
+ ]
+}
