@@ -1,0 +1,19 @@
+{
+  "name": "Aervion",
+  "industry": "agency-design",
+  "also": ["portfolio", "agency-web"],
+  "summary": "Crisp white-and-stone studio site for a solo product designer: heavy tight Inter headlines, warm grey cards, LED dot-matrix index numbers and a single acid lime dot as the only colour.",
+  "style": ["swiss", "minimal", "technical"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 2, "warmth": 2, "modernity": 5 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#ffffff", "surface": "#f4f4f1", "ink": "#0e0e10", "muted": "#6e6e73", "accent": "#d4ff3f", "line": "#e3e3de" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 600 at -0.05em for oversized headlines, Inter 400 body in mid grey, LED Dot dot-matrix face for small index numerals" },
+  "hero": "big-type-editorial",
+  "sections": ["hero", "portfolio", "about", "services", "logos", "testimonials", "cta"],
+  "motion": 2,
+  "signature": ["three-column meta strip of small uppercase labels above the headline, ruled off with a hairline", "left-aligned 88px headline in three stacked lines, then a wide 24px-radius portrait photo with a frosted caption chip", "dot-matrix 01 to 06 numerals in the corner of each stone service card, balanced by a black dot", "acid lime used only as tiny status dots and one blurred glow in the dark closing banner", "footer ending in an edge-to-edge 318px wordmark"],
+  "imagery": "soft natural-light portrait in a studio, clean product still lifes (sneaker, bicycle, phone, vegetables) on muted grounds",
+  "layout_grid": "1200px canvas, 32px side padding, 120px section padding, 2-column project grid, 3-column service grid, 4-column logo grid",
+  "quality": 4
+}

@@ -1,0 +1,1067 @@
+{
+ "title": "VAYNEX (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/features",
+  "/pricing",
+  "/blog",
+  "/blog/:SSmTb1qoV",
+  "/careers",
+  "/contact",
+  "/faq",
+  "/privacy",
+  "/terms",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Ink",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Night",
+   "light": "rgb(246, 250, 248)"
+  },
+  {
+   "name": "Panel",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Panel Raised",
+   "light": "rgb(238, 245, 241)"
+  },
+  {
+   "name": "Line Dark",
+   "light": "rgb(226, 235, 231)"
+  },
+  {
+   "name": "Mint",
+   "light": "rgb(14, 92, 72)"
+  },
+  {
+   "name": "Mint Deep",
+   "light": "rgb(14, 92, 72)"
+  },
+  {
+   "name": "Mint Soft",
+   "light": "rgb(226, 241, 234)"
+  },
+  {
+   "name": "Azure",
+   "light": "rgb(79, 168, 137)"
+  },
+  {
+   "name": "Azure Soft",
+   "light": "rgb(230, 242, 238)"
+  },
+  {
+   "name": "Coral",
+   "light": "rgb(255, 122, 102)"
+  },
+  {
+   "name": "Cloud",
+   "light": "rgb(241, 246, 243)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(11, 42, 34)"
+  },
+  {
+   "name": "Text Dark",
+   "light": "rgb(11, 42, 34)"
+  },
+  {
+   "name": "Mute",
+   "light": "rgb(95, 112, 106)"
+  },
+  {
+   "name": "Mute Dark",
+   "light": "rgb(95, 112, 106)"
+  },
+  {
+   "name": "Line Light",
+   "light": "rgb(226, 235, 231)"
+  },
+  {
+   "name": "Surface",
+   "light": "rgb(255, 255, 255)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "84px",
+   "tracking": "-0.045em",
+   "leading": "1em",
+   "color": "#000",
+   "responsive": {
+    "default": "84px",
+    "medium": "64px",
+    "small": "46px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "68px",
+   "tracking": "-0.04em",
+   "leading": "1.02em",
+   "color": "#000",
+   "responsive": {
+    "default": "68px",
+    "medium": "54px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.035em",
+   "leading": "1.06em",
+   "color": "#000",
+   "responsive": {
+    "default": "52px",
+    "medium": "42px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.025em",
+   "leading": "1.15em",
+   "color": "#000",
+   "responsive": {
+    "default": "30px",
+    "medium": "27px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.015em",
+   "leading": "1.25em",
+   "color": "#000",
+   "responsive": {
+    "default": "20px",
+    "medium": "19px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Lead",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.55em",
+   "color": "#666",
+   "responsive": {
+    "default": "18px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "size": "15px",
+   "leading": "1.6em",
+   "color": "#666",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Small",
+   "size": "13px",
+   "leading": "1.5em",
+   "color": "#666",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Geist Mono",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.08em",
+   "transform": "uppercase",
+   "color": "#666",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "leading": "1em",
+   "color": "#666",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Stat",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-0.045em",
+   "leading": "1em",
+   "color": "#666",
+   "responsive": {
+    "default": "60px",
+    "medium": "50px",
+    "small": "42px"
+   }
+  },
+  {
+   "name": "Price",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.04em",
+   "leading": "1em",
+   "color": "#666",
+   "responsive": {
+    "default": "52px",
+    "medium": "46px",
+    "small": "42px"
+   }
+  },
+  {
+   "name": "Statement",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "150px",
+   "tracking": "-0.05em",
+   "leading": "0.9em",
+   "color": "#666",
+   "responsive": {
+    "default": "150px",
+    "medium": "110px",
+    "small": "72px"
+   }
+  },
+  {
+   "name": "App XS",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "10px",
+   "leading": "1.3em",
+   "color": "#666",
+   "responsive": {
+    "default": "10px"
+   }
+  },
+  {
+   "name": "App S",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.005em",
+   "leading": "1.35em",
+   "color": "#666",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "App M",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "1.3em",
+   "color": "#666",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "App L",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.15em",
+   "color": "#666",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "App XL",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.035em",
+   "leading": "1em",
+   "color": "#666",
+   "responsive": {
+    "default": "32px"
+   }
+  },
+  {
+   "name": "Article H2",
+   "tag": "h2",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.025em",
+   "color": "#0B2A22",
+   "responsive": {
+    "default": "32px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Article H3",
+   "tag": "h3",
+   "font": "General Sans",
+   "weight": 600,
+   "style": "normal",
+   "size": "23px",
+   "tracking": "-0.015em",
+   "leading": "1.3em",
+   "color": "#0B2A22",
+   "responsive": {
+    "default": "23px",
+    "medium": "21px"
+   }
+  },
+  {
+   "name": "Article Body",
+   "size": "18px",
+   "tracking": "-0.005em",
+   "leading": "1.75em",
+   "color": "#4A5B55",
+   "responsive": {
+    "default": "18px",
+    "medium": "17px",
+    "small": "14px"
+   }
+  }
+ ],
+ "components": [
+  "Logo",
+  "Eyebrow",
+  "Button",
+  "Store Badge",
+  "Stat Card",
+  "Feature Row",
+  "Feature Card",
+  "Insight Card",
+  "Security Card",
+  "Integration Tile",
+  "Asset Row",
+  "Team Card",
+  "Contact Card",
+  "Pricing Card",
+  "Article Card",
+  "Position Row",
+  "FAQ Item",
+  "Filter Tab",
+  "Submit Button",
+  "Compare Row",
+  "Navigation",
+  "Footer",
+  "Pricing Plans"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "#FFFFFF"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1215,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, #0A3A2F 0%, #11523F 34%, #3E8A70 62%, #CFE5DC 84%, #FFFFFF 100%)",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "168px 24px 0px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Aurora",
+    "Horizon",
+    "Grid",
+    "Hero Copy",
+    "Stage",
+    "Fade"
+   ],
+   "text": 44,
+   "words": 93,
+   "images": 0,
+   "icons": 16,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 2,
+    "Insight Card": 1
+   },
+   "effects": {
+    "appear": 28,
+    "text": 1,
+    "loop": 4
+   },
+   "styles": {
+    "Lead": 1,
+    "App M": 5,
+    "App S": 10,
+    "App XS": 22,
+    "App XL": 2,
+    "Label": 2,
+    "App L": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Trusted",
+   "type": "FrameNode",
+   "y": 1215,
+   "h": 172,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "36px 24px 110px 24px",
+   "gap": "28px",
+   "childNames": [
+    "Ticker Mask"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 12,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "ticker": 1
+   },
+   "styles": {},
+   "shot": "sections/02-trusted.jpg"
+  },
+  {
+   "name": "Stats",
+   "type": "FrameNode",
+   "y": 1387,
+   "h": 1050,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 3,
+   "words": 42,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Stat Card": 4
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Statement": 1,
+    "Lead": 1
+   },
+   "shot": "sections/03-stats.jpg"
+  },
+  {
+   "name": "Financial Overview",
+   "type": "FrameNode",
+   "y": 2437,
+   "h": 1060,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 24px 140px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Split"
+   ],
+   "text": 23,
+   "words": 60,
+   "images": 0,
+   "icons": 11,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Feature Row": 3,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 11,
+    "loop": 1,
+    "text": 1
+   },
+   "styles": {
+    "App M": 12,
+    "App L": 1,
+    "App S": 1,
+    "App XL": 1,
+    "App XS": 6,
+    "Body": 1
+   },
+   "shot": "sections/04-financial-overview.jpg"
+  },
+  {
+   "name": "Spend Management",
+   "type": "FrameNode",
+   "y": 3497,
+   "h": 1195,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 14,
+   "words": 47,
+   "images": 0,
+   "icons": 6,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Feature Card": 4,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 27,
+    "text": 1
+   },
+   "styles": {
+    "Lead": 1,
+    "Label": 1,
+    "App XL": 1,
+    "App XS": 1,
+    "App M": 8,
+    "App S": 1
+   },
+   "shot": "sections/05-spend-management.jpg"
+  },
+  {
+   "name": "Intelligence",
+   "type": "FrameNode",
+   "y": 4692,
+   "h": 1360,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "150px 24px 140px 24px",
+   "gap": "64px",
+   "childNames": [
+    "Glow",
+    "Head",
+    "Stage",
+    "ComponentInstanceNode"
+   ],
+   "text": 13,
+   "words": 86,
+   "images": 0,
+   "icons": 6,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Insight Card": 3,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 12,
+    "text": 1,
+    "loop": 5
+   },
+   "styles": {
+    "Lead": 1,
+    "App M": 2,
+    "App XS": 3,
+    "App S": 6
+   },
+   "shot": "sections/06-intelligence.jpg"
+  },
+  {
+   "name": "Digital Payments",
+   "type": "FrameNode",
+   "y": 6052,
+   "h": 940,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 24px 120px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Split"
+   ],
+   "text": 42,
+   "words": 105,
+   "images": 0,
+   "icons": 14,
+   "inputs": 0,
+   "grids": [
+    2,
+    3
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 9,
+    "text": 1,
+    "loop": 3
+   },
+   "styles": {
+    "Lead": 1,
+    "Heading 4": 4,
+    "Body": 4,
+    "App M": 5,
+    "App S": 6,
+    "App XS": 5,
+    "App XL": 1,
+    "App L": 14,
+    "Label": 1
+   },
+   "shot": "sections/07-digital-payments.jpg"
+  },
+  {
+   "name": "Investment Intelligence",
+   "type": "FrameNode",
+   "y": 6992,
+   "h": 1451,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 24px 220px 24px",
+   "gap": "64px",
+   "childNames": [
+    "Horizon",
+    "Glow",
+    "Head",
+    "Fan",
+    "ComponentInstanceNode"
+   ],
+   "text": 38,
+   "words": 79,
+   "images": 0,
+   "icons": 12,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Asset Row": 6,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 25,
+    "text": 1
+   },
+   "styles": {
+    "Lead": 1,
+    "App M": 3,
+    "App L": 3,
+    "App XS": 16,
+    "Label": 3,
+    "App S": 10,
+    "App XL": 1
+   },
+   "shot": "sections/08-investment-intelligence.jpg"
+  },
+  {
+   "name": "Integrations",
+   "type": "FrameNode",
+   "y": 8443,
+   "h": 1228,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 4,
+   "words": 30,
+   "images": 0,
+   "icons": 21,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Integration Tile": 5
+   },
+   "effects": {
+    "appear": 9,
+    "text": 1,
+    "loop": 7,
+    "ticker": 2
+   },
+   "styles": {
+    "Lead": 1,
+    "Button": 1
+   },
+   "shot": "sections/09-integrations.jpg"
+  },
+  {
+   "name": "Security",
+   "type": "FrameNode",
+   "y": 9671,
+   "h": 1153,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 24px 140px 24px",
+   "gap": "0px",
+   "childNames": [
+    "Split"
+   ],
+   "text": 7,
+   "words": 36,
+   "images": 0,
+   "icons": 6,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Security Card": 4
+   },
+   "effects": {
+    "loop": 6,
+    "appear": 11,
+    "text": 1
+   },
+   "styles": {
+    "App S": 4,
+    "Lead": 1,
+    "Heading 4": 1
+   },
+   "shot": "sections/10-security.jpg"
+  },
+  {
+   "name": "Pricing Preview",
+   "type": "FrameNode",
+   "y": 10824,
+   "h": 1067,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 3,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Pricing Card": 3
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Lead": 1,
+    "Button": 1
+   },
+   "shot": "sections/11-pricing-preview.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 11891,
+   "h": 1191,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 12px 120px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Panel"
+   ],
+   "text": 11,
+   "words": 49,
+   "images": 0,
+   "icons": 9,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1,
+    "Store Badge": 2
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "Lead": 1,
+    "Small": 1,
+    "App M": 3,
+    "App L": 1,
+    "App S": 1,
+    "App XL": 1,
+    "App XS": 1
+   },
+   "shot": "sections/12-final-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 145,
+  "text": 11,
+  "loop": 26,
+  "ticker": 3
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.2,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.8s",
+     "bounce": 0.12,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.8s",
+     "bounce": 0.12,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0.2,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0.15s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "24px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "12px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.7s",
+     "bounce": 0,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": -10,
+   "scale": 1,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.45,
+     0,
+     0.55,
+     1
+    ],
+    "duration": "3.4s",
+    "delay": "0s"
+   }
+  },
+  "ticker": {
+   "velocity": 40,
+   "hoverModifier": "40%",
+   "directionModifier": "default",
+   "draggable": false
+  }
+ },
+ "fontsUsed": {
+  "General Sans": 15,
+  "Instrument Serif": 11
+ },
+ "radii": [
+  [
+   "100px",
+   93
+  ],
+  [
+   "6px",
+   33
+  ],
+  [
+   "12px",
+   12
+  ],
+  [
+   "100%",
+   10
+  ],
+  [
+   "14px",
+   8
+  ],
+  [
+   "16px",
+   8
+  ]
+ ],
+ "surfaces": {
+  "shadows": 22,
+  "borders": 44,
+  "blur": 10
+ },
+ "desktopFill": "#06080C",
+ "pageHeight": 14072,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/bc4f2706-ab1f-4810-bac9-47c297c2871e.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/a7d5a209-e026-4f51-ab01-2b2dfc4218a2.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "software-fintech/vaynex",
+ "industry": "software-fintech",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "crop_offset": 0,
+ "crop_stretch": 1.0,
+ "screenshot_size": [
+  1200,
+  14072
+ ]
+}

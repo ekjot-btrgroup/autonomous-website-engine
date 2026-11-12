@@ -25,7 +25,18 @@ const ltBp = lt?.children?.[0]
 const chrome = []
 if (ltBp) for (const c of ltBp.children || []) chrome.push({ type: c.type, name: c.name, comp: c.$componentDisplayName, position: c.position })
 let chromeTop = 0
-if (ltBp) for (const c of ltBp.children || []) { if (c.type === "PlaceholderNode") break; if (c.position === "fixed" || c.position === "absolute") continue; const r = await tree.getRect(c); chromeTop += r ? Math.round(r.height) : 0 }
+// Count only in-flow header bars. Smooth-scroll, cursor and other helper components often report a fake 200/400px
+// height; skip them, and skip tall blocks that are not named like a header. refshots.py also checks the result
+// against the real screenshot height and drops an offset that does not fit.
+const isHelper = (c) => /smooth|scroll|lenis|cursor|embed|code|script|analytics|preloader|loader/i.test(`${c.name || ""} ${c.$componentDisplayName || ""}`)
+const isHeader = (c) => /nav|header|menu|top ?bar|banner|announcement/i.test(`${c.name || ""} ${c.$componentDisplayName || ""}`)
+if (ltBp) for (const c of ltBp.children || []) {
+  if (c.type === "PlaceholderNode") break
+  if (c.position === "fixed" || c.position === "absolute" || c.position === "sticky" || c.visible === false || isHelper(c)) continue
+  const r = await tree.getRect(c); const h = r ? Math.round(r.height) : 0
+  if (h > 160 && !isHeader(c)) continue
+  chromeTop += h
+}
 out.chromeTop = chromeTop // header height above the first section in the page screenshot
 out.layoutTemplate = lt ? { name: lt.name, children: chrome, fill: tok(ltBp?.fill) } : null
 
