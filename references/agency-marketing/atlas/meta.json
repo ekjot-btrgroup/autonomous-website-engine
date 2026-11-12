@@ -1,0 +1,19 @@
+{
+  "name": "Atlas Studio",
+  "industry": "agency-marketing",
+  "also": ["agency-web", "agency-design"],
+  "summary": "Near-black digital agency site with a red-orange liquid-gradient shader hero, a giant edge-to-edge wordmark, square-cornered cards and a staggered sticky process.",
+  "style": ["futuristic-dark", "bold-graphic", "swiss"],
+  "feel": { "tone": 2, "energy": 4, "luxury": 3, "density": 2, "warmth": 3, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "orange",
+  "palette": { "bg": "#0c0e12", "surface": "#111317", "ink": "#ffffff", "muted": "#8a8d93", "accent": "#ff4112", "line": "#1f2226" },
+  "fonts": { "display": "Golos Text", "body": "Golos Text", "class": "sans", "pairing": "one grotesk at fractional weights (410 to 480) with very tight tracking, -0.06em on a 100px H1; bracketed caps labels" },
+  "hero": "asymmetric",
+  "sections": ["hero", "logos", "about", "stats", "portfolio", "services", "process", "about", "pricing", "team", "testimonials", "blog", "cta"],
+  "motion": 4,
+  "signature": ["liquid-gradient shader streaking red-orange across the black hero", "agency name set as a full-width 108px wordmark below the hero fold", "faint vertical grid lines framing the 50px gutters on every section"],
+  "imagery": "dark product mockups and device shots, monochrome team photography, square-cornered cards, red used as a block colour",
+  "layout_grid": "1300px canvas, 50px side padding with visible vertical guide lines, 0px radius cards, sections 600-2700px tall",
+  "quality": 4
+}

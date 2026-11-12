@@ -1,0 +1,976 @@
+{
+ "title": "Saasyio (copy)",
+ "pages": [
+  "/",
+  "/pricing",
+  "/features",
+  "/about",
+  "/contact",
+  "/blog",
+  "/blog/:yVbkOuMiZ",
+  "/blog/category/:Yq4Mpae4Y",
+  "/404",
+  "/privacy",
+  "/terms",
+  "/customers",
+  "/customers/:SOWzyUTKV",
+  "/design-system"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Primary",
+   "light": "rgb(209, 212, 250)"
+  },
+  {
+   "name": "Shade 1",
+   "light": "rgb(151, 157, 240)"
+  },
+  {
+   "name": "Shade 2",
+   "light": "rgb(224, 226, 255)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(3, 29, 34)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(28, 28, 28)"
+  },
+  {
+   "name": "Gray",
+   "light": "rgb(120, 120, 120)"
+  },
+  {
+   "name": "Divider",
+   "light": "rgb(230, 230, 230)"
+  },
+  {
+   "name": "Surface",
+   "light": "rgb(248, 249, 246)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Low Contrast",
+   "light": "rgba(230, 230, 230, 0.2)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-3px",
+   "leading": "110%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "size": "32px",
+   "tracking": "-2.2px",
+   "leading": "110%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "32px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-1.6px",
+   "leading": "130%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-1.1px",
+   "leading": "130%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.9px",
+   "leading": "130%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body",
+   "size": "14px",
+   "tracking": "-0.8px",
+   "leading": "130%",
+   "color": "#1C1C1C",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Article",
+   "size": "17px",
+   "tracking": "-0.4px",
+   "leading": "165%",
+   "color": "#666",
+   "responsive": {
+    "default": "17px"
+   }
+  },
+  {
+   "name": "Article Heading",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-1.6px",
+   "leading": "130%",
+   "color": "#000",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Article Subheading",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-1.1px",
+   "leading": "130%",
+   "color": "#000",
+   "responsive": {
+    "default": "18px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Badge",
+  "Section Header",
+  "Hatch Band",
+  "Nav",
+  "Feature Card",
+  "Nav Link",
+  "Logo Item",
+  "Check Item",
+  "Stat Card",
+  "FAQ Item",
+  "Footer",
+  "Pricing Plans",
+  "Section Divider",
+  "Step Visual",
+  "Step Panel",
+  "Solutions Showcase",
+  "Run Row",
+  "Hero Dashboard",
+  "Results Compare",
+  "Tab",
+  "Blog Card",
+  "Featured Post",
+  "Post Row",
+  "Proof Card",
+  "Case Study",
+  "Result Bars",
+  "Plan Column",
+  "FAQ Accordion",
+  "Logo Case",
+  "Logo",
+  "Flow Node",
+  "Flow Result",
+  "Saasyio Hub",
+  "Compare Row",
+  "Mini Feature",
+  "Pricing FAQ",
+  "Feature Row",
+  "Feature Row Reversed",
+  "Team Card",
+  "Timeline Item",
+  "Form Button",
+  "Author Card",
+  "Filter Chip",
+  "Category Bar",
+  "Policy Section",
+  "Brand Logos",
+  "Customer Logo",
+  "Case Card",
+  "Workflow Demo"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Row",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "absolute"
+   }
+  ],
+  "fill": "token:Surface"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1136,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "60px 0px 0px 0px",
+   "gap": "0px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "Glow Primary",
+    "Band Wrap",
+    "Hero Content",
+    "Band Wrap",
+    "Product Stage"
+   ],
+   "text": 2,
+   "words": 27,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Hatch Band": 2,
+    "Badge": 1,
+    "Button": 2,
+    "Hero Dashboard": 1,
+    "DotField": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 1136,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/02-section-divider.jpg"
+  },
+  {
+   "name": "Features",
+   "type": "FrameNode",
+   "y": 1176,
+   "h": 790,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Feature Grid"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Header": 1,
+    "Feature Card": 3
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {},
+   "shot": "sections/03-features.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 1966,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/04-section-divider.jpg"
+  },
+  {
+   "name": "How it works",
+   "type": "FrameNode",
+   "y": 2006,
+   "h": 927,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Flow",
+    "Setup Note"
+   ],
+   "text": 1,
+   "words": 8,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Header": 1,
+    "Step Panel": 3
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Heading 5": 1
+   },
+   "shot": "sections/05-how-it-works.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 2933,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/06-section-divider.jpg"
+  },
+  {
+   "name": "Logos",
+   "type": "FrameNode",
+   "y": 2973,
+   "h": 1013,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 0px 120px 0px",
+   "gap": "40px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Row",
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Header": 1,
+    "Logo Case": 6,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {},
+   "shot": "sections/07-logos.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 3986,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/08-section-divider.jpg"
+  },
+  {
+   "name": "Logos",
+   "type": "FrameNode",
+   "y": 4026,
+   "h": 870,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 0px 120px 0px",
+   "gap": "40px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Row"
+   ],
+   "text": 1,
+   "words": 5,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Header": 1,
+    "FlowLines": 1,
+    "Flow Node": 4,
+    "Saasyio Hub": 1,
+    "Flow Result": 4
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 4": 1
+   },
+   "shot": "sections/09-logos.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 4896,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/10-section-divider.jpg"
+  },
+  {
+   "name": "Solutions",
+   "type": "FrameNode",
+   "y": 4936,
+   "h": 848,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Header": 1,
+    "Solutions Showcase": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/11-solutions.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 5784,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/12-section-divider.jpg"
+  },
+  {
+   "name": "Column",
+   "type": "FrameNode",
+   "y": 5824,
+   "h": 441,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "10px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "Results"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "DotField": 1,
+    "Button": 1,
+    "Results Compare": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Heading 4": 1
+   },
+   "shot": "sections/13-column.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 6265,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/14-section-divider.jpg"
+  },
+  {
+   "name": "Customers",
+   "type": "FrameNode",
+   "y": 6305,
+   "h": 1236,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Column"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Header": 1,
+    "Case Study": 1,
+    "Proof Card": 3
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {},
+   "shot": "sections/15-customers.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 7541,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/16-section-divider.jpg"
+  },
+  {
+   "name": "Integrations",
+   "type": "FrameNode",
+   "y": 7581,
+   "h": 516,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "Integration Grid"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    6
+   ],
+   "components": {
+    "Section Header": 1,
+    "Logo Item": 6
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {},
+   "shot": "sections/17-integrations.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 8097,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/18-section-divider.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 8137,
+   "h": 1042,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Header": 1,
+    "Pricing Plans": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/19-pricing.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 9179,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/20-section-divider.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 9219,
+   "h": 878,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 80px 120px 80px",
+   "gap": "64px",
+   "maxWidth": "1400px",
+   "childNames": [
+    "ComponentInstanceNode",
+    "FAQ List"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Header": 1,
+    "FAQ Accordion": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/21-faq.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section Divider",
+   "y": 10097,
+   "h": 40,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Divider": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/22-section-divider.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 40
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 24,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.6s",
+     "bounce": 0,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 24,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.6s",
+     "bounce": 0,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "999px",
+   5
+  ],
+  [
+   "24px",
+   1
+  ],
+  [
+   "0px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 2,
+  "blur": 0
+ },
+ "desktopFill": "token:Surface",
+ "pageHeight": 11940,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/eba9829c-4241-41f5-939b-ae12194094ee.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/bdb65312-3e0c-47ea-9339-72679986da36.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "software-saas/saasyio",
+ "industry": "software-saas",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  11940
+ ]
+}

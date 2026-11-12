@@ -38,9 +38,18 @@ def main(d):
         sd = os.path.join(d, "sections"); os.makedirs(sd, exist_ok=True)
         for f in os.listdir(sd): os.remove(os.path.join(sd, f))
         secs = [s for s in dna.get("sections", []) if s.get("y") is not None and s.get("h")]
-        off = dna.get("chromeTop") or 0  # sticky header from the layout template sits above the first section
+        off = dna.get("chromeTop") or 0  # in-flow header from the layout template sits above the first section
+        page = dna.get("pageHeight") or 0
+        stretch = 1.0
+        if page:
+            # A sticky/overlaying header adds no height: when the shot matches the page without it, drop the offset.
+            if off and abs(im.height - page * k) < abs(im.height - (page + off) * k): off = 0
+            # Pinned scroll sections render taller in a static shot: spread the difference over the page.
+            exp = (page + off) * k
+            if exp and abs(im.height / exp - 1) > 0.03: stretch = im.height / exp
+        dna["crop_offset"] = off; dna["crop_stretch"] = round(stretch, 4)
         for i, s in enumerate(secs):
-            top = round((s["y"] + off) * k); h = round(min(s["h"], 2400) * k)
+            top = round((s["y"] + off) * k * stretch); h = round(min(s["h"], 2400) * k * stretch)
             if top >= im.height or h < 20: continue
             name = f"{i + 1:02d}-{slug(s.get('name') or s.get('comp'))}.jpg"
             im.crop((0, top, im.width, min(im.height, top + h))).save(os.path.join(sd, name), "JPEG", quality=66, optimize=True)

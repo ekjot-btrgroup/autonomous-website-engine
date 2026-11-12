@@ -1,0 +1,19 @@
+{
+  "name": "Lustre",
+  "industry": "health-wellness",
+  "also": ["ecommerce-beauty", "health-therapy"],
+  "summary": "Warm ivory hair and beauty studio site with a condensed Instrument Serif voice, italic cocoa second lines, arch-topped photo cards and frosted glass captions.",
+  "style": ["luxury", "warm-organic", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#f7f4ef", "surface": "#ffffff", "ink": "#171513", "muted": "#5f5b57", "accent": "#6b4f32", "line": "#e8e1d6" },
+  "fonts": { "display": "Instrument Serif", "body": "Inter", "class": "serif", "pairing": "condensed high-contrast serif for headlines with an italic second line, neutral sans for body, wide-tracked uppercase labels" },
+  "hero": "centered-type",
+  "sections": ["hero", "about", "services", "features", "testimonials", "gallery", "faq", "contact"],
+  "motion": 1,
+  "signature": ["headlines split into an upright line and an italic cocoa line", "photo cards with one large rounded top-left corner (asymmetric arch) and a frosted glass caption panel inset at the bottom", "giant faint serif word set behind the testimonial card"],
+  "imagery": "warm salon interiors with brass mirrors, close-up hair colour and styling shots, soft amber light",
+  "layout_grid": "1200px canvas, about 24px side padding, 60px section padding on a cream page, 3-column service grid, 24px card radius with a 120px corner on one side",
+  "quality": 4
+}

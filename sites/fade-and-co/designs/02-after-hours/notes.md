@@ -1,37 +1,21 @@
-# 02 After Hours (Fade & Co)
+# 02 After Hours: notes (fix round 2)
 
-Concept: the shop at night. Near-black (#0d0d0d), warm copper (#d9824a) only on actions, prices and the active state,
-Instrument Serif display with Manrope body. Every headline is one sentence whose second half fades to grey,
-a quiet pun on the name. Every photo carries the same grade (`--grade`: sepia .35, saturate .55, contrast 1.08,
-brightness .92, soft copper wash, inset vignette) so mixed stock reads as one shoot.
+Concept: the shop at night. Near-black, copper light, Instrument Serif over Manrope, one tungsten grade on every photo.
 
-## Section plan (fix round 1)
-1. Nav: serif wordmark ("& Co" greyed), 14px links (#d8d3ca), copper "Book a chair" pill; phone menu button with aria-expanded.
-2. Hero: eyebrow (address), H1 "The quietest part of your week. / Cuts, beards and hot-towel shaves.", lede, CTAs,
-   tall 4:5 chair photo with live open-now tag, three ruled fact cells. Hero has no bottom padding so the gap to "The shop" is one section (128px).
-3. The shop (5/7 split): two-tone statement, short paragraph, wide tools photo.
-4. Services, rebuilt (no longer the reference's three-column index/image/text row):
-   desktop 5/7 grid; left column sticky at 96px holds the three service names at h2 size with copper tabular prices,
-   only the active one opens its description and "includes" list, others sit in dim grey; right column is a stack of
-   tall 4:5 photos (24px gaps) with a numbered tag. Phone: sticky pill bar under the nav (44px pills) lights up the same way,
-   each service shows photo then name, price, text and list.
-5. Gallery: wide shop shot + tall, then three equal tiles (no quote placeholder tile).
-6. Team (new, brief asks for it): "The hands on King Street. / Say hello before you sit down." Three 4:5 placeholder portraits,
-   "[Barber name]" and "[Speciality]" with a hairline top rule, plus a supply note.
-7. Night band: full-bleed night photo, scrim, hours and walk-ins statement.
-8. Prices (5/7): left h2 "Four lines. / Easy to remember.", notes and CTA; right ruled price list with dotted leaders.
-9. Booking: form (7 cols) left, hours / walk-ins / address summary (5 cols) right.
-10. FAQ (own section, 5/7): "Fair enough. / A few answers.", accordion max 720px.
-11. Footer: giant two-tone wordmark, address with directions, hours, contact placeholders, legal line.
-Section rhythm: one top padding per section (128 desktop, 96 tablet, 80 phone); team and FAQ also pad the bottom before the full-bleed band and footer.
+## Section plan (direction 2 order: hero, about, services, gallery, pricing, booking, contact)
+1. Hero: two-tone h1, lead, Book a chair + See prices, chair photo with live open/closed badge, three facts (walk-ins, hours, address).
+2. About ("The shop"): single-tone h2 + copy; "Who's behind the chair" with three designed placeholder frames (Chair 01-03, 4:5, max 288px wide). Phone: horizontal snap row at 80% card width. No stock people shown as staff.
+3. Services: square photos (480px) on the left; sticky panel on the right = numbered index that lights up as each photo passes + the active service's description card + Book/See prices. No prices in the index. Phone: sticky pills + 4:3 photo and text per service.
+4. Gallery: detail shots only (steam shave lead 3:2, clippers tall, fade, chair leather, razor line-up). No second interior.
+5. Prices: "Four lines." ledger with dotted leaders; cut + beard shows struck £36 then £32 ("The four quid stays in your pocket").
+6. Booking: two-tone h2; one-sentence form with copper-underlined inline selects ("I'd like a [haircut] on [Tuesday] in the [afternoon].") then name + mobile; "Small print, short answers" numbered notes (not an accordion) in place of a FAQ.
+7. Contact ("Visit"): full-bleed band on dark tufted leather, two-tone h2, four-column ledger (address, hours, walk-ins, contact), CTA + directions. Slim footer.
 
 ## Signature moments
-- Headlines whose second half fades from ivory to grey as they enter the viewport (instant grey with reduced motion or no JS).
-- Service index as the stage: names light up and open as the matching photo passes mid-screen (desktop); pill bar on phone.
+- Grey-tail two-tone headline, rationed to 4 uses: hero, services, booking, visit band.
+- Sticky service index (dot + number turn copper) with the live detail card underneath.
 
 ## Placeholders for the client
-- Hot-towel shave price (not in brief).
-- Team names, specialities and photos (portraits are stand-ins).
-- Phone number and email (not in brief).
-- Booking form is front-end only: connect to their booking system.
-- Photos are Unsplash stand-ins (credits in img/credits.json); swap for shots of the real shop when available.
+- Barber names, specialities, portraits and number of chairs.
+- Hot-towel shave price. Phone number and email. Booking system.
+- Photography is Unsplash stand-in.

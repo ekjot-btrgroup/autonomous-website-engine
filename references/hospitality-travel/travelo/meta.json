@@ -1,0 +1,19 @@
+{
+  "name": "Travelo",
+  "industry": "hospitality-travel",
+  "also": ["hospitality-hotels", "events-weddings"],
+  "summary": "Bright tour-operator site in ice blue and deep navy with a tight-tracked Spectral serif, an aerial ocean hero with a floating tour card and a giant wide wordmark, and scroll-pinned promise and process sections.",
+  "style": ["corporate-clean", "editorial", "warm-organic"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "blue",
+  "palette": { "bg": "#f0f7fc", "surface": "#ffffff", "ink": "#0a1345", "muted": "#4a5585", "accent": "#1b2978", "line": "rgba(0,0,0,0.07)" },
+  "fonts": { "display": "Spectral", "body": "Golos Text", "class": "mixed", "pairing": "Spectral 400 with very tight negative tracking for headings, Golos Text for body and tracked uppercase tags, one wide techno face only for the wordmark" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "listings", "features", "process", "listings", "testimonials", "process", "stats", "blog", "faq", "gallery"],
+  "motion": 4,
+  "signature": ["aerial ocean hero with a white floating tour card (image, name, price, location, rating) on the right", "giant wide uppercase wordmark with a registered mark across the bottom of the hero", "centred section tags flanked by thin arrow rules", "white pill buttons with a small navy square holding a diagonal arrow"],
+  "imagery": "saturated aerial seascapes, overwater villas, mountain and safari scenes, smiling travellers, bright daylight",
+  "layout_grid": "1200px canvas, 32px side padding, 100 to 120px section padding, 3-column tour grid, 20px card radius with 8px inner image radius",
+  "quality": 4
+}

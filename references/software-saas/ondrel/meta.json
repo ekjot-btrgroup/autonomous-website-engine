@@ -1,0 +1,19 @@
+{
+  "name": "Ondrel",
+  "industry": "software-saas",
+  "also": ["software-apps", "software-ai"],
+  "summary": "Crisp white planning-tool site framed by thin vertical guide rails, with a tight Inter Display headline, a full roadmap app mock floating on a pastel sky photo and realistic UI cards in place of feature icons.",
+  "style": ["corporate-clean", "minimal", "soft-pastel"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "light",
+  "hue": "blue",
+  "palette": { "bg": "#FFFFFF", "surface": "#F4F5F7", "ink": "#15171C", "muted": "#6B7382", "accent": "#2B59FF", "line": "#E3E6EB" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "grotesk", "pairing": "Inter Display 600 at 72px with -0.035em tracking for H1, 500 for H2 to H4 with the tail of each heading in grey; Inter 500 at 15 to 18px for body, 12 to 13px labels inside UI mocks" },
+  "hero": "dashboard-mock",
+  "sections": ["hero", "logos", "features", "stats", "feature-detail", "case-studies", "quote", "pricing", "faq", "changelog", "cta", "footer"],
+  "motion": 3,
+  "signature": ["page framed by two hairline vertical rails with full-width horizontal rules between sections, like a ruled sheet", "full roadmap app window (sidebar, timeline, today line, progress bars) floating on a soft pink and blue sky photograph", "sticky feature index on the left that switches state as each feature block scrolls past", "headings that run into a grey continuation sentence on the same line", "AI-drafted update card with coloured status pills and emoji reaction counts on an iridescent blur panel"],
+  "imagery": "pastel cloud and sky photography and iridescent soft gradients used only as backdrops behind high-fidelity product UI; a few muted architectural photos for customer stories",
+  "layout_grid": "1200 frame, 32px sides inside 1px vertical rails, about 96px section padding, 1px horizontal rules between sections, 6 to 8px radius on UI elements, 20px radius on image panels, pill buttons 999px for badges, light layered shadows only on floating cards",
+  "quality": 5
+}

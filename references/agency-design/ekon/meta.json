@@ -1,0 +1,19 @@
+{
+  "name": "Ekon",
+  "industry": "agency-design",
+  "also": ["agency-web", "portfolio-designers", "agency-marketing"],
+  "summary": "Pure black branding studio site set entirely in uppercase Switzer, with a preloader into a full-bleed image hero, a scroll-lit manifesto paragraph, a draggable project ticker and a numbered service ledger.",
+  "style": ["monochrome", "swiss", "minimal"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 2, "warmth": 1, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "neutral",
+  "palette": { "bg": "#000000", "surface": "#0D0D0D", "ink": "#FFFFFF", "muted": "#808080", "accent": "#FFFFFF", "line": "#1A1A1A" },
+  "fonts": { "display": "Switzer", "body": "Switzer", "class": "grotesk", "pairing": "single family: Switzer 600 to 700 uppercase with -0.02 to -0.04em tracking for headings and labels, Switzer 500 sentence case for body, white at 50 to 100% opacity for hierarchy" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "manifesto", "stats", "portfolio", "services", "testimonials", "faq", "cta", "footer"],
+  "motion": 4,
+  "signature": ["preloader wordmark that hands over to a hero image settling from 1.2x scale over a slow 3s spring", "manifesto paragraph that lights up word by word from 30% to full white as it scrolls", "draggable project ticker of landscape cards with year and uppercase title set inside the image", "numbered service ledger: title left, two-column tag grid and grey description right, hairline between rows, image trail following the cursor", "giant cropped wordmark bleeding off the bottom of the footer"],
+  "imagery": "cinematic editorial photography (lone figure in landscape, dust cloud, styled portrait) in warm natural tones, used only inside 5px radius project cards and the hero",
+  "layout_grid": "1200 frame with 30px sides, 80px section padding, headers as title plus two-line intro left with a small white button right, content split 45/55, 5px radius, no shadows or borders except 1px white-10% row rules",
+  "quality": 3
+}

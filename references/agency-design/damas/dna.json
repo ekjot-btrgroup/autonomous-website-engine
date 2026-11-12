@@ -1,0 +1,869 @@
+{
+ "title": "Damas (copy)",
+ "pages": [
+  "/",
+  "/blog",
+  "/terms-conditions",
+  "/privacy-policy",
+  "/refund-policy",
+  "/contact",
+  "/works",
+  "/blog/:bKwdNjqSi",
+  "/works/:xsL0vkR46",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1280px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1279.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "White",
+   "light": "rgb(250, 250, 250)"
+  },
+  {
+   "name": "Green",
+   "light": "rgb(6, 61, 48)"
+  },
+  {
+   "name": "Yellow",
+   "light": "rgb(252, 215, 24)"
+  },
+  {
+   "name": "Green 20%",
+   "light": "rgba(6, 61, 48, 0.2)"
+  },
+  {
+   "name": "White 30%",
+   "light": "rgba(250, 250, 250, 0.3)"
+  },
+  {
+   "name": "Green 40%",
+   "light": "rgba(6, 61, 48, 0.4)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(2, 2, 2)"
+  },
+  {
+   "name": "White 40%",
+   "light": "rgba(250, 250, 250, 0.4)"
+  },
+  {
+   "name": "White 10%",
+   "light": "rgba(250, 250, 250, 0.1)"
+  },
+  {
+   "name": "Black 20%",
+   "light": "rgba(2, 2, 2, 0.2)"
+  },
+  {
+   "name": "Green 10%",
+   "light": "rgba(6, 61, 48, 0.2)"
+  },
+  {
+   "name": "Red",
+   "light": "rgb(235, 77, 109)"
+  },
+  {
+   "name": "Black 60%",
+   "light": "rgba(2, 2, 2, 0.6)"
+  },
+  {
+   "name": "Black 80%",
+   "light": "rgba(2, 2, 2, 0.8)"
+  },
+  {
+   "name": "White 60%",
+   "light": "rgba(250, 250, 250, 0.6)"
+  },
+  {
+   "name": "Cream",
+   "light": "rgb(250, 247, 243)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(17, 17, 17)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "105px",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "105px",
+    "medium": "84px",
+    "small": "62px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "80px",
+    "medium": "66px",
+    "small": "50px"
+   }
+  },
+  {
+   "name": "Heading 2b",
+   "tag": "h2",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "48px",
+    "medium": "42px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 2c",
+   "tag": "h2",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "58px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "58px",
+    "medium": "52px",
+    "small": "42px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "46px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "46px",
+    "medium": "40px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 3b",
+   "tag": "h3",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "42px",
+    "medium": "34px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h4",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "38px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "38px",
+    "medium": "36px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 4b",
+   "tag": "h4",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "36px",
+    "medium": "30px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h5",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "36px",
+    "medium": "34px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "Heading 5b",
+   "tag": "h5",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "32px",
+    "medium": "26px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h6",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "34px",
+    "medium": "32px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Heading 6b",
+   "tag": "h6",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "28px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "18px Body Bold",
+   "font": "Satoshi",
+   "weight": 700,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "16px Body Bold",
+   "font": "Satoshi",
+   "weight": 700,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "16px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "16px Body Medium",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "16px Body Regular",
+   "font": "Satoshi",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:cdfc1154-0600-4560-a58f-23c5d7362a76, rgb(239, 239, 239)",
+   "responsive": {
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "18px Body Medium",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "18px Quote Title",
+   "font": "Damion",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "24px Body Medium",
+   "font": "Satoshi",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "64px Body",
+   "font": "Anton",
+   "weight": 400,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:65cee55d-f4cd-444a-9d39-a77dc31040ee, rgb(6, 61, 48)",
+   "responsive": {
+    "default": "64px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Service Card",
+  "Arrow Button",
+  "Project Card",
+  "Project Row Card",
+  "FAQ Card",
+  "FAQs List",
+  "Text CTA",
+  "Arrow Icon Button",
+  "Social Icon",
+  "Pricing Plans",
+  "Section Label",
+  "Blog Card",
+  "Navbar",
+  "Footer",
+  "Form Button",
+  "Promo Code"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navbar",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "absolute"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Blur Gradient",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Noise",
+    "position": "absolute"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Click Effects",
+    "position": "absolute"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Button",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Button",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "CTA Section",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:White"
+ },
+ "sections": [
+  {
+   "name": "Hero Section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 830,
+   "w": 1280,
+   "fill": "token:White",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "240px 0px 240px 0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 22,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "text": 2,
+    "appear": 3
+   },
+   "styles": {
+    "Heading 1": 1,
+    "18px Body Bold": 1
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "About Us Section",
+   "type": "FrameNode",
+   "y": 830,
+   "h": 600,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 0px 120px 0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 41,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1
+   },
+   "effects": {
+    "text": 2,
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "18px Body Medium": 1
+   },
+   "shot": "sections/02-about-us-section.jpg"
+  },
+  {
+   "name": "Services Section",
+   "type": "FrameNode",
+   "y": 1430,
+   "h": 968,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "20px",
+   "gap": "10px",
+   "childNames": [
+    "Container Wrap"
+   ],
+   "text": 1,
+   "words": 5,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Label": 1,
+    "Arrow Button": 1,
+    "Service Card": 3
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/03-services-section.jpg"
+  },
+  {
+   "name": "Projects Section",
+   "type": "FrameNode",
+   "y": 2398,
+   "h": 1955,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 0px 120px 0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Project Card": 1,
+    "Project Row Card": 1,
+    "Button": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/04-projects-section.jpg"
+  },
+  {
+   "name": "Testimonials Section",
+   "type": "FrameNode",
+   "y": 4353,
+   "h": 780,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "20px",
+   "gap": "10px",
+   "childNames": [
+    "Container Wrap"
+   ],
+   "text": 5,
+   "words": 29,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Arrow Button": 1
+   },
+   "effects": {
+    "text": 2,
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "18px Quote Title": 1,
+    "24px Body Medium": 1,
+    "16px Body Bold": 1,
+    "16px Body Regular": 1
+   },
+   "shot": "sections/05-testimonials-section.jpg"
+  },
+  {
+   "name": "Pricing Section",
+   "type": "FrameNode",
+   "y": 5133,
+   "h": 1060,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 0px 120px 0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Pricing Plans": 1
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/06-pricing-section.jpg"
+  },
+  {
+   "name": "Blog Section",
+   "type": "FrameNode",
+   "y": 6193,
+   "h": 983,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "20px",
+   "gap": "10px",
+   "childNames": [
+    "Container Wrap"
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Label": 1,
+    "Arrow Button": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/07-blog-section.jpg"
+  },
+  {
+   "name": "FAQs Section",
+   "type": "FrameNode",
+   "y": 7176,
+   "h": 788,
+   "w": 1280,
+   "fill": "token:Green",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 0px 120px 0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 8,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "FAQs List": 1,
+    "Arrow Button": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "18px Body Medium": 1
+   },
+   "shot": "sections/08-faqs-section.jpg"
+  }
+ ],
+ "effects": {
+  "text": 11,
+  "appear": 14
+ },
+ "effectSamples": {
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "word",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "duration": "1.8s",
+     "bounce": 0,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 10,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.6s",
+     "bounce": 0,
+     "delay": "0.8s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 10,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.6s",
+     "bounce": 0,
+     "delay": "0.8s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "20px",
+   7
+  ],
+  [
+   "25px",
+   3
+  ],
+  [
+   "24px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 4,
+  "blur": 0
+ },
+ "desktopFill": "token:White",
+ "pageHeight": 8752,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/912d4d9e-3c13-412b-854b-a720a9144484.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/3e7007fb-1d26-42a2-bfe1-0fb79facd2e3.jpg",
+  "desktopWidth": 1280
+ },
+ "id": "agency-design/damas",
+ "industry": "agency-design",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1280,
+  8752
+ ]
+}

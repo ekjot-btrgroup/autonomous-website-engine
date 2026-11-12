@@ -1,0 +1,19 @@
+{
+  "name": "landio",
+  "industry": "software-ai",
+  "also": ["services-consulting", "software-saas", "agency-marketing"],
+  "summary": "Near-black AI automation agency page with a dim smoky video hero, Inter headlines finished by an italic Instrument Serif phrase, and glossy dark cards holding small animated UI vignettes.",
+  "style": ["futuristic-dark", "minimal", "glassy"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "black",
+  "palette": { "bg": "#04070d", "surface": "#10131c", "ink": "#d5dbe6", "muted": "#b8c7d9", "accent": "#a6daff", "line": "#16191f" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 500 headlines with a closing italic Instrument Serif phrase in every H1 and H2; Inter body at 14-16 in 70% ink" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "about", "features", "services", "features", "process", "testimonials", "logos", "testimonials", "pricing", "faq", "features", "team", "cta"],
+  "motion": 3,
+  "signature": ["each heading ends in an italic serif phrase set lighter than the grotesk clause before it", "glowing app-icon tile above the hero headline with a soft blue under-glow", "services bento where each card holds a tiny live UI scene: stacked task chips, orbiting app icons around a sparkle node, a code editor, a search panel", "two-column us-versus-others comparison with check and cross rows on frosted dark panels"],
+  "imagery": "no photography in the main flow except testimonial and team portraits; a muted greyscale smoke video with particles in the hero; monochrome glyph icons in small rounded dark tiles",
+  "layout_grid": "1200 canvas, 40px side padding, 100px section padding, 40px header-to-content gap, 2 and 3 column card grids with 16-24px gaps, 10-16px card radii",
+  "quality": 4
+}

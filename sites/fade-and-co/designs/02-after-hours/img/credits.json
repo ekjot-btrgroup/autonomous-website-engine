@@ -12,18 +12,6 @@
   "license": "Unsplash License"
  },
  {
-  "file": "night.jpg",
-  "source": "https://images.unsplash.com/photo-1546664278-c0a27e0cdc88",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "about.jpg",
-  "source": "https://images.unsplash.com/photo-1621605815971-fbc98d665033",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
   "file": "g-hands.jpg",
   "source": "https://images.unsplash.com/photo-1635273051839-003bf06a8751",
   "credit": "Unsplash",
@@ -48,38 +36,26 @@
   "license": "Unsplash License"
  },
  {
-  "file": "g-shop.jpg",
-  "source": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "g-window.jpg",
-  "source": "https://images.unsplash.com/photo-1761064039763-0d9aa5124510",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "team-1.jpg",
-  "source": "https://images.unsplash.com/photo-1595294572864-ddb46d169dbb",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "team-2.jpg",
-  "source": "https://images.unsplash.com/photo-1553521041-d168abd31de3",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
-  "file": "team-3.jpg",
-  "source": "https://images.unsplash.com/photo-1639511177364-0866c0da16fa",
-  "credit": "Unsplash",
-  "license": "Unsplash License"
- },
- {
   "file": "g-razor.jpg",
   "source": "https://images.unsplash.com/photo-1735150949874-ec9c9c82b2c4",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "g-steam.jpg",
+  "source": "https://images.unsplash.com/photo-1761148438883-e34e0289a214",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "g-leather.jpg",
+  "source": "https://images.unsplash.com/photo-1564842505181-8862a3b9b173",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "band.jpg",
+  "source": "https://images.unsplash.com/photo-1605433974949-fa9fadb0c0e9",
   "credit": "Unsplash",
   "license": "Unsplash License"
  }

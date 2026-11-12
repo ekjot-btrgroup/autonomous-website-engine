@@ -1,0 +1,19 @@
+{
+  "name": "Stillhour",
+  "industry": "health-wellness",
+  "also": ["health-therapy", "health-medical", "services-consulting"],
+  "summary": "Sun-warmed therapy and ritual studio site: an inset full-bleed portrait hero with hairline crosshair overlays, condensed Instrument Serif headlines with italic accents, an amber-and-rust palette on cream, a dark 7-column day accordion and arched practitioner portraits.",
+  "style": ["warm-organic", "editorial", "luxury"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 5, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "brown",
+  "palette": { "bg": "#fbf8f3", "surface": "#ffffff", "ink": "#1f140d", "muted": "#8a7867", "accent": "#f2a541", "line": "#e7dccb" },
+  "fonts": { "display": "Instrument Serif", "body": "Geist", "class": "serif", "pairing": "Instrument Serif 400 from 104px down to 32px with tight negative tracking and one italic phrase per headline; Geist 400 to 500 for body, labels and 11px uppercase overlines with a small amber dot" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "features", "services", "process", "process", "team", "testimonials", "pricing", "faq", "contact", "footer"],
+  "motion": 4,
+  "signature": ["inset 8px full-bleed portrait hero with thin crosshair rules and a small focus box labelling the image", "manifesto headline with inline pill-shaped photo and avatar cluster set into the line of type", "dark 7-day accordion: one wide open image card plus six narrow columns with vertical serif day names", "arched portrait triptych with the centre practitioner larger and ringed by a thin amber circle"],
+  "imagery": "golden-hour close-up portraits with closed eyes, cream peonies and linen, a single warm amber grade across hero, cards and CTA",
+  "layout_grid": "1440px canvas, 64px side padding, 140-160px section padding, 3-column card rows with 16-24px gaps, 20-28px card radii, 999px pills and arch masks",
+  "quality": 5
+}

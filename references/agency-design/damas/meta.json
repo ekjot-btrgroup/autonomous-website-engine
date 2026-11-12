@@ -1,0 +1,19 @@
+{
+  "name": "Damas",
+  "industry": "agency-design",
+  "also": ["agency-marketing", "portfolio-designers"],
+  "summary": "Branding studio site in deep bottle green with a pale noise-textured hero, Anton condensed caps headlines, a yellow brush-stroke accent and tilted, stacked photo cards of motion-blurred imagery.",
+  "style": ["bold-graphic", "editorial", "playful"],
+  "feel": { "tone": 3, "energy": 4, "luxury": 3, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "green",
+  "palette": { "bg": "#063d30", "surface": "#fafafa", "ink": "#063d30", "muted": "#5f7f77", "accent": "#fcd718", "line": "#2b5a4e" },
+  "fonts": { "display": "Anton", "body": "Satoshi", "class": "condensed-sans", "pairing": "Anton 400 condensed caps and title case at -0.02em, tight 1.0 to 1.1 leading, over Satoshi 500 body with a script (Damion) only for a tiny quote signature" },
+  "hero": "split-image-right",
+  "sections": ["hero", "about", "services", "portfolio", "testimonials", "pricing", "blog", "faq", "cta"],
+  "motion": 3,
+  "signature": ["two photo cards tilted a few degrees and overlapped at the hero's right with a yellow lightning brush mark between type and image", "pale rounded panels inset 20px into the green page so light and dark sections alternate like sheets on a desk", "project list where the first two cases are big split rows with mini thumbnail strips and the rest collapse into ruled rows of name, date, discipline and a small rounded thumb"],
+  "imagery": "motion-blurred, desaturated editorial photography with warm orange light leaks; rounded 20px corners with a thin pale outline",
+  "layout_grid": "1280 canvas, about 1200 content, 120px section padding on green, 20px inset frames around light panels, 20 to 25px card radii",
+  "quality": 4
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Skandic",
+  "industry": "hospitality-hotels",
+  "also": ["real-estate-listings", "hospitality-travel"],
+  "summary": "Quiet Nordic single-property rental site in pale grey and white with light Switzer headlines that fade to grey on the second line, a slide-scrolling cabin hero and numbered chapter labels.",
+  "style": ["minimal", "swiss", "editorial"],
+  "feel": { "tone": 2, "energy": 1, "luxury": 4, "density": 2, "warmth": 2, "modernity": 5 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#ededed", "surface": "#ffffff", "ink": "#1f2120", "muted": "#808080", "accent": "#1e2d25", "line": "#e3e3e3" },
+  "fonts": { "display": "Switzer", "body": "Switzer", "class": "sans", "pairing": "single neo-grotesk: 300 light for large headings with a grey second line, 400 to 500 for body, tiny uppercase chapter labels" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "stats", "gallery", "rooms", "testimonials", "features", "services", "listings", "booking", "pricing", "faq", "blog"],
+  "motion": 4,
+  "signature": ["two-tone headlines where the second clause drops to mid grey", "full-bleed hero that steps through three slides with numbered progress bars along the bottom", "numbered chapter labels like 01 with a short dash before every section", "white stat cards with oversized light numerals for capacity, size, year and price"],
+  "imagery": "moody Nordic cabin architecture, fjords and snowy peaks, dark wood interiors with warm lamp light, overcast cool grade",
+  "layout_grid": "1200px canvas, 40px side padding, 12-column grid, generous 120 to 160px section spacing, 8px card radius",
+  "quality": 5
+}

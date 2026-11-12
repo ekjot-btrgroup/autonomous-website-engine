@@ -1,0 +1,1059 @@
+{
+ "title": "#015 / Skandic / Home Rental Website Template (copy)",
+ "pages": [
+  "/",
+  "/journal",
+  "/journal/:O2CE8pkxU",
+  "/404",
+  "/legal/:L1KC2VUiI",
+  "/contact"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 768px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 767.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Paper",
+   "light": "rgb(237, 237, 237)"
+  },
+  {
+   "name": "Ink",
+   "light": "rgb(31, 33, 32)"
+  },
+  {
+   "name": "Ink Soft",
+   "light": "rgb(128, 128, 128)"
+  },
+  {
+   "name": "Ink Faint",
+   "light": "rgb(148, 148, 148)"
+  },
+  {
+   "name": "Rule",
+   "light": "rgb(227, 227, 227)"
+  },
+  {
+   "name": "Rule Dark",
+   "light": "rgba(244, 241, 236, 0.25)"
+  },
+  {
+   "name": "Pearl White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Soft Mist",
+   "light": "rgba(235, 235, 235, 0.7)"
+  },
+  {
+   "name": "Forest",
+   "light": "rgb(21, 71, 27)"
+  },
+  {
+   "name": "Spruce",
+   "light": "rgb(30, 45, 37)"
+  },
+  {
+   "name": "Spruce Deep",
+   "light": "rgb(20, 29, 24)"
+  },
+  {
+   "name": "Forest Deep",
+   "light": "rgb(60, 77, 62)"
+  },
+  {
+   "name": "Charcoal",
+   "light": "rgb(20, 20, 20)"
+  },
+  {
+   "name": "Platinum",
+   "light": "rgb(209, 209, 209)"
+  },
+  {
+   "name": "Warm White",
+   "light": "rgb(244, 241, 236)"
+  },
+  {
+   "name": "Scrim Clear",
+   "light": "rgba(20, 29, 24, 0)"
+  },
+  {
+   "name": "Scrim Dark",
+   "light": "rgba(20, 29, 24, 0.72)"
+  },
+  {
+   "name": "Soul Black",
+   "light": "rgb(15, 15, 15)"
+  },
+  {
+   "name": "Cod Gray",
+   "light": "rgb(41, 41, 41)"
+  },
+  {
+   "name": "Pure White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Smoky White",
+   "light": "rgb(212, 212, 212)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "92px",
+   "tracking": "-0.02em",
+   "leading": "0.96em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "92px",
+    "medium": "74px",
+    "small": "59px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.02em",
+   "leading": "1.02em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "51px",
+    "small": "41px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "40px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "40px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "H5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Body L",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "17px"
+   }
+  },
+  {
+   "name": "Body M",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Body S",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "leading": "1.4em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "11px",
+   "tracking": "0.02em",
+   "leading": "1em",
+   "transform": "uppercase",
+   "color": "token:Ink Faint",
+   "responsive": {
+    "default": "11px"
+   }
+  },
+  {
+   "name": "Meta",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.02em",
+   "color": "token:Ink Soft",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Price",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "0em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "19px"
+   }
+  },
+  {
+   "name": "Nav Link",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "0em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Button Label",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "0em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Drawer Link",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "0em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "28px"
+   }
+  },
+  {
+   "name": "Body CMS",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.7em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "32px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "H6",
+   "tag": "h6",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.35em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Journal H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "40px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "40px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Policy H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "32px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Card H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Card H3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Display",
+   "tag": "p",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Button Link",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "leading": "1.3em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Section Label",
+  "Spec Chip",
+  "Stat Cell",
+  "Navigation",
+  "Image Ratios",
+  "Review Card",
+  "Filter Chip",
+  "Journal Item",
+  "Contact Submit Button",
+  "Booking Form",
+  "Form Submit Button"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Smooth Scroll",
+    "comp": "Lenis",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Preloader",
+    "comp": "GreetingPreloader",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "DELETE THIS",
+    "comp": "Pixco Badge (Vercel)",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": "Page Content",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "sticky"
+   }
+  ],
+  "fill": "token:Paper"
+ },
+ "sections": [
+  {
+   "name": "Section / Introduction",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 993,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Carousel",
+    "Dividers"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "HeroScrollSlides": 1
+   },
+   "effects": {
+    "sticky": 1
+   },
+   "styles": {},
+   "shot": "sections/01-section-introduction.jpg"
+  },
+  {
+   "name": "House Anchor",
+   "type": "FrameNode",
+   "y": 993,
+   "h": 0,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": "Section / House",
+   "type": "FrameNode",
+   "y": 993,
+   "h": 820,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 57,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Stat Cell": 4,
+    "ProgressiveBlur": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "H2": 1,
+    "Body S": 1
+   },
+   "shot": "sections/02-section-house.jpg"
+  },
+  {
+   "name": "Section / Gallery",
+   "type": "FrameNode",
+   "y": 1813,
+   "h": 3677,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Animation"
+   ],
+   "text": 3,
+   "words": 33,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "ScrollFanGallery": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body S": 2
+   },
+   "shot": "sections/03-section-gallery.jpg"
+  },
+  {
+   "name": "Section / Rooms",
+   "type": "FrameNode",
+   "y": 5490,
+   "h": 1837,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 27,
+   "images": 8,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    12
+   ],
+   "components": {
+    "Section Label": 1
+   },
+   "effects": {
+    "appear": 10,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body L": 1
+   },
+   "shot": "sections/04-section-rooms.jpg"
+  },
+  {
+   "name": "Section / Guests",
+   "type": "FrameNode",
+   "y": 7327,
+   "h": 1045,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 50,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    12
+   ],
+   "components": {
+    "Section Label": 1,
+    "Review Card": 5
+   },
+   "effects": {
+    "appear": 9,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body S": 1,
+    "H5": 1,
+    "Body M": 1,
+    "H4": 1,
+    "Label": 1
+   },
+   "shot": "sections/05-section-guests.jpg"
+  },
+  {
+   "name": "Section / Amenities",
+   "type": "FrameNode",
+   "y": 8372,
+   "h": 1236,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 80px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Carousel"
+   ],
+   "text": 2,
+   "words": 38,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "CarouselClonedInstances": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "H2": 1,
+    "Body S": 1
+   },
+   "shot": "sections/06-section-amenities.jpg"
+  },
+  {
+   "name": "Section / Benefits",
+   "type": "FrameNode",
+   "y": 9608,
+   "h": 1105,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 38,
+   "words": 199,
+   "images": 0,
+   "icons": 12,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Section Label": 1
+   },
+   "effects": {
+    "appear": 14,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body M": 1,
+    "Meta": 12,
+    "H5": 12,
+    "Body S": 12
+   },
+   "shot": "sections/07-section-benefits.jpg"
+  },
+  {
+   "name": "Section / Area",
+   "type": "FrameNode",
+   "y": 10713,
+   "h": 969,
+   "w": 1200,
+   "fill": "token:Pearl White",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 18,
+   "words": 129,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Section Label": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1,
+    "hover": 4
+   },
+   "styles": {
+    "H3": 1,
+    "Body M": 1,
+    "Label": 8,
+    "H5": 4,
+    "Body S": 4
+   },
+   "shot": "sections/08-section-area.jpg"
+  },
+  {
+   "name": "Section / Booking",
+   "type": "FrameNode",
+   "y": 11682,
+   "h": 600,
+   "w": 1200,
+   "fill": "token:Pearl White",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Spacer"
+   ],
+   "text": 10,
+   "words": 102,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Label": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "H5": 3,
+    "Body M": 3
+   },
+   "shot": "sections/09-section-booking.jpg"
+  },
+  {
+   "name": "Section / Rates",
+   "type": "FrameNode",
+   "y": 12282,
+   "h": 972,
+   "w": 1200,
+   "fill": "token:Pearl White",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 10,
+   "words": 24,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Button": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Label": 4,
+    "Display": 1,
+    "Body S": 3,
+    "Price": 1
+   },
+   "shot": "sections/10-section-rates.jpg"
+  },
+  {
+   "name": "Section / FAQ",
+   "type": "FrameNode",
+   "y": 13254,
+   "h": 1377,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "CustomAccordion": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body L": 1,
+    "Body M": 1
+   },
+   "shot": "sections/11-section-faq.jpg"
+  },
+  {
+   "name": "Section / Journal",
+   "type": "FrameNode",
+   "y": 14631,
+   "h": 778,
+   "w": 1200,
+   "fill": "token:Paper",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 14,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Label": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1,
+    "hover": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Label": 1,
+    "Card H3": 1,
+    "Body S": 1
+   },
+   "shot": "sections/12-section-journal.jpg"
+  }
+ ],
+ "effects": {
+  "sticky": 3,
+  "appear": 58,
+  "text": 11,
+  "hover": 5
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.2,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.6s",
+     "bounce": 0.1,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.6s",
+     "bounce": 0.1,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0.2,
+   "trigger": "onInView",
+   "tokenization": "line",
+   "delay": "0.1s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "0px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.6s",
+     "bounce": 0.1,
+     "delay": "0.08s"
+    }
+   }
+  },
+  "hover": {
+   "opacity": 0.84,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.22,
+     1,
+     0.36,
+     1
+    ],
+    "duration": "0.4s",
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {
+  "Switzer": 6
+ },
+ "radii": [
+  [
+   "8px",
+   30
+  ],
+  [
+   "0px",
+   4
+  ]
+ ],
+ "surfaces": {
+  "shadows": 16,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Pearl White",
+ "pageHeight": 16172,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/0f2ac6a7-5661-4aa1-b96e-92a78c8df32f.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/bb94cb0f-a1af-47e6-bd44-dacf0113b3c5.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-hotels/skandic",
+ "industry": "hospitality-hotels",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  16262
+ ]
+}
