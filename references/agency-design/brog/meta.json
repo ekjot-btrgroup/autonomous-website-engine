@@ -1,0 +1,19 @@
+{
+  "name": "Brog",
+  "industry": "agency-design",
+  "also": ["agency-web", "portfolio-designers"],
+  "summary": "Monochrome creative studio site: a near-black hero with a giant tight-tracked wordmark laid over a centred duotone portrait, then white editorial sections with bracketed index labels, a 2x2 fashion-photo work grid and a dark numbered services list with pill tags.",
+  "style": ["monochrome", "swiss", "editorial"],
+  "feel": { "tone": 4, "energy": 3, "luxury": 3, "density": 2, "warmth": 2, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "neutral",
+  "palette": { "bg": "#ffffff", "surface": "#0a0b12", "ink": "#0a0a0a", "muted": "#2b2b2b", "accent": "#ff3700", "line": "#e0e0e0" },
+  "fonts": { "display": "Inter Display", "body": "Inter Display", "class": "grotesk", "pairing": "one family: Inter Display 600 at very tight negative tracking (-4 to -8px) for 70 to 190px heads, 500 for 16 to 20px body and captions" },
+  "hero": "big-type-editorial",
+  "sections": ["hero", "about", "stats", "logos", "portfolio", "features", "services", "faq", "contact"],
+  "motion": 3,
+  "signature": ["oversized wordmark with registered mark overlapping a centred square photo, a second word set big at the opposite corner", "stacked uppercase discipline list in the hero's lower left as a typographic menu", "bracketed zero-slashed index labels like (01) above every section head", "dark services list: number, title and copy on the left, a cluster of white pill tags on the right, hairline separators"],
+  "imagery": "high-fashion editorial portraits with saturated single-colour backgrounds (sky blue, red, lime, deep blue duotone), square-cornered, full colour against an otherwise colourless UI",
+  "layout_grid": "1200 canvas, 64px side padding, 120px section padding, 2-column work grid with 24px gaps, 0px radii except pill tags and buttons",
+  "quality": 4
+}
