@@ -1,0 +1,44 @@
+{
+  "n": 3,
+  "name": "Soft Arches",
+  "concept": "Gentle arch shapes and sage calm: a reassuring, nurse-the-nerves first visit for people new to injectables.",
+  "refs": [
+    "health-therapy/therapist",
+    "health-wellness/wellges"
+  ],
+  "style": "warm-organic",
+  "scheme": "light",
+  "palette": {
+    "bg": "#eef0e9",
+    "surface": "#e2e6dc",
+    "ink": "#1f2a22",
+    "muted": "#566253",
+    "accent": "#4f6f53",
+    "line": "#cfd6c7"
+  },
+  "fonts": {
+    "display": "Gilda Display",
+    "body": "Karla",
+    "class": "serif"
+  },
+  "hero": "split-image-right",
+  "sections": [
+    "hero",
+    "process",
+    "services",
+    "about",
+    "pricing",
+    "faq",
+    "testimonials",
+    "contact",
+    "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+    "full-radius arch masks on the hero photo, the founder portrait and treatment cards",
+    "hairline three-step 'your first visit' row with large serif numerals, right under the hero",
+    "price list as ruled rows grouped by unit, syringe, vial and session"
+  ],
+  "imagery": "soft daylight, botanicals, linen and stone textures, calm close-ups of skin; sage and cream tones",
+  "why": "Puts first-timers at ease by explaining the consultation before anything else."
+}
