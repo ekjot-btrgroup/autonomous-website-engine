@@ -1,6 +1,16 @@
 # Project state and plan (handover file)
 
-Last updated: 2026-11-11. Read this first in any new chat. Keep it current: update it at the end of every task that changes the plan.
+Last updated: 2026-11-12. Read this first in any new chat. **Section 0 is the current system; sections 1-7 are history (v1).** Keep it current: update it at the end of every task that changes the plan.
+
+## 0. Current system: v2 (2026-11-12)
+- **Flow:** brief -> 3 questions -> industry recipe (research if new) -> `refs -- match` -> 10 art directions (`directions -- check`) -> 10 `design-builder` agents in parallel -> `review` + `design-critic` agents -> fixes -> `review --gallery` (contact sheet + browsable zip) -> user picks 3 -> polish -> `final` (HTML / Lovable folder). Skills: `/shortlist`, `/build-site`, `/add-references`.
+- **Reference library:** `references/<category>-<sub>/<template>/` from the user's Framer workspace "Moodboard" (71 unique projects; "Verity" and "Forgiving Needs" exist twice and were imported once). Each has `dna.json` (exact type styles with responsive sizes, colour tokens, sections with geometry/layout/effects, effect samples with real timings, components), `thumb.jpg`, `phone.jpg`, `sections/NN-*.jpg`, `meta.json` (tags) and `card.md` (detailed design notes). Read via Framer MCP (`open_project` + `exec` of `engine/framer/extract.js`, read-only).
+- **Quality:** `docs/DESIGN-QUALITY.md`, `knowledge/anti-slop.json` (`npm run slop`), `npm run review` (overflow at 390/820/1440, fonts, h1, alt, tap targets, script errors, slop).
+- **Photos:** Framer `api.images.search` (Unsplash URLs) + `npm run photos`; Openverse fallback (local edition without Framer).
+- **Environment hosts added:** `framerusercontent.com` (reference screenshots), `images.unsplash.com` (photos), plus earlier `api.openverse.org`.
+- **Removed:** the 120 uiuxlabz templates, test-templates/, the two v1 demo sites and their briefs/memory events (all in git history). v1 scripts stay in `engine/` for tests but have no npm scripts; v1 docs in `docs/v1/`.
+- **Demo:** `briefs/fade-and-co*.json` (fictional barbershop) used to test the chain end to end.
+- **Paused:** Lovable showcase/admin (v1, `templates/showcase-*`, `wip/admin-v2-partial`).
 
 ## 1. Key facts
 | Item | Value |

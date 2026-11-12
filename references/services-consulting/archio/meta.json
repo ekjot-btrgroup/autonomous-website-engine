@@ -1,0 +1,19 @@
+{
+  "name": "Archio",
+  "industry": "services-consulting",
+  "also": ["software-fintech", "services-legal"],
+  "summary": "Warm paper-toned consultancy site with a light Crimson Pro serif, deep forest-green pill buttons and photo-pair service cards.",
+  "style": ["editorial", "warm-organic", "minimal"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 2, "warmth": 4, "modernity": 3 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#ecebe4", "ink": "#000000", "muted": "#4d4d4d", "accent": "#0e3a27", "line": "#e6e3da" },
+  "fonts": { "display": "Crimson Pro", "body": "Inter", "class": "serif", "pairing": "light 300 serif headlines with tight tracking over a neutral sans body and UI" },
+  "hero": "split-image-right",
+  "sections": ["hero", "services", "cta", "features", "process", "features", "testimonials", "stats", "blog", "faq", "team", "cta"],
+  "motion": 3,
+  "signature": ["floating pill nav docked at the bottom of the hero viewport rather than the top", "service cards with an icon tile, title, copy and a pair of rounded photos underneath", "comparison table whose winning column has a forest-green header and tinted cells"],
+  "imagery": "muted documentary office and hands photography, one surreal glossy sculpture shot, warm desaturated grade",
+  "layout_grid": "1200px canvas, 50px side padding, 100px section padding, 2-column card grid with 24px gutters, centered section headers",
+  "quality": 3
+}

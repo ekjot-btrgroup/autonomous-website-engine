@@ -1,0 +1,19 @@
+{
+  "name": "Landa",
+  "industry": "software-saas",
+  "also": ["software-ai", "agency-web", "software-apps"],
+  "summary": "Near-black green-tinted SaaS landing with aqua glow arcs, wireframe isometric icons and quiet Inter type; the dark-tech template done with restraint.",
+  "style": ["futuristic-dark", "technical", "minimal"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 2, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "teal",
+  "palette": { "bg": "#010907", "surface": "#08130f", "ink": "#f4f7f5", "muted": "#9ca29f", "accent": "#69ecbf", "line": "#1a2420" },
+  "fonts": { "display": "Inter Variable", "body": "Inter Variable", "class": "sans", "pairing": "one variable grotesk; 550 for headlines with -2% tracking, 400-450 for body, hierarchy from size and opacity only" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "features", "process", "stats", "features", "pricing", "testimonials", "stats", "faq", "cta"],
+  "motion": 3,
+  "signature": ["planet-horizon glow arcs (aqua rim light over a dark dome) used as section openers for pricing and CTA", "dotted-wireframe isometric 3D glyphs inside dark bento feature cards with a faint colour wash per card", "giant cropped brand wordmark rendered as a glitchy light-streak texture above the footer"],
+  "imagery": "no photography; diagonal aqua light streaks with halftone grain, wireframe isometric objects, product UI mocks (optimisation checklist, bar chart dashboard)",
+  "layout_grid": "1440 canvas, ~1078px content (181px side padding), 112px section padding, 2x2 bento then 3-up and 4-up rows",
+  "quality": 4
+}

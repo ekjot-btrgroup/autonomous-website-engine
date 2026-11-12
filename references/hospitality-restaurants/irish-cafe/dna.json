@@ -1,0 +1,747 @@
+{
+ "title": "Irish Cafe (Template) (copy)",
+ "pages": [
+  "/",
+  "/blog",
+  "/blog/:L5vlheIz4",
+  "/reservation",
+  "/menu",
+  "/404",
+  "/brewing-stations",
+  "/blog/category/:eGfBYosD5",
+  "/blog/tag/:eHHl56ch7",
+  "/about",
+  "/brewing-stations/:PW_2OaueE",
+  "/legal/:mFYMiBzw2",
+  "/franchise",
+  "/catering"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Primary",
+   "light": "rgb(61, 41, 30)",
+   "dark": "rgb(240, 228, 211)"
+  },
+  {
+   "name": "Primary Subtle",
+   "light": "rgb(240, 225, 197)",
+   "dark": "rgb(54, 35, 24)"
+  },
+  {
+   "name": "Page",
+   "light": "rgb(255, 235, 199)",
+   "dark": "rgb(22, 14, 9)"
+  },
+  {
+   "name": "Card",
+   "light": "rgb(244, 216, 179)",
+   "dark": "rgb(59, 38, 28)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgb(85, 60, 45)",
+   "dark": "rgb(255, 233, 212)"
+  },
+  {
+   "name": "Subtle",
+   "light": "rgba(61, 41, 30, 0.08)",
+   "dark": "rgba(230, 200, 165, 0.12)"
+  },
+  {
+   "name": "Default",
+   "light": "rgba(61, 41, 30, 0.15)",
+   "dark": "rgba(230, 200, 165, 0.22)"
+  },
+  {
+   "name": "On Espresso",
+   "light": "rgb(255, 235, 199)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(38, 25, 18)",
+   "dark": "rgb(255, 235, 199)"
+  },
+  {
+   "name": "Midnight",
+   "light": "rgb(0, 0, 0)",
+   "dark": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Muted",
+   "light": "rgb(255, 240, 219)",
+   "dark": "rgb(38, 24, 18)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Clash Display",
+   "weight": 600,
+   "style": "normal",
+   "size": "88px",
+   "tracking": "0px",
+   "leading": "110%",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18)",
+   "responsive": {
+    "default": "88px",
+    "medium": "72px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Clash Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "0px",
+   "leading": "115%",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18)",
+   "responsive": {
+    "default": "52px",
+    "medium": "44px",
+    "small": "32px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Clash Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "0px",
+   "leading": "120%",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18)",
+   "responsive": {
+    "default": "32px",
+    "medium": "28px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Large",
+   "font": "Fraunces",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "160%",
+   "color": "token:121b32f8-6dd4-4c66-8840-5c8420ad1b64, rgb(85, 60, 45)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Normal",
+   "font": "Fraunces",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "160%",
+   "color": "token:121b32f8-6dd4-4c66-8840-5c8420ad1b64, rgb(85, 60, 45)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Dish Name",
+   "font": "Clash Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "0px",
+   "leading": "140%",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18)",
+   "responsive": {
+    "default": "28px",
+    "medium": "24px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Description",
+   "font": "Fraunces",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.02em",
+   "leading": "150%",
+   "color": "token:121b32f8-6dd4-4c66-8840-5c8420ad1b64, rgb(85, 60, 45)",
+   "responsive": {
+    "default": "16px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Price",
+   "font": "Clash Display",
+   "weight": 600,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "0px",
+   "leading": "140%",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18)",
+   "responsive": {
+    "default": "20px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Fraunces",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "1.2px",
+   "leading": "1.6em",
+   "color": "token:121b32f8-6dd4-4c66-8840-5c8420ad1b64, rgb(85, 60, 45) /* {\"name\":\"Secondary\"} */",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Section",
+   "tag": "h3",
+   "font": "Clash Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "0px",
+   "leading": "1.25em",
+   "color": "token:387b3b85-d471-4988-b50f-c3152945bef9, rgb(38, 25, 18) /* {\"name\":\"Primary\"} */",
+   "responsive": {
+    "default": "22px"
+   }
+  }
+ ],
+ "components": [
+  "Footer",
+  "Footer Button",
+  "Text",
+  "Arrow",
+  "Blog",
+  "Blog small",
+  "Highlight box",
+  "Form Button",
+  "Main Section",
+  "Navigation Gallery",
+  "Images",
+  "Subcribe Button",
+  "Images (menu)",
+  "menu item",
+  "Cta",
+  "Tag (blogs)",
+  "Category (blogs)",
+  "Chef card",
+  "Header (hero)",
+  "Gallery/Navigation Item",
+  "Dish Image",
+  "Tab",
+  "Navbar",
+  "NavItem",
+  "NavButton",
+  "Eyebrow",
+  "Button",
+  "Latest Posts (card)",
+  "Buy Button",
+  "Locations",
+  "Stat",
+  "Process Step",
+  "Question",
+  "Quote Button"
+ ],
+ "pageEffects": 2,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Header+footer",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navbar",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Buy Button Wrapper",
+    "comp": "Buy Button",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Page"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": -9,
+   "h": 800,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 40px 40px 40px",
+   "gap": "24px",
+   "childNames": [
+    "Video Wrapper",
+    "Content Wrapper"
+   ],
+   "text": 2,
+   "words": 36,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 3,
+    "parallax": 2,
+    "text": 2
+   },
+   "styles": {
+    "H1": 1,
+    "Large": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Signature Dishes",
+   "type": "FrameNode",
+   "y": 791,
+   "h": 915,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 9,
+   "words": 35,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "ticker": 1
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 8
+   },
+   "shot": "sections/02-signature-dishes.jpg"
+  },
+  {
+   "name": "Gallery",
+   "type": "FrameNode",
+   "y": 1706,
+   "h": 1066,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 17,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Main Section": 1
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 1
+   },
+   "shot": "sections/03-gallery.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 2772,
+   "h": 940,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 4,
+   "words": 51,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "LoaderCounter": 2,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 1,
+    "Normal": 2
+   },
+   "shot": "sections/04-about.jpg"
+  },
+  {
+   "name": "Locations",
+   "type": "FrameNode",
+   "y": 3712,
+   "h": 776,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 10,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Locations": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 1
+   },
+   "shot": "sections/05-locations.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 4488,
+   "h": 721,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 18,
+   "images": 4,
+   "icons": 5,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Text": 1
+   },
+   "effects": {
+    "appear": 5,
+    "loop": 4
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 1
+   },
+   "shot": "sections/06-testimonials.jpg"
+  },
+  {
+   "name": "Blogs",
+   "type": "FrameNode",
+   "y": 5209,
+   "h": 1272,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "48px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 23,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Blog": 1,
+    "Blog small": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "Large": 1
+   },
+   "shot": "sections/07-blogs.jpg"
+  },
+  {
+   "name": "Call To Action Section",
+   "type": "FrameNode",
+   "y": 6481,
+   "h": 635,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "80px 40px 80px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Call To Action"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Cta": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/08-call-to-action-section.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 36,
+  "parallax": 2,
+  "text": 2,
+  "ticker": 1,
+  "loop": 4
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.12,
+      0.23,
+      0.5,
+      1
+     ],
+     "duration": "0.4s",
+     "delay": "0.2s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.12,
+      0.23,
+      0.5,
+      1
+     ],
+     "duration": "0.4s",
+     "delay": "0.2s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 80
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "character",
+   "delay": "0.2s",
+   "style": {
+    "opacity": 0,
+    "x": "-10px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "5px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.44,
+      0,
+      0.56,
+      1
+     ],
+     "duration": "0.4s",
+     "delay": "0.04s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 40,
+   "hoverModifier": "20%",
+   "directionModifier": "default",
+   "draggable": true
+  },
+  "loop": {
+   "repeatType": "loop",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": 0,
+   "scale": 1,
+   "rotate": 360,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.44,
+     0,
+     0.56,
+     1
+    ],
+    "duration": "3s",
+    "delay": "0.2s"
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "40px",
+   26
+  ],
+  [
+   "0px",
+   7
+  ],
+  [
+   "120px",
+   4
+  ],
+  [
+   "80px",
+   3
+  ],
+  [
+   "12px",
+   3
+  ],
+  [
+   "16px 0px 0px 0px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 12,
+  "blur": 4
+ },
+ "desktopFill": "token:Page",
+ "pageHeight": 8083,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/9800b51e-1a9a-44f7-8613-9725b88d3853.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/7a11599f-98a5-4dd3-9b76-bee728200e85.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-restaurants/irish-cafe",
+ "industry": "hospitality-restaurants",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8133
+ ]
+}

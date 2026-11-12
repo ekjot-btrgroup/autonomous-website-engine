@@ -1,0 +1,19 @@
+{
+  "name": "Avro Studio",
+  "industry": "agency-architecture",
+  "also": ["agency-design", "ecommerce-furniture", "real-estate-listings"],
+  "summary": "Black-and-white interior studio site with a dim full-bleed room photo, a centred uppercase wordmark hero, a staggered project collage and stacking process cards.",
+  "style": ["minimal", "cinematic", "monochrome"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 2, "modernity": 4 },
+  "scheme": "dark",
+  "hue": "black",
+  "palette": { "bg": "#000000", "surface": "#0D0D0D", "ink": "#CFCFCF", "muted": "rgba(255,255,255,0.4)", "accent": "#FFFFFF", "line": "rgba(255,255,255,0.1)" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 500 uppercase for the hero wordmark, Inter Display 400 for section titles, Inter 400 for body; no second family" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "stats", "portfolio", "services", "gallery", "process", "testimonials", "blog", "cta"],
+  "motion": 4,
+  "signature": ["background flips from black to white while the project collage scrolls through", "staggered project collage with images of different sizes alternating left and right", "drawing to render split-reveal slider", "process cards that pin and stack, scaling down to 0.9 as the next one arrives"],
+  "imagery": "moody AI-rendered interiors with warm raking light, gallery-white rooms with bold art, concrete halls; square crops, no radius",
+  "layout_grid": "full 1440 frame with 30px side padding, 100 to 150px section padding, left-aligned headers, zero radius, hairline dividers only",
+  "quality": 3
+}

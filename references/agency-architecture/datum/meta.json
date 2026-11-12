@@ -1,0 +1,19 @@
+{
+  "name": "Datum",
+  "industry": "agency-architecture",
+  "also": ["real-estate-construction", "ecommerce-furniture", "hospitality-hotels"],
+  "summary": "Bone-and-umber architecture studio site with light-weight giant grotesk type, square corners, an animated floor-plan study and a project index of huge names.",
+  "style": ["editorial", "minimal", "swiss"],
+  "feel": { "tone": 1, "energy": 2, "luxury": 5, "density": 2, "warmth": 4, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "brown",
+  "palette": { "bg": "#EEEAE3", "surface": "#DED7CC", "ink": "#1C1714", "muted": "#665B52", "accent": "#B83D1C", "line": "#CEC5B8" },
+  "fonts": { "display": "Switzer", "body": "Switzer", "class": "sans", "pairing": "single grotesk family; display at weight 300 with -0.055em tracking, body and labels at 400, buttons 500" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "about", "stats", "portfolio", "process", "gallery", "services", "process", "features", "testimonials", "contact"],
+  "motion": 5,
+  "signature": ["scroll-driven floor plan that draws walls, openings, dimensions, furniture and numbered notes in steps", "project index rows with 72px light names and a hairline grid of location, year, typology and area", "featured project photo with an overlapping spec card listing facts in ruled rows", "drawing-to-built slider that wipes a line sketch into the finished photo"],
+  "imagery": "golden-hour architectural renders of limewash, travertine and timber; architectural line drawings and plans in ink and vermilion; square crops",
+  "layout_grid": "1120px content (1200 frame, 40px sides), 140px section padding, 12-col grid, zero radius on images and buttons, hairlines instead of shadows",
+  "quality": 5
+}

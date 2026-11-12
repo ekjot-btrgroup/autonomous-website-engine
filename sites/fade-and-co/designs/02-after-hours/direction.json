@@ -1,0 +1,40 @@
+{
+ "n": 2,
+ "name": "After Hours",
+ "concept": "The shop at night: near-black, warm copper light, a quiet serif voice and two-tone headlines.",
+ "refs": [
+  "services-consulting/tandem-co-agency"
+ ],
+ "style": "cinematic",
+ "scheme": "dark",
+ "palette": {
+  "bg": "#0d0d0d",
+  "surface": "#181818",
+  "ink": "#f4f1ea",
+  "muted": "#a8a39a",
+  "accent": "#d9824a",
+  "line": "#2a2a2a"
+ },
+ "fonts": {
+  "display": "Instrument Serif",
+  "body": "Manrope",
+  "class": "serif"
+ },
+ "hero": "big-type-editorial",
+ "sections": [
+  "hero",
+  "about",
+  "services",
+  "gallery",
+  "pricing",
+  "booking",
+  "contact"
+ ],
+ "motion": 3,
+ "signature": [
+  "headlines where the second half fades to grey",
+  "sticky service index that lights up as the photos scroll past"
+ ],
+ "imagery": "low-key, warm tungsten photos of the chair, steam and blades; deep shadows",
+ "why": "Gives a neighbourhood barber a premium, grown-up edge without losing the friendly voice."
+}

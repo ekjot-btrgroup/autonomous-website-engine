@@ -1,5 +1,7 @@
 # Plan v2: reference-built design system (decided 2026-11-12)
 
+**Status 2026-11-12: live.** Built: Framer reference import (all 71 templates), directions check, design-builder/critic agents, review, gallery, final delivery. The section-variant library (1b) is replaced for now by per-design builds guided by reference cards; reusable sections can be harvested from delivered designs later.
+
 **Decision:** approach **B**. The user's Framer templates are *references*, not outputs. They become a design
 system (tokens + section variants + industry recipes); each brief gets 10 new designs composed from it.
 Cost is not a constraint: quality rules below are mandatory ("no template look, no AI slop").
@@ -33,7 +35,7 @@ All 10 still fit the industry recipe and the brief.
 - The user's picks and notes ("too corporate", "love this layout") go to memory and steer the next briefs.
 
 ## Waiting on the user
-1. Framer templates per industry as Framer projects (user's choice, 2026-11-12). The connector reads only the project open in Framer with the MCP plugin running, so import is one project at a time: user opens it, says "next", Claude reads it. Also needs each project's published link for screenshots.
+1. Framer templates per industry as Framer projects (user's choice, 2026-11-12). The user will show how to read all projects at once through the Framer MCP (pending; do not assume one-at-a-time). Also needs each project's published link for screenshots.
 2. Licence status (purchased / free): recorded per reference with `--licence`.
 3. Decided: homepage only.
 4. Optional: Unsplash API key for better photos.

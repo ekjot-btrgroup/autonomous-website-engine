@@ -1,0 +1,19 @@
+{
+  "name": "Novariso",
+  "industry": "ecommerce-furniture",
+  "also": ["agency-architecture", "agency-design", "ecommerce-digital"],
+  "summary": "Warm paper-and-espresso furniture brand site with huge tight-tracked grotesk headlines, alternating near-black bands and one copper accent.",
+  "style": ["editorial", "warm-organic", "minimal"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 4, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "brown",
+  "palette": { "bg": "#F4F0E9", "surface": "#E9E2D6", "ink": "#141311", "muted": "#6B645B", "accent": "#B5784A", "line": "rgba(20,19,17,0.12)" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "sans", "pairing": "one grotesk family: Display cut at 500 with very tight tracking for headlines, Inter for body and small uppercase labels" },
+  "hero": "split-image-right",
+  "sections": ["hero", "about", "services", "products", "process", "features", "testimonials", "about", "portfolio", "contact", "stats", "blog", "newsletter"],
+  "motion": 3,
+  "signature": ["two-tone headline where the last line switches to copper", "pill buttons with a filled circular dot-icon on the left", "statement band where a split headline is pushed to opposite edges of the page", "near-black and paper bands alternating roughly every other section"],
+  "imagery": "sunlit AI-staged interiors in oat, linen and pale oak; moody dark workshop shots; square-cornered crops with no radius",
+  "layout_grid": "1136px content (1200 frame, 32px sides), 128px section padding, 12-col feel with 2/3/4-up card grids, sharp image corners, fully round pills",
+  "quality": 4
+}

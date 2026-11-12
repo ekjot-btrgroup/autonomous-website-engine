@@ -1,0 +1,19 @@
+{
+  "name": "Fathom",
+  "industry": "agency-marketing",
+  "also": ["agency-design", "services-consulting"],
+  "summary": "Parchment-toned growth agency site with a condensed serif voice, surreal classical AI imagery and botanical ivy cut-outs drifting over the scroll.",
+  "style": ["editorial", "warm-organic", "luxury"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 3, "warmth": 5, "modernity": 3 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#ede8dc", "surface": "#e3dccb", "ink": "#1c1a18", "muted": "#5a554c", "accent": "#b5654a", "line": "#d3cbb9" },
+  "fonts": { "display": "Libre Caslon Condensed", "body": "Geist", "class": "serif", "pairing": "tight condensed serif display with italic accent words, small medium-weight grotesk for UI and body" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "about", "services", "stats", "portfolio", "process", "testimonials", "pricing", "team", "blog", "faq", "contact"],
+  "motion": 4,
+  "signature": ["section header rule: terracotta dot eyebrow left, 'Label 2026' right, hairline, then serif title with a /N/ counter", "alternating cream and deeper cream bands with one ink-black pricing band", "transparent ivy sprigs parallaxing over a tall sticky scroll-reveal statement"],
+  "imagery": "surreal sepia AI scenes (classical columns, planets, robed figures), rounded 20px cards with text overlaid low",
+  "layout_grid": "1200px canvas, 64px side padding, 80px section padding, 2-column split cards, 4-column team",
+  "quality": 5
+}

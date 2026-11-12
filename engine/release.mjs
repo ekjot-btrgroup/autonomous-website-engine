@@ -5,6 +5,7 @@
 // The user authorised releasing to main without asking. Each release note lists every commit, so any single
 // feature or the whole release can be brought back (see the "Bring it back" part of each note).
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { ROOT, args, die, slugify } from './lib/util.mjs';
@@ -13,11 +14,12 @@ const RELEASES = path.join(ROOT, 'docs', 'releases');
 const mode = process.argv[2];
 const a = args(process.argv.slice(3));
 
-function git(...argv) {
-  const r = spawnSync('git', argv, { cwd: ROOT, encoding: 'utf8' });
+function gitIn(cwd, ...argv) {
+  const r = spawnSync('git', argv, { cwd, encoding: 'utf8' });
   if (r.status !== 0) { const e = new Error((r.stderr || r.stdout).trim()); e.git = argv.join(' '); throw e; }
   return r.stdout.trim();
 }
+const git = (...argv) => gitIn(ROOT, ...argv);
 const tryGit = (...argv) => { try { return git(...argv); } catch { return null; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function withRetry(fn, label) {
@@ -52,7 +54,8 @@ async function release() {
     try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); console.log(`Pushed to ${TARGET}.`); } catch (e) { console.log(`Saved locally; push failed (${e.message.split('\n')[0].slice(0, 80)}).`); }
     return;
   }
-  if (git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); console.log('Committed pending changes.'); }
+  // --committed: release only what is already committed (work still being written stays out).
+  if (!a.committed && git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); console.log('Committed pending changes.'); }
   await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch');
 
   const commits = git('log', '--no-merges', '--format=%h\t%s', `origin/${TARGET}..HEAD`).split('\n').filter(Boolean).map((l) => l.split('\t'));
@@ -67,34 +70,7 @@ async function release() {
   const tag = `release-${stamp}-${slug}`;
   const rel = `docs/releases/${now.toISOString().slice(0, 10)}-${stamp.slice(9)}-${slug}.md`;
 
-  // 1. Merge the branch into main and push (retry if main moved meanwhile).
-  let mergeSha;
-  for (let attempt = 1; ; attempt++) {
-    git('checkout', '--quiet', '--detach', `origin/${TARGET}`);
-    try { git('merge', '--no-ff', '--no-edit', '-m', `Release: ${summary} (from ${br})`, br); }
-    catch (e) {
-      tryGit('merge', '--abort'); git('checkout', '--quiet', br);
-      die(`Merge into main has conflicts; nothing was pushed.\nFix: npm run sync (resolve conflicts), then npm run release -- "${summary}" again.\n${e.message.slice(0, 300)}`);
-    }
-    mergeSha = git('rev-parse', 'HEAD');
-    try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
-    catch (e) {
-      git('checkout', '--quiet', br);
-      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { console.log('main moved meanwhile; retrying...'); await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch'); continue; }
-      die(`Push to ${TARGET} failed: ${e.message.slice(0, 300)}\n(Branch protection or missing permission? The branch itself is intact.)`);
-    }
-  }
-  const short = mergeSha.slice(0, 7);
-
-  // 2. Optional tag (some environments block tag pushes; the merge commit is the reliable handle).
-  let tagged = false;
-  try { git('tag', '-a', tag, '-m', summary, mergeSha); git('push', '--quiet', 'origin', tag); tagged = true; }
-  catch { tryGit('tag', '-d', tag); }
-  const ref = tagged ? tag : short;
-
-  // 3. Release note on main, naming the exact merge commit.
-  fs.mkdirSync(RELEASES, { recursive: true });
-  fs.writeFileSync(path.join(ROOT, rel), `# ${summary}
+  const NOTE = (short, tagged, ref) => `# ${summary}
 
 - Released: ${now.toISOString().slice(0, 16).replace('T', ' ')} UTC
 - Merge commit on ${TARGET}: \`${short}\`${tagged ? ` (tag \`${tag}\`)` : ''}
@@ -111,22 +87,58 @@ ${commits.map(([h, subj]) => `| \`${h}\` | ${subj.replace(/\|/g, '/')} |`).join(
 - Whole release on a new branch: \`git fetch origin && git checkout -b restore-${slug.slice(0, 24)} ${ref}\`
 - One feature onto your current branch: \`git cherry-pick <commit from the table>\`
 - Undo the whole release on ${TARGET}: \`git revert -m 1 ${ref}\`
-`);
-  git('add', rel);
-  git('commit', '--quiet', '-m', `Release note: ${summary}`);
+`;
+  // The merge happens in a temporary worktree, so this working folder (and anything still writing into it) is never touched.
+  const WT = fs.mkdtempSync(path.join(os.tmpdir(), 'release-'));
+  git('worktree', 'add', '--quiet', '--detach', WT, `origin/${TARGET}`);
+  const g = (...argv) => gitIn(WT, ...argv);
+  const tg = (...argv) => { try { return g(...argv); } catch { return null; } };
+  const cleanup = () => { tryGit('worktree', 'remove', '--force', WT); fs.rmSync(WT, { recursive: true, force: true }); tryGit('worktree', 'prune'); };
+  try {
+  // 1. Merge the branch into main and push (retry if main moved meanwhile).
+  let mergeSha;
   for (let attempt = 1; ; attempt++) {
-    try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
+    g('checkout', '--quiet', '--detach', `origin/${TARGET}`);
+    try { g('merge', '--no-ff', '--no-edit', '-m', `Release: ${summary} (from ${br})`, br); }
     catch (e) {
-      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { git('fetch', '--quiet', 'origin', TARGET); git('rebase', '--quiet', `origin/${TARGET}`); continue; }
+      tg('merge', '--abort'); cleanup();
+      die(`Merge into main has conflicts; nothing was pushed.\nFix: npm run sync (resolve conflicts), then npm run release -- "${summary}" again.\n${e.message.slice(0, 300)}`);
+    }
+    mergeSha = g('rev-parse', 'HEAD');
+    try { await withRetry(() => g('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
+    catch (e) {
+      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { console.log('main moved meanwhile; retrying...'); await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch'); continue; }
+      cleanup(); die(`Push to ${TARGET} failed: ${e.message.slice(0, 300)}\n(Branch protection or missing permission? The branch itself is intact.)`);
+    }
+  }
+  const short = mergeSha.slice(0, 7);
+
+  // 2. Optional tag (some environments block tag pushes; the merge commit is the reliable handle).
+  let tagged = false;
+  try { git('tag', '-a', tag, '-m', summary, mergeSha); git('push', '--quiet', 'origin', tag); tagged = true; }
+  catch { tryGit('tag', '-d', tag); }
+  const ref = tagged ? tag : short;
+
+  // 3. Release note on main, naming the exact merge commit.
+  fs.mkdirSync(path.join(WT, 'docs', 'releases'), { recursive: true });
+  fs.writeFileSync(path.join(WT, rel), NOTE(short, tagged, ref));
+  g('add', rel);
+  g('commit', '--quiet', '-m', `Release note: ${summary}`);
+  for (let attempt = 1; ; attempt++) {
+    try { await withRetry(() => g('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); break; }
+    catch (e) {
+      if (attempt < 3 && /rejected|fetch first|non-fast-forward/i.test(e.message)) { git('fetch', '--quiet', 'origin', TARGET); g('rebase', '--quiet', `origin/${TARGET}`); continue; }
       console.log(`Warning: release note not pushed (${e.message.split('\n')[0].slice(0, 120)}); the release itself is on main.`); break;
     }
   }
-  const finalSha = git('rev-parse', 'HEAD');
+  const finalSha = g('rev-parse', 'HEAD');
 
   // 4. Bring the branch level with main.
-  git('checkout', '--quiet', br);
   tryGit('merge', '--quiet', '--ff-only', finalSha);
   tryGit('push', '--quiet', '-u', 'origin', br);
+  var done = { short, tagged };
+  } finally { cleanup(); }
+  const { short, tagged } = done;
   console.log(`Released to ${TARGET}: ${short} "${summary}" (${commits.length} commit(s), ${stat})${tagged ? `, tag ${tag}` : ''}.`);
   console.log(`Release note: ${rel}`);
 }

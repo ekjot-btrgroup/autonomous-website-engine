@@ -1,0 +1,888 @@
+{
+ "title": "Architecture & Interior (copy)",
+ "pages": [
+  "/",
+  "/projects",
+  "/studio",
+  "/services",
+  "/contact",
+  "/projects/:P6Kz76LjR",
+  "/privacy",
+  "/terms",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Bone",
+   "light": "rgb(238, 234, 227)"
+  },
+  {
+   "name": "Stone",
+   "light": "rgb(222, 215, 204)"
+  },
+  {
+   "name": "Umber",
+   "light": "rgb(43, 31, 24)"
+  },
+  {
+   "name": "Ink",
+   "light": "rgb(28, 23, 20)"
+  },
+  {
+   "name": "Taupe",
+   "light": "rgb(102, 91, 82)"
+  },
+  {
+   "name": "Hairline",
+   "light": "rgb(206, 197, 184)"
+  },
+  {
+   "name": "Umber Line",
+   "light": "rgb(75, 59, 49)"
+  },
+  {
+   "name": "Signal",
+   "light": "rgb(184, 61, 28)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "White Line",
+   "light": "rgba(255, 255, 255, 0.35)"
+  },
+  {
+   "name": "Clear",
+   "light": "rgba(28, 23, 20, 0)"
+  },
+  {
+   "name": "Shade",
+   "light": "rgba(28, 23, 20, 0.6)"
+  },
+  {
+   "name": "Sand",
+   "light": "rgb(168, 154, 141)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "152px",
+   "tracking": "-0.055em",
+   "leading": "0.9em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "152px",
+    "medium": "136px",
+    "small": "62px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "72px",
+   "tracking": "-0.045em",
+   "leading": "0.98em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "72px",
+    "medium": "56px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Statement",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "40px",
+   "tracking": "-0.03em",
+   "leading": "1.12em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "40px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.02em",
+   "leading": "1.15em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Numeral",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "120px",
+   "tracking": "-0.06em",
+   "leading": "0.9em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "120px",
+    "medium": "96px",
+    "small": "72px"
+   }
+  },
+  {
+   "name": "Body L",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.01em",
+   "leading": "1.45em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "19px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1.5em",
+   "color": "token:Ink",
+   "responsive": {}
+  },
+  {
+   "name": "Body S",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.45em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0em",
+   "leading": "1.35em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Nav",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Row Title",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.035em",
+   "leading": "1.05em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "28px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Logo",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.045em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "22px"
+   }
+  },
+  {
+   "name": "Menu Link",
+   "font": "Switzer",
+   "weight": 400,
+   "style": "normal",
+   "size": "44px",
+   "tracking": "-0.045em",
+   "leading": "1.05em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "44px",
+    "medium": "40px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Index Name",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "72px",
+   "tracking": "-0.055em",
+   "leading": "0.95em",
+   "color": "token:Bone",
+   "responsive": {
+    "default": "72px",
+    "medium": "56px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "Wordmark",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "330px",
+   "tracking": "-0.06em",
+   "leading": "1em",
+   "color": "token:Bone",
+   "responsive": {
+    "default": "330px",
+    "medium": "216px",
+    "small": "100px"
+   }
+  },
+  {
+   "name": "Project Title",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 300,
+   "style": "normal",
+   "size": "112px",
+   "tracking": "-0.055em",
+   "leading": "0.95em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "112px",
+    "medium": "80px",
+    "small": "48px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Nav Link",
+  "Nav",
+  "Stat",
+  "Louvre Image",
+  "Project Index Row",
+  "Featured Project",
+  "Discipline",
+  "Process Visual",
+  "Process Stage",
+  "Material Swatch",
+  "Award Row",
+  "Footer Link",
+  "Meta Item",
+  "Fact Row",
+  "Story Block",
+  "Project Card",
+  "Submit",
+  "Team Member",
+  "Studio",
+  "Service Row",
+  "Engagement",
+  "FAQ Item"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 264,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Nav",
+    "comp": "Nav",
+    "position": "sticky"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Nav Spacer",
+    "position": "relative"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Lenis Smooth Scroll",
+    "comp": "Lenis",
+    "position": "absolute"
+   }
+  ],
+  "fill": "token:Bone"
+ },
+ "sections": [
+  {
+   "name": "Opening",
+   "type": "FrameNode",
+   "y": 72,
+   "h": 704,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Image",
+    "Scrim",
+    "Content"
+   ],
+   "text": 8,
+   "words": 45,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 7,
+    "parallax": 1
+   },
+   "styles": {
+    "Label": 5,
+    "Body": 1,
+    "Display": 2
+   },
+   "shot": "sections/01-opening.jpg"
+  },
+  {
+   "name": "Light Study",
+   "type": "FrameNode",
+   "y": 776,
+   "h": 2400,
+   "w": 1200,
+   "fill": "token:Stone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Scroll Track"
+   ],
+   "text": 3,
+   "words": 34,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "LightStudy": 1
+   },
+   "effects": {
+    "sticky": 1
+   },
+   "styles": {
+    "Label": 1,
+    "H2": 1,
+    "Body": 1
+   },
+   "shot": "sections/02-light-study.jpg"
+  },
+  {
+   "name": "Studio Intro",
+   "type": "FrameNode",
+   "y": 3176,
+   "h": 1173,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 140px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 64,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Louvre Image": 1,
+    "Stat": 3
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Label": 1,
+    "Statement": 1,
+    "Body L": 1,
+    "Button": 1
+   },
+   "shot": "sections/03-studio-intro.jpg"
+  },
+  {
+   "name": "Selected Work",
+   "type": "FrameNode",
+   "y": 4349,
+   "h": 1944,
+   "w": 1200,
+   "fill": "token:Umber",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 140px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 20,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Featured Project": 1,
+    "Project Index Row": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 4
+   },
+   "shot": "sections/04-selected-work.jpg"
+  },
+  {
+   "name": "Plan Study",
+   "type": "FrameNode",
+   "y": 6293,
+   "h": 2400,
+   "w": 1200,
+   "fill": "token:Bone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Scroll Track"
+   ],
+   "text": 3,
+   "words": 41,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "PlanStudy": 1
+   },
+   "effects": {
+    "sticky": 1
+   },
+   "styles": {
+    "Label": 1,
+    "H2": 1,
+    "Body": 1
+   },
+   "shot": "sections/05-plan-study.jpg"
+  },
+  {
+   "name": "Drawing Built",
+   "type": "FrameNode",
+   "y": 8693,
+   "h": 1191,
+   "w": 1200,
+   "fill": "token:Bone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 140px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 45,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "DrawingBuiltSlider": 1
+   },
+   "effects": {
+    "text": 2,
+    "appear": 2
+   },
+   "styles": {
+    "Index Name": 2,
+    "Label": 3,
+    "Body L": 1
+   },
+   "shot": "sections/06-drawing-built.jpg"
+  },
+  {
+   "name": "Disciplines",
+   "type": "FrameNode",
+   "y": 9884,
+   "h": 1255,
+   "w": 1200,
+   "fill": "token:Stone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 160px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 38,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Discipline": 4
+   },
+   "effects": {
+    "text": 1,
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "Label": 1,
+    "Body": 1
+   },
+   "shot": "sections/07-disciplines.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 11139,
+   "h": 1597,
+   "w": 1200,
+   "fill": "token:Umber",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 100px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    12
+   ],
+   "components": {
+    "Process Visual": 1,
+    "Process Stage": 5
+   },
+   "effects": {
+    "sticky": 1,
+    "scrollVariant": 1,
+    "text": 1
+   },
+   "styles": {
+    "Label": 1,
+    "H2": 1
+   },
+   "shot": "sections/08-process.jpg"
+  },
+  {
+   "name": "Materials",
+   "type": "FrameNode",
+   "y": 12736,
+   "h": 875,
+   "w": 1200,
+   "fill": "token:Bone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 140px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 37,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Material Swatch": 8
+   },
+   "effects": {
+    "text": 1,
+    "ticker": 1
+   },
+   "styles": {
+    "Label": 1,
+    "H2": 1,
+    "Body": 1
+   },
+   "shot": "sections/09-materials.jpg"
+  },
+  {
+   "name": "Recognition",
+   "type": "FrameNode",
+   "y": 13611,
+   "h": 1176,
+   "w": 1200,
+   "fill": "token:Stone",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 0px 140px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 5,
+   "words": 41,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Award Row": 5
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "Statement": 1,
+    "Body": 1,
+    "Label": 2,
+    "H3": 1
+   },
+   "shot": "sections/10-recognition.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 16,
+  "parallax": 1,
+  "sticky": 3,
+  "text": 7,
+  "scrollVariant": 1,
+  "ticker": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.14,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "1.8s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.14,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "1.8s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 80
+  },
+  "text": {
+   "threshold": 0.3,
+   "trigger": "onInView",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "8px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.03s"
+    }
+   }
+  },
+  "scrollVariant": {
+   "trigger": "onScrollTarget",
+   "threshold": 0.5,
+   "replay": true,
+   "sections": [
+    {
+     "target": "XstGf5Ds1",
+     "variant": "yqfidziTi"
+    },
+    {
+     "target": "syG2PxC3m",
+     "variant": "Gv8OZxbXL"
+    },
+    {
+     "target": "ZztkH5A5K",
+     "variant": "MqAw8vF1G"
+    },
+    {
+     "target": "sRzNSxPFq",
+     "variant": "Ulb487OSb"
+    },
+    {
+     "target": "XzbWLXgYv",
+     "variant": "exZx0w83Y"
+    }
+   ]
+  },
+  "ticker": {
+   "velocity": 28,
+   "hoverModifier": "25%",
+   "directionModifier": "default",
+   "draggable": true
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "100px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Bone",
+ "pageHeight": 16068,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/e0484ac1-0ea7-49a0-9a35-445cc2289644.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/bc29203d-c8b1-4621-b03d-9ff384059ec1.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-architecture/datum",
+ "industry": "agency-architecture",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  16457
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "wellnessé",
+  "industry": "health-wellness",
+  "also": ["health-medical", "ecommerce-beauty", "health-therapy"],
+  "summary": "Sand-toned, film-grain wellness clinic site with all-caps tight grotesk headings, soft-focus ethereal photography and square-cornered khaki cards.",
+  "style": ["minimal", "warm-organic", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 4, "modernity": 4 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#eeece0", "surface": "#dddac9", "ink": "#3d361e", "muted": "rgba(82,77,63,0.66)", "accent": "#3d361e", "line": "#dddac9" },
+  "fonts": { "display": "Plus Jakarta Sans", "body": "Plus Jakarta Sans", "class": "sans", "pairing": "one grotesk family: medium-weight caps headings with -0.03em tracking, small caps eyebrows, capitalised grey descriptions; a book serif only for testimonial quotes" },
+  "hero": "split-image-right",
+  "sections": ["hero", "features", "about", "process", "services", "pricing", "blog", "testimonials", "features", "faq", "cta"],
+  "motion": 2,
+  "signature": ["fixed film-grain noise layer over the whole page", "hero split into a blurred frosted half with caps headline and a sharp photo half", "giant outlined-to-solid SERVICES wordmark sliding under a full-bleed portrait with glass service tiles", "khaki process grid alternating huge pale numerals with photo tiles"],
+  "imagery": "soft-focus, low-contrast beige photography: skin, linen, dried flowers, calm women at home, blurred and desaturated",
+  "layout_grid": "1440px canvas, about 990px centred content column, generous 120px section gaps, 3-column card grids with 8 to 16px gutters",
+  "quality": 4
+}

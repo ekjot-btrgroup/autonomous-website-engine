@@ -1,23 +1,20 @@
-// npm run status -> one-screen overview of the library, shortlists and sites (zero tokens).
+// npm run status -> one-screen overview: reference library, briefs, designs per brief, final deliveries (zero tokens).
 import fs from 'node:fs';
 import path from 'node:path';
-import { P, loadMetas, readJson, table, categoryOf } from './lib/util.mjs';
-import { loadLibrary } from './lib/library.mjs';
+import { P, readJson } from './lib/util.mjs';
+import { loadRefs } from './refs.mjs';
+import { listDesigns } from './lib/designs.mjs';
 
-const metas = loadLibrary();
-const by = (f) => metas.reduce((c, m) => ((c[f(m)] = (c[f(m)] || 0) + 1), c), {});
-console.log(`Library: ${metas.length} designs | status ${JSON.stringify(by((m) => m.status))} | tagged ${metas.filter((m) => m.tags).length}/${metas.length}`);
-console.log(`Categories: ${Object.entries(by(categoryOf)).sort((x, y) => y[1] - x[1]).map(([k, v]) => `${k} ${v}`).join(', ') || '-'}`);
-const pending = fs.existsSync(P.incoming) ? fs.readdirSync(P.incoming).filter((n) => !n.startsWith('.') && n !== 'README.md') : [];
-if (pending.length) console.log(`Waiting in incoming/: ${pending.length} item(s) -> npm run add`);
-const sc = readJson(path.join(P.showcase, '.engine', 'sync.json'), null);
-console.log(`Showcase repo: ${sc ? `${sc.repo} (last push ${sc.synced_at.slice(0, 16)})` : 'not pushed yet'}`);
-const shorts = fs.existsSync(P.shortlists) ? fs.readdirSync(P.shortlists).filter((f) => f.endsWith('.json')) : [];
-console.log(`Shortlists: ${shorts.map((f) => f.replace('.json', '')).join(', ') || '-'}`);
-const sites = fs.existsSync(P.sites) ? fs.readdirSync(P.sites, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name) : [];
-const rows = sites.map((s) => {
-  const plan = readJson(path.join(P.sites, s, '.engine', 'site.json'), {});
-  const sync = readJson(path.join(P.sites, s, '.engine', 'sync.json'), null);
-  return { site: s, sections: (plan.sections || []).length, picks: (plan.picks || []).join(','), lovable_repo: sync?.repo || '-', last_push: sync?.synced_at?.slice(0, 16) || '-' };
-});
-console.log(`\nSites:\n${table(rows, ['site', 'sections', 'picks', 'lovable_repo', 'last_push'])}`);
+const refs = loadRefs();
+const by = {}; for (const r of refs) by[r.industry] = (by[r.industry] || 0) + 1;
+console.log(`References: ${refs.length} in ${Object.keys(by).length} industries (${refs.filter((r) => r.meta?.name && r.hasCard).length} with notes)`);
+console.log('  ' + Object.entries(by).sort().map(([k, v]) => `${k} ${v}`).join('  '));
+const briefs = fs.existsSync(P.briefs) ? fs.readdirSync(P.briefs).filter((f) => /^[a-z0-9-]+\.json$/.test(f) && !f.startsWith('_')) : [];
+console.log(`\nBriefs: ${briefs.length}`);
+for (const f of briefs) {
+  const slug = f.replace(/\.json$/, ''); const b = readJson(path.join(P.briefs, f), {});
+  const designs = listDesigns(path.join(P.sites, slug, 'designs')).length;
+  const final = readJson(path.join(P.sites, slug, 'final', '.engine', 'final.json'), null);
+  const out = fs.existsSync(path.join(P.sites, '..', 'output', slug, 'final'));
+  console.log(`  ${slug.padEnd(28)} ${String(b.industry || '').padEnd(22)} designs ${designs}/10  ${final || out ? 'final delivered' : designs >= 10 ? 'waiting for picks' : 'in progress'}`);
+}

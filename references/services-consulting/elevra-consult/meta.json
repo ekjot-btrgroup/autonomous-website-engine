@@ -1,0 +1,19 @@
+{
+  "name": "Elevra Consult",
+  "industry": "services-consulting",
+  "also": ["software-fintech", "software-saas"],
+  "summary": "Cool grey-blue consultancy site with two-tone grotesk headlines and a recurring deep-blue sky photography motif framed in white cards.",
+  "style": ["corporate-clean", "minimal", "cinematic"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "blue",
+  "palette": { "bg": "#f2f4f6", "surface": "#ffffff", "ink": "#212d3d", "muted": "#8b939e", "accent": "#212d3d", "line": "#e3e6ea" },
+  "fonts": { "display": "Plus Jakarta Sans", "body": "Inter Display", "class": "sans", "pairing": "regular-weight geometric grotesk with very tight tracking for headlines, neutral display sans for body and labels" },
+  "hero": "card-stack",
+  "sections": ["hero", "stats", "logos", "services", "features", "process", "portfolio", "portfolio", "testimonials", "faq", "blog", "cta"],
+  "motion": 3,
+  "signature": ["two-line headlines where the second line drops to grey, used on every section title", "deep-blue sky and hands photography repeated across hero, service and process cards", "frosted glass quote cards laid over photos inside service rows", "expanding accordion process: one wide photo step with three narrow numbered columns"],
+  "imagery": "grainy film-look photos of open blue skies, hands, wheat and balloons; one consistent cobalt grade",
+  "layout_grid": "1200px canvas, 32px side padding, roughly 100px section padding, white 20px-radius cards on a pale grey page",
+  "quality": 4
+}

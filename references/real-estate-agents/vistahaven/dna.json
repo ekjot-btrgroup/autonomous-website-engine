@@ -1,0 +1,743 @@
+{
+ "title": "VistaHaven (copy)",
+ "pages": [
+  "/",
+  "/404",
+  "/properties/:TgH5m5E9k"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1280px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1279.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Grey 400",
+   "light": "rgb(44, 44, 44)"
+  },
+  {
+   "name": "Yellow",
+   "light": "rgb(247, 197, 71)"
+  },
+  {
+   "name": "Grey 50",
+   "light": "rgb(243, 243, 243)"
+  },
+  {
+   "name": "Grey 200",
+   "light": "rgb(199, 199, 199)"
+  },
+  {
+   "name": "Grey 300",
+   "light": "rgb(136, 136, 136)"
+  },
+  {
+   "name": "Grey 100",
+   "light": "rgb(219, 219, 219)"
+  },
+  {
+   "name": "Red",
+   "light": "rgb(255, 34, 68)"
+  },
+  {
+   "name": "Green",
+   "light": "rgb(102, 252, 117)"
+  },
+  {
+   "name": "Blue",
+   "light": "rgb(110, 153, 194)"
+  },
+  {
+   "name": "Theme Color White",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Theme Color Black",
+   "light": "rgb(0, 0, 0)",
+   "dark": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Theme Color Green",
+   "light": "rgb(102, 252, 117)",
+   "dark": "rgb(255, 34, 68)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "size": 80,
+   "leading": "1em",
+   "transform": "uppercase",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "80px",
+    "medium": "64px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "size": 36,
+   "transform": "uppercase",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "default": "36px",
+    "medium": "32px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Review Text",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "leading": "1.5em",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "medium": "16px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Body L",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 26,
+   "leading": "1.1em",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body S Normal",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "leading": "1em",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "medium": "16px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Body L Uppercase",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "size": 26,
+   "leading": "1.1em",
+   "transform": "uppercase",
+   "color": "token:d9d8d5ef-768f-4d6d-a4c1-1b6a1792413c, rgb(199, 199, 199)",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body M Bold",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "size": 18,
+   "leading": "1.3em",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body L Bold",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "size": 26,
+   "leading": "1.1em",
+   "color": "token:fa16a3ef-909b-4fe8-b9b6-d5a056139983, rgb(44, 44, 44)",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body S Bold",
+   "font": "Geist",
+   "weight": 600,
+   "style": "normal",
+   "leading": "1em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "medium": "16px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Plus Text",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 36,
+   "leading": "0.7em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "36px",
+    "medium": "36px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Body XL",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 48,
+   "leading": "1em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "48px",
+    "medium": "48px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Body S",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "leading": "1.3em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "medium": "16px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Body M",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 18,
+   "leading": "1.5em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Overview Text",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 18,
+   "leading": "1.8em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Delete Text",
+   "font": "Geist",
+   "weight": 300,
+   "style": "normal",
+   "size": 18,
+   "leading": "1.3em",
+   "color": "token:528a4e50-1a33-4ebe-a3b3-4f0f1508d312, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Achieve List",
+  "Agent Avatar Wrap",
+  "Agent Avatar",
+  "Agent Rating Wrap",
+  "Badge",
+  "Feature Card",
+  "Testimonial Wrap",
+  "FAQ Component",
+  "Form Button",
+  "Hero Button",
+  "Nav Button",
+  "Nav Menu",
+  "Feature Service Wrap",
+  "Nav",
+  "Agents Ticker",
+  "Footer",
+  "FAQ Wrap",
+  "Property Item",
+  "About Item",
+  "Bullet Point",
+  "Property Amenity",
+  "Sidebar Button",
+  "Get Template Button",
+  "New release"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Get Template Button",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "New release",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:White"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "96px 80px 40px 80px",
+   "gap": "0px",
+   "childNames": [
+    "Hero BG Wrap"
+   ],
+   "text": 2,
+   "words": 26,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Hero Button": 1,
+    "Achieve List": 3,
+    "Embed": 2,
+    "Agent Rating Wrap": 1
+   },
+   "effects": {
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body M": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Feature Service",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 1837,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px",
+   "gap": "160px",
+   "childNames": [
+    "Container",
+    "Container"
+   ],
+   "text": 3,
+   "words": 27,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Badge": 2,
+    "Feature Service Wrap": 1,
+    "Feature Card": 6
+   },
+   "effects": {
+    "appear": 8,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 2,
+    "Body M": 1
+   },
+   "shot": "sections/02-feature-service.jpg"
+  },
+  {
+   "name": "Property",
+   "type": "FrameNode",
+   "y": 2637,
+   "h": 1448,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 8,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Badge": 1,
+    "Property Item": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/03-property.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 4085,
+   "h": 909,
+   "w": 1280,
+   "fill": "token:White",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px",
+   "gap": "128px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 32,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Badge": 1,
+    "Achieve List": 4,
+    "Feature Card": 2
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body M": 1
+   },
+   "shot": "sections/04-about.jpg"
+  },
+  {
+   "name": "Agents",
+   "type": "FrameNode",
+   "y": 4994,
+   "h": 809,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 0px 80px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Ticker": 2,
+    "Agents Ticker": 1
+   },
+   "effects": {
+    "appear": 4,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/05-agents.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 5803,
+   "h": 1012,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 29,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Badge": 1,
+    "Testimonial Wrap": 6
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body M": 1
+   },
+   "shot": "sections/06-testimonials.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 6815,
+   "h": 936,
+   "w": 1280,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "FAQ Wrap": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/07-faq.jpg"
+  },
+  {
+   "name": "Contact",
+   "type": "FrameNode",
+   "y": 7751,
+   "h": 1097,
+   "w": 1280,
+   "fill": "token:Blue",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 0px 0px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "ComponentInstanceNode",
+    "Contact BG Wrap"
+   ],
+   "text": 2,
+   "words": 42,
+   "images": 0,
+   "icons": 0,
+   "inputs": 5,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Form Button": 1,
+    "Negative_Margin": 1,
+    "Image": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body M": 1
+   },
+   "shot": "sections/08-contact.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 22,
+  "text": 9,
+  "sticky": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 2,
+    "rotate": 6,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "2s",
+     "bounce": 0,
+     "delay": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 2,
+    "rotate": 6,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "2s",
+     "bounce": 0,
+     "delay": "0s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "3px",
+    "transition": {
+     "type": "spring",
+     "duration": "0.7s",
+     "bounce": 0,
+     "delay": "0.07s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "0px",
+   9
+  ],
+  [
+   "32px",
+   2
+  ],
+  [
+   "32px 32px 0px 32px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 1
+ },
+ "desktopFill": "token:White",
+ "pageHeight": 9211,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/de3df154-4736-4448-9143-7568806711a4.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/f68d307f-510a-4e76-9188-e865365ce0ae.jpg",
+  "desktopWidth": 1280
+ },
+ "id": "real-estate-agents/vistahaven",
+ "industry": "real-estate-agents",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1280,
+  9633
+ ]
+}

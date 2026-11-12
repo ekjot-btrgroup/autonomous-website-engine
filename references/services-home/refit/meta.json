@@ -1,0 +1,19 @@
+{
+  "name": "Refit",
+  "industry": "services-home",
+  "also": ["real-estate-construction", "agency-architecture", "ecommerce-furniture"],
+  "summary": "Near-black split hero with a tall interior photo, light Manrope type, line-icon service accordion and sticky case-study cards that scale back as the next arrives.",
+  "style": ["minimal", "corporate-clean", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 2, "warmth": 2, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "black",
+  "palette": { "bg": "#ffffff", "surface": "#fafafa", "ink": "#101014", "muted": "#3d3d47", "accent": "#101014", "line": "#e6e6e6" },
+  "fonts": { "display": "Manrope", "body": "Manrope", "class": "sans", "pairing": "Manrope 500 with slight negative tracking for headlines, Manrope 400 body, small dark pill badges as labels" },
+  "hero": "split-image-right",
+  "sections": ["hero", "about", "gallery", "stats", "services", "portfolio", "testimonials", "faq", "contact"],
+  "motion": 3,
+  "signature": ["sticky stacked case-study cards that shrink to 0.9 scale as the next card scrolls over, alternating light grey and near-black", "service accordion with thin line icons next to a large image that swaps per item"],
+  "imagery": "moody AI-rendered kitchens and bathrooms, warm plaster interiors, garden paths, small round client avatars",
+  "layout_grid": "1440px canvas, 80px side padding, 100 to 150px section rhythm, 4-column stats, 10px radii",
+  "quality": 3
+}

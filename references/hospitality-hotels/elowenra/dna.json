@@ -1,0 +1,746 @@
+{
+ "title": "Elowenra (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/suites",
+  "/rooms",
+  "/dining",
+  "/wellness",
+  "/experiences",
+  "/gatherings",
+  "/gallery",
+  "/journal",
+  "/contact",
+  "/privacy-policy",
+  "/terms",
+  "/journal/:ExSr9kl8G",
+  "/stay/:DumLKjb37",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Primary",
+   "light": "#16231F"
+  },
+  {
+   "name": "Primary Dark",
+   "light": "#0E1714"
+  },
+  {
+   "name": "Primary Light",
+   "light": "#22332D"
+  },
+  {
+   "name": "Secondary",
+   "light": "#E9E6DC"
+  },
+  {
+   "name": "Secondary Dark",
+   "light": "#DCD8CB"
+  },
+  {
+   "name": "Secondary Light",
+   "light": "#F4F2EB"
+  },
+  {
+   "name": "Accent",
+   "light": "#A8C38C"
+  },
+  {
+   "name": "Accent Dark",
+   "light": "#5F7F4E"
+  },
+  {
+   "name": "Text Primary",
+   "light": "#16231F"
+  },
+  {
+   "name": "Text Secondary",
+   "light": "#5C655F"
+  },
+  {
+   "name": "Text On Dark",
+   "light": "#F2F0E8"
+  },
+  {
+   "name": "Text On Dark Muted",
+   "light": "rgba(242, 240, 232, 0.64)"
+  },
+  {
+   "name": "Border Dark",
+   "light": "rgba(22, 35, 31, 0.14)"
+  },
+  {
+   "name": "Border Light",
+   "light": "rgba(242, 240, 232, 0.16)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "84px",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "84px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "-0.015em",
+   "leading": "1.05em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "56px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "36px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h4",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "26px"
+   }
+  },
+  {
+   "name": "Quote",
+   "tag": "p",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "italic",
+   "size": "34px",
+   "tracking": "-0.01em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "34px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.005em",
+   "leading": "1.6em",
+   "transform": "capitalize",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Body Regular",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "0em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Body Small",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Eyebrow",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.14em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Button",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0.01em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Navigation",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Article H1",
+   "tag": "h1",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.01em",
+   "leading": "1.05em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "48px"
+   }
+  },
+  {
+   "name": "Article H2",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "36px"
+   }
+  },
+  {
+   "name": "Article H3",
+   "tag": "h3",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Text Primary",
+   "responsive": {
+    "default": "26px"
+   }
+  },
+  {
+   "name": "Article Paragraph",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "0em",
+   "leading": "1.75em",
+   "transform": "none",
+   "color": "token:Text Secondary",
+   "responsive": {
+    "default": "17px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Submit Button",
+  "Section Label",
+  "Logo",
+  "Navigation",
+  "Footer",
+  "Category Card",
+  "Stay Card",
+  "Journal Card",
+  "Testimonial Card",
+  "Feature Card",
+  "Amenity Item",
+  "Section Heading",
+  "Page Hero",
+  "Closing CTA",
+  "Filter Chip"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrapper",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Secondary"
+ },
+ "sections": [
+  {
+   "name": "Welcome",
+   "type": "FrameNode",
+   "y": 88,
+   "h": 780,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Hero"
+   ],
+   "text": 3,
+   "words": 30,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Label": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "H1": 1,
+    "Body Large": 1,
+    "Body Small": 1
+   },
+   "shot": "sections/01-welcome.jpg"
+  },
+  {
+   "name": "Introduction",
+   "type": "FrameNode",
+   "y": 868,
+   "h": 914,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 49,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Section Label": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "Body Large": 1,
+    "Eyebrow": 1
+   },
+   "shot": "sections/02-introduction.jpg"
+  },
+  {
+   "name": "Life at Elowenra",
+   "type": "FrameNode",
+   "y": 1782,
+   "h": 1643,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Dark Panel"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Section Heading": 1,
+    "Category Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/03-life-at-elowenra.jpg"
+  },
+  {
+   "name": "Gallery Teaser",
+   "type": "FrameNode",
+   "y": 3425,
+   "h": 816,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 40px 128px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 3,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Heading": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {},
+   "shot": "sections/04-gallery-teaser.jpg"
+  },
+  {
+   "name": "Kind Words",
+   "type": "FrameNode",
+   "y": 4241,
+   "h": 699,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 40px 128px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Section Heading": 1,
+    "Testimonial Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/05-kind-words.jpg"
+  },
+  {
+   "name": "Location",
+   "type": "FrameNode",
+   "y": 4940,
+   "h": 676,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Dark Panel"
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 1,
+   "icons": 1,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Heading": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Body Large": 1
+   },
+   "shot": "sections/06-location.jpg"
+  },
+  {
+   "name": "Slow Stay",
+   "type": "FrameNode",
+   "y": 5616,
+   "h": 896,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 40px 128px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 42,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 1
+   },
+   "styles": {
+    "H3": 1,
+    "Body Regular": 1
+   },
+   "shot": "sections/07-slow-stay.jpg"
+  },
+  {
+   "name": "Journal Preview",
+   "type": "FrameNode",
+   "y": 6512,
+   "h": 876,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 128px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Section Heading": 1,
+    "Button": 1,
+    "Journal Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {},
+   "shot": "sections/08-journal-preview.jpg"
+  },
+  {
+   "name": "Booking CTA",
+   "type": "FrameNode",
+   "y": 7388,
+   "h": 589,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Closing CTA"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Closing CTA": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/09-booking-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 20
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "1.1s",
+     "delay": "0.15s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "1.1s",
+     "delay": "0.15s",
+     "stagger": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "32px",
+   3
+  ],
+  [
+   "24px",
+   3
+  ],
+  [
+   "50%",
+   2
+  ],
+  [
+   "260px 260px 24px 24px",
+   1
+  ],
+  [
+   "300px 300px 24px 24px",
+   1
+  ],
+  [
+   "24px 320px 24px 24px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Secondary",
+ "pageHeight": 8813,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/2665079c-1f70-4eed-a7aa-686c28e1c976.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/e0217b6c-37c7-41bc-bf02-e40efed9b61e.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-hotels/elowenra",
+ "industry": "hospitality-hotels",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8813
+ ]
+}

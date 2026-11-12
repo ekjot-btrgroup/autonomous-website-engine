@@ -1,0 +1,786 @@
+{
+ "title": "Letterhead (copy)",
+ "pages": [
+  "/posts",
+  "/membership",
+  "/sponsors",
+  "/privacy",
+  "/terms",
+  "/",
+  "/posts/:CIHnP_chl",
+  "/404",
+  "/subscribe"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Ground",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "Muted",
+   "light": "#4D5650"
+  },
+  {
+   "name": "Ink",
+   "light": "#14201A"
+  },
+  {
+   "name": "Accent",
+   "light": "#2F5D46"
+  },
+  {
+   "name": "Surface",
+   "light": "#F3F6F2"
+  },
+  {
+   "name": "Body",
+   "light": "#1F2622"
+  },
+  {
+   "name": "Rule",
+   "light": "#DCE3DE"
+  },
+  {
+   "name": "Accent hover",
+   "light": "#24493A"
+  },
+  {
+   "name": "On accent",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "On accent muted",
+   "light": "rgba(255, 255, 255, 0.82)"
+  },
+  {
+   "name": "On accent rule",
+   "light": "rgba(255, 255, 255, 0.22)"
+  },
+  {
+   "name": "Glass",
+   "light": "rgba(255, 255, 255, 0.95)"
+  },
+  {
+   "name": "Client logo",
+   "light": "#7E8882"
+  },
+  {
+   "name": "Tint/Sky",
+   "light": "#DCEAF2"
+  },
+  {
+   "name": "Tint/Cloud",
+   "light": "#F7E4D8"
+  },
+  {
+   "name": "Tint/Leaf",
+   "light": "#E3EEDB"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "76px",
+   "tracking": "-0.025em",
+   "leading": "1.08em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "76px",
+    "medium": "60px",
+    "small": "46px"
+   }
+  },
+  {
+   "name": "Display",
+   "tag": "h2",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.025em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "52px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "52px",
+    "medium": "46px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.01em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "28px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Quote",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.01em",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Signature",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "italic",
+   "size": "30px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Number",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-0.02em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "60px",
+    "medium": "56px",
+    "small": "52px"
+   }
+  },
+  {
+   "name": "Stat",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "40px",
+   "tracking": "-0.01em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "40px",
+    "medium": "40px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Body L",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "21px",
+   "tracking": "-0.02em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Body",
+   "responsive": {
+    "default": "21px",
+    "medium": "20px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Body",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body S",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "-0.02em",
+   "leading": "1.35em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "17px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Meta",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "italic",
+   "size": "17px",
+   "tracking": "-0.02em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:Accent",
+   "responsive": {
+    "default": "17px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "italic",
+   "size": "15px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "15px",
+    "medium": "15px",
+    "small": "15px"
+   }
+  },
+  {
+   "name": "Button",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Logo",
+   "tag": "p",
+   "font": "EB Garamond",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "30px",
+    "medium": "30px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Article H2",
+   "tag": "h2",
+   "font": "EB Garamond",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.01em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "30px",
+    "small": "28px"
+   }
+  }
+ ],
+ "components": [
+  "Logo",
+  "Button",
+  "Submit button",
+  "Subscribe form",
+  "Nav",
+  "Footer",
+  "Post card",
+  "Topic chip",
+  "Time row",
+  "Stat",
+  "Quote pill",
+  "Check row",
+  "Plan card",
+  "Plans",
+  "Final CTA",
+  "Banner",
+  "FAQ item",
+  "Perk tile",
+  "Reader notes",
+  "Client logos",
+  "Stat tile",
+  "Placement card",
+  "Sponsor form",
+  "Legal switch",
+  "Message card",
+  "Feature tile"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Site",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Nav",
+    "comp": "Nav",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Footer",
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Ground"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 94,
+   "h": 740,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Card"
+   ],
+   "text": 3,
+   "words": 32,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Subscribe form": 1
+   },
+   "effects": {},
+   "styles": {
+    "H1": 1,
+    "Body L": 1,
+    "Meta": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Client logos",
+   "type": "ComponentInstanceNode",
+   "comp": "Client logos",
+   "y": 834,
+   "h": 206,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Client logos": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/02-client-logos.jpg"
+  },
+  {
+   "name": "What it's about",
+   "type": "FrameNode",
+   "y": 1040,
+   "h": 1024,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 11,
+   "words": 130,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Topic chip": 5,
+    "Time row": 5
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Body L": 4,
+    "Signature": 1,
+    "Body S": 2,
+    "Quote": 1,
+    "Body": 1,
+    "H3": 1
+   },
+   "shot": "sections/03-what-it-s-about.jpg"
+  },
+  {
+   "name": "Not your average newsletter",
+   "type": "FrameNode",
+   "y": 2064,
+   "h": 1022,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Feature tile": 5
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Body L": 1
+   },
+   "shot": "sections/04-not-your-average-newsletter.jpg"
+  },
+  {
+   "name": "Recent issues",
+   "type": "FrameNode",
+   "y": 3086,
+   "h": 1269,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Post card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Body L": 1
+   },
+   "shot": "sections/05-recent-issues.jpg"
+  },
+  {
+   "name": "Signal banner",
+   "type": "FrameNode",
+   "y": 4355,
+   "h": 680,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Banner"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Banner": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/06-signal-banner.jpg"
+  },
+  {
+   "name": "Who's writing",
+   "type": "FrameNode",
+   "y": 5035,
+   "h": 820,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 87,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Stat": 3
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Body S": 1,
+    "Body L": 2
+   },
+   "shot": "sections/07-who-s-writing.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 5855,
+   "h": 1161,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 30,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Plans": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "Body L": 1
+   },
+   "shot": "sections/08-pricing.jpg"
+  },
+  {
+   "name": "Reader notes",
+   "type": "ComponentInstanceNode",
+   "comp": "Reader notes",
+   "y": 7016,
+   "h": 816,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Reader notes": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/09-reader-notes.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 7832,
+   "h": 760,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 40px 120px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Final CTA"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Final CTA": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/10-final-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 10
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 12,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.5s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "y": 12,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.5s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "24px",
+   5
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "#FFFFFF",
+ "pageHeight": 9363,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/2de1ad86-28ce-47e7-b657-7a3113f5dc0e.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/8d6cb328-6020-4878-b193-0ac1eb138fa1.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "publishing-blogs/letterhead",
+ "industry": "publishing-blogs",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  9351
+ ]
+}

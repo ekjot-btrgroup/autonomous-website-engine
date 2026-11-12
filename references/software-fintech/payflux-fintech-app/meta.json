@@ -1,0 +1,19 @@
+{
+  "name": "PayFlux",
+  "industry": "software-fintech",
+  "also": ["software-apps", "software-saas"],
+  "summary": "Warm-paper fintech app site that opens on a deep green to lime gradient with a hand-held phone, then settles into white data-viz bento cards and a sticky phone walkthrough.",
+  "style": ["corporate-clean", "minimal", "soft-pastel"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#f7f6f5", "surface": "#ffffff", "ink": "#1e1e1e", "muted": "#787878", "accent": "#1c6353", "line": "#ebebeb" },
+  "fonts": { "display": "Stack Sans Headline", "body": "Stack Sans Text", "class": "sans", "pairing": "tight geometric headline at regular weight, very light text cut (200-300) for body, Fragment Mono uppercase for eyebrow labels" },
+  "hero": "product-shot",
+  "sections": ["hero", "logos", "about", "stats", "features", "features", "services", "process", "features", "cta", "pricing", "testimonials", "blog", "faq", "cta"],
+  "motion": 4,
+  "signature": ["hero gradient that melts from bottle green through lime haze into the paper background, with a hand-held phone and frosted stat chips floating at its sides", "sticky phone mockup that swaps screens via scroll-target variants while a numbered list advances beside it", "every feature card carries a live-looking micro data viz: dotted world map with arcs, contribution heatmap, stacked transaction toasts, security orbit"],
+  "imagery": "photoreal hand holding a phone, clean UI renders, dotted maps and charts in a single green ramp; blog uses warm candid office photos",
+  "layout_grid": "1440 canvas, 32px side gutters (near full-bleed 1376 content), 120px section padding, 2+3 bento and 4-up stat rows, 20px card radius",
+  "quality": 5
+}

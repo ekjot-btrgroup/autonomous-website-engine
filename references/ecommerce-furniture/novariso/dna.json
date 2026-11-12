@@ -1,0 +1,838 @@
+{
+ "title": "Novariso (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/collection",
+  "/showroom",
+  "/clients",
+  "/stories",
+  "/contact",
+  "/404",
+  "/collection/:HbApkmMOQ",
+  "/stories/:HEd9GQMZQ"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background",
+   "light": "#F4F0E9"
+  },
+  {
+   "name": "Surface",
+   "light": "#E9E2D6"
+  },
+  {
+   "name": "Ink",
+   "light": "#141311"
+  },
+  {
+   "name": "Ink Soft",
+   "light": "#1C1A17"
+  },
+  {
+   "name": "Muted",
+   "light": "#6B645B"
+  },
+  {
+   "name": "Muted On Dark",
+   "light": "#A59E93"
+  },
+  {
+   "name": "Accent",
+   "light": "#B5784A"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(20, 19, 17, 0.12)"
+  },
+  {
+   "name": "Line On Dark",
+   "light": "rgba(244, 240, 233, 0.14)"
+  },
+  {
+   "name": "On Dark",
+   "light": "#F4F0E9"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "112px",
+   "tracking": "-0.055em",
+   "leading": "0.92em",
+   "transform": "none",
+   "color": "#666",
+   "responsive": {
+    "default": "112px",
+    "medium": "84px",
+    "small": "56px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "88px",
+   "tracking": "-0.05em",
+   "leading": "0.95em",
+   "transform": "none",
+   "color": "#666",
+   "responsive": {
+    "default": "88px",
+    "medium": "64px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.03em",
+   "leading": "1.1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "30px",
+    "medium": "26px",
+    "small": "23px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px",
+    "medium": "17px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.005em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "#666",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.08em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "#666",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Article/Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.03em",
+   "leading": "1.15em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "32px",
+    "small": "27px"
+   }
+  },
+  {
+   "name": "Article/Heading 3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "23px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "23px"
+   }
+  },
+  {
+   "name": "Article/Body",
+   "tag": "p",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.65em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Navigation",
+  "Footer",
+  "Cards/Category Card",
+  "Cards/Product Card",
+  "Cards/Story Card",
+  "Cards/Feature Card",
+  "Cards/Testimonial Card",
+  "Cards/List Row",
+  "FAQ Item",
+  "Cards/Collection Feature",
+  "Submit Button",
+  "Filter Pill"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Footer",
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 76,
+   "h": 792,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "48px 32px 104px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 7,
+   "words": 47,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Label": 2,
+    "Display": 1,
+    "Body Large": 1,
+    "Body": 3
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Studio Introduction",
+   "type": "FrameNode",
+   "y": 868,
+   "h": 872,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 40,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 2,
+    "Heading 3": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/02-studio-introduction.jpg"
+  },
+  {
+   "name": "Explore by Category",
+   "type": "FrameNode",
+   "y": 1740,
+   "h": 1624,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1,
+    "Cards/Category Card": 6
+   },
+   "effects": {
+    "appear": 7
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/03-explore-by-category.jpg"
+  },
+  {
+   "name": "Featured Products",
+   "type": "FrameNode",
+   "y": 3364,
+   "h": 864,
+   "w": 1200,
+   "fill": "token:Surface",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 32,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1,
+    "Cards/Product Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1,
+    "Body": 1
+   },
+   "shot": "sections/04-featured-products.jpg"
+  },
+  {
+   "name": "Our Process",
+   "type": "FrameNode",
+   "y": 4228,
+   "h": 1219,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 8,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1,
+    "Cards/Feature Card": 4
+   },
+   "effects": {
+    "appear": 6,
+    "parallax": 1
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/05-our-process.jpg"
+  },
+  {
+   "name": "Materials",
+   "type": "FrameNode",
+   "y": 5447,
+   "h": 950,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 37,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1,
+    "Cards/Category Card": 4
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/06-materials.jpg"
+  },
+  {
+   "name": "Client Testimonials",
+   "type": "FrameNode",
+   "y": 6397,
+   "h": 822,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Cards/Testimonial Card": 3
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/07-client-testimonials.jpg"
+  },
+  {
+   "name": "Step Inside the Studio",
+   "type": "FrameNode",
+   "y": 7219,
+   "h": 816,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 39,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2,
+    "parallax": 1
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/08-step-inside-the-studio.jpg"
+  },
+  {
+   "name": "Featured Collections",
+   "type": "FrameNode",
+   "y": 8035,
+   "h": 1143,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 8,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Cards/Collection Feature": 2
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1
+   },
+   "shot": "sections/09-featured-collections.jpg"
+  },
+  {
+   "name": "For Designers & Project Teams",
+   "type": "FrameNode",
+   "y": 9178,
+   "h": 1104,
+   "w": 1200,
+   "fill": "token:Surface",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 8,
+   "words": 67,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1,
+    "Body": 5
+   },
+   "shot": "sections/10-for-designers-project-teams.jpg"
+  },
+  {
+   "name": "Recognition",
+   "type": "FrameNode",
+   "y": 10282,
+   "h": 746,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Cards/List Row": 3
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/11-recognition.jpg"
+  },
+  {
+   "name": "Stories",
+   "type": "FrameNode",
+   "y": 11028,
+   "h": 940,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Button": 1,
+    "Cards/Story Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/12-stories.jpg"
+  },
+  {
+   "name": "Newsletter",
+   "type": "FrameNode",
+   "y": 11968,
+   "h": 725,
+   "w": 1200,
+   "fill": "token:Ink",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 32px 128px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 37,
+   "images": 0,
+   "icons": 0,
+   "inputs": 1,
+   "grids": [],
+   "components": {
+    "Submit Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Label": 1,
+    "Heading 2": 1,
+    "Body Large": 1,
+    "Body": 1
+   },
+   "shot": "sections/13-newsletter.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 45,
+  "text": 1,
+  "parallax": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.15,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 16,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0.1s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "48px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "8px",
+    "transition": {
+     "type": "spring",
+     "duration": "1.1s",
+     "bounce": 0,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 0.9
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "100px",
+   9
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 3,
+  "blur": 0
+ },
+ "desktopFill": "white",
+ "pageHeight": 13558,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/7e1367ac-5cc0-4231-a116-f45bf9d73989.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/554696a7-e7e6-428f-aef6-2557e48c7580.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "ecommerce-furniture/novariso",
+ "industry": "ecommerce-furniture",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  13558
+ ]
+}

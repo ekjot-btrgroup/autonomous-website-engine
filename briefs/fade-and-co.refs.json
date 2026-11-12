@@ -1,0 +1,72 @@
+[
+  {
+    "id": "services-home/frontage",
+    "score": 68,
+    "why": [
+      "same industry",
+      "matching feel"
+    ]
+  },
+  {
+    "id": "services-home/norfolk",
+    "score": 68,
+    "why": [
+      "same industry",
+      "matching feel"
+    ]
+  },
+  {
+    "id": "services-consulting/tandem-co-agency",
+    "score": 33,
+    "why": [
+      "same category"
+    ]
+  },
+  {
+    "id": "hospitality-restaurants/irish-cafe",
+    "score": 29,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "software-saas/landa",
+    "score": 23,
+    "why": []
+  },
+  {
+    "id": "hospitality-hotels/elowenra",
+    "score": 26,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "health-therapy/therapist",
+    "score": 28,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "software-fintech/payflux-fintech-app",
+    "score": 32,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "agency-marketing/fathom",
+    "score": 32,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "ecommerce-furniture/novariso",
+    "score": 28,
+    "why": [
+      "matching feel"
+    ]
+  }
+]
