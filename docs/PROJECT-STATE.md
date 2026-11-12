@@ -83,6 +83,12 @@ Flow in the test chat (see docs/TEST-RUN.md; the showcase is never pushed while 
 2. `/shortlist`: 3 intake questions -> brief -> ranking -> Claude writes one "why" line per design (`npm run shortlist -- <slug> --why <file>`) -> `npm run sheet -- <slug>` renders a contact sheet image of the 10 (live renders, desktop + mobile) and Claude sends it to the user. Optional live preview: `npm run showcase:serve` + report the port.
 3. User replies with picks -> `/build-site` builds `sites/<slug>/` and checks the build; the Lovable push is skipped while Lovable is parked.
 
+## 8. v2 (decided 2026-11-12): reference-built design system. Read docs/PLAN-V2.md
+- The Framer templates the user is collecting are references, not outputs. Approach B: tokens + section variants + industry recipes built from them; 10 new designs per brief; deep polish on the 3 picks. Quality first, cost no constraint.
+- Built: `npm run capture` (references/<industry>/<slug>/: dna.json, thumb, mobile, section crops; text/images/code never kept), `npm run slop` (anti-slop check, rules in knowledge/anti-slop.json), recipe format in knowledge/industries/README.md. 16 tests pass.
+- Waiting on the user: Framer links + industries, licence status. Framer hosts are blocked in the cloud environment: allow exact hosts when links arrive, or capture locally.
+- Until v2 is live the v1 flow (shortlist from the 120 uiuxlabz designs) stays as is.
+
 ## 7. Open items / risks
 - Pushing to the engine repo was refused once (HTTP 403) and recovered; if it recurs, reconnect GitHub at claude.ai/connect-github.
 - Tag pushes are blocked from cloud chats; release notes use the merge commit.
