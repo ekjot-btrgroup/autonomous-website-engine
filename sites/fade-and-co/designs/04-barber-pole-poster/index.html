@@ -161,6 +161,7 @@
   .sticker { position: absolute; z-index: 4; display: grid; place-content: center; text-align: center; color: var(--deep); background: var(--accent); }
   .sticker b { display: block; font-family: var(--display); font-weight: 400; font-size: var(--fs-h3); line-height: 1; font-variant-numeric: tabular-nums; }
   .sticker span { display: block; }
+  .sticker b { text-transform: uppercase; }
   .burst { clip-path: var(--burst); width: 156px; aspect-ratio: 1; }
   .round { border-radius: 50%; width: 128px; aspect-ratio: 1; box-shadow: inset 0 0 0 3px var(--accent), inset 0 0 0 5px var(--deep); }
   .tag { padding: var(--s3) var(--s5) var(--s3) var(--s7); clip-path: polygon(16% 0, 100% 0, 100% 100%, 16% 100%, 0 50%); }
@@ -273,7 +274,7 @@
   .co { position: relative; margin: 0; padding: 10px; aspect-ratio: 4 / 5; filter: drop-shadow(0 14px 18px rgba(43, 10, 8, .35)); }
   .co-paper { position: absolute; inset: 0; background: var(--paper); clip-path: var(--cut); }
   .co-panel { position: absolute; inset: 10px; background: var(--surface); }
-  .co img { position: absolute; left: 10px; right: 10px; bottom: 10px; width: calc(100% - 20px); height: calc(100% - 20px + 24px); object-fit: contain; object-position: 50% 100%; filter: grayscale(1) contrast(1.35) brightness(1.05); }
+  .co img { position: absolute; left: 10px; right: 10px; bottom: 10px; width: calc(100% - 20px); height: calc(100% - 20px + 24px); object-fit: cover; object-position: 50% 0; filter: grayscale(1) contrast(1.3) brightness(1.04); }
   .co-a { transform: rotate(2deg); }
   .co-b { transform: rotate(-2deg); }
   @media (max-width: 900px) {
@@ -343,7 +344,8 @@
   .book-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--s5); row-gap: var(--s7); align-items: start; }
   .form-card { position: relative; grid-column: 1 / 8; background: #fffdf9; border: 2px solid var(--deep); border-radius: var(--r-m); padding: var(--s7); box-shadow: 6px 6px 0 var(--deep); color: var(--deep); }
   .form-card .corner { top: -30px; right: -18px; width: 124px; transform: rotate(10deg); }
-  .form-card .corner b { font-size: 22px; line-height: 1.05; }
+  .form-card .corner b { font-size: 18px; line-height: 1.05; }
+  @media (max-width: 720px) { .form-card .corner { right: -4px; top: -40px; width: 108px; } .form-card .corner b { font-size: 16px; } }
   .form-card h3 { color: var(--paper-ink); margin-bottom: var(--s2); }
   .form-card > p { color: var(--paper-muted); margin-bottom: var(--s6); }
   .fields { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); }
@@ -489,7 +491,7 @@
         <div class="collage">
           <svg class="halftone" aria-hidden="true"><defs><pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2.2" fill="currentColor"/></pattern></defs><rect width="100%" height="100%" fill="url(#dots)"/></svg>
           <figure class="print"><img src="img/hero-profile.jpg" width="1000" height="1250" alt="Side profile of a young man with a fresh short haircut, printed in red and black like a screen-print poster"></figure>
-          <figure class="cut c1 slap" style="--d:0"><div class="cut-in"><img src="img/hero-chair.jpg" width="800" height="1000" alt="Barber in a trilby lifting a section of hair with a comb while his client sits in a striped cape"></div></figure>
+          <figure class="cut c1 slap" style="--d:0"><div class="cut-in"><img src="img/hero-chair.jpg" width="800" height="1000" alt="Barber in a straw hat lifting a section of hair with a comb while his client sits in a striped cape"></div></figure>
           <div class="sticker burst s1 slap" style="--d:1"><span class="label">Walk-ins</span><b>Till 12</b></div>
           <div class="sticker round s2 slap" style="--d:2"><span class="label">Cut +<br>beard</span><b>£32</b></div>
           <div class="sticker tag s3 slap" style="--d:3"><span class="label">Tue–Sat</span><b>9–7</b></div>
@@ -572,7 +574,7 @@
       </div>
       <div class="svc-grid">
         <article class="svc svc-main" data-r>
-          <div class="ph-wrap"><div class="cut-in"><img src="img/cut.jpg" width="1200" height="800" loading="lazy" alt="Barber taking scissors to the back of a client’s head, the client turned away from the camera"></div></div>
+          <div class="ph-wrap"><div class="cut-in"><img src="img/cut.jpg" width="1200" height="800" loading="lazy" alt="Barber working a comb and blade up the back of a client’s head, the client turned away from the camera"></div></div>
           <div class="txt">
             <span class="no num" aria-hidden="true">01</span>
             <h3>The cut</h3>
@@ -582,7 +584,7 @@
         </article>
         <div class="svc-side">
           <article class="svc svc-co" data-r style="--d:1">
-            <figure class="co co-a"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/beard-cut.png" width="800" height="1000" loading="lazy" alt="Cut-out portrait of a man with a full, neatly shaped dark beard and a short faded haircut"></figure>
+            <figure class="co co-a"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/beard-cut.webp" width="640" height="832" loading="lazy" alt="Cut-out portrait of a man with a full, neatly shaped dark beard and a short faded haircut"></figure>
             <div class="co-txt">
               <span class="no num" aria-hidden="true">02</span>
               <h3>Beard trim</h3>
@@ -591,7 +593,7 @@
             </div>
           </article>
           <article class="svc svc-co" data-r style="--d:2">
-            <figure class="co co-b"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/shave-cut.png" width="800" height="1000" loading="lazy" alt="Cut-out portrait of a man with a close buzz cut and a freshly tidied jaw"></figure>
+            <figure class="co co-b"><span class="co-paper" aria-hidden="true"></span><span class="co-panel" aria-hidden="true"></span><img src="img/shave-cut.webp" width="640" height="674" loading="lazy" alt="Cut-out portrait of a man with a swept-back undercut and a close-trimmed beard"></figure>
             <div class="co-txt">
               <span class="no num" aria-hidden="true">03</span>
               <h3>Hot-towel shave</h3>
@@ -689,7 +691,7 @@
         <figure class="pin" data-r><img src="img/fade.jpg" width="900" height="1100" loading="lazy" alt="Close crop being finished with clippers and a comb"><figcaption class="label">Crop</figcaption></figure>
         <figure class="pin" data-r style="--d:1"><img src="img/clipper.jpg" width="1200" height="800" loading="lazy" alt="Tattooed barber taking clippers up the back of a man’s neck"><figcaption class="label">Back and sides</figcaption></figure>
         <figure class="pin" data-r style="--d:2"><img src="img/quiff.jpg" width="900" height="1100" loading="lazy" alt="Man with a high fade and a textured quiff"><figcaption class="label">Fade and quiff</figcaption></figure>
-        <figure class="pin" data-r><img src="img/lather.jpg" width="1200" height="800" loading="lazy" alt="Lather being brushed onto a beard before a shave"><figcaption class="label">Lather up</figcaption></figure>
+        <figure class="pin" data-r><img src="img/kit.jpg" width="1200" height="800" loading="lazy" alt="Combs, clippers and scissors laid out on a folded towel"><figcaption class="label">The kit</figcaption></figure>
         <figure class="pin" data-r style="--d:1"><img src="img/comb.jpg" width="900" height="1100" loading="lazy" alt="Thinning shears and a comb working through the top of a man’s hair"><figcaption class="label">Texture</figcaption></figure>
         <figure class="pin" data-r style="--d:2"><img src="img/buzz.jpg" width="900" height="1100" loading="lazy" alt="Portrait of a man with a clean buzz cut against a black background"><figcaption class="label">Buzz</figcaption></figure>
       </div>
