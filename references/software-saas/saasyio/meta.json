@@ -1,0 +1,19 @@
+{
+  "name": "Saasyio",
+  "industry": "software-saas",
+  "also": ["software-ai", "software-apps"],
+  "summary": "Light, framed workflow-automation SaaS page in periwinkle and off-white, with hatched bands, halftone dot illustrations and a live product card as hero.",
+  "style": ["minimal", "technical", "soft-pastel"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 3, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "purple",
+  "palette": { "bg": "#f8f9f6", "surface": "#ffffff", "ink": "#1c1c1c", "muted": "#787878", "accent": "#979df0", "line": "#e6e6e6" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 500 with very tight negative tracking for headings (about -6%), Inter body at 14px with tight tracking, pill badges" },
+  "hero": "dashboard-mock",
+  "sections": ["hero", "features", "process", "services", "features", "services", "stats", "testimonials", "logos", "pricing", "faq", "blog", "cta"],
+  "motion": 2,
+  "signature": ["page held inside a framed column with 1px side rails and thin diagonal-hatch bands separating each section", "halftone dot-matrix illustrations (planet, shield, target) mixing black and periwinkle dots", "hero product window on a periwinkle dot-field plate, with a prompt box that turns a sentence into a workflow"],
+  "imagery": "no photography; halftone dot pictograms, product UI cards, app logos in tiles, a dotted city skyline under the footer CTA",
+  "layout_grid": "1200 canvas, framed 1120 column with rails, 120px section padding with 80px inner sides, 40px hatched dividers, 3-col grids, 24px card radius and pill buttons",
+  "quality": 4
+}

@@ -1,0 +1,633 @@
+{
+ "title": "Kendi (copy)",
+ "pages": [
+  "/",
+  "/category/:t5zycyLz1",
+  "/author/:PbpE9Zlv3",
+  "/blog/:fFNu3bNv4",
+  "/legal/:nI7FsPkbI",
+  "/about",
+  "/contact",
+  "/category",
+  "/author",
+  "/blog",
+  "/404",
+  "/design-system",
+  "/write-for-us"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Color/Background",
+   "light": "rgb(245, 245, 245)"
+  },
+  {
+   "name": "Color/Black",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Color/White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Color/Grey",
+   "light": "rgb(61, 61, 61)"
+  },
+  {
+   "name": "Color/Line",
+   "light": "rgb(222, 222, 222)"
+  },
+  {
+   "name": "Color/Black 30",
+   "light": "rgba(0, 0, 0, 0.3)"
+  },
+  {
+   "name": "Color/Transparent",
+   "light": "rgba(255, 255, 255, 0)"
+  },
+  {
+   "name": "Color/Black 80",
+   "light": "rgba(0, 0, 0, 0.8)"
+  },
+  {
+   "name": "Color/Black 50",
+   "light": "rgba(0, 0, 0, 0.5)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Text/Display 1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "72px",
+   "tracking": "-0.03em",
+   "leading": "0.95em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "72px",
+    "medium": "58px",
+    "small": "48px"
+   }
+  },
+  {
+   "name": "Text/Heading 1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.03em",
+   "leading": "1.1em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "42px",
+    "medium": "36px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Text/Post H1",
+   "tag": "h1",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.03em",
+   "leading": "1.1em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "42px",
+    "medium": "36px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Text/Heading 2",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.03em",
+   "leading": "1.2em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "34px",
+    "medium": "32px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Text/Post H2",
+   "tag": "h2",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "28px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Text/Heading 3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "28px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Text/Post H3",
+   "tag": "h3",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Text/Heading 4",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Text/Post H4",
+   "tag": "h4",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Text/Heading 5",
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Text/Post H5",
+   "tag": "h5",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Text/Heading 6",
+   "tag": "h6",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Text/Heading 6 Small",
+   "tag": "h6",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Text/Post H6",
+   "tag": "h6",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Text/Tiny",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Text/Button",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Text/Small Paragraph",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Text/Medium Paragraph",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {}
+  },
+  {
+   "name": "Text/Menu",
+   "font": "Inter",
+   "weight": 600,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.03em",
+   "color": "token:40423aa1-f3da-4ee4-9c94-34f12e1ea0b3, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "15px"
+   }
+  }
+ ],
+ "components": [
+  "Misc/Logo",
+  "Button/Menu",
+  "Button/Primary",
+  "Section/Header",
+  "Misc/Menu Categories",
+  "Card/Category/List",
+  "Content/Category List",
+  "Button/Secondary",
+  "Content/Small List",
+  "Button/Hamburger",
+  "Button/Form",
+  "Button/Text Link",
+  "Card/Post/Image Background",
+  "Button/Category",
+  "Slideshow/Hero Post",
+  "Card/Post/Secondary",
+  "Card/Post/Primary",
+  "Content/Post Main",
+  "Content/Ad Banner",
+  "Slideshow/Inspiration",
+  "Content/Medium List",
+  "Card/About",
+  "Card/Category/Image",
+  "Content/Category Grid",
+  "Card/Instagram",
+  "Section/Footer",
+  "Misc/Breadcrumbs",
+  "Content/Team Profile",
+  "Card/Team",
+  "Card/Category/Primary",
+  "Card/Author",
+  "Card/Just Image",
+  "Content/Image Variation",
+  "Section/Newsletter",
+  "Button/Author",
+  "Section/Sidebar",
+  "Misc/Menu Overlay"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 82,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Header",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Spacer",
+    "position": "relative"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Newsletter",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Use Template (Delete This)",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Color/Background"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 82,
+   "h": 938,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "50px 30px 50px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 1,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button/Form": 1,
+    "Slideshow/Hero Post": 1,
+    "Card/Post/Secondary": 1
+   },
+   "effects": {},
+   "styles": {
+    "Text/Heading 6": 1,
+    "Text/Display 1": 1,
+    "Text/Medium Paragraph": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Editor's Pick",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 531,
+   "w": 740,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "20px",
+   "childNames": [
+    "RichTextNode",
+    "List"
+   ],
+   "text": 1,
+   "words": 2,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Post/Primary": 1,
+    "Card/Post/Secondary": 1
+   },
+   "effects": {},
+   "styles": {
+    "Text/Heading 2": 1
+   },
+   "shot": "sections/02-editor-s-pick.jpg"
+  },
+  {
+   "name": "Ad",
+   "type": "FrameNode",
+   "y": 631,
+   "h": 280,
+   "w": 740,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "RichTextNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 4,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Content/Ad Banner": 1
+   },
+   "effects": {},
+   "styles": {
+    "Text/Small Paragraph": 1
+   },
+   "shot": "sections/03-ad.jpg"
+  },
+  {
+   "name": "Trending",
+   "type": "FrameNode",
+   "y": 1011,
+   "h": 690,
+   "w": 740,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "20px",
+   "childNames": [
+    "RichTextNode",
+    "Post List"
+   ],
+   "text": 1,
+   "words": 1,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Post/Primary": 2,
+    "Card/Post/Secondary": 2
+   },
+   "effects": {},
+   "styles": {
+    "Text/Heading 2": 1
+   },
+   "shot": "sections/04-trending.jpg"
+  },
+  {
+   "name": "Inspiration",
+   "type": "FrameNode",
+   "y": 1801,
+   "h": 361,
+   "w": 740,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "20px",
+   "childNames": [
+    "RichTextNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 1,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Slideshow/Inspiration": 1
+   },
+   "effects": {},
+   "styles": {
+    "Text/Heading 2": 1
+   },
+   "shot": "sections/05-inspiration.jpg"
+  },
+  {
+   "name": "Latest Post",
+   "type": "FrameNode",
+   "y": 2262,
+   "h": 953,
+   "w": 740,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "20px",
+   "childNames": [
+    "RichTextNode",
+    "FrameNode",
+    "ComponentInstanceNode"
+   ],
+   "text": 1,
+   "words": 2,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Content/Medium List": 1,
+    "Button/Primary": 1
+   },
+   "effects": {},
+   "styles": {
+    "Text/Heading 2": 1
+   },
+   "shot": "sections/06-latest-post.jpg"
+  }
+ ],
+ "effects": {},
+ "effectSamples": {},
+ "fontsUsed": {},
+ "radii": [
+  [
+   "5px",
+   1
+  ],
+  [
+   "0px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 0
+ },
+ "desktopFill": "token:Color/Background",
+ "pageHeight": 5468,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/a8d55d37-65cd-4976-861c-2546e1eb6f62.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/d184567b-3ba8-4dc4-a39e-fd11efe23648.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "publishing-magazines/kendi",
+ "industry": "publishing-magazines",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  5468
+ ]
+}

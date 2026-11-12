@@ -1,0 +1,704 @@
+{
+ "title": "Essential (copy)",
+ "pages": [
+  "/",
+  "/store",
+  "/store/:AU1RjH59f",
+  "/legal-pages/:IDgBzYd3z",
+  "/our-methods",
+  "/support",
+  "/404",
+  "/blog",
+  "/blog/:jLu7ZgFXk",
+  "/experts/:U1Old_9RN"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "UI 1",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Secondary Text",
+   "light": "rgb(87, 87, 87)"
+  },
+  {
+   "name": "Primary Text",
+   "light": "rgb(23, 23, 23)"
+  },
+  {
+   "name": "UI 2",
+   "light": "rgb(248, 248, 248)"
+  },
+  {
+   "name": "UI 3",
+   "light": "rgb(235, 235, 235)"
+  },
+  {
+   "name": "Orange",
+   "light": "rgb(255, 70, 46)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Erode",
+   "weight": 500,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "56px",
+    "medium": "56px",
+    "small": "50px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Erode",
+   "weight": 500,
+   "style": "normal",
+   "size": "44px",
+   "leading": "1.2em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "44px",
+    "medium": "44px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Erode",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "leading": "1.2em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "32px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 3 Line",
+   "tag": "h3",
+   "font": "Erode",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "color": "token:25af98ee-a473-4a63-9470-da5334afffe3, rgb(135, 135, 135)",
+   "responsive": {
+    "default": "32px",
+    "medium": "26px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Erode",
+   "weight": 500,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Body XL",
+   "font": "DM Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "leading": "1.4em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "22px",
+    "medium": "22px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "Body M",
+   "font": "DM Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.4em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body S",
+   "font": "DM Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": 16,
+   "leading": "1.4em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "16px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body L",
+   "font": "DM Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "leading": "1.2em",
+   "color": "token:09abaa02-9f27-4483-8535-9f4336eededf, rgb(13, 13, 13)",
+   "responsive": {
+    "default": "20px",
+    "medium": "20px",
+    "small": "19px"
+   }
+  },
+  {
+   "name": "Body M Secondary",
+   "font": "DM Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.4em",
+   "color": "token:25af98ee-a473-4a63-9470-da5334afffe3, rgb(87, 87, 87)",
+   "responsive": {
+    "default": "18px"
+   }
+  }
+ ],
+ "components": [
+  "Navigation",
+  "Navigation Link",
+  "Logo",
+  "Tag",
+  "FAQs Single",
+  "Product Card",
+  "CTA",
+  "Footer",
+  "Phone Menu",
+  "Feature Header",
+  "Form Button",
+  "Cursor",
+  "Service",
+  "Primary Button",
+  "Image Card",
+  "Testimonial Card",
+  "Feature Card",
+  "Social Button",
+  "Quality Card",
+  "Rating Stars",
+  "Blog Card",
+  "Go Back Button",
+  "Expert Card",
+  "Load More Button"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Navigation",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Blur Gradient",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:UI 2"
+ },
+ "sections": [
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Smooth Scroll",
+   "y": 0,
+   "h": 0,
+   "w": 0,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Smooth Scroll": 1
+   },
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1214,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "200px 0px 0px 0px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "Main Image"
+   ],
+   "text": 3,
+   "words": 19,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Phosphor": 5,
+    "Primary Button": 1
+   },
+   "effects": {
+    "parallax": 1,
+    "appear": 4,
+    "text": 1
+   },
+   "styles": {
+    "Body S": 1,
+    "Heading 1": 1,
+    "Body M": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "About Us",
+   "type": "FrameNode",
+   "y": 1214,
+   "h": 492,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "200px 40px 100px 40px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "RichTextNode"
+   ],
+   "text": 1,
+   "words": 32,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 3": 1
+   },
+   "shot": "sections/02-about-us.jpg"
+  },
+  {
+   "name": "Store",
+   "type": "FrameNode",
+   "y": 1706,
+   "h": 1400,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 40px 100px 40px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "Container"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Primary Button": 1,
+    "Product Card": 5
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/03-store.jpg"
+  },
+  {
+   "name": "Stats",
+   "type": "FrameNode",
+   "y": 3106,
+   "h": 840,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 0px 100px 0px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Container",
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Image Card": 24,
+    "Tag": 1,
+    "Primary Button": 1
+   },
+   "effects": {
+    "styleTransform": 1,
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body M": 1
+   },
+   "shot": "sections/04-stats.jpg"
+  },
+  {
+   "name": "Features",
+   "type": "FrameNode",
+   "y": 3946,
+   "h": 2171,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 40px 100px 40px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "Features Showcase"
+   ],
+   "text": 2,
+   "words": 17,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Primary Button": 1,
+    "Feature Header": 3,
+    "Feature Card": 6
+   },
+   "effects": {
+    "appear": 10,
+    "text": 1,
+    "sticky": 3
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body M": 1
+   },
+   "shot": "sections/05-features.jpg"
+  },
+  {
+   "name": "Blog",
+   "type": "FrameNode",
+   "y": 6117,
+   "h": 1505,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 40px 100px 40px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "Container"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Tag": 1,
+    "Primary Button": 1,
+    "Blog Card": 4
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/06-blog.jpg"
+  },
+  {
+   "name": "FAQs",
+   "type": "FrameNode",
+   "y": 7622,
+   "h": 857,
+   "w": 1200,
+   "fill": "token:UI 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 40px 100px 40px",
+   "gap": "52px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Header",
+    "Container"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Primary Button": 1,
+    "FAQs Single": 5
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body M": 1
+   },
+   "shot": "sections/07-faqs.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "CTA",
+   "y": 8479,
+   "h": 671,
+   "w": 1200,
+   "maxWidth": "1440px",
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/08-cta.jpg"
+  }
+ ],
+ "effects": {
+  "parallax": 1,
+  "appear": 34,
+  "text": 6,
+  "styleTransform": 1,
+  "sticky": 3
+ },
+ "effectSamples": {
+  "parallax": {
+   "speed": 70
+  },
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": -20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 400,
+     "damping": 80,
+     "mass": 1,
+     "delay": "1.2s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": -20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 400,
+     "damping": 80,
+     "mass": 1,
+     "delay": "1.2s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "stiffness": 200,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onInView",
+   "viewport": "start",
+   "transition": {
+    "type": "spring",
+    "stiffness": 200,
+    "damping": 60,
+    "mass": 1,
+    "delay": "0s"
+   },
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "30deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "0px",
+   8
+  ],
+  [
+   "16px",
+   4
+  ],
+  [
+   "14px",
+   3
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:UI 1",
+ "pageHeight": 10018,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/6eba6620-aa4f-4e0a-b8b2-e3618544e0c9.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/a8ecbd64-5e23-48ba-9217-41c31277fbde.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "ecommerce-beauty/essential",
+ "industry": "ecommerce-beauty",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  10017
+ ]
+}

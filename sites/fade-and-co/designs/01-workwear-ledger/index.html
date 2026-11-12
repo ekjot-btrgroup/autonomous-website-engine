@@ -36,7 +36,7 @@ html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
 body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--text); font-size:var(--fs-body); line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -webkit-tap-highlight-color:transparent; }
 img{ display:block; max-width:100%; height:auto; }
-main img{ filter:saturate(.9) contrast(1.04); }
+main img{ filter:saturate(.85) contrast(1.05); }
 a{ color:inherit; }
 h1,h2,h3{ font-family:var(--display); font-weight:500; margin:0; text-wrap:balance; }
 p{ margin:0; text-wrap:pretty; }
@@ -102,26 +102,44 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 }
 @media (max-width:479px){ .bar .btn--book{ display:none; } }
 
-/* hero: headline on paper, inset 16:9 photo, docked work ticket */
-.hero{ padding-top:var(--s8); margin-bottom:var(--s8); }
+/* hero: headline on paper, inset 2:1 photo, a real tear-off ticket, shop facts on the rule below */
+.hero{ padding-top:var(--s8); padding-bottom:var(--s9); }
 .hero__head{ display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s5) var(--s7); align-items:end; padding-bottom:var(--s7); }
 .hero__head .label{ margin-bottom:var(--s4); }
 .hero h1{ font-size:var(--fs-display); line-height:1.05; letter-spacing:-.025em; font-weight:500; max-width:12ch; }
 .hero__lead{ color:var(--muted); max-width:44ch; }
 .hero__actions{ display:flex; flex-wrap:wrap; align-items:center; gap:var(--s3) var(--s5); margin-top:var(--s5); }
 .hero__media{ position:relative; }
-.hero__photo{ margin:0; border-radius:var(--r-md); overflow:hidden; aspect-ratio:16/9; background:var(--surface); }
-.hero__photo img{ width:100%; height:100%; object-fit:cover; object-position:50% 60%; }
+.hero__photo{ margin:0; border-radius:var(--r-md); overflow:hidden; aspect-ratio:2/1; background:var(--surface); }
+.hero__photo img{ width:100%; height:100%; object-fit:cover; object-position:50% 50%; }
+.hero__facts{ display:flex; min-height:var(--s9); margin-right:calc(var(--ticket) + var(--s7)); }
+.hero__facts li{ flex:1 1 0; min-width:0; display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s5) var(--s5) 0 0; }
+.hero__facts li+li{ padding-left:var(--s5); border-left:1px solid var(--line); }
+.hero__facts svg{ width:22px; height:22px; flex:none; margin-top:2px; }
+.hero__facts b{ display:block; font-weight:500; }
+.hero__facts span{ color:var(--muted); font-size:var(--fs-small); }
+:root{ --ticket:392px; --notch:12px; }
 
-/* work ticket (hero booking card) */
-.pick{ position:absolute; z-index:3; right:0; bottom:calc(-1 * var(--s8)); width:392px; background:var(--paper); border-radius:0 var(--r-md) var(--r-md) var(--r-md); box-shadow:var(--shadow); }
-.pick__head{ display:flex; justify-content:space-between; align-items:center; gap:var(--s3); min-height:48px; padding:0 var(--s5); border-bottom:1px solid var(--line); }
-.pick__title{ font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--ink); }
-.pick__title span{ color:var(--muted); }
-.pick__date{ font-size:var(--fs-small); color:var(--muted); font-variant-numeric:tabular-nums; }
-.pick__body{ padding:var(--s4) var(--s5) var(--s5); }
-.pick fieldset{ border:0; margin:var(--s4) 0 0; padding:0; min-width:0; }
-.pick fieldset:first-child{ margin-top:0; }
+/* the ticket: two halves joined by a perforation, notches cut at the tear line */
+.ticket{ filter:drop-shadow(0 1px 1px rgba(17,19,21,.07)) drop-shadow(0 8px 18px rgba(17,19,21,.09)) drop-shadow(0 22px 36px rgba(17,19,21,.07)); }
+.ticket__top, .ticket__stub{ background:var(--paper); }
+.ticket__top{ border-radius:var(--r-md) var(--r-md) 0 0;
+  -webkit-mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px));
+  mask:radial-gradient(circle at 0 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 100%, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+.ticket__stub{ position:relative; border-radius:0 0 var(--r-md) var(--r-md);
+  -webkit-mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px));
+  mask:radial-gradient(circle at 0 0, transparent var(--notch), #000 calc(var(--notch) + .5px)), radial-gradient(circle at 100% 0, transparent var(--notch), #000 calc(var(--notch) + .5px)); -webkit-mask-composite:source-in; mask-composite:intersect; }
+.ticket__stub::before{ content:""; position:absolute; top:0; left:calc(var(--notch) + 6px); right:calc(var(--notch) + 6px); border-top:1px dashed #a9a7a0; }
+.ticket__head{ display:flex; justify-content:space-between; align-items:center; gap:var(--s3); min-height:48px; padding:0 var(--s5); border-bottom:1px solid var(--line); }
+.ticket__title{ font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; font-weight:500; color:var(--ink); }
+.ticket__title span{ color:var(--muted); }
+.ticket__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; color:var(--ink); font-variant-numeric:tabular-nums; }
+
+.pick{ position:absolute; z-index:3; right:0; bottom:calc(-1 * var(--s9)); width:var(--ticket); }
+.pick .ticket__top{ padding-bottom:var(--s5); }
+.pick fieldset{ border:0; margin:var(--s4) var(--s5) 0; padding:0; min-width:0; }
+.pick .ticket__stub{ padding:var(--s5) var(--s5) var(--s5); }
+.pick .ticket__stub fieldset{ margin:0; }
 .pick legend{ padding:0; margin:0 0 var(--s2); }
 .rows{ border-top:1px solid var(--line); }
 .row-opt{ position:relative; display:grid; grid-template-columns:20px 1fr auto; align-items:center; gap:var(--s3); min-height:48px; padding:0 var(--s2); border-bottom:1px solid var(--line); cursor:pointer; transition:background-color .2s ease; }
@@ -144,47 +162,36 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .chip input:focus-visible + span{ outline:2px solid var(--ink); outline-offset:2px; }
 .pick .btn{ width:100%; margin-top:var(--s5); }
 .pick__note{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); text-align:center; }
+#pick{ scroll-margin-top:96px; }
 
 @media (max-width:1023px){
-  .hero{ padding-top:var(--s7); margin-bottom:0; }
+  .hero{ padding-top:var(--s7); padding-bottom:var(--s8); }
   .hero__head{ grid-template-columns:1fr; padding-bottom:var(--s6); }
-  .pick{ position:relative; right:auto; bottom:auto; width:auto; max-width:480px; margin:calc(-1 * var(--s7)) 0 0 auto; }
+  .pick{ position:relative; right:auto; bottom:auto; width:auto; max-width:480px; margin:calc(-1 * var(--s7)) var(--s5) 0 auto; }
+  .hero__facts{ margin-right:0; margin-top:var(--s6); border-top:1px solid var(--line); min-height:0; }
 }
 @media (max-width:599px){
   .hero__photo{ aspect-ratio:4/3; }
-  .pick{ max-width:none; margin:calc(-1 * var(--s6)) 0 0; }
+  .pick{ max-width:none; margin:calc(-1 * var(--s6)) var(--s3) 0; }
+  .hero__facts{ flex-direction:column; }
+  .hero__facts li, .hero__facts li+li{ padding:var(--s4) 0; border-left:0; border-bottom:1px solid var(--line); }
 }
 
-/* shop board */
-.board{ display:grid; grid-template-columns:repeat(4, 1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.board li{ padding:var(--s5) var(--s5) var(--s5) 0; display:flex; gap:var(--s3); align-items:flex-start; }
-.board li+li{ padding-left:var(--s5); border-left:1px solid var(--line); }
-.board svg{ width:22px; height:22px; flex:none; margin-top:2px; }
-.board b{ display:block; font-weight:500; }
-.board span{ color:var(--muted); font-size:var(--fs-small); }
-.board-sec{ padding-top:var(--s8); padding-bottom:var(--s9); }
-@media (max-width:1023px){
-  .board-sec{ padding-top:var(--s8); padding-bottom:var(--s8); }
-  .board{ grid-template-columns:1fr 1fr; }
-  .board li:nth-child(3){ border-left:0; padding-left:0; }
-  .board li:nth-child(n+3){ border-top:1px solid var(--line); }
-}
-@media (max-width:519px){
-  .board li{ padding:var(--s4) var(--s3) var(--s4) 0; flex-direction:column; gap:var(--s2); }
-  .board li:nth-child(2n){ padding-left:var(--s4); }
-  .board svg{ margin-top:0; }
-}
-
-/* section heads */
+/* section heads: eyebrow + H2 left, paragraph right (Services only) */
 .head{ display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s5) var(--s7); align-items:end; margin-bottom:var(--s8); }
 .head .label{ margin-bottom:var(--s4); }
 .head .lead{ justify-self:start; }
 @media (max-width:899px){ .head{ grid-template-columns:1fr; margin-bottom:var(--s7); } }
+/* ledger heads: rule, page number, H2 (The work, Barbers, Questions) */
+.lhead{ display:grid; grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:var(--s4) var(--s9); align-items:baseline; border-top:1px solid var(--ink); padding-top:var(--s4); margin-bottom:var(--s7); }
+.lhead__meta{ display:flex; gap:var(--s4); align-items:baseline; }
+.lhead__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; }
+.lhead h2{ font-size:2.5rem; line-height:1.1; }
+@media (max-width:899px){ .lhead{ grid-template-columns:1fr; } .lhead h2{ font-size:2rem; } }
 
-/* services */
+/* services: three equal cards, 4:3 photos */
 .band{ background:var(--surface); }
-.svc-grid{ display:grid; grid-template-columns:minmax(0,8fr) minmax(0,4fr); gap:var(--s5); align-items:stretch; }
-.svc-stack{ display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:1fr 1fr; gap:var(--s5); align-items:stretch; min-width:0; }
+.svc-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:var(--s5); align-items:stretch; }
 .card{ background:var(--paper); border-radius:var(--r-lg); padding:var(--s2); display:flex; flex-direction:column; transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
 .card:hover{ transform:translateY(-3px); box-shadow:0 1px 2px rgba(17,19,21,.05), 0 12px 32px rgba(17,19,21,.08); }
 .card__media{ position:relative; border-radius:var(--r-sm); overflow:hidden; aspect-ratio:4/3; background:var(--surface); flex:none; }
@@ -193,17 +200,11 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .card__body{ padding:var(--s4) var(--s3) var(--s2); display:flex; flex-direction:column; flex:1; }
 .card__no{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; color:var(--muted); font-variant-numeric:tabular-nums; margin-bottom:var(--s2); }
 .card__body p{ margin-top:var(--s2); color:var(--muted); max-width:52ch; }
-.card__body .link-arrow{ margin-top:auto; padding-top:var(--s3); align-self:flex-start; }
-.card--big .card__body{ flex:none; padding:var(--s5) var(--s4) var(--s3); display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:var(--s6); align-items:end; }
-.card--big .card__body .link-arrow{ margin-top:0; padding-top:0; }
-@media (min-width:900px){ .card--big .card__media{ aspect-ratio:auto; flex:1 1 auto; min-height:360px; } }
+.card__body .link-arrow{ margin-top:auto; padding-top:var(--s4); align-self:flex-start; }
 @media (max-width:899px){
   .svc-grid{ grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(300px, 46%); overflow-x:auto; scroll-snap-type:x mandatory; margin-inline:calc(-1 * var(--gutter)); padding-inline:var(--gutter); scroll-padding-inline:var(--gutter); padding-bottom:var(--s3); overscroll-behavior-x:contain; scrollbar-width:none; }
   .svc-grid::-webkit-scrollbar{ display:none; }
-  .svc-stack{ display:contents; }
   .card{ scroll-snap-align:start; }
-  .card--big .card__body{ display:flex; flex:1; padding:var(--s4) var(--s3) var(--s2); }
-  .card--big .card__body .link-arrow{ margin-top:auto; padding-top:var(--s3); }
 }
 @media (max-width:599px){ .svc-grid{ grid-auto-columns:82%; } }
 
@@ -222,7 +223,8 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .ledger__no{ font-family:var(--display); font-size:var(--fs-small); color:var(--muted); font-weight:500; }
 .ledger__svc h3{ font-size:var(--fs-h3); }
 .ledger__svc p{ color:var(--muted); font-size:var(--fs-small); margin-top:2px; }
-.ledger__svc .save{ display:inline-block; margin-top:var(--s2); font-size:var(--fs-label); letter-spacing:.06em; text-transform:uppercase; font-weight:500; padding:3px 8px; border:1px solid var(--line); border-radius:var(--pill); color:var(--ink); }
+.ledger__svc .calc{ display:flex; flex-wrap:wrap; gap:var(--s1) var(--s3); margin-top:var(--s2); padding-top:var(--s2); border-top:1px dashed var(--line); font-size:var(--fs-small); color:var(--muted); max-width:34ch; }
+.ledger__svc .calc b{ font-weight:500; color:var(--ink); }
 .ledger__amt{ font-family:var(--display); font-size:var(--fs-h2); font-weight:500; letter-spacing:-.035em; line-height:1; text-align:right; }
 .ledger__amt sup{ font-size:.42em; vertical-align:top; position:relative; top:.18em; margin-right:2px; letter-spacing:0; color:var(--muted); }
 .ledger__amt.tbc{ font-family:var(--text); font-size:var(--fs-small); font-weight:500; letter-spacing:0; color:var(--muted); line-height:1.4; }
@@ -241,42 +243,35 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   .tbc-l{ display:none; } .tbc-s{ display:inline; }
 }
 
-/* work mosaic: one 4:3 tile beside two stacked 4:3 tiles */
-.mosaic{ display:grid; grid-template-columns:minmax(0,821fr) minmax(0,395fr); grid-template-rows:1fr 1fr; gap:var(--s5); }
-.shot{ position:relative; border-radius:var(--r-md); overflow:hidden; margin:0; background:var(--surface); min-height:0; }
-.shot img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .8s var(--ease); }
-.shot:hover img{ transform:scale(1.025); }
-.shot figcaption{ position:absolute; left:var(--s3); bottom:var(--s3); padding:5px 10px; border-radius:var(--pill); background:rgba(255,255,255,.92); font-size:var(--fs-label); font-weight:500; letter-spacing:.06em; text-transform:uppercase; }
-.shot--a{ grid-row:1 / 3; aspect-ratio:4/3; }
-@media (max-width:767px){
-  .mosaic{ grid-template-columns:1fr 1fr; grid-template-rows:auto; gap:var(--s3); }
-  .shot--a{ grid-column:1 / -1; grid-row:auto; }
-  .shot--b,.shot--c{ aspect-ratio:4/3; }
-}
+/* the work: an even strip of four 4:3 photos, captions underneath */
+.strip{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:var(--s5); }
+.shot{ margin:0; }
+.shot__img{ border-radius:var(--r-md); overflow:hidden; aspect-ratio:4/3; background:var(--paper); }
+.shot__img img{ width:100%; height:100%; object-fit:cover; transition:transform .8s var(--ease); }
+.shot:hover .shot__img img{ transform:scale(1.03); }
+.shot figcaption{ display:flex; gap:var(--s3); align-items:baseline; margin-top:var(--s3); padding-top:var(--s3); border-top:1px solid var(--line); }
+.shot figcaption .num{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; }
+@media (max-width:899px){ .strip{ grid-template-columns:1fr 1fr; gap:var(--s5) var(--s4); } }
 
-/* barbers: chair cards with portrait frames for the client's own photos */
-.team{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:var(--s5); }
-.person__photo{ position:relative; border-radius:var(--r-md); aspect-ratio:4/3; background:var(--surface); display:grid; place-items:center; align-content:center; gap:var(--s3); color:var(--muted); text-align:center; }
-.person__photo::before{ content:""; position:absolute; inset:var(--s3); border:1px dashed #b9b7af; border-radius:var(--r-sm); pointer-events:none; }
-.person__photo svg{ width:72px; height:72px; color:#8d8f91; }
-.person__photo span{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; text-transform:uppercase; }
-.person__info{ display:grid; grid-template-columns:auto 1fr; gap:var(--s4); align-items:baseline; padding:var(--s4) 0 0; border-top:1px solid var(--line); margin-top:var(--s4); }
-.person__no{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; color:var(--muted); font-variant-numeric:tabular-nums; }
-.person__info h3{ font-size:var(--fs-h3); }
-.person__info p{ color:var(--muted); font-size:var(--fs-small); margin-top:2px; }
+/* barbers: chair ledger with round portrait slots for the client's own photos */
+.chairs{ border-top:2px solid var(--ink); }
+.chair{ display:grid; grid-template-columns:112px 64px minmax(0,1fr) minmax(0,1fr) auto; gap:var(--s5); align-items:center; padding:var(--s4) 0; border-bottom:1px solid var(--line); }
+.chair__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; text-transform:uppercase; }
+.chair__ph{ width:64px; height:64px; border-radius:50%; border:1px dashed #a3a4a0; background:var(--surface); display:grid; place-items:center; color:#6f7174; }
+.chair__ph svg{ width:28px; height:28px; }
+.chair h3{ font-size:var(--fs-h3); }
+.chair p{ color:var(--muted); font-size:var(--fs-small); }
 .ph{ display:inline-block; font-size:var(--fs-label); font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); border:1px dashed #a3a4a0; border-radius:var(--pill); padding:3px 8px; white-space:nowrap; }
-@media (max-width:899px){
-  .team{ grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(260px, 1fr); overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:var(--s3); margin-inline:calc(-1 * var(--gutter)); padding-inline:var(--gutter); scroll-padding-inline:var(--gutter); overscroll-behavior-x:contain; scrollbar-width:none; }
-  .team::-webkit-scrollbar{ display:none; }
-  .person{ scroll-snap-align:start; }
+@media (max-width:767px){
+  .chair{ grid-template-columns:64px minmax(0,1fr); grid-template-areas:"ph no" "ph nm" "ph sp"; gap:2px var(--s4); }
+  .chair__ph{ grid-area:ph; } .chair__no{ grid-area:no; } .chair h3{ grid-area:nm; } .chair p{ grid-area:sp; } .chair .ph{ display:none; }
 }
-@media (max-width:599px){ .team{ grid-auto-columns:78%; } }
 
-/* booking (dark) */
+/* booking (dark): the ticket stub, carrying the hero choice */
 .book-sec{ padding:0 var(--s2); }
 .book{ background:var(--ink); color:var(--on-ink); border-radius:var(--r-xl); padding-block:var(--s10); }
 .book__grid{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:var(--s7) var(--s9); align-items:start; }
-.book .label{ color:var(--on-ink-muted); margin-bottom:var(--s4); }
+.book__intro .label{ color:var(--on-ink-muted); margin-bottom:var(--s4); }
 .book h2{ color:var(--on-ink); }
 .book__lead{ margin-top:var(--s5); color:var(--on-ink-muted); max-width:42ch; }
 .hours{ margin-top:var(--s7); border-top:1px solid var(--line-ink); }
@@ -288,47 +283,35 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 @media (max-width:599px){ .hours .hours__sum{ display:flex; } .hours li[data-day="2"], .hours li[data-day="3"], .hours li[data-day="4"], .hours li[data-day="5"], .hours li[data-day="6"]{ display:none; } .hours{ margin-top:var(--s6); } }
 .book__addr{ margin-top:var(--s5); font-size:var(--fs-small); color:var(--on-ink-muted); }
 .book__addr a{ color:var(--on-ink); }
-.form{ background:var(--paper); color:var(--ink); border-radius:var(--r-lg); padding:var(--s6); }
-.form fieldset{ border:0; padding:0; margin:0 0 var(--s5); min-width:0; }
-.form legend, .field label{ display:block; padding:0; margin-bottom:var(--s2); }
-.seg{ display:grid; grid-template-columns:1fr 1fr; gap:6px; }
-.seg .chip span{ justify-content:space-between; padding:0 var(--s4); }
-.seg .chip span em{ font-style:normal; font-family:var(--display); color:var(--muted); }
-.seg .chip input:checked + span em{ color:var(--on-ink-muted); }
-.form .days{ grid-template-columns:repeat(5, 1fr); }
-.fields{ display:grid; grid-template-columns:1fr 1fr; gap:var(--s4); margin-bottom:var(--s5); }
+.form{ color:var(--ink); filter:none; }
+.form .label{ color:var(--muted); }
+.form .ticket__top{ padding:var(--s5) var(--s6) var(--s6); }
+.form__sum{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:var(--s2) var(--s4); align-items:end; }
+.form__sum .label{ grid-column:1 / -1; display:flex; justify-content:space-between; }
+.sum{ font-family:var(--display); font-size:1.75rem; font-weight:500; letter-spacing:-.02em; line-height:1.2; }
+.sum i{ font-style:normal; color:#8a8c8f; padding:0 .2em; }
+.form .ticket__stub{ padding:var(--s6); }
+.fields{ display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr); gap:var(--s4); margin-bottom:var(--s5); }
+.field label{ display:block; margin-bottom:var(--s2); }
 .field input, .field select{ width:100%; min-height:48px; border:1px solid var(--line); border-radius:var(--r-sm); background:var(--bg); padding:0 var(--s3); font-size:var(--fs-body); transition:border-color .2s ease, background-color .2s ease; }
 .field select{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23111315' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:36px; }
 .field input:hover, .field select:hover{ border-color:#b9bab5; }
 .field input:focus, .field select:focus{ outline:none; border-color:var(--ink); background-color:var(--paper); }
-.field--full{ grid-column:1 / -1; }
 .form .btn{ width:100%; }
 .form__note{ margin-top:var(--s3); font-size:var(--fs-small); color:var(--muted); text-align:center; }
 .form__done{ margin-top:var(--s4); padding:var(--s3) var(--s4); border-radius:var(--r-sm); background:var(--surface); font-size:var(--fs-small); }
+@media (max-width:1023px){ .fields{ grid-template-columns:1fr 1fr; } .fields .field:first-child{ grid-column:1 / -1; } }
 @media (max-width:899px){ .book__grid{ grid-template-columns:1fr; } .book{ padding-block:var(--s8); } }
-@media (max-width:519px){ .form{ padding:var(--s5) var(--s4); } .fields{ grid-template-columns:1fr; } .seg{ grid-template-columns:1fr; } }
+@media (max-width:767px){ .book-sec{ padding:0; } .book{ border-radius:0; } }
+@media (max-width:519px){ .form .ticket__top, .form .ticket__stub{ padding-inline:var(--s5); } .fields{ grid-template-columns:1fr; } .sum{ font-size:1.5rem; } }
 
-/* faq */
-.faq{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:var(--s7) var(--s9); align-items:start; }
-.faq__aside .label{ margin-bottom:var(--s4); }
-.walkin{ margin-top:var(--s6); background:var(--surface); border-radius:var(--r-lg); padding:var(--s5); }
-.walkin h3{ margin-bottom:var(--s2); }
-.walkin p{ color:var(--muted); }
-.walkin .btn{ margin-top:var(--s5); }
-.qa{ border-top:1px solid var(--line); }
-.qa details{ border-bottom:1px solid var(--line); }
-.qa summary{ list-style:none; display:flex; justify-content:space-between; align-items:center; gap:var(--s4); min-height:64px; padding:var(--s4) 0; cursor:pointer; font-family:var(--display); font-size:var(--fs-h3); font-weight:500; letter-spacing:-.015em; line-height:1.3; transition:color .2s ease; }
-.qa summary::-webkit-details-marker{ display:none; }
-.qa summary:hover{ color:#3b3f43; }
-.qa .pm{ position:relative; width:28px; height:28px; flex:none; border:1px solid var(--line); border-radius:50%; transition:background-color .2s ease, border-color .2s ease; }
-.qa .pm::before,.qa .pm::after{ content:""; position:absolute; left:50%; top:50%; width:10px; height:1.5px; background:var(--ink); transform:translate(-50%,-50%); transition:transform .3s var(--ease), background-color .2s ease; }
-.qa .pm::after{ transform:translate(-50%,-50%) rotate(90deg); }
-.qa details[open] .pm{ background:var(--ink); border-color:var(--ink); }
-.qa details[open] .pm::before{ background:var(--paper); }
-.qa details[open] .pm::after{ transform:translate(-50%,-50%) rotate(0deg); background:var(--paper); }
-.qa .ans{ padding:0 var(--s8) var(--s5) 0; color:var(--muted); max-width:62ch; }
-@media (max-width:899px){ .faq{ grid-template-columns:1fr; } .qa .ans{ padding-right:0; } }
-@media (max-width:599px){ .walkin{ display:none; } }
+/* faq: numbered question ledger, answers always visible */
+.qs{ border-top:2px solid var(--ink); margin:0; }
+.q{ display:grid; grid-template-columns:56px minmax(0,5fr) minmax(0,6fr); gap:var(--s4) var(--s6); padding:var(--s5) 0; border-bottom:1px solid var(--line); align-items:baseline; }
+.q__no{ font-family:var(--display); font-size:var(--fs-label); font-weight:600; letter-spacing:.08em; font-variant-numeric:tabular-nums; }
+.q h3{ font-family:var(--display); font-size:var(--fs-h3); font-weight:500; letter-spacing:-.015em; line-height:1.3; }
+.q p{ color:var(--muted); max-width:56ch; }
+@media (max-width:767px){ .q{ grid-template-columns:40px minmax(0,1fr); row-gap:var(--s2); } .q p{ grid-column:2; } }
 
 /* visit: address plate + details */
 .visit{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:var(--s7) var(--s9); align-items:stretch; }
@@ -359,6 +342,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .foot a:hover{ text-decoration:underline; text-underline-offset:3px; }
 .legal{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:var(--s3); margin-top:var(--s8); padding-top:var(--s5); border-top:1px solid var(--line); font-size:var(--fs-small); color:var(--muted); }
 @media (max-width:899px){ .foot__grid{ grid-template-columns:1fr 1fr; } .foot__brand{ grid-column:1 / -1; } }
+@media (max-width:599px){ .foot__contact{ grid-column:1 / -1; } }
 
 /* phone sticky book bar */
 .dock{ position:fixed; left:var(--s3); right:var(--s3); bottom:calc(var(--s3) + env(safe-area-inset-bottom)); z-index:40; display:none; align-items:center; justify-content:space-between; gap:var(--s3); padding:var(--s2) var(--s2) var(--s2) var(--s4); background:var(--ink); color:var(--on-ink); border-radius:var(--pill); box-shadow:0 8px 24px rgba(17,19,21,.25); transform:translateY(140%); visibility:hidden; opacity:0; transition:transform .45s var(--ease), opacity .3s ease, visibility 0s linear .45s; }
@@ -385,7 +369,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
   <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 20.5V4.5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16M3.5 20.5h17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14.5" cy="12.5" r="1" fill="currentColor"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
-  <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6.5" cy="6.5" r="2.8" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6.5" cy="17.5" r="2.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.8 8.2 20 18M8.8 15.8 20 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 20 20"><path d="M10 16V5m-4.5 4.5L10 5l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-down" viewBox="0 0 20 20"><path d="M10 4v11m-4.5-4.5L10 15l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-menu" viewBox="0 0 20 20"><path d="M3 6.5h14M3 13.5h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
   <symbol id="mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#111315"/><rect x="7" y="9" width="18" height="3" rx="1.5" fill="#f7f6f2"/><rect x="7" y="14.5" width="13" height="3" rx="1.5" fill="#f7f6f2" opacity=".8"/><rect x="7" y="20" width="7" height="3" rx="1.5" fill="#f7f6f2" opacity=".55"/></symbol>
@@ -444,14 +428,14 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
       </div>
 
       <div class="hero__media">
-        <figure class="hero__photo"><img src="img/hero.jpg" width="2000" height="1125" alt="A sunlit barbershop with a row of black leather chairs facing tall wooden mirrors" fetchpriority="high"></figure>
+        <figure class="hero__photo"><img src="img/hero.jpg" width="2000" height="1000" alt="A bright barbershop with white barber chairs, light wood mirror stations and barbers at work" fetchpriority="high"></figure>
 
-        <form class="pick" id="pick" action="#book" aria-labelledby="pick-title">
-          <div class="pick__head">
-            <p class="pick__title" id="pick-title"><span>Ticket ·</span> Book a chair</p>
-            <p class="pick__date" data-ticket-date>Today</p>
-          </div>
-          <div class="pick__body">
+        <form class="pick ticket" id="pick" action="#book" aria-labelledby="pick-title">
+          <div class="ticket__top">
+            <div class="ticket__head">
+              <p class="ticket__title" id="pick-title">Ticket <span>· <span data-ticket-date>Book a chair</span></span></p>
+              <p class="ticket__no" aria-label="Ticket number 12, after 12 King Street">No. 0012</p>
+            </div>
             <fieldset>
               <legend class="label">What are you in for?</legend>
               <div class="rows">
@@ -461,6 +445,8 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
                 <label class="row-opt"><input type="radio" name="h-svc" value="shave"><span class="dot" aria-hidden="true"></span><span class="nm">Hot-towel shave</span><span class="pr tbc">[Price TBC]</span></label>
               </div>
             </fieldset>
+          </div>
+          <div class="ticket__stub">
             <fieldset>
               <legend class="label">Which day?</legend>
               <div class="days">
@@ -471,22 +457,16 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
                 <label class="chip"><input type="radio" name="h-day" value="Sat"><span>Sat</span></label>
               </div>
             </fieldset>
-            <button class="btn btn--book" type="submit" data-pick-btn>Book a chair · <span class="num" data-pick-price>£24</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button class="btn btn--book" type="submit">Book a chair · <span class="num" data-pick-price>£24</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
             <p class="pick__note">Walk-ins welcome before noon.</p>
           </div>
         </form>
       </div>
-    </div>
-  </section>
 
-  <!-- SHOP BOARD -->
-  <section class="board-sec" aria-label="Shop details">
-    <div class="wrap">
-      <ul class="board">
+      <ul class="hero__facts" aria-label="Shop details">
         <li data-reveal><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Open Tue–Sat</b><span class="num">9am to 7pm</span></div></li>
         <li data-reveal style="--i:1"><svg aria-hidden="true"><use href="#i-door"/></svg><div><b>Walk in before noon</b><span>No booking needed till 12</span></div></li>
-        <li data-reveal style="--i:2"><svg aria-hidden="true"><use href="#i-scissors"/></svg><div><b>Three services</b><span>Cut, beard, hot towel</span></div></li>
-        <li data-reveal style="--i:3"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>12 King Street</b><span>Leeds</span></div></li>
+        <li data-reveal style="--i:2"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>12 King Street</b><span>Leeds</span></div></li>
       </ul>
     </div>
   </section>
@@ -496,51 +476,40 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
     <div class="wrap">
       <div class="head">
         <div data-reveal>
-          <p class="label">Services</p>
+          <p class="label"><span class="num">01</span> · Services</p>
           <h2 id="svc-title">Cuts, beards, hot towels. That’s it.</h2>
         </div>
         <p class="lead" data-reveal style="--i:1">The whole menu fits on one line, and it’s short on purpose: fewer things, done every day, done well.</p>
       </div>
 
       <div class="svc-grid">
-        <article class="card card--big" data-reveal>
-          <div class="card__media">
-            <img src="img/svc-cut.jpg" width="1000" height="1100" loading="lazy" alt="Rows of clippers, trimmers and guide combs laid out on a wooden counter">
-          </div>
+        <article class="card" data-reveal>
+          <div class="card__media"><img src="img/svc-cut.jpg" width="1200" height="900" loading="lazy" alt="Barber in a white shirt taking a clipper fade up the side of a customer’s head"></div>
           <div class="card__body">
-            <div>
-              <p class="card__no num">01</p>
-              <h3>The cut</h3>
-              <p>Clippers, scissors or both. Tell us what you want or show us a photo, and we’ll tell you straight if it’ll suit you.</p>
-            </div>
+            <p class="card__no num">01</p>
+            <h3>The cut</h3>
+            <p>Clippers, scissors or both. Tell us what you want or show us a photo, and we’ll tell you straight if it’ll suit you.</p>
             <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
         </article>
-
-        <div class="svc-stack">
-          <article class="card card--sm" data-reveal style="--i:1">
-            <div class="card__media">
-              <img src="img/svc-beard.jpg" width="1200" height="900" loading="lazy" alt="Barber lifting hair with a comb and trimming over it with scissors, close to the customer’s beard line">
-            </div>
-            <div class="card__body">
-              <p class="card__no num">02</p>
-              <h3>Beard trim</h3>
-              <p>Shaped, lined up and taken down to the length you actually asked for.</p>
-              <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
-            </div>
-          </article>
-          <article class="card card--sm" data-reveal style="--i:2">
-            <div class="card__media">
-              <img src="img/svc-shave.jpg" width="1200" height="900" loading="lazy" alt="An open straight razor resting on a striped wooden surface">
-            </div>
-            <div class="card__body">
-              <p class="card__no num">03</p>
-              <h3>Hot-towel shave</h3>
-              <p>Hot towels, a sharp blade and a slow, close finish. Book it when you can sit back.</p>
-              <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
-            </div>
-          </article>
-        </div>
+        <article class="card" data-reveal style="--i:1">
+          <div class="card__media"><img src="img/svc-beard.jpg" width="1200" height="900" loading="lazy" alt="Barber lifting hair with a comb and trimming over it with scissors, close to the customer’s beard line"></div>
+          <div class="card__body">
+            <p class="card__no num">02</p>
+            <h3>Beard trim</h3>
+            <p>Shaped, lined up and taken down to the length you actually asked for.</p>
+            <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+          </div>
+        </article>
+        <article class="card" data-reveal style="--i:2">
+          <div class="card__media"><img src="img/svc-shave.jpg" width="1200" height="900" loading="lazy" alt="A straight razor and a shaving brush resting against a cream shaving mug"></div>
+          <div class="card__body">
+            <p class="card__no num">03</p>
+            <h3>Hot-towel shave</h3>
+            <p>Hot towels, a sharp blade and a slow, close finish. Book it when you can sit back.</p>
+            <a class="link-arrow" href="#prices"><span>See price</span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -549,7 +518,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   <section class="section ledger-sec" id="prices" aria-labelledby="price-title">
     <div class="wrap grid">
       <div class="ledger-intro" data-reveal>
-        <p class="label">Price list</p>
+        <p class="label"><span class="num">02</span> · Price list</p>
         <h2 id="price-title">Plain prices. No small print.</h2>
         <p class="lead">Four lines, worth knowing before you sit down. Book any of them, or just walk in before noon.</p>
         <a class="btn btn--book" href="#book">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -572,7 +541,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
           </div>
           <div class="ledger__row" role="listitem" data-reveal style="--i:2">
             <span class="ledger__no num">03</span>
-            <div class="ledger__svc"><h3>Cut + beard</h3><p>Both, in one sitting</p><span class="save num">£4 less than separately</span></div>
+            <div class="ledger__svc"><h3>Cut + beard</h3><p>Both, in one sitting</p><p class="calc num"><span>Lines 01 + 02 add up to £36.</span><b>This line: £32.</b></p></div>
             <p class="ledger__amt num"><sup>£</sup>32</p>
             <a class="link-arrow ledger__go" href="#book" data-svc="combo"><span>Book</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
@@ -591,45 +560,31 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   <!-- THE WORK -->
   <section class="section band" id="work" aria-labelledby="work-title">
     <div class="wrap">
-      <div class="head">
-        <div data-reveal>
-          <p class="label">The work</p>
-          <h2 id="work-title">Fades, tapers, line&#8209;ups and beards.</h2>
-        </div>
-        <p class="lead" data-reveal style="--i:1">Clean edges and shapes that suit the head they’re on. Bring a photo, or bring nothing and trust us.</p>
+      <div class="lhead" data-reveal>
+        <div class="lhead__meta"><span class="lhead__no">03</span><span class="label">The work</span></div>
+        <h2 id="work-title">Fades, tapers, line&#8209;ups and beards.</h2>
       </div>
-      <div class="mosaic">
-        <figure class="shot shot--a" data-reveal><img src="img/work-1.jpg" width="1600" height="1200" loading="lazy" alt="Barber holding a comb steady while taking a skin fade up the back of a customer’s head"><figcaption>Skin fade</figcaption></figure>
-        <figure class="shot shot--b" data-reveal style="--i:1"><img src="img/work-2.jpg" width="1000" height="750" loading="lazy" alt="Scissors and a comb tidying a short back and sides"><figcaption>Scissor work</figcaption></figure>
-        <figure class="shot shot--c" data-reveal style="--i:2"><img src="img/work-3.jpg" width="1000" height="750" loading="lazy" alt="Barber in black gloves sectioning hair with a white comb before cutting with shears"><figcaption>Detail work</figcaption></figure>
-      </div>
+      <ul class="strip">
+        <li><figure class="shot" data-reveal><div class="shot__img"><img src="img/work-1.jpg" width="1000" height="750" loading="lazy" alt="Barber holding a comb steady while taking a skin fade up the back of a customer’s head"></div><figcaption><span class="num">03.1</span><span class="label">Skin fade</span></figcaption></figure></li>
+        <li><figure class="shot" data-reveal style="--i:1"><div class="shot__img"><img src="img/work-2.jpg" width="1000" height="750" loading="lazy" alt="Scissors cutting over a comb to tidy the back of a short haircut"></div><figcaption><span class="num">03.2</span><span class="label">Scissor over comb</span></figcaption></figure></li>
+        <li><figure class="shot" data-reveal style="--i:2"><div class="shot__img"><img src="img/work-3.jpg" width="1000" height="750" loading="lazy" alt="Close-up of a trimmer cleaning up the hairline above a customer’s ear"></div><figcaption><span class="num">03.3</span><span class="label">Line-up</span></figcaption></figure></li>
+        <li><figure class="shot" data-reveal style="--i:3"><div class="shot__img"><img src="img/work-4.jpg" width="1000" height="750" loading="lazy" alt="A textured crop with a soft fade, lit by daylight from a window"></div><figcaption><span class="num">03.4</span><span class="label">Textured fade</span></figcaption></figure></li>
+      </ul>
     </div>
   </section>
 
   <!-- BARBERS -->
   <section class="section" id="barbers" aria-labelledby="team-title">
     <div class="wrap">
-      <div class="head">
-        <div data-reveal>
-          <p class="label">Barbers</p>
-          <h2 id="team-title">Ask for them by name.</h2>
-        </div>
-        <p class="lead" data-reveal style="--i:1">Book a favourite, or take the next free chair. Either way you get the same care and the same price.</p>
+      <div class="lhead" data-reveal>
+        <div class="lhead__meta"><span class="lhead__no">04</span><span class="label">Barbers</span></div>
+        <h2 id="team-title">On the chairs.</h2>
       </div>
-      <ul class="team">
-        <li class="person" data-reveal>
-          <div class="person__photo"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M17 12h22v14a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V12Z M13 30h30 M20 30v8h16v-8 M28 38v8 M19 46h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Portrait to be supplied</span></div>
-          <div class="person__info"><span class="person__no num">Chair 01</span><div><h3>[Barber name]</h3><p>[Role or speciality]</p></div></div>
-        </li>
-        <li class="person" data-reveal style="--i:1">
-          <div class="person__photo"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M17 12h22v14a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V12Z M13 30h30 M20 30v8h16v-8 M28 38v8 M19 46h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Portrait to be supplied</span></div>
-          <div class="person__info"><span class="person__no num">Chair 02</span><div><h3>[Barber name]</h3><p>[Role or speciality]</p></div></div>
-        </li>
-        <li class="person" data-reveal style="--i:2">
-          <div class="person__photo"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M17 12h22v14a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V12Z M13 30h30 M20 30v8h16v-8 M28 38v8 M19 46h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Portrait to be supplied</span></div>
-          <div class="person__info"><span class="person__no num">Chair 03</span><div><h3>[Barber name]</h3><p>[Role or speciality]</p></div></div>
-        </li>
-      </ul>
+      <ol class="chairs">
+        <li class="chair" data-reveal><span class="chair__no">Chair 01</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
+        <li class="chair" data-reveal style="--i:1"><span class="chair__no">Chair 02</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
+        <li class="chair" data-reveal style="--i:2"><span class="chair__no">Chair 03</span><span class="chair__ph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><h3>[Barber name]</h3><p>[Speciality]</p><span class="ph">Portrait to be supplied</span></li>
+      </ol>
     </div>
   </section>
 
@@ -637,10 +592,10 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   <section class="book-sec on-ink" id="book" aria-labelledby="book-title">
     <div class="book">
       <div class="wrap book__grid">
-        <div data-reveal>
-          <p class="label">Booking</p>
+        <div class="book__intro" data-reveal>
+          <p class="label"><span class="num">05</span> · Booking</p>
           <h2 id="book-title">Hold a chair for later.</h2>
-          <p class="book__lead">Pick a service and a day and we’ll hold a chair for you. Before noon, you can skip all this and walk in.</p>
+          <p class="book__lead">Your ticket from the top of the page comes with you. Add a time and a mobile number and we’ll hold a chair. Before noon, skip all this and walk in.</p>
           <ul class="hours" aria-label="Opening hours">
             <li class="hours__sum"><span>Tuesday to Saturday</span><span class="num">9am–7pm</span></li>
             <li data-day="2"><span>Tuesday</span><span class="num">9am–7pm</span></li>
@@ -653,48 +608,38 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
           <p class="book__addr">12 King Street, Leeds · <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Get directions</a></p>
         </div>
 
-        <form class="form" id="book-form" data-reveal style="--i:1" novalidate>
-          <fieldset>
-            <legend class="label">Service</legend>
-            <div class="seg">
-              <label class="chip"><input type="radio" name="svc" value="cut" checked><span>Cut <em class="num">£24</em></span></label>
-              <label class="chip"><input type="radio" name="svc" value="beard"><span>Beard trim <em class="num">£12</em></span></label>
-              <label class="chip"><input type="radio" name="svc" value="combo"><span>Cut + beard <em class="num">£32</em></span></label>
-              <label class="chip"><input type="radio" name="svc" value="shave"><span>Hot-towel shave <em>[TBC]</em></span></label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend class="label">Day</legend>
-            <div class="days">
-              <label class="chip"><input type="radio" name="day" value="Tue" checked><span>Tue</span></label>
-              <label class="chip"><input type="radio" name="day" value="Wed"><span>Wed</span></label>
-              <label class="chip"><input type="radio" name="day" value="Thu"><span>Thu</span></label>
-              <label class="chip"><input type="radio" name="day" value="Fri"><span>Fri</span></label>
-              <label class="chip"><input type="radio" name="day" value="Sat"><span>Sat</span></label>
-            </div>
-          </fieldset>
-          <div class="fields">
-            <div class="field field--full">
-              <label class="label" for="f-time">Time of day</label>
-              <select id="f-time" name="time">
-                <option>Morning, 9 to 12</option>
-                <option>Early afternoon, 12 to 3</option>
-                <option>Late afternoon, 3 to 5</option>
-                <option>Evening, 5 to 7</option>
-              </select>
-            </div>
-            <div class="field">
-              <label class="label" for="f-name">Your name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label class="label" for="f-phone">Mobile</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
-            </div>
+        <form class="form ticket" id="book-form" data-reveal style="--i:1" novalidate aria-labelledby="stub-title">
+          <div class="ticket__top form__sum">
+            <p class="label"><span id="stub-title">Your ticket</span><span class="num">No. 0012</span></p>
+            <p class="sum" aria-live="polite"><span data-sum-svc>Cut</span><i aria-hidden="true">·</i><span data-sum-day>Tue</span><i aria-hidden="true">·</i><span class="num" data-sum-price>£24</span></p>
+            <a class="link-arrow" href="#pick" data-change><span>Change</span><svg aria-hidden="true"><use href="#i-up"/></svg></a>
+            <input type="hidden" name="svc" value="cut">
+            <input type="hidden" name="day" value="Tue">
           </div>
-          <button class="btn btn--book" type="submit">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <p class="form__note">[Booking system or inbox to be connected by Fade &amp; Co]</p>
-          <p class="form__done" role="status" aria-live="polite" hidden></p>
+          <div class="ticket__stub">
+            <div class="fields">
+              <div class="field">
+                <label class="label" for="f-time">Time of day</label>
+                <select id="f-time" name="time">
+                  <option>Morning, 9 to 12</option>
+                  <option>Early afternoon, 12 to 3</option>
+                  <option>Late afternoon, 3 to 5</option>
+                  <option>Evening, 5 to 7</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="label" for="f-name">Your name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label class="label" for="f-phone">Mobile</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              </div>
+            </div>
+            <button class="btn btn--book" type="submit">Book a chair <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <p class="form__note">[Booking system or inbox to be connected by Fade &amp; Co]</p>
+            <p class="form__done" role="status" aria-live="polite" hidden></p>
+          </div>
         </form>
       </div>
     </div>
@@ -702,42 +647,17 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 
   <!-- FAQ -->
   <section class="section" id="faq" aria-labelledby="faq-title">
-    <div class="wrap faq">
-      <div class="faq__aside" data-reveal>
-        <p class="label">Questions</p>
+    <div class="wrap">
+      <div class="lhead" data-reveal>
+        <div class="lhead__meta"><span class="lhead__no">06</span><span class="label">Questions</span></div>
         <h2 id="faq-title">Before you sit down.</h2>
-        <div class="walkin">
-          <h3>Not sure? Just come in.</h3>
-          <p>Before noon there’s no booking needed. Turn up, sit down, wait your turn.</p>
-          <a class="btn btn--line btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Directions to 12 King Street <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
       </div>
-      <div class="qa" data-reveal style="--i:1">
-        <details open>
-          <summary>Do I need to book?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">Not before noon. Walk-ins are welcome until 12. After that, book a chair so you’re not left waiting.</p>
-        </details>
-        <details>
-          <summary>When are you open?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">Tuesday to Saturday, 9am to 7pm. We’re closed on Sunday and Monday.</p>
-        </details>
-        <details>
-          <summary>How much is a cut?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">Every price is on the <a href="#prices">price list</a>, and the ticket at the top of the page adds it up as you pick.</p>
-        </details>
-        <details>
-          <summary>Can I get a cut and beard trim together?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">Yes. Book Cut + beard as one sitting and it costs less than the two on their own.</p>
-        </details>
-        <details>
-          <summary>Do you do hot-towel shaves?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">We do: hot towels and a straight razor. [Price to be confirmed by Fade &amp; Co.]</p>
-        </details>
-        <details>
-          <summary>Where are you?<span class="pm" aria-hidden="true"></span></summary>
-          <p class="ans">12 King Street, Leeds. <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Open it in Maps</a>.</p>
-        </details>
-      </div>
+      <ol class="qs">
+        <li class="q" data-reveal><span class="q__no" aria-hidden="true">Q.01</span><h3>Do I need to book?</h3><p>Not before noon. Walk-ins are welcome until 12, Tuesday to Saturday. After that, book a chair.</p></li>
+        <li class="q" data-reveal style="--i:1"><span class="q__no" aria-hidden="true">Q.02</span><h3>What’s on the menu?</h3><p>Three services and four lines on the <a href="#prices">price list</a>: cut £24, beard trim £12, cut + beard £32, and the hot-towel shave [price to be confirmed].</p></li>
+        <li class="q" data-reveal style="--i:2"><span class="q__no" aria-hidden="true">Q.03</span><h3>Which days are you shut?</h3><p>Sunday and Monday. Tuesday to Saturday the door is open from 9am to 7pm.</p></li>
+        <li class="q" data-reveal style="--i:3"><span class="q__no" aria-hidden="true">Q.04</span><h3>Where are you?</h3><p>12 King Street, Leeds. <a href="https://www.google.com/maps/search/?api=1&amp;query=12+King+Street+Leeds">Open it in Maps</a>.</p></li>
+      </ol>
     </div>
   </section>
 
@@ -754,7 +674,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
       </div>
       <div class="visit__info" data-reveal style="--i:1">
         <div>
-          <p class="label">Visit</p>
+          <p class="label"><span class="num">07</span> · Visit</p>
           <h2 id="visit-title">Find the shop.</h2>
           <p class="lead">Number 12, King Street, Leeds. Walk in before noon, or hold a chair for later in the day.</p>
         </div>
@@ -788,7 +708,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
         <h3>Hours</h3>
         <ul><li>Tue–Sat, 9–7</li><li>Walk-ins before noon</li></ul>
       </div>
-      <div>
+      <div class="foot__contact">
         <h3>Contact</h3>
         <ul><li>[Phone to be supplied]</li><li>[Email to be supplied]</li><li><a href="#book">Book a chair</a></li></ul>
       </div>
@@ -805,8 +725,11 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 <script>
 (function(){
   var d=document, root=d.documentElement; root.classList.add('js');
-  var PRICES={cut:'£24',beard:'£12',combo:'£32',shave:'price TBC'};
+  var PRICES={cut:'£24',beard:'£12',combo:'£32',shave:'[Price TBC]'};
+  var LABELS={cut:'Cut',beard:'Beard trim',combo:'Cut + beard',shave:'Hot-towel shave'};
   var NAMES={cut:'a cut',beard:'a beard trim',combo:'a cut + beard',shave:'a hot-towel shave'};
+  var DAYS={Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)');
 
   // header border + dock
   var header=d.querySelector('.site-header'), dock=d.querySelector('.dock'), hero=d.querySelector('.hero');
@@ -831,27 +754,33 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   var txt = openDay && h>=9 && h<19 ? (h<12 ? 'Open now · walk-ins till 12' : 'Open today until 7pm') : (openDay && h<9 ? 'Opens today at 9am' : 'Closed now · back '+(day===6||day===0||day===1?'Tuesday':'tomorrow')+' at 9');
   d.querySelectorAll('[data-status]').forEach(function(s){ s.querySelector('span').textContent=txt; s.classList.toggle('is-closed', !(openDay&&h>=9&&h<19)); });
   d.querySelectorAll('.hours li[data-day]').forEach(function(li){ if(li.dataset.day.split(',').indexOf(String(day))>-1) li.classList.add('is-today'); });
-
   var td=d.querySelector('[data-ticket-date]'); if(td){ try{ td.textContent=now.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}); }catch(e){} }
 
-  // hero picker: live price + hand-off to the booking form
-  var pick=d.getElementById('pick'), form=d.getElementById('book-form'), priceEl=d.querySelector('[data-pick-price]');
-  var val=function(f,n){ var c=f.querySelector('input[name="'+n+'"]:checked'); return c?c.value:null; };
-  var setRadio=function(f,n,v){ var r=f.querySelector('input[name="'+n+'"][value="'+v+'"]'); if(r) r.checked=true; };
-  var update=function(){ priceEl.textContent=PRICES[val(pick,'h-svc')]; };
-  pick.addEventListener('change', update); update();
-  if(openDay && day!==0){ setRadio(pick,'h-day',['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day]); setRadio(form,'day',['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day]); }
-  var go=function(){ var t=d.getElementById('book'); t.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); setTimeout(function(){ d.getElementById('f-name').focus({preventScroll:true}); }, 500); };
-  pick.addEventListener('submit', function(e){ e.preventDefault(); setRadio(form,'svc',val(pick,'h-svc')); setRadio(form,'day',val(pick,'h-day')); go(); });
-  d.querySelectorAll('[data-svc]').forEach(function(a){ a.addEventListener('click', function(){ setRadio(form,'svc',a.dataset.svc); setRadio(pick,'h-svc',a.dataset.svc); update(); }); });
+  // the hero ticket and the booking stub are one ticket: keep them in sync
+  var pick=d.getElementById('pick'), form=d.getElementById('book-form');
+  var val=function(n){ var c=pick.querySelector('input[name="'+n+'"]:checked'); return c?c.value:null; };
+  var setRadio=function(n,v){ var r=pick.querySelector('input[name="'+n+'"][value="'+v+'"]'); if(r) r.checked=true; };
+  var sync=function(){
+    var svc=val('h-svc'), dy=val('h-day');
+    d.querySelector('[data-pick-price]').textContent=PRICES[svc];
+    form.elements.svc.value=svc; form.elements.day.value=dy;
+    d.querySelector('[data-sum-svc]').textContent=LABELS[svc];
+    d.querySelector('[data-sum-day]').textContent=dy;
+    d.querySelector('[data-sum-price]').textContent=PRICES[svc];
+  };
+  if(openDay) setRadio('h-day',['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][day]);
+  pick.addEventListener('change', sync); sync();
+  var go=function(){ bookSec.scrollIntoView({behavior: reduce.matches?'auto':'smooth'}); setTimeout(function(){ d.getElementById('f-time').focus({preventScroll:true}); }, 500); };
+  pick.addEventListener('submit', function(e){ e.preventDefault(); sync(); go(); });
+  d.querySelectorAll('[data-svc]').forEach(function(a){ a.addEventListener('click', function(){ setRadio('h-svc',a.dataset.svc); sync(); }); });
+  d.querySelector('[data-change]').addEventListener('click', function(e){ e.preventDefault(); pick.scrollIntoView({behavior: reduce.matches?'auto':'smooth', block:'center'}); setTimeout(function(){ var c=pick.querySelector('input[name="h-svc"]:checked'); if(c) c.focus({preventScroll:true}); }, 500); });
 
   // booking form: confirmation note (the real send is connected later)
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var name=form.querySelector('#f-name'), phone=form.querySelector('#f-phone'), done=form.querySelector('.form__done');
     if(!name.value.trim()){ name.focus(); return; } if(!phone.value.trim()){ phone.focus(); return; }
-    var dayNames={Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
-    done.hidden=false; done.textContent='Thanks, '+name.value.trim().split(' ')[0]+'. Request noted for '+NAMES[val(form,'svc')]+' on '+dayNames[val(form,'day')]+', '+form.querySelector('#f-time').value.toLowerCase()+'.';
+    done.hidden=false; done.textContent='Thanks, '+name.value.trim().split(' ')[0]+'. Request noted for '+NAMES[form.elements.svc.value]+' on '+DAYS[form.elements.day.value]+', '+form.querySelector('#f-time').value.toLowerCase()+'.';
   });
 
   // reveal on scroll

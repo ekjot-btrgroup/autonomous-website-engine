@@ -1,0 +1,708 @@
+{
+ "title": "LEXVARON (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/expertise",
+  "/expertise/:NuJbjqfoI",
+  "/team",
+  "/team/:S6JZ2ASba",
+  "/insights",
+  "/insights/:RySmUMEzs",
+  "/contact",
+  "/privacy-policy",
+  "/terms-and-conditions",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Canvas",
+   "light": "#F1F0EC"
+  },
+  {
+   "name": "Surface",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "Ink",
+   "light": "#141414"
+  },
+  {
+   "name": "Ink Soft",
+   "light": "#222222"
+  },
+  {
+   "name": "Text Muted",
+   "light": "#6B6A66"
+  },
+  {
+   "name": "Accent",
+   "light": "#FF5A1F"
+  },
+  {
+   "name": "Accent Soft",
+   "light": "#FFE7DC"
+  },
+  {
+   "name": "Line",
+   "light": "rgba(20,20,20,0.09)"
+  },
+  {
+   "name": "On Dark",
+   "light": "#FFFFFF"
+  },
+  {
+   "name": "On Dark Muted",
+   "light": "rgba(255,255,255,0.6)"
+  },
+  {
+   "name": "Line Dark",
+   "light": "rgba(255,255,255,0.12)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "-0.045em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "80px",
+    "medium": "60px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.035em",
+   "leading": "1.06em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "52px",
+    "medium": "42px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.01em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "19px",
+   "tracking": "-0.01em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "19px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "1.6em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Small",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Eyebrow",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0.14em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Stat",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.045em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "52px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "62px",
+   "tracking": "-0.04em",
+   "leading": "1.03em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "62px",
+    "medium": "50px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "Article/Heading 2",
+   "tag": "h2",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.03em",
+   "leading": "1.15em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "32px",
+    "medium": "32px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Article/Heading 3",
+   "tag": "h3",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "21px",
+   "tracking": "-0.015em",
+   "leading": "1.3em",
+   "transform": "none",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "21px"
+   }
+  },
+  {
+   "name": "Article/Paragraph",
+   "tag": "p",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.005em",
+   "leading": "1.7em",
+   "transform": "none",
+   "color": "token:Text Muted",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Tag",
+  "Logo",
+  "Practice Card",
+  "Process Card",
+  "Team Card",
+  "Article Card",
+  "Testimonial Card",
+  "Stat Card",
+  "Feature Point",
+  "Navigation",
+  "Page Header",
+  "CTA Band",
+  "Submit Button"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Canvas"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 96,
+   "h": 760,
+   "w": 1176,
+   "fill": "data:framer/asset-reference,iU29rUddr3wex06eH8vcF7VmHrU.jpg?originalFilename=photo-1642522029691-029b5a432954%3Fcrop%3Dentropy%26cs%3Dsrgb%26fm%3Djpg%26ixlib%3Drb-4.1.jpg&width=1600&height=1067",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "48px",
+   "gap": "0px",
+   "maxWidth": "1416px",
+   "childNames": [
+    "Shade",
+    "Content"
+   ],
+   "text": 5,
+   "words": 49,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "Display": 1,
+    "Body Large": 1,
+    "Label": 1,
+    "Heading 4": 1,
+    "Small": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 868,
+   "h": 1241,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 110px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "About Grid",
+    "Firm Highlights"
+   ],
+   "text": 3,
+   "words": 72,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 2,
+    "Feature Point": 3,
+    "Button": 1,
+    "Stat Card": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1,
+    "Heading 3": 1
+   },
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "Expertise",
+   "type": "FrameNode",
+   "y": 2121,
+   "h": 1105,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 110px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "Header",
+    "Practice List"
+   ],
+   "text": 2,
+   "words": 36,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Tag": 1,
+    "Button": 1,
+    "Practice Card": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/03-expertise.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 3238,
+   "h": 756,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 110px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "Header",
+    "Steps"
+   ],
+   "text": 2,
+   "words": 29,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Tag": 1,
+    "Process Card": 4
+   },
+   "effects": {
+    "appear": 6
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/04-process.jpg"
+  },
+  {
+   "name": "Team Preview",
+   "type": "FrameNode",
+   "y": 4006,
+   "h": 890,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 110px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "Header",
+    "Team List"
+   ],
+   "text": 2,
+   "words": 36,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Tag": 1,
+    "Button": 1,
+    "Team Card": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/05-team-preview.jpg"
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "CTA Band",
+   "y": 4908,
+   "h": 527,
+   "w": 1176,
+   "maxWidth": "1416px",
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA Band": 1
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/06-cta-band.jpg"
+  },
+  {
+   "name": "Client Perspectives",
+   "type": "FrameNode",
+   "y": 5447,
+   "h": 820,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 110px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "Header",
+    "Testimonials"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Tag": 1,
+    "Testimonial Card": 2
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/07-client-perspectives.jpg"
+  },
+  {
+   "name": "Insights Preview",
+   "type": "FrameNode",
+   "y": 6279,
+   "h": 938,
+   "w": 1176,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "110px 32px 120px 32px",
+   "gap": "56px",
+   "maxWidth": "1240px",
+   "childNames": [
+    "Header",
+    "Article List"
+   ],
+   "text": 2,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    "auto-fill"
+   ],
+   "components": {
+    "Tag": 1,
+    "Button": 1,
+    "Article Card": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/08-insights-preview.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 30
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 32,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.1s",
+     "bounce": 0,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 32,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.1s",
+     "bounce": 0,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "100px",
+   4
+  ],
+  [
+   "28px",
+   3
+  ],
+  [
+   "22px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 4,
+  "blur": 0
+ },
+ "desktopFill": "white",
+ "pageHeight": 8004,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/3e5410c1-962e-4382-9055-947ffa2e1da7.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/c6f83738-1eea-4f28-b693-0a3c5cd0a806.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-legal/lexvaron",
+ "industry": "services-legal",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  8004
+ ]
+}

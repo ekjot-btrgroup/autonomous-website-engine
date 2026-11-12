@@ -1,0 +1,19 @@
+{
+  "name": "Essential",
+  "industry": "ecommerce-beauty",
+  "also": ["health-wellness", "ecommerce-digital"],
+  "summary": "Clean white skincare store with a calm book-serif voice, centered product hero and soft nature-styled product photography in pale grey frames.",
+  "style": ["minimal", "editorial", "warm-organic"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 4, "density": 2, "warmth": 3, "modernity": 3 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#ffffff", "surface": "#f8f8f8", "ink": "#171717", "muted": "#575757", "accent": "#ff462e", "line": "#ebebeb" },
+  "fonts": { "display": "Erode", "body": "DM Sans", "class": "serif", "pairing": "medium-weight bookish serif headlines, friendly geometric sans at 500 for all body and UI" },
+  "hero": "product-shot",
+  "sections": ["hero", "about", "products", "stats", "features", "blog", "faq", "cta"],
+  "motion": 3,
+  "signature": ["two-line centered serif headlines with the second line in mid grey, repeated through the page", "an arch of circular product thumbnails framing a centered stat headline", "sticky feature rows: label chip, serif title and copy on the left, two framed image cards on the right"],
+  "imagery": "styled skincare still lifes on botanicals, creams and stones, soft daylight, sage, sand and cream tones",
+  "layout_grid": "1200px frame inside a 1440px max, 40px side padding, 100px section padding, 52px header gap, 16px radius cards on #f8f8f8",
+  "quality": 4
+}

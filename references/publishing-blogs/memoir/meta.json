@@ -1,0 +1,19 @@
+{
+  "name": "Memoir",
+  "industry": "publishing-blogs",
+  "also": ["portfolio-designers", "publishing-magazines", "services-education"],
+  "summary": "Warm-greige creator blog with a sticky left sidebar profile, a centred Manrope headline with one italic serif word, and a calm 3-column grid of sunlit interior post cards.",
+  "style": ["minimal", "warm-organic", "editorial"],
+  "feel": { "tone": 2, "energy": 1, "luxury": 3, "density": 2, "warmth": 4, "modernity": 4 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#f4f2f0", "surface": "#ffffff", "ink": "#000000", "muted": "#8c746a", "accent": "#000000", "line": "#dad3ce" },
+  "fonts": { "display": "Manrope", "body": "Manrope", "class": "sans", "pairing": "Manrope 500 at -0.06em for headlines with a single Source Serif 4 italic word as the accent; Manrope 500 to 600 for everything else" },
+  "hero": "centered-type",
+  "sections": ["hero", "newsletter", "blog", "cta", "footer"],
+  "motion": 2,
+  "signature": ["app-like sticky left sidebar with avatar, nav with counts, social links, a pinned post card and a mini subscribe field", "headline set in tight grotesk with one word swapped to a serif italic for warmth"],
+  "imagery": "soft warm-light still lifes and desk interiors in beige, terracotta and oak, consistent colour grade across every card",
+  "layout_grid": "1200px canvas, 240px fixed sidebar, content column about 890px with 3-column card grid, 12px card radii, 10px image radii",
+  "quality": 4
+}
