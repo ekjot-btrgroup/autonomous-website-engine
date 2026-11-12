@@ -1,0 +1,967 @@
+{
+ "title": "Kairox: AI Workflow Automation Framer Template (copy)",
+ "pages": [
+  "/",
+  "/book-a-call",
+  "/privacy",
+  "/terms",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Laptop",
+   "range": "(min-width: 1200px) and (max-width: 1439.98px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Primary",
+   "light": "rgb(28, 28, 30)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgba(28, 28, 30, 0.66)"
+  },
+  {
+   "name": "Muted",
+   "light": "rgba(28, 28, 30, 0.4)"
+  },
+  {
+   "name": "Primary",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Secondary",
+   "light": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "name": "Default",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Soft",
+   "light": "rgb(245, 245, 246)"
+  },
+  {
+   "name": "Default",
+   "light": "rgb(28, 28, 30)"
+  },
+  {
+   "name": "Card",
+   "light": "rgb(33, 33, 35)"
+  },
+  {
+   "name": "Tag",
+   "light": "rgba(255, 255, 255, 0.04)"
+  },
+  {
+   "name": "Default",
+   "light": "rgb(238, 238, 240)"
+  },
+  {
+   "name": "Default",
+   "light": "rgba(255, 255, 255, 0.12)"
+  },
+  {
+   "name": "Line",
+   "light": "rgb(207, 207, 210)"
+  },
+  {
+   "name": "Line",
+   "light": "rgb(103, 103, 107)"
+  },
+  {
+   "name": "Hover",
+   "light": "rgba(28, 28, 30, 0.8)"
+  },
+  {
+   "name": "Overlay",
+   "light": "rgba(0, 0, 0, 0.3)"
+  },
+  {
+   "name": "Copper",
+   "light": "rgb(177, 113, 91)"
+  },
+  {
+   "name": "Blue",
+   "light": "#9fd0de"
+  },
+  {
+   "name": "Light",
+   "light": "#e4ecef"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": 64,
+   "tracking": "-0.045em",
+   "leading": "110%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "64px",
+    "medium": "48px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": 40,
+   "tracking": "-0.035em",
+   "leading": "110%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "40px",
+    "medium": "34px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": 26,
+   "tracking": "-0.03em",
+   "leading": "120%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Display",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": 200,
+   "tracking": "-0.045em",
+   "leading": "110%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "200px",
+    "medium": "160px",
+    "small": "110px"
+   }
+  },
+  {
+   "name": "XL",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.015em",
+   "leading": "130%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "22px"
+   }
+  },
+  {
+   "name": "M",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.01em",
+   "leading": "150%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "M Medium",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.01em",
+   "leading": "150%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "S",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "157%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "S Medium",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "157%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Button",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "157%",
+   "transform": "none",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "130%",
+   "transform": "uppercase",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Tag",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0em",
+   "leading": "130%",
+   "transform": "uppercase",
+   "color": "token:Primary",
+   "responsive": {
+    "default": "12px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Tag",
+  "Icon Button",
+  "Question",
+  "Plan Card",
+  "Industry Card",
+  "Navbar",
+  "Footer",
+  "CTA",
+  "Book a Call Form",
+  "Form Button",
+  "Logo Ticker",
+  "Testimonial Card"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 200,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navbar",
+    "comp": "Navbar",
+    "position": "sticky"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Footer",
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Get Template",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Default"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 66,
+   "h": 743,
+   "w": 1440,
+   "fill": "token:Default",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Prism Background",
+    "Content"
+   ],
+   "text": 2,
+   "words": 28,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "PrismGlassFlow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H1": 1,
+    "M": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Logos",
+   "type": "FrameNode",
+   "y": 809,
+   "h": 90,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Logo Ticker": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/02-logos.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 899,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/03-divider.jpg"
+  },
+  {
+   "name": "Problem",
+   "type": "FrameNode",
+   "y": 1059,
+   "h": 812,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 12,
+   "words": 76,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "HairlineFigure": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 2,
+    "M": 2,
+    "M Medium": 8
+   },
+   "shot": "sections/04-problem.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 1871,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/05-divider.jpg"
+  },
+  {
+   "name": "Solution",
+   "type": "FrameNode",
+   "y": 2031,
+   "h": 911,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 10,
+   "words": 93,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "HairlineFigure": 4,
+    "Tag": 8
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "M": 5,
+    "M Medium": 4
+   },
+   "shot": "sections/06-solution.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 2942,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/07-divider.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 3102,
+   "h": 618,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 6,
+   "words": 40,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 3,
+    "M": 1,
+    "S": 2
+   },
+   "shot": "sections/08-about.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 3720,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/09-divider.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 3880,
+   "h": 512,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 10,
+   "words": 84,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Tag": 4
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1,
+    "H3": 4,
+    "S": 4
+   },
+   "shot": "sections/10-process.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 4392,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/11-divider.jpg"
+  },
+  {
+   "name": "Industries",
+   "type": "FrameNode",
+   "y": 4552,
+   "h": 714,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 1,
+   "words": 11,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Industry Card": 6
+   },
+   "effects": {
+    "appear": 7
+   },
+   "styles": {
+    "H2": 1
+   },
+   "shot": "sections/12-industries.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 5266,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/13-divider.jpg"
+  },
+  {
+   "name": "Case Study",
+   "type": "FrameNode",
+   "y": 5426,
+   "h": 800,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "SliderControls": 2,
+    "Testimonial Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1
+   },
+   "shot": "sections/14-case-study.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 6226,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/15-divider.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 6386,
+   "h": 956,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Plan Card": 2
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/16-pricing.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 7342,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/17-divider.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 7502,
+   "h": 636,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Content"
+   ],
+   "text": 2,
+   "words": 14,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Question": 6
+   },
+   "effects": {
+    "appear": 7
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/18-faq.jpg"
+  },
+  {
+   "name": "Divider",
+   "type": "FrameNode",
+   "y": 8138,
+   "h": 160,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 40px 0px 40px",
+   "gap": "0px",
+   "childNames": [
+    "Rails"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {},
+   "shot": "sections/19-divider.jpg"
+  },
+  {
+   "name": "CTA",
+   "type": "ComponentInstanceNode",
+   "comp": "CTA",
+   "y": 8298,
+   "h": 680,
+   "w": 1440,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "CTA": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/20-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 36
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.2,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.7s",
+     "bounce": 0,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 20,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "0.7s",
+     "bounce": 0,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "rgba(255, 255, 255, 0.2)",
+ "pageHeight": 9583,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/2d1d2f0c-ddb7-43cf-8cf9-1e02e05e0538.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/abadecc4-52d8-4466-b936-6bd242e8f380.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "software-ai/kairox",
+ "industry": "software-ai",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  9583
+ ]
+}

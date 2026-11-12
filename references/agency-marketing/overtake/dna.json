@@ -1,0 +1,888 @@
+{
+ "title": "Overtake (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/contact",
+  "/404",
+  "/legal-pages/:T8EA6MG8m",
+  "/blog",
+  "/blog/:SvykXNUeM",
+  "/case-study",
+  "/case-study/:inu791J09",
+  "/faqs"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Black",
+   "light": "rgb(11, 11, 12)"
+  },
+  {
+   "name": "Slate Gray",
+   "light": "rgb(106, 110, 110)"
+  },
+  {
+   "name": "Soft Gray",
+   "light": "rgb(240, 240, 240)"
+  },
+  {
+   "name": "Mist Gray",
+   "light": "rgb(183, 188, 188)"
+  },
+  {
+   "name": "Lime",
+   "light": "rgb(158, 252, 101)"
+  },
+  {
+   "name": "Deep Teal",
+   "light": "rgb(18, 32, 32)"
+  },
+  {
+   "name": "Pink",
+   "light": "rgb(255, 188, 252)"
+  },
+  {
+   "name": "Charcoal Black",
+   "light": "rgb(23, 23, 24)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Black 2%",
+   "light": "rgba(11, 11, 12, 0.02)"
+  },
+  {
+   "name": "Transparent",
+   "light": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "name": "Black 70%",
+   "light": "rgba(11, 11, 12, 0.7)"
+  },
+  {
+   "name": "White 5%",
+   "light": "rgba(255, 255, 255, 0.04)"
+  },
+  {
+   "name": "Black 90%",
+   "light": "rgba(11, 11, 12, 0.9)"
+  },
+  {
+   "name": "Dark Teal",
+   "light": "rgb(30, 43, 43)"
+  },
+  {
+   "name": "Lime 50%",
+   "light": "rgba(158, 252, 101, 0.5)"
+  },
+  {
+   "name": "Black 50%",
+   "light": "rgba(11, 11, 12, 0.5)"
+  },
+  {
+   "name": "White 10%",
+   "light": "rgba(255, 255, 255, 0.1)"
+  },
+  {
+   "name": "White 20%",
+   "light": "rgba(255, 255, 255, 0.2)"
+  },
+  {
+   "name": "White 40%",
+   "light": "rgba(255, 255, 255, 0.4)"
+  },
+  {
+   "name": "Yellow",
+   "light": "rgb(253, 229, 137)"
+  },
+  {
+   "name": "Black 10%",
+   "light": "rgba(11, 11, 12, 0.1)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "82px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "82px",
+    "medium": "70px",
+    "small": "52px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "52px",
+    "medium": "42px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "42px",
+    "medium": "32px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.03em",
+   "leading": "1.2em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "36px",
+    "medium": "26px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "28px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "28px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 6",
+   "tag": "h6",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Body",
+   "font": "Stack Sans Headline",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "color": "token:75c7b632-30cc-45f8-a82e-7ef5d732cf27, rgb(106, 110, 110) /* {\"name\":\"Body Color\"} */",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Text SM",
+   "font": "Stack Sans Headline",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "color": "token:75c7b632-30cc-45f8-a82e-7ef5d732cf27, rgb(106, 110, 110) /* {\"name\":\"Body Color\"} */",
+   "responsive": {
+    "default": "14px",
+    "medium": "14px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Text Lead",
+   "font": "Stack Sans Headline",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "1.1em",
+   "color": "token:75c7b632-30cc-45f8-a82e-7ef5d732cf27, rgb(106, 110, 110) /* {\"name\":\"Body Color\"} */",
+   "responsive": {
+    "default": "16px",
+    "medium": "14px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Heading 2  Error",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "200px",
+   "tracking": "-0.02em",
+   "leading": "0.9em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "200px",
+    "medium": "120px",
+    "small": "100px"
+   }
+  },
+  {
+   "name": "Heading 2 LG",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "80px",
+    "medium": "60px",
+    "small": "50px"
+   }
+  },
+  {
+   "name": "Heading 2 SM",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "38px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "38px",
+    "medium": "34px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Body CMS",
+   "font": "Stack Sans Headline",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "0em",
+   "color": "token:75c7b632-30cc-45f8-a82e-7ef5d732cf27, rgb(106, 110, 110) /* {\"name\":\"Body Color\"} */",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Heading 2 Extra LG",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "100px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "100px",
+    "medium": "74px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Heading 3 SM",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "34px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Heading 4 SM",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.03em",
+   "color": "token:408afcf4-16b3-40e8-b7f9-e0a961f38448, rgb(11, 11, 12) /* {\"name\":\"Dark Color\"} */",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "22px"
+   }
+  }
+ ],
+ "components": [
+  "Badge",
+  "Navigation",
+  "Dropdown Link",
+  "Nav Button",
+  "Brand Logo",
+  "Service Card",
+  "Client Card",
+  "BG Item",
+  "Team Card",
+  "Social Icon",
+  "Subscribe Button",
+  "Footer",
+  "Button",
+  "Icon List",
+  "Submit Button",
+  "Accordions",
+  "Accordion",
+  "Avatar",
+  "List Item",
+  "Service List Card",
+  "Case Study Info Card",
+  "Step Card",
+  "Progress Bar",
+  "Testimonail Card",
+  "Blog Card",
+  "Load More",
+  "Case Study Card",
+  "Feedback Card",
+  "Faqs",
+  "Dropdown Menu",
+  "Nav List",
+  "Testimonial Avatar",
+  "Footer Brand Logo"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Navigation",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Get It Button",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:White"
+ },
+ "sections": [
+  {
+   "name": "Home",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1657,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 30px 100px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 29,
+   "words": 50,
+   "images": 4,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Button": 2,
+    "BG Item": 1,
+    "Avatar": 3,
+    "Client Card": 13
+   },
+   "effects": {
+    "appear": 4,
+    "ticker": 1
+   },
+   "styles": {
+    "Heading 1": 10,
+    "Body": 16,
+    "Heading 5": 1,
+    "Heading 3": 1,
+    "Text Lead": 1
+   },
+   "shot": "sections/01-home.jpg"
+  },
+  {
+   "name": "About and Service",
+   "type": "FrameNode",
+   "y": 1657,
+   "h": 1730,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 30px 0px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 45,
+   "images": 6,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Avatar": 4,
+    "Service List Card": 1,
+    "BG Item": 1,
+    "Client Card": 6
+   },
+   "effects": {
+    "appear": 3,
+    "ticker": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/02-about-and-service.jpg"
+  },
+  {
+   "name": "Growth Counter",
+   "type": "FrameNode",
+   "y": 3387,
+   "h": 1199,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "200px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 9,
+   "words": 47,
+   "images": 3,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Badge": 2,
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading 2": 4,
+    "Body": 5
+   },
+   "shot": "sections/03-growth-counter.jpg"
+  },
+  {
+   "name": "Project",
+   "type": "FrameNode",
+   "y": 4586,
+   "h": 2724,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 2,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Case Study Info Card": 3
+   },
+   "effects": {
+    "appear": 1,
+    "sticky": 4,
+    "styleTransform": 3
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/04-project.jpg"
+  },
+  {
+   "name": "Counter",
+   "type": "FrameNode",
+   "y": 7310,
+   "h": 385,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 13,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Badge": 1
+   },
+   "effects": {
+    "appear": 4
+   },
+   "styles": {
+    "Heading 2 LG": 3,
+    "Body": 3
+   },
+   "shot": "sections/05-counter.jpg"
+  },
+  {
+   "name": "How It Work",
+   "type": "FrameNode",
+   "y": 7695,
+   "h": 809,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 5,
+   "words": 26,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Step Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 3": 1,
+    "Body": 2,
+    "Heading 2 Extra LG": 1,
+    "Text SM": 1
+   },
+   "shot": "sections/06-how-it-work.jpg"
+  },
+  {
+   "name": "Compare",
+   "type": "FrameNode",
+   "y": 8504,
+   "h": 1263,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 30px 0px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 6,
+   "words": 31,
+   "images": 2,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Icon List": 8,
+    "BG Item": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 2 LG": 1,
+    "Body": 2,
+    "Heading 6": 2,
+    "Text SM": 1
+   },
+   "shot": "sections/07-compare.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 9767,
+   "h": 866,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "200px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Testimonail Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/08-testimonials.jpg"
+  },
+  {
+   "name": "Blog",
+   "type": "FrameNode",
+   "y": 10633,
+   "h": 796,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 0px 200px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 3,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Badge": 1,
+    "Button": 1,
+    "Blog Card": 2
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "Heading 2": 1
+   },
+   "shot": "sections/09-blog.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 25,
+  "ticker": 2,
+  "sticky": 4,
+  "styleTransform": 3
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.44,
+      0,
+      0.56,
+      1
+     ],
+     "duration": "0.45s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.44,
+      0,
+      0.56,
+      1
+     ],
+     "duration": "0.45s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 15,
+   "hoverModifier": "100%",
+   "directionModifier": "default",
+   "draggable": false
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "middle",
+   "transition": {
+    "type": "spring",
+    "stiffness": 500,
+    "damping": 60,
+    "mass": 1,
+    "delay": "0s"
+   },
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "rQHI78ATo",
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 0.7,
+     "rotate": "-6deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "30px",
+   13
+  ],
+  [
+   "0px",
+   6
+  ],
+  [
+   "10px",
+   5
+  ],
+  [
+   "30px 30px 0px 0px",
+   2
+  ],
+  [
+   "300px",
+   2
+  ],
+  [
+   "26px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 3,
+  "blur": 0
+ },
+ "desktopFill": "token:White",
+ "pageHeight": 13199,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/e0447a44-c80b-4f57-a86a-377f6266c81d.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/28e9b34c-d0ea-4d4f-9771-8a7271e7ffbf.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-marketing/overtake",
+ "industry": "agency-marketing",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  13209
+ ]
+}
