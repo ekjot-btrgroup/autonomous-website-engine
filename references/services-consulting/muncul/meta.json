@@ -1,0 +1,19 @@
+{
+  "name": "Muncul",
+  "industry": "services-consulting",
+  "also": ["software-fintech", "services-legal", "agency-marketing"],
+  "summary": "Financial consulting site on warm off-white with black panels and a chartreuse accent, a dark full-bleed city hero, rounded inset card grids and a black pricing slab with tabbed plans.",
+  "style": ["corporate-clean", "minimal", "bold-graphic"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 3, "warmth": 2, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "green",
+  "palette": { "bg": "#fafaf7", "surface": "#ffffff", "ink": "#242424", "muted": "#616161", "accent": "#b4e717", "line": "rgba(227,227,227,0.45)" },
+  "fonts": { "display": "Inter Display", "body": "Inter", "class": "sans", "pairing": "Inter Display 500 headlines with -0.02em tracking over Inter body; small uppercase labels above every heading" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "logos", "services", "about", "stats", "process", "case-studies", "testimonials", "pricing", "faq", "blog", "contact"],
+  "motion": 3,
+  "signature": ["dark-tinted full-bleed skyline hero with a white pill nav centred and vertical slide dots on the right", "chartreuse pill buttons with a dark green circular arrow cap", "process steps as four tall cream cards inside a pale inset tray, followed by a wide photo tile and a black CTA tile", "black rounded pricing slab with a segmented plan toggle, a plan card and a wide inclusions card", "headings rise word by word on scroll"],
+  "imagery": "muted city and office photography, people at desks and in meetings, video stills; darkened for hero contrast",
+  "layout_grid": "1140px content inside 30px side padding, 100px section padding, 3-column service grid, 4-column step and stat rows, 20px card radius, 100px pill radius",
+  "quality": 4
+}

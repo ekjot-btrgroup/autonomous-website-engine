@@ -1,0 +1,845 @@
+{
+ "title": "Muncul (copy)",
+ "pages": [
+  "/",
+  "/service/:rLo0JNMgR",
+  "/case-study/:ex3wbidyo",
+  "/blog/:tO7dKLMgh",
+  "/legal/:JeUcqub7j",
+  "/about",
+  "/service",
+  "/case-study",
+  "/blog",
+  "/contact",
+  "/404",
+  "/design-system",
+  "/industries"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Color/White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Color/Background",
+   "light": "rgb(250, 250, 247)"
+  },
+  {
+   "name": "Color/Black",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "Color/Green",
+   "light": "rgb(180, 231, 23)"
+  },
+  {
+   "name": "Color/Dark Green",
+   "light": "rgb(28, 75, 66)"
+  },
+  {
+   "name": "Color/Transparent",
+   "light": "rgba(255, 255, 255, 0)"
+  },
+  {
+   "name": "Color/White 20",
+   "light": "rgba(255, 255, 255, 0.2)"
+  },
+  {
+   "name": "Color/Black 20",
+   "light": "rgba(0, 0, 0, 0.2)"
+  },
+  {
+   "name": "Color/Black 40",
+   "light": "rgba(0, 0, 0, 0.4)"
+  },
+  {
+   "name": "Color/Heading",
+   "light": "rgb(36, 36, 36)"
+  },
+  {
+   "name": "Color/Paragraph",
+   "light": "rgb(97, 97, 97)"
+  },
+  {
+   "name": "Color/Soft Background",
+   "light": "rgb(245, 245, 233)"
+  },
+  {
+   "name": "Color/Border",
+   "light": "rgba(227, 227, 227, 0.45)"
+  },
+  {
+   "name": "Color/White 35",
+   "light": "rgba(255, 255, 255, 0.35)"
+  },
+  {
+   "name": "Color/White 60",
+   "light": "rgba(255, 255, 255, 0.6)"
+  },
+  {
+   "name": "Color/Black 05",
+   "light": "rgba(0, 0, 0, 0.05)"
+  },
+  {
+   "name": "Color/Black 60",
+   "light": "rgba(0, 0, 0, 0.6)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Text/Display 01",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "80px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0) /* {\"name\":\"Black\"} */",
+   "responsive": {
+    "default": "80px",
+    "medium": "64px",
+    "small": "48px"
+   }
+  },
+  {
+   "name": "Text/Heading 1",
+   "tag": "h1",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "60px",
+    "medium": "52px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "Text/Heading 2",
+   "tag": "h2",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "52px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "52px",
+    "medium": "46px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Text/Heading 3",
+   "tag": "h3",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "36px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "36px",
+    "medium": "32px",
+    "small": "28px"
+   }
+  },
+  {
+   "name": "Text/Heading 4",
+   "tag": "h4",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "32px",
+    "medium": "28px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Text/Heading 5",
+   "tag": "h5",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "24px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "Text/Heading 6",
+   "tag": "h6",
+   "font": "Inter Display",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "20px",
+    "medium": "19px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Text/Big Paragraph",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "Text/Label",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "transform": "uppercase",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Text/Small Paragraph",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Text/Tiny Paragraph",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Text/Medium Paragraph",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {}
+  },
+  {
+   "name": "Text/Menu",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "color": "token:c162f039-918a-4590-bf86-16588c39cc17, rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  }
+ ],
+ "components": [
+  "Misc/Logo",
+  "Button/Menu",
+  "Button/Primary",
+  "Section/Header",
+  "Button/Hamburger",
+  "Misc/Dot",
+  "Button/Tab Slide",
+  "Section/Hero",
+  "Card/Client",
+  "Card/Service",
+  "Card/Case/Primary",
+  "Button/Plus Min",
+  "Card/Case/Secondary",
+  "Misc/Rating",
+  "Card/Testimonial",
+  "Card/Post",
+  "Button/Option",
+  "Misc/Icon Text",
+  "Card/Pricing",
+  "Card/Pricing Tab",
+  "Card/FAQ",
+  "Card/Question List",
+  "Misc/FAQ",
+  "Button/Small",
+  "Misc/Question List",
+  "Button/Submit",
+  "Section/Contact",
+  "Section/Footer",
+  "Card/Step",
+  "Card/Fact Number",
+  "Card/Who",
+  "Card/Timeline",
+  "Misc/Timeline List",
+  "Card/Award",
+  "Card/Team",
+  "Card/Case/Simple"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 104,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Header",
+    "position": "absolute"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Spacer",
+    "position": "relative"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Contact",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Section/Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Use Template (Delete This)",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Color/Background"
+ },
+ "sections": [
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Section/Hero",
+   "y": 0,
+   "h": 800,
+   "w": 1200,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section/Hero": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/01-section-hero.jpg"
+  },
+  {
+   "name": "Client",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 354,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "50px 30px 50px 30px",
+   "gap": "10px",
+   "maxWidth": "1440px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Client": 6
+   },
+   "effects": {
+    "appear": 3,
+    "ticker": 1
+   },
+   "styles": {
+    "Text/Heading 6": 1,
+    "Text/Small Paragraph": 1
+   },
+   "shot": "sections/02-client.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 1154,
+   "h": 1521,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 0%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 89.50601238966352%, token:b5c3977e-25ad-4a42-ab0d-ac94cc78b0f8, rgb(255, 255, 255) /* {\"name\":\"White\"} */ 100%)",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 3,
+   "words": 24,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Card/Service": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1
+   },
+   "shot": "sections/03-services.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 2675,
+   "h": 1276,
+   "w": 1200,
+   "fill": "token:Color/White",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 4,
+   "words": 40,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4
+   ],
+   "components": {
+    "Button/Primary": 1,
+    "Video": 1,
+    "Card/Fact Number": 4
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 2
+   },
+   "shot": "sections/04-about.jpg"
+  },
+  {
+   "name": "Process",
+   "type": "FrameNode",
+   "y": 3951,
+   "h": 1262,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, token:b5c3977e-25ad-4a42-ab0d-ac94cc78b0f8, rgb(255, 255, 255) /* {\"name\":\"White\"} */ 0%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 4.840662220349608%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 100%)",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 5,
+   "words": 33,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    4,
+    4
+   ],
+   "components": {
+    "Card/Step": 4,
+    "Misc/Logo": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1,
+    "Text/Heading 5": 1,
+    "Text/Small Paragraph": 1
+   },
+   "shot": "sections/05-process.jpg"
+  },
+  {
+   "name": "Case Study",
+   "type": "FrameNode",
+   "y": 5213,
+   "h": 2248,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 4,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Card/Case/Primary": 1,
+    "Card/Case/Secondary": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1,
+    "Text/Heading 5": 1
+   },
+   "shot": "sections/06-case-study.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 7461,
+   "h": 1261,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 5,
+   "words": 29,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Card/Testimonial": 3,
+    "Video": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1,
+    "Text/Heading 6": 1,
+    "Text/Tiny Paragraph": 1
+   },
+   "shot": "sections/07-testimonials.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 8722,
+   "h": 1373,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 0%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 92.96590773789836%, token:b5c3977e-25ad-4a42-ab0d-ac94cc78b0f8, rgb(255, 255, 255) /* {\"name\":\"White\"} */ 100%)",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Background"
+   ],
+   "text": 9,
+   "words": 44,
+   "images": 5,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Misc/Rating": 1,
+    "Card/Pricing Tab": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 4,
+    "Text/Tiny Paragraph": 2,
+    "Text/Heading 4": 1
+   },
+   "shot": "sections/08-pricing.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 10095,
+   "h": 1223,
+   "w": 1200,
+   "fill": "token:Color/White",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 5,
+   "words": 24,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Misc/Question List": 1,
+    "Button/Primary": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1,
+    "Text/Heading 6": 1,
+    "Text/Tiny Paragraph": 1
+   },
+   "shot": "sections/09-faq.jpg"
+  },
+  {
+   "name": "Blog",
+   "type": "FrameNode",
+   "y": 11318,
+   "h": 1039,
+   "w": 1200,
+   "fill": "linear-gradient(180deg, token:b5c3977e-25ad-4a42-ab0d-ac94cc78b0f8, rgb(255, 255, 255) /* {\"name\":\"White\"} */ 0%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 4.748049659777203%, token:bf30ea50-cab1-4b63-88fb-5d72133b014d, rgb(250, 250, 247) /* {\"name\":\"Background\"} */ 100%)",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 30px 100px 30px",
+   "gap": "10px",
+   "childNames": [
+    "Inner"
+   ],
+   "text": 3,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3,
+    2
+   ],
+   "components": {
+    "Button/Primary": 1,
+    "Card/Post": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Text/Label": 1,
+    "Text/Heading 2": 1,
+    "Text/Medium Paragraph": 1
+   },
+   "shot": "sections/10-blog.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 21,
+  "ticker": 1,
+  "text": 8
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.1,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 200,
+     "damping": 30,
+     "mass": 1,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 200,
+     "damping": 30,
+     "mass": 1,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 20,
+   "hoverModifier": "0%",
+   "directionModifier": "reverse",
+   "draggable": false
+  },
+  "text": {
+   "threshold": 0.5,
+   "trigger": "onInView",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "40px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "0px",
+    "transition": {
+     "type": "spring",
+     "stiffness": 200,
+     "damping": 40,
+     "mass": 1,
+     "delay": "0.05s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "20px",
+   11
+  ],
+  [
+   "100px",
+   6
+  ],
+  [
+   "3px",
+   1
+  ],
+  [
+   "25px",
+   1
+  ],
+  [
+   "30px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Color/Background",
+ "pageHeight": 14176,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/62dc6850-9121-44a6-a24e-f546ed7608ac.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/e9536e41-ed13-407f-8cec-3a183c93cb42.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-consulting/muncul",
+ "industry": "services-consulting",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "crop_offset": 0,
+ "crop_stretch": 1.0,
+ "screenshot_size": [
+  1200,
+  14226
+ ]
+}
