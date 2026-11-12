@@ -1,0 +1,19 @@
+{
+  "name": "Beanro",
+  "industry": "hospitality-restaurants",
+  "also": ["hospitality-food"],
+  "summary": "Loud, playful coffee shop site in cream, roast brown and orange with an ultra-wide all-caps display face, a cut-out liquid splash hero over thin vertical grid lines, product-shot drink cards and a brown slab with tilted sticker tags.",
+  "style": ["playful", "bold-graphic", "warm-organic"],
+  "feel": { "tone": 2, "energy": 4, "luxury": 2, "density": 3, "warmth": 5, "modernity": 4 },
+  "scheme": "light",
+  "hue": "orange",
+  "palette": { "bg": "#f9eedc", "surface": "#fcf7ee", "ink": "#7d2c0f", "muted": "#664237", "accent": "#ff8342", "line": "rgba(125,44,15,0.12)" },
+  "fonts": { "display": "Boldonse", "body": "Manrope", "class": "display-sans", "pairing": "Boldonse ultra-wide caps for the loudest lines, Bayon condensed caps for card titles and secondary heads, Manrope for body and uppercase labels" },
+  "hero": "product-shot",
+  "sections": ["hero", "about", "menu", "features", "cta", "features", "testimonials", "about", "faq", "cta"],
+  "motion": 3,
+  "signature": ["cut-out liquid splash floating under a two-line ultra-wide caps headline, with faint vertical column rules running behind", "rounded roast-brown slab where one phrase sits in a tilted orange box and small pill stickers in mustard, sage and orange hang off the headline at angles", "drink cards on a slightly darker cream with isolated product shots, condensed caps name, price left and orange text link right", "giant brand wordmark at the foot of the page"],
+  "imagery": "isolated drink cut-outs on transparent backgrounds (iced lattes, cold brew, whipped drinks), liquid splashes, warm café interiors",
+  "layout_grid": "1440px canvas, 60px side padding, 160px gaps between sections, large 32 to 60px rounded panels, 3-column product grid, pill tabs and pill buttons",
+  "quality": 4
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Verity",
+  "industry": "software-ai",
+  "also": ["software-saas", "software-apps"],
+  "summary": "Near-black AI agent platform site in one soft grotesk, with a centred headline over a cyan light-band shader, two-tone headings, tabbed use cases beside a live dashboard mock and quiet 16px bordered cards.",
+  "style": ["futuristic-dark", "minimal", "technical"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 3, "density": 3, "warmth": 1, "modernity": 5 },
+  "scheme": "dark",
+  "hue": "cyan",
+  "palette": { "bg": "#0D0D0F", "surface": "#111113", "ink": "#FFFFFF", "muted": "#B0B0B0", "accent": "#21D2ED", "line": "rgba(255,255,255,0.06)" },
+  "fonts": { "display": "Onest", "body": "Onest", "class": "grotesk", "pairing": "single family: Onest 400 with -0.04em tracking and 1.05 leading for headlines, second line of each heading in grey; Onest 400 to 500 for body and buttons; 12px uppercase 0.06em tag for eyebrows" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "features", "tabs", "process", "features", "comparison", "testimonials", "stats", "integrations", "pricing", "faq", "cta", "footer"],
+  "motion": 3,
+  "signature": ["vertical cyan light-band shader rising from the bottom right of the hero, fading into black", "two-tone headings: first line white, second line grey, every section", "tabbed use-case list on the left with a full product table mock on the right inside one bordered panel", "bento of six benefit cards plus one tall shader card carrying the section CTA", "side-by-side comparison with dim cross list versus bright check list"],
+  "imagery": "no photography: crisp dark product UI mocks (task tables, status pills, builders) and a WebGL light-band shader; small line icons in 40px rounded tiles",
+  "layout_grid": "1200 frame, 40px sides, 96px section padding, 64px header-to-content gap, left-aligned section headers, 16px card radius with 1px white-6% borders, no shadows, subtle noise overlay on the whole page",
+  "quality": 4
+}

@@ -1,0 +1,19 @@
+{
+  "name": "LEXVARON",
+  "industry": "services-legal",
+  "also": ["services-consulting", "software-fintech"],
+  "summary": "Confident modern law-firm site: tight General Sans on warm off-white, white rounded cards, near-black and safety-orange accent tiles, photo hero card with a floating team chip.",
+  "style": ["corporate-clean", "bold-graphic", "minimal"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 3, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "orange",
+  "palette": { "bg": "#f1f0ec", "surface": "#ffffff", "ink": "#141414", "muted": "#6b6a66", "accent": "#ff5a1f", "line": "rgba(20,20,20,0.09)" },
+  "fonts": { "display": "General Sans", "body": "General Sans", "class": "sans", "pairing": "single family: General Sans 500 with -0.035 to -0.045em tracking for headings and stats, 400 for body, 12px wide-tracked caps eyebrows in pills" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "stats", "services", "process", "team", "cta", "testimonials", "blog"],
+  "motion": 2,
+  "signature": ["card rows that cycle white, white, black, orange to create rhythm", "orange dot inside every pill eyebrow and button", "stat row ending in a solid orange tile", "floating white card with overlapping avatar circles on the hero photo"],
+  "imagery": "dark, warm documentary photos of documents and handshakes, classical columns, corporate headshots on neutral backgrounds",
+  "layout_grid": "1176px content, 32px side padding, 110px section padding, 56px header-to-content gap, 3 and 4 column card grids",
+  "quality": 4
+}

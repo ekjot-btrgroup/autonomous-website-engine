@@ -1,0 +1,19 @@
+{
+  "name": "Latos",
+  "industry": "health-therapy",
+  "also": ["health-wellness", "services-consulting", "publishing-blogs"],
+  "summary": "Counselling practice site on warm cream with a full-bleed sunlit face video hero, a 3500px pinned scroll statement with drifting photos, tight Manrope headlines that switch one word to brown Playfair italic, and soft tonal cards with no borders or shadows.",
+  "style": ["warm-organic", "minimal", "editorial"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 3, "density": 2, "warmth": 5, "modernity": 4 },
+  "scheme": "light",
+  "hue": "brown",
+  "palette": { "bg": "#fdf6ee", "surface": "#f5ede4", "ink": "#383230", "muted": "#695f5a", "accent": "#925737", "line": "#e6dbce" },
+  "fonts": { "display": "Playfair Display", "body": "Manrope", "class": "mixed", "pairing": "Playfair Display 400 at 90px and -0.04em for the hero only; section headings in Manrope 400 at 60px and -0.05em with one Playfair italic word in brand brown; Manrope 400 to 700 for all body and UI" },
+  "hero": "full-bleed-video",
+  "sections": ["hero", "about", "about", "services", "process", "testimonials", "pricing", "faq", "blog", "newsletter", "footer"],
+  "motion": 4,
+  "signature": ["pinned scroll statement: one big sentence reveals word by word while three small photos drift past at different heights", "Manrope heading with exactly one Playfair italic word in brand brown", "services list on the left whose Playfair labels fade from ink to beige, paired with a large photo that swaps per item", "tonal cream cards with 16 to 28px radii and no borders or shadows anywhere"],
+  "imagery": "golden-hour close-ups of faces, hands and window light with heavy warm grading and shallow depth of field",
+  "layout_grid": "1200px canvas, 24px side gutter, content full width inside 24px, 3-column card rows with 12px gaps, 16-28px radii, generous 120px+ vertical rhythm",
+  "quality": 4
+}

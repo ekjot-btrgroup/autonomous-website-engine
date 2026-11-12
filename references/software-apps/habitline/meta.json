@@ -1,0 +1,19 @@
+{
+  "name": "Habitline",
+  "industry": "software-apps",
+  "also": ["health-wellness", "software-ai", "software-saas"],
+  "summary": "Consumer habit-tracker app launch page: a burnt-orange motion-blur portrait hero with a dark phone UI and floating glass widgets, then a pale grey page with soft cloud imagery, phone mockups, marquee tiles and huge orange stat numerals.",
+  "style": ["playful", "corporate-clean", "cinematic"],
+  "feel": { "tone": 3, "energy": 4, "luxury": 4, "density": 3, "warmth": 4, "modernity": 5 },
+  "scheme": "mixed",
+  "hue": "orange",
+  "palette": { "bg": "#f7f7f7", "surface": "#ffffff", "ink": "#131515", "muted": "#494d4d", "accent": "#ff4c00", "line": "#e8e8e8" },
+  "fonts": { "display": "Stack Sans Headline", "body": "Google Sans Flex", "class": "sans", "pairing": "Stack Sans Headline 500 at 1.0 leading for every heading (68 H1, 48 H2, 90 display, 120 and 220 numerals); Google Sans Flex 500 for body, lead and nav" },
+  "hero": "product-shot",
+  "sections": ["hero", "about", "features", "features", "portfolio", "testimonials", "stats", "features", "testimonials", "faq", "cta"],
+  "motion": 4,
+  "signature": ["hero photo of a person in heavy orange motion blur, with a dark phone UI rising out of a white cloud fade at the bottom", "inline emoji-style image pills set inside the line of a large statement headline", "phone mockup centred over two marquee rows of habit tiles and lifestyle photos that run behind it", "giant orange stat numeral with a soft orange glow and a tilted white sticker label slapped across it", "soft photographic clouds used as section transitions and to swallow the bottom of phones"],
+  "imagery": "warm cinematic lifestyle photography with motion blur, polished dark and light app screens in phone frames, small habit icons in coloured circles, photographic clouds, a hand holding a phone in the CTA",
+  "layout_grid": "1200 canvas, about 25-30px outer gutter, 200px section top padding, 2-column feature cards with 20px radii, 3-up stats, centered statement blocks",
+  "quality": 5
+}

@@ -1,0 +1,602 @@
+{
+ "title": "Ekon - Template (copy)",
+ "pages": [
+  "/",
+  "/404",
+  "/about",
+  "/contact",
+  "/our-works",
+  "/our-works/:LCyABGQHF"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 680px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 679.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "White - 100%",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "White - 80%",
+   "light": "rgba(255, 255, 255, 0.8)"
+  },
+  {
+   "name": "White - 70%",
+   "light": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "name": "White - 50%",
+   "light": "rgba(255, 255, 255, 0.5)"
+  },
+  {
+   "name": "White - 40%",
+   "light": "rgba(255, 255, 255, 0.4)"
+  },
+  {
+   "name": "White - 30%",
+   "light": "rgba(255, 255, 255, 0.3)"
+  },
+  {
+   "name": "White - 10%",
+   "light": "rgba(255, 255, 255, 0.1)"
+  },
+  {
+   "name": "Black - 100%",
+   "light": "rgb(0, 0, 0)"
+  },
+  {
+   "name": "White - 5%",
+   "light": "rgba(255, 255, 255, 0.05)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Switzer",
+   "weight": 700,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-0.04em",
+   "leading": "1.2em",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255) /* {\"name\":\"White - 100%\"} */",
+   "responsive": {
+    "default": "60px",
+    "medium": "48px",
+    "small": "35px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "45px",
+   "tracking": "-0.02em",
+   "transform": "uppercase",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "45px",
+    "medium": "40px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.02em",
+   "transform": "uppercase",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "30px",
+    "medium": "25px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "H4",
+   "tag": "h4",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "22px",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "H5",
+   "tag": "h5",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "16px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "P4",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255) /* {\"name\":\"White - 100%\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "P3",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.5em",
+   "transform": "inherit",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255) /* {\"name\":\"White - 100%\"} */",
+   "responsive": {
+    "default": "14px",
+    "medium": "14px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "P2 (SB)",
+   "font": "Switzer",
+   "weight": 600,
+   "style": "normal",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {}
+  },
+  {
+   "name": "P2",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.01em",
+   "leading": "1.4em",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "P1",
+   "font": "Switzer",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.01em",
+   "leading": "1.4em",
+   "color": "token:2721c89b-11ab-4e8c-96b3-613e9caa56c6, rgb(255, 255, 255)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  }
+ ],
+ "components": [
+  "Main Button",
+  "Form Button",
+  "Works - Component",
+  "Load Button",
+  "Hero - Section",
+  "Pre Loader - Section",
+  "Team - Component",
+  "FAQ - Component",
+  "Review - Component",
+  "Link Button"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Template",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Navigation Bar",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Blur Gradient",
+    "position": "fixed"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer - Section",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Black - 100%"
+ },
+ "sections": [
+  {
+   "name": "Hero - Section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 870,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "370px 30px 30px 30px",
+   "gap": "50px",
+   "childNames": [
+    "Image (Change)",
+    "Loader (Hide to see Hero)",
+    "Heading Fonts",
+    "Bottom Text"
+   ],
+   "text": 5,
+   "words": 28,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Pre Loader - Section": 1,
+    "Timer": 1
+   },
+   "effects": {
+    "appear": 5,
+    "parallax": 1,
+    "text": 2
+   },
+   "styles": {
+    "H1": 1,
+    "P1": 1,
+    "P4": 3
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "Vision - Section",
+   "type": "FrameNode",
+   "y": 870,
+   "h": 520,
+   "w": 1200,
+   "fill": "token:Black - 100%",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 30px 80px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 8,
+   "words": 13,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "ScrollHighlightText": 1
+   },
+   "effects": {
+    "appear": 5
+   },
+   "styles": {
+    "H3": 4,
+    "P2": 4
+   },
+   "shot": "sections/02-vision-section.jpg"
+  },
+  {
+   "name": "Our Works - Section",
+   "type": "FrameNode",
+   "y": 1390,
+   "h": 571,
+   "w": 1200,
+   "fill": "token:Black - 100%",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 30px 80px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 4,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Main Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "ticker": 1,
+    "hover": 1
+   },
+   "styles": {
+    "H2": 1,
+    "P1": 1,
+    "P4": 1,
+    "H3": 1
+   },
+   "shot": "sections/03-our-works-section.jpg"
+  },
+  {
+   "name": "Services - Section",
+   "type": "FrameNode",
+   "y": 1961,
+   "h": 999,
+   "w": 1200,
+   "fill": "token:Black - 100%",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 30px 80px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 24,
+   "words": 175,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "components": {
+    "Main Button": 1,
+    "CursorImageTrail": 4
+   },
+   "effects": {
+    "appear": 11,
+    "text": 4,
+    "hover": 1
+   },
+   "styles": {
+    "H2": 1,
+    "P1": 1,
+    "H4": 4,
+    "H5": 14,
+    "P2": 4
+   },
+   "shot": "sections/04-services-section.jpg"
+  },
+  {
+   "name": "Testimonials - Section",
+   "type": "FrameNode",
+   "y": 2960,
+   "h": 588,
+   "w": 1200,
+   "fill": "token:Black - 100%",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 30px 80px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 15,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Review - Component": 1
+   },
+   "effects": {
+    "appear": 3
+   },
+   "styles": {
+    "H2": 1,
+    "P1": 1
+   },
+   "shot": "sections/05-testimonials-section.jpg"
+  },
+  {
+   "name": "FAQ - Section",
+   "type": "FrameNode",
+   "y": 3548,
+   "h": 481,
+   "w": 1200,
+   "fill": "token:Black - 100%",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 30px 80px 30px",
+   "gap": "0px",
+   "childNames": [
+    "Content Stack"
+   ],
+   "text": 2,
+   "words": 14,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "FAQ - Component": 6
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "H2": 1,
+    "P1": 1
+   },
+   "shot": "sections/06-faq-section.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 36,
+  "parallax": 1,
+  "text": 6,
+  "ticker": 1,
+  "hover": 2
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.2,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "3s",
+     "bounce": 0,
+     "delay": "1.55s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 0,
+    "scale": 1.2,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "3s",
+     "bounce": 0,
+     "delay": "1.55s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "parallax": {
+   "speed": 120
+  },
+  "text": {
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "1.5s",
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "duration": "1.5s",
+     "bounce": 0,
+     "delay": "0.1s"
+    }
+   }
+  },
+  "ticker": {
+   "velocity": 40,
+   "hoverModifier": "50%",
+   "directionModifier": "default",
+   "draggable": true
+  },
+  "hover": {
+   "opacity": 0.85,
+   "x": "0px",
+   "y": "-8px",
+   "scale": 1,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "spring",
+    "duration": "0.5s",
+    "bounce": 0.2,
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "5px",
+   3
+  ],
+  [
+   "0px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 0,
+  "blur": 0
+ },
+ "desktopFill": "token:Black - 100%",
+ "pageHeight": 4612,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/f6e8d9ce-e39a-466a-af41-78d9084e54cf.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/037a1117-fe3d-47d3-a2c4-5ead4e31e4cb.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "agency-design/ekon",
+ "industry": "agency-design",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  4592
+ ]
+}

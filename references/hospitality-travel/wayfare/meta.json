@@ -1,0 +1,19 @@
+{
+  "name": "Wayfare",
+  "industry": "hospitality-travel",
+  "also": ["hospitality-hotels"],
+  "summary": "Warm, filmic small-group tour operator site in sand, near-black and sun yellow, with a wide grotesk, inset rounded photo windows framed by a 12px margin, full-image trip cards and a dark hover list of travel styles.",
+  "style": ["editorial", "warm-organic", "cinematic"],
+  "feel": { "tone": 3, "energy": 3, "luxury": 3, "density": 3, "warmth": 5, "modernity": 4 },
+  "scheme": "mixed",
+  "hue": "yellow",
+  "palette": { "bg": "#f5efe4", "surface": "#fcf9f3", "ink": "#211d16", "muted": "#857e70", "accent": "#ffc94a", "line": "#e0d6c4" },
+  "fonts": { "display": "Clash Grotesk", "body": "General Sans", "class": "sans", "pairing": "Clash Grotesk 500 with tight negative tracking for display and headings, General Sans for body, labels and tracked uppercase eyebrows" },
+  "hero": "full-bleed-image",
+  "sections": ["hero", "about", "about", "gallery", "listings", "services", "process", "testimonials", "testimonials", "pricing", "blog", "faq", "cta"],
+  "motion": 4,
+  "signature": ["photo windows: full-width rounded panels inset 12px from the viewport edge, used for hero, travel styles, quote and closing CTA", "floating pill nav bar centred over the hero photo with a sun-yellow button that carries a round arrow chip", "trip cards that are all photo, with duration and difficulty chips top left, title and price low over a dark gradient, yellow pill button bottom right", "dark panel list of travel styles: big numbered rows where hovering one lights it up and swaps the photo beside it"],
+  "imagery": "warm film-grain landscape photography with lifted blacks: coastal cliffs, mountain valleys, pagodas, vineyards, deserts, sails at golden hour",
+  "layout_grid": "1440px canvas, 70px side padding, 112px section padding, 12px window inset, 3-column trip grid, 24px card radius, full pills for buttons and chips",
+  "quality": 5
+}

@@ -1,0 +1,1108 @@
+{
+ "title": "Wayfare - Travel Agency Template (copy)",
+ "pages": [
+  "/",
+  "/trips",
+  "/trips/:F7BTwDYzI",
+  "/destinations",
+  "/destinations/:hJxcFKCHH",
+  "/about",
+  "/journal",
+  "/journal/:YDIMAgLte",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/404",
+  "/style-guide"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  },
+  {
+   "name": "Laptop",
+   "range": "(min-width: 1200px) and (max-width: 1439.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Sand",
+   "light": "rgb(245, 239, 228)",
+   "dark": "rgb(20, 18, 14)"
+  },
+  {
+   "name": "Surface",
+   "light": "rgb(252, 249, 243)",
+   "dark": "rgb(28, 25, 19)"
+  },
+  {
+   "name": "Shell",
+   "light": "rgb(236, 227, 211)",
+   "dark": "rgb(39, 35, 26)"
+  },
+  {
+   "name": "Ink",
+   "light": "rgb(33, 29, 22)",
+   "dark": "rgb(243, 236, 223)"
+  },
+  {
+   "name": "Night",
+   "light": "rgb(37, 33, 26)",
+   "dark": "rgb(22, 19, 15)"
+  },
+  {
+   "name": "Night Deep",
+   "light": "rgb(26, 23, 18)",
+   "dark": "rgb(14, 12, 9)"
+  },
+  {
+   "name": "Night Line",
+   "light": "rgb(63, 56, 44)",
+   "dark": "rgb(46, 42, 32)"
+  },
+  {
+   "name": "Foam",
+   "light": "rgb(245, 239, 228)",
+   "dark": "rgb(243, 236, 223)"
+  },
+  {
+   "name": "Foam Muted",
+   "light": "rgb(188, 180, 163)",
+   "dark": "rgb(169, 161, 144)"
+  },
+  {
+   "name": "Body",
+   "light": "rgb(78, 73, 63)",
+   "dark": "rgb(196, 189, 175)"
+  },
+  {
+   "name": "Muted",
+   "light": "rgb(133, 126, 112)",
+   "dark": "rgb(143, 136, 122)"
+  },
+  {
+   "name": "Line",
+   "light": "rgb(224, 214, 196)",
+   "dark": "rgb(47, 42, 32)"
+  },
+  {
+   "name": "Sun",
+   "light": "rgb(255, 201, 74)",
+   "dark": "rgb(255, 201, 74)"
+  },
+  {
+   "name": "Sun Light",
+   "light": "rgb(255, 217, 120)",
+   "dark": "rgb(255, 217, 120)"
+  },
+  {
+   "name": "Sun Ink",
+   "light": "rgb(35, 28, 10)",
+   "dark": "rgb(35, 28, 10)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Glass",
+   "light": "rgba(252, 249, 243, 0.86)",
+   "dark": "rgba(20, 18, 14, 0.82)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "88px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "88px",
+    "medium": "66px",
+    "small": "44px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.03em",
+   "leading": "1.05em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "52px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "44px",
+   "tracking": "-0.025em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "44px",
+    "medium": "38px",
+    "small": "30px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.015em",
+   "leading": "1.2em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "Heading 4",
+   "tag": "h4",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "21px",
+   "tracking": "-0.01em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "21px",
+    "medium": "20px",
+    "small": "19px"
+   }
+  },
+  {
+   "name": "Stat",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "48px",
+   "tracking": "-0.03em",
+   "leading": "1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "48px",
+    "medium": "42px",
+    "small": "36px"
+   }
+  },
+  {
+   "name": "Price",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.02em",
+   "leading": "1.1em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "24px"
+   }
+  },
+  {
+   "name": "Quote",
+   "font": "Clash Grotesk",
+   "weight": 400,
+   "style": "normal",
+   "size": "34px",
+   "tracking": "-0.02em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "34px",
+    "medium": "28px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Lead",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.005em",
+   "leading": "1.55em",
+   "color": "token:Body",
+   "responsive": {
+    "default": "18px",
+    "medium": "18px",
+    "small": "17px"
+   }
+  },
+  {
+   "name": "Body",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "leading": "1.6em",
+   "color": "token:Body",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Body Strong",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "16px",
+   "leading": "1.5em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Small",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "15px",
+   "leading": "1.55em",
+   "color": "token:Body",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Label",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.4em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Eyebrow",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0.08em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:Muted",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Button",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "-0.005em",
+   "color": "token:Sun Ink",
+   "responsive": {}
+  },
+  {
+   "name": "Nav Link",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Chip",
+   "font": "General Sans",
+   "weight": 500,
+   "style": "normal",
+   "size": "13px",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "13px"
+   }
+  },
+  {
+   "name": "Article H2",
+   "tag": "h2",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.02em",
+   "leading": "1.2em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "24px"
+   }
+  },
+  {
+   "name": "Article H3",
+   "tag": "h3",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.015em",
+   "leading": "1.25em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "22px"
+   }
+  },
+  {
+   "name": "Article Body",
+   "font": "General Sans",
+   "weight": 400,
+   "style": "normal",
+   "size": "17px",
+   "leading": "1.7em",
+   "color": "token:Body",
+   "responsive": {
+    "default": "17px"
+   }
+  },
+  {
+   "name": "Wordmark",
+   "font": "Clash Grotesk",
+   "weight": 600,
+   "style": "normal",
+   "size": "280px",
+   "tracking": "-0.05em",
+   "leading": "0.9em",
+   "color": "token:Foam",
+   "responsive": {
+    "default": "280px",
+    "medium": "160px",
+    "small": "84px"
+   }
+  },
+  {
+   "name": "Heading XL",
+   "tag": "h2",
+   "font": "Clash Grotesk",
+   "weight": 500,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.03em",
+   "leading": "1.05em",
+   "color": "token:Ink",
+   "responsive": {
+    "default": "64px",
+    "medium": "52px",
+    "small": "38px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "Submit Button",
+  "FAQ Item",
+  "Nav Phone"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Site Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Smooth Scroll",
+    "comp": "SmoothScroll",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Nav Wrap",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Nav Phone Wrap",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Footer Wrap",
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Use Template Button",
+    "position": "fixed"
+   }
+  ],
+  "fill": "token:Sand"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 912,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Photo Panel"
+   ],
+   "text": 6,
+   "words": 37,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 2
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1,
+    "hover": 1
+   },
+   "styles": {
+    "Chip": 1,
+    "Display": 1,
+    "Lead": 1,
+    "Eyebrow": 1,
+    "Label": 1,
+    "Small": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Statement",
+   "type": "FrameNode",
+   "y": 912,
+   "h": 414,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "128px 70px 40px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 2,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "TextFill": 1
+   },
+   "effects": {},
+   "styles": {
+    "Eyebrow": 1
+   },
+   "shot": "sections/02-statement.jpg"
+  },
+  {
+   "name": "Intro",
+   "type": "FrameNode",
+   "y": 1326,
+   "h": 728,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 56px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Intro Row"
+   ],
+   "text": 18,
+   "words": 82,
+   "images": 1,
+   "icons": 5,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Body": 7,
+    "Label": 1,
+    "Small": 1,
+    "Heading 3": 6,
+    "Heading 4": 1
+   },
+   "shot": "sections/03-intro.jpg"
+  },
+  {
+   "name": "Destinations",
+   "type": "FrameNode",
+   "y": 2054,
+   "h": 774,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "96px 0px 96px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Header Wrap",
+    "Spacer",
+    "Destination Ticker"
+   ],
+   "text": 4,
+   "words": 11,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1,
+    "ticker": 1,
+    "hover": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Small": 1,
+    "Heading 3": 1
+   },
+   "shot": "sections/04-destinations.jpg"
+  },
+  {
+   "name": "Trips",
+   "type": "FrameNode",
+   "y": 2828,
+   "h": 1636,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 14,
+   "words": 58,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "text": 1,
+    "hover": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Lead": 1,
+    "Chip": 5,
+    "Small": 3,
+    "Heading 3": 1,
+    "Price": 1,
+    "Heading 4": 1
+   },
+   "shot": "sections/05-trips.jpg"
+  },
+  {
+   "name": "Travel Styles",
+   "type": "FrameNode",
+   "y": 4464,
+   "h": 1056,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px",
+   "gap": "0px",
+   "childNames": [
+    "Sea Panel"
+   ],
+   "text": 3,
+   "words": 32,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "HoverSlider": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/06-travel-styles.jpg"
+  },
+  {
+   "name": "How It Works",
+   "type": "FrameNode",
+   "y": 5520,
+   "h": 926,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 11,
+   "words": 97,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Heading 3": 3,
+    "Heading 4": 3,
+    "Body": 3
+   },
+   "shot": "sections/07-how-it-works.jpg"
+  },
+  {
+   "name": "Quote Window",
+   "type": "FrameNode",
+   "y": 6446,
+   "h": 624,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px",
+   "gap": "0px",
+   "childNames": [
+    "Photo Panel"
+   ],
+   "text": 2,
+   "words": 31,
+   "images": 1,
+   "icons": 5,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Quote": 1,
+    "Small": 1
+   },
+   "shot": "sections/08-quote-window.jpg"
+  },
+  {
+   "name": "Reviews",
+   "type": "FrameNode",
+   "y": 7070,
+   "h": 863,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "84px 0px 112px 0px",
+   "gap": "0px",
+   "childNames": [
+    "Header Wrap",
+    "Ticker Rows",
+    "Fade Left",
+    "Fade Right"
+   ],
+   "text": 8,
+   "words": 20,
+   "images": 0,
+   "icons": 10,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 2,
+    "text": 1,
+    "ticker": 2
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Lead": 2,
+    "Label": 2,
+    "Small": 2
+   },
+   "shot": "sections/09-reviews.jpg"
+  },
+  {
+   "name": "Included",
+   "type": "FrameNode",
+   "y": 7933,
+   "h": 877,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 10,
+   "words": 55,
+   "images": 1,
+   "icons": 4,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {},
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Heading 4": 4,
+    "Small": 4
+   },
+   "shot": "sections/10-included.jpg"
+  },
+  {
+   "name": "Journal",
+   "type": "FrameNode",
+   "y": 8810,
+   "h": 805,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "112px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 8,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1,
+    "hover": 1
+   },
+   "styles": {
+    "Eyebrow": 3,
+    "Heading 2": 1,
+    "Chip": 2,
+    "Heading 4": 1,
+    "Small": 1
+   },
+   "shot": "sections/11-journal.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 9615,
+   "h": 704,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 70px 112px 70px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "FAQ Item": 6
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Eyebrow": 1,
+    "Heading 2": 1,
+    "Body": 1
+   },
+   "shot": "sections/12-faq.jpg"
+  },
+  {
+   "name": "CTA Window",
+   "type": "FrameNode",
+   "y": 10319,
+   "h": 632,
+   "w": 1440,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "12px 12px 0px 12px",
+   "gap": "0px",
+   "childNames": [
+    "Photo Panel"
+   ],
+   "text": 2,
+   "words": 32,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "ImageTrail": 1,
+    "Button": 2
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Heading XL": 1,
+    "Lead": 1
+   },
+   "shot": "sections/13-cta-window.jpg"
+  },
+  {
+   "name": "Bottom Gap",
+   "type": "FrameNode",
+   "y": 10951,
+   "h": 0,
+   "w": 1440,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {}
+  }
+ ],
+ "effects": {
+  "appear": 26,
+  "text": 12,
+  "hover": 5,
+  "ticker": 3
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.12,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 14,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.05s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 14,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.05s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0.15,
+   "trigger": "onInView",
+   "tokenization": "word",
+   "delay": "0.04s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "26px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "8px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.16,
+      1,
+      0.3,
+      1
+     ],
+     "duration": "1s",
+     "delay": "0.15s"
+    }
+   }
+  },
+  "hover": {
+   "opacity": 0.88,
+   "x": "0px",
+   "y": "0px",
+   "scale": 1,
+   "rotate": "0deg",
+   "skewX": "0deg",
+   "skewY": "0deg",
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0.22,
+     1,
+     0.36,
+     1
+    ],
+    "duration": "0.5s",
+    "delay": "0s"
+   }
+  },
+  "ticker": {
+   "velocity": 34,
+   "hoverModifier": "35%",
+   "directionModifier": "default",
+   "draggable": true
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "24px",
+   13
+  ],
+  [
+   "999px",
+   9
+  ],
+  [
+   "28px",
+   4
+  ],
+  [
+   "26px",
+   4
+  ],
+  [
+   "20px",
+   3
+  ],
+  [
+   "22px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 4,
+  "blur": 2
+ },
+ "desktopFill": "token:Sand",
+ "pageHeight": 11857,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/0ec07c2c-6c4f-4bf0-bef7-898cc544f8c5.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/8b73e4b2-bc30-4aef-9677-480b454f0a05.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "hospitality-travel/wayfare",
+ "industry": "hospitality-travel",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  11857
+ ]
+}

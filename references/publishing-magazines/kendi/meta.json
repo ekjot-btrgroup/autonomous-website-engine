@@ -1,0 +1,19 @@
+{
+  "name": "Kendi",
+  "industry": "publishing-magazines",
+  "also": ["publishing-blogs", "publishing-news", "publishing-entertainment"],
+  "summary": "Clean grey-paper online magazine in black Inter: big tight hero headline, full-width featured story slider, then a two-column feed with a sticky-feeling sidebar of topics, newsletter and ads.",
+  "style": ["editorial", "minimal", "corporate-clean"],
+  "feel": { "tone": 2, "energy": 2, "luxury": 2, "density": 4, "warmth": 2, "modernity": 4 },
+  "scheme": "light",
+  "hue": "neutral",
+  "palette": { "bg": "#f5f5f5", "surface": "#ffffff", "ink": "#000000", "muted": "#3d3d3d", "accent": "#000000", "line": "#dedede" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 600 at -0.03em for every heading, Inter 500 for paragraphs and meta" },
+  "hero": "big-type-editorial",
+  "sections": ["hero", "blog", "cta", "blog", "gallery", "blog", "newsletter", "footer"],
+  "motion": 1,
+  "signature": ["72px tight two-line headline with a short intro and inline subscribe field opposite it, above a full-width featured story with category chip and overlaid title", "main feed plus right sidebar with an image-tile topic grid, newsletter card, numbered spotlight list and a sponsored card"],
+  "imagery": "moody editorial photography: portraits in foliage, night streets, travel landscapes, tech close-ups; small square thumbnails",
+  "layout_grid": "1200px canvas, 30px side padding, 740px main column plus about 400px sidebar, 100px between feed blocks, 5 to 10px radii",
+  "quality": 4
+}

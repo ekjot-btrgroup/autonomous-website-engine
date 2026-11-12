@@ -1,0 +1,896 @@
+{
+ "title": "Stillhour (copy)",
+ "pages": [
+  "/",
+  "/legal/:eCDwZxc8U",
+  "/404",
+  "/design-system"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1440px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  },
+  {
+   "name": "Laptop",
+   "range": "(min-width: 1200px) and (max-width: 1439.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Background/Page",
+   "light": "#fbf8f3"
+  },
+  {
+   "name": "Background/Muted",
+   "light": "#f3ece2"
+  },
+  {
+   "name": "Background/Surface",
+   "light": "#ffffff"
+  },
+  {
+   "name": "Background/Dark",
+   "light": "#1f140d"
+  },
+  {
+   "name": "Background/Rust",
+   "light": "#7a3418"
+  },
+  {
+   "name": "Accent/Amber",
+   "light": "#f2a541"
+  },
+  {
+   "name": "Accent/Amber Deep",
+   "light": "rgb(222, 132, 38)"
+  },
+  {
+   "name": "Text/Primary",
+   "light": "#1f140d"
+  },
+  {
+   "name": "Text/Secondary",
+   "light": "#8a7867"
+  },
+  {
+   "name": "Text/Inverse",
+   "light": "#fbf8f3"
+  },
+  {
+   "name": "Border/Subtle",
+   "light": "#e7dccb"
+  },
+  {
+   "name": "Border/Strong",
+   "light": "#d6c6af"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Display",
+   "tag": "h1",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 104,
+   "tracking": "-0.02em",
+   "leading": "0.96em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "104px",
+    "medium": "88px",
+    "small": "80px",
+    "extraSmall": "56px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 72,
+   "tracking": "-0.015em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "72px",
+    "medium": "60px",
+    "small": "56px",
+    "extraSmall": "42px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 48,
+   "tracking": "-0.01em",
+   "leading": "1.08em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "48px",
+    "medium": "40px",
+    "small": "40px",
+    "extraSmall": "34px"
+   }
+  },
+  {
+   "name": "Heading 3",
+   "tag": "h3",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 32,
+   "tracking": "-0.005em",
+   "leading": "1.16em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "32px",
+    "medium": "28px",
+    "small": "28px",
+    "extraSmall": "26px"
+   }
+  },
+  {
+   "name": "Body Large",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": 18,
+   "tracking": "-0.005em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "18px",
+    "medium": "17px",
+    "small": "17px",
+    "extraSmall": "16px"
+   }
+  },
+  {
+   "name": "Body",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Body Small",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.5em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Label",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0em",
+   "leading": "1.2em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Button",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "0em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "Caption",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "0em",
+   "leading": "1.4em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Overline",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 500,
+   "style": "normal",
+   "size": "11px",
+   "tracking": "0.1em",
+   "leading": "1.2em",
+   "transform": "uppercase",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "11px"
+   }
+  },
+  {
+   "name": "Prose Heading",
+   "tag": "h2",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.005em",
+   "leading": "1.16em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "30px"
+   }
+  },
+  {
+   "name": "Prose Body",
+   "tag": "p",
+   "font": "Geist",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "0em",
+   "leading": "1.55em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "Page Title",
+   "tag": "h1",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 72,
+   "tracking": "-0.015em",
+   "leading": "1em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "72px",
+    "medium": "60px",
+    "small": "56px",
+    "extraSmall": "42px"
+   }
+  },
+  {
+   "name": "Menu Label",
+   "tag": "p",
+   "font": "Instrument Serif",
+   "weight": 400,
+   "style": "normal",
+   "size": 30,
+   "tracking": "-0.005em",
+   "leading": "1.16em",
+   "transform": "none",
+   "color": "token:Text/Primary",
+   "responsive": {
+    "default": "30px",
+    "medium": "28px",
+    "small": "28px",
+    "extraSmall": "26px"
+   }
+  }
+ ],
+ "components": [
+  "Button",
+  "FAQ Item",
+  "Submit Button",
+  "Navigation",
+  "Film Card",
+  "Service Card",
+  "How Steps",
+  "Stories Slider",
+  "Book Button",
+  "Menu Link",
+  "Worry Release",
+  "Footer"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main Layout",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Nav Overlay",
+    "position": "absolute"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background/Page"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 800,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "8px",
+   "gap": "0px",
+   "childNames": [
+    "Hero Image"
+   ],
+   "text": 4,
+   "words": 24,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Video": 1,
+    "Button": 1,
+    "Film Card": 1
+   },
+   "effects": {},
+   "styles": {
+    "Body Small": 1,
+    "Overline": 1,
+    "Display": 1,
+    "Body Large": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "Our Approach",
+   "type": "FrameNode",
+   "y": 800,
+   "h": 1065,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 64px 160px 64px",
+   "gap": "80px",
+   "childNames": [
+    "Statement",
+    "Cards"
+   ],
+   "text": 15,
+   "words": 86,
+   "images": 10,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {
+    "appear": 6,
+    "text": 5
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 2": 6,
+    "Caption": 1,
+    "Heading 3": 2,
+    "Display": 1,
+    "Body Small": 4
+   },
+   "shot": "sections/02-our-approach.jpg"
+  },
+  {
+   "name": "Before / After",
+   "type": "FrameNode",
+   "y": 1865,
+   "h": 2400,
+   "w": 1440,
+   "fill": "token:Background/Muted",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "Pin"
+   ],
+   "text": 2,
+   "words": 10,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Worry Release": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 1,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1
+   },
+   "shot": "sections/03-before-after.jpg"
+  },
+  {
+   "name": "Services",
+   "type": "FrameNode",
+   "y": 4265,
+   "h": 1011,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 64px 150px 64px",
+   "gap": "56px",
+   "childNames": [
+    "Heading",
+    "Cards"
+   ],
+   "text": 3,
+   "words": 28,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Service Card": 3
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1,
+    "Body": 1
+   },
+   "shot": "sections/04-services.jpg"
+  },
+  {
+   "name": "7-Day Reset",
+   "type": "FrameNode",
+   "y": 5276,
+   "h": 909,
+   "w": 1440,
+   "fill": "token:Background/Dark",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 64px 160px 64px",
+   "gap": "64px",
+   "childNames": [
+    "Heading",
+    "Reset Accordion"
+   ],
+   "text": 3,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Reset Accordion": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1,
+    "Body": 1
+   },
+   "shot": "sections/05-7-day-reset.jpg"
+  },
+  {
+   "name": "How It Works",
+   "type": "FrameNode",
+   "y": 6185,
+   "h": 2400,
+   "w": 1440,
+   "fill": "token:Background/Muted",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "0px",
+   "childNames": [
+    "How Pin"
+   ],
+   "text": 4,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "How Steps": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1,
+    "Body": 1,
+    "Label": 1
+   },
+   "shot": "sections/06-how-it-works.jpg"
+  },
+  {
+   "name": "Practitioners",
+   "type": "FrameNode",
+   "y": 8585,
+   "h": 1392,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 64px 140px 64px",
+   "gap": "80px",
+   "childNames": [
+    "Heading",
+    "Triptych",
+    "Credentials"
+   ],
+   "text": 10,
+   "words": 54,
+   "images": 3,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1,
+    "Body": 1,
+    "Heading 3": 3,
+    "Body Small": 4
+   },
+   "shot": "sections/07-practitioners.jpg"
+  },
+  {
+   "name": "Member Stories",
+   "type": "FrameNode",
+   "y": 9977,
+   "h": 868,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "40px 0px 112px 0px",
+   "gap": "60px",
+   "childNames": [
+    "Heading",
+    "ComponentInstanceNode"
+   ],
+   "text": 2,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Stories Slider": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1
+   },
+   "shot": "sections/08-member-stories.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 10845,
+   "h": 1100,
+   "w": 1440,
+   "fill": "token:Background/Muted",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 64px 120px 64px",
+   "gap": "56px",
+   "childNames": [
+    "Heading",
+    "Plans",
+    "Note"
+   ],
+   "text": 27,
+   "words": 130,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Button": 3
+   },
+   "effects": {
+    "appear": 17,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 4,
+    "Body": 1,
+    "Label": 3,
+    "Body Small": 17,
+    "Caption": 1
+   },
+   "shot": "sections/09-pricing.jpg"
+  },
+  {
+   "name": "FAQ",
+   "type": "FrameNode",
+   "y": 11945,
+   "h": 882,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "140px 64px 140px 64px",
+   "gap": "0px",
+   "childNames": [
+    "Row"
+   ],
+   "text": 5,
+   "words": 33,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "FAQ Item": 6
+   },
+   "effects": {
+    "appear": 9,
+    "text": 1
+   },
+   "styles": {
+    "Overline": 1,
+    "Heading 1": 1,
+    "Body": 1,
+    "Label": 1,
+    "Caption": 1
+   },
+   "shot": "sections/10-faq.jpg"
+  },
+  {
+   "name": "Final CTA",
+   "type": "FrameNode",
+   "y": 12827,
+   "h": 1009,
+   "w": 1440,
+   "fill": "token:Background/Page",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 16px 16px 16px",
+   "gap": "0px",
+   "childNames": [
+    "CTA Image"
+   ],
+   "text": 9,
+   "words": 48,
+   "images": 1,
+   "icons": 0,
+   "inputs": 3,
+   "grids": [],
+   "components": {
+    "Submit Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "text": 1
+   },
+   "styles": {
+    "Display": 1,
+    "Body Large": 1,
+    "Body Small": 2,
+    "Heading 3": 1,
+    "Caption": 4
+   },
+   "shot": "sections/11-final-cta.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 54,
+  "text": 14,
+  "sticky": 1
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "threshold": 0.5,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 8,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.7s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 8,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.7s",
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "text": {
+   "trigger": "onInView",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "14px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "8px",
+    "transition": {
+     "type": "tween",
+     "ease": [
+      0.22,
+      1,
+      0.36,
+      1
+     ],
+     "duration": "0.9s",
+     "delay": "0.05s"
+    }
+   }
+  }
+ },
+ "fontsUsed": {
+  "Instrument Serif": 39
+ },
+ "radii": [
+  [
+   "999px",
+   26
+  ],
+  [
+   "24px",
+   4
+  ],
+  [
+   "12px",
+   4
+  ],
+  [
+   "999px 999px 0px 0px",
+   3
+  ],
+  [
+   "20px",
+   3
+  ],
+  [
+   "28px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 1,
+  "borders": 15,
+  "blur": 1
+ },
+ "desktopFill": "token:Background/Page",
+ "pageHeight": 14401,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/2e0fdebb-390a-485f-b560-699180e3bf66.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/a3b934de-6241-4236-a94d-7c630dd4edae.jpg",
+  "desktopWidth": 1440
+ },
+ "id": "health-wellness/stillhour",
+ "industry": "health-wellness",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1440,
+  17201
+ ],
+ "crop_offset": 0,
+ "crop_stretch": 1.1944
+}

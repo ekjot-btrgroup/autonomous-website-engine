@@ -884,5 +884,7 @@
  "screenshot_size": [
   1200,
   16457
- ]
+ ],
+ "crop_offset": 264,
+ "crop_stretch": 1.0
 }

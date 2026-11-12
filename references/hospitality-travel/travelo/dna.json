@@ -1,0 +1,1062 @@
+{
+ "title": "Travelo (copy)",
+ "pages": [
+  "/",
+  "/404",
+  "/contact",
+  "/about",
+  "/blogs",
+  "/blogs/:auTZY4oaD",
+  "/destinations",
+  "/destinations/:ofgUd8RAs"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "W 7%",
+   "light": "rgba(255, 255, 255, 0.07)"
+  },
+  {
+   "name": "W 10%",
+   "light": "rgba(255, 255, 255, 0.1)"
+  },
+  {
+   "name": "W 5%",
+   "light": "rgba(255, 255, 255, 0.05)"
+  },
+  {
+   "name": "B 10%",
+   "light": "rgba(0, 0, 0, 0.1)"
+  },
+  {
+   "name": "B 7%",
+   "light": "rgba(0, 0, 0, 0.07)"
+  },
+  {
+   "name": "Orange",
+   "light": "rgb(244, 109, 43)"
+  },
+  {
+   "name": "Dark Blue",
+   "light": "rgb(27, 41, 120)"
+  },
+  {
+   "name": "Blue 1",
+   "light": "rgb(240, 247, 252)"
+  },
+  {
+   "name": "Dark Blue 2",
+   "light": "rgb(10, 19, 69)"
+  },
+  {
+   "name": "Blue 2",
+   "light": "rgb(237, 244, 250)"
+  },
+  {
+   "name": "Blue 3",
+   "light": "rgb(201, 230, 255)"
+  },
+  {
+   "name": "Placeholder",
+   "light": "rgba(14, 25, 84, 0.3)"
+  },
+  {
+   "name": "Blue 0",
+   "light": "rgb(247, 252, 255)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "16",
+   "font": "Golos Text",
+   "weight": 400,
+   "style": "normal",
+   "size": "16px",
+   "tracking": "-0.015em",
+   "leading": "145%",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"DB 2\"} */",
+   "responsive": {
+    "default": "16px"
+   }
+  },
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "90px",
+   "tracking": "-0.064em",
+   "leading": "0.96em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "90px",
+    "medium": "78px",
+    "small": "54px"
+   }
+  },
+  {
+   "name": "17",
+   "font": "Golos Text",
+   "weight": 405,
+   "style": "normal",
+   "size": "17px",
+   "tracking": "-0.02em",
+   "leading": "1.38em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "17px"
+   }
+  },
+  {
+   "name": "14",
+   "font": "Golos Text",
+   "weight": 410,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.01em",
+   "leading": "130%",
+   "color": "token:8b57468b-891a-4c69-9794-ea2945515f05, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "56px",
+   "tracking": "-0.06em",
+   "leading": "1.04em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "56px",
+    "medium": "46px",
+    "small": "38px"
+   }
+  },
+  {
+   "name": "20",
+   "font": "Golos Text",
+   "weight": 405,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.038em",
+   "leading": "1.39em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"Dark Blue 2\"} */",
+   "responsive": {
+    "default": "20px"
+   }
+  },
+  {
+   "name": "H2 S",
+   "tag": "h2",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "50px",
+   "tracking": "-0.06em",
+   "leading": "1.08em",
+   "color": "token:cc2033ed-c1cc-4cdc-baa7-f42de145a3e7, rgb(27, 41, 120) /* {\"name\":\"DB\"} */",
+   "responsive": {
+    "default": "50px",
+    "medium": "44px",
+    "small": "35px"
+   }
+  },
+  {
+   "name": "18",
+   "font": "Golos Text",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.03em",
+   "leading": "1.35em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"DB 2\"} */",
+   "responsive": {
+    "default": "18px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.048em",
+   "leading": "1.1em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "42px",
+    "medium": "35px",
+    "small": "29px"
+   }
+  },
+  {
+   "name": "14 CAP",
+   "font": "Golos Text",
+   "weight": 470,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "0.09em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "15",
+   "font": "Golos Text",
+   "weight": 410,
+   "style": "normal",
+   "size": "15px",
+   "tracking": "-0.01em",
+   "leading": "140%",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(250, 250, 250) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "15px"
+   }
+  },
+  {
+   "name": "H2 Blog",
+   "tag": "h2",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "32px",
+   "tracking": "-0.05em",
+   "leading": "1.4em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"DB 2\"} */",
+   "responsive": {
+    "default": "32px",
+    "medium": "30px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "H3 Blog",
+   "tag": "h3",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.045em",
+   "leading": "1.4em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"DB 2\"} */",
+   "responsive": {
+    "default": "26px",
+    "medium": "24px",
+    "small": "23px"
+   }
+  },
+  {
+   "name": "H1 Blog",
+   "tag": "h1",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "42px",
+   "tracking": "-0.06em",
+   "leading": "1.1em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"DB 2\"} */",
+   "responsive": {
+    "default": "42px",
+    "medium": "35px",
+    "small": "29px"
+   }
+  },
+  {
+   "name": "H1 S",
+   "tag": "h1",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "64px",
+   "tracking": "-0.056em",
+   "leading": "1.05em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "64px",
+    "medium": "54px",
+    "small": "45px"
+   }
+  },
+  {
+   "name": "25 Serif",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "25px",
+   "tracking": "-0.05em",
+   "leading": "1.25em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84) /* {\"name\":\"Dark Blue 2\"} */",
+   "responsive": {
+    "default": "25px",
+    "medium": "22px",
+    "small": "20px"
+   }
+  },
+  {
+   "name": "22 Serif",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.045em",
+   "leading": "1.25em",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(14, 25, 84)",
+   "responsive": {
+    "default": "22px",
+    "medium": "22px",
+    "small": "21px"
+   }
+  },
+  {
+   "name": "H3 S",
+   "tag": "h3",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "30px",
+   "tracking": "-0.045em",
+   "leading": "1.1em",
+   "color": "token:0c35c7d3-21de-4070-8046-4a3fa0c5baf0, rgb(255, 255, 255) /* {\"name\":\"White\"} */",
+   "responsive": {
+    "default": "30px",
+    "medium": "29px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "23 Serif",
+   "font": "Spectral",
+   "weight": 400,
+   "style": "normal",
+   "size": "23px",
+   "tracking": "-0.038em",
+   "leading": "1.2em",
+   "color": "token:cc2033ed-c1cc-4cdc-baa7-f42de145a3e7, rgb(27, 41, 120)",
+   "responsive": {
+    "default": "23px",
+    "medium": "22px",
+    "small": "22px"
+   }
+  },
+  {
+   "name": "13 CAP",
+   "font": "Golos Text",
+   "weight": 460,
+   "style": "normal",
+   "size": "13px",
+   "tracking": "0.09em",
+   "leading": "1.3em",
+   "transform": "uppercase",
+   "color": "token:60a4d2cf-83c5-4cce-a0cd-8d089ce89447, rgb(10, 19, 69)",
+   "responsive": {
+    "default": "13px"
+   }
+  }
+ ],
+ "components": [
+  "Nav",
+  "Nav item",
+  "Menu icon",
+  "FAQ Accordion",
+  "Accordion",
+  "About Card",
+  "Form button",
+  "Contact card",
+  "Button",
+  "Social Proof",
+  "Ticker Item",
+  "Logo",
+  "Blog Card",
+  "Feature Card",
+  "Section/Footer",
+  "Newsletter Button",
+  "Why us Card",
+  "Approach card",
+  "Approach bar",
+  "Stat",
+  "Heading Section",
+  "Testimonial Card",
+  "Itinary Accordion",
+  "Travel Card",
+  "Section Tag",
+  "Feature Slideshow",
+  "Feature Card",
+  "Mouse Arrow",
+  "Accordion 2",
+  "Feature Slideshow 2"
+ ],
+ "pageEffects": 1,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Nav",
+    "position": "fixed"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Spacer",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Footer",
+    "comp": "Section/Footer",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Smooth Scroll",
+    "position": "relative"
+   }
+  ],
+  "fill": "rgb(245, 247, 247)"
+ },
+ "sections": [
+  {
+   "name": "Hero",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 900,
+   "w": 1200,
+   "fill": "rgb(5, 11, 41)",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px 32px 0px 32px",
+   "gap": "60px",
+   "childNames": [
+    "FrameNode",
+    "Container"
+   ],
+   "text": 3,
+   "words": 20,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Button": 1,
+    "Social Proof": 1,
+    "Slideshow": 1
+   },
+   "effects": {
+    "appear": 5,
+    "loop": 1,
+    "text": 1
+   },
+   "styles": {
+    "20": 1,
+    "H1 S": 1
+   },
+   "shot": "sections/01-hero.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 900,
+   "h": 917,
+   "w": 1200,
+   "fill": "token:Blue 1",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 32px 100px 32px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "TextReveal": 1,
+    "Button": 1,
+    "Social Proof": 1,
+    "About Card": 3
+   },
+   "effects": {
+    "appear": 1
+   },
+   "styles": {},
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "Featured",
+   "type": "FrameNode",
+   "y": 1817,
+   "h": 1193,
+   "w": 1200,
+   "fill": "token:Dark Blue 2",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 32px 120px 32px",
+   "gap": "50px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 26,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "Feature Slideshow": 1,
+    "Button": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "17": 1,
+    "18": 1,
+    "H2": 1
+   },
+   "shot": "sections/03-featured.jpg"
+  },
+  {
+   "name": "Why us",
+   "type": "FrameNode",
+   "y": 3010,
+   "h": 1614,
+   "w": 1200,
+   "fill": "token:Blue 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 32px 120px 32px",
+   "gap": "50px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 20,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "Feature Card": 4
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2,
+    "sticky": 1,
+    "styleTransform": 5
+   },
+   "styles": {
+    "17": 1,
+    "H2": 1
+   },
+   "shot": "sections/04-why-us.jpg"
+  },
+  {
+   "name": "Our Promise",
+   "type": "FrameNode",
+   "y": 4624,
+   "h": 3485,
+   "w": 1200,
+   "fill": "token:White",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 32px 120px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Process Spacer",
+    "Container"
+   ],
+   "text": 2,
+   "words": 21,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Section Tag": 1,
+    "Button": 1,
+    "Why us Card": 4
+   },
+   "effects": {
+    "sticky": 1,
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "18": 1,
+    "H2": 1
+   },
+   "shot": "sections/05-our-promise.jpg"
+  },
+  {
+   "name": "Tours",
+   "type": "FrameNode",
+   "y": 8109,
+   "h": 1425,
+   "w": 1200,
+   "fill": "token:Blue 1",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "110px 32px 120px 32px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 5,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Tag": 1,
+    "Travel Card": 1,
+    "Button": 1
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "H2 S": 1
+   },
+   "shot": "sections/06-tours.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 9534,
+   "h": 916,
+   "w": 1200,
+   "fill": "token:White",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "120px 32px 110px 32px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "Ticker": 1,
+    "Testimonial Card": 3
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H3": 1
+   },
+   "shot": "sections/07-testimonials.jpg"
+  },
+  {
+   "name": "Our Approach",
+   "type": "FrameNode",
+   "y": 10450,
+   "h": 2173,
+   "w": 1200,
+   "fill": "token:Blue 1",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "120px 32px 120px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "Button": 1,
+    "Approach bar": 3,
+    "Approach card": 3
+   },
+   "effects": {
+    "text": 1,
+    "appear": 3,
+    "sticky": 1,
+    "scrollVariant": 3
+   },
+   "styles": {
+    "17": 1,
+    "H2 S": 1
+   },
+   "shot": "sections/08-our-approach.jpg"
+  },
+  {
+   "name": "Stats",
+   "type": "FrameNode",
+   "y": 12623,
+   "h": 550,
+   "w": 1200,
+   "fill": "token:Dark Blue 2",
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 32px 100px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container",
+    "Vector",
+    "Vector"
+   ],
+   "text": 1,
+   "words": 6,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Stat": 4
+   },
+   "effects": {
+    "text": 1
+   },
+   "styles": {
+    "H3": 1
+   },
+   "shot": "sections/09-stats.jpg"
+  },
+  {
+   "name": "Blog",
+   "type": "FrameNode",
+   "y": 13173,
+   "h": 803,
+   "w": 1200,
+   "fill": "token:White",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 32px 90px 32px",
+   "gap": "50px",
+   "childNames": [
+    "Content Wrapper"
+   ],
+   "text": 1,
+   "words": 5,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Section Tag": 1,
+    "Button": 1,
+    "Blog Card": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H2 S": 1
+   },
+   "shot": "sections/10-blog.jpg"
+  },
+  {
+   "name": "FAQs",
+   "type": "FrameNode",
+   "y": 13976,
+   "h": 716,
+   "w": 1200,
+   "fill": "token:Blue 1",
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "100px 32px 100px 32px",
+   "gap": "0px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 8,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Section Tag": 1,
+    "Button": 1,
+    "FAQ Accordion": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "17": 1,
+    "H2": 1
+   },
+   "shot": "sections/11-faqs.jpg"
+  },
+  {
+   "name": "Ticker",
+   "type": "FrameNode",
+   "y": 14692,
+   "h": 676,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "horizontal",
+   "padding": "90px 32px 120px 32px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 1,
+   "words": 7,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Ticker": 1
+   },
+   "effects": {
+    "text": 1,
+    "appear": 1
+   },
+   "styles": {
+    "H3 S": 1
+   },
+   "shot": "sections/12-ticker.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 20,
+  "loop": 1,
+  "text": 11,
+  "sticky": 3,
+  "styleTransform": 5,
+  "scrollVariant": 3
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.8s",
+     "bounce": 0.1,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   },
+   "exit": {
+    "opacity": 1,
+    "x": 0,
+    "y": 0,
+    "scale": 1.1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "duration": "1.8s",
+     "bounce": 0.1,
+     "delay": "0.1s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": 0,
+   "scale": 1.07,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "duration": "14s",
+    "delay": "0s"
+   }
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "20px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "5px",
+    "transition": {
+     "type": "spring",
+     "stiffness": 200,
+     "damping": 80,
+     "mass": 1,
+     "delay": "0s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "end",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "196px",
+     "y": "5px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "u8fRTS9Fq",
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  },
+  "scrollVariant": {
+   "trigger": "onScrollTarget",
+   "threshold": 0.5,
+   "replay": true,
+   "sections": [
+    {
+     "target": "nrHc2EeAa",
+     "variant": "PZkzodj4j"
+    },
+    {
+     "target": "cOMm90vJL",
+     "variant": "IVZi4h6v0"
+    },
+    {
+     "target": "esZ2zY5mx",
+     "variant": "IVZi4h6v0"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {
+  "Goldman": 2
+ },
+ "radii": [
+  [
+   "0px",
+   5
+  ],
+  [
+   "20px",
+   3
+  ],
+  [
+   "8px",
+   2
+  ],
+  [
+   "16px",
+   2
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 0
+ },
+ "desktopFill": "rgb(0, 13, 14)",
+ "pageHeight": 16300,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/69d8782f-8595-4878-a4ba-539c81e7423f.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/5b1bc993-4406-49c1-9ba8-8134d2cb6812.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "hospitality-travel/travelo",
+ "industry": "hospitality-travel",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  16435
+ ]
+}

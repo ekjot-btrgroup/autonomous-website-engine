@@ -1,0 +1,19 @@
+{
+  "name": "Impacta",
+  "industry": "agency-marketing",
+  "also": ["agency-design", "services-consulting"],
+  "summary": "Light-grey social media agency site with a hot raspberry accent on key words, a ticker of creator portrait cards and sticky stacked service cards with animated line icons.",
+  "style": ["corporate-clean", "bold-graphic", "playful"],
+  "feel": { "tone": 3, "energy": 4, "luxury": 2, "density": 3, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "red",
+  "palette": { "bg": "#eeeeee", "surface": "#f9f9f9", "ink": "#1c1c1c", "muted": "#575757", "accent": "#ff003d", "line": "#cdcdcd" },
+  "fonts": { "display": "Inter", "body": "Inter", "class": "sans", "pairing": "Inter 600 headlines at -0.04em with one phrase recoloured in the accent, Inter 500 body in mid grey" },
+  "hero": "centered-type",
+  "sections": ["hero", "logos", "stats", "services", "about", "portfolio", "process", "features", "pricing", "testimonials", "faq", "blog", "cta"],
+  "motion": 4,
+  "signature": ["headline words recoloured in raspberry red as the only accent", "horizontal ticker of creator portrait cards with verified handles under the hero", "service cards that stack and dim (scale 0.96, opacity 0.5) as the next scrolls over"],
+  "imagery": "editorial creator portraits and short video clips, red and black line-art Lottie icons, white rounded cards",
+  "layout_grid": "1200px, 1080px content, 100px section padding, centred section heads, 20px radius cards inset 6px inside white frames",
+  "quality": 4
+}

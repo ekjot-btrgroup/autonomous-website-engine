@@ -1,0 +1,806 @@
+{
+ "title": "Hydrowell (copy)",
+ "pages": [
+  "/",
+  "/:ms9g1uSub",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Brand Color",
+   "light": "rgb(206, 104, 55)"
+  },
+  {
+   "name": "Dark Blue",
+   "light": "rgb(19, 29, 46)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Box Background",
+   "light": "rgb(240, 233, 225)"
+  },
+  {
+   "name": "Deep Charcoal",
+   "light": "rgb(8, 45, 86)"
+  },
+  {
+   "name": "Soft White 72",
+   "light": "rgba(255, 255, 255, 0.72)"
+  },
+  {
+   "name": "Dark Blue 80%",
+   "light": "rgba(19, 29, 46, 0.8)"
+  },
+  {
+   "name": "Gold 30%",
+   "light": "rgba(206, 104, 55, 0.3)"
+  },
+  {
+   "name": "Brand Color 14%",
+   "light": "rgba(206, 104, 55, 0.14)"
+  },
+  {
+   "name": "Background",
+   "light": "rgb(245, 242, 236)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "Body 20 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgb(19, 29, 46) /* {\"name\":\"Dark Blue Copy\"} */",
+   "responsive": {
+    "default": "20px",
+    "medium": "20px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Heading 1",
+   "tag": "h1",
+   "font": "Poppins",
+   "weight": 500,
+   "style": "normal",
+   "size": "104px",
+   "tracking": "-2.5px",
+   "leading": "1.1em",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46)",
+   "responsive": {
+    "default": "104px",
+    "medium": "72px",
+    "small": "60px"
+   }
+  },
+  {
+   "name": "Body 16 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "tracking": "0.2px",
+   "leading": "1.6em",
+   "color": "token:4c0ef0c0-5888-4f3f-a070-180b0bdeeee0, rgb(255, 255, 255)",
+   "responsive": {
+    "medium": "14px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Body 16 Regular",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "tracking": "0.2px",
+   "leading": "1.4em",
+   "color": "token:4c0ef0c0-5888-4f3f-a070-180b0bdeeee0, rgb(255, 255, 255)",
+   "responsive": {
+    "medium": "16px",
+    "small": "14px"
+   }
+  },
+  {
+   "name": "Body 22 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "22px",
+   "tracking": "-0.03em",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46)",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body 14 Regular",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgba(19, 29, 46, 0.8)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Heading 2",
+   "tag": "h2",
+   "font": "Poppins",
+   "weight": 500,
+   "style": "normal",
+   "size": "60px",
+   "tracking": "-2.5px",
+   "leading": "1.2em",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46)",
+   "responsive": {
+    "default": "60px",
+    "medium": "46px",
+    "small": "40px"
+   }
+  },
+  {
+   "name": "Body 20 Regular",
+   "font": "Inter",
+   "weight": 400,
+   "style": "normal",
+   "size": "20px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgb(19, 29, 46) /* {\"name\":\"Dark Blue Copy\"} */",
+   "responsive": {
+    "default": "20px",
+    "medium": "18px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Body 24 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "24px",
+   "tracking": "-0.03em",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46)",
+   "responsive": {
+    "default": "24px",
+    "medium": "20px",
+    "small": "18px"
+   }
+  },
+  {
+   "name": "Body 14 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "14px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgba(19, 29, 46, 0.8)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "Body 12 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "12px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgba(19, 29, 46, 0.8)",
+   "responsive": {
+    "default": "12px"
+   }
+  },
+  {
+   "name": "Heading 2b",
+   "tag": "h2",
+   "font": "Poppins",
+   "weight": 500,
+   "style": "normal",
+   "size": "46px",
+   "tracking": "-2.5px",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46)",
+   "responsive": {
+    "default": "46px",
+    "medium": "40px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Body 18 Medium",
+   "font": "Inter",
+   "weight": 500,
+   "style": "normal",
+   "size": "18px",
+   "tracking": "-0.02em",
+   "leading": "1.6em",
+   "color": "token:311308f1-392d-4079-b203-a2acbb8cb20d, rgb(19, 29, 46) /* {\"name\":\"Dark Blue Copy\"} */",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": null,
+   "tag": "h3",
+   "font": "Poppins",
+   "weight": 600,
+   "style": "normal",
+   "size": "26px",
+   "tracking": "-0.02em",
+   "leading": "1.4em",
+   "color": "token:5d3a9c6f-c3dd-4d1e-ad39-d621abf4d22c, rgb(19, 29, 46) /* {\"name\":\"Dark Blue\"} */",
+   "responsive": {
+    "default": "26px"
+   }
+  }
+ ],
+ "components": [
+  "Eyebrow",
+  "Button",
+  "Navigation",
+  "Service Card",
+  "Image Accordion",
+  "FAQ List",
+  "Comparison Card",
+  "Review Card",
+  "Pricing Card",
+  "Review Ticker",
+  "FAQ List",
+  "FAQ Item",
+  "Submit Button",
+  "Contact Card",
+  "Footer",
+  "Social Link",
+  "Nav Tab",
+  "Footer Link",
+  "Primary Button",
+  "Video Button"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Site Layout",
+  "children": [
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Navigation",
+    "comp": "Navigation",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": "Footer",
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Background"
+ },
+ "sections": [
+  {
+   "name": "Smooth Scroll",
+   "type": "ComponentInstanceNode",
+   "comp": "Smooth Scroll",
+   "y": 0,
+   "h": 0,
+   "w": 0,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Smooth Scroll": 1
+   },
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": "Home",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 1114,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "100px 40px 60px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Image Overlay",
+    "Overlay",
+    "Overlay",
+    "Container"
+   ],
+   "text": 17,
+   "words": 85,
+   "images": 2,
+   "icons": 8,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "Video Button": 1,
+    "YouTube": 1
+   },
+   "effects": {
+    "parallax": 3,
+    "appear": 6,
+    "text": 2,
+    "loop": 4
+   },
+   "styles": {
+    "Heading 1": 1,
+    "Body 20 Medium": 1,
+    "Body 16 Medium": 4,
+    "Body 22 Medium": 4,
+    "Body 14 Regular": 4
+   },
+   "shot": "sections/01-home.jpg"
+  },
+  {
+   "name": "About",
+   "type": "FrameNode",
+   "y": 1114,
+   "h": 1154,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 10,
+   "words": 91,
+   "images": 2,
+   "icons": 1,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "Counter": 3
+   },
+   "effects": {
+    "appear": 6,
+    "text": 1,
+    "parallax": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Medium": 4,
+    "Body 16 Medium": 1,
+    "Body 14 Regular": 3
+   },
+   "shot": "sections/02-about.jpg"
+  },
+  {
+   "name": "Our Services",
+   "type": "FrameNode",
+   "y": 2268,
+   "h": 1335,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 27,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "Service Card": 6
+   },
+   "effects": {
+    "appear": 8,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1
+   },
+   "shot": "sections/03-our-services.jpg"
+  },
+  {
+   "name": "Why Choose Plumbi",
+   "type": "FrameNode",
+   "y": 3603,
+   "h": 900,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 24,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "FAQ List": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1
+   },
+   "shot": "sections/04-why-choose-plumbi.jpg"
+  },
+  {
+   "name": "Transformations",
+   "type": "FrameNode",
+   "y": 4503,
+   "h": 892,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 22,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "Comparison Card": 3
+   },
+   "effects": {
+    "appear": 5,
+    "text": 1
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1
+   },
+   "shot": "sections/05-transformations.jpg"
+  },
+  {
+   "name": "Testimonials",
+   "type": "FrameNode",
+   "y": 5395,
+   "h": 1179,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Review Ticker": 1
+   },
+   "effects": {
+    "appear": 2,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1
+   },
+   "shot": "sections/06-testimonials.jpg"
+  },
+  {
+   "name": "Pricing",
+   "type": "FrameNode",
+   "y": 6574,
+   "h": 1184,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 5,
+   "words": 23,
+   "images": 0,
+   "icons": 3,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Pricing Card": 3
+   },
+   "effects": {
+    "appear": 5,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1,
+    "Body 16 Medium": 3
+   },
+   "shot": "sections/07-pricing.jpg"
+  },
+  {
+   "name": "Faq",
+   "type": "FrameNode",
+   "y": 7758,
+   "h": 834,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 19,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Eyebrow": 1,
+    "Primary Button": 1,
+    "FAQ List": 1
+   },
+   "effects": {
+    "appear": 3,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2": 1,
+    "Body 20 Regular": 1
+   },
+   "shot": "sections/08-faq.jpg"
+  },
+  {
+   "name": "CTA",
+   "type": "FrameNode",
+   "y": 8592,
+   "h": 744,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "80px 40px 80px 40px",
+   "gap": "60px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 7,
+   "words": 33,
+   "images": 0,
+   "icons": 0,
+   "inputs": 4,
+   "grids": [
+    2
+   ],
+   "components": {
+    "Eyebrow": 1,
+    "Contact Card": 3,
+    "Submit Button": 1
+   },
+   "effects": {
+    "appear": 4,
+    "text": 2
+   },
+   "styles": {
+    "Heading 2b": 1,
+    "Body 20 Regular": 1,
+    "Body 14 Medium": 5
+   },
+   "shot": "sections/09-cta.jpg"
+  }
+ ],
+ "effects": {
+  "parallax": 5,
+  "appear": 41,
+  "text": 14,
+  "loop": 4
+ },
+ "effectSamples": {
+  "parallax": {
+   "speed": 70
+  },
+  "appear": {
+   "trigger": "onMount",
+   "threshold": 0.5,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 320,
+     "damping": 60,
+     "mass": 1,
+     "delay": "0.3s"
+    }
+   },
+   "exit": {
+    "opacity": 0,
+    "x": 0,
+    "y": 40,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 320,
+     "damping": 60,
+     "mass": 1,
+     "delay": "0.3s"
+    }
+   }
+  },
+  "text": {
+   "threshold": 0,
+   "trigger": "onMount",
+   "tokenization": "word",
+   "delay": "0.5s",
+   "replay": false,
+   "style": {
+    "opacity": 0,
+    "x": "0px",
+    "y": "10px",
+    "scale": 1,
+    "rotate": "0deg",
+    "skewX": "0deg",
+    "skewY": "0deg",
+    "blur": "10px",
+    "transition": {
+     "type": "spring",
+     "stiffness": 400,
+     "damping": 100,
+     "mass": 1,
+     "delay": "0.05s"
+    }
+   }
+  },
+  "loop": {
+   "repeatType": "mirror",
+   "repeatDelay": "0s",
+   "pauseOffscreen": true,
+   "opacity": 1,
+   "x": 0,
+   "y": 21,
+   "scale": 1,
+   "rotate": 0,
+   "rotateX": 0,
+   "rotateY": 0,
+   "skewX": 0,
+   "skewY": 0,
+   "transition": {
+    "type": "tween",
+    "ease": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "duration": "3s",
+    "delay": "0s"
+   }
+  }
+ },
+ "fontsUsed": {
+  "Inter": 2,
+  "Festive": 2
+ },
+ "radii": [
+  [
+   "10px",
+   12
+  ],
+  [
+   "0px",
+   5
+  ],
+  [
+   "6px",
+   5
+  ],
+  [
+   "301px",
+   4
+  ],
+  [
+   "24px",
+   3
+  ],
+  [
+   "20px",
+   3
+  ]
+ ],
+ "surfaces": {
+  "shadows": 8,
+  "borders": 8,
+  "blur": 5
+ },
+ "desktopFill": "token:Background",
+ "pageHeight": 9840,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/258f6674-69b1-42b7-84e3-b93365d4fd70.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/85e38997-30db-40b2-9298-d697d6aea372.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-home/hydrowell",
+ "industry": "services-home",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "screenshot_size": [
+  1200,
+  9840
+ ]
+}
