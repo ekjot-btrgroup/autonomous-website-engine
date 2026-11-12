@@ -1,0 +1,729 @@
+{
+ "title": "Aurevo (copy)",
+ "pages": [
+  "/",
+  "/about",
+  "/online-course",
+  "/live-bootcamp",
+  "/private-community",
+  "/1-1-consulting",
+  "/free-training",
+  "/404"
+ ],
+ "breakpoints": [
+  {
+   "name": "Desktop",
+   "range": "(min-width: 1200px)"
+  },
+  {
+   "name": "Tablet",
+   "range": "(min-width: 810px) and (max-width: 1199.98px)"
+  },
+  {
+   "name": "Phone",
+   "range": "(max-width: 809.98px)"
+  }
+ ],
+ "colors": [
+  {
+   "name": "Grey 50",
+   "light": "rgb(250, 250, 250)"
+  },
+  {
+   "name": "White",
+   "light": "rgb(255, 255, 255)"
+  },
+  {
+   "name": "Green",
+   "light": "rgb(206, 254, 30)"
+  },
+  {
+   "name": "Black",
+   "light": "rgb(51, 51, 51)"
+  },
+  {
+   "name": "Grey 150",
+   "light": "rgb(176, 176, 176)"
+  },
+  {
+   "name": "Grey 300",
+   "light": "rgb(117, 117, 117)"
+  },
+  {
+   "name": "Grey 100",
+   "light": "rgb(204, 204, 204)"
+  },
+  {
+   "name": "White 70%",
+   "light": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "name": "Blue",
+   "light": "rgb(55, 76, 255)"
+  },
+  {
+   "name": "Red",
+   "light": "rgb(201, 0, 0)"
+  },
+  {
+   "name": "Grey 70",
+   "light": "rgb(245, 245, 245)"
+  },
+  {
+   "name": "White 80%",
+   "light": "rgba(255, 255, 255, 0.8)"
+  },
+  {
+   "name": "Red 15%",
+   "light": "rgba(255, 34, 68, 0.15)"
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "H1",
+   "tag": "h1",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "64px",
+   "leading": "1.2em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "64px",
+    "medium": "46px",
+    "small": "34px"
+   }
+  },
+  {
+   "name": "Page H1",
+   "tag": "h1",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "100px",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "100px"
+   }
+  },
+  {
+   "name": "H2",
+   "tag": "h2",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "46px",
+   "leading": "1.3em",
+   "color": "token:edc87e10-e23b-47ae-ae78-984059778abe, rgb(51, 51, 51)",
+   "responsive": {
+    "default": "46px",
+    "medium": "38px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "H3",
+   "tag": "h3",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "32px",
+   "color": "token:edc87e10-e23b-47ae-ae78-984059778abe, rgb(51, 51, 51)",
+   "responsive": {
+    "default": "32px",
+    "medium": "26px",
+    "small": "26px"
+   }
+  },
+  {
+   "name": "Nav Text",
+   "font": "Open Sauce One",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.6em",
+   "color": "token:edc87e10-e23b-47ae-ae78-984059778abe, rgb(51, 51, 51)",
+   "responsive": {
+    "default": "18px",
+    "medium": "14px",
+    "small": "16px"
+   }
+  },
+  {
+   "name": "Logo Text",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "30px",
+   "color": "token:edc87e10-e23b-47ae-ae78-984059778abe, rgb(3, 15, 15)",
+   "responsive": {
+    "default": "30px",
+    "medium": "24px",
+    "small": "19px"
+   }
+  },
+  {
+   "name": "L",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "22px",
+   "leading": "1.4em",
+   "color": "token:edc87e10-e23b-47ae-ae78-984059778abe, rgb(51, 51, 51)",
+   "responsive": {
+    "default": "22px",
+    "medium": "20px"
+   }
+  },
+  {
+   "name": "S",
+   "font": "Open Sauce One",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "M",
+   "font": "Open Sauce One",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px"
+   }
+  },
+  {
+   "name": "M Bold",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px"
+   }
+  },
+  {
+   "name": "M Nowrap",
+   "font": "Open Sauce One",
+   "weight": 400,
+   "style": "normal",
+   "size": "18px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "18px",
+    "medium": "16px"
+   }
+  },
+  {
+   "name": "S Nowrap",
+   "font": "Open Sauce One",
+   "weight": 400,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  },
+  {
+   "name": "S Bold",
+   "font": "Open Sauce One",
+   "weight": 700,
+   "style": "normal",
+   "size": "14px",
+   "leading": "1.6em",
+   "color": "rgb(0, 0, 0)",
+   "responsive": {
+    "default": "14px"
+   }
+  }
+ ],
+ "components": [
+  "Partners Ticker",
+  "Primary Button",
+  "Feature Tag",
+  "Avatar Wrap",
+  "Secondary Button",
+  "Lead Magnet",
+  "Number Card",
+  "Social Icon Wrap",
+  "Button Circle",
+  "Service Card",
+  "Testimonial Card",
+  "Success Story Card",
+  "Achieve Card",
+  "Media Card",
+  "Bullet Point",
+  "Resource Card",
+  "FAQ List Wrap",
+  "FAQ Card",
+  "Form Wrap",
+  "Form Button",
+  "Header",
+  "Sub Nav",
+  "TrustClients Card",
+  "Free Resources Card",
+  "Success CTA Card",
+  "Free Training Card",
+  "Footer",
+  "Sub Nav Menu",
+  "Nav List",
+  "Testimonials Ticker",
+  "Fixed Section",
+  "Why Choose Me Card",
+  "Pain Point Card",
+  "Stand For Card",
+  "Hero Tag",
+  "Course Overview Wrap",
+  "Module Card",
+  "Service Pricing Card",
+  "Accordion Wrap",
+  "Avatars Wrap",
+  "Pricing Toggle Button",
+  "How it Work Card"
+ ],
+ "pageEffects": 0,
+ "chromeTop": 0,
+ "layoutTemplate": {
+  "name": "Main",
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Header Wrap",
+    "position": "fixed"
+   },
+   {
+    "type": "PlaceholderNode",
+    "name": null,
+    "position": "relative"
+   },
+   {
+    "type": "FrameNode",
+    "name": "Contact Resource",
+    "position": "relative"
+   },
+   {
+    "type": "ComponentInstanceNode",
+    "name": null,
+    "comp": "Footer",
+    "position": "relative"
+   }
+  ],
+  "fill": "token:Grey 50"
+ },
+ "sections": [
+  {
+   "name": "Hero Section",
+   "type": "FrameNode",
+   "y": 0,
+   "h": 850,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 23,
+   "images": 1,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3,
+    2
+   ],
+   "components": {
+    "Hero Tag": 1,
+    "Primary Button": 1,
+    "Partners Ticker": 1,
+    "Feature Tag": 4,
+    "TrustClients Card": 1,
+    "Free Resources Card": 1
+   },
+   "effects": {
+    "appear": 8
+   },
+   "styles": {
+    "H1": 1,
+    "M": 1,
+    "S": 1
+   },
+   "shot": "sections/01-hero-section.jpg"
+  },
+  {
+   "name": "About Section",
+   "type": "FrameNode",
+   "y": 850,
+   "h": 866,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 4,
+   "words": 53,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Blinds Reveal": 1,
+    "Social Icon Wrap": 3,
+    "Number Card": 3
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "L": 1,
+    "M": 2
+   },
+   "shot": "sections/02-about-section.jpg"
+  },
+  {
+   "name": "Services Section",
+   "type": "FrameNode",
+   "y": 1716,
+   "h": 2557,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 25,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Service Card": 4
+   },
+   "effects": {
+    "appear": 2,
+    "styleTransform": 3,
+    "sticky": 4
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/03-services-section.jpg"
+  },
+  {
+   "name": "Testimonials Section",
+   "type": "FrameNode",
+   "y": 4273,
+   "h": 584,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 20,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Testimonials Ticker": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/04-testimonials-section.jpg"
+  },
+  {
+   "name": "Success Story Section",
+   "type": "FrameNode",
+   "y": 4857,
+   "h": 2789,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 16,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Success CTA Card": 2,
+    "Success Story Card": 4
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/05-success-story-section.jpg"
+  },
+  {
+   "name": "Content Section",
+   "type": "FrameNode",
+   "y": 7646,
+   "h": 1190,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 3,
+   "words": 38,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [
+    3
+   ],
+   "components": {
+    "Media Card": 1
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1,
+    "M Nowrap": 1
+   },
+   "shot": "sections/06-content-section.jpg"
+  },
+  {
+   "name": "Free Resource Section",
+   "type": "FrameNode",
+   "y": 8836,
+   "h": 990,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 32,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Resource Card": 2
+   },
+   "effects": {
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/07-free-resource-section.jpg"
+  },
+  {
+   "name": "FAQ Section",
+   "type": "FrameNode",
+   "y": 9826,
+   "h": 920,
+   "w": 1200,
+   "layout": "stack",
+   "dir": "vertical",
+   "padding": "0px",
+   "gap": "10px",
+   "childNames": [
+    "Container"
+   ],
+   "text": 2,
+   "words": 28,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "FAQ List Wrap": 1
+   },
+   "effects": {
+    "sticky": 1,
+    "appear": 2
+   },
+   "styles": {
+    "H2": 1,
+    "M": 1
+   },
+   "shot": "sections/08-faq-section.jpg"
+  },
+  {
+   "name": "Contact Anchor",
+   "type": "FrameNode",
+   "y": 10746,
+   "h": 1,
+   "w": 1200,
+   "fill": "token:Grey 50",
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {},
+   "effects": {},
+   "styles": {}
+  },
+  {
+   "name": null,
+   "type": "ComponentInstanceNode",
+   "comp": "Smooth Scroll",
+   "y": 0,
+   "h": 24,
+   "w": 24,
+   "childNames": [],
+   "text": 0,
+   "words": 0,
+   "images": 0,
+   "icons": 0,
+   "inputs": 0,
+   "grids": [],
+   "components": {
+    "Smooth Scroll": 1
+   },
+   "effects": {},
+   "styles": {},
+   "shot": "sections/10-smooth-scroll.jpg"
+  }
+ ],
+ "effects": {
+  "appear": 22,
+  "styleTransform": 3,
+  "sticky": 6
+ },
+ "effectSamples": {
+  "appear": {
+   "trigger": "onInView",
+   "target": "rbRbUk3wd",
+   "threshold": 0,
+   "replay": false,
+   "enter": {
+    "opacity": 0,
+    "x": 0,
+    "y": 50,
+    "scale": 1,
+    "rotate": 0,
+    "rotateX": 0,
+    "rotateY": 0,
+    "skewX": 0,
+    "skewY": 0,
+    "transition": {
+     "type": "spring",
+     "stiffness": 300,
+     "damping": 60,
+     "mass": 1,
+     "delay": "0s",
+     "stagger": "0s"
+    }
+   }
+  },
+  "styleTransform": {
+   "trigger": "onScrollTarget",
+   "viewport": "middle",
+   "sections": [
+    {
+     "opacity": 1,
+     "x": "0px",
+     "y": "0px",
+     "scale": 1,
+     "rotate": "0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    },
+    {
+     "target": "wcFVbOsLT",
+     "opacity": 0,
+     "x": "0px",
+     "y": "50px",
+     "scale": 0.6,
+     "rotate": "-50deg 0deg 0deg",
+     "skewX": "0deg",
+     "skewY": "0deg"
+    }
+   ]
+  }
+ },
+ "fontsUsed": {},
+ "radii": [
+  [
+   "30px",
+   2
+  ],
+  [
+   "20px",
+   1
+  ]
+ ],
+ "surfaces": {
+  "shadows": 0,
+  "borders": 1,
+  "blur": 0
+ },
+ "desktopFill": "token:Grey 50",
+ "pageHeight": 12305,
+ "screenshots": {
+  "desktop": "https://framerusercontent.com/screenshots/on-demand/769c6dd5-172f-4914-b839-0a4775deb506.jpg",
+  "phone": "https://framerusercontent.com/screenshots/on-demand/52ae68f6-b518-4357-b220-0bc1754dbd97.jpg",
+  "desktopWidth": 1200
+ },
+ "id": "services-education/aurevo",
+ "industry": "services-education",
+ "source": "framer",
+ "captured": "2026-11-12",
+ "rule": "Reference only: learn proportion, rhythm, type, colour and motion. Never copy its text, images or code.",
+ "crop_offset": 0,
+ "crop_stretch": 1.0,
+ "screenshot_size": [
+  1200,
+  12305
+ ]
+}

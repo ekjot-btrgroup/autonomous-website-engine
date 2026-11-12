@@ -1,0 +1,19 @@
+{
+  "name": "VAYNEX",
+  "industry": "software-fintech",
+  "also": ["software-apps", "software-saas", "services-consulting"],
+  "summary": "Deep forest-green to white personal-finance app page: a gradient hero with a centred phone and floating glass widgets, bold General Sans headlines finished by an Instrument Serif italic phrase, and pale mint rounded panels holding tilted stat cards, orbit diagrams and app UI.",
+  "style": ["corporate-clean", "glassy", "minimal"],
+  "feel": { "tone": 2, "energy": 3, "luxury": 4, "density": 3, "warmth": 3, "modernity": 5 },
+  "scheme": "light",
+  "hue": "green",
+  "palette": { "bg": "#ffffff", "surface": "#eef5f1", "ink": "#0b2a22", "muted": "#5f706a", "accent": "#0e5c48", "line": "#e2ebe7" },
+  "fonts": { "display": "General Sans", "body": "Inter", "class": "sans", "pairing": "General Sans 600 with tight -0.035 to -0.045em tracking for headings, each closing on an Instrument Serif italic phrase; Inter for body and app UI; Geist Mono 12 uppercase tracked labels" },
+  "hero": "product-shot",
+  "sections": ["hero", "logos", "stats", "features", "features", "features", "features", "features", "portfolio", "about", "features", "pricing", "cta"],
+  "motion": 4,
+  "signature": ["hero background running from deep forest green through sage to white, with a thin glowing horizon arc behind the phone", "bold grotesk headline whose second line or last words switch to a serif italic", "giant 150px statement words running edge to edge above tilted, slightly rotated stat cards (one card solid green)", "orbit diagram: app icon tile in the centre, category pills on concentric dotted rings, greyed partner marks below", "pale mint rounded panels inset 12px from the page edge so the page reads as stacked trays"],
+  "imagery": "no photography; crisp app UI in phone frames and floating frosted widgets (balance, savings goal bar, weekly bars, AI insight note), small icon tiles in deep green, grey monochrome partner marks",
+  "layout_grid": "1200 canvas, 24px gutters, alternating full-width white sections and 12px-inset mint panels with 32px radii, 140px section padding, centred heads with mono eyebrow pills",
+  "quality": 4
+}
