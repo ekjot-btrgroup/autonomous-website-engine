@@ -1,0 +1,44 @@
+{
+ "n": 5,
+ "name": "Cherry on Top",
+ "concept": "The signature line made visual: a confident wine-red brand world with blush pink, a cherry motif and friendly luxury.",
+ "refs": [
+  "hospitality-hotels/luxevara",
+  "health-wellness/lustre"
+ ],
+ "style": "bold-graphic",
+ "scheme": "colour",
+ "palette": {
+  "bg": "#5e1224",
+  "surface": "#701a2e",
+  "ink": "#fbeff0",
+  "muted": "#e3bfc4",
+  "accent": "#f3b9c3",
+  "line": "#86304a"
+ },
+ "fonts": {
+  "display": "DM Serif Display",
+  "body": "DM Sans",
+  "class": "display"
+ },
+ "hero": "centered-type",
+ "sections": [
+  "hero",
+  "about",
+  "testimonials",
+  "services",
+  "pricing",
+  "process",
+  "faq",
+  "waitlist",
+  "contact"
+ ],
+ "motion": 1,
+ "signature": [
+  "'you, with the cherry on top' as the giant centred hero line with a small drawn cherry mark",
+  "cherry mark reused as list bullets and section dividers",
+  "blush cards on wine-red for each treatment category"
+ ],
+ "imagery": "bold colour-blocked still lifes in reds and blush; cherries, silk, petals; warm studio light",
+ "why": "Turns her signature line into a memorable brand that feels friendly, never stiff."
+}

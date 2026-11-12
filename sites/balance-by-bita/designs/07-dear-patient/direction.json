@@ -1,0 +1,44 @@
+{
+ "n": 7,
+ "name": "Dear Patient",
+ "concept": "A personal letter from Bita: ivory stationery, ink-blue serif, handwritten-feeling warmth and a first-person welcome.",
+ "refs": [
+  "publishing-blogs/letterhead",
+  "publishing-blogs/memoir"
+ ],
+ "style": "minimal",
+ "scheme": "light",
+ "palette": {
+  "bg": "#f8f2e6",
+  "surface": "#efe7d6",
+  "ink": "#1d2638",
+  "muted": "#535d70",
+  "accent": "#34528f",
+  "line": "#e0d8c8"
+ },
+ "fonts": {
+  "display": "Libre Caslon Display",
+  "body": "Libre Franklin",
+  "class": "serif"
+ },
+ "hero": "letter",
+ "sections": [
+  "hero",
+  "about",
+  "process",
+  "services",
+  "faq",
+  "pricing",
+  "testimonials",
+  "waitlist",
+  "contact"
+ ],
+ "motion": 1,
+ "signature": [
+  "hero written as a letter: 'Hi, I'm Bita!' salutation, short note and a signature line",
+  "stationery details: ruled margins, a postmark-style 'by appointment only' stamp",
+  "FAQ as 'notes before your visit' with clear timing rules"
+ ],
+ "imagery": "few, quiet images: paper, flowers on a desk, Bita's portrait placeholder framed like a photo clipped to the letter",
+ "why": "Leads with Bita herself, so trust starts before the first appointment."
+}
