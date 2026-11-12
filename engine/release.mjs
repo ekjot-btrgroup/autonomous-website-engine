@@ -54,7 +54,8 @@ async function release() {
     try { await withRetry(() => git('push', '--quiet', 'origin', `HEAD:${TARGET}`), 'push'); console.log(`Pushed to ${TARGET}.`); } catch (e) { console.log(`Saved locally; push failed (${e.message.split('\n')[0].slice(0, 80)}).`); }
     return;
   }
-  if (git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); console.log('Committed pending changes.'); }
+  // --committed: release only what is already committed (work still being written stays out).
+  if (!a.committed && git('status', '--porcelain')) { git('add', '-A'); git('commit', '--quiet', '-m', summary); console.log('Committed pending changes.'); }
   await withRetry(() => git('fetch', '--quiet', 'origin', TARGET), 'fetch');
 
   const commits = git('log', '--no-merges', '--format=%h\t%s', `origin/${TARGET}..HEAD`).split('\n').filter(Boolean).map((l) => l.split('\t'));
