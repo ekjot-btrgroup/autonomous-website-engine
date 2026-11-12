@@ -1,12 +1,5 @@
 [
  {
-  "file": "hero.jpg",
-  "source": "https://images.unsplash.com/photo-1776850476481-2bccba2e35c7",
-  "credit": "Unsplash",
-  "license": "Unsplash License",
-  "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05); hero cropped to 2:1 to drop wall posters"
- },
- {
   "file": "svc-cut.jpg",
   "source": "https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5",
   "credit": "Unsplash",
@@ -16,13 +9,6 @@
  {
   "file": "svc-beard.jpg",
   "source": "https://images.unsplash.com/photo-1599351430140-c70f0250bd70",
-  "credit": "Unsplash",
-  "license": "Unsplash License",
-  "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05)"
- },
- {
-  "file": "svc-shave.jpg",
-  "source": "https://images.unsplash.com/photo-1524230616393-d6229fcd2eff",
   "credit": "Unsplash",
   "license": "Unsplash License",
   "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05)"
@@ -49,8 +35,22 @@
   "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05)"
  },
  {
+  "file": "hero.jpg",
+  "source": "https://images.unsplash.com/photo-1599011176306-4a96f1516d4d",
+  "credit": "Unsplash",
+  "license": "Unsplash License",
+  "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05); cropped near-square around the beard trim"
+ },
+ {
+  "file": "svc-shave.jpg",
+  "source": "https://images.unsplash.com/photo-1708936944985-16f928c5e650",
+  "credit": "Unsplash",
+  "license": "Unsplash License",
+  "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05); cropped 4:3 from the right to drop shirt lettering"
+ },
+ {
   "file": "work-4.jpg",
-  "source": "https://images.unsplash.com/photo-1792636893217-4a317c0e4661",
+  "source": "https://images.unsplash.com/photo-1669568921948-f0346e0ee73e",
   "credit": "Unsplash",
   "license": "Unsplash License",
   "note": "graded as one set: 50% grey-world balance, light warm tint, saturation 92%; CSS adds saturate(.85) contrast(1.05)"

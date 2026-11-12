@@ -1,0 +1,19 @@
+{
+  "name": "Aurevo",
+  "industry": "services-education",
+  "also": ["services-consulting", "portfolio-resume", "ecommerce-digital"],
+  "summary": "Personal-brand coach site on near-white with charcoal and an electric lime accent, a three-column photo hero and alternating lime and charcoal framed cards for offers and case studies.",
+  "style": ["bold-graphic", "corporate-clean", "playful"],
+  "feel": { "tone": 3, "energy": 4, "luxury": 2, "density": 4, "warmth": 3, "modernity": 4 },
+  "scheme": "light",
+  "hue": "yellow",
+  "palette": { "bg": "#fafafa", "surface": "#ffffff", "ink": "#333333", "muted": "#757575", "accent": "#cefe1e", "line": "#cccccc" },
+  "fonts": { "display": "Open Sauce One", "body": "Open Sauce One", "class": "sans", "pairing": "single friendly grotesk family: 700 for all headings, 400 at 18px for body, no caps labels" },
+  "hero": "asymmetric",
+  "sections": ["hero", "logos", "about", "stats", "services", "testimonials", "case-studies", "content", "lead-magnet", "faq", "contact"],
+  "motion": 3,
+  "signature": ["three-column hero: headline left, tall rounded portrait centre with floating topic chips, social proof and a sage free-resources card right", "offer cards framed by a thick lime or charcoal border with a white inner panel and photo, stacking sticky as you scroll", "case study cards alternating lime and charcoal with oversized blue or lime result figures beside a white quote panel", "charcoal pill buttons with a white circular arrow cap"],
+  "imagery": "bright lifestyle photography of creators, laptops, video calls and small workshops; round avatar portraits",
+  "layout_grid": "1100px content, 3-column hero, 2-column card interiors (copy panel plus photo), sticky left heading beside a scrolling card column, 30px card radius",
+  "quality": 4
+}
