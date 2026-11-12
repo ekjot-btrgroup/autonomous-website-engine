@@ -3,7 +3,7 @@
 Concept: a modern beauty studio. Blush and clay tones, one rounded sans (Outfit), treatments presented like a short product menu.
 
 ## Section plan (direction order)
-1. Hero: centred two-line h1 ("Pick from a short menu. / Leave looking like you."), consultation CTA, credential line; a "shelf" of three product-style treatment cards (brand chips, areas, price basis) around one tall serum photo, resting on a hairline.
+1. Hero: centred two-line h1 ("Pick from a short menu. / Keep your own face."), consultation CTA, credential line; a "shelf" of three product-style treatment cards (brand chips, areas, price basis) around one tall serum photo, resting on a hairline.
 2. Services ("Browse by goal"): one ruled card, three rows by goal (lines, volume, skin over time) with products/areas and price basis.
 3. Process ("It starts with a talk"): bento of 3 consultation steps, Bita's signature-line quote tile (ink), serum-pools photo tile, Chicago waitlist teaser tile (berry).
 4. Pricing: intro + "what changes your total" left, label-style price sheet table right (all amounts placeholders).
@@ -16,7 +16,7 @@ Concept: a modern beauty studio. Blush and clay tones, one rounded sans (Outfit)
 ## Signature moments
 - Product-style treatment cards with brand names (Xeomin, Dysport, Daxxify, Sculptra, hyperdilute Radiesse, PRF) in the hero shelf.
 - Bento mixing the consultation steps, Bita's "you, with the cherry on top" quote and the Chicago waitlist card.
-- Two-line centred headlines, second line in clay (#94503f).
+- Two-line centred headlines, second line in clay (#823f30).
 
 ## Motion
 None (brief: no animations). Only hover colour changes; disabled under reduced motion. "Larger text" toggle echoes the current site's low-vision menu.

@@ -86,10 +86,11 @@ em{font-style:italic}
 .welcome dt{font-size:var(--fs-label);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .welcome dd{margin:0 0 var(--s2);padding-bottom:var(--s3);border-bottom:1px solid rgba(245,236,228,.16)}
 .welcome dd:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
-.mark{margin-top:var(--s8);display:grid;grid-template-columns:1fr auto;align-items:end;border-bottom:1px solid var(--line);padding-bottom:var(--s5)}
+.mark{margin-top:var(--s8);display:grid;grid-template-columns:auto 1fr;justify-items:start;align-items:end;column-gap:var(--s4);border-bottom:1px solid var(--line);padding-bottom:var(--s5)}
 .mark-word{font-family:var(--display);font-size:var(--fs-mark);line-height:.78;letter-spacing:-.035em;font-weight:400;color:var(--ink);font-variation-settings:"opsz" 96}
-.mark-by{font-family:var(--display);font-style:italic;font-size:var(--fs-h);line-height:1;color:var(--accent);display:flex;align-items:center;gap:var(--s4);padding-bottom:var(--s2)}
+.mark-by{font-family:var(--display);font-style:italic;font-size:var(--fs-h);line-height:1;color:var(--accent);display:flex;align-items:center;gap:var(--s4);padding-bottom:var(--s2);white-space:nowrap}
 .mark-by::before{content:"";width:64px;height:1px;background:var(--accent)}
+.mark-by{justify-self:end}
 
 /* About */
 .about-grid{display:grid;grid-template-columns:5fr 6fr;gap:var(--s9);align-items:start}
@@ -147,7 +148,7 @@ em{font-style:italic}
 .line .name{flex:0 1 auto}
 .line .name small{display:block;font-size:var(--fs-label);color:var(--card-muted);letter-spacing:.02em}
 .line .dots{flex:1 1 auto;border-bottom:1px dotted #b9a39b;transform:translateY(-5px);min-width:24px}
-.line .price{flex:0 0 auto;font-variant-numeric:tabular-nums;font-style:italic;color:#8a4f4d;text-align:right}
+.line .price{flex:0 0 auto;white-space:nowrap;font-variant-numeric:tabular-nums;font-style:italic;color:#8a4f4d;text-align:right}
 .line .unit{font-size:var(--fs-label);letter-spacing:.08em;text-transform:uppercase;color:var(--card-muted);font-style:normal;margin-left:var(--s1)}
 .card-foot{margin-top:var(--s6);font-size:var(--fs-label);line-height:1.6;color:var(--card-muted);text-align:center;max-width:52ch;margin-left:auto;margin-right:auto}
 
@@ -247,17 +248,21 @@ details > div{padding:0 0 var(--s5);max-width:62ch;color:var(--muted)}
   .hero::before{background:linear-gradient(180deg, rgba(43,26,32,.8) 0%, rgba(43,26,32,.7) 45%, rgba(43,26,32,.82) 75%, var(--bg) 100%)}
   .hero-ctas .btn{width:100%}
   .mark{grid-template-columns:1fr;margin-top:var(--s7)}
-  .mark-word{font-size:clamp(5.5rem, 28vw, 8rem)}
+  .mark-word{font-size:clamp(4.5rem, 24vw, 7.5rem)}
   .mark-by{justify-self:end;margin-top:var(--s3)}
   .about-grid{grid-template-columns:1fr}
-  .portrait{max-width:340px;margin:0 auto var(--s7)}
-  .portrait-inset{right:calc(-1*var(--s3));bottom:calc(-1*var(--s6))}
+  .portrait{max-width:none;margin:0 var(--s5) var(--s8) 0}
+  .arch-inner{justify-content:flex-start;padding-top:28%}
+  .portrait-inset{width:38%;right:calc(-1*var(--s5));bottom:calc(-1*var(--s6))}
   .creds li{grid-template-columns:1fr;gap:var(--s1)}
   .menu-row{grid-template-columns:1fr;gap:var(--s4);padding:var(--s6) 0}
   .menu-row .areas-col{grid-column:auto}
   .steps{grid-template-columns:1fr;gap:var(--s6)}
   .card{padding:var(--s7) var(--s5)}
-  .line{flex-wrap:wrap}
+  .line{gap:var(--s2)}
+  .line .price.wrap{white-space:normal;flex:1 1 100%;text-align:left}
+  .line:has(.wrap){flex-wrap:wrap}
+  .line .dots{min-width:12px}
   .quotes{grid-template-columns:1fr}
   .concierge{grid-template-columns:1fr}
   .concierge img{aspect-ratio:16/10}
@@ -457,7 +462,7 @@ details > div{padding:0 0 var(--s5);max-width:62ch;color:var(--muted)}
 
           <div class="card-group">
             <h4>First visit</h4>
-            <div class="line"><span class="name">New patient consultation</span><span class="dots"></span><span class="price">[Fee or complimentary, to confirm]</span></div>
+            <div class="line"><span class="name">New patient consultation</span><span class="dots"></span><span class="price wrap">[Fee or complimentary, to confirm]</span></div>
           </div>
 
           <div class="card-group">
