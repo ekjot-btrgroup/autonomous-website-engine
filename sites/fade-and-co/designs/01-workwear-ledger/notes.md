@@ -3,27 +3,30 @@
 Concept: an organised trade business. Near-white bands, one tight grotesk (Inter Tight for display, Inter for
 text), ink for everything, and safety yellow only on the things that book a chair.
 
-## Section plan
-1. Header: wordmark with a small "fade" mark (three bars getting shorter), live open/closed status from the
-   brief's hours, links, yellow Book a chair. Phone: real menu button.
-2. Hero (signature 1): inset rounded photo card (8px from the edges, 24px radius), headline and lead on a
-   left scrim. The booking card floats over the bottom-right edge of the photo and half out of it: pick a service
-   as ledger rows with prices, pick a day (Tue to Sat), and the yellow button shows the price live. It carries the
-   choice down to the booking form.
-3. Shop board: four facts in a hairline row (hours, walk-ins, prices, address). No invented stats.
-4. Services (grey band): asymmetric grid, a large Cut card beside two stacked horizontal cards (beard trim,
-   hot-towel shave). Price and a "Book this" link under a hairline on each.
-5. Price list (signature 2): the ledger. Numbered rows, hairlines, large tabular numerals, Book links that preselect
-   the service. Cut + beard shows the saving worked out from the brief's prices (£24 + £12 = £36, so £4 less).
-6. The work: 4-photo mosaic with caption chips.
-7. Barbers: three portrait cards with clearly marked name and role placeholders.
-8. Booking (the one dark card): hours ledger left, white form panel right (service, day, time of day, name, phone).
-9. FAQ: heading and a walk-in card left, accordion right (native details/summary). Answers only from brief facts.
-10. Visit: photo and address block with directions link. Footer with hours, contact, legal and photo credit line.
-Phone: sticky yellow Book a chair bar once the hero has scrolled away.
+## Section plan (fix round 1, after 01-critique.md)
+1. Header: wordmark with a small "fade" mark, live open/closed status from the brief's hours, links, yellow
+   Book a chair. Phone: real menu button.
+2. Hero (signature 1), rebuilt away from the reference: label + h1 "Booked, seated, sorted." (2 lines, 12ch) on the
+   paper, lead and CTAs in a right column aligned to the h1 baseline. Below, an inset 16:9 shop photo at 12px radius
+   on the 1240px grid. The booking card is a "work ticket" docked to the photo's bottom-right corner: square top-left
+   corner, hairline header "Ticket · Book a chair" with today's date in tabular numerals, ledger rows with prices,
+   day chips, live price on the yellow button. No glass pill. Phone: 4:3 photo, ticket aligned to the same gutter.
+3. Shop board: hours, walk-ins, "Three services / Cut, beard, hot towel", address (no prices). 2x2 on phone.
+4. Services: tall Cut card (8 cols) beside two stacked 4:3 cards (4 cols), bottoms aligned. Cards 8px padding,
+   8px image radius inside 16px cards, ledger numbers 01-03, "See price" link to the ledger. Phone: snap row.
+5. Price list (signature 2): the ledger, the only full price list.
+6. The work: one 4:3 tile beside two stacked 4:3 tiles (column ratio worked out so all three are 4:3).
+7. Barbers: "Chair 01-03" cards with dashed portrait frames for the client's own photos (no stock faces).
+8. Booking (dark card): hours as 9am–7pm rows (compact on phone), white form panel.
+9. FAQ "Before you sit down.": prices now point to the ledger instead of repeating numbers.
+10. Visit "Find the shop.": a white address plate (No. 12 / King Street / Leeds) beside the details list.
+
+Photos: one family (warm wood, white or cream walls, daylight), all graded as one set in the files
+(saturation 84%, 6% warm paper colourise) plus `filter:saturate(.9) contrast(1.04)` in CSS. Seasonal, branded and
+logo-clothing photos removed; nothing shared with designs 02 or 04.
 
 ## Signature moments
-- Floating hero booking card with live price, synced to the booking form.
+- Hero work ticket docked to the photo corner, live price, synced to the booking form.
 - The price ledger: tabular numerals on hairlines.
 - Yellow appears only on booking actions, so the eye always finds the next step.
 
@@ -34,6 +37,6 @@ cards and buttons. Reduced motion: everything static and visible.
 ## Placeholders the client must supply
 - Hot-towel shave price.
 - Phone number and email.
-- Barber names, roles and their own portraits (current portraits are Unsplash stand-ins).
+- Barber names, roles and portraits (dashed frames mark where they go).
 - Shop photography (all photos are Unsplash stand-ins until Fade & Co's own shots arrive).
 - Booking system or inbox the form should send to (the form shows a confirmation note only).

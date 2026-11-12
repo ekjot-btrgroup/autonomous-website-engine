@@ -170,9 +170,9 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   .board li:nth-child(n+3){ border-top:1px solid var(--line); }
 }
 @media (max-width:519px){
-  .board{ grid-template-columns:1fr; }
-  .board li, .board li+li{ padding:var(--s4) 0; border-left:0; }
-  .board li+li{ border-top:1px solid var(--line); }
+  .board li{ padding:var(--s4) var(--s3) var(--s4) 0; flex-direction:column; gap:var(--s2); }
+  .board li:nth-child(2n){ padding-left:var(--s4); }
+  .board svg{ margin-top:0; }
 }
 
 /* section heads */
@@ -258,7 +258,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .team{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:var(--s5); }
 .person__photo{ position:relative; border-radius:var(--r-md); aspect-ratio:4/3; background:var(--surface); display:grid; place-items:center; align-content:center; gap:var(--s3); color:var(--muted); text-align:center; }
 .person__photo::before{ content:""; position:absolute; inset:var(--s3); border:1px dashed #b9b7af; border-radius:var(--r-sm); pointer-events:none; }
-.person__photo svg{ width:56px; height:56px; color:#8d8f91; }
+.person__photo svg{ width:72px; height:72px; color:#8d8f91; }
 .person__photo span{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; text-transform:uppercase; }
 .person__info{ display:grid; grid-template-columns:auto 1fr; gap:var(--s4); align-items:baseline; padding:var(--s4) 0 0; border-top:1px solid var(--line); margin-top:var(--s4); }
 .person__no{ font-size:var(--fs-label); font-weight:500; letter-spacing:.08em; color:var(--muted); font-variant-numeric:tabular-nums; }
@@ -284,6 +284,8 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .hours li span:first-child{ color:var(--on-ink-muted); }
 .hours li.is-today span{ color:var(--on-ink); }
 .hours li.is-today span:first-child::after{ content:" · today"; color:var(--accent); }
+.hours .hours__sum{ display:none; }
+@media (max-width:599px){ .hours .hours__sum{ display:flex; } .hours li[data-day="2"], .hours li[data-day="3"], .hours li[data-day="4"], .hours li[data-day="5"], .hours li[data-day="6"]{ display:none; } .hours{ margin-top:var(--s6); } }
 .book__addr{ margin-top:var(--s5); font-size:var(--fs-small); color:var(--on-ink-muted); }
 .book__addr a{ color:var(--on-ink); }
 .form{ background:var(--paper); color:var(--ink); border-radius:var(--r-lg); padding:var(--s6); }
@@ -326,6 +328,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .qa details[open] .pm::after{ transform:translate(-50%,-50%) rotate(0deg); background:var(--paper); }
 .qa .ans{ padding:0 var(--s8) var(--s5) 0; color:var(--muted); max-width:62ch; }
 @media (max-width:899px){ .faq{ grid-template-columns:1fr; } .qa .ans{ padding-right:0; } }
+@media (max-width:599px){ .walkin{ display:none; } }
 
 /* visit: address plate + details */
 .visit{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:var(--s7) var(--s9); align-items:stretch; }
@@ -334,6 +337,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
 .plate__no{ font-family:var(--display); font-size:var(--fs-display); font-weight:500; letter-spacing:-.03em; line-height:1; }
 .plate__no small{ font-size:var(--fs-h3); letter-spacing:-.01em; color:var(--muted); margin-right:var(--s2); vertical-align:top; position:relative; top:.4em; }
 .plate__st{ font-family:var(--display); font-size:var(--fs-h2); font-weight:500; letter-spacing:-.03em; line-height:1.08; margin-top:var(--s2); }
+.plate__foot{ display:flex; justify-content:space-between; gap:var(--s3); flex-wrap:wrap; border-top:1px solid var(--line); padding-top:var(--s3); font-size:var(--fs-small); color:var(--muted); }
 .visit__info{ display:flex; flex-direction:column; justify-content:space-between; gap:var(--s6); }
 .visit__info .label{ margin-bottom:var(--s4); }
 .visit__info .lead{ margin-top:var(--s4); }
@@ -501,7 +505,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
       <div class="svc-grid">
         <article class="card card--big" data-reveal>
           <div class="card__media">
-            <img src="img/svc-cut.jpg" width="1200" height="900" loading="lazy" alt="Barber lifting hair with a comb and trimming over it with scissors">
+            <img src="img/svc-cut.jpg" width="1000" height="1100" loading="lazy" alt="Rows of clippers, trimmers and guide combs laid out on a wooden counter">
           </div>
           <div class="card__body">
             <div>
@@ -516,7 +520,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
         <div class="svc-stack">
           <article class="card card--sm" data-reveal style="--i:1">
             <div class="card__media">
-              <img src="img/svc-beard.jpg" width="1200" height="900" loading="lazy" alt="Rows of clippers, trimmers and guide combs laid out on a wooden counter">
+              <img src="img/svc-beard.jpg" width="1200" height="900" loading="lazy" alt="Barber lifting hair with a comb and trimming over it with scissors, close to the customer’s beard line">
             </div>
             <div class="card__body">
               <p class="card__no num">02</p>
@@ -596,7 +600,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
       </div>
       <div class="mosaic">
         <figure class="shot shot--a" data-reveal><img src="img/work-1.jpg" width="1600" height="1200" loading="lazy" alt="Barber holding a comb steady while taking a skin fade up the back of a customer’s head"><figcaption>Skin fade</figcaption></figure>
-        <figure class="shot shot--b" data-reveal style="--i:1"><img src="img/work-2.jpg" width="1000" height="750" loading="lazy" alt="Scissors and a comb tidying a short back and sides"><figcaption>Scissor over comb</figcaption></figure>
+        <figure class="shot shot--b" data-reveal style="--i:1"><img src="img/work-2.jpg" width="1000" height="750" loading="lazy" alt="Scissors and a comb tidying a short back and sides"><figcaption>Scissor work</figcaption></figure>
         <figure class="shot shot--c" data-reveal style="--i:2"><img src="img/work-3.jpg" width="1000" height="750" loading="lazy" alt="Barber in black gloves sectioning hair with a white comb before cutting with shears"><figcaption>Detail work</figcaption></figure>
       </div>
     </div>
@@ -638,6 +642,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
           <h2 id="book-title">Hold a chair for later.</h2>
           <p class="book__lead">Pick a service and a day and we’ll hold a chair for you. Before noon, you can skip all this and walk in.</p>
           <ul class="hours" aria-label="Opening hours">
+            <li class="hours__sum"><span>Tuesday to Saturday</span><span class="num">9am–7pm</span></li>
             <li data-day="2"><span>Tuesday</span><span class="num">9am–7pm</span></li>
             <li data-day="3"><span>Wednesday</span><span class="num">9am–7pm</span></li>
             <li data-day="4"><span>Thursday</span><span class="num">9am–7pm</span></li>
@@ -745,12 +750,13 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
           <p class="plate__no num"><small>No.</small>12</p>
           <p class="plate__st">King Street<br>Leeds</p>
         </div>
+        <div class="plate__foot"><span>Walk-ins before noon</span><span>Sun &amp; Mon closed</span></div>
       </div>
       <div class="visit__info" data-reveal style="--i:1">
         <div>
           <p class="label">Visit</p>
-          <h2 id="visit-title">Drop in before noon.</h2>
-          <p class="lead">No booking needed till 12. After that, hold a chair and come straight in.</p>
+          <h2 id="visit-title">Find the shop.</h2>
+          <p class="lead">Number 12, King Street, Leeds. Walk in before noon, or hold a chair for later in the day.</p>
         </div>
         <dl class="dl">
           <div><dt>Address</dt><dd>12 King Street, Leeds</dd></div>
@@ -824,7 +830,7 @@ h3{ font-size:var(--fs-h3); line-height:1.25; letter-spacing:-.015em; }
   var now=new Date(), day=now.getDay(), h=now.getHours()+now.getMinutes()/60, openDay=day>=2&&day<=6;
   var txt = openDay && h>=9 && h<19 ? (h<12 ? 'Open now · walk-ins till 12' : 'Open today until 7pm') : (openDay && h<9 ? 'Opens today at 9am' : 'Closed now · back '+(day===6||day===0||day===1?'Tuesday':'tomorrow')+' at 9');
   d.querySelectorAll('[data-status]').forEach(function(s){ s.querySelector('span').textContent=txt; s.classList.toggle('is-closed', !(openDay&&h>=9&&h<19)); });
-  d.querySelectorAll('.hours li').forEach(function(li){ if(li.dataset.day.split(',').indexOf(String(day))>-1) li.classList.add('is-today'); });
+  d.querySelectorAll('.hours li[data-day]').forEach(function(li){ if(li.dataset.day.split(',').indexOf(String(day))>-1) li.classList.add('is-today'); });
 
   var td=d.querySelector('[data-ticket-date]'); if(td){ try{ td.textContent=now.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}); }catch(e){} }
 
