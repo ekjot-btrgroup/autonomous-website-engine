@@ -33,7 +33,7 @@ All 10 still fit the industry recipe and the brief.
 - The user's picks and notes ("too corporate", "love this layout") go to memory and steer the next briefs.
 
 ## Waiting on the user
-1. Framer templates per industry as Framer projects (user's choice, 2026-11-12). The connector reads only the project open in Framer with the MCP plugin running, so import is one project at a time: user opens it, says "next", Claude reads it. Also needs each project's published link for screenshots.
+1. Framer templates per industry as Framer projects (user's choice, 2026-11-12). The user will show how to read all projects at once through the Framer MCP (pending; do not assume one-at-a-time). Also needs each project's published link for screenshots.
 2. Licence status (purchased / free): recorded per reference with `--licence`.
 3. Decided: homepage only.
 4. Optional: Unsplash API key for better photos.
