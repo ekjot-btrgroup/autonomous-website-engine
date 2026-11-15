@@ -38,3 +38,9 @@ that sits in the hero like a calm appointment slip. Animations: none (only ~175m
 - FAQ: Accordion (details/summary) in ruled rows, icon rotates at --duration-fast.
 - Waitlist: inverted Card, StatusDot (--color-success), TextInput/Select (--radius-element, --size-tap), Button.
 - Contact: description List (ruled rows), Buttons; footer ToggleButton group (aria-pressed) for text size.
+
+## Fix round (polish)
+- Treatments: three borderless Astryx List columns with a 2px emphasised top rule; unit labels removed (units live only in Pricing).
+- Type scale cut to 6 sizes (base, lg, xl, 2xl, display-2, display-1); quote line-heights via --line-height-quote.
+- Waitlist: image fills the panel height (no dead space), privacy line under the button, styled select.
+- Testimonials header centred; hero photo warmed to match the set.
