@@ -1,0 +1,227 @@
+[
+ {
+  "n": 1,
+  "name": "Cocoa Consult",
+  "astryx_theme": "Chocolate (light)",
+  "concept": "A warm consultation room on paper: Astryx Chocolate tokens, soft cream surfaces, a booking card that sits in the hero like a calm appointment slip.",
+  "refs": [
+   "health-wellness/stillhour",
+   "health-wellness/wellnesse"
+  ],
+  "style": "warm editorial, soft cards, rounded containers (radius-container 12px, radius-page 24px)",
+  "scheme": "light",
+  "palette": {
+   "bg": "#FFFCF7",
+   "surface": "#EDE4D4",
+   "ink": "#4a3520",
+   "muted": "#6e4f33",
+   "accent": "#8C5927",
+   "line": "#C4AC95"
+  },
+  "fonts": {
+   "display": "Fraunces",
+   "body": "Albert Sans",
+   "class": "serif"
+  },
+  "hero": "split-image-right",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "process",
+   "pricing",
+   "testimonials",
+   "faq",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "Hero consultation card (Astryx Card on --color-background-card) with hours, phone and the one CTA",
+   "Treatments as three grouped Astryx List blocks with ruled rows, not repeated cards",
+   "Founder note set in Fraunces italic with a portrait placeholder frame"
+  ],
+  "imagery": "warm natural-light still life: linen, ceramics, soft botanicals in cream and cocoa tones; no faces",
+  "why": "Astryx Chocolate is already the brand's plum-brown and cream: warm, trusted, never clinical."
+ },
+ {
+  "n": 2,
+  "name": "Slate Ledger",
+  "astryx_theme": "Stone",
+  "concept": "Precise and transparent: Astryx Stone slate neutrals, a numbered index of treatments and a price ledger that reads like a clear medical menu.",
+  "refs": [
+   "health-medical/curevanta",
+   "services-consulting/archio"
+  ],
+  "style": "structured grid, thin rules, numbered indexes, small radii (radius-element 8px); dark slate (#25252a) hero band and footer, light body",
+  "scheme": "mixed",
+  "palette": {
+   "bg": "#f0f0f7",
+   "surface": "#ffffff",
+   "ink": "#25252a",
+   "muted": "#5f5f64",
+   "accent": "#6d3550",
+   "line": "#e2e2e8"
+  },
+  "fonts": {
+   "display": "Montserrat",
+   "body": "Figtree",
+   "class": "sans"
+  },
+  "hero": "asymmetric",
+  "sections": [
+   "hero",
+   "services",
+   "pricing",
+   "process",
+   "about",
+   "faq",
+   "testimonials",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "Hero: oversized Montserrat statement left, numbered treatment index 01-03 right",
+   "Pricing as an Astryx Table with unit / syringe / vial / session columns and clear placeholders",
+   "StatusDot row: Sandy Springs open by appointment, Chicago waitlist open"
+  ],
+  "imagery": "cool, precise still life: glass, stone, clean light on neutral backgrounds",
+  "why": "For careful, informed patients: every option, unit and step laid out plainly before they book."
+ },
+ {
+  "n": 3,
+  "name": "After Hours",
+  "astryx_theme": "Chocolate (dark mode)",
+  "concept": "Astryx Chocolate in dark mode: deep plum-brown like the current hero, gold-caramel accent, a quiet luxury evening mood.",
+  "refs": [
+   "health-therapy/latos",
+   "health-wellness/stillhour"
+  ],
+  "style": "dark, cinematic, generous space, hairline gold rules",
+  "scheme": "dark",
+  "palette": {
+   "bg": "#1a1214",
+   "surface": "#261b1e",
+   "ink": "#EDE4D4",
+   "muted": "#c4b2a5",
+   "accent": "#d4a06a",
+   "line": "#3a2a2e"
+  },
+  "fonts": {
+   "display": "Crimson Text",
+   "body": "Poppins",
+   "class": "serif"
+  },
+  "hero": "full-bleed-image",
+  "sections": [
+   "hero",
+   "about",
+   "testimonials",
+   "services",
+   "process",
+   "pricing",
+   "faq",
+   "waitlist",
+   "contact"
+  ],
+  "motion": 1,
+  "signature": [
+   "Full-bleed dark botanical hero with the promise set large in Crimson Text",
+   "'You, with the cherry on top' as a centred pull line between sections",
+   "Accordion FAQ (Astryx Collapsible) with the only motion: a 175ms open state"
+  ],
+  "imagery": "low-key dark florals (lilies, hydrangea) on deep backgrounds, warm side light",
+  "why": "Keeps the brand's own plum-brown night mood, now on a consistent system."
+ },
+ {
+  "n": 4,
+  "name": "Garden Script",
+  "astryx_theme": "Matcha",
+  "concept": "Astryx Matcha's soft sage and rounded shapes with a handwritten script heading that echoes 'by Bita': fresh, natural, friendly.",
+  "refs": [
+   "services-education/aurevo",
+   "health-wellness/wellnesse"
+  ],
+  "style": "soft, rounded (radius-page 42px arches), airy, friendly",
+  "scheme": "light",
+  "palette": {
+   "bg": "#f0f0e0",
+   "surface": "#e7ead4",
+   "ink": "#313914",
+   "muted": "#4c5924",
+   "accent": "#4c5924",
+   "line": "#dce3ce"
+  },
+  "fonts": {
+   "display": "Playwrite US Trad",
+   "body": "DM Sans",
+   "class": "display"
+  },
+  "hero": "centered-type",
+  "sections": [
+   "hero",
+   "about",
+   "process",
+   "services",
+   "pricing",
+   "testimonials",
+   "faq",
+   "contact",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "Centred script headline over a large rounded arch photo",
+   "Process as 4 rounded steps on sage surfaces",
+   "Matcha green accent for the CTA and key links; a single soft rose (#f3d9d3) surface for the waitlist band"
+  ],
+  "imagery": "fresh green botanicals, leaves and soft daylight; natural and alive",
+  "why": "Says 'natural results' visually: fresh, friendly and personal for newcomers to injectables."
+ },
+ {
+  "n": 5,
+  "name": "White Gallery",
+  "astryx_theme": "Neutral",
+  "concept": "Astryx Neutral at its most minimal: white space, one typeface, big images and quiet black type, like a modern gallery.",
+  "refs": [
+   "agency-design/pane",
+   "services-consulting/tandem-co-agency"
+  ],
+  "style": "minimal, monochrome, large imagery, tight sans type",
+  "scheme": "light",
+  "palette": {
+   "bg": "#ffffff",
+   "surface": "#f1f1f1",
+   "ink": "#111111",
+   "muted": "#474747",
+   "accent": "#1b1b1b",
+   "line": "#e2e2e2"
+  },
+  "fonts": {
+   "display": "Figtree",
+   "body": "Figtree",
+   "class": "sans"
+  },
+  "hero": "gallery-collage",
+  "sections": [
+   "hero",
+   "about",
+   "services",
+   "pricing",
+   "process",
+   "faq",
+   "testimonials",
+   "contact",
+   "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+   "Hero collage of three framed images with a short black headline",
+   "Treatments in a three-column gallery with captions, then a ruled price list",
+   "Monochrome footer with hours as an Astryx MetadataList"
+  ],
+  "imagery": "sculptural, gallery-like still life: white flowers, plaster, soft shadows",
+  "why": "Lets the work and the consultation speak: modern, quiet confidence for a boutique practice."
+ }
+]

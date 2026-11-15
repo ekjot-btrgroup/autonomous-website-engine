@@ -1,0 +1,83 @@
+[
+  {
+    "id": "health-wellness/stillhour",
+    "score": 71,
+    "why": [
+      "suits this industry",
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "health-wellness/wellnesse",
+    "score": 67,
+    "why": [
+      "suits this industry",
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "health-medical/curevanta",
+    "score": 66,
+    "why": [
+      "same industry",
+      "matching feel"
+    ]
+  },
+  {
+    "id": "services-consulting/tandem-co-agency",
+    "score": 52,
+    "why": [
+      "related industry",
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "services-consulting/archio",
+    "score": 51,
+    "why": [
+      "related industry",
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "health-therapy/latos",
+    "score": 54,
+    "why": [
+      "related industry",
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "software-apps/habitline",
+    "score": 32,
+    "why": [
+      "matching feel"
+    ]
+  },
+  {
+    "id": "agency-design/pane",
+    "score": 40,
+    "why": [
+      "matching feel",
+      "style words"
+    ]
+  },
+  {
+    "id": "services-education/aurevo",
+    "score": 21,
+    "why": []
+  },
+  {
+    "id": "hospitality-hotels/noire",
+    "score": 40,
+    "why": [
+      "matching feel",
+      "style words"
+    ]
+  }
+]
