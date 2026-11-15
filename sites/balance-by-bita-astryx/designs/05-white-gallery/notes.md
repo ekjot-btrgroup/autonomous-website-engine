@@ -46,3 +46,10 @@ Footer · monochrome (inverted) with hours as a MetadataList, legal line.
 - Footer: background-inverted, MetadataList hours, StatusDot.
 - Focus: :focus-visible outline uses --focus-outline-width/style/color/offset (inverted colour in footer).
 - Hover styles only inside @media (hover:hover).
+
+## Fix round 1 (critique 05)
+- One image look: every photo is now warm-white plaster, ceramic or white flowers in soft light, unified by the `--image-tone` token filter. Replaced the faceted bust (now a closed-eye cast face), both calla lilies, the tulips on orange wood, the dark ceramics and the eucalyptus vase.
+- Warmer Neutral tokens: off-white body #fdfcfa, muted/surface #f4f2ee, border #e6e2db, ink and footer #1c1a18.
+- Collage: frame III bottom-aligned on desktop; on phone frames II and III are an equal 4:5 two-up.
+- Portrait placeholder is typographic and full width on phone; buttons 16px/48px; captions 13px; select matches inputs.
+- Visit keeps status, address and CTAs only (full contact list lives in the footer). Price wording: consultation fee or complimentary, Radiesse unit to be confirmed. Lead testimonial placeholder at 3xl, primary colour.

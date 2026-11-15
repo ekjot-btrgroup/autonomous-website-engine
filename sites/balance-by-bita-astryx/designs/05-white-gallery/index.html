@@ -12,24 +12,26 @@
 /* ===== Astryx token layer · theme: Neutral (White Gallery) ===== */
 :root{
   /* colour */
-  --color-background-body:#ffffff;
-  --color-background-surface:#ffffff;
+  --color-background-body:#fdfcfa;
+  --color-background-surface:#f4f2ee;
   --color-background-card:#ffffff;
-  --color-background-muted:#f1f1f1;
-  --color-background-inverted:#111111;
-  --color-text-primary:#111111;
-  --color-text-secondary:#474747;
-  --color-text-accent:#1b1b1b;
-  --color-text-inverted:#ffffff;
-  --color-text-inverted-secondary:#c4c4c4;
-  --color-accent:#1b1b1b;
-  --color-accent-muted:#e2e2e2;
-  --color-on-accent:#ffffff;
-  --color-border:#e2e2e2;
-  --color-border-emphasized:#111111;
-  --color-border-inverted:#333333;
+  --color-background-muted:#f4f2ee;
+  --color-background-inverted:#1c1a18;
+  --color-text-primary:#1c1a18;
+  --color-text-secondary:#4d4842;
+  --color-text-accent:#1c1a18;
+  --color-text-inverted:#fdfcfa;
+  --color-text-inverted-secondary:#c9c3bb;
+  --color-accent:#1c1a18;
+  --color-accent-muted:#e6e2db;
+  --color-on-accent:#fdfcfa;
+  --color-border:#e6e2db;
+  --color-border-emphasized:#1c1a18;
+  --color-border-inverted:#3a3632;
   --color-success:#2f7d4f;
   --color-success-inverted:#7fd19f;
+  /* one image treatment: warm-white plaster and flowers in soft light */
+  --image-tone:grayscale(.55) sepia(.14) contrast(.94) brightness(1.03);
   /* spacing (4px base) */
   --spacing-0-5:.125rem;--spacing-1:.25rem;--spacing-1-5:.375rem;--spacing-2:.5rem;--spacing-3:.75rem;
   --spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-7:1.75rem;--spacing-8:2rem;
@@ -40,7 +42,7 @@
   --spacing-gutter:var(--spacing-10);
   /* sizes */
   --size-element-sm:28px;--size-element-md:32px;--size-element-lg:36px;
-  --size-tap:2.75rem;
+  --size-tap:2.75rem;--size-button:3rem;
   --size-content:77.5rem;
   --size-measure:36rem;
   --size-dot:.5rem;
@@ -55,14 +57,15 @@
   --duration-fast-min:130ms;--duration-fast:175ms;--duration-fast-max:230ms;--duration-medium:410ms;--duration-slow:975ms;--duration-exit:var(--duration-fast);
   --ease-standard:cubic-bezier(0.24,1,0.4,1);--ease-entrance:cubic-bezier(0.24,1,0.4,1);--ease-move:cubic-bezier(0.24,1,0.4,1);--ease-exit:cubic-bezier(0.3,0,0.6,0.6);
   /* focus */
-  --focus-outline-width:2px;--focus-outline-style:solid;--focus-outline-color:#111111;--focus-outline-offset:3px;
-  --focus-outline-color-inverted:#ffffff;
+  --focus-outline-width:2px;--focus-outline-style:solid;--focus-outline-color:#1c1a18;--focus-outline-offset:3px;
+  --focus-outline-color-inverted:#fdfcfa;
   /* type (modular 1.2, continued upward for hero) */
   --font-family-body:"Figtree",ui-sans-serif,sans-serif;
   --font-size-xs:.625rem;--font-size-sm:.75rem;--font-size-base:.875rem;--font-size-lg:1.0625rem;--font-size-xl:1.25rem;
   --font-size-2xl:1.5rem;--font-size-3xl:1.8125rem;--font-size-4xl:2.1875rem;--font-size-5xl:2.625rem;
   --font-size-6xl:3.15rem;--font-size-7xl:3.78rem;--font-size-8xl:4.54rem;--font-size-9xl:5.44rem;
   --font-weight-regular:400;--font-weight-medium:500;--font-weight-semibold:600;
+  --font-size-caption:.8125rem;--font-size-button:1rem;
   --line-height-display:1.02;--line-height-heading:1.1;--line-height-body:1.6;--line-height-supporting:1.5;
   --tracking-display:-0.035em;--tracking-heading:-0.02em;--tracking-label:.1em;
   /* roles */
@@ -82,6 +85,7 @@
 html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
 body{margin:0;background:var(--color-background-body);color:var(--color-text-primary);font-family:var(--font-family-body);font-size:var(--text-body);line-height:var(--line-height-body);font-weight:var(--font-weight-regular);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
+.plate img,.work img,.process-intro img{filter:var(--image-tone)}
 h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
 ul,ol{padding:0;list-style:none}
 h1,h2,h3{text-wrap:balance;font-weight:var(--font-weight-medium)}
@@ -104,7 +108,7 @@ a{color:inherit}
 .sec-head .lead{grid-column:4 / 11}
 
 /* ===== buttons ===== */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--spacing-2);min-height:var(--size-tap);padding:0 var(--spacing-6);border-radius:var(--radius-full);font:inherit;font-size:var(--text-supporting);font-weight:var(--font-weight-medium);text-decoration:none;border:var(--border-width) solid var(--color-accent);cursor:pointer;transition:background-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--spacing-2);min-height:var(--size-button);padding:0 var(--spacing-7);border-radius:var(--radius-full);font:inherit;font-size:var(--font-size-button);font-weight:var(--font-weight-medium);text-decoration:none;border:var(--border-width) solid var(--color-accent);cursor:pointer;transition:background-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard)}
 .btn-primary{background:var(--color-accent);color:var(--color-on-accent)}
 .btn-secondary{background:transparent;color:var(--color-text-primary);border-color:var(--color-border-emphasized)}
 .sr-only{position:absolute;width:var(--border-width);height:var(--border-width);overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -154,18 +158,18 @@ a{color:inherit}
 .plate img{width:100%;aspect-ratio:3 / 4;object-fit:cover;border-radius:var(--radius-none)}
 .plate figcaption{display:grid;gap:var(--spacing-1);font-size:var(--text-label);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-secondary);border-top:var(--border-width) solid var(--color-border);padding-top:var(--spacing-3)}
 .plate figcaption b{font-weight:var(--font-weight-medium);color:var(--color-text-primary)}
+.plate figcaption span{font-size:var(--font-size-caption);letter-spacing:normal;text-transform:none;color:var(--color-text-secondary)}
 .p1{grid-column:1 / 6}
 .p2{grid-column:6 / 10;margin-top:calc(var(--spacing-24) + var(--spacing-8))}
 .p2 img{aspect-ratio:9 / 11}
-.p3{grid-column:10 / -1;margin-top:var(--spacing-12)}
+.p3{grid-column:10 / -1;align-self:end}
 
 /* ===== about ===== */
 .about-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--spacing-gutter);row-gap:var(--spacing-12)}
 .portrait{grid-column:1 / 6;align-self:start}
 .portrait-frame{aspect-ratio:4 / 5;background:var(--color-background-muted);border-radius:var(--radius-inner);display:grid;place-items:center;padding:var(--spacing-8);border:var(--border-width) solid var(--color-border)}
-.portrait-frame svg{width:42%;height:auto;color:var(--color-text-secondary)}
 .portrait-frame > div{display:grid;justify-items:center;gap:var(--spacing-5);width:100%}
-.portrait-frame p{font-size:var(--text-supporting);color:var(--color-text-secondary);text-align:center}
+.portrait-frame p{font-size:var(--text-label);font-weight:var(--font-weight-medium);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-secondary);text-align:center;max-width:14rem}
 .portrait figcaption{margin-top:var(--spacing-3);font-size:var(--text-label);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-secondary)}
 .about-copy{grid-column:7 / -1;display:grid;gap:var(--spacing-6);align-content:start}
 .about-copy .h2{margin-bottom:var(--spacing-2)}
@@ -238,7 +242,8 @@ a{color:inherit}
 .quote:nth-child(2){grid-column:6 / 10}
 .quote:nth-child(3){grid-column:10 / -1}
 .quote blockquote{margin:0;font-size:var(--font-size-xl);line-height:var(--line-height-supporting)}
-.quote:nth-child(1) blockquote{font-size:var(--text-display-2);line-height:var(--line-height-heading);letter-spacing:var(--tracking-heading)}
+.quote:nth-child(1) blockquote{font-size:var(--font-size-3xl);line-height:var(--line-height-heading);letter-spacing:var(--tracking-heading)}
+.quote:nth-child(1) blockquote .ph{color:var(--color-text-primary);font-style:normal}
 .quote figcaption{font-size:var(--text-supporting);color:var(--color-text-secondary)}
 
 /* ===== contact: MetadataList ===== */
@@ -258,7 +263,7 @@ a{color:inherit}
 .wl-form{grid-column:7 / -1;display:grid;gap:var(--spacing-5);align-content:start}
 .field{display:grid;gap:var(--spacing-2)}
 .field label{font-size:var(--text-label);letter-spacing:var(--tracking-label);text-transform:uppercase;font-weight:var(--font-weight-medium);color:var(--color-text-secondary)}
-.field input,.field select{font:inherit;font-size:var(--text-body);min-height:calc(var(--size-tap) + var(--spacing-1));padding:0 var(--spacing-4);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-element);background:var(--color-background-card);color:var(--color-text-primary);width:100%}
+.field input,.field select{font:inherit;font-size:var(--text-supporting);min-height:var(--size-button);padding:0 var(--spacing-4);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-element);background:var(--color-background-card);color:var(--color-text-primary);width:100%}
 .field input:focus-visible,.field select:focus-visible{border-color:var(--color-border-emphasized)}
 .wl-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-4)}
 .wl-note{font-size:var(--text-supporting);color:var(--color-text-secondary)}
@@ -292,23 +297,23 @@ a{color:inherit}
 @media (max-width:760px){
   .hero{padding-top:var(--spacing-10)}
   .hero-side{grid-column:1 / -1}
-  .collage{grid-template-columns:repeat(2,1fr);row-gap:var(--spacing-8);margin-top:var(--spacing-12)}
+  .collage{grid-template-columns:repeat(2,1fr);column-gap:var(--spacing-4);row-gap:var(--spacing-8);margin-top:var(--spacing-12);align-items:start}
   .p1{grid-column:1 / -1}
   .p2{grid-column:1 / 2;margin-top:0}
-  .p3{grid-column:2 / 3;margin-top:var(--spacing-12)}
-  .p2 img{aspect-ratio:3 / 4}
+  .p3{grid-column:2 / 3;margin-top:0;align-self:start}
+  .p2 img,.p3 img{aspect-ratio:4 / 5}
+  .plate .frame{padding:var(--spacing-2)}
   .sec-head,.price-head{margin-bottom:var(--spacing-10)}
   .sec-head .label,.sec-head .h2,.sec-head .lead,.price-head .label,.price-head .h2,.price-head p{grid-column:1 / -1}
   .sec-head .label,.price-head .label{padding-top:0}
   .portrait,.about-copy,.process-intro,.steps,.faq,.contact-intro,.meta,.wl-copy,.wl-form,.foot-mark,.foot-meta{grid-column:1 / -1}
-  .portrait{max-width:20rem}
   .gallery{grid-template-columns:1fr;row-gap:var(--spacing-12)}
   .work img{aspect-ratio:4 / 3}
   .ptable thead{display:none}
   .ptable tbody tr{display:grid;grid-template-columns:1fr auto;border-bottom:var(--border-width) solid var(--color-border);padding-block:var(--spacing-4);column-gap:var(--spacing-4)}
   .ptable tbody th,.ptable tbody td{border:0;padding:0;width:auto}
   .ptable td.unit{width:auto;grid-column:1 / 2;grid-row:2;font-size:var(--text-supporting)}
-  .ptable td.price{grid-column:2;grid-row:1 / 3;align-self:center}
+  .ptable td.price{grid-column:2;grid-row:1 / 3;align-self:center;max-width:9rem}
   .ptable .grp{border-bottom:var(--border-width) solid var(--color-border-emphasized)}
   .ptable .grp th{padding-top:var(--spacing-6)}
   .quote:nth-child(n){grid-column:1 / -1}
@@ -375,7 +380,7 @@ a{color:inherit}
       </div>
       <div class="collage">
         <figure class="plate p1">
-          <div class="frame"><img src="img/hero-head.jpg" width="900" height="1200" alt="Plaster study of a face carved in clean planes, lit softly from the side"></div>
+          <div class="frame"><img src="img/hero-mask.jpg" width="900" height="1200" alt="A cast stone face with closed eyes, resting against a pale plaster wall"></div>
           <figcaption><b>I · Structure</b><span>Read before anything is placed</span></figcaption>
         </figure>
         <figure class="plate p2">
@@ -383,7 +388,7 @@ a{color:inherit}
           <figcaption><b>II · Restraint</b><span>Refreshed, never overfilled</span></figcaption>
         </figure>
         <figure class="plate p3">
-          <div class="frame"><img src="img/hero-calla.jpg" width="900" height="1200" alt="A white calla lily catching sunlight with soft leaf shadows behind it"></div>
+          <div class="frame"><img src="img/hero-bloom.jpg" width="900" height="1200" alt="A single cream ranunculus in soft, diffused light"></div>
           <figcaption><b>III · Light</b><span>Results that age with you</span></figcaption>
         </figure>
       </div>
@@ -396,7 +401,6 @@ a{color:inherit}
       <figure class="portrait">
         <div class="portrait-frame" role="img" aria-label="Placeholder frame for a portrait of Bita">
           <div>
-            <svg viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M60 18c14 0 24 12 24 30s-10 34-24 34-24-16-24-34 10-30 24-30Z"/><path d="M18 150c4-30 20-48 42-48s38 18 42 48"/></svg>
             <p>[Portrait of Bita to be supplied]</p>
           </div>
         </div>
@@ -427,19 +431,19 @@ a{color:inherit}
       </div>
       <div class="gallery">
         <article class="work">
-          <img src="img/t-neuro.jpg" width="900" height="1100" loading="lazy" alt="Speckled white ceramic bottle and two small cups on a white table">
+          <img src="img/t-vase.jpg" width="900" height="1100" loading="lazy" alt="A small matte white vase on a pale surface">
           <h3>Neuromodulators</h3>
           <p>Wrinkle relaxers that soften lines from movement while keeping natural expression.</p>
           <dl><dt>Products</dt><dd>Xeomin, Dysport, Daxxify</dd></dl>
         </article>
         <article class="work">
-          <img src="img/t-filler.jpg" width="900" height="1100" loading="lazy" alt="White tulips in a clear glass vase on a wooden table in warm side light">
+          <img src="img/t-peonies.jpg" width="900" height="1100" loading="lazy" alt="Full white peonies in a cut-glass vase against a pale plaster wall">
           <h3>Dermal fillers</h3>
           <p>Measured support for structure and volume, placed to suit your proportions.</p>
           <dl><dt>Areas</dt><dd>Temple, under-eye, cheek, smile lines, lip, jawline, chin</dd></dl>
         </article>
         <article class="work">
-          <img src="img/t-regen.jpg" width="900" height="1100" loading="lazy" alt="A single white calla lily on a long stem against a soft grey background">
+          <img src="img/t-bloom.jpg" width="900" height="1100" loading="lazy" alt="One white peony opening in a small white vase">
           <h3>Biostimulators &amp; regenerative</h3>
           <p>Treatments that work with your own skin and build gradually over time.</p>
           <dl><dt>Options</dt><dd>Sculptra, hyperdilute Radiesse, PRF (platelet-rich fibrin, made from your own blood)</dd></dl>
@@ -457,7 +461,7 @@ a{color:inherit}
           <thead><tr><th scope="col">Treatment</th><th scope="col">Priced per</th><th scope="col">Price</th></tr></thead>
           <tbody>
             <tr class="grp"><th scope="rowgroup" colspan="3">Start here</th></tr>
-            <tr><th scope="row">Consultation</th><td class="unit">Facial assessment and custom plan · new patients</td><td class="price ph">[Fee]</td></tr>
+            <tr><th scope="row">Consultation</th><td class="unit">Facial assessment and custom plan · new patients</td><td class="price ph">[Fee or complimentary: to be supplied]</td></tr>
             <tr class="grp"><th scope="rowgroup" colspan="3">Neuromodulators</th></tr>
             <tr><th scope="row">Xeomin</th><td class="unit">Unit</td><td class="price ph">[Price]</td></tr>
             <tr><th scope="row">Dysport</th><td class="unit">Unit</td><td class="price ph">[Price]</td></tr>
@@ -466,7 +470,7 @@ a{color:inherit}
             <tr><th scope="row">Filler, by area</th><td class="unit">Syringe</td><td class="price ph">[Price]</td></tr>
             <tr class="grp"><th scope="rowgroup" colspan="3">Biostimulators &amp; regenerative</th></tr>
             <tr><th scope="row">Sculptra</th><td class="unit">Vial</td><td class="price ph">[Price]</td></tr>
-            <tr><th scope="row">Hyperdilute Radiesse</th><td class="unit">Syringe</td><td class="price ph">[Price]</td></tr>
+            <tr><th scope="row">Hyperdilute Radiesse</th><td class="unit ph">[Syringe: to be confirmed]</td><td class="price ph">[Price]</td></tr>
             <tr><th scope="row">PRF</th><td class="unit">Session</td><td class="price ph">[Price]</td></tr>
           </tbody>
         </table>
@@ -485,7 +489,7 @@ a{color:inherit}
         <p class="label">Your first visit</p>
         <h2 class="h2" id="pr-title">Every new patient starts with a conversation.</h2>
         <p class="muted">No treatment on day one. You leave knowing your options, what to expect and what it costs.</p>
-        <img src="img/still.jpg" width="1400" height="1200" loading="lazy" alt="A small white vase with a sprig of eucalyptus on white linen">
+        <img src="img/still-bloom.jpg" width="1400" height="1200" loading="lazy" alt="White ranunculus and soft green buds against a blush wall">
       </div>
       <ol class="steps">
         <li><span class="n">01</span><div><h3>Consultation</h3><p>Bita assesses your facial structure and listens to what you’d like to change, and what you’d like to keep.</p></div></li>
@@ -553,11 +557,7 @@ a{color:inherit}
       </div>
       <dl class="meta">
         <div><dt>Status</dt><dd><span class="status">Sandy Springs: booking consultations</span></dd></div>
-        <div><dt>Phone</dt><dd><a href="tel:+16783895910">(678) 389-5910</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:balancebybita@gmail.com">balancebybita@gmail.com</a></dd></div>
         <div><dt>Address</dt><dd>Sandy Springs, Atlanta, GA <span class="ph">[street address to be supplied]</span></dd></div>
-        <div><dt>Hours</dt><dd class="num">Monday to Friday, 10:00 am to 5:00 pm</dd></div>
-        <div><dt>Visits</dt><dd>By appointment only</dd></div>
       </dl>
     </div>
   </section>
