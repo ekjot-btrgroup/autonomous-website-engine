@@ -1,0 +1,45 @@
+{
+  "n": 2,
+  "name": "Slate Ledger",
+  "astryx_theme": "Stone",
+  "concept": "Precise and transparent: Astryx Stone slate neutrals, a numbered index of treatments and a price ledger that reads like a clear medical menu.",
+  "refs": [
+    "health-medical/curevanta",
+    "services-consulting/archio"
+  ],
+  "style": "structured grid, thin rules, numbered indexes, small radii (radius-element 8px); dark slate (#25252a) hero band and footer, light body",
+  "scheme": "mixed",
+  "palette": {
+    "bg": "#f0f0f7",
+    "surface": "#ffffff",
+    "ink": "#25252a",
+    "muted": "#5f5f64",
+    "accent": "#6d3550",
+    "line": "#e2e2e8"
+  },
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Figtree",
+    "class": "sans"
+  },
+  "hero": "asymmetric",
+  "sections": [
+    "hero",
+    "services",
+    "pricing",
+    "process",
+    "about",
+    "faq",
+    "testimonials",
+    "waitlist",
+    "contact"
+  ],
+  "motion": 1,
+  "signature": [
+    "Hero: oversized Montserrat statement left, numbered treatment index 01-03 right",
+    "Pricing as an Astryx Table with unit / syringe / vial / session columns and clear placeholders",
+    "StatusDot row: Sandy Springs open by appointment, Chicago waitlist open"
+  ],
+  "imagery": "cool, precise still life: glass, stone, clean light on neutral backgrounds",
+  "why": "For careful, informed patients: every option, unit and step laid out plainly before they book."
+}

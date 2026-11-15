@@ -1,0 +1,45 @@
+{
+ "n": 3,
+ "name": "After Hours",
+ "astryx_theme": "Chocolate (dark mode)",
+ "concept": "Astryx Chocolate in dark mode: deep plum-brown like the current hero, gold-caramel accent, a quiet luxury evening mood.",
+ "refs": [
+  "health-therapy/latos",
+  "health-wellness/stillhour"
+ ],
+ "style": "dark, cinematic, generous space, hairline gold rules",
+ "scheme": "dark",
+ "palette": {
+  "bg": "#1a1214",
+  "surface": "#261b1e",
+  "ink": "#EDE4D4",
+  "muted": "#c4b2a5",
+  "accent": "#d4a06a",
+  "line": "#3a2a2e"
+ },
+ "fonts": {
+  "display": "Crimson Text",
+  "body": "Poppins",
+  "class": "serif"
+ },
+ "hero": "full-bleed-image",
+ "sections": [
+  "hero",
+  "about",
+  "testimonials",
+  "services",
+  "process",
+  "pricing",
+  "faq",
+  "waitlist",
+  "contact"
+ ],
+ "motion": 1,
+ "signature": [
+  "Full-bleed dark botanical hero with the promise set large in Crimson Text",
+  "'You, with the cherry on top' as a centred pull line between sections",
+  "Accordion FAQ (Astryx Collapsible) with the only motion: a 175ms open state"
+ ],
+ "imagery": "low-key dark florals (lilies, hydrangea) on deep backgrounds, warm side light",
+ "why": "Keeps the brand's own plum-brown night mood, now on a consistent system."
+}

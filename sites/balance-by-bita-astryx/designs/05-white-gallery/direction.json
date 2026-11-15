@@ -1,0 +1,45 @@
+{
+ "n": 5,
+ "name": "White Gallery",
+ "astryx_theme": "Neutral",
+ "concept": "Astryx Neutral at its most minimal: white space, one typeface, big images and quiet black type, like a modern gallery.",
+ "refs": [
+  "agency-design/pane",
+  "services-consulting/tandem-co-agency"
+ ],
+ "style": "minimal, monochrome, large imagery, tight sans type",
+ "scheme": "light",
+ "palette": {
+  "bg": "#ffffff",
+  "surface": "#f1f1f1",
+  "ink": "#111111",
+  "muted": "#474747",
+  "accent": "#1b1b1b",
+  "line": "#e2e2e2"
+ },
+ "fonts": {
+  "display": "Figtree",
+  "body": "Figtree",
+  "class": "sans"
+ },
+ "hero": "gallery-collage",
+ "sections": [
+  "hero",
+  "about",
+  "services",
+  "pricing",
+  "process",
+  "faq",
+  "testimonials",
+  "contact",
+  "waitlist"
+ ],
+ "motion": 1,
+ "signature": [
+  "Hero collage of three framed images with a short black headline",
+  "Treatments in a three-column gallery with captions, then a ruled price list",
+  "Monochrome footer with hours as an Astryx MetadataList"
+ ],
+ "imagery": "sculptural, gallery-like still life: white flowers, plaster, soft shadows",
+ "why": "Lets the work and the consultation speak: modern, quiet confidence for a boutique practice."
+}

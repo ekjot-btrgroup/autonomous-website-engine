@@ -1,0 +1,45 @@
+{
+  "n": 4,
+  "name": "Garden Script",
+  "astryx_theme": "Matcha",
+  "concept": "Astryx Matcha's soft sage and rounded shapes with a handwritten script heading that echoes 'by Bita': fresh, natural, friendly.",
+  "refs": [
+    "services-education/aurevo",
+    "health-wellness/wellnesse"
+  ],
+  "style": "soft, rounded (radius-page 42px arches), airy, friendly",
+  "scheme": "light",
+  "palette": {
+    "bg": "#f0f0e0",
+    "surface": "#e7ead4",
+    "ink": "#313914",
+    "muted": "#4c5924",
+    "accent": "#4c5924",
+    "line": "#dce3ce"
+  },
+  "fonts": {
+    "display": "Playwrite US Trad",
+    "body": "DM Sans",
+    "class": "display"
+  },
+  "hero": "centered-type",
+  "sections": [
+    "hero",
+    "about",
+    "process",
+    "services",
+    "pricing",
+    "testimonials",
+    "faq",
+    "contact",
+    "waitlist"
+  ],
+  "motion": 1,
+  "signature": [
+    "Centred script headline over a large rounded arch photo",
+    "Process as 4 rounded steps on sage surfaces",
+    "Matcha green accent for the CTA and key links; a single soft rose (#f3d9d3) surface for the waitlist band"
+  ],
+  "imagery": "fresh green botanicals, leaves and soft daylight; natural and alive",
+  "why": "Says 'natural results' visually: fresh, friendly and personal for newcomers to injectables."
+}

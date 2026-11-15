@@ -1,0 +1,45 @@
+{
+ "n": 1,
+ "name": "Cocoa Consult",
+ "astryx_theme": "Chocolate (light)",
+ "concept": "A warm consultation room on paper: Astryx Chocolate tokens, soft cream surfaces, a booking card that sits in the hero like a calm appointment slip.",
+ "refs": [
+  "health-wellness/stillhour",
+  "health-wellness/wellnesse"
+ ],
+ "style": "warm editorial, soft cards, rounded containers (radius-container 12px, radius-page 24px)",
+ "scheme": "light",
+ "palette": {
+  "bg": "#FFFCF7",
+  "surface": "#EDE4D4",
+  "ink": "#4a3520",
+  "muted": "#6e4f33",
+  "accent": "#8C5927",
+  "line": "#C4AC95"
+ },
+ "fonts": {
+  "display": "Fraunces",
+  "body": "Albert Sans",
+  "class": "serif"
+ },
+ "hero": "split-image-right",
+ "sections": [
+  "hero",
+  "about",
+  "services",
+  "process",
+  "pricing",
+  "testimonials",
+  "faq",
+  "waitlist",
+  "contact"
+ ],
+ "motion": 1,
+ "signature": [
+  "Hero consultation card (Astryx Card on --color-background-card) with hours, phone and the one CTA",
+  "Treatments as three grouped Astryx List blocks with ruled rows, not repeated cards",
+  "Founder note set in Fraunces italic with a portrait placeholder frame"
+ ],
+ "imagery": "warm natural-light still life: linen, ceramics, soft botanicals in cream and cocoa tones; no faces",
+ "why": "Astryx Chocolate is already the brand's plum-brown and cream: warm, trusted, never clinical."
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "file": "hero.jpg",
+  "source": "https://images.unsplash.com/photo-1631125915902-d8abe9225ff2",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "botanic.jpg",
+  "source": "https://images.unsplash.com/photo-1619422306058-13f42705b0e2",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "ceramics.jpg",
+  "source": "https://images.unsplash.com/photo-1610701596007-11502861dcfa",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ },
+ {
+  "file": "pampas.jpg",
+  "source": "https://images.unsplash.com/photo-1570451488142-71d08e1511e3",
+  "credit": "Unsplash",
+  "license": "Unsplash License"
+ }
+]
