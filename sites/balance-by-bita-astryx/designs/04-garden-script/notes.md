@@ -5,7 +5,7 @@ echoes "by Bita". Fresh, natural, friendly; says "natural results" for newcomers
 
 ## Section plan (direction order)
 1. Hero: StatusDot "Chicago patient waitlist is open", centred script h1 "Your face, gently tended.", one-line
-   what/who/how, primary "Book a consultation" + secondary "See treatments and pricing"; wide arch photo (beech
+   what/who/how, primary "Book a consultation" + secondary "See treatments and pricing"; wide arch photo (eucalyptus
    leaves) with a pill caption: Sandy Springs, hours, by appointment.
 2. About: dashed arch placeholder frame "Portrait to be supplied"; first-person founder story from the brief
    (acne, patient herself, aesthetic roles, trained alongside a renowned injector, own practice, every background),

@@ -7,7 +7,7 @@
 <meta name="description" content="Balance by Bita: a boutique medical aesthetics practice in Sandy Springs, Atlanta, led by Bita, a nationally certified physician associate. Injectables and regenerative treatments only. Book a consultation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playwrite+US+Trad:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playwrite+US+Trad:wght@300&display=swap" rel="stylesheet">
 <style>
 /* ===== Astryx token layer, Matcha theme (direction 4: Garden Script) ===== */
 :root{
@@ -39,13 +39,11 @@
   --font-size-sm:.75rem;
   --font-size-base:.875rem;
   --font-size-lg:1.0625rem;
-  --font-size-xl:1.25rem;
   --font-size-2xl:1.5rem;
-  --font-size-4xl:2.1875rem;
   --font-size-6xl:3.15rem;
   --font-size-8xl:4.54rem;
-  --font-size-h2:clamp(var(--font-size-2xl), 1.2rem + 2vw, var(--font-size-6xl));
-  --font-size-h1:clamp(var(--font-size-4xl), 1.4rem + 4.2vw, var(--font-size-8xl));
+  --fluid-h2:1.2rem + 2vw;
+  --fluid-h1:1.2rem + 4.4vw;
   --font-weight-regular:400;
   --font-weight-medium:500;
   --font-weight-semibold:600;
@@ -83,7 +81,7 @@
   --radius-container:18px;
   --radius-page:42px;
   --radius-full:9999px;
-  --radius-arch:50% 50% var(--radius-page) var(--radius-page) / 46% 46% var(--radius-page) var(--radius-page);
+  --radius-arch:50% 50% var(--radius-page) var(--radius-page) / 70% 70% var(--radius-page) var(--radius-page);
   --radius-arch-tall:50% 50% var(--radius-page) var(--radius-page) / 30% 30% var(--radius-page) var(--radius-page);
 
   /* shadows tinted with Matcha ink */
@@ -145,14 +143,14 @@ p,li,dd{ text-wrap:pretty; }
   font-family:var(--font-family-heading); font-weight:var(--font-weight-script);
   line-height:var(--line-height-script); letter-spacing:0; padding-bottom:var(--spacing-2);
 }
-.h2{ font-size:var(--font-size-h2); color:var(--color-text-primary); }
+.h2{ font-size:clamp(var(--font-size-2xl), var(--fluid-h2), var(--font-size-6xl)); color:var(--color-text-primary); }
 .label{
   font-size:var(--font-size-sm); font-weight:var(--font-weight-semibold); letter-spacing:var(--tracking-label);
   text-transform:uppercase; color:var(--color-text-secondary);
 }
-.lead{ font-size:var(--font-size-xl); line-height:var(--line-height-body); color:var(--color-text-primary); }
+.lead{ font-size:var(--font-size-2xl); line-height:var(--line-height-body); color:var(--color-text-primary); }
 .muted{ color:var(--color-text-secondary); }
-.h3{ font-size:var(--font-size-xl); font-weight:var(--font-weight-semibold); line-height:var(--line-height-tight); }
+.h3{ font-size:var(--font-size-2xl); font-weight:var(--font-weight-semibold); line-height:var(--line-height-tight); }
 .num{ font-variant-numeric:tabular-nums; }
 
 /* section header: label + script heading centred, short copy under */
@@ -188,7 +186,7 @@ p,li,dd{ text-wrap:pretty; }
 .bar{ display:flex; align-items:center; justify-content:space-between; gap:var(--spacing-6); min-height:calc(var(--spacing-16) + var(--spacing-2)); }
 .logo{ display:inline-flex; align-items:center; gap:var(--spacing-2); text-decoration:none; color:var(--color-text-primary); }
 .logo svg{ width:var(--spacing-7); height:var(--spacing-7); color:var(--color-accent); }
-.logo b{ font-size:var(--font-size-xl); font-weight:var(--font-weight-semibold); letter-spacing:-.01em; }
+.logo b{ font-size:var(--font-size-2xl); font-weight:var(--font-weight-semibold); letter-spacing:-.01em; }
 .logo span{ font-size:var(--font-size-base); color:var(--color-text-secondary); }
 .nav{ display:flex; align-items:center; gap:var(--spacing-4); }
 .nav-links{ display:flex; gap:var(--spacing-1); }
@@ -207,8 +205,8 @@ p,li,dd{ text-wrap:pretty; }
 /* ===== hero ===== */
 .hero{ padding-top:var(--spacing-16); padding-bottom:var(--spacing-section-sm); }
 .hero-copy{ display:grid; justify-items:center; text-align:center; gap:var(--spacing-6); }
-.hero h1{ font-size:var(--font-size-h1); max-width:15ch; color:var(--color-text-primary); }
-.hero-sub{ max-width:var(--size-measure-wide); font-size:var(--font-size-xl); color:var(--color-text-primary); }
+.hero h1{ font-size:clamp(var(--font-size-2xl), var(--fluid-h1), var(--font-size-8xl)); max-width:15ch; color:var(--color-text-primary); }
+.hero-sub{ max-width:var(--size-measure-wide); font-size:var(--font-size-2xl); color:var(--color-text-primary); }
 .actions{ display:flex; flex-wrap:wrap; gap:var(--spacing-3); justify-content:center; }
 .hero-arch{ position:relative; margin-top:var(--spacing-12); }
 .hero-arch img{ width:100%; aspect-ratio:2 / 1; object-fit:cover; object-position:60% 40%; border-radius:var(--radius-arch); filter:var(--image-tone); }
@@ -244,8 +242,7 @@ p,li,dd{ text-wrap:pretty; }
   display:grid; align-content:start; gap:var(--spacing-3); padding:var(--spacing-8) var(--spacing-6) var(--spacing-10);
   background:var(--color-background-surface); border-radius:var(--radius-page);
 }
-.step:nth-child(even){ background:var(--color-background-card); }
-.step .n{ font-family:var(--font-family-heading); font-weight:var(--font-weight-script); font-size:var(--font-size-h2); line-height:var(--line-height-script); color:var(--color-accent); }
+.step .n{ font-family:var(--font-family-heading); font-weight:var(--font-weight-script); font-size:clamp(var(--font-size-2xl), var(--fluid-h2), var(--font-size-6xl)); line-height:var(--line-height-script); color:var(--color-accent); }
 .step p{ color:var(--color-text-primary); }
 .step-note{ margin-top:var(--spacing-8); text-align:center; color:var(--color-text-secondary); }
 
@@ -275,18 +272,18 @@ p,li,dd{ text-wrap:pretty; }
 .price-table td:last-child,.price-table thead th:last-child{ text-align:right; white-space:nowrap; }
 .price-table tr:last-child td,.price-table tr:last-child th{ border-bottom:0; }
 .ph{ color:var(--color-text-secondary); font-style:italic; }
+.price-table .per{ display:none; font-size:var(--font-size-sm); font-weight:var(--font-weight-regular); color:var(--color-text-secondary); }
 .price-note{ display:grid; grid-template-columns:repeat(2, 1fr); gap:var(--spacing-6); margin-top:var(--spacing-8); }
 .price-note p{ font-size:var(--font-size-base); color:var(--color-text-secondary); padding-left:var(--spacing-4); border-left:2px solid var(--color-border-emphasized); }
 
 /* ===== testimonials ===== */
-.words{ display:grid; grid-template-columns:repeat(3, 1fr); background:var(--color-background-surface); border-radius:var(--radius-page); padding:var(--spacing-10) 0; }
-.words figure{ display:grid; align-content:space-between; gap:var(--spacing-8); padding:0 var(--spacing-10); }
-.words figure + figure{ border-left:var(--border-width) solid var(--color-border); }
-.words .mark{ font-family:var(--font-family-heading); font-size:var(--font-size-h2); line-height:1; color:var(--color-accent); height:var(--spacing-8); }
-.words blockquote{ font-size:var(--font-size-xl); line-height:var(--line-height-body); }
-.words figcaption{ font-size:var(--font-size-base); color:var(--color-text-secondary); }
-.words-note{ margin-top:var(--spacing-6); text-align:center; font-size:var(--font-size-base); color:var(--color-text-secondary); }
-
+.quote{ max-width:var(--size-measure-wide); margin-inline:auto; display:grid; justify-items:center; text-align:center; gap:var(--spacing-5); padding:var(--spacing-12) var(--spacing-10); background:var(--color-background-surface); border-radius:var(--radius-page); }
+.quote .mark{ font-family:var(--font-family-heading); font-weight:var(--font-weight-script); font-size:var(--font-size-8xl); line-height:1; height:var(--spacing-12); color:var(--color-accent); }
+.quote blockquote{ font-size:var(--font-size-2xl); line-height:var(--line-height-tight); }
+.quote figcaption{ font-size:var(--font-size-base); color:var(--color-text-secondary); }
+.more-words{ max-width:var(--size-measure-wide); margin:var(--spacing-8) auto 0; border-top:var(--border-width) solid var(--color-border-emphasized); }
+.more-words li{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--spacing-2) var(--spacing-6); padding:var(--spacing-4) 0; border-bottom:var(--border-width) solid var(--color-border); font-size:var(--font-size-base); }
+.more-words li span + span{ color:var(--color-text-secondary); }
 /* ===== FAQ (Astryx List rows) ===== */
 .faq-grid{ display:grid; grid-template-columns:4fr 8fr; gap:var(--spacing-16); align-items:start; }
 .faq-side{ display:grid; gap:var(--spacing-6); }
@@ -296,7 +293,7 @@ p,li,dd{ text-wrap:pretty; }
 .faq details{ border-bottom:var(--border-width) solid var(--color-border); }
 .faq summary{
   list-style:none; cursor:pointer; display:grid; grid-template-columns:1fr var(--spacing-8); align-items:center; gap:var(--spacing-4);
-  padding:var(--spacing-5) 0; font-size:var(--font-size-xl); font-weight:var(--font-weight-medium); min-height:var(--size-tap);
+  padding:var(--spacing-5) 0; font-size:var(--font-size-lg); font-weight:var(--font-weight-medium); min-height:var(--size-tap);
 }
 .faq summary::-webkit-details-marker{ display:none; }
 .faq .pm{ width:var(--spacing-8); height:var(--spacing-8); border-radius:var(--radius-full); background:var(--color-background-raised); display:grid; place-items:center; }
@@ -313,7 +310,8 @@ p,li,dd{ text-wrap:pretty; }
 .details div{ display:grid; grid-template-columns:8rem 1fr; gap:var(--spacing-4); padding:var(--spacing-4) 0; border-bottom:var(--border-width) solid var(--color-border); }
 .details dt{ font-size:var(--font-size-sm); font-weight:var(--font-weight-semibold); letter-spacing:var(--tracking-label); text-transform:uppercase; color:var(--color-text-secondary); padding-top:var(--spacing-1); }
 .details dd a{ text-decoration:none; font-weight:var(--font-weight-medium); }
-.contact-img img{ width:100%; aspect-ratio:4 / 5; object-fit:cover; border-radius:var(--radius-arch-tall); filter:var(--image-tone); }
+.contact-img{ align-self:center; }
+.contact-img img{ width:100%; aspect-ratio:1 / 1; object-fit:cover; border-radius:var(--radius-arch-tall); filter:var(--image-tone); }
 
 /* ===== waitlist (rose band) ===== */
 .waitlist{ padding-block:var(--spacing-section-sm); }
@@ -365,9 +363,7 @@ p,li,dd{ text-wrap:pretty; }
   .svc-img img{ aspect-ratio:1 / 1; height:auto; border-radius:var(--radius-full) var(--radius-full) var(--radius-page) var(--radius-page); }
   .contact-img{ order:-1; }
   .contact-img img{ aspect-ratio:1 / 1; border-radius:var(--radius-full) var(--radius-full) var(--radius-page) var(--radius-page); }
-  .words{ grid-template-columns:1fr; padding:var(--spacing-4) var(--spacing-8); }
-  .words figure{ padding:var(--spacing-8) 0; }
-  .words figure + figure{ border-left:0; border-top:var(--border-width) solid var(--color-border); }
+  .quote{ padding:var(--spacing-10) var(--spacing-6); }
   .rose{ padding:var(--spacing-10) var(--spacing-8); }
   .foot{ grid-template-columns:1fr 1fr; }
   .foot > :first-child{ grid-column:1 / -1; }
@@ -383,8 +379,10 @@ p,li,dd{ text-wrap:pretty; }
   .hero-facts span + span{ padding-left:0; border-left:0; }
   .steps{ grid-template-columns:1fr; }
   .step{ padding:var(--spacing-6) var(--spacing-6) var(--spacing-8); }
-  .price-table th,.price-table td{ padding:var(--spacing-3) var(--spacing-3); }
-  .price-table thead th:nth-child(2){ white-space:normal; }
+  .price-table th,.price-table td{ padding:var(--spacing-3) var(--spacing-4); }
+  .price-table thead th:nth-child(2),.price-table tbody td:nth-child(2){ display:none; }
+  .price-table .per{ display:block; }
+  .price-table td:last-child{ font-variant-numeric:tabular-nums; }
   .price-note{ grid-template-columns:1fr; }
   .faq .ans{ padding-right:0; }
   .details div{ grid-template-columns:1fr; gap:var(--spacing-1); }
@@ -440,7 +438,7 @@ p,li,dd{ text-wrap:pretty; }
         </div>
       </div>
       <figure class="hero-arch">
-        <img src="img/hero-leaves.jpg" width="2000" height="1333" alt="Fresh green beech leaves lit by soft daylight against a blurred canopy" fetchpriority="high">
+        <img src="img/hero-eucalyptus.jpg" width="2000" height="1333" alt="Round sage eucalyptus leaves on slender stems against a pale grey wall" fetchpriority="high">
         <figcaption class="hero-facts"><span>Sandy Springs, Atlanta</span><span>Mon to Fri, 10:00 am to 5:00 pm</span><span>By appointment only</span></figcaption>
       </figure>
     </div>
@@ -483,7 +481,7 @@ p,li,dd{ text-wrap:pretty; }
         <li class="step"><span class="n num" aria-hidden="true">3</span><h3 class="h3">Your own plan</h3><p>A custom plan with clear pricing, timing and what to expect, including bruising and aftercare.</p></li>
         <li class="step"><span class="n num" aria-hidden="true">4</span><h3 class="h3">Treat and tend</h3><p>Treatment by appointment, timed around your calendar, weddings and skincare routine.</p></li>
       </ol>
-      <p class="step-note">Consultation fee and booking link <span class="ph">[to be supplied]</span></p>
+      <p class="step-note"><span class="ph">[Consultation fee or complimentary: to be supplied]</span></p>
     </div>
   </section>
 
@@ -547,20 +545,20 @@ p,li,dd{ text-wrap:pretty; }
           <thead><tr><th scope="col">Treatment</th><th scope="col">Priced per</th><th scope="col">Price</th></tr></thead>
           <tbody>
             <tr class="group"><th colspan="3" scope="colgroup">Neuromodulators</th></tr>
-            <tr><th scope="row">Xeomin</th><td>Unit</td><td class="num ph">[$ price]</td></tr>
-            <tr><th scope="row">Dysport</th><td>Unit</td><td class="num ph">[$ price]</td></tr>
-            <tr><th scope="row">Daxxify</th><td>Unit</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Xeomin<span class="per">Per unit</span></th><td>Unit</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Dysport<span class="per">Per unit</span></th><td>Unit</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Daxxify<span class="per">Per unit</span></th><td>Unit</td><td class="num ph">[$ price]</td></tr>
             <tr class="group"><th colspan="3" scope="colgroup">Dermal fillers</th></tr>
-            <tr><th scope="row">Dermal filler<small>Temple, under-eye, cheek, smile lines, lip, jawline, chin</small></th><td>Syringe</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Dermal filler<small>Temple, under-eye, cheek, smile lines, lip, jawline, chin</small><span class="per">Per syringe</span></th><td>Syringe</td><td class="num ph">[$ price]</td></tr>
             <tr class="group"><th colspan="3" scope="colgroup">Biostimulators and regenerative</th></tr>
-            <tr><th scope="row">Sculptra</th><td>Vial</td><td class="num ph">[$ price]</td></tr>
-            <tr><th scope="row">Hyperdilute Radiesse</th><td><span class="ph">[Unit TBC]</span></td><td class="num ph">[$ price]</td></tr>
-            <tr><th scope="row">PRF (platelet-rich fibrin)</th><td>Session</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Sculptra<span class="per">Per vial</span></th><td>Vial</td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">Hyperdilute Radiesse<span class="per ph">[Unit TBC]</span></th><td><span class="ph">[Unit TBC]</span></td><td class="num ph">[$ price]</td></tr>
+            <tr><th scope="row">PRF (platelet-rich fibrin)<span class="per">Per session</span></th><td>Session</td><td class="num ph">[$ price]</td></tr>
           </tbody>
         </table>
         <div class="price-note">
           <p>How many units or syringes you need depends on your face and goals; Bita sets this with you at the consultation.</p>
-          <p>Consultation fee, payment and cancellation policy <span class="ph">[to be supplied]</span></p>
+          <p>Payment and cancellation policy <span class="ph">[to be supplied]</span></p>
         </div>
       </div>
     </div>
@@ -574,11 +572,15 @@ p,li,dd{ text-wrap:pretty; }
         <h2 class="script h2" id="words-title">Treated like a friend</h2>
         <p>Patients often say they feel like more than a patient or a number. Their own words will sit here.</p>
       </div>
-      <div class="words">
-        <figure><span class="mark" aria-hidden="true">“</span><blockquote><p class="ph">[Patient quote to be supplied, with permission]</p></blockquote><figcaption>[First name or initial] · [Treatment] · [Review source]</figcaption></figure>
-        <figure><span class="mark" aria-hidden="true">“</span><blockquote><p class="ph">[Patient quote to be supplied, with permission]</p></blockquote><figcaption>[First name or initial] · [Treatment] · [Review source]</figcaption></figure>
-        <figure><span class="mark" aria-hidden="true">“</span><blockquote><p class="ph">[Patient quote to be supplied, with permission]</p></blockquote><figcaption>[First name or initial] · [Treatment] · [Review source]</figcaption></figure>
-      </div>
+      <figure class="quote">
+        <span class="mark" aria-hidden="true">“</span>
+        <blockquote><p class="ph">[Patient quote to be supplied, with permission]</p></blockquote>
+        <figcaption>[First name or initial] · [Treatment] · [Review source]</figcaption>
+      </figure>
+      <ul class="more-words">
+        <li><span class="ph">[Second patient quote, one line]</span><span>[Name] · [Source]</span></li>
+        <li><span class="ph">[Third patient quote, one line]</span><span>[Name] · [Source]</span></li>
+      </ul>
     </div>
   </section>
 

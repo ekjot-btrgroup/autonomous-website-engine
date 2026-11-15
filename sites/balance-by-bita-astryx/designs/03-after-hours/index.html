@@ -242,9 +242,9 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
 .waitlist-box{max-width:var(--size-form)}
 .waitlist .lede{margin-top:var(--spacing-5)}
 .form{margin-top:var(--spacing-8);display:grid;gap:var(--spacing-4)}
-.field{display:grid;gap:var(--spacing-2)}
+.field{display:grid;gap:var(--spacing-2);min-inline-size:0}
 .field label{font-size:var(--font-size-sm);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-secondary)}
-.field input{min-block-size:var(--size-tap);padding:var(--spacing-3) var(--spacing-4);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-border-emphasized);background:var(--color-background-body);color:var(--color-text-primary);font:inherit;font-size:var(--font-size-lg)}
+.field input{inline-size:100%;min-inline-size:0;box-sizing:border-box;min-block-size:var(--size-tap);padding:var(--spacing-3) var(--spacing-4);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-border-emphasized);background:var(--color-background-body);color:var(--color-text-primary);font:inherit;font-size:var(--font-size-lg)}
 .field input:focus-visible{outline:var(--focus-outline-width) var(--focus-outline-style) var(--focus-outline-color);outline-offset:var(--spacing-0-5)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-4)}
 .form small{font-size:var(--font-size-sm);color:var(--color-text-secondary)}
