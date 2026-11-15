@@ -12,23 +12,23 @@
 /* ===== Astryx token layer: Stone theme, Slate Ledger overrides ===== */
 :root{
   /* colour (semantic) */
-  --color-background-body:#f0f0f7;
+  --color-background-body:#f3f1f2;
   --color-background-surface:#ffffff;
   --color-background-card:#ffffff;
-  --color-background-muted:#e2e2e8;
+  --color-background-muted:#e7e2e3;
   --color-background-inverted:#25252a;
   --color-background-inverted-raised:#2f2f35;
   --color-text-primary:#25252a;
   --color-text-secondary:#5f5f64;
   --color-text-accent:#6d3550;
-  --color-text-inverted:#f0f0f7;
-  --color-text-inverted-secondary:#bdbdc6;
+  --color-text-inverted:#f3f1f2;
+  --color-text-inverted-secondary:#c3bcc0;
   --color-accent:#6d3550;
   --color-accent-hover:#5a2a42;
   --color-accent-muted:#efe3ea;
   --color-accent-on-inverted:#e6c9d7;
   --color-on-accent:#ffffff;
-  --color-border:#d6d6de;
+  --color-border:#dbd5d7;
   --color-border-emphasized:#25252a;
   --color-border-inverted:#45454c;
   --color-success:#3f8f5a;
@@ -160,8 +160,6 @@ h3{font-size:var(--font-size-xl);line-height:var(--line-height-heading);letter-s
 .status{display:inline-flex;align-items:center;gap:var(--spacing-2);font-size:var(--font-size-base);font-weight:var(--font-weight-medium)}
 .status::before{content:"";width:var(--size-dot);height:var(--size-dot);border-radius:var(--radius-full);background:var(--color-success);flex:none}
 .inverted .status::before{background:var(--color-success-on-inverted)}
-.status.waitlist::before{background:var(--color-accent)}
-.inverted .status.waitlist::before{background:var(--color-accent-on-inverted)}
 
 /* ===== Header / nav (on slate) ===== */
 .inverted{background:var(--color-background-inverted);color:var(--color-text-inverted)}
@@ -180,7 +178,7 @@ h3{font-size:var(--font-size-xl);line-height:var(--line-height-heading);letter-s
 
 /* ===== Hero ===== */
 .hero{padding:calc(var(--spacing-12)*1.75) 0 calc(var(--spacing-12)*4.5)}
-.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--spacing-gutter);align-items:end}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--spacing-gutter);align-items:start}
 .hero-copy{grid-column:1 / span 7;display:flex;flex-direction:column;gap:var(--spacing-8)}
 .hero h1{font-size:var(--font-size-h1);line-height:var(--line-height-display);letter-spacing:var(--tracking-display);font-weight:var(--font-weight-medium)}
 .hero h1 em{font-style:normal;color:var(--color-accent-on-inverted)}
@@ -199,8 +197,8 @@ h3{font-size:var(--font-size-xl);line-height:var(--line-height-heading);letter-s
 /* photo bridge */
 .bridge{margin-top:calc(var(--spacing-12)*-3.5);position:relative;z-index:1}
 .bridge figure{margin:0;position:relative;border-radius:var(--radius-container);overflow:hidden;box-shadow:var(--shadow-high);background:var(--color-background-muted)}
-.bridge img{width:100%;aspect-ratio:21 / 8;object-fit:cover;object-position:30% 75%}
-.status-row{position:absolute;right:var(--spacing-5);bottom:var(--spacing-5);display:flex;flex-wrap:wrap;gap:var(--spacing-2) var(--spacing-6);background:var(--color-background-surface);padding:var(--spacing-3) var(--spacing-5);border-radius:var(--radius-element);box-shadow:var(--shadow-med)}
+.bridge img{width:100%;aspect-ratio:21 / 8;object-fit:cover;object-position:50% 100%}
+.status-row{position:absolute;right:var(--spacing-5);top:var(--spacing-5);display:flex;flex-wrap:wrap;gap:var(--spacing-2) var(--spacing-6);background:var(--color-background-surface);padding:var(--spacing-3) var(--spacing-5);border-radius:var(--radius-element);box-shadow:var(--shadow-med)}
 
 /* ===== Services ===== */
 .svc{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--spacing-gutter)}
@@ -247,7 +245,7 @@ table.ledger{width:100%;border-collapse:collapse;font-size:var(--font-size-base)
 .step:last-child{border-right:0}
 .step .num{font-size:var(--font-size-h2);line-height:1;color:var(--color-text-accent);letter-spacing:var(--tracking-display)}
 .step h3{font-size:var(--font-size-xl)}
-.step p{font-size:var(--font-size-base);color:var(--color-text-secondary);line-height:var(--line-height-supporting)}
+.step p{font-size:var(--font-size-lg);color:var(--color-text-secondary);line-height:var(--line-height-supporting)}
 .expect{margin-top:var(--spacing-10);display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-3) var(--spacing-8);padding:var(--spacing-5) var(--spacing-6);background:var(--color-background-surface);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-container);font-size:var(--font-size-base)}
 .expect b{font-weight:var(--font-weight-semibold)}
 .expect span{color:var(--color-text-secondary)}
@@ -263,20 +261,20 @@ table.ledger{width:100%;border-collapse:collapse;font-size:var(--font-size-base)
 .portrait figcaption span{font-size:var(--font-size-base);color:var(--color-text-inverted-secondary)}
 .about-copy{grid-column:7 / span 6;display:flex;flex-direction:column;gap:var(--spacing-6)}
 .about-copy > p{max-width:var(--size-measure)}
-.about-copy .sig{font-family:var(--font-family-heading);font-size:var(--font-size-xl);color:var(--color-text-accent);letter-spacing:var(--tracking-heading)}
+.about-copy .sig{align-self:flex-start;background:var(--color-accent-muted);padding:var(--spacing-1) var(--spacing-3);border-radius:var(--radius-element);font-family:var(--font-family-heading);font-size:var(--font-size-xl);color:var(--color-text-accent);letter-spacing:var(--tracking-heading)}
 .path{list-style:none;margin:0;padding:0;border-top:var(--border-width) solid var(--color-border-emphasized);counter-reset:path}
 .path li{display:grid;grid-template-columns:var(--spacing-12) 1fr;gap:var(--spacing-3);padding:var(--spacing-3) 0;border-bottom:var(--border-width) solid var(--color-border);font-size:var(--font-size-base)}
 .path li::before{counter-increment:path;content:counter(path,decimal-leading-zero);font-family:var(--font-family-heading);color:var(--color-text-secondary);font-variant-numeric:tabular-nums}
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-gutter);margin-top:var(--spacing-16);padding-top:var(--spacing-8);border-top:var(--border-width) solid var(--color-border)}
 .values div{display:flex;flex-direction:column;gap:var(--spacing-2)}
 .values h3{font-size:var(--font-size-xl)}
-.values p{font-size:var(--font-size-base);color:var(--color-text-secondary);line-height:var(--line-height-supporting)}
+.values p{font-size:var(--font-size-lg);color:var(--color-text-secondary);line-height:var(--line-height-supporting)}
 
 /* ===== FAQ ===== */
 .faq-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--spacing-gutter);align-items:start}
 .faq-side{grid-column:1 / span 4;display:flex;flex-direction:column;gap:var(--spacing-6)}
 .faq-side figure{margin:0;border-radius:var(--radius-container);overflow:hidden;background:var(--color-background-muted)}
-.faq-side img{width:100%;aspect-ratio:3 / 4;object-fit:cover}
+.faq-side img{width:100%;aspect-ratio:4 / 3;object-fit:cover}
 .faq-side p{color:var(--color-text-secondary)}
 .faq-intro{display:flex;flex-direction:column;gap:var(--spacing-4)}
 .faq-side .faq-intro .label{color:var(--color-text-secondary)}
@@ -424,7 +422,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
       </ul>
       <div class="nav-tools">
         <button class="textsize" type="button" aria-pressed="false" id="textsize" title="Larger text">A+</button>
-        <a class="btn btn-light nav-book" href="#contact">Book a consultation</a>
+        <a class="btn btn-primary nav-book" href="#contact">Book a consultation</a>
         <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" id="menu-btn">Menu</button>
       </div>
     </div>
@@ -437,7 +435,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
         <h1 id="hero-title">Nothing hidden. <em>Nothing overdone.</em></h1>
         <p class="hero-lead"><strong>Hi, I’m Bita, a nationally certified physician associate.</strong> My practice does two things only, injectables and regenerative treatments, and lays out every option, price basis and step before you book, so the result honours your own features.</p>
         <div class="actions">
-          <a class="btn btn-light" href="#contact">Book a consultation</a>
+          <a class="btn btn-primary" href="#contact">Book a consultation</a>
           <a class="btn btn-ghost" href="#pricing">Read the price ledger</a>
         </div>
       </div>
@@ -454,7 +452,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
 <main id="main">
   <div class="wrap bridge">
     <figure>
-      <img src="img/hero-glass.jpg" width="1800" height="1100" alt="A clear glass of water on a pale surface, crossed by cool morning light">
+      <img src="img/hero-vases.jpg" width="1800" height="686" alt="Three matte white ceramic vases in a row on a warm, softly lit surface">
       <div class="status-row" role="list" aria-label="Locations">
         <span class="status" role="listitem">Sandy Springs: open by appointment, Mon–Fri 10–5</span>
         <span class="status waitlist" role="listitem">Chicago: patient waitlist open</span>
@@ -467,11 +465,11 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
     <div class="wrap">
       <div class="sec-head">
         <div class="sec-title"><p class="label">Treatments · 01–03</p><h2 id="svc-title">Three families of treatment. One injector.</h2></div>
-        <p class="sec-lead">No lasers, no facials, no add-ons. Each group below is a different tool for a different goal, and Bita will tell you plainly which one fits, or whether you need none at all.</p>
+        <p class="sec-lead">No lasers, no facials. Each group below is a different tool for a different goal, and Bita will tell you plainly which one fits your goal.</p>
       </div>
       <div class="svc">
         <aside class="svc-aside">
-          <figure><img src="img/orb.jpg" width="900" height="1125" alt="A smooth, rippled glass sphere on a pale grey ground" loading="lazy"></figure>
+          <figure><img src="img/vessels.jpg" width="900" height="1125" alt="Two small glazed vases on linen, crossed by low afternoon sunlight" loading="lazy"></figure>
           <p>The aim across all three: natural, timeless results that enhance your own features rather than change them.</p>
         </aside>
         <ol class="svc-list">
@@ -487,7 +485,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
             <span class="num">02</span>
             <div class="svc-body">
               <h3>Dermal fillers</h3>
-              <p>Placed to restore shape and support where it has softened, in measured amounts rather than all at once.</p>
+              <p>Placed to restore shape and support where it has softened, always aiming for a result that still looks like you.</p>
               <div class="areas" role="list" aria-label="Filler areas">
                 <span role="listitem"><i>a</i>Temple</span><span role="listitem"><i>b</i>Under-eye</span><span role="listitem"><i>c</i>Cheek</span><span role="listitem"><i>d</i>Smile lines</span>
                 <span role="listitem"><i>e</i>Lip</span><span role="listitem"><i>f</i>Jawline</span><span role="listitem"><i>g</i>Chin</span><span class="note" role="listitem">Priced per syringe</span>
@@ -512,7 +510,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
     <div class="wrap">
       <div class="sec-head">
         <div class="sec-title"><p class="label">Price ledger</p><h2 id="price-title">Priced by the unit, the syringe, the vial, the session.</h2></div>
-        <p class="sec-lead">You pay for what is used, never a vague package. The amounts below are waiting on the practice’s current price list and are marked until then.</p>
+        <p class="sec-lead">Every treatment is priced per unit, syringe, vial or session. The amounts below are waiting on the practice’s current price list and are marked until then.</p>
       </div>
       <div class="table-frame">
         <table class="ledger">
@@ -539,7 +537,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
       <div class="price-notes">
         <p><strong>How many you need</strong>Units, syringes or vials are set at your consultation, after Bita has assessed your facial structure.</p>
         <p><strong>Billing basis</strong>Columns show the usual basis for each treatment. <span class="ph">[Bita to confirm each row]</span></p>
-        <p><strong>No pressure to add more</strong>The plan covers what serves your goal. Nothing is sold as a bundle.</p>
+        <p><strong>Your plan, your pace</strong>Bita recommends only what serves your goal; you decide what to book.</p>
       </div>
     </div>
   </section>
@@ -605,7 +603,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
           <h2 id="faq-title">Plan around your calendar.</h2>
           <p>Weddings, peels, facials, lashes and Accutane each change when you should book. Ask before you schedule anything close together.</p>
         </div>
-        <figure><img src="img/prism.jpg" width="900" height="1350" alt="A clear glass prism splitting sunlight into soft shadow on a white wall" loading="lazy"></figure>
+        <figure><img src="img/plaster.jpg" width="900" height="675" alt="A warm plaster wall divided by a clean diagonal shadow" loading="lazy"></figure>
       </div>
       <div class="faq-list">
         <details>
@@ -646,7 +644,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
       <div class="voice-rows">
         <div class="voice"><div class="theme"><span class="label">Theme 01</span><b>Treated as a person</b></div><blockquote>“…more than a patient or a number…”<span class="ph">[Full patient quote to be supplied]</span></blockquote><p class="who"><span class="ph">[Initial · treatment · review source]</span></p></div>
         <div class="voice"><div class="theme"><span class="label">Theme 02</span><b>Like a friend</b></div><blockquote>“…like a friend…”<span class="ph">[Full patient quote to be supplied]</span></blockquote><p class="who"><span class="ph">[Initial · treatment · review source]</span></p></div>
-        <div class="voice"><div class="theme"><span class="label">Theme 03</span><b>The result</b></div><blockquote><span class="ph">[Patient quote about their result to be supplied]</span></blockquote><p class="who"><span class="ph">[Initial · treatment · review source]</span></p></div>
+        <div class="voice"><div class="theme"><span class="label">Theme 03</span><b>The result</b></div><blockquote>“…[phrase about the result]…”<span class="ph">[Full patient quote to be supplied]</span></blockquote><p class="who"><span class="ph">[Initial · treatment · review source]</span></p></div>
       </div>
     </div>
   </section>
@@ -655,7 +653,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
   <section class="section" id="chicago" aria-labelledby="wl-title">
     <div class="wrap">
       <div class="wl">
-        <img src="img/stones.jpg" width="1800" height="1000" alt="Three dark stones resting in still, misty water under a pale sky" loading="lazy">
+        <img src="img/floor.jpg" width="1800" height="1000" alt="Cream travertine floor with soft window shadows falling across it" loading="lazy">
         <div class="wl-inner">
           <div class="wl-copy">
             <span class="status waitlist">Chicago: priority waitlist open</span>
@@ -669,7 +667,7 @@ details[open] .plus{transform:rotate(45deg);background:var(--color-background-su
             <div class="field"><label for="wl-interest">Interested in</label>
               <select id="wl-interest" name="interest"><option>Not sure yet</option><option>Neuromodulators</option><option>Dermal fillers</option><option>Biostimulators and regenerative</option></select></div>
             <button class="btn btn-light" type="submit">Join the Chicago waitlist</button>
-            <p class="fine">Name and email only. Medical history is taken privately at your consultation.</p>
+            <p class="fine">Name and email only.</p>
           </form>
         </div>
       </div>
