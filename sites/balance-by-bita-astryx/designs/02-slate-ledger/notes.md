@@ -7,17 +7,17 @@ colour), all off under prefers-reduced-motion. h1: "Nothing hidden. Nothing over
 
 ## Section plan (direction order)
 1. Hero (slate band): oversized statement left, Treatment index 01-03 right (ruled rows linking to each group).
-   Photo bridge: wide glass-and-light still life overlapping the band edge, with the StatusDot row on it.
-2. Services: label/h2/lead header, orb still life left, numbered list right; fillers as a 7-area ruled grid.
+   Photo bridge: wide still life of three matte vases (one per treatment family) overlapping the band edge, with the StatusDot row on it.
+2. Services: label/h2/lead header, vessels-on-linen still life left (4:5), numbered list right; fillers as a 7-area ruled grid.
 3. Pricing: Astryx Table, columns per unit / syringe / vial / session, group rows 00-03, placeholder amounts;
    stacks into labelled rows on phone. Three ruled notes below.
 4. Process: four numbered steps in a ruled ledger + hours/appointment strip.
 5. About: "Portrait to be supplied" slate frame (grid + face-oval line art), first-person story, 5-step path list,
    signature line, three values.
 6. FAQ: timing questions (weddings, peels/facials, lashes, Accutane, bruising/aftercare, first visit) as a ruled
-   accordion (details/summary), prism photo.
+   accordion (details/summary), plaster-shadow photo (4:3).
 7. Testimonials: three ruled theme rows using the brief's phrases as excerpts; full quotes are placeholders.
-8. Waitlist: stones photo panel, StatusDot "Chicago: priority waitlist open", name/email/interest form (mailto).
+8. Waitlist: travertine-and-window-shadow photo panel, StatusDot "Chicago: priority waitlist open", name/email/interest form (mailto).
 9. Contact: CTA + ruled definition list of facts; slate footer with wordmark.
 
 Signature moments: hero treatment index; the price ledger Table; StatusDot rows (hero photo, waitlist, contact).
@@ -46,3 +46,5 @@ Extra: "A+" larger-text toggle in the nav (nod to the current site's low-vision 
 - Testimonials: ruled List rows (no badges, no stars).
 - Waitlist: TextInput/Select fields on inverted surface, Button; StatusDot.
 - Contact: ruled definition List; StatusDots. Hover styles only inside @media (hover:hover).
+
+Imagery (fix round 1): all four photos share one warm grade (saturation ~70%, slight warm tint), baked into the files.
