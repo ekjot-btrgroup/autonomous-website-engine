@@ -120,7 +120,7 @@ em{font-style:italic}
 .nav-links{display:flex;gap:var(--spacing-8);list-style:none;margin:0;padding:0}
 .nav-links a{text-decoration:none;font-size:var(--font-size-base);color:var(--color-text-secondary);transition:color var(--duration-fast) var(--ease-standard);display:inline-flex;align-items:center;min-block-size:var(--size-tap)}
 .top-actions{display:flex;align-items:center;gap:var(--spacing-3)}
-.tool{display:inline-flex;align-items:center;justify-content:center;min-inline-size:var(--size-tap);min-block-size:var(--size-tap);padding-inline:var(--spacing-3);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-border);background:transparent;color:var(--color-text-primary);font:inherit;font-size:var(--font-size-base);cursor:pointer;transition:border-color var(--duration-fast) var(--ease-standard)}
+.tool{display:inline-flex;align-items:center;justify-content:center;min-inline-size:var(--size-tap);min-block-size:var(--size-tap);padding-inline:var(--spacing-3);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-border-emphasized);background:var(--color-background-body);color:var(--color-text-primary);font:inherit;font-size:var(--font-size-base);cursor:pointer;transition:border-color var(--duration-fast) var(--ease-standard)}
 .tool[aria-pressed="true"]{border-color:var(--color-accent);color:var(--color-text-accent)}
 .menu-btn{display:none}
 .menu-panel{display:none}
@@ -156,11 +156,10 @@ em{font-style:italic}
 /* ===== testimonials ===== */
 .words{background:var(--color-background-muted);border-block:var(--border-width) solid var(--color-border)}
 .words-head{display:flex;justify-content:space-between;align-items:end;gap:var(--spacing-8);flex-wrap:wrap;margin-bottom:var(--spacing-12)}
-.quotes{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:0;border-top:var(--border-width) solid var(--color-border-emphasized)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:var(--border-width) solid var(--color-border-emphasized)}
 .quote{padding:var(--spacing-8) var(--spacing-8) var(--spacing-6) 0;display:flex;flex-direction:column;gap:var(--spacing-6)}
 .quote+.quote{padding-left:var(--spacing-8);border-left:var(--border-width) solid var(--color-border)}
 .quote blockquote{margin:0;font-family:var(--font-family-heading);font-size:var(--font-size-2xl);line-height:var(--line-height-quote)}
-.quote:first-child blockquote{font-size:var(--font-size-3xl)}
 .quote blockquote .ph{color:var(--color-text-secondary)}
 .quote figcaption{margin-top:auto;font-size:var(--font-size-sm);letter-spacing:var(--tracking-small);color:var(--color-text-secondary)}
 .quote .theme{display:block;color:var(--color-text-accent);margin-bottom:var(--spacing-1)}
@@ -176,8 +175,8 @@ em{font-style:italic}
 
 /* ===== services ===== */
 .svc-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-section);align-items:stretch}
-.svc-photo{position:relative;border-radius:var(--radius-container);overflow:hidden;border:var(--border-width) solid var(--color-border);min-block-size:100%}
-.svc-photo img{inline-size:100%;block-size:100%;object-fit:cover}
+.svc-photo{position:relative;border-radius:var(--radius-container);overflow:hidden;background:var(--color-background-body);min-block-size:100%;margin:0}
+.svc-photo img{inline-size:100%;block-size:100%;object-fit:cover;mix-blend-mode:lighten}
 .svc-photo figcaption{position:absolute;left:var(--spacing-5);bottom:var(--spacing-5);font-size:var(--font-size-sm);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-primary)}
 .svc-head{margin-bottom:var(--spacing-10)}
 .svc-head .lede{margin-top:var(--spacing-5)}
@@ -186,9 +185,9 @@ em{font-style:italic}
 .group h3{font-size:var(--font-size-3xl);line-height:var(--line-height-heading)}
 .group-head .verb{font-family:var(--font-family-heading);font-style:italic;font-size:var(--font-size-xl);color:var(--color-text-accent)}
 .group p{color:var(--color-text-secondary);font-size:var(--font-size-base);max-width:var(--size-measure)}
-.items{list-style:none;display:flex;flex-wrap:wrap;gap:var(--spacing-2) var(--spacing-5);padding:0;margin:var(--spacing-4) 0 0}
-.items li{font-size:var(--font-size-base);display:inline-flex;align-items:center;gap:var(--spacing-5)}
-.items li+li::before{content:"";inline-size:var(--spacing-1);block-size:var(--spacing-1);border-radius:var(--radius-full);background:var(--color-border-emphasized);margin-inline-end:0}
+.items{list-style:none;display:flex;flex-wrap:wrap;row-gap:var(--spacing-2);column-gap:0;padding:0;margin:var(--spacing-4) 0 0 calc(var(--spacing-5)*-1);clip-path:inset(0 0 0 var(--spacing-5))}
+.items li{position:relative;font-size:var(--font-size-base);padding-inline-start:var(--spacing-5)}
+.items li::before{content:"";position:absolute;left:calc(var(--spacing-5)/2 - var(--spacing-1)/2);top:50%;translate:0 -50%;inline-size:var(--spacing-1);block-size:var(--spacing-1);border-radius:var(--radius-full);background:var(--color-border-emphasized)}
 
 /* ===== process ===== */
 .steps{list-style:none;margin:var(--spacing-12) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:var(--border-width) solid var(--color-border-emphasized);counter-reset:step}
@@ -213,11 +212,14 @@ tbody th small{display:block;font-family:var(--font-family-body);font-size:var(-
 td:last-child,th:last-child{text-align:right;padding-right:0}
 tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--font-size-sm);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--color-text-accent);font-weight:var(--font-weight-medium);padding-top:var(--spacing-8)}
 .muted{color:var(--color-text-secondary)}
+.per{display:none}
+.group p,.items li,.steps p,.facts li,.rows li,.form small,.foot,table,tbody th small,.faq-a p,.status{font-weight:var(--font-weight-regular)}
 
 /* ===== faq (Astryx Collapsible) ===== */
 .faq-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-section);align-items:start}
 .faq-aside .lede{margin-top:var(--spacing-5)}
-.faq-photo{margin-top:var(--spacing-10);border-radius:var(--radius-container);overflow:hidden;border:var(--border-width) solid var(--color-border)}
+.faq-photo{margin:var(--spacing-10) 0 0;border-radius:var(--radius-container);overflow:hidden;background:var(--color-background-body)}
+.faq-photo img{mix-blend-mode:lighten}
 .faq-list{border-top:var(--border-width) solid var(--color-border-emphasized)}
 .faq-item{border-bottom:var(--border-width) solid var(--color-border)}
 .faq-q{inline-size:100%;padding-inline:0;display:flex;justify-content:space-between;align-items:center;gap:var(--spacing-6);padding-block:var(--spacing-6);background:none;border:0;color:var(--color-text-primary);font:inherit;text-align:left;cursor:pointer;min-block-size:var(--size-tap)}
@@ -284,10 +286,10 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
 }
 @media (max-width:40em){
   .hero{align-items:flex-end}
-  .hero-img{inset:0 0 auto 0;block-size:50%}
-  .hero-img img{object-position:58% 40%}
-  .hero-img::after{background:linear-gradient(0deg,var(--color-background-body) 0%,var(--color-background-body) 8%,var(--color-scrim-soft) 55%)}
-  .hero-inner{padding-top:calc(var(--spacing-24)*3.2);padding-bottom:var(--spacing-12)}
+  .hero-img{inset:var(--spacing-12) 0 auto 0;block-size:calc(var(--spacing-24)*3)}
+  .hero-img img{object-position:70% 30%}
+  .hero-img::after{background:linear-gradient(to bottom,var(--color-scrim-strong) 0,var(--color-scrim-soft) 22%,var(--color-scrim-soft) 55%,var(--color-background-body) 100%)}
+  .hero-inner{padding-top:calc(var(--spacing-24)*3.5);padding-bottom:var(--spacing-12)}
   .hero-cta .btn{flex:1 1 100%}
   .hero-meta{flex-direction:column;margin-top:var(--spacing-8)}
   .mark{font-size:var(--font-size-2xl)}
@@ -306,6 +308,11 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
   .pull-rule::before,.pull-rule::after{inline-size:var(--spacing-12)}
   tbody th{font-size:var(--font-size-lg)}
   .faq-q-text{font-size:var(--font-size-xl)}
+}
+@media (max-width:35em){
+  table thead th:nth-child(2),table td.muted{display:none}
+  .per{display:block;font-family:var(--font-family-body);font-size:var(--font-size-sm);color:var(--color-text-secondary);font-weight:var(--font-weight-regular)}
+  tr.cat th{padding-top:var(--spacing-6)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -366,7 +373,7 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
       </div>
       <div class="hero-meta">
         <span class="status open">Sandy Springs · Mon–Fri, 10 am–5 pm, by appointment</span>
-        <span class="status">Chicago · patient waitlist open</span>
+        <span class="status open">Chicago · patient waitlist open</span>
       </div>
     </div>
   </section>
@@ -438,7 +445,7 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
   <!-- 4 services -->
   <section class="section rule-top" id="treatments" aria-labelledby="svc-title">
     <div class="wrap svc-grid">
-      <figure class="svc-photo" style="margin:0">
+      <figure class="svc-photo">
         <img src="img/peony.jpg" width="900" height="1100" loading="lazy" alt="A soft pink peony opening in low light against black">
       </figure>
       <div>
@@ -499,19 +506,19 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
       </div>
       <table class="tnum">
         <caption>Price list <span class="ph">(amounts to be supplied)</span></caption>
-        <thead><tr><th scope="col">Treatment</th><th scope="col">Priced per</th><th scope="col">Price</th></tr></thead>
+        <thead><tr><th scope="col">Treatment</th><th scope="col">Unit</th><th scope="col">Price</th></tr></thead>
         <tbody>
           <tr class="cat"><th colspan="3" scope="colgroup">Start here</th></tr>
-          <tr><th scope="row">Consultation<small>New patients</small></th><td class="muted">Visit</td><td class="ph">[$ to be supplied]</td></tr>
+          <tr><th scope="row">Consultation<small>New patients</small><span class="per">per visit</span></th><td class="muted">Visit</td><td class="ph">[$ tbc]</td></tr>
           <tr class="cat"><th colspan="3" scope="colgroup">Neuromodulators</th></tr>
-          <tr><th scope="row">Xeomin</th><td class="muted">Unit</td><td class="ph">[$ to be supplied]</td></tr>
-          <tr><th scope="row">Dysport</th><td class="muted">Unit</td><td class="ph">[$ to be supplied]</td></tr>
-          <tr><th scope="row">Daxxify</th><td class="muted">Unit</td><td class="ph">[$ to be supplied]</td></tr>
+          <tr><th scope="row">Xeomin<span class="per">per unit</span></th><td class="muted">Unit</td><td class="ph">[$ tbc]</td></tr>
+          <tr><th scope="row">Dysport<span class="per">per unit</span></th><td class="muted">Unit</td><td class="ph">[$ tbc]</td></tr>
+          <tr><th scope="row">Daxxify<span class="per">per unit</span></th><td class="muted">Unit</td><td class="ph">[$ tbc]</td></tr>
           <tr class="cat"><th colspan="3" scope="colgroup">Fillers, biostimulators &amp; regenerative</th></tr>
-          <tr><th scope="row">Dermal filler<small>Temple to chin</small></th><td class="muted">Syringe</td><td class="ph">[$ to be supplied]</td></tr>
-          <tr><th scope="row">Sculptra</th><td class="muted">Vial</td><td class="ph">[$ to be supplied]</td></tr>
-          <tr><th scope="row">Hyperdilute Radiesse</th><td class="muted">Syringe</td><td class="ph">[$ to be supplied]</td></tr>
-          <tr><th scope="row">PRF</th><td class="muted">Session</td><td class="ph">[$ to be supplied]</td></tr>
+          <tr><th scope="row">Dermal filler<small>Temple to chin</small><span class="per">per syringe</span></th><td class="muted">Syringe</td><td class="ph">[$ tbc]</td></tr>
+          <tr><th scope="row">Sculptra<span class="per">per vial</span></th><td class="muted">Vial</td><td class="ph">[$ tbc]</td></tr>
+          <tr><th scope="row">Hyperdilute Radiesse<span class="per">per syringe</span></th><td class="muted">Syringe</td><td class="ph">[$ tbc]</td></tr>
+          <tr><th scope="row">PRF<span class="per">per session</span></th><td class="muted">Session</td><td class="ph">[$ tbc]</td></tr>
         </tbody>
       </table>
     </div>
@@ -523,8 +530,8 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
       <div class="faq-aside">
         <p class="overline">Timing questions</p>
         <h2 class="h2" id="faq-title">Booking around <em>the big dates.</em></h2>
-        <p class="lede">Weddings, peels, facials, lashes, Accutane: the timing rules Bita gives every patient, written down.</p>
-        <figure class="faq-photo" style="margin:0">
+        <p class="lede">Weddings, peels, facials, lashes, Accutane: the timing rules Bita gives every patient.</p>
+        <figure class="faq-photo">
           <img src="img/hydrangea.jpg" width="1400" height="900" loading="lazy" alt="A dried blush hydrangea stem lying on a dark surface">
         </figure>
       </div>
@@ -594,7 +601,7 @@ tr.cat th{text-align:left;font-family:var(--font-family-body);font-size:var(--fo
         <li><span class="k">Email</span><a class="link" href="mailto:balancebybita@gmail.com">balancebybita@gmail.com</a></li>
         <li><span class="k">Hours</span><span>Monday to Friday, 10:00 am to 5:00 pm<br><span class="muted">By appointment only</span></span></li>
         <li><span class="k">Studio</span><span>Sandy Springs, Atlanta, GA<br><span class="ph">[Street address to be supplied]</span></span></li>
-        <li><span class="k">Next</span><span class="status">Chicago · <a class="link" href="#chicago" style="min-block-size:auto">waitlist open</a></span></li>
+        <li><span class="k">Next</span><span class="status open">Chicago · <a class="link" href="#chicago" style="min-block-size:auto">waitlist open</a></span></li>
       </ul>
     </div>
   </section>

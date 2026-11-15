@@ -50,3 +50,11 @@ bruising detail); online booking link; street address; medical director and lice
 - Contact/footer: List/Item rows, link focus via --focus-outline-*.
 - Rules held: hover only inside @media (hover:hover); :focus-visible outline tokens; prefers-reduced-motion removes
   all transitions; no badges.
+
+## Fix round 1 (from 03-critique.md)
+- Header tools (A+, Menu) now sit on a solid body-token background with an emphasized border.
+- Phone hero: image starts below the header, a top scrim (scrim-strong to transparent) darkens the header band, object-position 70% 30%, and the eyebrow and h1 sit on dark ground under the bottom fade.
+- Peony and hydrangea frames: no border, body background, image uses mix-blend-mode lighten so the black reads as the page's night.
+- FAQ image gap fixed (inline margin removed, 40px top margin). Body copy at base size and below is 400.
+- Phone price table: unit column hidden, "per unit" shown under the name; header "Unit"; placeholder "[$ tbc]".
+- Both Chicago status dots use --color-success. Testimonials are equal columns and sizes. Item dots never start a wrapped line. Timing lede no longer says "written down".

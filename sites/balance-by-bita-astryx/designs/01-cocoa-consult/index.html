@@ -39,7 +39,7 @@
   --size-element-sm:28px; --size-element-md:32px; --size-element-lg:36px; --size-tap:2.75rem;
   --size-content:75rem; --size-measure:36rem; --size-dot:.5rem;
   /* border + radius (Chocolate) */
-  --border-width:1px;
+  --border-width:1px; --border-width-emphasized:2px;
   --radius-none:0; --radius-inner:.375rem; --radius-element:.625rem; --radius-container:.75rem; --radius-page:1.5rem; --radius-full:9999px;
   /* shadow: ink-tinted, two layers */
   --shadow-low:0 1px 2px rgba(74,53,32,.06),0 2px 6px rgba(74,53,32,.05);
@@ -54,10 +54,10 @@
   --font-family-heading:"Fraunces",Georgia,serif;
   --font-family-body:"Albert Sans",ui-sans-serif,sans-serif;
   --font-size-base:.875rem; --font-size-lg:1.0625rem; --font-size-xl:1.25rem; --font-size-2xl:1.5rem;
-  --font-size-3xl:1.8125rem; --font-size-4xl:2.1875rem; --font-size-5xl:2.625rem; --font-size-6xl:3.15rem;
-  --font-size-7xl:3.78rem; --font-size-8xl:4.54rem;
+  --font-size-3xl:1.8125rem; --font-size-5xl:2.625rem; --font-size-8xl:4.54rem;
+  /* six sizes in use: base, lg, xl, 2xl, display-2, display-1 (3xl/5xl/8xl only bound the clamps) */
   --font-weight-regular:400; --font-weight-medium:500; --font-weight-semibold:600;
-  --line-height-display:1.06; --line-height-heading:1.15; --line-height-body:1.6; --line-height-supporting:1.67;
+  --line-height-display:1.06; --line-height-heading:1.15; --line-height-quote:1.4; --line-height-body:1.6; --line-height-supporting:1.67;
   --tracking-display:-0.02em; --tracking-label:.08em;
   --text-display-1:clamp(var(--font-size-5xl), 5.4vw, var(--font-size-8xl));
   --text-display-2:clamp(var(--font-size-3xl), 3.6vw, var(--font-size-5xl));
@@ -92,6 +92,8 @@ a{color:inherit}
 .supporting{font-size:var(--font-size-base);line-height:var(--line-height-supporting);color:var(--color-text-secondary)}
 .head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--spacing-gutter);align-items:end;margin-bottom:var(--spacing-12)}
 .head .label{display:block;margin-bottom:var(--spacing-4)}
+.head.is-centered{grid-template-columns:1fr;justify-items:center;text-align:center}
+.head.is-centered>div{max-width:44rem}
 
 /* Astryx StatusDot */
 .status{display:inline-flex;align-items:center;gap:var(--spacing-2);font-size:var(--font-size-base);font-weight:var(--font-weight-medium);color:var(--color-text-secondary)}
@@ -154,7 +156,7 @@ a{color:inherit}
 .portrait p{font-size:var(--font-size-base);color:var(--color-text-secondary)}
 .portrait strong{display:block;font-family:var(--font-family-heading);font-weight:var(--font-weight-regular);font-size:var(--font-size-xl);color:var(--color-text-primary)}
 .note{display:flex;flex-direction:column;gap:var(--spacing-6)}
-.note .letter{font-family:var(--font-family-heading);font-style:italic;font-weight:300;font-size:var(--font-size-2xl);line-height:1.45;max-width:38rem;font-variation-settings:"opsz" 36}
+.note .letter{font-family:var(--font-family-heading);font-style:italic;font-weight:300;font-size:var(--font-size-2xl);line-height:var(--line-height-quote);max-width:38rem;font-variation-settings:"opsz" 36}
 .note .letter p+p{margin-top:var(--spacing-4)}
 .sign{font-size:var(--font-size-base);color:var(--color-text-secondary)}
 .sign b{display:block;font-family:var(--font-family-heading);font-style:italic;font-weight:var(--font-weight-regular);font-size:var(--font-size-2xl);color:var(--color-text-accent)}
@@ -163,17 +165,14 @@ a{color:inherit}
 .values b{font-weight:var(--font-weight-semibold)}
 .values span{color:var(--color-text-secondary)}
 
-/* ===== services: Astryx List groups ===== */
-.lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"a b" "c b";gap:var(--spacing-6);align-items:start}
-.lists>.list:nth-child(1){grid-area:a}.lists>.list:nth-child(2){grid-area:b}.lists>.list:nth-child(3){grid-area:c}
-.list{background:var(--color-background-card);border:var(--border-width) solid var(--color-accent-muted);border-radius:var(--radius-container);padding:var(--spacing-6) var(--spacing-6) var(--spacing-2)}
+/* ===== services: Astryx List / Item, three ruled columns ===== */
+.lists{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--spacing-8);align-items:start}
+.list{border-top:var(--border-width-emphasized) solid var(--color-border-emphasized);padding-top:var(--spacing-5)}
 .list header{padding-bottom:var(--spacing-5);border-bottom:var(--border-width) solid var(--color-border)}
 .list h3{font-size:var(--font-size-2xl);line-height:var(--line-height-heading);margin-top:var(--spacing-2)}
 .list header p{margin-top:var(--spacing-2)}
 .list ul{list-style:none;margin:0;padding:0}
-.list li{display:flex;justify-content:space-between;gap:var(--spacing-4);padding:var(--spacing-3) 0;border-bottom:var(--border-width) solid var(--color-accent-muted);font-size:var(--font-size-lg)}
-.list li:last-child{border-bottom:0}
-.list li span{color:var(--color-text-secondary);font-size:var(--font-size-base);text-align:right}
+.list li{padding:var(--spacing-3) 0;border-bottom:var(--border-width) solid var(--color-accent-muted)}
 .services-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--spacing-4);margin-top:var(--spacing-8);padding-top:var(--spacing-6);border-top:var(--border-width) solid var(--color-accent-muted)}
 
 /* ===== process ===== */
@@ -207,8 +206,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 .quotes{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:var(--spacing-6)}
 .quote{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:var(--spacing-8);padding:var(--spacing-8);border-radius:var(--radius-container);border:var(--border-width) solid var(--color-border);background:var(--color-background-surface);min-height:16rem}
 .quote:first-child{background:var(--color-background-inverted);border-color:var(--color-background-inverted);color:var(--color-text-inverted)}
-.quote blockquote{margin:0;font-family:var(--font-family-heading);font-style:italic;font-weight:300;font-size:var(--font-size-2xl);line-height:1.35}
-.quote:first-child blockquote{font-size:var(--font-size-3xl)}
+.quote blockquote{margin:0;font-family:var(--font-family-heading);font-style:italic;font-weight:300;font-size:var(--font-size-2xl);line-height:var(--line-height-quote)}
 .quote figcaption{font-size:var(--font-size-base);padding-top:var(--spacing-4);border-top:var(--border-width) solid var(--color-border)}
 .quote:first-child figcaption{border-top-color:var(--color-text-secondary)}
 
@@ -228,17 +226,21 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 
 /* ===== waitlist ===== */
 .waitlist-card{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);background:var(--color-background-inverted);color:var(--color-text-inverted);border-radius:var(--radius-page);overflow:hidden}
-.waitlist-card img{width:100%;height:100%;min-height:26rem;object-fit:cover}
-.waitlist-body{padding:calc(var(--spacing-12) * 1.25);display:flex;flex-direction:column;gap:var(--spacing-6)}
+.waitlist-card{align-items:stretch}
+.waitlist-media{position:relative;min-height:22rem}
+.waitlist-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.waitlist-body{padding:var(--spacing-12) calc(var(--spacing-12) * 1.25) var(--spacing-10);display:flex;flex-direction:column;gap:var(--spacing-6)}
 .waitlist-body .status{color:var(--color-background-muted)}
 .waitlist-body .display-2 em{color:var(--color-background-muted)}
 .waitlist-body p{color:var(--color-background-muted);max-width:var(--size-measure)}
 .form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--spacing-4);margin-top:var(--spacing-2)}
 .field{display:flex;flex-direction:column;gap:var(--spacing-1-5)}
 .field.full{grid-column:1/-1}
+.field.full select{background-image:linear-gradient(45deg,transparent 50%,var(--color-text-accent) 50%),linear-gradient(135deg,var(--color-text-accent) 50%,transparent 50%);background-position:calc(100% - var(--spacing-5)) 55%,calc(100% - var(--spacing-4)) 55%;background-size:var(--spacing-1-5) var(--spacing-1-5);background-repeat:no-repeat;padding-right:var(--spacing-10)}
 .field label{font-size:var(--font-size-base);font-weight:var(--font-weight-medium);color:var(--color-background-muted)}
-.field input,.field select{min-height:var(--size-tap);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-text-secondary);background:var(--color-background-surface);color:var(--color-text-primary);font:inherit;font-size:var(--font-size-lg);padding:var(--spacing-2) var(--spacing-4)}
+.field input,.field select{appearance:none;-webkit-appearance:none;line-height:var(--line-height-body);min-height:var(--size-tap);border-radius:var(--radius-element);border:var(--border-width) solid var(--color-text-secondary);background:var(--color-background-surface);color:var(--color-text-primary);font:inherit;font-size:var(--font-size-lg);padding:var(--spacing-2) var(--spacing-4)}
 .waitlist-card :focus-visible{outline-color:var(--color-background-muted)}
+.form-note{grid-column:1/-1;font-size:var(--font-size-base);color:var(--color-background-muted)}
 .form .btn{grid-column:1/-1;justify-self:start;background:var(--color-background-muted);color:var(--color-text-primary)}
 @media (hover:hover){ .form .btn:hover{background:var(--color-background-card)} }
 
@@ -259,6 +261,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 /* ===== responsive ===== */
 @media (max-width:1020px){
   .nav ul{display:none}
+  .lists{grid-template-columns:repeat(2,minmax(0,1fr))}
   .quotes{grid-template-columns:1fr 1fr}
   .quote:first-child{grid-column:1/-1}
 }
@@ -282,7 +285,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
   .portrait{aspect-ratio:auto;min-height:16rem}
   .values li{grid-template-columns:1fr;gap:var(--spacing-1)}
   .quotes{grid-template-columns:1fr}
-  .lists{grid-template-columns:1fr;grid-template-areas:"a" "b" "c"}
+  .lists{grid-template-columns:1fr}
   .steps li{grid-template-columns:3rem 1fr;gap:var(--spacing-4);padding:var(--spacing-6) 0}
   .table-card{padding:var(--spacing-1) var(--spacing-5)}
   thead{position:absolute;width:var(--border-width);height:var(--border-width);overflow:hidden;clip:rect(0 0 0 0)}
@@ -293,7 +296,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
   tr.group{display:block}
   tr.group th{display:block;padding:var(--spacing-5) 0 var(--spacing-2)}
   .faq-side img{display:none}
-  .waitlist-card img{min-height:0;aspect-ratio:16/10}
+  .waitlist-media{min-height:0;aspect-ratio:16/10}
   .waitlist-body{padding:var(--spacing-8) var(--spacing-5)}
   .form{grid-template-columns:1fr}
   .form .btn{justify-self:stretch}
@@ -396,29 +399,29 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
         <section class="list" aria-labelledby="l1">
           <header><span class="label">01</span><h3 id="l1">Neuromodulators</h3><p class="supporting">Wrinkle relaxers that soften lines from movement.</p></header>
           <ul>
-            <li>Xeomin<span>per unit</span></li>
-            <li>Dysport<span>per unit</span></li>
-            <li>Daxxify<span>per unit</span></li>
+            <li>Xeomin</li>
+            <li>Dysport</li>
+            <li>Daxxify</li>
           </ul>
         </section>
         <section class="list" aria-labelledby="l2">
           <header><span class="label">02</span><h3 id="l2">Dermal fillers</h3><p class="supporting">Placed with restraint to restore shape and support.</p></header>
           <ul>
-            <li>Temple<span>per syringe</span></li>
-            <li>Under-eye<span>per syringe</span></li>
-            <li>Cheek<span>per syringe</span></li>
-            <li>Smile lines<span>per syringe</span></li>
-            <li>Lip<span>per syringe</span></li>
-            <li>Jawline<span>per syringe</span></li>
-            <li>Chin<span>per syringe</span></li>
+            <li>Temple</li>
+            <li>Under-eye</li>
+            <li>Cheek</li>
+            <li>Smile lines</li>
+            <li>Lip</li>
+            <li>Jawline</li>
+            <li>Chin</li>
           </ul>
         </section>
         <section class="list" aria-labelledby="l3">
           <header><span class="label">03</span><h3 id="l3">Biostimulators and regenerative</h3><p class="supporting">Treatments that work with your own skin over time.</p></header>
           <ul>
-            <li>Sculptra<span>per vial</span></li>
-            <li>Hyperdilute Radiesse<span>per syringe</span></li>
-            <li>PRF, platelet-rich fibrin<span>per session</span></li>
+            <li>Sculptra</li>
+            <li>Hyperdilute Radiesse</li>
+            <li>PRF, platelet-rich fibrin</li>
           </ul>
         </section>
       </div>
@@ -484,7 +487,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
   <!-- TESTIMONIALS -->
   <section class="section" aria-labelledby="quotes-title">
     <div class="wrap">
-      <div class="head">
+      <div class="head is-centered">
         <div>
           <span class="label">Patient words</span>
           <h2 class="display-2" id="quotes-title">Patients say it feels like <em>visiting a friend.</em></h2>
@@ -523,7 +526,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
   <section class="section" id="chicago" aria-labelledby="chicago-title">
     <div class="wrap">
       <div class="waitlist-card">
-        <img src="img/botanic.jpg" width="1000" height="1400" loading="lazy" alt="Dried eucalyptus in amber tones with sprays of white baby&rsquo;s breath against a pale wall">
+        <div class="waitlist-media"><img src="img/botanic.jpg" width="1000" height="1400" loading="lazy" alt="Dried eucalyptus in amber tones with sprays of white baby&rsquo;s breath against a pale wall"></div>
         <div class="waitlist-body">
           <span class="status">Chicago: patient waitlist open</span>
           <h2 class="display-2" id="chicago-title">Chicago is <em>next on the list.</em></h2>
@@ -534,6 +537,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
             <div class="field full"><label for="w-interest">Most interested in</label>
               <select id="w-interest" name="interest"><option>Not sure yet: a consultation</option><option>Neuromodulators</option><option>Dermal fillers</option><option>Biostimulators and regenerative</option></select></div>
             <button class="btn" type="submit">Join the Chicago waitlist</button>
+            <p class="form-note">Name and email only, so we can tell you when Chicago opens.</p>
           </form>
         </div>
       </div>
